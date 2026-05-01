@@ -144,27 +144,27 @@ export default function Home() {
       </section>
 
       {/* ── 2. SERVICES ───────────────────────────────────── */}
-      <section className="py-24 px-6 bg-slate-50">
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 sm:mb-16">
             <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
               What We Do
             </span>
             <h2
-              className="text-[32px] font-bold text-slate-900 mb-4 leading-tight"
+              className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
             >
               Professional Roadside Assistance
             </h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">
+            <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
               Comprehensive mobile vehicle support available every day of the year across Greater
               Manchester.
             </p>
           </div>
 
           {/* Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {[
               {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp',
@@ -207,8 +207,7 @@ export default function Home() {
                 key={card.title}
                 className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
               >
-                {/* Image */}
-                <div className="relative h-52 overflow-hidden">
+                <div className="relative h-44 sm:h-52 overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={card.img}
@@ -220,15 +219,14 @@ export default function Home() {
                     {card.badge}
                   </span>
                 </div>
-                {/* Body */}
-                <div className="p-6">
+                <div className="p-5 sm:p-6">
                   <h3
-                    className="text-lg font-semibold mb-2 text-[#0f172a]"
+                    className="text-base sm:text-lg font-semibold mb-2 text-[#0f172a]"
                     style={{ fontFamily: 'var(--font-work-sans)' }}
                   >
                     {card.title}
                   </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-4">{card.desc}</p>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
                   <div className="flex items-center justify-end">
                     <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
                       arrow_forward
@@ -240,16 +238,16 @@ export default function Home() {
           </div>
 
           {/* CTA strip */}
-          <div className="mt-12 bg-[#0f172a] rounded-3xl p-8 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
-            <div className="text-center md:text-left">
-              <h3 className="text-2xl font-bold text-white mb-2">Need Immediate Assistance?</h3>
-              <p className="text-slate-400">
+          <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
+            <div>
+              <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
+              <p className="text-slate-400 text-sm sm:text-base">
                 Speak directly to a technician for an instant quote and arrival time.
               </p>
             </div>
             <a
               href="tel:07759708646"
-              className="bg-[#b70011] text-white font-black px-10 py-5 rounded-xl text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20"
+              className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
               07759 708 646
@@ -259,21 +257,20 @@ export default function Home() {
       </section>
 
       {/* ── 3. WHY CHOOSE US ──────────────────────────────── */}
-      <section className="py-24 px-6 bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20 items-center">
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
           {/* Image col */}
-          <div className="w-full lg:w-1/2 relative">
-            <div className="absolute -top-10 -left-10 w-64 h-64 bg-[#b70011]/5 rounded-full blur-3xl" />
+          <div className="w-full lg:w-1/2 relative pb-8 sm:pb-10">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              className="relative z-10 rounded-3xl shadow-2xl border-8 border-slate-50 w-full object-cover"
+              className="relative z-10 rounded-2xl sm:rounded-3xl shadow-2xl border-4 sm:border-8 border-slate-50 w-full object-cover"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWrU29eU8IJezmfmnrskc3wJDaLWg_9f-9oulrYPvvMLrAtPIbD7MfljbG2nb4GtGVpm4Xd2xH9iOhv4ft0CmSx6OUFyoqz9fcN1GG4JKzJDDXCcomeefkmfZVUtTcytILQDHwXHb25A0IUEqXBLS7SQnna9qTKeitWyokBom48GllVdlW95s0NinEvX4eb7-L3pxPJb89dLW99ya18kgAin3kOmZcBLDK5AkCq55nsg1l3Jfgfv4TcsOdl-MCI8RArS2GV-90g3g"
               alt="Technician changing a tyre professionally"
             />
             {/* Floating badge */}
-            <div className="absolute -bottom-6 -right-6 bg-[#0f172a] p-6 rounded-2xl shadow-2xl z-20 max-w-[200px]">
-              <div className="text-[#b70011] font-black text-4xl mb-1">30m</div>
-              <div className="text-white text-sm font-bold uppercase tracking-tight">
+            <div className="absolute bottom-2 right-2 sm:-bottom-2 sm:-right-2 bg-[#0f172a] p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-2xl z-20 max-w-[160px] sm:max-w-[200px]">
+              <div className="text-[#b70011] font-black text-3xl sm:text-4xl mb-1">30m</div>
+              <div className="text-white text-xs sm:text-sm font-bold uppercase tracking-tight">
                 Average Response Arrival Time
               </div>
             </div>
@@ -281,21 +278,21 @@ export default function Home() {
 
           {/* Content col */}
           <div className="w-full lg:w-1/2">
-            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-4 block">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
               The Best Choice
             </span>
             <h2
-              className="text-4xl lg:text-5xl text-[#0f172a] mb-8 leading-tight font-bold"
+              className="text-2xl sm:text-4xl lg:text-5xl text-[#0f172a] mb-5 sm:mb-8 leading-tight font-bold"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
               Elite Mobile Tyre Fitting Service in Manchester
             </h2>
-            <p className="text-slate-600 mb-8 leading-relaxed text-lg">
+            <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg">
               We understand that a flat tyre isn&apos;t just an inconvenience—it&apos;s a
               disruption to your schedule and safety. We&apos;ve built our service to be the most
               reliable in the region.
             </p>
-            <ul className="space-y-5 mb-10">
+            <ul className="space-y-4 sm:space-y-5">
               <FeatureItem
                 icon="bolt"
                 title="Rapid Response Units"
@@ -317,8 +314,7 @@ export default function Home() {
       </section>
 
       {/* ── 4. HOW IT WORKS ───────────────────────────────── */}
-      <section className="py-24 px-6 bg-[#0f172a] text-white relative overflow-hidden">
-        {/* Dot pattern */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-[#0f172a] text-white relative overflow-hidden">
         <div
           className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none"
           style={{
@@ -328,12 +324,12 @@ export default function Home() {
         />
         <div className="max-w-7xl mx-auto text-center relative z-10">
           <h2
-            className="text-[32px] font-bold mb-16"
+            className="text-2xl sm:text-[32px] font-bold mb-10 sm:mb-16"
             style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
           >
             4 Steps To Get You Back On The Road
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-12 relative">
             {[
               { n: 1, title: 'Call Us', desc: 'Tell us your location and tyre size for an instant quote.', rot: 'rotate-3' },
               { n: 2, title: 'Dispatch', desc: 'We send our nearest expert unit to your exact location.', rot: '-rotate-3' },
@@ -342,18 +338,18 @@ export default function Home() {
             ].map((step, idx) => (
               <div key={step.n} className="relative">
                 <div
-                  className={`w-20 h-20 bg-[#b70011] rounded-2xl flex items-center justify-center text-3xl font-black mx-auto mb-8 shadow-xl ${step.rot}`}
+                  className={`w-14 h-14 sm:w-20 sm:h-20 bg-[#b70011] rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl font-black mx-auto mb-4 sm:mb-8 shadow-xl ${step.rot}`}
                   style={{ fontFamily: 'var(--font-work-sans)' }}
                 >
                   {step.n}
                 </div>
                 <h3
-                  className="text-xl font-semibold mb-4 text-white"
+                  className="text-base sm:text-xl font-semibold mb-2 sm:mb-4 text-white"
                   style={{ fontFamily: 'var(--font-work-sans)' }}
                 >
                   {step.title}
                 </h3>
-                <p className="text-slate-400 text-sm">{step.desc}</p>
+                <p className="text-slate-400 text-xs sm:text-sm">{step.desc}</p>
                 {idx < 3 && (
                   <span className="hidden md:block absolute top-10 -right-6 text-[#b70011] material-symbols-outlined text-3xl">
                     trending_flat
@@ -366,17 +362,17 @@ export default function Home() {
       </section>
 
       {/* ── 5. BRAND LOGOS ────────────────────────────────── */}
-      <section className="py-16 px-6 bg-white border-y border-slate-100">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-white border-y border-slate-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-center text-slate-400 font-bold uppercase tracking-widest text-xs mb-12">
+          <h2 className="text-center text-slate-400 font-bold uppercase tracking-widest text-xs mb-8 sm:mb-12">
             Authorized Dealer of All Premium Brands
           </h2>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-8 grayscale opacity-60 hover:grayscale-0 transition-all items-center">
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-4 sm:gap-8 grayscale opacity-60 hover:grayscale-0 transition-all items-center">
             {['MICHELIN', 'PIRELLI', 'CONTINENTAL', 'GOODYEAR', 'BRIDGESTONE', 'DUNLOP'].map(
               (brand) => (
                 <div
                   key={brand}
-                  className="flex items-center justify-center font-black text-xl italic text-slate-800"
+                  className="flex items-center justify-center font-black text-sm sm:text-xl italic text-slate-800 text-center"
                 >
                   {brand}
                 </div>
@@ -387,9 +383,9 @@ export default function Home() {
       </section>
 
       {/* ── 6. REVIEWS ────────────────────────────────────── */}
-      <section className="py-24 px-6 bg-slate-50">
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 sm:mb-16 gap-4">
             <div className="text-left">
               <div className="flex items-center gap-2 mb-4">
                 {/* Google G icon */}
@@ -421,7 +417,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
             {[
               {
                 initials: 'JD',
@@ -447,7 +443,7 @@ export default function Home() {
             ].map((r) => (
               <div
                 key={r.name}
-                className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100"
+                className="bg-white p-5 sm:p-8 rounded-2xl shadow-sm border border-slate-100"
               >
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center font-bold text-slate-500">
@@ -467,38 +463,38 @@ export default function Home() {
       </section>
 
       {/* ── 7. CONTACT FORM ───────────────────────────────── */}
-      <section className="py-24 px-6 bg-white">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-white">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 lg:gap-16">
           {/* Left */}
           <div className="w-full lg:w-1/3">
             <h2
-              className="text-4xl text-[#0f172a] mb-6 leading-tight font-bold"
+              className="text-2xl sm:text-4xl text-[#0f172a] mb-4 sm:mb-6 leading-tight font-bold"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
               Get a Non-Urgent Quote
             </h2>
-            <p className="text-slate-600 mb-8 leading-relaxed">
+            <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base">
               For emergency call-outs, please phone us directly. For general queries or to book a
               fitting at home later this week, fill in the form.
             </p>
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center shrink-0">
+            <div className="space-y-4 sm:space-y-6">
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-slate-100 rounded-full flex items-center justify-center shrink-0">
                   <span className="material-symbols-outlined text-[#b70011]">location_on</span>
                 </div>
                 <div>
-                  <p className="font-bold text-[#0f172a]">Service Area</p>
+                  <p className="font-bold text-[#0f172a] text-sm sm:text-base">Service Area</p>
                   <p className="text-sm text-slate-500">
                     Manchester, Oldham, Bolton, Bury, Stockport &amp; surrounds.
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center shrink-0">
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-slate-100 rounded-full flex items-center justify-center shrink-0">
                   <span className="material-symbols-outlined text-[#b70011]">schedule</span>
                 </div>
                 <div>
-                  <p className="font-bold text-[#0f172a]">Hours</p>
+                  <p className="font-bold text-[#0f172a] text-sm sm:text-base">Hours</p>
                   <p className="text-sm text-slate-500">Open 24/7 for Emergencies</p>
                 </div>
               </div>
@@ -507,57 +503,57 @@ export default function Home() {
 
           {/* Form */}
           <div className="w-full lg:w-2/3">
-            <div className="bg-slate-50 p-8 md:p-12 rounded-3xl border border-slate-100 shadow-sm">
-              <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="md:col-span-1">
+            <div className="bg-slate-50 p-5 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl border border-slate-100 shadow-sm">
+              <form className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                <div>
                   <label className="block text-sm font-bold text-[#0f172a] mb-2">Full Name</label>
                   <input
                     type="text"
                     placeholder="e.g. John Doe"
-                    className="w-full border border-slate-200 rounded-xl p-4 bg-white focus:outline-none focus:ring-2 focus:ring-[#b70011] focus:border-[#b70011] transition"
+                    className="w-full border border-slate-200 rounded-xl p-3 sm:p-4 bg-white focus:outline-none focus:ring-2 focus:ring-[#b70011] focus:border-[#b70011] transition text-sm"
                   />
                 </div>
-                <div className="md:col-span-1">
+                <div>
                   <label className="block text-sm font-bold text-[#0f172a] mb-2">
                     Phone Number
                   </label>
                   <input
                     type="tel"
                     placeholder="07XXX XXXXXX"
-                    className="w-full border border-slate-200 rounded-xl p-4 bg-white focus:outline-none focus:ring-2 focus:ring-[#b70011] focus:border-[#b70011] transition"
+                    className="w-full border border-slate-200 rounded-xl p-3 sm:p-4 bg-white focus:outline-none focus:ring-2 focus:ring-[#b70011] focus:border-[#b70011] transition text-sm"
                   />
                 </div>
-                <div className="md:col-span-1">
+                <div>
                   <label className="block text-sm font-bold text-[#0f172a] mb-2">
                     Vehicle Registration
                   </label>
                   <input
                     type="text"
                     placeholder="AB12 CDE"
-                    className="w-full border border-slate-200 rounded-xl p-4 bg-white focus:outline-none focus:ring-2 focus:ring-[#b70011] focus:border-[#b70011] transition"
+                    className="w-full border border-slate-200 rounded-xl p-3 sm:p-4 bg-white focus:outline-none focus:ring-2 focus:ring-[#b70011] focus:border-[#b70011] transition text-sm"
                   />
                 </div>
-                <div className="md:col-span-1">
+                <div>
                   <label className="block text-sm font-bold text-[#0f172a] mb-2">Postcode</label>
                   <input
                     type="text"
                     placeholder="M1 1AA"
-                    className="w-full border border-slate-200 rounded-xl p-4 bg-white focus:outline-none focus:ring-2 focus:ring-[#b70011] focus:border-[#b70011] transition"
+                    className="w-full border border-slate-200 rounded-xl p-3 sm:p-4 bg-white focus:outline-none focus:ring-2 focus:ring-[#b70011] focus:border-[#b70011] transition text-sm"
                   />
                 </div>
-                <div className="md:col-span-2">
+                <div className="sm:col-span-2">
                   <label className="block text-sm font-bold text-[#0f172a] mb-2">
                     Message / Tyre Size
                   </label>
                   <textarea
                     placeholder="Tell us what you need..."
-                    className="w-full border border-slate-200 rounded-xl p-4 h-32 bg-white focus:outline-none focus:ring-2 focus:ring-[#b70011] focus:border-[#b70011] transition"
+                    className="w-full border border-slate-200 rounded-xl p-3 sm:p-4 h-28 sm:h-32 bg-white focus:outline-none focus:ring-2 focus:ring-[#b70011] focus:border-[#b70011] transition text-sm"
                   />
                 </div>
-                <div className="md:col-span-2">
+                <div className="sm:col-span-2">
                   <button
                     type="submit"
-                    className="w-full bg-[#0f172a] text-white py-5 rounded-xl hover:bg-slate-800 shadow-lg transition-all uppercase tracking-wider text-sm font-bold"
+                    className="w-full bg-[#0f172a] text-white py-4 sm:py-5 rounded-xl hover:bg-slate-800 shadow-lg transition-all uppercase tracking-wider text-sm font-bold"
                     style={{ fontFamily: 'var(--font-work-sans)' }}
                   >
                     Submit Request
@@ -570,7 +566,7 @@ export default function Home() {
       </section>
 
       {/* ── 8. MAP ────────────────────────────────────────── */}
-      <section className="relative h-[450px] w-full border-t border-slate-200">
+      <section className="relative h-[300px] sm:h-[450px] w-full border-t border-slate-200">
         <iframe
           className="w-full h-full grayscale-[0.2]"
           src="https://maps.google.com/maps?q=Oldham,%20Manchester&t=&z=12&ie=UTF8&iwloc=&output=embed"
@@ -579,21 +575,21 @@ export default function Home() {
           title="Service area map"
           aria-label="Google map showing Oldham, Manchester service area"
         />
-        <div className="absolute top-10 left-10 z-10 hidden md:block">
-          <div className="bg-white p-6 rounded-2xl shadow-2xl border border-slate-100 max-w-xs">
-            <h4 className="font-bold text-[#0f172a] mb-2 flex items-center gap-2">
-              <span className="material-symbols-outlined text-[#b70011]">my_location</span>
+        <div className="absolute top-4 left-4 sm:top-10 sm:left-10 z-10">
+          <div className="bg-white p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-2xl border border-slate-100 max-w-[200px] sm:max-w-xs">
+            <h4 className="font-bold text-[#0f172a] mb-1 sm:mb-2 flex items-center gap-2 text-sm sm:text-base">
+              <span className="material-symbols-outlined text-[#b70011] text-[18px]">my_location</span>
               Local Coverage
             </h4>
-            <p className="text-sm text-slate-600 mb-4">
+            <p className="text-xs sm:text-sm text-slate-600 mb-3 sm:mb-4 hidden sm:block">
               We are based in Oldham and cover the entire Greater Manchester area within 30-60
               minutes.
             </p>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-1 sm:gap-2">
               {['MANCHESTER', 'OLDHAM', 'STOCKPORT', 'BOLTON'].map((tag) => (
                 <span
                   key={tag}
-                  className="bg-slate-100 px-2 py-1 rounded text-[10px] font-bold text-slate-500"
+                  className="bg-slate-100 px-2 py-1 rounded text-[9px] sm:text-[10px] font-bold text-slate-500"
                 >
                   {tag}
                 </span>
@@ -604,14 +600,14 @@ export default function Home() {
       </section>
 
       {/* ── 9. FAQ ────────────────────────────────────────── */}
-      <section className="py-24 px-6 bg-slate-50">
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 sm:mb-16">
             <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
               Common Questions
             </span>
             <h2
-              className="text-[32px] font-bold text-[#0f172a]"
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a]"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
             >
               Frequently Asked Questions

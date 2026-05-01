@@ -22,12 +22,22 @@ export const metadata: Metadata = {
   description:
     'Stranded with a puncture? Our professional technicians reach you fast at home, work, or roadside across Greater Manchester. 24/7 emergency mobile tyre fitting from £45.',
   keywords: 'mobile tyre fitting, emergency tyre Manchester, puncture repair, 24/7 tyres',
+  icons: {
+    icon: [
+      { url: '/icon.webp', type: 'image/webp' },
+    ],
+    apple: '/icon.webp',
+    shortcut: '/icon.webp',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${workSans.variable} ${inter.variable} bg-[#fcf9f8]`}>
       <head>
+        {/* Site icon */}
+        <link rel="icon" href="/icon.webp" type="image/webp" />
+        <link rel="apple-touch-icon" href="/icon.webp" />
         {/* Preload the hero image — tells the browser to fetch it as early as possible */}
         <link
           rel="preload"

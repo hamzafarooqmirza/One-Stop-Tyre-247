@@ -44,15 +44,13 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
 
           {/* Logo */}
-          <a
-            href="#"
-            className="flex items-center gap-2 text-[#b70011] font-black uppercase tracking-tight shrink-0"
-            style={{ fontFamily: 'var(--font-work-sans)' }}
-          >
-            <span className="material-symbols-outlined text-2xl sm:text-3xl">tire_repair</span>
-            <span className="text-base sm:text-xl leading-tight">
-              One Stop Tyres <span className="text-[#0f172a]">24/7</span>
-            </span>
+          <a href="#" className="shrink-0" aria-label="One Stop Mobile Tyres 24/7 - Home">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One-Stop%20Loog-airanko-Qpv1QvladNLpRhg8X3Hs6SzyydzFMq.webp"
+              alt="One Stop Mobile Tyres 24/7"
+              className="h-10 sm:h-12 w-auto"
+            />
           </a>
 
           {/* Desktop Nav */}

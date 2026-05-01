@@ -4,13 +4,14 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
         {/* Brand */}
         <div className="space-y-8">
-          <h4
-            className="text-2xl font-black text-[#b70011] tracking-tighter uppercase flex items-center gap-2"
-            style={{ fontFamily: 'var(--font-work-sans)' }}
-          >
-            <span className="material-symbols-outlined">tire_repair</span>
-            One Stop Tyres
-          </h4>
+          <a href="#" aria-label="One Stop Mobile Tyres 24/7 - Home">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One-Stop%20Loog-airanko-Qpv1QvladNLpRhg8X3Hs6SzyydzFMq.webp"
+              alt="One Stop Mobile Tyres 24/7"
+              className="h-20 w-auto"
+            />
+          </a>
           <p className="text-slate-400 text-sm leading-relaxed">
             The premier 24/7 emergency roadside assistance partner across Greater Manchester.
             Rapid response, professional service, and transparent pricing.

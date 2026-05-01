@@ -41,15 +41,15 @@ export default function Header() {
 
       {/* Main Header */}
       <header className="bg-white sticky top-0 z-50 shadow-sm border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 relative flex items-center justify-between gap-4 lg:grid lg:grid-cols-3">
 
-          {/* Mobile: Call button (left) | Desktop: Logo (left) */}
-          <div className="flex items-center gap-4">
-            {/* Call CTA — icon only on mobile, full on desktop */}
+          {/* LEFT — Mobile call button (icon) | Desktop logo (far left) */}
+          <div className="flex items-center lg:justify-self-start">
+            {/* Mobile-only call icon button */}
             <a
               href="tel:07759708646"
               aria-label="Call 07759 708 646"
-              className="flex items-center gap-2 bg-[#b70011] hover:bg-red-700 text-white px-3 py-2 rounded-lg font-bold text-sm transition-all active:scale-95 shadow-md shadow-red-200"
+              className="lg:hidden flex items-center gap-2 bg-[#b70011] hover:bg-red-700 text-white px-3 py-2 rounded-lg font-bold text-sm transition-all active:scale-95 shadow-md shadow-red-200"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
               <span
@@ -58,10 +58,9 @@ export default function Header() {
               >
                 phone_in_talk
               </span>
-              <span className="hidden lg:inline">07759 708 646</span>
             </a>
 
-            {/* Logo — hidden on mobile (shown in centre), visible on desktop */}
+            {/* Desktop Logo — far left */}
             <a href="#" className="hidden lg:block shrink-0" aria-label="One Stop Mobile Tyres 24/7 - Home">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -72,7 +71,7 @@ export default function Header() {
             </a>
           </div>
 
-          {/* Mobile: Logo centred absolutely */}
+          {/* CENTER — Mobile: Logo centred | Desktop: Nav centred */}
           <a
             href="#"
             className="lg:hidden absolute left-1/2 -translate-x-1/2 shrink-0"
@@ -86,9 +85,9 @@ export default function Header() {
             />
           </a>
 
-          {/* Desktop Nav */}
+          {/* Desktop Nav — middle column */}
           <nav
-            className="hidden lg:flex items-center gap-7 text-sm font-semibold"
+            className="hidden lg:flex justify-self-center items-center gap-7 text-sm font-semibold"
             style={{ fontFamily: 'var(--font-work-sans)' }}
           >
             {navLinks.map((link) => (
@@ -106,9 +105,25 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Right side — hamburger only on mobile */}
-          <div className="flex items-center gap-2">
-            {/* Hamburger */}
+          {/* RIGHT — Mobile: Hamburger | Desktop: Call button (far right) */}
+          <div className="flex items-center gap-2 lg:justify-self-end">
+            {/* Desktop Call CTA — far right */}
+            <a
+              href="tel:07759708646"
+              aria-label="Call 07759 708 646"
+              className="hidden lg:flex items-center gap-2 bg-[#b70011] hover:bg-red-700 text-white px-4 py-2 rounded-lg font-bold text-sm transition-all active:scale-95 shadow-md shadow-red-200"
+              style={{ fontFamily: 'var(--font-work-sans)' }}
+            >
+              <span
+                className="material-symbols-outlined text-[18px]"
+                style={{ fontVariationSettings: "'FILL' 1" }}
+              >
+                phone_in_talk
+              </span>
+              07759 708 646
+            </a>
+
+            {/* Hamburger — mobile only */}
             <button
               className="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-[5px] rounded-lg hover:bg-slate-100 transition-colors"
               onClick={() => setMobileOpen(!mobileOpen)}

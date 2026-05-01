@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* ─── Brand Token Overrides ─── */
+:root {
+  /* Brand colours */
+  --brand-red: #b70011;
+  --brand-red-dark: #93000a;
+  --brand-blue: #0f172a;
+  --brand-blue-mid: #1e293b;
+
+  /* Surface */
+  --background: #fcf9f8;
+  --foreground: #1c1b1b;
+
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Work Sans', sans-serif;
+
+  /* remap Tailwind semantic tokens to our brand */
+  --color-primary:   var(--brand-red);
+  --color-secondary: var(--brand-blue);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 4px);
+  --radius-xl: calc(var(--radius) + 8px);
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Material Symbols helper */
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  .fill-1 {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+}

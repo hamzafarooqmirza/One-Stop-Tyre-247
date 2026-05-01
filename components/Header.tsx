@@ -153,19 +153,40 @@ export default function Header() {
             ))}
 
             {/* Mobile contact info */}
-            <div className="px-6 py-4 bg-[#0f172a] flex flex-col gap-2 text-[12px] text-white/70">
-              <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-sm text-red-400">call</span>
-                07759 708 646
-              </span>
-              <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-sm">mail</span>
-                info@onestoptyres247.co.uk
-              </span>
-              <span className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-sm">alarm</span>
-                24/7 Emergency Service — Greater Manchester
-              </span>
+            <div className="bg-[#0f172a] divide-y divide-white/10">
+              <a
+                href="tel:07759708646"
+                className="flex items-center gap-3 px-5 py-3.5 hover:bg-white/5 transition-colors"
+              >
+                <div className="w-8 h-8 rounded-full bg-[#b70011]/20 flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-[16px] text-[#b70011]" style={{ fontVariationSettings: "'FILL' 1" }}>phone_in_talk</span>
+                </div>
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-white/40">Call Us</p>
+                  <p className="text-sm font-bold text-white">07759 708 646</p>
+                </div>
+              </a>
+              <a
+                href="mailto:info@onestoptyres247.co.uk"
+                className="flex items-center gap-3 px-5 py-3.5 hover:bg-white/5 transition-colors"
+              >
+                <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-[16px] text-white/60">mail</span>
+                </div>
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-white/40">Email</p>
+                  <p className="text-sm font-medium text-white">info@onestoptyres247.co.uk</p>
+                </div>
+              </a>
+              <div className="flex items-center gap-3 px-5 py-3.5">
+                <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-[16px] text-white/60">schedule</span>
+                </div>
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-white/40">Hours</p>
+                  <p className="text-sm font-medium text-white">24/7 Emergency — Greater Manchester</p>
+                </div>
+              </div>
             </div>
           </nav>
         </div>

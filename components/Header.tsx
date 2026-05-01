@@ -49,7 +49,7 @@ export default function Header() {
             <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One-Stop%20Loog-airanko-Qpv1QvladNLpRhg8X3Hs6SzyydzFMq.webp"
               alt="One Stop Mobile Tyres 24/7"
-              className="h-10 sm:h-12 w-auto"
+              className="h-14 sm:h-14 w-auto"
             />
           </a>
 

@@ -2,82 +2,90 @@
 
 import { useState } from 'react'
 
+const navLinks = [
+  { label: 'Home', href: '#' },
+  { label: 'About Us', href: '#' },
+  { label: 'Services', href: '#' },
+  { label: 'Service Area', href: '#' },
+  { label: 'Contact', href: '#' },
+]
+
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
     <>
-      {/* Top Contact Bar */}
-      <div className="bg-[#0f172a] text-white py-2 px-6 border-b border-white/10">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[13px] font-medium gap-2">
-          <div className="flex items-center gap-4 flex-wrap justify-center">
-            <span className="flex items-center gap-1">
+      {/* Top Contact Bar — hidden on small screens */}
+      <div className="hidden md:block bg-[#0f172a] text-white py-2 px-6 border-b border-white/10">
+        <div className="max-w-7xl mx-auto flex justify-between items-center text-[12px] font-medium">
+          <div className="flex items-center gap-5">
+            <span className="flex items-center gap-1.5">
               <span className="material-symbols-outlined text-sm">mail</span>
               info@onestoptyres247.co.uk
             </span>
-            <span className="flex items-center gap-1">
+            <span className="flex items-center gap-1.5">
               <span className="material-symbols-outlined text-sm">alarm</span>
               24/7 Emergency Service
             </span>
-            <span className="flex items-center gap-1">
+            <span className="flex items-center gap-1.5">
               <span className="material-symbols-outlined text-sm">location_on</span>
               Greater Manchester
             </span>
           </div>
-          <div className="flex items-center gap-1 font-bold text-red-500">
+          <span className="flex items-center gap-1.5 font-bold text-red-400">
             <span className="material-symbols-outlined text-sm">call</span>
             07759 708 646
-          </div>
+          </span>
         </div>
       </div>
 
       {/* Main Header */}
       <header className="bg-white sticky top-0 z-50 shadow-sm border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+
           {/* Logo */}
           <a
             href="#"
-            className="text-2xl font-black text-[#b70011] tracking-tighter uppercase flex items-center gap-2"
+            className="flex items-center gap-2 text-[#b70011] font-black uppercase tracking-tight shrink-0"
             style={{ fontFamily: 'var(--font-work-sans)' }}
           >
-            <span className="material-symbols-outlined text-3xl">tire_repair</span>
-            <span>
-              One Stop Tyres{' '}
-              <span className="text-[#0f172a]">24/7</span>
+            <span className="material-symbols-outlined text-2xl sm:text-3xl">tire_repair</span>
+            <span className="text-base sm:text-xl leading-tight">
+              One Stop Tyres <span className="text-[#0f172a]">24/7</span>
             </span>
           </a>
 
           {/* Desktop Nav */}
           <nav
-            className="hidden lg:flex items-center gap-8 text-sm font-semibold tracking-tight"
+            className="hidden lg:flex items-center gap-7 text-sm font-semibold"
             style={{ fontFamily: 'var(--font-work-sans)' }}
           >
-            <a href="#" className="text-[#b70011] border-b-2 border-[#b70011] pb-1">
-              Home
-            </a>
-            <a href="#" className="text-slate-700 hover:text-[#b70011] transition-colors">
-              About Us
-            </a>
-            <a href="#" className="text-slate-700 hover:text-[#b70011] transition-colors">
-              Services
-            </a>
-            <a href="#" className="text-slate-700 hover:text-[#b70011] transition-colors">
-              Service Area
-            </a>
-            <a href="#" className="text-slate-700 hover:text-[#b70011] transition-colors">
-              Contact
-            </a>
+            {navLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className={
+                  link.label === 'Home'
+                    ? 'text-[#b70011] border-b-2 border-[#b70011] pb-0.5'
+                    : 'text-slate-700 hover:text-[#b70011] transition-colors'
+                }
+              >
+                {link.label}
+              </a>
+            ))}
           </nav>
 
-          {/* CTA */}
-          <div className="flex items-center gap-3">
+          {/* Right side */}
+          <div className="flex items-center gap-2">
+            {/* Call CTA */}
             <a
               href="tel:07759708646"
-              className="bg-[#b70011] hover:bg-red-700 text-white px-6 py-3 rounded-lg font-bold transition-all active:scale-95 flex items-center gap-2 shadow-lg shadow-red-200 text-sm"
+              aria-label="Call 07759 708 646"
+              className="flex items-center gap-2 bg-[#b70011] hover:bg-red-700 text-white px-4 py-2 rounded-lg font-bold text-sm transition-all active:scale-95 shadow-md shadow-red-200"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
               <span
-                className="material-symbols-outlined text-xl"
+                className="material-symbols-outlined text-[18px]"
                 style={{ fontVariationSettings: "'FILL' 1" }}
               >
                 phone_in_talk
@@ -85,32 +93,67 @@ export default function Header() {
               <span className="hidden sm:inline">07759 708 646</span>
             </a>
 
-            {/* Mobile hamburger */}
+            {/* Hamburger */}
             <button
-              className="lg:hidden flex flex-col gap-1.5 p-2"
+              className="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-[5px] rounded-lg hover:bg-slate-100 transition-colors"
               onClick={() => setMobileOpen(!mobileOpen)}
-              aria-label="Toggle menu"
+              aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={mobileOpen}
             >
-              <span className="w-6 h-0.5 bg-slate-700 block" />
-              <span className="w-6 h-0.5 bg-slate-700 block" />
-              <span className="w-6 h-0.5 bg-slate-700 block" />
+              <span
+                className={`w-5 h-0.5 bg-slate-700 block transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-[7px]' : ''}`}
+              />
+              <span
+                className={`w-5 h-0.5 bg-slate-700 block transition-all duration-300 ${mobileOpen ? 'opacity-0' : ''}`}
+              />
+              <span
+                className={`w-5 h-0.5 bg-slate-700 block transition-all duration-300 ${mobileOpen ? '-rotate-45 -translate-y-[7px]' : ''}`}
+              />
             </button>
           </div>
         </div>
 
-        {/* Mobile Nav */}
-        {mobileOpen && (
+        {/* Mobile Nav Drawer */}
+        <div
+          className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${mobileOpen ? 'max-h-96' : 'max-h-0'}`}
+        >
           <nav
-            className="lg:hidden px-6 py-4 border-t border-slate-100 flex flex-col gap-4 text-sm font-semibold bg-white"
+            className="flex flex-col border-t border-slate-100 bg-white"
             style={{ fontFamily: 'var(--font-work-sans)' }}
           >
-            <a href="#" className="text-[#b70011]">Home</a>
-            <a href="#" className="text-slate-700 hover:text-[#b70011]">About Us</a>
-            <a href="#" className="text-slate-700 hover:text-[#b70011]">Services</a>
-            <a href="#" className="text-slate-700 hover:text-[#b70011]">Service Area</a>
-            <a href="#" className="text-slate-700 hover:text-[#b70011]">Contact</a>
+            {navLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={() => setMobileOpen(false)}
+                className={`px-6 py-4 text-sm font-semibold border-b border-slate-50 flex items-center justify-between ${
+                  link.label === 'Home'
+                    ? 'text-[#b70011] bg-red-50'
+                    : 'text-slate-700 hover:text-[#b70011] hover:bg-slate-50'
+                } transition-colors`}
+              >
+                {link.label}
+                <span className="material-symbols-outlined text-base text-slate-400">chevron_right</span>
+              </a>
+            ))}
+
+            {/* Mobile contact info */}
+            <div className="px-6 py-4 bg-[#0f172a] flex flex-col gap-2 text-[12px] text-white/70">
+              <span className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-sm text-red-400">call</span>
+                07759 708 646
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-sm">mail</span>
+                info@onestoptyres247.co.uk
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-sm">alarm</span>
+                24/7 Emergency Service — Greater Manchester
+              </span>
+            </div>
           </nav>
-        )}
+        </div>
       </header>
     </>
   )

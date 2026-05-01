@@ -51,12 +51,12 @@ export default function Header() {
 
       {/* Main Header */}
       <header className="bg-white sticky top-0 z-50 shadow-sm border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 relative flex items-center lg:grid lg:grid-cols-3 lg:gap-4">
 
-          {/* Logo — far left on desktop, centred absolutely on mobile */}
+          {/* Logo — far left on desktop */}
           <a
             href="#"
-            className="shrink-0 lg:block hidden"
+            className="hidden lg:flex justify-self-start shrink-0"
             aria-label="One Stop Mobile Tyres 24/7 - Home"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -81,9 +81,9 @@ export default function Header() {
             />
           </a>
 
-          {/* Desktop Nav — centred */}
+          {/* Desktop Nav — middle column, perfectly centred */}
           <nav
-            className="hidden lg:flex items-center gap-7 text-sm font-semibold absolute left-1/2 -translate-x-1/2"
+            className="hidden lg:flex justify-self-center items-center gap-7 text-sm font-semibold"
             style={{ fontFamily: 'var(--font-work-sans)' }}
           >
             {navLinks.map((link) => (
@@ -101,8 +101,8 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Right side */}
-          <div className="flex items-center gap-3 ml-auto lg:ml-0">
+          {/* Right side — far right on desktop */}
+          <div className="flex items-center gap-3 ml-auto lg:ml-0 lg:justify-self-end">
             {/* Call CTA — desktop */}
             <a
               href="tel:07759708646"

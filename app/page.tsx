@@ -163,28 +163,40 @@ export default function Home() {
           </div>
 
           {/* Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                icon: 'local_shipping',
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp',
                 title: 'Mobile Tyre Fitting',
                 desc: 'Emergency replacement at your location within 30-60 minutes.',
                 badge: 'FROM £45',
               },
               {
-                icon: 'home',
-                title: 'Home Fitting',
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting-airanko-NAQrFhRm9UilkOOWhZBEd5lhxc7eEz.webp',
+                title: 'Home Tyre Fitting',
                 desc: 'Convenient tyre replacement on your driveway while you work or relax.',
                 badge: 'NO CALLOUT FEE',
               },
               {
-                icon: 'build',
-                title: 'Puncture Repair',
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emeregency%20Puncture%20Repair-airanko-K3cI9fjWlcirkZkEwDEvdtRtKQg3B7.webp',
+                title: 'Emergency Puncture Repair',
                 desc: 'Professional plug and patch repair to save your tyre when possible.',
                 badge: 'BS AU 159',
               },
               {
-                icon: 'key_off',
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Jumpstart-onestop-airanko-bUQeSwSrfEEeS2vgU2IuyrDFFak87m.webp',
+                title: 'JumpStart',
+                desc: 'Fast battery jump-start service to get your vehicle running again without delay.',
+                badge: '24/7 SERVICE',
+              },
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TPMS%20Reset-airanko-LEqPbQFsdbmM1ZLc5m0aoAUKGG4haJ.webp',
+                title: 'TPMS Reset',
+                desc: 'Tyre pressure monitoring system reset after every tyre change or repair.',
+                badge: 'ALL VEHICLES',
+              },
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20Nut%20Removal-airanko-MV4iwDQaMKuuoUnbMrRrQW5QIDJQbV.webp',
                 title: 'Locking Nut Removal',
                 desc: 'Specialist damage-free removal of lost or broken locking wheel nuts.',
                 badge: 'DAMAGE FREE',
@@ -192,23 +204,35 @@ export default function Home() {
             ].map((card) => (
               <div
                 key={card.title}
-                className="group bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border-b-4 border-[#b70011]"
+                className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
               >
-                <div className="w-16 h-16 bg-slate-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#b70011] group-hover:text-white transition-colors">
-                  <span className="material-symbols-outlined text-4xl">{card.icon}</span>
-                </div>
-                <h3
-                  className="text-xl font-semibold mb-3"
-                  style={{ fontFamily: 'var(--font-work-sans)' }}
-                >
-                  {card.title}
-                </h3>
-                <p className="text-slate-600 text-sm leading-relaxed mb-4">{card.desc}</p>
-                <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
-                  <span className="text-xs font-bold text-[#b70011]">{card.badge}</span>
-                  <span className="material-symbols-outlined text-slate-400 group-hover:translate-x-1 transition-transform">
-                    arrow_forward
+                {/* Image */}
+                <div className="relative h-52 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={card.img}
+                    alt={card.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">
+                    {card.badge}
                   </span>
+                </div>
+                {/* Body */}
+                <div className="p-6">
+                  <h3
+                    className="text-lg font-semibold mb-2 text-[#0f172a]"
+                    style={{ fontFamily: 'var(--font-work-sans)' }}
+                  >
+                    {card.title}
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">{card.desc}</p>
+                  <div className="flex items-center justify-end">
+                    <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
+                      arrow_forward
+                    </span>
+                  </div>
                 </div>
               </div>
             ))}

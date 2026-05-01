@@ -68,6 +68,11 @@ export default function Home() {
             className="w-full h-full object-cover object-center"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkBG0IJpjzs6EM4TcrUQ9-IgBuRIkBVo4K4Lg_QKXWzno2bUx-whraVhCQ5t6JSKjnlUORG5H6CRTNO6qYSFJiCAa3y-BS3r25dIuJaOSP_NftKPP1QAI4vKpA4a7wxlTA3Wr9UdRUyNkmcfEOVwoaIcwfFgUCB0GfcitYmd18gDVZIcKNJdm9FONQY8_0603sMLSECmHs4VhpGOveTt3zFUwX3vh_OT3kO9gJ_ZW2aO9zmEyELgFYFRJqaHNUuRzlsYp7R2z5Ouc"
             alt="Emergency mobile tyre fitting van in Manchester"
+            width={1200}
+            height={800}
+            // @ts-expect-error fetchpriority is valid HTML but not yet in React types
+            fetchpriority="high"
+            decoding="async"
           />
           {/* Overlay: strong dark on mobile for legibility, fade from left on desktop */}
           <div className="absolute inset-0 bg-[#0f172a]/75 lg:bg-gradient-to-r lg:from-[#0f172a] lg:via-[#0f172a]/30 lg:to-transparent" />
@@ -213,6 +218,10 @@ export default function Home() {
                     src={card.img}
                     alt={card.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    width={600}
+                    height={400}
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                   <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">
@@ -266,6 +275,10 @@ export default function Home() {
               className="relative z-10 rounded-2xl sm:rounded-3xl shadow-2xl border-4 sm:border-8 border-slate-50 w-full object-cover"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWrU29eU8IJezmfmnrskc3wJDaLWg_9f-9oulrYPvvMLrAtPIbD7MfljbG2nb4GtGVpm4Xd2xH9iOhv4ft0CmSx6OUFyoqz9fcN1GG4JKzJDDXCcomeefkmfZVUtTcytILQDHwXHb25A0IUEqXBLS7SQnna9qTKeitWyokBom48GllVdlW95s0NinEvX4eb7-L3pxPJb89dLW99ya18kgAin3kOmZcBLDK5AkCq55nsg1l3Jfgfv4TcsOdl-MCI8RArS2GV-90g3g"
               alt="Technician changing a tyre professionally"
+              width={800}
+              height={600}
+              loading="lazy"
+              decoding="async"
             />
             {/* Floating badge */}
             <div className="absolute bottom-2 right-2 sm:-bottom-2 sm:-right-2 bg-[#0f172a] p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-2xl z-20 max-w-[160px] sm:max-w-[200px]">
@@ -599,6 +612,7 @@ export default function Home() {
           scrolling="no"
           title="Service area map"
           aria-label="Google map showing Oldham, Manchester service area"
+          loading="lazy"
         />
         <div className="absolute top-4 left-4 sm:top-10 sm:left-10 z-10">
           <div className="bg-white p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-2xl border border-slate-100 max-w-[200px] sm:max-w-xs">

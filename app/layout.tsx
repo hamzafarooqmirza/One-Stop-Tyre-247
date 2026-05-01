@@ -28,10 +28,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${workSans.variable} ${inter.variable} bg-[#fcf9f8]`}>
       <head>
+        {/* Preload the hero image — tells the browser to fetch it as early as possible */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero-tyre-fitting.webp"
+          type="image/webp"
+        />
         {/* Preconnect to third-party origins to eliminate DNS + TLS latency */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://lh3.googleusercontent.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://maps.google.com" />
 

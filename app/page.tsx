@@ -169,13 +169,13 @@ export default function Home() {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp',
                 title: 'Mobile Tyre Fitting',
                 desc: 'Emergency replacement at your location within 30-60 minutes.',
-                badge: 'FROM £45',
+                badge: 'FAST RESPONSE',
               },
               {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting-airanko-NAQrFhRm9UilkOOWhZBEd5lhxc7eEz.webp',
                 title: 'Home Tyre Fitting',
                 desc: 'Convenient tyre replacement on your driveway while you work or relax.',
-                badge: 'NO CALLOUT FEE',
+                badge: 'AT YOUR DOOR',
               },
               {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emeregency%20Puncture%20Repair-airanko-K3cI9fjWlcirkZkEwDEvdtRtKQg3B7.webp',

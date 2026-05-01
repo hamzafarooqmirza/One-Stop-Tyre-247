@@ -41,7 +41,7 @@ export default function Header() {
 
       {/* Main Header */}
       <header className="bg-white sticky top-0 z-50 shadow-sm border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 relative flex items-center justify-between gap-4 lg:grid lg:grid-cols-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 lg:h-20 relative flex items-center justify-between gap-4 lg:grid lg:grid-cols-[auto_1fr_auto] lg:gap-8">
 
           {/* LEFT — Mobile call button (icon) | Desktop logo (far left) */}
           <div className="flex items-center lg:justify-self-start">
@@ -66,7 +66,7 @@ export default function Header() {
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One-Stop%20Loog-airanko-Qpv1QvladNLpRhg8X3Hs6SzyydzFMq.webp"
                 alt="One Stop Mobile Tyres 24/7"
-                className="h-12 w-auto"
+                className="h-16 w-auto"
               />
             </a>
           </div>
@@ -87,7 +87,7 @@ export default function Header() {
 
           {/* Desktop Nav — middle column */}
           <nav
-            className="hidden lg:flex justify-self-center items-center gap-7 text-sm font-semibold"
+            className="hidden lg:flex justify-self-center items-center gap-7 text-sm font-semibold whitespace-nowrap"
             style={{ fontFamily: 'var(--font-work-sans)' }}
           >
             {navLinks.map((link) => (
@@ -96,8 +96,8 @@ export default function Header() {
                 href={link.href}
                 className={
                   link.label === 'Home'
-                    ? 'text-[#b70011] border-b-2 border-[#b70011] pb-0.5'
-                    : 'text-slate-700 hover:text-[#b70011] transition-colors'
+                    ? 'text-[#b70011] border-b-2 border-[#b70011] pb-0.5 whitespace-nowrap'
+                    : 'text-slate-700 hover:text-[#b70011] transition-colors whitespace-nowrap'
                 }
               >
                 {link.label}

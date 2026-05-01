@@ -67,6 +67,10 @@ export default function Header() {
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One-Stop%20Loog-airanko-Qpv1QvladNLpRhg8X3Hs6SzyydzFMq.webp"
                 alt="One Stop Mobile Tyres 24/7"
                 className="h-16 w-auto"
+                width={200}
+                height={64}
+                loading="eager"
+                decoding="async"
               />
             </a>
           </div>
@@ -82,6 +86,10 @@ export default function Header() {
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One-Stop%20Loog-airanko-Qpv1QvladNLpRhg8X3Hs6SzyydzFMq.webp"
               alt="One Stop Mobile Tyres 24/7"
               className="h-14 w-auto"
+              width={200}
+              height={56}
+              loading="eager"
+              decoding="async"
             />
           </a>
 

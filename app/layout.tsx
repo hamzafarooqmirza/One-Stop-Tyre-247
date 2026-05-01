@@ -27,11 +27,33 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${workSans.variable} ${inter.variable} bg-[#fcf9f8]`}>
       <head>
-        {/* Material Symbols */}
+        {/* Preconnect to third-party origins to eliminate DNS + TLS latency */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://lh3.googleusercontent.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://maps.google.com" />
+
+        {/* Material Symbols — non-blocking load to eliminate render-blocking */}
         <link
+          rel="preload"
+          as="style"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
-          rel="stylesheet"
         />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link
+          rel="stylesheet"
+          media="print"
+          // @ts-expect-error onload is valid for font-swapping technique
+          onLoad="this.media='all'"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+        />
+        <noscript>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+          />
+        </noscript>
       </head>
       <body className="antialiased overflow-x-hidden">{children}</body>
     </html>

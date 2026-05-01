@@ -23,11 +23,34 @@ export const metadata: Metadata = {
     'Stranded with a puncture? Our professional technicians reach you fast at home, work, or roadside across Greater Manchester. 24/7 emergency mobile tyre fitting from £45.',
   keywords: 'mobile tyre fitting, emergency tyre Manchester, puncture repair, 24/7 tyres',
   icons: {
-    icon: [
-      { url: '/icon.webp', type: 'image/webp' },
-    ],
+    icon: [{ url: '/icon.webp', type: 'image/webp' }],
     apple: '/icon.webp',
     shortcut: '/icon.webp',
+  },
+  openGraph: {
+    title: 'One Stop Tyres 24/7 | Emergency Mobile Tyre Fitting Manchester',
+    description:
+      'Stranded with a puncture? Our professional technicians reach you fast at home, work, or roadside across Greater Manchester. 24/7 emergency mobile tyre fitting from £45.',
+    url: 'https://onestoptyres247.co.uk',
+    siteName: 'One Stop Mobile Tyres 24/7',
+    images: [
+      {
+        url: '/og-image.webp',
+        width: 1200,
+        height: 630,
+        alt: '24/7 Mobile Tyre Fitting across Manchester & Greater Manchester — One Stop Mobile Tyres',
+        type: 'image/webp',
+      },
+    ],
+    locale: 'en_GB',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'One Stop Tyres 24/7 | Emergency Mobile Tyre Fitting Manchester',
+    description:
+      'Stranded with a puncture? Our professional technicians reach you fast at home, work, or roadside across Greater Manchester. 24/7 emergency mobile tyre fitting from £45.',
+    images: ['/og-image.webp'],
   },
 }
 

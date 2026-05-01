@@ -11,10 +11,12 @@ export async function POST(request: NextRequest) {
     }
 
     const blob = await put(file.name, file, {
-      access: 'public',
+      access: 'private',
     })
 
-    return NextResponse.json({ url: blob.url })
+    // Return pathname — private blobs cannot be accessed via blob.url directly.
+    // Use /api/file?pathname=... to serve files to the browser.
+    return NextResponse.json({ pathname: blob.pathname })
   } catch (error) {
     console.error('Upload error:', error)
     return NextResponse.json({ error: 'Upload failed' }, { status: 500 })

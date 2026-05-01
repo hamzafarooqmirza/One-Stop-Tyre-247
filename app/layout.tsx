@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Work_Sans, Inter } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 
 const workSans = Work_Sans({
@@ -34,28 +35,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://maps.google.com" />
 
-        {/* Material Symbols — non-blocking load to eliminate render-blocking */}
-        <link
-          rel="preload"
-          as="style"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
-        />
-        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-        <link
-          rel="stylesheet"
-          media="print"
-          // @ts-expect-error onload is valid for font-swapping technique
-          onLoad="this.media='all'"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
-        />
-        <noscript>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
-          />
-        </noscript>
       </head>
-      <body className="antialiased overflow-x-hidden">{children}</body>
+      <body className="antialiased overflow-x-hidden">
+        {children}
+        {/* Material Symbols — loaded after page is interactive so it never blocks rendering */}
+        <Script
+          id="material-symbols"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap';
+                document.head.appendChild(link);
+              })();
+            `,
+          }}
+        />
+      </body>
     </html>
   )
 }

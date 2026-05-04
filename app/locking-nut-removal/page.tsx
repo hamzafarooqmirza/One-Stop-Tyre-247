@@ -1,7 +1,4 @@
 import type { Metadata } from 'next'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-
 export const metadata: Metadata = {
   title: 'Locking Nut Removal | One Stop Tyres 24/7',
   description:
@@ -11,8 +8,6 @@ export const metadata: Metadata = {
 export default function LockingNutRemovalPage() {
   return (
     <div className="bg-background text-on-background font-body-md overflow-x-hidden">
-      <Header />
-
       {/* Hero Section */}
       <section className="relative bg-slate-900 text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -264,8 +259,6 @@ export default function LockingNutRemovalPage() {
           </a>
         </div>
       </section>
-
-      <Footer />
 
       {/* FAB */}
       <a

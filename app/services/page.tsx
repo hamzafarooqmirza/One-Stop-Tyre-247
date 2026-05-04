@@ -1,7 +1,4 @@
 import type { Metadata } from 'next'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-
 export const metadata: Metadata = {
   title: 'Our Expert Mobile Services | One Stop Tyres 24/7',
   description:
@@ -62,8 +59,6 @@ const services = [
 export default function ServicesPage() {
   return (
     <div className="bg-surface font-body-md text-on-background antialiased">
-      <Header />
-
       {/* Hero Section */}
       <section className="relative h-[614px] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-secondary/80 mix-blend-multiply z-10" />
@@ -219,8 +214,6 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
 
       {/* Mobile bottom nav */}
       <nav className="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-white border-t border-gray-100 shadow-[0_-4px_20px_rgba(0,45,98,0.05)] rounded-t-2xl">

@@ -1,7 +1,4 @@
 import type { Metadata } from 'next'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-
 export const metadata: Metadata = {
   title: 'Emergency Puncture Repair | One Stop Tyres 24/7',
   description:
@@ -11,8 +8,6 @@ export const metadata: Metadata = {
 export default function EmergencyPunctureRepairPage() {
   return (
     <div className="bg-background text-on-background font-body-md overflow-x-hidden">
-      <Header />
-
       {/* Hero Section */}
       <section
         className="relative min-h-[716px] flex items-center py-xl"
@@ -266,8 +261,6 @@ export default function EmergencyPunctureRepairPage() {
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_white,_transparent)]" />
         </div>
       </section>
-
-      <Footer />
 
       {/* Urgent FAB */}
       <a

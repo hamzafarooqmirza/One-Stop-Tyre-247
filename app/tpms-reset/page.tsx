@@ -1,7 +1,4 @@
 import type { Metadata } from 'next'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-
 export const metadata: Metadata = {
   title: 'TPMS Reset | One Stop Tyres 24/7',
   description:
@@ -11,8 +8,6 @@ export const metadata: Metadata = {
 export default function TpmsResetPage() {
   return (
     <div className="bg-background text-on-background font-body-md overflow-x-hidden">
-      <Header />
-
       {/* Hero Section */}
       <section className="relative min-h-[716px] flex items-center bg-slate-900 text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -248,8 +243,6 @@ export default function TpmsResetPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
 
       {/* Persistent Mobile FAB */}
       <div className="md:hidden fixed bottom-6 right-6 z-[60]">

@@ -1,7 +1,4 @@
 import type { Metadata } from 'next'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-
 export const metadata: Metadata = {
   title: 'Home Tyre Fitting | One Stop Tyres 24/7',
   description:
@@ -11,8 +8,6 @@ export const metadata: Metadata = {
 export default function HomeTyreFittingPage() {
   return (
     <div className="bg-surface text-on-surface font-body-md">
-      <Header />
-
       {/* 1. Hero Section */}
       <section className="relative bg-slate-900 text-white overflow-hidden py-xl md:py-32">
         <div className="absolute inset-0 opacity-40">
@@ -235,8 +230,6 @@ export default function HomeTyreFittingPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
 
       {/* FAB */}
       <a

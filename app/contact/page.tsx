@@ -1,9 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-
 export default function ContactPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0)
 
@@ -28,7 +25,6 @@ export default function ContactPage() {
 
   return (
     <>
-      <Header />
       <main className="bg-[#fcf9f8] text-[#1c1b1b]" style={{ fontFamily: 'Inter, sans-serif' }}>
 
         {/* HERO */}
@@ -467,7 +463,6 @@ export default function ContactPage() {
           </span>
         </a>
       </main>
-      <Footer />
     </>
   )
 }

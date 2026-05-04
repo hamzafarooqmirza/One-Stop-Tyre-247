@@ -73,7 +73,7 @@ export default function EmergencyPunctureRepairPage() {
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-white p-6 shadow-xl rounded-xl hidden md:block">
-              <p className="text-primary font-bold text-h3">30-60 Min</p>
+              <p className="text-primary font-bold text-h3">20-30 Min</p>
               <p className="text-slate-600 text-sm">Average Arrival Time</p>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function EmergencyPunctureRepairPage() {
             <div className="md:col-span-3 bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
               <span className="material-symbols-outlined text-primary text-4xl mb-4 block">airport_shuttle</span>
               <h3 className="font-h3 text-h3 mb-2">Fast Response</h3>
-              <p className="text-slate-600">Rapid dispatch system ensures a technician reaches your location within 30-60 minutes nationwide.</p>
+              <p className="text-slate-600">Rapid dispatch system ensures a technician reaches your location within 20-30 minutes nationwide.</p>
             </div>
             <div className="md:col-span-2 bg-on-secondary-fixed text-white p-8 rounded-2xl shadow-sm">
               <span className="material-symbols-outlined text-tertiary-fixed-dim text-4xl mb-4 block">engineering</span>

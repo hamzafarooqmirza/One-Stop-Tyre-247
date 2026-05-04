@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Mobile Tyre Fitting Bury | One Stop Tyres 24/7 | Emergency Roadside Assistance',
-  description: 'Stranded in Bury? Our rapid-response mobile tyre units cover every corner of Bury 24 hours a day. 30-60 min arrival on M66, A56 and all surrounding areas.',
+  description: 'Stranded in Bury? Our rapid-response mobile tyre units cover every corner of Bury 24 hours a day. 20-30 min arrival on M66, A56 and all surrounding areas.',
 }
 
 export default function BuryPage() {
@@ -49,7 +49,7 @@ export default function BuryPage() {
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 bg-[#dc2626] text-white px-4 py-2 rounded-full mb-6 text-sm font-bold">
                 <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>emergency_home</span>
-                URGENT ASSISTANCE: 30-60 MIN ARRIVAL IN BURY
+                URGENT ASSISTANCE: 20-30 MIN ARRIVAL IN BURY
               </div>
               <h1 className="work-sans text-4xl md:text-5xl font-bold text-white mb-6 leading-tight" style={{ letterSpacing: '-0.02em' }}>
                 Mobile Tyre Fitting <span className="text-[#dc2626]">Bury</span> – 24/7 Emergency Support
@@ -88,7 +88,7 @@ export default function BuryPage() {
                 <div className="flex flex-wrap gap-3 mb-8">
                   <span className="bg-blue-50 text-[#001e2e] px-3 py-1 rounded-full text-xs font-bold">M66 Specialists</span>
                   <span className="bg-blue-50 text-[#001e2e] px-3 py-1 rounded-full text-xs font-bold">All Major Brands</span>
-                  <span className="bg-blue-50 text-[#001e2e] px-3 py-1 rounded-full text-xs font-bold">30-60 Min Wait</span>
+                  <span className="bg-blue-50 text-[#001e2e] px-3 py-1 rounded-full text-xs font-bold">20-30 Min Wait</span>
                 </div>
               </div>
               <div className="text-right">

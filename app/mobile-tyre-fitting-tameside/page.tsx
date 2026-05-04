@@ -41,7 +41,7 @@ export default function TamesidePage() {
             <span className="text-label-bold">EMERGENCY TYRE FITTING TAMESIDE</span>
           </div>
           <h1 className="font-h1 text-h1 text-white mb-6">Mobile Tyre Fitting Tameside: 24/7 Roadside Response</h1>
-          <p className="font-body-lg text-body-lg text-white/90 mb-8 max-w-2xl mx-auto">Don&apos;t let a puncture ruin your journey through Ashton, Stalybridge, or Hyde. Our Tameside mobile tyre units arrive within 30-60 minutes to get you moving again.</p>
+          <p className="font-body-lg text-body-lg text-white/90 mb-8 max-w-2xl mx-auto">Don&apos;t let a puncture ruin your journey through Ashton, Stalybridge, or Hyde. Our Tameside mobile tyre units arrive within 20-30 minutes to get you moving again.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a className="bg-[#dc2626] text-white font-call-to-action py-4 px-10 rounded-lg flex items-center justify-center gap-3 shadow-lg hover:bg-[#b70011] transition-colors" href="tel:0800000000">
               <span className="material-symbols-outlined">phone_in_talk</span>
@@ -63,7 +63,7 @@ export default function TamesidePage() {
           </div>
           <div className="flex items-center gap-2">
             <span className="material-symbols-outlined text-[#c8e6ff]">timer</span>
-            <span className="text-label-bold">30-60 Min Arrival Time</span>
+            <span className="text-label-bold">20-30 Min Arrival Time</span>
           </div>
           <div className="flex items-center gap-2">
             <span className="material-symbols-outlined text-[#c8e6ff]">payments</span>

@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Mobile Tyre Fitting Oldham | 24/7 Emergency Service | One Stop Tyres 24/7',
-  description: 'Fast and reliable mobile tyre fitting service available 24/7 in Oldham and surrounding areas. 30-60 min arrival in Chadderton, Failsworth, Royton, Shaw and more.',
+  description: 'Fast and reliable mobile tyre fitting service available 24/7 in Oldham and surrounding areas. 20-30 min arrival in Chadderton, Failsworth, Royton, Shaw and more.',
 }
 
 export default function OldhamPage() {
@@ -70,7 +70,7 @@ export default function OldhamPage() {
             <div>
               <h2 className="work-sans text-3xl font-bold mb-6 text-[#1c1b1b]">Mobile Tyre Fitting Services in Oldham</h2>
               <div className="space-y-4 text-[#5c403c] leading-relaxed">
-                <p>When you&apos;re stuck with a puncture or a blown tyre, you need a service that responds with high urgency. One Stop Tyres 24/7 provides premier local Oldham coverage, ensuring our technicians reach you within 30-60 minutes regardless of your location in the borough.</p>
+                <p>When you&apos;re stuck with a puncture or a blown tyre, you need a service that responds with high urgency. One Stop Tyres 24/7 provides premier local Oldham coverage, ensuring our technicians reach you within 20-30 minutes regardless of your location in the borough.</p>
                 <p>Our rapid arrival times cover everything from Chadderton and Failsworth to Royton and Shaw. We pride ourselves on institutional trust and grit, delivering high-end roadside solutions to keep Oldham moving.</p>
               </div>
               <div className="mt-8 flex gap-6">
@@ -80,7 +80,7 @@ export default function OldhamPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="material-symbols-outlined text-[#b70011]">schedule</span>
-                  <span className="font-bold text-sm">30-60 Min Arrival</span>
+                  <span className="font-bold text-sm">20-30 Min Arrival</span>
                 </div>
               </div>
             </div>

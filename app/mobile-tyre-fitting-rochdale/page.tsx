@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Mobile Tyre Fitting Rochdale | 24/7 Emergency Service | One Stop Tyres 24/7',
-  description: 'Fast 24/7 mobile tyre fitting in Rochdale. Emergency roadside assistance for M62, Town Centre, and Littleborough. 30-60 min arrival. Call One Stop Tyres 24/7 now.',
+  description: 'Fast 24/7 mobile tyre fitting in Rochdale. Emergency roadside assistance for M62, Town Centre, and Littleborough. 20-30 min arrival. Call One Stop Tyres 24/7 now.',
 }
 
 export default function RochdalePage() {
@@ -42,7 +42,7 @@ export default function RochdalePage() {
           <div className="max-w-2xl">
             <div className="inline-block bg-[#dc2626] text-white px-4 py-1 rounded-full mb-6 font-label-bold text-sm tracking-widest uppercase">Emergency Service Available</div>
             <h1 className="font-h1 text-white mb-6 leading-tight">24/7 Mobile Tyre Fitting in Rochdale</h1>
-            <p className="font-body-lg text-slate-100 mb-8 max-w-xl">Stranded with a flat tyre? Whether you&apos;re on the M62, in Rochdale Town Centre, or parked at Hollingworth Lake, our expert technicians arrive within 30-60 minutes to get you moving again.</p>
+            <p className="font-body-lg text-slate-100 mb-8 max-w-xl">Stranded with a flat tyre? Whether you&apos;re on the M62, in Rochdale Town Centre, or parked at Hollingworth Lake, our expert technicians arrive within 20-30 minutes to get you moving again.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a className="bg-[#dc2626] hover:bg-[#b70011] transition-colors text-white font-call-to-action py-4 px-8 rounded-lg flex items-center justify-center gap-3 shadow-lg" href="tel:0800123456">
                 <span className="material-symbols-outlined text-2xl">phone_in_talk</span>
@@ -55,7 +55,7 @@ export default function RochdalePage() {
             <div className="mt-8 flex items-center gap-6">
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-[#c8e6ff]">timer</span>
-                <span className="font-label-bold">30-60 Min Arrival</span>
+                <span className="font-label-bold">20-30 Min Arrival</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-[#c8e6ff]">verified</span>
@@ -207,7 +207,7 @@ export default function RochdalePage() {
                 <div className="w-10 h-10 rounded-full border-2 border-[#ffdad6] flex items-center justify-center font-bold">3</div>
                 <div>
                   <div className="font-label-bold text-lg mb-1">Technician Dispatched</div>
-                  <p className="text-[#ffdad6]">Our mobile van arrives and fits your tyre in 30-60 mins.</p>
+                  <p className="text-[#ffdad6]">Our mobile van arrives and fits your tyre in 20-30 mins.</p>
                 </div>
               </div>
             </div>

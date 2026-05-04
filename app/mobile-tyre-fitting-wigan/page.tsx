@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Mobile Tyre Fitting Wigan | Emergency Roadside Assistance | One Stop Tyres 24/7',
-  description: 'Stranded on the A49 or M6? Expert mobile technicians provide 24/7 rapid roadside tyre replacement and puncture repair throughout Wigan. 30-60 min arrival.',
+  description: 'Stranded on the A49 or M6? Expert mobile technicians provide 24/7 rapid roadside tyre replacement and puncture repair throughout Wigan. 20-30 min arrival.',
 }
 
 export default function WiganPage() {
@@ -47,7 +47,7 @@ export default function WiganPage() {
             <div>
               <div className="inline-flex items-center bg-[#dc2626] text-white px-4 py-2 rounded-full mb-6 text-sm font-bold gap-2">
                 <span className="material-symbols-outlined text-sm">bolt</span>
-                30-60 MINUTE ARRIVAL IN WIGAN
+                20-30 MINUTE ARRIVAL IN WIGAN
               </div>
               <h1 className="work-sans text-4xl md:text-5xl font-bold mb-6 leading-tight">Emergency Mobile Tyre Fitting in Wigan</h1>
               <p className="text-lg mb-8 opacity-90 leading-relaxed">Stranded on the A49 or M6? Our expert mobile technicians provide 24/7 rapid roadside tyre replacement and puncture repair throughout Wigan and the surrounding Greater Manchester area.</p>

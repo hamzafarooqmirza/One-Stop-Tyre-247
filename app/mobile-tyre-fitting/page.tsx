@@ -51,7 +51,7 @@ export default function MobileTyreFittingPage() {
               <div className="bg-primary p-xs rounded-full">
                 <span className="material-symbols-outlined text-white fill-1">timer</span>
               </div>
-              <span className="text-white font-label-bold">30-60 Min Response Nationwide</span>
+              <span className="text-white font-label-bold">20-30 Min Response Nationwide</span>
             </div>
           </div>
         </div>

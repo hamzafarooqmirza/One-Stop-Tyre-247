@@ -66,7 +66,7 @@ export default function ManchesterPage() {
                   </div>
                   <div>
                     <div className="text-label-bold text-white/70">Estimated Arrival</div>
-                    <div className="text-h3 font-h3 text-white">30-60 Minutes</div>
+                    <div className="text-h3 font-h3 text-white">20-30 Minutes</div>
                   </div>
                 </div>
                 <div className="space-y-sm">

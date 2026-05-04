@@ -157,7 +157,7 @@ export default function ContactPage() {
                       >
                         Nationwide UK
                       </p>
-                      <p className="text-sm text-[#5c403c]">Strategic locations for 30-60m response</p>
+                      <p className="text-sm text-[#5c403c]">Strategic locations for 20-30m response</p>
                     </div>
                   </div>
                 </div>
@@ -325,7 +325,7 @@ export default function ContactPage() {
                 Need Immediate Assistance?
               </h2>
               <p className="text-[#2d4e85]/80" style={{ fontSize: '18px', lineHeight: '1.6' }}>
-                Call us now for fast response and emergency support. Our average response time is 30-60
+                Call us now for fast response and emergency support. Our average response time is 20-30
                 minutes.
               </p>
             </div>
@@ -371,7 +371,7 @@ export default function ContactPage() {
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
               { icon: 'emergency_home', title: '24/7 Support', desc: 'Around the clock emergency support, 365 days a year.' },
-              { icon: 'speed', title: 'Fast Response', desc: 'Rapid nationwide coverage with 30-60 min arrival times.' },
+              { icon: 'speed', title: 'Fast Response', desc: 'Rapid nationwide coverage with 20-30 min arrival times.' },
               { icon: 'engineering', title: 'Professional', desc: 'Expert technicians equipped with modern diagnostic tools.' },
               { icon: 'verified', title: 'Reliable', desc: 'Consistent, high-quality service you can trust every time.' },
             ].map((item) => (

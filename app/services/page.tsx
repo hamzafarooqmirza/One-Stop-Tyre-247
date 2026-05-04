@@ -1,155 +1,220 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Our Services | One Stop Tyres 24/7',
+  title: 'Our Expert Mobile Services | One Stop Tyres 24/7',
   description:
-    'Explore all mobile tyre and roadside assistance services from One Stop Tyres 24/7 — available nationwide, around the clock.',
+    'Professional 24/7 roadside assistance across the UK. Mobile tyre fitting, jump starts, puncture repair, TPMS reset & more — we bring the garage to you.',
 }
 
 const services = [
   {
     href: '/mobile-tyre-fitting',
-    img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCElGeNknzc8tbZCtwXI6ShEouRpz5AJNdTuPAfhj3Iug5GwouWvmzE1C6aM66i4WdGax_dcTkOiaqi37yWVuhbfAI9W5tM6M6Rh5iV2Ri0JvwL4kKrd35wNxBNMiNpn1rbBVOMhm8SQ0QdpyxD2cUsmBxP3lW2ZpHTuhoZO8v3jKV6khvNCisX0gIB_EqS7GSHhDnUjjKyg0mvDRUVs3zrIdz32f6Nz-qq-FonAXxmLQLatjW4oE-lHHKz3KzelIzRJTMiMvIAyPw',
     title: 'Mobile Tyre Fitting',
-    desc: 'Emergency tyre replacement at your exact location within 30–60 minutes, day or night.',
-    badge: 'FAST RESPONSE',
+    desc: 'Expert tyre fitting at your location, whether you\'re at work or stuck on the roadside. We handle all vehicle types and tyre brands.',
+    badge: 'From £45',
+    btnLabel: 'Book Now',
   },
   {
     href: '/home-tyre-fitting',
-    img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting-airanko-NAQrFhRm9UilkOOWhZBEd5lhxc7eEz.webp',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAs_JAhbnO42-k3pwlSz0TGgdO10Dzogn6t53OaAT0Eo397zbr0KI6XdDg0R1mwsTTqzKpTRcxH3GMVUPPe2zFX2Z6UfBxTZBfN6iEyF7vWjsJlpELJ4YEjmQ6W2h6txonOOduvoZbLX6UPFlyeWfSQTDK6WPDTFE9lB5pd_ZFOUzZl3GiJZoEB8KCeRjLLR5p1h0hV4eyaYE-DHIjThjlJipQixTz1MzZRZxx8JAWoiz3s0FgpJHmqSGQUL-XNHYSoXCZ7wXlZucM',
     title: 'Home Tyre Fitting',
-    desc: 'Convenient tyre replacement on your driveway while you relax or carry on with your day.',
-    badge: 'AT YOUR DOOR',
-  },
-  {
-    href: '/jump-start',
-    img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Jumpstart-onestop-airanko-bUQeSwSrfEEeS2vgU2IuyrDFFak87m.webp',
-    title: 'Jump Start',
-    desc: 'Fast battery jump-start service to get your vehicle running again without any delay.',
-    badge: '24/7 SERVICE',
+    desc: "Don't waste time at a garage. We come to your home to fit new tyres while you relax or work, ensuring maximum convenience.",
+    badge: 'All Sizes',
+    btnLabel: 'Learn More',
   },
   {
     href: '/emergency-puncture-repair',
-    img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emeregency%20Puncture%20Repair-airanko-K3cI9fjWlcirkZkEwDEvdtRtKQg3B7.webp',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDUzM2QMgRm1dhyIUbenteAsjgXGyXk3h4MdE5UIae1hRYywv3d0VrN4nVZZV9w4Mz-XTNev_wlAp7mVq6LRGtGi5R8SSqpleEVVvfjat1VR6uaaIwv2qDdJM8bK21QUruJfGp-3bJdCqBOiLFpZjOzvyQqnodctvoUtkfDPyQQ6AiXgN-IErK_4OQZVS-JHIDXA1I0W_HfixD-Oq6BdNj1yavFfx-I1AI45fbHNlknn6IhypQ5-BUm64Qi0ONoSpcJrRkFNtF7OyY',
     title: 'Emergency Puncture Repair',
-    desc: 'Professional plug and patch repair to save your tyre and get you back on the road.',
-    badge: 'BS AU 159',
+    desc: 'Stuck with a flat? Our rapid response team will arrive quickly to repair your puncture and get you back on the road safely.',
+    badge: '24/7 Support',
+    btnLabel: 'Book Now',
+  },
+  {
+    href: '/jump-start',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC2gQqnD5XtI8I7EbQmVR-hR7HtTKVZDZ8GdCUvmvrSSUTxRVocGc5SSWZqBp9khgwjgpLgirzqVJgdDmjIt-BOhfhj-HiBF0-sZu8-1O20Aufjm4mq9TxvBWsn5gMbgkh0z4OZIiI1AHWTuLX661biMF4GgZpMozotzQ_zblrEFqg4dRJzfESK0Q4jv9LnqJei-DG55VHN1DHWTGbZT2PJ1xFEq2VVZ6OCEeF7y_Wmt9nGgIsDIui60Ju9uQpFL0WVPwKdjku4v6E',
+    title: 'Jump Start',
+    desc: 'Flat battery? Our technicians carry professional jumpstart equipment to revive your vehicle quickly and diagnose any issues.',
+    badge: 'Fast Response',
+    btnLabel: 'Learn More',
   },
   {
     href: '/tpms-reset',
-    img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TPMS%20Reset-airanko-LEqPbQFsdbmM1ZLc5m0aoAUKGG4haJ.webp',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCArJmMKP_sxgl4YpBFhjCqARE72y0R4JBpKlA8UvTRZx792pgiRNwX1EAhUU45c9rMvoCPaBh28FXZo7sFC9wTNkLW2bpzfiRpuk7d2MZFx3vHp0IqjtLGB9wahW3NYv5fEZt31dCqq0dDbcrI6tzzMX1b1C1Qr8fXgLaBGk398Pnr5EALBbd5-5eeDxwH2_QULRtSxiEZrlWH-E-eRbM8ncM4BHz2fL4OxcCEQylnxjEAaFwoebcmSd3TrML71jwCav9EhC-wtdE',
     title: 'TPMS Reset',
-    desc: 'Tyre pressure monitoring system reset after every tyre change or repair, all vehicles.',
-    badge: 'ALL VEHICLES',
+    desc: "Tyre pressure sensors acting up? We provide full TPMS diagnostics and resets to ensure your vehicle's safety systems are correct.",
+    badge: 'Expert Reset',
+    btnLabel: 'Book Now',
   },
   {
     href: '/locking-nut-removal',
-    img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20Nut%20Removal-airanko-MV4iwDQaMKuuoUnbMrRrQW5QIDJQbV.webp',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCWHgmjyky0L8OZK0amuT9Uzmu6wA1GsrabMiD_r-YRIk6R_x2eT7kp04pUPuY8BAM_PxI68UE9A7skfD71wPCTNep2GXLcH3cO1w9z6EhJ3RObeKbU4UyxbV0P9IXDcznooLBPMQMZf3veg7xe5hp2EUUtVDfZe2wl1WqLfG1G8RrflYEFPs9ARDIpMHx-tVdWEY23P0fuJHRxmonlEZS9jcSLYt7PX7udyIWgOiKkYNKcZy9gT_TeZDBn7HkRArShIyTfnzwX_ao',
     title: 'Locking Nut Removal',
-    desc: 'Specialist damage-free removal of lost or broken locking wheel nuts, on-site.',
-    badge: 'DAMAGE FREE',
+    desc: "Lost your key? We use specialized equipment to safely remove locking wheel nuts without damaging your precious alloy wheels.",
+    badge: 'Damage Free',
+    btnLabel: 'Learn More',
   },
 ]
 
 export default function ServicesPage() {
   return (
-    <div className="text-[#1c1b1b]" style={{ fontFamily: 'var(--font-inter)' }}>
+    <div className="bg-surface font-body-md text-on-background antialiased">
       <Header />
 
-      {/* ── PAGE HEADER ──────────────────────────────────── */}
-      <section className="bg-[#0f172a] py-16 sm:py-24 px-4 sm:px-6 text-white text-center relative overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-5 pointer-events-none"
-          style={{
-            backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)',
-            backgroundSize: '40px 40px',
-          }}
+      {/* Hero Section */}
+      <section className="relative h-[614px] min-h-[500px] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 bg-secondary/80 mix-blend-multiply z-10" />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          className="absolute inset-0 w-full h-full object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSq0GYlxYlG6b5vlVNaXGT7ME_FD2gUyedBR-WE7hfWoO2kPlta2iR9qxSRFur7398_kjvVEPAyRLcNCGXUzcgJmM1n_MJs_8BYHZAudP1FHDADUJ9zJqof6MixfWmONNIWfLIIquw-g12805_q_NHWNaUNJJzEmWMwubhI-v1ilMOvHwfzJJsIFRM8bwlEn3fPQnQLc5pGb304YcqPXiEHLyFydx8hO54qoGbXfMBXUipKw9LDEHLD0Rl-TRu4jsuoZW2OQOxV0Y"
+          alt="One Stop Tyres 24/7 mobile services van"
+          width={1920}
+          height={614}
+          loading="eager"
         />
-        <div className="relative z-10 max-w-3xl mx-auto">
-          <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
-            What We Offer
-          </span>
-          <h1
-            className="text-3xl sm:text-5xl font-black text-white mb-5 leading-tight text-balance"
-            style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
-          >
-            Our Services
-          </h1>
-          <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
-            One Stop Tyres 24/7 provides a full range of professional mobile tyre and roadside
-            assistance services across the UK. Whether you have a blowout on the motorway, a flat
-            at home, a dead battery, or a tricky locking nut — we have the tools and expertise to
-            help, fast.
+        <div className="relative z-20 text-center px-5 max-w-4xl mx-auto">
+          <h1 className="font-h1 text-h1 text-white mb-6">Our Expert Mobile Services</h1>
+          <p className="font-body-lg text-body-lg text-white/90 max-w-2xl mx-auto mb-10">
+            Professional 24/7 roadside assistance across Manchester and Greater Manchester. We bring the garage to you, anywhere, anytime.
           </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              className="bg-primary text-on-primary font-call-to-action text-call-to-action px-lg py-sm rounded-lg hover:bg-primary/90 transition-all shadow-lg uppercase text-center"
+              href="tel:07759708646"
+            >
+              EMERGENCY ASSISTANCE
+            </a>
+            <a
+              className="bg-white/10 backdrop-blur-md border-2 border-white text-white font-call-to-action text-call-to-action px-lg py-sm rounded-lg hover:bg-white hover:text-secondary transition-all uppercase text-center"
+              href="#services"
+            >
+              VIEW ALL SERVICES
+            </a>
+          </div>
         </div>
       </section>
 
-      {/* ── SERVICE CARDS ────────────────────────────────── */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {services.map((card) => (
-              <Link
-                key={card.href}
-                href={card.href}
-                className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
-              >
-                <div className="relative h-44 sm:h-52 overflow-hidden">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={card.img}
-                    alt={card.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    width={600}
-                    height={400}
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                  <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">
+      {/* Services Grid Section */}
+      <section className="py-xl px-5 max-w-7xl mx-auto" id="services">
+        <div className="text-center mb-16">
+          <h2 className="font-h2 text-h2 text-secondary mb-4">Complete Roadside Solutions</h2>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {services.map((card) => (
+            <a
+              key={card.href}
+              href={card.href}
+              className="group bg-white rounded-xl shadow-[0_4px_20px_rgba(0,45,98,0.05)] overflow-hidden border border-gray-100 hover:border-secondary transition-all"
+            >
+              <div className="aspect-video overflow-hidden">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src={card.img}
+                  alt={card.title}
+                  width={600}
+                  height={338}
+                  loading="lazy"
+                />
+              </div>
+              <div className="p-md">
+                <h3 className="font-h3 text-h3 text-secondary mb-3">{card.title}</h3>
+                <p className="font-body-md text-body-md text-on-surface-variant mb-6">{card.desc}</p>
+                <div className="flex justify-between items-center">
+                  <span className="font-label-bold text-label-bold text-primary bg-primary/5 px-3 py-1 rounded-full">
                     {card.badge}
                   </span>
+                  <span className="bg-primary text-on-primary font-label-bold text-label-bold px-md py-2.5 rounded-lg hover:bg-primary/90 transition-all uppercase">
+                    {card.btnLabel}
+                  </span>
                 </div>
-                <div className="p-5 sm:p-6">
-                  <h2
-                    className="text-base sm:text-lg font-semibold mb-2 text-[#0f172a]"
-                    style={{ fontFamily: 'var(--font-work-sans)' }}
-                  >
-                    {card.title}
-                  </h2>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
-                  <div className="flex items-center justify-end">
-                    <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
-                      arrow_forward
-                    </span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      {/* Why Choose Us / Trust Section */}
+      <section className="bg-surface-container py-xl">
+        <div className="max-w-7xl mx-auto px-5">
+          <div className="flex flex-col lg:flex-row items-center gap-lg">
+            <div className="lg:w-1/2">
+              <h2 className="font-h2 text-h2 text-secondary mb-6">Why Manchester Trusts One Stop Tyres 24/7</h2>
+              <p className="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                We understand that a vehicle breakdown is more than just a mechanical issue—it&apos;s a stressful disruption to your day.
+                That&apos;s why we&apos;ve built our service on three pillars of excellence.
+              </p>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <span className="material-symbols-outlined text-primary">speed</span>
+                  </div>
+                  <div>
+                    <h4 className="font-label-bold text-label-bold text-secondary text-lg mb-1">Ultra-Fast Response</h4>
+                    <p className="font-body-md text-body-md text-on-surface-variant">We aim for 30-60 minute arrival times across all Greater Manchester districts.</p>
                   </div>
                 </div>
-              </Link>
-            ))}
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <span className="material-symbols-outlined text-primary">schedule</span>
+                  </div>
+                  <div>
+                    <h4 className="font-label-bold text-label-bold text-secondary text-lg mb-1">True 24/7 Availability</h4>
+                    <p className="font-body-md text-body-md text-on-surface-variant">Midnight or midday, Sunday or Bank Holiday—our technicians are always on standby.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <span className="material-symbols-outlined text-primary">construction</span>
+                  </div>
+                  <div>
+                    <h4 className="font-label-bold text-label-bold text-secondary text-lg mb-1">Certified Technicians</h4>
+                    <p className="font-body-md text-body-md text-on-surface-variant">Our team is fully insured and highly experienced with all makes and models.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/2 relative">
+              <div className="absolute -inset-4 bg-primary/5 rounded-3xl blur-2xl" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                className="relative rounded-2xl shadow-xl w-full h-[500px] object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMLGLpZ4ZKUqHAkVGDqkL2f86zQgkGJjC8sfPRHpFev14mtEUsv40HTeNCi92ur14aJr5DZv4x-u83YoV6RZhcB_VbHhvJ4pFWTJbNK-Bm0hNprLSrVFnNJcBT7W0ExEnHca7UeL_Lbz1AttPkgXLUJ79_VF6nLpGhttpQDmi9ISlUjVpfAmATerQXI4vm_NjJ07phU4zYgML5mu879Aeq2Bu9rhcc3JerikOxUwIrluK5bab_Y6S2xK9IqVtFpHn7rEtsKoaR0yE"
+                alt="Professional tyre technician from One Stop Tyres 24/7"
+                width={800}
+                height={500}
+                loading="lazy"
+              />
+            </div>
           </div>
+        </div>
+      </section>
 
-          {/* CTA strip */}
-          <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
-            <div>
-              <h3
-                className="text-xl sm:text-2xl font-bold text-white mb-1"
-                style={{ fontFamily: 'var(--font-work-sans)' }}
-              >
-                Need Immediate Assistance?
-              </h3>
-              <p className="text-slate-400 text-sm sm:text-base">
-                Speak directly to a technician for an instant quote and arrival time.
-              </p>
+      {/* Emergency CTA Section */}
+      <section className="px-5 mb-xl">
+        <div className="max-w-7xl mx-auto bg-primary rounded-2xl overflow-hidden shadow-2xl relative">
+          <div className="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
+            <span className="material-symbols-outlined text-[200px]">tire_repair</span>
+          </div>
+          <div className="p-lg md:p-xl flex flex-col md:flex-row justify-between items-center gap-md relative z-10">
+            <div className="text-white text-center md:text-left">
+              <h2 className="font-h1 text-h1 mb-2">Need Help Immediately?</h2>
+              <p className="font-body-lg text-body-lg text-white/90">Speak directly to a technician for an instant quote and arrival time.</p>
+              <div className="mt-6 flex items-center justify-center md:justify-start gap-4">
+                <span className="material-symbols-outlined text-4xl">call</span>
+                <span className="text-3xl md:text-4xl font-black font-h1">07759 708 646</span>
+              </div>
             </div>
             <a
+              className="bg-white text-primary font-h2 text-h2 px-xl py-md rounded-xl hover:bg-gray-100 transition-all uppercase shadow-lg text-center min-w-[240px]"
               href="tel:07759708646"
-              className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
-              style={{ fontFamily: 'var(--font-work-sans)' }}
             >
-              07759 708 646
+              CALL NOW
             </a>
           </div>
         </div>
@@ -157,30 +222,34 @@ export default function ServicesPage() {
 
       <Footer />
 
-      {/* ── FLOATING ACTION BUTTONS ─────────────────────── */}
-      <div className="fixed bottom-6 right-5 z-[60] flex flex-col gap-3">
-        <a
-          href="https://wa.me/447759708646"
-          aria-label="Chat on WhatsApp"
-          className="w-14 h-14 bg-[#25D366] hover:bg-[#1ebe5d] rounded-full shadow-lg hover:shadow-xl flex items-center justify-center transition-all hover:scale-110 active:scale-95"
-        >
-          <svg className="w-6 h-6 fill-white" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-          </svg>
+      {/* Mobile bottom nav */}
+      <nav className="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-white border-t border-gray-100 shadow-[0_-4px_20px_rgba(0,45,98,0.05)] rounded-t-2xl">
+        <a className="flex flex-col items-center justify-center text-gray-500" href="/">
+          <span className="material-symbols-outlined">home</span>
+          <span className="text-[10px] font-semibold font-h3">Home</span>
         </a>
-        <a
-          href="tel:07759708646"
-          aria-label="Call us now"
-          className="w-14 h-14 bg-[#b70011] hover:bg-red-700 rounded-full shadow-lg hover:shadow-xl flex items-center justify-center transition-all hover:scale-110 active:scale-95"
-        >
-          <span
-            className="material-symbols-outlined text-white text-[26px]"
-            style={{ fontVariationSettings: "'FILL' 1" }}
-          >
-            phone_in_talk
-          </span>
+        <a className="flex flex-col items-center justify-center bg-red-50 text-red-600 rounded-xl px-3 py-1.5" href="/services">
+          <span className="material-symbols-outlined">tire_repair</span>
+          <span className="text-[10px] font-semibold font-h3">Services</span>
         </a>
-      </div>
+        <a className="flex flex-col items-center justify-center text-gray-500" href="tel:07759708646">
+          <span className="material-symbols-outlined">emergency</span>
+          <span className="text-[10px] font-semibold font-h3">Emergency</span>
+        </a>
+        <a className="flex flex-col items-center justify-center text-gray-500" href="#">
+          <span className="material-symbols-outlined">person</span>
+          <span className="text-[10px] font-semibold font-h3">Account</span>
+        </a>
+      </nav>
+
+      {/* FAB */}
+      <a
+        className="fixed bottom-24 right-6 md:bottom-8 md:right-8 bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-40 transition-transform active:scale-90 md:hover:scale-110"
+        href="tel:07759708646"
+        aria-label="Call us now"
+      >
+        <span className="material-symbols-outlined text-3xl">call</span>
+      </a>
     </div>
   )
 }

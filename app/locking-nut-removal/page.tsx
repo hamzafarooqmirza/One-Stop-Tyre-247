@@ -260,14 +260,7 @@ export default function LockingNutRemovalPage() {
         </div>
       </section>
 
-      {/* FAB */}
-      <a
-        className="fixed bottom-8 right-8 w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 active:scale-95 transition-all"
-        href="tel:07759708646"
-        aria-label="Call us"
-      >
-        <span className="material-symbols-outlined text-3xl">phone_in_talk</span>
-      </a>
+
     </div>
   )
 }

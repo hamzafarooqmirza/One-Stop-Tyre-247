@@ -235,14 +235,7 @@ export default function ServicesPage() {
         </a>
       </nav>
 
-      {/* FAB */}
-      <a
-        className="fixed bottom-24 right-6 md:bottom-8 md:right-8 bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-40 transition-transform active:scale-90 md:hover:scale-110"
-        href="tel:07759708646"
-        aria-label="Call us now"
-      >
-        <span className="material-symbols-outlined text-3xl">call</span>
-      </a>
+
     </div>
   )
 }

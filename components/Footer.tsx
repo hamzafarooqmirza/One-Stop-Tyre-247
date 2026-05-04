@@ -71,9 +71,15 @@ export default function Footer() {
           </h4>
           <ul className="space-y-4 text-slate-400 text-sm font-medium">
             {[
-              { label: 'Our Service Area', href: '/service-area' },
-              { label: 'Mobile Tyre Fitting Bolton', href: '/mobile-tyre-fitting-bolton' },
-              { label: 'Mobile Tyre Fitting A627', href: '/mobile-tyre-fitting-a627' },
+              { label: 'Manchester', href: '/mobile-tyre-fitting-manchester' },
+              { label: 'Bolton', href: '/mobile-tyre-fitting-bolton' },
+              { label: 'Bury', href: '/mobile-tyre-fitting-bury' },
+              { label: 'Oldham', href: '/mobile-tyre-fitting-oldham' },
+              { label: 'Rochdale', href: '/mobile-tyre-fitting-rochdale' },
+              { label: 'Stockport', href: '/mobile-tyre-fitting-stockport' },
+              { label: 'Tameside', href: '/mobile-tyre-fitting-tameside' },
+              { label: 'Trafford', href: '/mobile-tyre-fitting-trafford' },
+              { label: 'Wigan', href: '/mobile-tyre-fitting-wigan' },
             ].map((area) => (
               <li key={area.href}>
                 <a href={area.href} className="hover:text-[#b70011] transition-colors flex items-center gap-2">

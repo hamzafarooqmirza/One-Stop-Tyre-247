@@ -3,9 +3,9 @@
 import { useState } from 'react'
 
 const navLinks = [
-  { label: 'Home', href: '#' },
+  { label: 'Home', href: '/' },
   { label: 'About Us', href: '#' },
-  { label: 'Services', href: '#' },
+  { label: 'Services', href: '/services' },
   { label: 'Service Area', href: '#' },
   { label: 'Contact', href: '#' },
 ]
@@ -61,7 +61,7 @@ export default function Header() {
             </a>
 
             {/* Desktop Logo — far left */}
-            <a href="#" className="hidden lg:block shrink-0" aria-label="One Stop Mobile Tyres 24/7 - Home">
+            <a href="/" className="hidden lg:block shrink-0" aria-label="One Stop Mobile Tyres 24/7 - Home">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One-Stop%20Loog-airanko-Qpv1QvladNLpRhg8X3Hs6SzyydzFMq.webp"
@@ -77,7 +77,7 @@ export default function Header() {
 
           {/* CENTER — Mobile: Logo centred | Desktop: Nav centred */}
           <a
-            href="#"
+            href="/"
             className="lg:hidden absolute left-1/2 -translate-x-1/2 shrink-0"
             aria-label="One Stop Mobile Tyres 24/7 - Home"
           >

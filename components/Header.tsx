@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 const navLinks = [
   { label: 'Home', href: '/' },
@@ -12,6 +13,10 @@ const navLinks = [
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
+  const pathname = usePathname()
+
+  const isActive = (href: string) =>
+    href === '/' ? pathname === '/' : pathname.startsWith(href)
 
   return (
     <>
@@ -103,7 +108,7 @@ export default function Header() {
                 key={link.label}
                 href={link.href}
                 className={
-                  link.label === 'Home'
+                  isActive(link.href)
                     ? 'text-[#b70011] border-b-2 border-[#b70011] pb-0.5 whitespace-nowrap'
                     : 'text-slate-700 hover:text-[#b70011] transition-colors whitespace-nowrap'
                 }
@@ -165,7 +170,7 @@ export default function Header() {
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
                 className={`px-6 py-4 text-sm font-semibold border-b border-slate-50 flex items-center justify-between ${
-                  link.label === 'Home'
+                  isActive(link.href)
                     ? 'text-[#b70011] bg-red-50'
                     : 'text-slate-700 hover:text-[#b70011] hover:bg-slate-50'
                 } transition-colors`}

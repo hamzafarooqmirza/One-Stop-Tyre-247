@@ -24,6 +24,20 @@ export default function Footer() {
               <span className="material-symbols-outlined text-lg">share</span>
             </span>
           </div>
+          <ul className="space-y-4 text-slate-400 text-sm font-medium pt-2">
+            <li className="flex items-center gap-3">
+              <span className="material-symbols-outlined text-[#b70011] text-lg">call</span>
+              <a href="tel:07759708646" className="text-white font-bold hover:text-[#b70011] transition-colors">
+                07759 708 646
+              </a>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="material-symbols-outlined text-[#b70011] text-lg">mail</span>
+              <a href="mailto:info@onestoptyres247.co.uk" className="hover:text-[#b70011] transition-colors break-all">
+                info@onestoptyres247.co.uk
+              </a>
+            </li>
+          </ul>
         </div>
 
         {/* Services */}
@@ -59,10 +73,7 @@ export default function Footer() {
             {[
               { label: 'Our Service Area', href: '/service-area' },
               { label: 'Mobile Tyre Fitting Bolton', href: '/mobile-tyre-fitting-bolton' },
-              { label: 'Mobile Tyre Fitting M60', href: '/mobile-tyre-fitting-m60' },
-              { label: 'Mobile Tyre Fitting M62', href: '/mobile-tyre-fitting-m62' },
-              { label: 'Mobile Tyre Fitting M66', href: '/mobile-tyre-fitting-m66' },
-              { label: 'Mobile Tyre Fitting M67', href: '/mobile-tyre-fitting-m67' },
+              { label: 'Mobile Tyre Fitting A627', href: '/mobile-tyre-fitting-a627' },
             ].map((area) => (
               <li key={area.href}>
                 <a href={area.href} className="hover:text-[#b70011] transition-colors flex items-center gap-2">
@@ -74,34 +85,27 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Contact */}
+        {/* Motorways */}
         <div>
           <h4 className="font-bold mb-8 text-lg uppercase tracking-wider text-slate-200">
-            Direct Contact
+            Motorway Coverage
           </h4>
-          <ul className="space-y-6 text-slate-400 text-sm font-medium">
-            <li className="flex items-start gap-4">
-              <span className="material-symbols-outlined text-[#b70011] bg-[#b70011]/10 p-2 rounded-lg">
-                call
-              </span>
-              <div>
-                <span className="block text-xs uppercase text-slate-500 mb-1">Phone 24/7</span>
-                <a href="tel:07759708646" className="text-white text-lg font-bold">
-                  07759 708 646
+          <ul className="space-y-4 text-slate-400 text-sm font-medium">
+            {[
+              { label: 'Mobile Tyre Fitting M60', href: '/mobile-tyre-fitting-m60' },
+              { label: 'Mobile Tyre Fitting M61', href: '/mobile-tyre-fitting-m61' },
+              { label: 'Mobile Tyre Fitting M62', href: '/mobile-tyre-fitting-m62' },
+              { label: 'Mobile Tyre Fitting M602', href: '/mobile-tyre-fitting-m602' },
+              { label: 'Mobile Tyre Fitting M66', href: '/mobile-tyre-fitting-m66' },
+              { label: 'Mobile Tyre Fitting M67', href: '/mobile-tyre-fitting-m67' },
+            ].map((road) => (
+              <li key={road.href}>
+                <a href={road.href} className="hover:text-[#b70011] transition-colors flex items-center gap-2">
+                  <span className="w-1 h-1 bg-slate-600 rounded-full" />
+                  {road.label}
                 </a>
-              </div>
-            </li>
-            <li className="flex items-start gap-4">
-              <span className="material-symbols-outlined text-[#b70011] bg-[#b70011]/10 p-2 rounded-lg">
-                mail
-              </span>
-              <div>
-                <span className="block text-xs uppercase text-slate-500 mb-1">Email Us</span>
-                <a href="mailto:info@onestoptyres247.co.uk" className="text-white">
-                  info@onestoptyres247.co.uk
-                </a>
-              </div>
-            </li>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

@@ -8,17 +8,17 @@ export default function RochdalePage() {
     <div className="bg-[#fcf9f8] text-[#1c1b1b] font-body-md">
       {/* Hero Section */}
       <section
-        className="min-h-[716px] flex items-center text-white relative"
+        className="min-h-[100svh] lg:min-h-[600px] flex items-center text-white relative"
         style={{
-          background: "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')",
+          background: "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')",
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}
       >
-        <div className="max-w-7xl mx-auto px-6 py-20 w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-20 w-full">
           <div className="max-w-2xl">
             <div className="inline-block bg-[#dc2626] text-white px-4 py-1 rounded-full mb-6 font-label-bold text-sm tracking-widest uppercase">Emergency Service Available</div>
-            <h1 className="font-h1 text-white mb-6 leading-tight">24/7 Mobile Tyre Fitting in Rochdale</h1>
+            <h1 className="font-h1 text-3xl sm:text-4xl lg:text-5xl text-white mb-6 leading-tight">24/7 Mobile Tyre Fitting in Rochdale</h1>
             <p className="font-body-lg text-slate-100 mb-8 max-w-xl">Stranded with a flat tyre? Whether you&apos;re on the M62, in Rochdale Town Centre, or parked at Hollingworth Lake, our expert technicians arrive within 20-30 minutes to get you moving again.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a className="bg-[#dc2626] hover:bg-[#b70011] transition-colors text-white font-call-to-action py-4 px-8 rounded-lg flex items-center justify-center gap-3 shadow-lg" href="tel:0800123456">
@@ -44,8 +44,8 @@ export default function RochdalePage() {
       </section>
 
       {/* Trust Stats */}
-      <section className="bg-[#fcf9f8] py-12 border-b border-[#e5e2e1]">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+      <section className="bg-[#fcf9f8] py-10 sm:py-12 border-b border-[#e5e2e1]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
           <div className="text-center">
             <div className="text-3xl font-h1 text-[#b70011] mb-1">5000+</div>
             <div className="text-sm font-label-bold text-[#5c403c] uppercase tracking-tighter">Tyres Fitted</div>
@@ -67,7 +67,7 @@ export default function RochdalePage() {
 
       {/* Services Bento Grid */}
       <section className="py-xl bg-[#fcf9f8]" id="services">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="mb-lg">
             <h2 className="font-h2 text-[#1c1b1b] mb-4 text-center">Comprehensive Roadside Assistance</h2>
             <p className="text-center text-[#5c403c] max-w-2xl mx-auto">Providing Rochdale motorists with expert tyre solutions and mechanical aid whenever and wherever required.</p>
@@ -161,9 +161,9 @@ export default function RochdalePage() {
 
       {/* Booking CTA / Process */}
       <section className="bg-[#dc2626] text-white py-xl">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-10 sm:gap-12 items-center">
           <div>
-            <h2 className="font-h1 mb-6">Need a Tyre Change Right Now?</h2>
+            <h2 className="font-h1 text-2xl sm:text-3xl lg:text-4xl mb-6">Need a Tyre Change Right Now?</h2>
             <p className="text-[#ffdad6] mb-8 font-body-lg">Don&apos;t wait for a tow truck. We come to you and change your tyre while you wait in the safety of your vehicle.</p>
             <div className="space-y-6">
               <div className="flex gap-4">
@@ -215,7 +215,7 @@ export default function RochdalePage() {
 
       {/* FAQ Section */}
       <section className="py-xl bg-[#fcf9f8]">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-h2 text-[#1c1b1b] mb-lg text-center">Frequently Asked Questions</h2>
           <div className="space-y-4">
             <details className="group bg-white p-6 rounded-lg border border-[#e5e2e1] shadow-sm open:shadow-md transition-all">

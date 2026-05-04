@@ -8,20 +8,21 @@ export default function StockportPage() {
     <div className="bg-[#fcf9f8] text-[#1c1b1b] overflow-x-hidden" style={{ fontFamily: 'Inter, sans-serif' }}>
       <main>
         {/* Hero Section */}
-        <section className="relative bg-slate-900 text-white py-20 overflow-hidden">
-          <div className="absolute inset-0 opacity-40">
+        <section className="relative min-h-[100svh] lg:min-h-[600px] flex items-center bg-slate-900 text-white overflow-hidden">
+          <div className="absolute inset-0">
             <img
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover opacity-40"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuAup35Fvnu1YnYxxCeZcIQQDwiQ-GaVTp63rm_rFlDnchfoi3AaQS25V1vqtsJ4rXR8oAivHBHfvvTYs49JdOmVr_GP17uKy1ydADdU5ZtznZ2Cs7TO7WZr4G1U0nts_dobjefnPiijoVUpQYF8cdPnCPx_0l5lcSCi3Y96N73PozGyaUCsrUIB6EbzeAQRAiMQwibfQ0s7k_AqpfJDkKk3RW_sM2ol79yN-lqe68zfpS05AED3m-bzVYfbsAPZiDEWS1wUUwrcB4U"
               alt="Professional roadside assistance vehicle with amber lighting in Stockport"
             />
+            <div className="absolute inset-0 bg-slate-900/60 lg:bg-transparent"></div>
           </div>
-          <div className="relative max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
             <div>
               <div className="inline-block bg-[#dc2626] text-white px-4 py-1 rounded-full text-sm font-bold mb-6">
                 STOCKPORT EMERGENCY TYRE FITTING
               </div>
-              <h1 className="work-sans text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              <h1 className="work-sans text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                 Fastest Mobile Tyre Fitting in <span className="text-[#dc2626]">Stockport</span> — We Come to You 24/7
               </h1>
               <p className="text-lg text-slate-300 mb-8 max-w-xl leading-relaxed">
@@ -78,9 +79,9 @@ export default function StockportPage() {
         </section>
 
         {/* Services Bento Grid */}
-        <section className="py-16 max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="work-sans text-3xl font-bold text-[#1c1b1b] mb-4">Urgent Mobile Services</h2>
+        <section className="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10 sm:mb-12">
+            <h2 className="work-sans text-2xl sm:text-3xl font-bold text-[#1c1b1b] mb-4">Urgent Mobile Services</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">We don&apos;t just fit tyres; we provide a complete roadside safety solution for Stockport motorists, 24 hours a day.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -144,9 +145,9 @@ export default function StockportPage() {
         </section>
 
         {/* Why Choose Us */}
-        <section className="bg-[#f6f3f2] py-16">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <section className="bg-[#f6f3f2] py-12 sm:py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               <div className="relative">
                 <img
                   className="rounded-2xl shadow-2xl relative z-10"
@@ -162,7 +163,7 @@ export default function StockportPage() {
                 </div>
               </div>
               <div>
-                <h2 className="work-sans text-3xl font-bold text-[#1c1b1b] mb-8">The Preferred Mobile Tyre Service in <span className="text-[#b70011]">Stockport</span></h2>
+                <h2 className="work-sans text-2xl sm:text-3xl font-bold text-[#1c1b1b] mb-8">The Preferred Mobile Tyre Service in <span className="text-[#b70011]">Stockport</span></h2>
                 <ul className="space-y-6">
                   {[
                     { title: 'Local Knowledge', desc: "We know Stockport's roads—from the tight streets of Edgeley to the suburban lanes of Marple. We navigate traffic to reach you faster." },
@@ -186,7 +187,7 @@ export default function StockportPage() {
         </section>
 
         {/* Coverage Map */}
-        <section className="py-16 max-w-7xl mx-auto px-6">
+        <section className="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-1 flex flex-col justify-center">
               <h2 className="work-sans text-3xl font-bold mb-4">Stockport Coverage</h2>

@@ -6,22 +6,22 @@ export default function TraffordPage() {
   return (
     <div className="bg-[#fcf9f8] text-[#1c1b1b] font-body-md">
       {/* Hero Section */}
-      <section className="relative min-h-[819px] flex items-center overflow-hidden bg-slate-900">
+      <section className="relative min-h-[100svh] lg:min-h-[600px] flex items-center overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <img
             className="w-full h-full object-cover opacity-40"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg002K0OOPUj2BWv1aNNo9razXyT2fSlEIwUDVdQGupgjSFDUcrCMcUq-DALcOEWWRpAA7TAfaJfZ699fvvfMyjZXAI5lGsWv4_-Z7UBU6e24eqt5n8Zl4KjC_C8GSL1nTNhdYy7gTOljMWus0u75lLq8ztF7AKtKgYpcysFVUByQFt3HmSjzB7FTYnbZ6t0ySopUIhFAXTMcpIyuPrsTlELOdImGcfMyYD6hJWppaZaG9FavlPs7UysrIAFXwy_SB4GwdsWhOHj4"
             alt="Professional roadside assistance technician in Trafford at night"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-[#0f172a]/75 lg:bg-gradient-to-r lg:from-slate-950 lg:via-slate-900/80 lg:to-transparent"></div>
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-xl grid lg:grid-cols-2 gap-12 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-24 grid lg:grid-cols-2 gap-12 items-center w-full">
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#b70011]/20 border border-[#b70011]/30 rounded-full text-[#ffb4ab] font-label-bold">
               <span className="w-2 h-2 rounded-full bg-[#b70011] animate-pulse"></span>
               20-30 MINUTE ARRIVAL IN TRAFFORD
             </div>
-            <h1 className="font-h1 text-white text-5xl lg:text-6xl leading-tight">
+            <h1 className="font-h1 text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight">
               Emergency Mobile Tyre Fitting <span className="text-[#ffb4ab]">Trafford</span>
             </h1>
             <p className="text-body-lg text-slate-300 max-w-xl">
@@ -62,9 +62,9 @@ export default function TraffordPage() {
       </section>
 
       {/* Services Bento Grid */}
-      <section className="py-xl max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-h2 text-[#1c1b1b] text-4xl mb-4">Specialist Tyres Services in Trafford</h2>
+      <section className="py-xl max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="font-h2 text-[#1c1b1b] text-2xl sm:text-3xl lg:text-4xl mb-4">Specialist Tyres Services in Trafford</h2>
           <p className="text-body-lg text-[#5c403c] max-w-2xl mx-auto">Providing comprehensive roadside assistance from Altrincham to Stretford and everywhere in between.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -143,7 +143,7 @@ export default function TraffordPage() {
 
       {/* Coverage Map Section */}
       <section className="bg-slate-100 py-xl">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
           <div className="space-y-6">
             <h2 className="font-h2 text-slate-900">Coverage Across All of Trafford</h2>
             <p className="text-body-lg text-slate-600">Our strategic location near the M60 allows us to reach any part of Trafford within 45 minutes on average. Whether you&apos;re at work, home, or the roadside, we come to you.</p>
@@ -191,9 +191,9 @@ export default function TraffordPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-xl max-w-7xl mx-auto px-6">
-        <div className="bg-[#3e5e95] rounded-3xl p-12 overflow-hidden relative">
-          <div className="relative z-10 grid md:grid-cols-4 gap-8 text-white">
+      <section className="py-xl max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="bg-[#3e5e95] rounded-2xl sm:rounded-3xl p-8 sm:p-12 overflow-hidden relative">
+          <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-white">
             <div className="space-y-2">
               <h4 className="text-4xl font-black text-[#87ceff]">30m</h4>
               <p className="font-label-bold opacity-80 uppercase tracking-wider">Avg Response</p>

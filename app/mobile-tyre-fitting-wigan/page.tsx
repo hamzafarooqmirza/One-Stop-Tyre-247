@@ -8,21 +8,22 @@ export default function WiganPage() {
     <div className="bg-[#fcf9f8] text-[#1c1b1b] overflow-x-hidden" style={{ fontFamily: 'Inter, sans-serif' }}>
       <main>
         {/* Hero Section */}
-        <section className="relative bg-[#313030] text-white py-20 overflow-hidden">
-          <div className="absolute inset-0 opacity-40">
+        <section className="relative min-h-[100svh] lg:min-h-[600px] flex items-center bg-[#313030] text-white overflow-hidden">
+          <div className="absolute inset-0">
             <img
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover opacity-40"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4rpTHiSRhm3EprGSlH6Cbc4wwHu6Drw_CEY746MO5une5waMm6EONnDOOKTtMrDxrR1QiLry6mgBRm606uA_VcFNGwPqBTGkApWekES7JWd4zLNyse0Txsd8nrjxYMZOzqd7Zpifh7UW98h5SNokAFxNH07JADa8DjHizKJP9Ku48b0GEazKgAvmiEV3agrQOyisol566Yd2SDaDqUATkSykBDrEF_hP2JLVfmfOcQG_w28ziDNuP4lkeLL3IPZ8LJl4s_HqRmGY"
               alt="Professional roadside assistance technician working on a modern SUV at night"
             />
+            <div className="absolute inset-0 bg-[#313030]/60"></div>
           </div>
-          <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
             <div>
               <div className="inline-flex items-center bg-[#dc2626] text-white px-4 py-2 rounded-full mb-6 text-sm font-bold gap-2">
                 <span className="material-symbols-outlined text-sm">bolt</span>
                 20-30 MINUTE ARRIVAL IN WIGAN
               </div>
-              <h1 className="work-sans text-4xl md:text-5xl font-bold mb-6 leading-tight">Emergency Mobile Tyre Fitting in Wigan</h1>
+              <h1 className="work-sans text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight">Emergency Mobile Tyre Fitting in Wigan</h1>
               <p className="text-lg mb-8 opacity-90 leading-relaxed">Stranded on the A49 or M6? Our expert mobile technicians provide 24/7 rapid roadside tyre replacement and puncture repair throughout Wigan and the surrounding Greater Manchester area.</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a className="bg-[#dc2626] text-white work-sans font-bold px-8 py-5 rounded-lg flex items-center justify-center shadow-lg hover:bg-[#b70011] transition-all gap-2" href="tel:08000000000">
@@ -54,10 +55,10 @@ export default function WiganPage() {
         </section>
 
         {/* Services Grid */}
-        <section className="py-16 bg-[#fcf9f8]" id="services">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="work-sans text-3xl font-bold mb-4">Roadside Assistance Services in Wigan</h2>
+        <section className="py-12 sm:py-16 bg-[#fcf9f8]" id="services">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="work-sans text-2xl sm:text-3xl font-bold mb-4">Roadside Assistance Services in Wigan</h2>
               <p className="text-lg max-w-2xl mx-auto text-slate-600">Professional, high-urgency solutions to get you back on the road safely and swiftly.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -85,12 +86,12 @@ export default function WiganPage() {
         </section>
 
         {/* Coverage Bento */}
-        <section className="py-16 bg-[#f0edec]">
-          <div className="max-w-7xl mx-auto px-6">
+        <section className="py-12 sm:py-16 bg-[#f0edec]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
               <div className="lg:col-span-8">
-                <div className="bg-white p-10 rounded-2xl h-full shadow-sm">
-                  <h2 className="work-sans text-3xl font-bold mb-6">Serving the Entire Wigan Borough</h2>
+                <div className="bg-white p-8 sm:p-10 rounded-2xl h-full shadow-sm">
+                  <h2 className="work-sans text-2xl sm:text-3xl font-bold mb-6">Serving the Entire Wigan Borough</h2>
                   <p className="text-lg text-slate-600 mb-8 leading-relaxed">Our dispatch centre is strategically located to provide the fastest response times in Wigan. We don&apos;t just stay in the town centre; we cover every outlying district with 24-hour availability.</p>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-slate-700 font-semibold">
                     {['Standish', 'Ashton-in-Makerfield', 'Hindley', 'Orrell', 'Pemberton', 'Ince-in-Makerfield', 'Platt Bridge', 'Abram'].map((area) => (
@@ -125,7 +126,7 @@ export default function WiganPage() {
 
         {/* Stats */}
         <section className="py-10 bg-[#313030] text-white">
-          <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
             {[
               { stat: '30', label: 'Min Avg Arrival' },
               { stat: '5k+', label: 'Wigan Drivers Assisted' },
@@ -141,9 +142,9 @@ export default function WiganPage() {
         </section>
 
         {/* FAQ */}
-        <section className="py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-6">
-            <h2 className="work-sans text-3xl font-bold mb-12 text-center">Wigan Mobile Tyre Fitting FAQs</h2>
+        <section className="py-12 sm:py-16 bg-white">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6">
+            <h2 className="work-sans text-2xl sm:text-3xl font-bold mb-10 sm:mb-12 text-center">Wigan Mobile Tyre Fitting FAQs</h2>
             <div className="space-y-6">
               {[
                 { q: 'How fast can you get to Wigan Town Centre?', a: 'Typically, our nearest technician can be with you in Wigan town centre within 30 to 45 minutes, depending on traffic levels on the A49.' },

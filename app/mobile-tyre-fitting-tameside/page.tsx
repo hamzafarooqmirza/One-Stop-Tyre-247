@@ -7,19 +7,19 @@ export default function TamesidePage() {
     <div className="bg-[#fcf9f8] font-body-md text-[#1c1b1b]">
       {/* Hero Section */}
       <section
-        className="relative h-[819px] flex items-center justify-center text-center px-4"
+        className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-center text-center px-4"
         style={{
-          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuA-lQ5gFH5jK3Fo6pxwB59kBLfwwfAB96rATZI1VOCDVcKzNuMpr1lQN8KH2SHY676vXIEiiF_TIH2vovCYh9eF332Ls8Sg3lxPUyycPYdBsn46hKbzZmn2cOAi1buTuCjl5sjGRy39JfA2K5zAxxJ3qygF7PSakzYymtQFNX0X8xnUuBC1Rha1q2oEY2pp5T-IG3XY2zdFZtp7CvXgOOnMm3L1L3d993Kr5SAoHb6tjygAPoYEmYUfx65ZspoKk7I1Y0-ArzQv-eo)",
+          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuA-lQ5gFH5jK3Fo6pxwB59kBLfwwfAB96rATZI1VOCDVcKzNuMpr1lQN8KH2SHY676vXIEiiF_TIH2vovCYh9eF332Ls8Sg3lxPUyycPYdBsn46hKbzZmn2cOAi1buTuCjl5sjGRy39JfA2K5zAxxJ3qygF7PSakzYymtQFNX0X8xnUuBC1Rha1q2oEY2pp5T-IG3XY2zdFZtp7CvXgOOnMm3L1L3d993Kr5SAoHb6tjygAPoYEmYUfx65ZspoKk7I1Y0-ArzQv-eo)",
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}
       >
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto py-20">
           <div className="inline-flex items-center gap-2 bg-[#dc2626] text-white px-4 py-2 rounded-full mb-6 animate-pulse">
             <span className="material-symbols-outlined text-sm" style={{fontVariationSettings: "'FILL' 1"}}>emergency</span>
             <span className="text-label-bold">EMERGENCY TYRE FITTING TAMESIDE</span>
           </div>
-          <h1 className="font-h1 text-h1 text-white mb-6">Mobile Tyre Fitting Tameside: 24/7 Roadside Response</h1>
+          <h1 className="font-h1 text-3xl sm:text-4xl lg:text-5xl text-white mb-6">Mobile Tyre Fitting Tameside: 24/7 Roadside Response</h1>
           <p className="font-body-lg text-body-lg text-white/90 mb-8 max-w-2xl mx-auto">Don&apos;t let a puncture ruin your journey through Ashton, Stalybridge, or Hyde. Our Tameside mobile tyre units arrive within 20-30 minutes to get you moving again.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a className="bg-[#dc2626] text-white font-call-to-action py-4 px-10 rounded-lg flex items-center justify-center gap-3 shadow-lg hover:bg-[#b70011] transition-colors" href="tel:0800000000">
@@ -35,7 +35,7 @@ export default function TamesidePage() {
 
       {/* Trust Bar */}
       <div className="bg-[#3e5e95] text-white py-4">
-        <div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-between items-center gap-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-wrap justify-center sm:justify-between items-center gap-4 sm:gap-6">
           <div className="flex items-center gap-2">
             <span className="material-symbols-outlined text-[#c8e6ff]">verified</span>
             <span className="text-label-bold">Tameside Rated #1 for Speed</span>
@@ -57,9 +57,9 @@ export default function TamesidePage() {
 
       {/* Bento Grid Services Section */}
       <section className="py-xl bg-[#f6f3f2]" id="services">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="font-h2 text-h2 text-[#1c1b1b] mb-4">Urgent Services Across Tameside</h2>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10 sm:mb-12">
+            <h2 className="font-h2 text-2xl sm:text-[32px] text-[#1c1b1b] mb-4">Urgent Services Across Tameside</h2>
             <p className="text-body-lg text-[#5c403c]">Comprehensive mobile tyre solutions for cars, vans, and 4x4s.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -109,7 +109,7 @@ export default function TamesidePage() {
 
       {/* Coverage Map Section */}
       <section className="py-xl bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
           <div>
             <h2 className="font-h2 text-h2 text-[#1c1b1b] mb-6">Serving All of Tameside &amp; Surrounding Areas</h2>
             <p className="text-body-lg text-[#5c403c] mb-8">Our local technicians are based strategically throughout the borough to ensure we can reach you in under an hour, no matter where you are.</p>
@@ -143,7 +143,7 @@ export default function TamesidePage() {
           </div>
           <div className="rounded-2xl overflow-hidden shadow-2xl border-8 border-[#f0edec]">
             <img
-              className="w-full h-[450px] object-cover"
+              className="w-full h-64 sm:h-96 lg:h-[450px] object-cover"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx156xY1nHW1ButZ_FxQF6qwpCBiDL2LJa7HIL_AMblj1Mufe18lTkecIqoHc6AohdJht9EA9HCH4rLQLx6ZkgQTYPDhw5POhNxEQfErMKQoabZxNqA8Uj1CkZQchxfb40Miaa-4ssflk2_OEiXD63hNI8GJh3E1OFPdgrLI8sSwBiZjbVX_VJK2LkMroJlxYdJIQbp_gCa6DLMdxNan8Om3IhysF61mIijnhgLwjDLGa4JgPe_MZ9HN0_ZMkf-QXQ-GUkPaKym00"
               alt="Digital map highlighting Tameside borough in Greater Manchester"
             />
@@ -153,8 +153,8 @@ export default function TamesidePage() {
 
       {/* Call to Action / Urgency Block */}
       <section className="py-xl bg-[#dc2626] text-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="font-h1 text-h1 mb-6">Facing a Tyre Emergency in Tameside Right Now?</h2>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="font-h1 text-2xl sm:text-3xl lg:text-4xl mb-6">Facing a Tyre Emergency in Tameside Right Now?</h2>
           <p className="text-body-lg mb-10 opacity-90">Our dispatchers are standing by 24/7. Call our priority line and we&apos;ll send the nearest technician to your exact location immediately.</p>
           <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl inline-block border border-white/20">
             <p className="font-label-bold uppercase tracking-widest mb-4">Emergency Hotline</p>

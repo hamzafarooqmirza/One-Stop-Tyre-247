@@ -140,8 +140,8 @@ export default function ServiceAreaPage() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className="absolute inset-0 w-full h-full object-cover"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSq0GYlxYlG6b5vlVNaXGT7ME_FD2gUyedBR-WE7hfWoO2kPlta2iR9qxSRFur7398_kjvVEPAyRLcNCGXUzcgJmM1n_MJs_8BYHZAudP1FHDADUJ9zJqof6MixfWmONNIIquw-g12805_q_NHWNaUNJJzEmWMwubhI-v1ilMOvHwfzJJsIFRM8bwlEn3fPQnQLc5pGb304YcqPXiEHLyFydx8hO54qoGbXfMBXUipKw9LDEHLD0Rl-TRu4jsuoZW2OQOxV0Y"
-          alt="Greater Manchester road network"
+          src="https://ss5vlswhqmiddtca.public.blob.vercel-storage.com/Hero%20section%20image%20for%20one%20stop-airanko-GThUaVjbwZmY4iQO0czB2NrcyiFDuj.webp"
+          alt="One Stop Tyres 24/7 mobile tyre fitting van on the road"
           width={1920}
           height={500}
           loading="eager"

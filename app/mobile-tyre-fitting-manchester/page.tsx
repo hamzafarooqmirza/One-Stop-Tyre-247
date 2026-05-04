@@ -7,35 +7,35 @@ export default function ManchesterPage() {
     <div className="bg-[#fcf9f8] text-[#1c1b1b] font-body-md">
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[716px] flex items-center overflow-hidden bg-slate-900 text-white">
+        <section className="relative min-h-[100svh] lg:min-h-[600px] flex items-center overflow-hidden bg-slate-900 text-white">
           <div className="absolute inset-0 z-0">
             <img
               className="w-full h-full object-cover opacity-40"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuACli4zgmYq4HZebl6RB3BqPRVXNBBdShjzy9eFQguMHxUDWa4vGMLgGdjtzXM_mrlnoiq26fIqd2Gu0hAOtUptDpShWDgjleGN8YggUUyXy9D4nu9OX2Qicxgq-E9qrCZjaWYqsr5e12IBQCQtrxx-7XfaXXVae6kGAhNSulbnUEpX-Rwe9L5OVWHhaqIIGihsLMtEnEIwcm8MHFDncannDAduZLdBA66QAvaf5pHWnWPBiOKB2DNsHumc3TNn9SHYayiA5-rE3UE"
               alt="Professional roadside assistance technician changing tyre on a Manchester road"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/80 to-transparent"></div>
+            <div className="absolute inset-0 bg-[#0f172a]/75 lg:bg-gradient-to-r lg:from-slate-950 lg:via-slate-900/80 lg:to-transparent"></div>
           </div>
-          <div className="relative z-10 max-w-7xl mx-auto px-6 py-xl grid md:grid-cols-2 gap-12 items-center">
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-md">
               <div className="inline-flex items-center gap-2 bg-[#dc2626] text-white px-4 py-1 rounded-full text-label-bold animate-pulse">
                 <span className="material-symbols-outlined text-[18px]" style={{fontVariationSettings: "'FILL' 1"}}>emergency</span>
                 24/7 MANCHESTER EMERGENCY RESPONSE
               </div>
-              <h1 className="font-h1 text-h1 text-white leading-none">Mobile Tyre Fitting in Manchester</h1>
-              <p className="font-body-lg text-body-lg text-slate-300 max-w-lg">Fast and reliable mobile tyre fitting service available 24/7 in Manchester and surrounding areas. We come to you, wherever you are.</p>
+              <h1 className="font-h1 text-3xl sm:text-4xl lg:text-5xl text-white leading-tight">Mobile Tyre Fitting in Manchester</h1>
+              <p className="font-body-lg text-base sm:text-lg text-slate-300 max-w-lg">Fast and reliable mobile tyre fitting service available 24/7 in Manchester and surrounding areas. We come to you, wherever you are.</p>
               <div className="flex flex-col sm:flex-row gap-4 pt-sm">
-                <a className="flex items-center justify-center gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-8 py-5 rounded-lg font-call-to-action transition-all transform active:scale-95 shadow-xl" href="tel:0800000000">
+                <a className="flex items-center justify-center gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-8 py-4 rounded-lg font-call-to-action transition-all transform active:scale-95 shadow-xl" href="tel:07759708646">
                   <span className="material-symbols-outlined">phone_in_talk</span>
                   Call Now
                 </a>
-                <a className="flex items-center justify-center gap-3 bg-white hover:bg-slate-100 text-slate-900 px-8 py-5 rounded-lg font-call-to-action transition-all transform active:scale-95 shadow-xl" href="#">
+                <a className="flex items-center justify-center gap-3 bg-white hover:bg-slate-100 text-slate-900 px-8 py-4 rounded-lg font-call-to-action transition-all transform active:scale-95 shadow-xl" href="https://wa.me/447759708646">
                   <span className="material-symbols-outlined text-[#25D366]" style={{fontVariationSettings: "'FILL' 1"}}>chat</span>
                   WhatsApp Us
                 </a>
               </div>
             </div>
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <div className="bg-white/10 backdrop-blur-md p-lg rounded-xl border border-white/20 shadow-2xl">
                 <div className="flex items-center gap-4 mb-md">
                   <div className="w-12 h-12 bg-[#dc2626] rounded-full flex items-center justify-center">
@@ -66,8 +66,8 @@ export default function ManchesterPage() {
         </section>
 
         {/* Intro Section */}
-        <section className="py-xl px-6 bg-[#fcf9f8]">
-          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-xl items-center">
+        <section className="py-xl px-4 sm:px-6 bg-[#fcf9f8]">
+          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-xl items-center">
             <div className="space-y-md">
               <h2 className="font-h2 text-h2 text-[#1c1b1b]">Mobile Tyre Fitting Services in Manchester</h2>
               <p className="font-body-md text-body-md text-[#5c403c] leading-relaxed">
@@ -92,7 +92,7 @@ export default function ManchesterPage() {
         </section>
 
         {/* Services Grid */}
-        <section className="py-xl px-6 bg-white">
+        <section className="py-xl px-4 sm:px-6 bg-white">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-xl">
               <h2 className="font-h2 text-h2 mb-sm">Our Mobile Tyre Services</h2>
@@ -134,10 +134,10 @@ export default function ManchesterPage() {
         </section>
 
         {/* How it Works */}
-        <section className="py-xl px-6 bg-slate-50">
+        <section className="py-xl px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">
-            <h2 className="font-h2 text-h2 text-center mb-xl">How it Works</h2>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+            <h2 className="font-h2 text-2xl sm:text-[32px] text-center mb-xl">How it Works</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 relative">
               <div className="hidden md:block absolute top-12 left-1/4 right-1/4 h-0.5 bg-slate-200 -z-0"></div>
               <div className="relative z-10 text-center flex flex-col items-center">
                 <div className="w-16 h-16 bg-white border-4 border-[#b70011] rounded-full flex items-center justify-center font-h3 text-h3 text-[#b70011] mb-4">1</div>
@@ -164,9 +164,9 @@ export default function ManchesterPage() {
         </section>
 
         {/* Why Choose Us - Bento Grid Style */}
-        <section className="py-xl px-6 bg-white">
+        <section className="py-xl px-4 sm:px-6 bg-white">
           <div className="max-w-7xl mx-auto">
-            <h2 className="font-h2 text-h2 mb-xl">Why Choose One Stop Tyres 24/7 in Manchester</h2>
+            <h2 className="font-h2 text-2xl sm:text-[32px] mb-xl">Why Choose One Stop Tyres 24/7 in Manchester</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="md:col-span-2 bg-[#3e5e95] text-white p-lg rounded-2xl flex flex-col justify-between">
                 <div>
@@ -199,7 +199,7 @@ export default function ManchesterPage() {
         </section>
 
         {/* Emergency Section */}
-        <section className="py-xl px-6 bg-slate-900 text-white overflow-hidden relative">
+        <section className="py-xl px-4 sm:px-6 bg-slate-900 text-white overflow-hidden relative">
           <div className="absolute right-0 top-0 opacity-10 pointer-events-none">
             <span className="material-symbols-outlined text-[300px]" style={{fontVariationSettings: "'FILL' 1"}}>warning</span>
           </div>
@@ -218,10 +218,10 @@ export default function ManchesterPage() {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-xl px-6 bg-[#fcf9f8]">
+        <section className="py-xl px-4 sm:px-6 bg-[#fcf9f8]">
           <div className="max-w-7xl mx-auto">
-            <h2 className="font-h2 text-h2 text-center mb-xl">Benefits of Our Mobile Tyre Fitting in Manchester</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <h2 className="font-h2 text-2xl sm:text-[32px] text-center mb-xl">Benefits of Our Mobile Tyre Fitting in Manchester</h2>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
               <div className="text-center p-6">
                 <div className="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center mx-auto mb-4">
                   <span className="material-symbols-outlined text-[#b70011]">euro_symbol</span>
@@ -255,7 +255,7 @@ export default function ManchesterPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-xl px-6 bg-white">
+        <section className="py-xl px-4 sm:px-6 bg-white">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-h2 text-h2 text-center mb-xl">Frequently Asked Questions</h2>
             <div className="space-y-sm">
@@ -285,7 +285,7 @@ export default function ManchesterPage() {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-xl px-6 bg-[#f0edec] relative">
+        <section className="py-xl px-4 sm:px-6 bg-[#f0edec] relative">
           <div className="max-w-7xl mx-auto text-center relative z-10">
             <h2 className="font-h2 text-h2 mb-md">Need Mobile Tyre Fitting in Manchester?</h2>
             <p className="font-body-lg text-body-lg mb-xl max-w-2xl mx-auto">Our local technicians are ready to assist you right now. Get back on the road safely with Manchester&apos;s leading mobile tyre specialists.</p>

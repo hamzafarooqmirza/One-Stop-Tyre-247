@@ -8,19 +8,19 @@ export default function OldhamPage() {
     <div className="bg-[#fcf9f8] text-[#1c1b1b] overflow-x-hidden" style={{ fontFamily: 'Inter, sans-serif' }}>
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[600px] flex items-center overflow-hidden">
+        <section className="relative min-h-[100svh] lg:min-h-[600px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#1c1b1b] via-[#1c1b1b]/70 to-transparent z-10"></div>
+            <div className="absolute inset-0 bg-[#1c1b1b]/75 lg:bg-gradient-to-r lg:from-[#1c1b1b] lg:via-[#1c1b1b]/70 lg:to-transparent z-10"></div>
             <img
               alt="Mobile Tyre Fitting Oldham"
               className="w-full h-full object-cover object-center"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3WPBHLb8oI6NlUbetHGxrxiWajSXddJ-bMq4pXSVPaYFh3PHsgn8h-0s4S8J7GH0UAZC49r0ZOPOd8zn9mzDBHGPUfwUXg4IYvURi6te7Pm4lvXyaJUY6SuRJ6rb6uCQxg15PNiuqA5Ok8GbTsrdC_nNYlvlvwafoylbWszZHCZWoEKocqMKKMeY9zyVHzdry1KfQ5YcfiZSUNliH7NRGlfHQyNTAJDskniaZE4wCJGWbs0xVYMLXSLh2S9jTuRkmALRX7-tuz8I"
             />
           </div>
-          <div className="relative z-20 max-w-7xl mx-auto px-6 py-16 w-full">
+          <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 py-20 w-full">
             <div className="max-w-2xl space-y-6">
               <span className="inline-block bg-[#dc2626] text-white px-4 py-1 font-bold text-sm rounded">24/7 EMERGENCY COVERAGE</span>
-              <h1 className="work-sans text-4xl md:text-5xl font-bold text-white uppercase tracking-tighter">Mobile Tyre Fitting in Oldham</h1>
+              <h1 className="work-sans text-3xl sm:text-4xl lg:text-5xl font-bold text-white uppercase tracking-tighter">Mobile Tyre Fitting in Oldham</h1>
               <p className="text-lg text-slate-200 leading-relaxed">Fast and reliable mobile tyre fitting service available 24/7 in Oldham and surrounding areas. We come to you at home, work, or roadside.</p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <a className="bg-[#dc2626] text-white work-sans font-bold text-lg h-14 px-10 flex items-center justify-center rounded-lg shadow-lg active:scale-95 transition-all" href="tel:0800000000">
@@ -35,7 +35,7 @@ export default function OldhamPage() {
         </section>
 
         {/* Intro Section */}
-        <section className="py-16 max-w-7xl mx-auto px-6">
+        <section className="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
               <h2 className="work-sans text-3xl font-bold mb-6 text-[#1c1b1b]">Mobile Tyre Fitting Services in Oldham</h2>
@@ -65,9 +65,9 @@ export default function OldhamPage() {
         </section>
 
         {/* Services Bento Grid */}
-        <section className="bg-[#f6f3f2] py-16">
-          <div className="max-w-7xl mx-auto px-6">
-            <h2 className="work-sans text-3xl font-bold text-center mb-16 text-[#1c1b1b] uppercase">Our Mobile Tyre Services</h2>
+        <section className="bg-[#f6f3f2] py-12 sm:py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <h2 className="work-sans text-2xl sm:text-3xl font-bold text-center mb-12 sm:mb-16 text-[#1c1b1b] uppercase">Our Mobile Tyre Services</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {/* Emergency Roadside - Large */}
               <div className="md:col-span-2 bg-white p-8 rounded-xl border border-[#e6bdb8] flex flex-col justify-between shadow-sm hover:border-[#b70011] transition-all group">
@@ -111,9 +111,9 @@ export default function OldhamPage() {
         </section>
 
         {/* How It Works */}
-        <section className="py-16 max-w-7xl mx-auto px-6">
-          <h2 className="work-sans text-3xl font-bold text-center mb-16 text-[#1c1b1b]">How It Works</h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+        <section className="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6">
+          <h2 className="work-sans text-2xl sm:text-3xl font-bold text-center mb-12 sm:mb-16 text-[#1c1b1b]">How It Works</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 relative">
             <div className="hidden md:block absolute top-8 left-0 right-0 h-0.5 bg-slate-200 -z-10"></div>
             {[
               { num: '01', title: 'Call Us', desc: 'Call our 24/7 hotline with your tyre size and location in Oldham.' },
@@ -133,9 +133,9 @@ export default function OldhamPage() {
         </section>
 
         {/* Why Choose Us */}
-        <section className="bg-[#1c1b1b] py-16 text-white">
-          <div className="max-w-7xl mx-auto px-6">
-            <h2 className="work-sans text-3xl font-bold mb-16 uppercase tracking-tight">Why Choose One Stop Tyres 24/7 in Oldham</h2>
+        <section className="bg-[#1c1b1b] py-12 sm:py-16 text-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <h2 className="work-sans text-2xl sm:text-3xl font-bold mb-12 sm:mb-16 uppercase tracking-tight">Why Choose One Stop Tyres 24/7 in Oldham</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div className="space-y-6">
                 {[
@@ -163,7 +163,7 @@ export default function OldhamPage() {
         </section>
 
         {/* Emergency CTA */}
-        <section className="bg-[#dc2626] py-16 text-white relative overflow-hidden">
+        <section className="bg-[#dc2626] py-12 sm:py-16 text-white relative overflow-hidden">
           <div className="absolute right-0 top-0 opacity-10 pointer-events-none">
             <span className="material-symbols-outlined" style={{ fontSize: '300px' }}>emergency_home</span>
           </div>
@@ -178,9 +178,9 @@ export default function OldhamPage() {
         </section>
 
         {/* Benefits */}
-        <section className="py-16 max-w-7xl mx-auto px-6">
-          <h2 className="work-sans text-3xl font-bold text-center mb-16 uppercase">Benefits of Our Mobile Tyre Fitting</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <section className="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6">
+          <h2 className="work-sans text-2xl sm:text-3xl font-bold text-center mb-12 sm:mb-16 uppercase">Benefits of Our Mobile Tyre Fitting</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
             {[
               { icon: 'timer', title: 'Time Saving', desc: 'Skip the garage queues. We fit while you continue with your day at home or work.' },
               { icon: 'security', title: 'Maximized Safety', desc: 'Driving on a damaged tyre is dangerous. Let us come to you to eliminate the risk.' },
@@ -198,9 +198,9 @@ export default function OldhamPage() {
         </section>
 
         {/* FAQ */}
-        <section className="bg-[#ebe7e7] py-16">
-          <div className="max-w-4xl mx-auto px-6">
-            <h2 className="work-sans text-3xl font-bold text-center mb-16 uppercase">Oldham Service FAQ</h2>
+        <section className="bg-[#ebe7e7] py-12 sm:py-16">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 className="work-sans text-2xl sm:text-3xl font-bold text-center mb-12 sm:mb-16 uppercase">Oldham Service FAQ</h2>
             <div className="space-y-4">
               {[
                 { q: 'How quickly can you reach me in Oldham?', a: 'Our average response time for Oldham (OL1 - OL9) is between 30 to 60 minutes. We have local technicians stationed near the town centre for immediate dispatch.' },
@@ -220,9 +220,9 @@ export default function OldhamPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-16 bg-white">
-          <div className="max-w-5xl mx-auto px-6 text-center">
-            <h2 className="work-sans text-3xl font-bold mb-4 uppercase text-[#1c1b1b]">Need Mobile Tyre Fitting in Oldham?</h2>
+        <section className="py-12 sm:py-16 bg-white">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+            <h2 className="work-sans text-2xl sm:text-3xl font-bold mb-4 uppercase text-[#1c1b1b]">Need Mobile Tyre Fitting in Oldham?</h2>
             <p className="text-lg mb-10 text-[#5c403c] leading-relaxed">Don&apos;t wait. Get a professional technician at your location in under an hour.</p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <a className="bg-[#dc2626] text-white work-sans font-bold text-lg h-16 px-16 flex items-center justify-center rounded-lg shadow-xl active:scale-95 transition-all" href="tel:0800000000">

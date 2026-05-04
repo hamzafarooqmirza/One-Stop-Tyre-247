@@ -8,21 +8,22 @@ export default function BuryPage() {
     <div className="bg-[#fcf9f8] text-[#1c1b1b] overflow-x-hidden" style={{ fontFamily: 'Inter, sans-serif' }}>
       <main>
         {/* Hero Section */}
-        <section className="relative bg-[#1c1b1b] py-24 md:py-32 overflow-hidden">
-          <div className="absolute inset-0 opacity-40">
+        <section className="relative min-h-[100svh] lg:min-h-[600px] flex items-center bg-[#1c1b1b] overflow-hidden">
+          <div className="absolute inset-0">
             <img
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover opacity-40"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGZDhN9FUlFZutp_QbQgvUisUHwHOjKJQH8hkyXplJM7vk-RaCp4QYmfwRB9tyTO_FkwqjCEmuhoxa_t6b5nZ31qVQVvVIA2139m7uL504i6ffeCV-PxW6-zBiYlgv_PxpiPGxLrz9E5_0h8cw4pbG25uPQQm8ZnNAwRauwwMZpoV06EWRvbx0hmkk3K_mMu4Be6UKbvdDi4KGspJw3Ss9cngd-xuUWi0yUuinwpgnFMlvDeSlYaF6C6HIEBpgjhHTnuSGuefs8Ww"
               alt="Professional roadside assistance scene in Bury at twilight"
             />
+            <div className="absolute inset-0 bg-[#1c1b1b]/60"></div>
           </div>
-          <div className="relative max-w-7xl mx-auto px-6 z-10">
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 z-10 w-full">
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 bg-[#dc2626] text-white px-4 py-2 rounded-full mb-6 text-sm font-bold">
                 <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>emergency_home</span>
                 URGENT ASSISTANCE: 20-30 MIN ARRIVAL IN BURY
               </div>
-              <h1 className="work-sans text-4xl md:text-5xl font-bold text-white mb-6 leading-tight" style={{ letterSpacing: '-0.02em' }}>
+              <h1 className="work-sans text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight" style={{ letterSpacing: '-0.02em' }}>
                 Mobile Tyre Fitting <span className="text-[#dc2626]">Bury</span> – 24/7 Emergency Support
               </h1>
               <p className="text-lg text-slate-300 mb-8 max-w-2xl leading-relaxed">
@@ -42,9 +43,9 @@ export default function BuryPage() {
         </section>
 
         {/* Bento Grid Services */}
-        <section className="py-24 max-w-7xl mx-auto px-6">
-          <div className="mb-16">
-            <h2 className="work-sans text-3xl font-bold mb-4" style={{ letterSpacing: '-0.01em' }}>Complete Tyre Care in Bury</h2>
+        <section className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="mb-12 sm:mb-16">
+            <h2 className="work-sans text-2xl sm:text-3xl font-bold mb-4" style={{ letterSpacing: '-0.01em' }}>Complete Tyre Care in Bury</h2>
             <p className="text-slate-600">Professional, swift, and reliable services across BL8, BL9 and surrounding areas.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
@@ -113,8 +114,8 @@ export default function BuryPage() {
         </section>
 
         {/* Emergency CTA Section */}
-        <section className="bg-[#dc2626] py-16">
-          <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+        <section className="bg-[#dc2626] py-12 sm:py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
             <div className="text-white">
               <h2 className="work-sans text-3xl font-bold mb-2">Need a tyre in Bury right now?</h2>
               <p className="text-lg opacity-90">Our mobile technicians are currently patrolling near the Rock Shopping Centre and Whitefield.</p>
@@ -132,8 +133,8 @@ export default function BuryPage() {
         </section>
 
         {/* Coverage Area */}
-        <section className="py-24 bg-[#f6f3f2]">
-          <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <section className="py-16 sm:py-24 bg-[#f6f3f2]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div>
               <h2 className="work-sans text-3xl font-bold mb-6">Serving All of Bury &amp; Beyond</h2>
               <p className="text-lg text-slate-700 mb-8 leading-relaxed">We don&apos;t just cover the town center. Our mobile tyre fitting vans are dispatched across the entire metropolitan borough, reaching you quickly wherever you are.</p>
@@ -157,8 +158,8 @@ export default function BuryPage() {
         </section>
 
         {/* Testimonials */}
-        <section className="py-24 max-w-7xl mx-auto px-6">
-          <h2 className="work-sans text-3xl font-bold text-center mb-16">What Bury Drivers Say</h2>
+        <section className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6">
+          <h2 className="work-sans text-2xl sm:text-3xl font-bold text-center mb-12 sm:mb-16">What Bury Drivers Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { quote: 'Stuck on the M66 near Ramsbottom exit at 11 PM. One Stop Tyres were there in 35 minutes. Brilliant service, saved my night!', author: 'David R., Bury Resident' },

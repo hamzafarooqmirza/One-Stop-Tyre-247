@@ -7,22 +7,22 @@ export default function BoltonPage() {
     <div className="bg-[#fcf9f8] text-[#1c1b1b] font-body-md overflow-x-hidden">
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[716px] flex items-center overflow-hidden bg-slate-900">
-          <div className="absolute inset-0 z-0 opacity-40">
+        <section className="relative min-h-[100svh] lg:min-h-[600px] flex items-center overflow-hidden bg-slate-900">
+          <div className="absolute inset-0 z-0">
             <img
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover opacity-40"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWRHcG5Yq1w-p0lx2dCmskXprqQ8BVFsQm9GWU1KDecKdfF7xNkFVpvBooVDgTM_tXZ9tWyD-H6EKn11-PQYJS9qi0AZWVw2cWLCnIG3IuHsJTkBZ74m4XD9Kgqvug2JP91HXI642wqA9p6K8NrR5684YNPTG94cdsn51Sld0OiXccRXLYihx35J91OPtwSeFSLTUQnxs4fSwJtOI46S5s6u2Q51C6rHnUp7-Ins3g1qA6vSjUHbzvWjmNf_meQIL-olV4ypY1wVo"
               alt="Professional roadside assistance scene at night in Bolton"
             />
           </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 to-transparent z-10"></div>
-          <div className="relative z-20 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 py-20">
+          <div className="absolute inset-0 bg-[#0f172a]/75 lg:bg-gradient-to-r lg:from-slate-950 lg:to-transparent z-10"></div>
+          <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 py-20 lg:py-24">
             <div className="flex flex-col justify-center">
               <div className="inline-flex items-center gap-2 bg-[#dc2626]/20 text-[#fff6f5] border border-[#dc2626]/30 px-3 py-1 rounded-full mb-6 w-fit">
                 <span className="material-symbols-outlined text-sm" style={{fontVariationSettings: "'FILL' 1"}}>emergency_home</span>
                 <span className="text-label-bold">20-30 MIN ARRIVAL IN BOLTON</span>
               </div>
-              <h1 className="font-h1 text-h1 text-white mb-6 leading-tight">
+              <h1 className="font-h1 text-3xl sm:text-4xl lg:text-5xl text-white mb-6 leading-tight">
                 Emergency Mobile Tyre Fitting <span className="text-[#dc2626]">Bolton 24/7</span>
               </h1>
               <p className="font-body-lg text-body-lg text-slate-300 mb-10 max-w-lg">
@@ -61,9 +61,9 @@ export default function BoltonPage() {
         </section>
 
         {/* Bento Grid Services */}
-        <section className="py-xl max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="font-h2 text-h2 mb-4 text-[#1c1b1b]">Tyre Services We Provide in Bolton</h2>
+        <section className="py-xl max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="font-h2 text-2xl sm:text-[32px] mb-4 text-[#1c1b1b]">Tyre Services We Provide in Bolton</h2>
             <p className="font-body-md text-[#5c403c] max-w-2xl mx-auto">From high-performance tyres for the motorway to budget options for local commuting, we carry all stock for immediate fitting.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -130,7 +130,7 @@ export default function BoltonPage() {
 
         {/* Trust Section */}
         <section className="bg-white py-xl border-y border-slate-100">
-          <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
               <img
                 className="rounded-2xl shadow-xl"
@@ -175,7 +175,7 @@ export default function BoltonPage() {
 
         {/* Area Coverage Section */}
         <section className="py-xl bg-[#f6f3f2] overflow-hidden">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-5">
                 <h2 className="font-h2 text-h2 mb-6">Full Bolton Coverage Area</h2>
@@ -214,11 +214,11 @@ export default function BoltonPage() {
 
         {/* CTA Section */}
         <section className="py-xl">
-          <div className="max-w-5xl mx-auto px-6">
-            <div className="bg-slate-900 rounded-[2rem] p-12 text-center relative overflow-hidden">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+            <div className="bg-slate-900 rounded-2xl sm:rounded-[2rem] p-8 sm:p-12 text-center relative overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-[#dc2626]/10 blur-[100px] rounded-full"></div>
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#3e5e95]/10 blur-[100px] rounded-full"></div>
-              <h2 className="font-h1 text-white mb-6 relative z-10">Stuck with a flat in Bolton?</h2>
+              <h2 className="font-h1 text-2xl sm:text-3xl lg:text-4xl text-white mb-6 relative z-10">Stuck with a flat in Bolton?</h2>
               <p className="text-slate-400 text-lg mb-10 max-w-2xl mx-auto relative z-10">Don&apos;t wait for hours on a recovery truck. Call our direct Bolton emergency line and we&apos;ll dispatch the nearest fitter immediately.</p>
               <div className="flex flex-col sm:flex-row justify-center gap-6 relative z-10">
                 <a className="bg-[#dc2626] text-white px-10 py-6 rounded-xl font-call-to-action text-2xl flex items-center justify-center gap-4 hover:scale-105 transition-transform" href="tel:08001234567">

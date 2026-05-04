@@ -1,7 +1,4 @@
 import type { Metadata } from 'next'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-
 export const metadata: Metadata = {
   title: 'Jump Start Service | One Stop Tyres 24/7',
   description:
@@ -11,8 +8,6 @@ export const metadata: Metadata = {
 export default function JumpStartPage() {
   return (
     <div className="bg-background text-on-background font-body-md overflow-x-hidden">
-      <Header />
-
       {/* Hero Section */}
       <section
         className="relative min-h-[614px] flex items-center text-white"
@@ -221,8 +216,6 @@ export default function JumpStartPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
 
       {/* Urgent FAB (Mobile Only) */}
       <a

@@ -1,6 +1,3 @@
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-
 export const metadata = {
   title: 'About Us | One Stop Tyres 24/7',
   description:
@@ -10,7 +7,6 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <Header />
       <main className="bg-[#fcf9f8] text-[#1c1b1b]" style={{ fontFamily: 'Inter, sans-serif' }}>
 
         {/* 1. HERO */}
@@ -339,7 +335,6 @@ export default function AboutPage() {
           </span>
         </a>
       </main>
-      <Footer />
     </>
   )
 }

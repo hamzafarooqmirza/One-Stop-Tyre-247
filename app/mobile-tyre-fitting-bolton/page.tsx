@@ -42,7 +42,7 @@ export default function BoltonPage() {
             <div className="flex flex-col justify-center">
               <div className="inline-flex items-center gap-2 bg-[#dc2626]/20 text-[#fff6f5] border border-[#dc2626]/30 px-3 py-1 rounded-full mb-6 w-fit">
                 <span className="material-symbols-outlined text-sm" style={{fontVariationSettings: "'FILL' 1"}}>emergency_home</span>
-                <span className="text-label-bold">30-60 MIN ARRIVAL IN BOLTON</span>
+                <span className="text-label-bold">20-30 MIN ARRIVAL IN BOLTON</span>
               </div>
               <h1 className="font-h1 text-h1 text-white mb-6 leading-tight">
                 Emergency Mobile Tyre Fitting <span className="text-[#dc2626]">Bolton 24/7</span>

@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Mobile Tyre Fitting Stockport | Emergency Roadside Assistance 24/7',
-  description: 'Stuck on the A6 or stranded in Cheadle? Our rapid response teams are stationed across Stockport to provide 30-60 minute emergency tyre repairs and replacements.',
+  description: 'Stuck on the A6 or stranded in Cheadle? Our rapid response teams are stationed across Stockport to provide 20-30 minute emergency tyre repairs and replacements.',
 }
 
 export default function StockportPage() {
@@ -53,7 +53,7 @@ export default function StockportPage() {
                 Fastest Mobile Tyre Fitting in <span className="text-[#dc2626]">Stockport</span> — We Come to You 24/7
               </h1>
               <p className="text-lg text-slate-300 mb-8 max-w-xl leading-relaxed">
-                Stuck on the A6 or stranded in Cheadle? Our rapid response teams are stationed across Stockport to provide 30-60 minute emergency tyre repairs and replacements.
+                Stuck on the A6 or stranded in Cheadle? Our rapid response teams are stationed across Stockport to provide 20-30 minute emergency tyre repairs and replacements.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-[#dc2626] text-white px-8 py-4 rounded-xl work-sans font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-all">
@@ -68,7 +68,7 @@ export default function StockportPage() {
               <div className="mt-8 flex flex-wrap items-center gap-4 text-sm font-semibold">
                 <span className="flex items-center gap-1">
                   <span className="material-symbols-outlined text-[#005f88]" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
-                  30-60 Min Arrival
+                  20-30 Min Arrival
                 </span>
                 <span className="flex items-center gap-1">
                   <span className="material-symbols-outlined text-[#005f88]" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>

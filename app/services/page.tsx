@@ -151,7 +151,7 @@ export default function ServicesPage() {
                   </div>
                   <div>
                     <h4 className="font-label-bold text-label-bold text-secondary text-lg mb-1">Ultra-Fast Response</h4>
-                    <p className="font-body-md text-body-md text-on-surface-variant">We aim for 30-60 minute arrival times across all Greater Manchester districts.</p>
+                    <p className="font-body-md text-body-md text-on-surface-variant">We aim for 20-30 minute arrival times across all UK districts.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">

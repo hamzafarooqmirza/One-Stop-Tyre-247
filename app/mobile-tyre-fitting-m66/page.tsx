@@ -3,7 +3,7 @@ import ServicePage from '@/components/ServicePage'
 export const metadata = {
   title: 'Mobile Tyre Fitting M66 Motorway | One Stop Tyres 24/7',
   description:
-    'Stuck on the M66? Whether you\'re near Bury, Ramsbottom, or the Edenfield bypass, our emergency tyre technicians arrive in 30-60 minutes.',
+    'Stuck on the M66? Whether you\'re near Bury, Ramsbottom, or the Edenfield bypass, our emergency tyre technicians arrive in 20-30 minutes.',
 }
 
 export default function M66Page() {
@@ -11,7 +11,7 @@ export default function M66Page() {
     <ServicePage
       title="Rapid Mobile Tyre Fitting M66 Motorway"
       serviceName="M66 Mobile Tyre Fitting"
-      heroSubheading="Stuck on the M66? Whether you're near Bury, Ramsbottom, or the Edenfield bypass, our emergency tyre technicians arrive in 30-60 minutes to get you back on the road safely."
+      heroSubheading="Stuck on the M66? Whether you're near Bury, Ramsbottom, or the Edenfield bypass, our emergency tyre technicians arrive in 20-30 minutes to get you back on the road safely."
       introBody="The M66 is a critical link between the M60 Manchester ring road and the East Lancashire hills. We operate 24/7 across the entire M66 corridor, providing manufacturer-spec tyre replacements and high-speed puncture repairs. Our Bury-based fleet gives us the fastest arrival times on the M66, covering all junctions from J1 Summerseat/Ramsbottom through to J4 Simister Island (M60/M62). We also cover the A663 and A56 Edenfield Bypass which feeds directly into the northern end of the M66."
       included={[
         'Express Puncture Repair — BS AU 159 compliant repairs with pressure monitoring sensor reset and high-speed balancing included',
@@ -24,7 +24,7 @@ export default function M66Page() {
         'Request callback service available',
       ]}
       whyChooseUs={[
-        '30-60 Min Response — fastest arrival times on the M66 via our local Bury-based fleet',
+        '20-30 Min Response — fastest arrival times on the M66 via our local Bury-based fleet',
         'All Sizes In Stock — from budget to premium brands like Michelin and Pirelli for all rims',
         'Fair Transparent Pricing — no hidden call-out fees; the price we quote is the price you pay',
         'Safety First — highly trained technicians following strict motorway safety protocols',

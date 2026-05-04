@@ -212,7 +212,7 @@ export default function AboutPage() {
               <ul className="space-y-6">
                 {[
                   { title: '24/7 Availability', desc: 'Day or night, rain or shine, we are always on call.' },
-                  { title: 'Fast Response Nationwide', desc: 'Average arrival time of 30-60 minutes across most UK postcodes.' },
+                  { title: 'Fast Response Nationwide', desc: 'Average arrival time of 20-30 minutes across most UK postcodes.' },
                   { title: 'Transparent Pricing', desc: 'No hidden fees. Upfront quotes provided before we dispatch.' },
                   { title: 'Experienced Technicians', desc: 'Fully certified experts with years of roadside experience.' },
                 ].map((item) => (

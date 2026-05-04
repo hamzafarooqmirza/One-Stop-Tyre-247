@@ -102,7 +102,7 @@ export default function TpmsResetPage() {
             <div className="bg-secondary text-white p-lg rounded-2xl shadow-md flex flex-col justify-center items-center text-center">
               <span className="material-symbols-outlined text-tertiary-fixed text-5xl mb-sm block">speed</span>
               <h3 className="font-h3 text-h3 mb-xs">Fast response</h3>
-              <p className="opacity-90 font-body-md">We aim to be with you within 30-60 minutes for emergency call-outs.</p>
+              <p className="opacity-90 font-body-md">We aim to be with you within 20-30 minutes for emergency call-outs.</p>
             </div>
             <div className="bg-white p-lg rounded-2xl shadow-sm border border-slate-100">
               <span className="material-symbols-outlined text-primary text-4xl mb-sm block">badge</span>

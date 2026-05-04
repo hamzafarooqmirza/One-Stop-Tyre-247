@@ -44,7 +44,7 @@ export default function TraffordPage() {
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#b70011]/20 border border-[#b70011]/30 rounded-full text-[#ffb4ab] font-label-bold">
               <span className="w-2 h-2 rounded-full bg-[#b70011] animate-pulse"></span>
-              30-60 MINUTE ARRIVAL IN TRAFFORD
+              20-30 MINUTE ARRIVAL IN TRAFFORD
             </div>
             <h1 className="font-h1 text-white text-5xl lg:text-6xl leading-tight">
               Emergency Mobile Tyre Fitting <span className="text-[#ffb4ab]">Trafford</span>

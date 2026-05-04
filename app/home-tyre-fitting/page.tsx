@@ -91,7 +91,7 @@ export default function HomeTyreFittingPage() {
             <div className="bg-navy-trust p-lg rounded-xl text-white">
               <span className="material-symbols-outlined text-4xl mb-md">speed</span>
               <h3 className="font-h3 text-h3 mb-sm">Fast Response</h3>
-              <p className="text-slate-300 font-body-md">Typical arrival within 30-60 minutes across most UK locations. We prioritize your time.</p>
+              <p className="text-slate-300 font-body-md">Typical arrival within 20-30 minutes across most UK locations. We prioritize your time.</p>
             </div>
             {/* Bento Card 3 */}
             <div className="bg-white p-lg rounded-xl shadow-sm border border-slate-100">
@@ -218,7 +218,7 @@ export default function HomeTyreFittingPage() {
       <section className="py-xl bg-primary-container text-white text-center">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="font-h1 text-h1 mb-md">Need Immediate Assistance?</h2>
-          <p className="font-body-lg text-lg mb-xl opacity-90">Call now for 30-60 minute arrival. Our technicians are ready to help you at home right now.</p>
+          <p className="font-body-lg text-lg mb-xl opacity-90">Call now for 20-30 minute arrival. Our technicians are ready to help you at home right now.</p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-md">
             <a
               className="bg-white text-primary px-12 py-5 rounded-lg font-call-to-action uppercase shadow-2xl hover:scale-105 transition-transform flex items-center gap-sm"

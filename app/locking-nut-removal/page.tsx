@@ -67,7 +67,7 @@ export default function LockingNutRemovalPage() {
             {[
               { icon: 'precision_manufacturing', label: 'Specialist Tools', bg: 'bg-red-50', color: 'text-red-600' },
               { icon: 'verified_user', label: 'No Alloy Damage', bg: 'bg-blue-50', color: 'text-blue-600' },
-              { icon: 'schedule', label: '30-60m Arrival', bg: 'bg-green-50', color: 'text-green-600' },
+              { icon: 'schedule', label: '20-30m Arrival', bg: 'bg-green-50', color: 'text-green-600' },
               { icon: 'public', label: 'UK Coverage', bg: 'bg-purple-50', color: 'text-purple-600' },
             ].map((item) => (
               <div key={item.icon} className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col items-center text-center gap-3">

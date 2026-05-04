@@ -12,7 +12,7 @@ export default function A627Page() {
       title="Mobile Tyre Fitting on the A627"
       serviceName="A627 Mobile Tyre Fitting"
       heroSubheading="Fast and reliable mobile tyre fitting service available 24/7 on the A627 and surrounding areas. We come to you, wherever you are stranded."
-      introBody="Getting a flat tyre on the A627 can be a stressful experience, especially during peak commuter hours or late at night. One Stop Tyres 24/7 provides a dedicated rapid-response team specifically for the A627 corridor. Our expert technicians are strategically positioned to reach you within 30-60 minutes, ensuring you aren't left waiting on a dangerous roadside. We handle everything from simple punctures to complete blowouts for cars, vans, and 4x4s, using industry-leading equipment and high-quality tyres to get you back on your journey safely."
+      introBody="Getting a flat tyre on the A627 can be a stressful experience, especially during peak commuter hours or late at night. One Stop Tyres 24/7 provides a dedicated rapid-response team specifically for the A627 corridor. Our expert technicians are strategically positioned to reach you within 20-30 minutes, ensuring you aren't left waiting on a dangerous roadside. We handle everything from simple punctures to complete blowouts for cars, vans, and 4x4s, using industry-leading equipment and high-quality tyres to get you back on your journey safely."
       included={[
         'Emergency Puncture Repair — on-site repairs following BS AU 159 standards to save you time and money on the A627',
         'New Tyre Installation — all major brands and sizes, premium to budget, prices from £65',
@@ -21,10 +21,10 @@ export default function A627Page() {
         'Wheel Balancing — every new tyre precision balanced on-site using mobile balancing units',
         'Full A627 corridor coverage including links to the M62 and surrounding Oldham/Rochdale areas',
         'Amber light protection and roadside safety protocols',
-        '30-60 minute average response time',
+        '20-30 minute average response time',
       ]}
       whyChooseUs={[
-        '30-60 Minute Arrival — local knowledge of the A627 ensures we find you fast',
+        '20-30 Minute Arrival — local knowledge of the A627 ensures we find you fast',
         '24/7 Availability — day or night, weekends or bank holidays — we never close',
         'Certified Technicians — staff fully trained in high-speed roadside safety',
         'No Hidden Costs — the price we quote is the price you pay. Period.',
@@ -41,7 +41,7 @@ export default function A627Page() {
       faqs={[
         {
           q: 'How fast can you reach me on the A627?',
-          a: 'Our average response time for the A627 corridor is 30-60 minutes, depending on traffic conditions and your exact mileage.',
+          a: 'Our average response time for the A627 corridor is 20-30 minutes, depending on traffic conditions and your exact mileage.',
         },
         {
           q: 'Do you stock tyres for commercial vans?',

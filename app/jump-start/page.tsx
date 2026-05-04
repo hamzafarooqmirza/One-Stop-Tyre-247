@@ -23,7 +23,7 @@ export default function JumpStartPage() {
             </span>
             <h1 className="font-h1 text-white text-6xl">Jump Start</h1>
             <p className="font-body-lg text-slate-100 max-w-xl">
-              Professional, fast and reliable jump start available 24/7 across the UK. Don&apos;t let a dead battery ruin your schedule; we arrive within 30-60 minutes.
+              Professional, fast and reliable jump start available 24/7 across the UK. Don&apos;t let a dead battery ruin your schedule; we arrive within 20-30 minutes.
             </p>
             <div className="flex flex-col sm:flex-row gap-md pt-sm">
               <a
@@ -81,7 +81,7 @@ export default function JumpStartPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-md">
                 {[
                   { icon: 'location_on', title: 'On-site service', desc: 'We come to your exact location, anywhere in the UK.' },
-                  { icon: 'bolt', title: 'Fast response', desc: 'Typical arrival time of 30-60 minutes.' },
+                  { icon: 'bolt', title: 'Fast response', desc: 'Typical arrival time of 20-30 minutes.' },
                   { icon: 'engineering', title: 'Professional technicians', desc: 'Experienced specialists handling your vehicle with care.' },
                   { icon: 'verified_user', title: 'Safe process', desc: 'ECU protection and surge-free charging guaranteed.' },
                 ].map((item) => (
@@ -200,7 +200,7 @@ export default function JumpStartPage() {
           <div className="bg-primary-container rounded-3xl p-lg md:p-xl shadow-2xl relative overflow-hidden">
             <div className="relative z-10 text-white space-y-md">
               <h2 className="font-h1 text-white">Need Immediate Assistance?</h2>
-              <p className="font-body-lg text-white/90">Call now for a 30-60 minute response. We are available 24 hours a day, 7 days a week, 365 days a year.</p>
+              <p className="font-body-lg text-white/90">Call now for a 20-30 minute response. We are available 24 hours a day, 7 days a week, 365 days a year.</p>
               <div className="flex justify-center">
                 <a
                   className="inline-flex items-center gap-sm bg-white text-primary font-call-to-action px-lg py-md rounded-full shadow-lg hover:scale-105 transition-transform"

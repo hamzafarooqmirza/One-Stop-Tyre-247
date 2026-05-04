@@ -85,7 +85,7 @@ export default function Home() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
               </span>
-              Rapid Response: 30-60 Mins
+              Rapid Response: 20-30 Mins
             </div>
 
             <h1
@@ -94,11 +94,11 @@ export default function Home() {
             >
               24/7 Emergency{' '}
               <span className="text-[#b70011]">Mobile Tyre Fitting</span>{' '}
-              Manchester
+              Nationwide
             </h1>
 
             <p className="text-base sm:text-lg text-slate-300 mb-8 leading-relaxed">
-              Stranded with a puncture? Our professional technicians reach you fast at home,
+              Stranded with a puncture anywhere in the UK? Our professional technicians reach you fast at home,
               work, or roadside to get you moving safely.
             </p>
 
@@ -160,8 +160,7 @@ export default function Home() {
               Professional Roadside Assistance
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
-              Comprehensive mobile vehicle support available every day of the year across Greater
-              Manchester.
+              Comprehensive mobile vehicle support available every day of the year across the UK.
             </p>
           </div>
 
@@ -171,7 +170,7 @@ export default function Home() {
               {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp',
                 title: 'Mobile Tyre Fitting',
-                desc: 'Emergency replacement at your location within 30-60 minutes.',
+                desc: 'Emergency replacement at your location within 20-30 minutes.',
                 badge: 'FAST RESPONSE',
               },
               {
@@ -295,18 +294,18 @@ export default function Home() {
               className="text-2xl sm:text-4xl lg:text-5xl text-[#0f172a] mb-5 sm:mb-8 leading-tight font-bold"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
-              Elite Mobile Tyre Fitting Service in Manchester
+              Elite Mobile Tyre Fitting Service Nationwide
             </h2>
             <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg">
               We understand that a flat tyre isn&apos;t just an inconvenience—it&apos;s a
               disruption to your schedule and safety. We&apos;ve built our service to be the most
-              reliable in the region.
+              reliable across the UK.
             </p>
             <ul className="space-y-4 sm:space-y-5">
               <FeatureItem
                 icon="bolt"
                 title="Rapid Response Units"
-                desc="Strategically placed across Manchester for speed."
+                desc="Strategically placed across the UK for speed."
               />
               <FeatureItem
                 icon="engineering"
@@ -520,7 +519,7 @@ export default function Home() {
                 <div>
                   <p className="font-bold text-[#0f172a] text-sm sm:text-base">Service Area</p>
                   <p className="text-sm text-slate-500">
-                    Manchester, Oldham, Bolton, Bury, Stockport &amp; surrounds.
+                    Nationwide coverage across England, Scotland, Wales &amp; N. Ireland.
                   </p>
                 </div>
               </div>
@@ -604,25 +603,24 @@ export default function Home() {
       <section className="relative h-[300px] sm:h-[450px] w-full border-t border-slate-200">
         <iframe
           className="w-full h-full grayscale-[0.2]"
-          src="https://maps.google.com/maps?q=Oldham,%20Manchester&t=&z=12&ie=UTF8&iwloc=&output=embed"
+          src="https://maps.google.com/maps?q=United+Kingdom&t=&z=6&ie=UTF8&iwloc=&output=embed"
           frameBorder="0"
           scrolling="no"
           title="Service area map"
-          aria-label="Google map showing Oldham, Manchester service area"
+          aria-label="Google map showing UK nationwide service area"
           loading="lazy"
         />
         <div className="absolute top-4 left-4 sm:top-10 sm:left-10 z-10">
           <div className="bg-white p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-2xl border border-slate-100 max-w-[200px] sm:max-w-xs">
             <h4 className="font-bold text-[#0f172a] mb-1 sm:mb-2 flex items-center gap-2 text-sm sm:text-base">
               <span className="material-symbols-outlined text-[#b70011] text-[18px]">my_location</span>
-              Local Coverage
+              Nationwide Coverage
             </h4>
             <p className="text-xs sm:text-sm text-slate-600 mb-3 sm:mb-4 hidden sm:block">
-              We are based in Oldham and cover the entire Greater Manchester area within 30-60
-              minutes.
+              We cover the entire UK with rapid response units reaching you within 20-30 minutes.
             </p>
             <div className="flex flex-wrap gap-1 sm:gap-2">
-              {['MANCHESTER', 'OLDHAM', 'STOCKPORT', 'BOLTON'].map((tag) => (
+              {['ENGLAND', 'SCOTLAND', 'WALES', 'N.IRELAND'].map((tag) => (
                 <span
                   key={tag}
                   className="bg-slate-100 px-2 py-1 rounded text-[9px] sm:text-[10px] font-bold text-slate-500"
@@ -652,7 +650,7 @@ export default function Home() {
           <div className="space-y-4">
             <FaqItem
               q="How fast can you reach me?"
-              a="Our average response time across Greater Manchester is between 30 to 60 minutes, depending on traffic conditions and your exact location."
+              a="Our average response time across the UK is between 20 to 30 minutes, depending on traffic conditions and your exact location."
             />
             <FaqItem
               q="Are you really available 24/7?"

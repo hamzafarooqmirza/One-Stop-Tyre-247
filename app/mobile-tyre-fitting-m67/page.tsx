@@ -12,7 +12,7 @@ export default function M67Page() {
       title="Mobile Tyre Fitting on the M67"
       serviceName="M67 Mobile Tyre Fitting"
       heroSubheading="Fast and reliable mobile tyre fitting service available 24/7 on the M67 and surrounding areas. We get you back on the road in under 60 minutes."
-      introBody="Stranded on the M67? Whether you are a daily commuter from Tameside heading towards Manchester or traveling through Hyde and Denton, our emergency tyre fitting units are strategically positioned to reach you within 30-60 minutes. We understand that a flat tyre on a busy motorway is more than just an inconvenience — it's a safety hazard. Our expert technicians are equipped with state-of-the-art tools to handle tyre emergencies on the hard shoulder or at nearby motorway services safely and efficiently."
+      introBody="Stranded on the M67? Whether you are a daily commuter from Tameside heading towards Manchester or traveling through Hyde and Denton, our emergency tyre fitting units are strategically positioned to reach you within 20-30 minutes. We understand that a flat tyre on a busy motorway is more than just an inconvenience — it's a safety hazard. Our expert technicians are equipped with state-of-the-art tools to handle tyre emergencies on the hard shoulder or at nearby motorway services safely and efficiently."
       included={[
         'Emergency Roadside Replacement — 24/7 rapid response for tyre blowouts and punctures on the M67 motorway hard shoulder',
         'Puncture Repair — safe, British Standard repairs carried out on-site if your tyre is salvageable',
@@ -20,11 +20,11 @@ export default function M67Page() {
         'All major tyre brands stocked — budget to premium',
         'Full coverage from J1 (M60 interchange at Denton) through to J4 (Hattersley/Mottram)',
         'High-visibility lighting and safety equipment for hard shoulder work',
-        'Average arrival time of 30-60 minutes on the M67 corridor',
+        'Average arrival time of 20-30 minutes on the M67 corridor',
         'Specialized local knowledge of M67 junctions and Tameside routes',
       ]}
       whyChooseUs={[
-        'Rapid Response Time — average arrival time of 30-60 minutes on the M67 corridor',
+        'Rapid Response Time — average arrival time of 20-30 minutes on the M67 corridor',
         'All Tyre Types Stocked — from budget to premium brands for all major vehicles',
         'Safety Certified — all technicians fully trained for high-speed motorway environments',
         '24/7 availability — day and night, weekends and bank holidays',

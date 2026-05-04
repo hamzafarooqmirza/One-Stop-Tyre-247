@@ -3,7 +3,7 @@ import ServicePage from '@/components/ServicePage'
 export const metadata = {
   title: 'M62 Mobile Tyre Fitting | 24/7 Emergency Roadside Assistance | One Stop Tyres 24/7',
   description:
-    'Stuck on the M62? From Liverpool to Hull, we provide 24/7 emergency tyre repairs and replacements with a 30-60 minute arrival time.',
+    'Stuck on the M62? From Liverpool to Hull, we provide 24/7 emergency tyre repairs and replacements with a 20-30 minute arrival time.',
 }
 
 export default function M62Page() {
@@ -11,7 +11,7 @@ export default function M62Page() {
     <ServicePage
       title="M62 Mobile Tyre Fitting & Roadside Assistance"
       serviceName="M62 Mobile Tyre Fitting"
-      heroSubheading="Stuck on the M62? From Liverpool to Hull, we provide 24/7 emergency tyre repairs and replacements with a 30-60 minute arrival time. Don't wait on the hard shoulder — call the experts now."
+      heroSubheading="Stuck on the M62? From Liverpool to Hull, we provide 24/7 emergency tyre repairs and replacements with a 20-30 minute arrival time. Don't wait on the hard shoulder — call the experts now."
       introBody="Crossing the spine of England, the M62 is vital and volatile. We cover every mile, every junction, and every service station across the Trans-Pennine route. Our strategic positioning near major junctions like J18 (Simister Island) and J22 (Rishworth Moor) ensures we reach you before anyone else. From commercial vans crossing the Pennines to standard family cars, we carry a vast range of premium and budget tyres in every van."
       included={[
         'Emergency tyre replacement for all vehicle types — cars, vans, and commercial vehicles',
@@ -24,7 +24,7 @@ export default function M62Page() {
         'Service station attendance — Birch Services, Hartshead Moor, Ferrybridge, and Burtonwood',
       ]}
       whyChooseUs={[
-        '30-60 minute arrival — strategic positioning near major junctions like J18 and J22',
+        '20-30 minute arrival — strategic positioning near major junctions like J18 and J22',
         'All tyre sizes in stock — from budget to premium for all vehicle types',
         'M62 Safety Experts — specifically trained for high-speed roadside recovery and hazardous hard shoulder repairs',
         '"Lost a tyre near Ferrybridge at 2 AM. One Stop Tyres were there within 40 minutes. Truly a lifesaver." — Dave H., Haulage Driver',
@@ -49,7 +49,7 @@ export default function M62Page() {
         },
         {
           q: 'What is your average response time on the M62?',
-          a: 'Our average arrival time is 30-60 minutes. Our strategic positioning near J18 (Simister Island) and J22 (Rishworth Moor) ensures we can reach most M62 locations quickly.',
+          a: 'Our average arrival time is 20-30 minutes. Our strategic positioning near J18 (Simister Island) and J22 (Rishworth Moor) ensures we can reach most M62 locations quickly.',
         },
         {
           q: 'Do you carry commercial van tyres for the M62?',

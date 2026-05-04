@@ -6,36 +6,6 @@ export const metadata = {
 export default function OldhamPage() {
   return (
     <div className="bg-[#fcf9f8] text-[#1c1b1b] overflow-x-hidden" style={{ fontFamily: 'Inter, sans-serif' }}>
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800;900&family=Inter:wght@400;600;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        .work-sans { font-family: 'Work Sans', sans-serif; }
-      `}</style>
-
-      {/* Header */}
-      <header className="bg-white top-0 sticky z-50 border-b border-slate-200 shadow-md">
-        <div className="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-          <div className="text-2xl font-black text-red-600 tracking-tighter uppercase work-sans">One Stop Tyres 24/7</div>
-          <nav className="hidden md:flex gap-6 work-sans text-base font-semibold tracking-tight">
-            <a className="text-slate-700 hover:text-red-700 transition-colors" href="#">Home</a>
-            <a className="text-slate-700 hover:text-red-700 transition-colors" href="#">Services</a>
-            <a className="text-red-600 border-b-2 border-red-600 pb-1" href="#">Coverage Area</a>
-            <a className="text-slate-700 hover:text-red-700 transition-colors" href="#">About Us</a>
-            <a className="text-slate-700 hover:text-red-700 transition-colors" href="#">Contact</a>
-          </nav>
-          <div className="flex items-center gap-3">
-            <a className="hidden lg:flex items-center gap-1 text-red-600 font-bold hover:opacity-80 transition-all" href="tel:0800000000">
-              <span className="material-symbols-outlined">phone_in_talk</span>
-              CALL NOW
-            </a>
-            <button className="bg-[#dc2626] text-white px-4 py-2 rounded uppercase font-bold text-sm tracking-widest active:opacity-80 active:scale-95 transition-all work-sans">
-              Emergency Services
-            </button>
-          </div>
-        </div>
-      </header>
-
       <main>
         {/* Hero Section */}
         <section className="relative min-h-[600px] flex items-center overflow-hidden">
@@ -262,51 +232,6 @@ export default function OldhamPage() {
           </div>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="bg-slate-50 border-t border-slate-200">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full px-8 py-12 max-w-7xl mx-auto">
-          <div>
-            <div className="text-lg font-bold text-slate-900 mb-4">One Stop Tyres 24/7</div>
-            <p className="text-sm text-slate-600 leading-relaxed">Oldham&apos;s leading 24-hour mobile tyre fitting and emergency roadside assistance experts.</p>
-          </div>
-          <div>
-            <h5 className="font-bold mb-4 uppercase text-xs tracking-widest text-[#b70011]">Our Services</h5>
-            <ul className="space-y-2 text-sm text-slate-600">
-              {['Emergency Call-out', 'Mobile Tyre Fitting', 'Puncture Repair', 'Jump Starts'].map((s) => (
-                <li key={s}><a className="hover:text-red-600 hover:underline" href="#">{s}</a></li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h5 className="font-bold mb-4 uppercase text-xs tracking-widest text-[#b70011]">Coverage Area</h5>
-            <ul className="space-y-2 text-sm text-slate-600">
-              <li>Oldham Central</li>
-              <li>Chadderton</li>
-              <li>Royton</li>
-              <li>Saddleworth</li>
-            </ul>
-          </div>
-          <div>
-            <h5 className="font-bold mb-4 uppercase text-xs tracking-widest text-[#b70011]">Legal</h5>
-            <ul className="space-y-2 text-sm text-slate-600">
-              <li><a className="hover:text-red-600 hover:underline" href="#">Privacy Policy</a></li>
-              <li><a className="hover:text-red-600 hover:underline" href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-        </div>
-        <div className="max-w-7xl mx-auto px-8 py-6 border-t border-slate-200 text-center text-sm text-slate-600">
-          © 2024 One Stop Tyres 24/7. High-Urgency Emergency Roadside Assistance UK. All Rights Reserved.
-        </div>
-      </footer>
-
-      {/* FAB */}
-      <a
-        className="fixed bottom-6 right-6 w-16 h-16 bg-[#dc2626] text-white rounded-full flex items-center justify-center shadow-2xl z-[60] active:scale-90 transition-all"
-        href="tel:0800000000"
-      >
-        <span className="material-symbols-outlined text-3xl">phone_in_talk</span>
-      </a>
     </div>
   )
 }

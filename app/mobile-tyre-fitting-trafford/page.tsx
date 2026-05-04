@@ -5,31 +5,6 @@ export const metadata = {
 export default function TraffordPage() {
   return (
     <div className="bg-[#fcf9f8] text-[#1c1b1b] font-body-md">
-      {/* TopAppBar */}
-      <header className="bg-white dark:bg-slate-900 sticky top-0 z-50 border-b border-slate-200 dark:border-slate-800 shadow-md dark:shadow-none">
-        <div className="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-          <div className="text-2xl font-black text-red-600 dark:text-red-500 tracking-tighter uppercase font-h1">
-            One Stop Tyres 24/7
-          </div>
-          <nav className="hidden md:flex gap-6 items-center">
-            <a className="font-h3 text-base font-semibold tracking-tight text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 transition-colors duration-200" href="#">Home</a>
-            <a className="font-h3 text-base font-semibold tracking-tight text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 transition-colors duration-200" href="#">Services</a>
-            <a className="font-h3 text-base font-semibold tracking-tight text-red-600 dark:text-red-500 border-b-2 border-red-600 pb-1" href="#">Coverage Area</a>
-            <a className="font-h3 text-base font-semibold tracking-tight text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 transition-colors duration-200" href="#">About Us</a>
-            <a className="font-h3 text-base font-semibold tracking-tight text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 transition-colors duration-200" href="#">Contact</a>
-          </nav>
-          <div className="flex items-center gap-4">
-            <button className="hidden lg:flex items-center gap-2 bg-[#3e5e95] text-white px-4 py-2 rounded-lg font-label-bold transition-all active:opacity-80 active:scale-95">
-              <span className="material-symbols-outlined">phone_in_talk</span>
-              Emergency Services
-            </button>
-            <button className="bg-[#dc2626] text-white px-6 py-3 rounded-lg font-call-to-action transition-all active:opacity-80 active:scale-95 shadow-lg">
-              CALL NOW
-            </button>
-          </div>
-        </div>
-      </header>
-
       {/* Hero Section */}
       <section className="relative min-h-[819px] flex items-center overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
@@ -240,50 +215,6 @@ export default function TraffordPage() {
         </div>
       </section>
 
-      {/* Emergency FAB */}
-      <a className="fixed bottom-8 right-8 z-[100] w-20 h-20 bg-[#dc2626] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform md:hidden" href="tel:00000000000">
-        <span className="material-symbols-outlined text-4xl" style={{fontVariationSettings: "'FILL' 1"}}>phone_in_talk</span>
-      </a>
-
-      {/* Footer */}
-      <footer className="bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 mt-xl">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full px-8 py-12 max-w-7xl mx-auto">
-          <div className="space-y-4">
-            <div className="text-lg font-bold text-slate-900 dark:text-white uppercase font-h1">One Stop Tyres 24/7</div>
-            <p className="text-sm text-slate-600 dark:text-slate-400">Your trusted partner for emergency mobile tyre fitting and roadside assistance across Trafford and Greater Manchester.</p>
-          </div>
-          <div className="space-y-4">
-            <h4 className="font-label-bold text-slate-900 dark:text-white uppercase">Services</h4>
-            <ul className="space-y-2">
-              <li><a className="text-sm text-slate-600 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-400 hover:underline" href="#">Emergency Call-out</a></li>
-              <li><a className="text-sm text-slate-600 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-400 hover:underline" href="#">Mobile Tyre Fitting</a></li>
-              <li><a className="text-sm text-slate-600 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-400 hover:underline" href="#">Puncture Repair</a></li>
-              <li><a className="text-sm text-slate-600 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-400 hover:underline" href="#">Jump Starts</a></li>
-            </ul>
-          </div>
-          <div className="space-y-4">
-            <h4 className="font-label-bold text-slate-900 dark:text-white uppercase">Legal</h4>
-            <ul className="space-y-2">
-              <li><a className="text-sm text-slate-600 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-400 hover:underline" href="#">Privacy Policy</a></li>
-              <li><a className="text-sm text-slate-600 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-400 hover:underline" href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-          <div className="space-y-4">
-            <h4 className="font-label-bold text-slate-900 dark:text-white uppercase">Contact</h4>
-            <div className="flex items-center gap-2 text-[#b70011] font-bold">
-              <span className="material-symbols-outlined">phone</span>
-              0800 123 4567
-            </div>
-            <div className="flex items-center gap-2 text-slate-600 dark:text-slate-400 text-sm">
-              <span className="material-symbols-outlined">mail</span>
-              help@onestoptyres247.co.uk
-            </div>
-          </div>
-        </div>
-        <div className="border-t border-slate-200 dark:border-slate-800 py-6 px-8 text-center">
-          <p className="text-xs text-slate-500 dark:text-slate-500">© 2024 One Stop Tyres 24/7. High-Urgency Emergency Roadside Assistance UK. All Rights Reserved.</p>
-        </div>
-      </footer>
     </div>
   )
 }

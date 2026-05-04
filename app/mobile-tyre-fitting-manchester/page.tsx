@@ -5,29 +5,6 @@ export const metadata = {
 export default function ManchesterPage() {
   return (
     <div className="bg-[#fcf9f8] text-[#1c1b1b] font-body-md">
-      {/* TopAppBar */}
-      <header className="bg-white dark:bg-slate-900 top-0 sticky z-50 border-b border-slate-200 dark:border-slate-800 shadow-md dark:shadow-none">
-        <div className="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-          <div className="text-2xl font-black text-red-600 dark:text-red-500 tracking-tighter uppercase font-h1">One Stop Tyres 24/7</div>
-          <nav className="hidden md:flex items-center space-x-8 font-h3 text-base font-semibold tracking-tight">
-            <a className="text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 transition-colors duration-200" href="#">Home</a>
-            <a className="text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 transition-colors duration-200" href="#">Services</a>
-            <a className="text-red-600 dark:text-red-500 border-b-2 border-red-600 pb-1" href="#">Coverage Area</a>
-            <a className="text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 transition-colors duration-200" href="#">About Us</a>
-            <a className="text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 transition-colors duration-200" href="#">Contact</a>
-          </nav>
-          <div className="flex items-center gap-4">
-            <a className="hidden lg:flex items-center gap-2 bg-[#dc2626] text-white px-6 py-2 rounded font-call-to-action uppercase" href="tel:0800000000">
-              <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>phone_in_talk</span>
-              CALL NOW
-            </a>
-            <button className="md:hidden text-[#1c1b1b]">
-              <span className="material-symbols-outlined">menu</span>
-            </button>
-          </div>
-        </div>
-      </header>
-
       <main>
         {/* Hero Section */}
         <section className="relative min-h-[716px] flex items-center overflow-hidden bg-slate-900 text-white">
@@ -321,48 +298,6 @@ export default function ManchesterPage() {
           </div>
         </section>
       </main>
-
-      {/* Urgent FAB for Mobile */}
-      <a className="fixed bottom-6 right-6 w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center shadow-2xl z-[100] md:hidden" href="tel:0800000000">
-        <span className="material-symbols-outlined text-3xl" style={{fontVariationSettings: "'FILL' 1"}}>phone_in_talk</span>
-      </a>
-
-      {/* Footer */}
-      <footer className="bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full px-8 py-12 max-w-7xl mx-auto">
-          <div className="space-y-4">
-            <div className="text-lg font-bold text-slate-900 dark:text-white">One Stop Tyres 24/7</div>
-            <p className="text-sm text-slate-600 dark:text-slate-400">High-Urgency Emergency Roadside Assistance UK. Your local Manchester tyre fitting experts.</p>
-          </div>
-          <div>
-            <h4 className="font-label-bold text-slate-900 dark:text-white mb-4 uppercase">Services</h4>
-            <ul className="space-y-2 text-sm">
-              <li><a className="text-slate-600 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-400 hover:underline transition-colors" href="#">Emergency Call-out</a></li>
-              <li><a className="text-slate-600 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-400 hover:underline transition-colors" href="#">Mobile Tyre Fitting</a></li>
-              <li><a className="text-slate-600 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-400 hover:underline transition-colors" href="#">Puncture Repair</a></li>
-              <li><a className="text-slate-600 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-400 hover:underline transition-colors" href="#">Jump Starts</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-label-bold text-slate-900 dark:text-white mb-4 uppercase">Contact</h4>
-            <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-              <li className="flex items-center gap-2"><span className="material-symbols-outlined text-xs">phone</span> 0800 000 000</li>
-              <li className="flex items-center gap-2"><span className="material-symbols-outlined text-xs">mail</span> help@onestoptyres.co.uk</li>
-              <li className="flex items-center gap-2"><span className="material-symbols-outlined text-xs">location_on</span> Manchester Service Hub</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-label-bold text-slate-900 dark:text-white mb-4 uppercase">Legal</h4>
-            <ul className="space-y-2 text-sm">
-              <li><a className="text-slate-600 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-400 hover:underline transition-colors" href="#">Privacy Policy</a></li>
-              <li><a className="text-slate-600 dark:text-slate-400 hover:text-red-600 dark:hover:text-red-400 hover:underline transition-colors" href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-        </div>
-        <div className="border-t border-slate-200 dark:border-slate-800 py-6 text-center">
-          <p className="text-sm text-slate-600 dark:text-slate-400">© 2024 One Stop Tyres 24/7. High-Urgency Emergency Roadside Assistance UK. All Rights Reserved.</p>
-        </div>
-      </footer>
     </div>
   )
 }

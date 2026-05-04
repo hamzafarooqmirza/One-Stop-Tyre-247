@@ -6,34 +6,6 @@ export const metadata = {
 export default function StockportPage() {
   return (
     <div className="bg-[#fcf9f8] text-[#1c1b1b] overflow-x-hidden" style={{ fontFamily: 'Inter, sans-serif' }}>
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800;900&family=Inter:wght@400;600;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        .work-sans { font-family: 'Work Sans', sans-serif; }
-      `}</style>
-
-      {/* Header */}
-      <header className="bg-white top-0 sticky z-50 border-b border-slate-200 shadow-md">
-        <div className="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-          <div className="text-2xl font-black text-red-600 tracking-tighter uppercase work-sans">One Stop Tyres 24/7</div>
-          <nav className="hidden md:flex gap-6 items-center">
-            <a className="work-sans text-base font-semibold tracking-tight text-red-600 border-b-2 border-red-600 pb-1 hover:text-red-700 transition-colors" href="#">Home</a>
-            <a className="work-sans text-base font-semibold tracking-tight text-slate-700 hover:text-red-700 transition-colors" href="#">Services</a>
-            <a className="work-sans text-base font-semibold tracking-tight text-slate-700 hover:text-red-700 transition-colors" href="#">Coverage Area</a>
-            <a className="work-sans text-base font-semibold tracking-tight text-slate-700 hover:text-red-700 transition-colors" href="#">About Us</a>
-            <a className="work-sans text-base font-semibold tracking-tight text-slate-700 hover:text-red-700 transition-colors" href="#">Contact</a>
-          </nav>
-          <div className="flex items-center gap-4">
-            <button className="hidden lg:block bg-[#3e5e95] text-white px-4 py-2 rounded work-sans font-semibold text-sm">Emergency Services</button>
-            <a className="bg-[#dc2626] text-white px-6 py-3 rounded-lg work-sans font-bold flex items-center gap-2 hover:opacity-80 active:scale-95 transition-all text-sm" href="tel:08001234567">
-              <span className="material-symbols-outlined">phone_in_talk</span>
-              CALL NOW
-            </a>
-          </div>
-        </div>
-      </header>
-
       <main>
         {/* Hero Section */}
         <section className="relative bg-slate-900 text-white py-20 overflow-hidden">
@@ -244,47 +216,6 @@ export default function StockportPage() {
           </div>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="bg-slate-50 border-t border-slate-200">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full px-8 py-12 max-w-7xl mx-auto">
-          <div className="md:col-span-2">
-            <div className="text-lg font-bold text-slate-900 mb-4">One Stop Tyres 24/7</div>
-            <p className="text-sm text-slate-600 mb-6 max-w-md leading-relaxed">The UK&apos;s leading provider of emergency roadside tyre assistance. Delivering professional, swift, and reliable mobile fitting services directly to your location in Stockport and beyond.</p>
-            <div className="flex gap-4">
-              <span className="material-symbols-outlined text-slate-400 hover:text-red-600 cursor-pointer transition-colors">phone_in_talk</span>
-              <span className="material-symbols-outlined text-slate-400 hover:text-red-600 cursor-pointer transition-colors">mail</span>
-              <span className="material-symbols-outlined text-slate-400 hover:text-red-600 cursor-pointer transition-colors">location_on</span>
-            </div>
-          </div>
-          <div>
-            <h4 className="font-bold text-slate-900 mb-4 uppercase text-xs tracking-widest">Our Services</h4>
-            <ul className="space-y-2">
-              {['Emergency Call-out', 'Mobile Tyre Fitting', 'Puncture Repair', 'Jump Starts'].map((s) => (
-                <li key={s}><a className="text-sm text-slate-600 hover:text-red-600 hover:underline" href="#">{s}</a></li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold text-slate-900 mb-4 uppercase text-xs tracking-widest">Legal</h4>
-            <ul className="space-y-2">
-              <li><a className="text-sm text-slate-600 hover:text-red-600 hover:underline" href="#">Privacy Policy</a></li>
-              <li><a className="text-sm text-slate-600 hover:text-red-600 hover:underline" href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-        </div>
-        <div className="border-t border-slate-200 py-6 px-8 max-w-7xl mx-auto text-center">
-          <p className="text-sm text-slate-600">© 2024 One Stop Tyres 24/7. High-Urgency Emergency Roadside Assistance UK. All Rights Reserved.</p>
-        </div>
-      </footer>
-
-      {/* FAB */}
-      <a
-        className="fixed bottom-6 right-6 w-16 h-16 bg-[#dc2626] text-white rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 active:scale-95 transition-all"
-        href="tel:08001234567"
-      >
-        <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>phone</span>
-      </a>
     </div>
   )
 }

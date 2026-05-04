@@ -6,29 +6,6 @@ export const metadata = {
 export default function RochdalePage() {
   return (
     <div className="bg-[#fcf9f8] text-[#1c1b1b] font-body-md">
-      {/* TopAppBar */}
-      <header className="bg-white dark:bg-slate-900 top-0 sticky z-50 border-b border-slate-200 dark:border-slate-800 shadow-md dark:shadow-none">
-        <div className="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-          <div className="text-2xl font-black text-red-600 dark:text-red-500 tracking-tighter uppercase font-h1">One Stop Tyres 24/7</div>
-          <nav className="hidden md:flex gap-6 font-h3 text-base font-semibold tracking-tight">
-            <a className="text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 transition-colors duration-200" href="#">Home</a>
-            <a className="text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 transition-colors duration-200" href="#">Services</a>
-            <a className="text-red-600 dark:text-red-500 border-b-2 border-red-600 pb-1" href="#">Coverage Area</a>
-            <a className="text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 transition-colors duration-200" href="#">About Us</a>
-            <a className="text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 transition-colors duration-200" href="#">Contact</a>
-          </nav>
-          <div className="flex items-center gap-4">
-            <button className="hidden lg:flex items-center gap-2 bg-[#dc2626] text-white px-6 py-2 rounded-full font-call-to-action text-sm active:opacity-80 active:scale-95 transition-all">
-              <span className="material-symbols-outlined">phone_in_talk</span>
-              CALL NOW
-            </button>
-            <div className="md:hidden">
-              <span className="material-symbols-outlined text-3xl">menu</span>
-            </div>
-          </div>
-        </div>
-      </header>
-
       {/* Hero Section */}
       <section
         className="min-h-[716px] flex items-center text-white relative"
@@ -272,59 +249,6 @@ export default function RochdalePage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full px-8 py-12 max-w-7xl mx-auto">
-          <div className="col-span-1 md:col-span-1">
-            <div className="text-lg font-bold text-slate-900 dark:text-white mb-4">One Stop Tyres 24/7</div>
-            <p className="text-sm text-slate-600 dark:text-slate-400">Your local Rochdale emergency tyre specialist. Available round the clock to keep you safe on the road.</p>
-            <div className="flex gap-4 mt-6">
-              <span className="material-symbols-outlined text-red-600">verified_user</span>
-              <span className="material-symbols-outlined text-red-600">local_shipping</span>
-              <span className="material-symbols-outlined text-red-600">contact_support</span>
-            </div>
-          </div>
-          <div>
-            <div className="font-label-bold mb-4 uppercase tracking-wider text-xs">Our Services</div>
-            <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-              <li><a className="hover:text-red-600 dark:hover:text-red-400 hover:underline" href="#">Emergency Call-out</a></li>
-              <li><a className="hover:text-red-600 dark:hover:text-red-400 hover:underline" href="#">Mobile Tyre Fitting</a></li>
-              <li><a className="hover:text-red-600 dark:hover:text-red-400 hover:underline" href="#">Puncture Repair</a></li>
-              <li><a className="hover:text-red-600 dark:hover:text-red-400 hover:underline" href="#">Jump Starts</a></li>
-            </ul>
-          </div>
-          <div>
-            <div className="font-label-bold mb-4 uppercase tracking-wider text-xs">Coverage</div>
-            <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-              <li>Rochdale Town Centre</li>
-              <li>Littleborough &amp; Milnrow</li>
-              <li>Castleton &amp; Heywood</li>
-              <li>M62 Motorway Assistance</li>
-            </ul>
-          </div>
-          <div>
-            <div className="font-label-bold mb-4 uppercase tracking-wider text-xs">Support</div>
-            <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-              <li><a className="hover:text-red-600 dark:hover:text-red-400 hover:underline" href="#">Privacy Policy</a></li>
-              <li><a className="hover:text-red-600 dark:hover:text-red-400 hover:underline" href="#">Terms of Service</a></li>
-              <li className="pt-4">
-                <div className="flex items-center gap-2 text-red-600 font-bold">
-                  <span className="material-symbols-outlined">phone</span>
-                  0800 123 4567
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="border-t border-slate-200 dark:border-slate-800 py-6 text-center">
-          <p className="text-sm text-slate-600 dark:text-slate-400">© 2024 One Stop Tyres 24/7. High-Urgency Emergency Roadside Assistance UK. All Rights Reserved.</p>
-        </div>
-      </footer>
-
-      {/* Urgent FAB */}
-      <a className="fixed bottom-6 right-6 w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center shadow-2xl z-[100] md:w-20 md:h-20 hover:scale-105 active:scale-95 transition-all" href="tel:0800123456">
-        <span className="material-symbols-outlined text-3xl md:text-4xl" style={{fontVariationSettings: "'FILL' 1"}}>phone_in_talk</span>
-      </a>
     </div>
   )
 }

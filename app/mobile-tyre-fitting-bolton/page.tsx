@@ -5,28 +5,6 @@ export const metadata = {
 export default function BoltonPage() {
   return (
     <div className="bg-[#fcf9f8] text-[#1c1b1b] font-body-md overflow-x-hidden">
-      {/* TopAppBar */}
-      <header className="bg-white dark:bg-slate-900 top-0 sticky z-50 border-b border-slate-200 dark:border-slate-800 shadow-md dark:shadow-none">
-        <div className="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-          <div className="text-2xl font-black text-red-600 dark:text-red-500 tracking-tighter uppercase font-h1">
-            One Stop Tyres 24/7
-          </div>
-          <nav className="hidden md:flex gap-8 items-center">
-            <a className="font-h3 text-base font-semibold tracking-tight text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 transition-colors duration-200" href="#">Home</a>
-            <a className="font-h3 text-base font-semibold tracking-tight text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 transition-colors duration-200" href="#">Services</a>
-            <a className="font-h3 text-base font-semibold tracking-tight text-red-600 dark:text-red-500 border-b-2 border-red-600 pb-1" href="#">Coverage Area</a>
-            <a className="font-h3 text-base font-semibold tracking-tight text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 transition-colors duration-200" href="#">About Us</a>
-            <a className="font-h3 text-base font-semibold tracking-tight text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 transition-colors duration-200" href="#">Contact</a>
-          </nav>
-          <div className="flex items-center gap-4">
-            <a className="bg-[#dc2626] text-white px-6 py-2 rounded font-call-to-action text-sm flex items-center gap-2 hover:opacity-80 transition-all active:scale-95" href="tel:08001234567">
-              <span className="material-symbols-outlined text-sm">phone_in_talk</span>
-              CALL NOW
-            </a>
-          </div>
-        </div>
-      </header>
-
       <main>
         {/* Hero Section */}
         <section className="relative min-h-[716px] flex items-center overflow-hidden bg-slate-900">
@@ -259,58 +237,6 @@ export default function BoltonPage() {
           </div>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full px-8 py-12 max-w-7xl mx-auto">
-          <div className="col-span-1 md:col-span-1">
-            <div className="text-lg font-bold text-slate-900 dark:text-white mb-6 font-h1">One Stop Tyres 24/7</div>
-            <p className="text-sm text-slate-600 dark:text-slate-400 mb-6">Premium emergency tyre fitting across Bolton and Greater Manchester. Professional service when you need it most.</p>
-            <div className="flex gap-4">
-              <span className="material-symbols-outlined text-slate-400">verified</span>
-              <span className="material-symbols-outlined text-slate-400">security</span>
-              <span className="material-symbols-outlined text-slate-400">credit_card</span>
-            </div>
-          </div>
-          <div>
-            <h4 className="font-bold text-slate-900 dark:text-white mb-6">Services</h4>
-            <ul className="space-y-4 text-sm text-slate-600 dark:text-slate-400">
-              <li><a className="hover:text-red-600 dark:hover:text-red-400 hover:underline transition-all" href="#">Emergency Call-out</a></li>
-              <li><a className="hover:text-red-600 dark:hover:text-red-400 hover:underline transition-all" href="#">Mobile Tyre Fitting</a></li>
-              <li><a className="hover:text-red-600 dark:hover:text-red-400 hover:underline transition-all" href="#">Puncture Repair</a></li>
-              <li><a className="hover:text-red-600 dark:hover:text-red-400 hover:underline transition-all" href="#">Jump Starts</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold text-slate-900 dark:text-white mb-6">Company</h4>
-            <ul className="space-y-4 text-sm text-slate-600 dark:text-slate-400">
-              <li><a className="hover:text-red-600 dark:hover:text-red-400 hover:underline transition-all" href="#">About Us</a></li>
-              <li><a className="hover:text-red-600 dark:hover:text-red-400 hover:underline transition-all" href="#">Coverage Area</a></li>
-              <li><a className="hover:text-red-600 dark:hover:text-red-400 hover:underline transition-all" href="#">Privacy Policy</a></li>
-              <li><a className="hover:text-red-600 dark:hover:text-red-400 hover:underline transition-all" href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold text-slate-900 dark:text-white mb-6">Contact Bolton</h4>
-            <p className="text-sm text-slate-600 dark:text-slate-400 mb-2">Deane Road, Bolton</p>
-            <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">Greater Manchester, BL3</p>
-            <a className="text-red-600 font-bold block mb-2" href="tel:08001234567">0800 123 4567</a>
-            <a className="text-slate-600 dark:text-slate-400 text-sm hover:underline" href="mailto:info@onestoptyres.co.uk">info@onestoptyres.co.uk</a>
-          </div>
-        </div>
-        <div className="border-t border-slate-200 dark:border-slate-800 py-6 px-8 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-slate-600 dark:text-slate-400">© 2024 One Stop Tyres 24/7. High-Urgency Emergency Roadside Assistance UK. All Rights Reserved.</p>
-          <div className="flex gap-6">
-            <span className="material-symbols-outlined text-slate-400 cursor-pointer hover:text-red-600">thumb_up</span>
-            <span className="material-symbols-outlined text-slate-400 cursor-pointer hover:text-red-600">share</span>
-          </div>
-        </div>
-      </footer>
-
-      {/* Urgent FAB */}
-      <a className="fixed bottom-6 right-6 w-16 h-16 bg-[#dc2626] text-white rounded-full shadow-2xl flex items-center justify-center z-50 md:hidden hover:scale-110 active:scale-95 transition-all" href="tel:08001234567">
-        <span className="material-symbols-outlined text-3xl" style={{fontVariationSettings: "'FILL' 1"}}>phone_in_talk</span>
-      </a>
     </div>
   )
 }

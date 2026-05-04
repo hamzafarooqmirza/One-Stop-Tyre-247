@@ -6,35 +6,6 @@ export const metadata = {
 export default function BuryPage() {
   return (
     <div className="bg-[#fcf9f8] text-[#1c1b1b] overflow-x-hidden" style={{ fontFamily: 'Inter, sans-serif' }}>
-      {/* Google Fonts */}
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800;900&family=Inter:wght@400;600;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        .work-sans { font-family: 'Work Sans', sans-serif; }
-      `}</style>
-
-      {/* Header */}
-      <header className="bg-white top-0 sticky z-50 border-b border-slate-200 shadow-md">
-        <div className="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-          <div className="text-2xl font-black text-red-600 tracking-tighter uppercase work-sans">One Stop Tyres 24/7</div>
-          <nav className="hidden md:flex items-center gap-8">
-            <a className="work-sans text-base font-semibold tracking-tight text-red-600 border-b-2 border-red-600 pb-1" href="#">Home</a>
-            <a className="work-sans text-base font-semibold tracking-tight text-slate-700 hover:text-red-700 transition-colors" href="#">Services</a>
-            <a className="work-sans text-base font-semibold tracking-tight text-slate-700 hover:text-red-700 transition-colors" href="#">Coverage Area</a>
-            <a className="work-sans text-base font-semibold tracking-tight text-slate-700 hover:text-red-700 transition-colors" href="#">About Us</a>
-            <a className="work-sans text-base font-semibold tracking-tight text-slate-700 hover:text-red-700 transition-colors" href="#">Contact</a>
-          </nav>
-          <div className="flex items-center gap-4">
-            <button className="hidden lg:block px-6 py-2 bg-[#dc2626] text-white work-sans font-bold rounded-lg active:opacity-80 transition-all text-sm">CALL NOW</button>
-            <div className="flex gap-2">
-              <span className="material-symbols-outlined text-red-600">phone_in_talk</span>
-              <span className="material-symbols-outlined text-red-600">location_on</span>
-            </div>
-          </div>
-        </div>
-      </header>
-
       <main>
         {/* Hero Section */}
         <section className="relative bg-[#1c1b1b] py-24 md:py-32 overflow-hidden">
@@ -207,46 +178,6 @@ export default function BuryPage() {
           </div>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="bg-slate-50 border-t border-slate-200">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full px-8 py-12 max-w-7xl mx-auto">
-          <div className="flex flex-col gap-4">
-            <div className="text-lg font-bold text-slate-900">One Stop Tyres 24/7</div>
-            <p className="text-sm text-slate-600">Your first choice for emergency mobile tyre fitting in Bury and Greater Manchester. Professional service, 24 hours a day.</p>
-          </div>
-          <div className="flex flex-col gap-2">
-            <h4 className="font-bold text-slate-900 mb-2 uppercase tracking-wider text-xs">Quick Links</h4>
-            <a className="text-sm text-slate-600 hover:text-red-600 hover:underline" href="#">Emergency Call-out</a>
-            <a className="text-sm text-slate-600 hover:text-red-600 hover:underline" href="#">Mobile Tyre Fitting</a>
-            <a className="text-sm text-slate-600 hover:text-red-600 hover:underline" href="#">Puncture Repair</a>
-            <a className="text-sm text-slate-600 hover:text-red-600 hover:underline" href="#">Jump Starts</a>
-          </div>
-          <div className="flex flex-col gap-2">
-            <h4 className="font-bold text-slate-900 mb-2 uppercase tracking-wider text-xs">Locations</h4>
-            <p className="text-sm text-slate-600">Bury Town Centre</p>
-            <p className="text-sm text-slate-600">Ramsbottom &amp; North Bury</p>
-            <p className="text-sm text-slate-600">Radcliffe &amp; Whitefield</p>
-            <p className="text-sm text-slate-600">Prestwich &amp; South Bury</p>
-          </div>
-          <div className="flex flex-col gap-2">
-            <h4 className="font-bold text-slate-900 mb-2 uppercase tracking-wider text-xs">Legal</h4>
-            <a className="text-sm text-slate-600 hover:text-red-600 hover:underline" href="#">Privacy Policy</a>
-            <a className="text-sm text-slate-600 hover:text-red-600 hover:underline" href="#">Terms of Service</a>
-          </div>
-        </div>
-        <div className="w-full px-8 py-6 border-t border-slate-200 text-center">
-          <p className="text-sm text-slate-600">© 2024 One Stop Tyres 24/7. High-Urgency Emergency Roadside Assistance UK. All Rights Reserved.</p>
-        </div>
-      </footer>
-
-      {/* FAB */}
-      <a
-        className="fixed bottom-8 right-8 w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center shadow-2xl z-50 sm:hidden hover:scale-105 active:scale-95 transition-all"
-        href="tel:08001234567"
-      >
-        <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>phone_in_talk</span>
-      </a>
     </div>
   )
 }

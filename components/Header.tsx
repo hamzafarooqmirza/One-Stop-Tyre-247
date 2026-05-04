@@ -4,10 +4,10 @@ import { useState } from 'react'
 
 const navLinks = [
   { label: 'Home', href: '/' },
-  { label: 'About Us', href: '#' },
+  { label: 'About Us', href: '/about' },
   { label: 'Services', href: '/services' },
   { label: 'Service Area', href: '#' },
-  { label: 'Contact', href: '#' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 export default function Header() {

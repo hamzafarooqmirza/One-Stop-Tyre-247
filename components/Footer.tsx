@@ -32,16 +32,21 @@ export default function Footer() {
             Our Services
           </h4>
           <ul className="space-y-4 text-slate-400 text-sm font-medium">
-            {['Emergency Call-out', 'Mobile Tyre Fitting', 'Puncture Repair', 'Locking Nut Removal'].map(
-              (item) => (
-                <li key={item}>
-                  <a href="#" className="hover:text-[#b70011] transition-colors flex items-center gap-2">
-                    <span className="w-1 h-1 bg-[#b70011] rounded-full" />
-                    {item}
-                  </a>
-                </li>
-              )
-            )}
+            {[
+              { label: 'Mobile Tyre Fitting', href: '/mobile-tyre-fitting' },
+              { label: 'Home Tyre Fitting', href: '/home-tyre-fitting' },
+              { label: 'Emergency Puncture Repair', href: '/emergency-puncture-repair' },
+              { label: 'Jump Start', href: '/jump-start' },
+              { label: 'Locking Nut Removal', href: '/locking-nut-removal' },
+              { label: 'TPMS Reset', href: '/tpms-reset' },
+            ].map((item) => (
+              <li key={item.href}>
+                <a href={item.href} className="hover:text-[#b70011] transition-colors flex items-center gap-2">
+                  <span className="w-1 h-1 bg-[#b70011] rounded-full" />
+                  {item.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -51,16 +56,21 @@ export default function Footer() {
             Service Areas
           </h4>
           <ul className="space-y-4 text-slate-400 text-sm font-medium">
-            {['Manchester City', 'Oldham & Rochdale', 'Bolton & Bury', 'Stockport & Trafford'].map(
-              (area) => (
-                <li key={area}>
-                  <a href="#" className="hover:text-[#b70011] transition-colors flex items-center gap-2">
-                    <span className="w-1 h-1 bg-slate-600 rounded-full" />
-                    {area}
-                  </a>
-                </li>
-              )
-            )}
+            {[
+              { label: 'Our Service Area', href: '/service-area' },
+              { label: 'Mobile Tyre Fitting Bolton', href: '/mobile-tyre-fitting-bolton' },
+              { label: 'Mobile Tyre Fitting M60', href: '/mobile-tyre-fitting-m60' },
+              { label: 'Mobile Tyre Fitting M62', href: '/mobile-tyre-fitting-m62' },
+              { label: 'Mobile Tyre Fitting M66', href: '/mobile-tyre-fitting-m66' },
+              { label: 'Mobile Tyre Fitting M67', href: '/mobile-tyre-fitting-m67' },
+            ].map((area) => (
+              <li key={area.href}>
+                <a href={area.href} className="hover:text-[#b70011] transition-colors flex items-center gap-2">
+                  <span className="w-1 h-1 bg-slate-600 rounded-full" />
+                  {area.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -99,14 +109,20 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
         <p className="text-slate-500 text-xs text-center md:text-left">
-          © 2024 One Stop Tyres 24/7. High-Urgency Emergency Roadside Assistance UK. All Rights
+          © 2026 One Stop Tyres 24/7. High-Urgency Emergency Roadside Assistance UK. All Rights
           Reserved.
         </p>
-        <div className="flex gap-6 text-[10px] text-slate-600 uppercase font-bold tracking-widest">
-          <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-          <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-          <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
-        </div>
+        <p className="text-slate-600 text-[11px] text-center md:text-right">
+          Designed &amp; Developed By{' '}
+          <a
+            href="https://linkedo.co.uk"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+            className="text-slate-400 hover:text-[#b70011] transition-colors font-semibold"
+          >
+            Linkedo
+          </a>
+        </p>
       </div>
     </footer>
   )

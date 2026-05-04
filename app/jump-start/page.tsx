@@ -217,14 +217,7 @@ export default function JumpStartPage() {
         </div>
       </section>
 
-      {/* Urgent FAB (Mobile Only) */}
-      <a
-        className="fixed bottom-6 right-6 w-16 h-16 bg-primary-container text-white rounded-full flex items-center justify-center shadow-2xl z-[60] md:hidden active:scale-90 transition-transform"
-        href="tel:07759708646"
-        aria-label="Call us"
-      >
-        <span className="material-symbols-outlined text-3xl fill-1">phone_in_talk</span>
-      </a>
+
     </div>
   )
 }

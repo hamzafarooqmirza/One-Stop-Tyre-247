@@ -449,19 +449,7 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* Mobile FAB */}
-        <a
-          href="tel:07759708646"
-          className="md:hidden fixed bottom-6 right-6 w-16 h-16 bg-[#b70011] text-white rounded-full flex items-center justify-center shadow-2xl z-[60] active:scale-90 transition-all"
-          aria-label="Call us"
-        >
-          <span
-            className="material-symbols-outlined text-3xl"
-            style={{ fontVariationSettings: "'FILL' 1" }}
-          >
-            phone_in_talk
-          </span>
-        </a>
+
       </main>
     </>
   )

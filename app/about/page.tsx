@@ -321,19 +321,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Mobile FAB */}
-        <a
-          href="tel:07759708646"
-          className="md:hidden fixed bottom-8 right-8 bg-[#b70011] text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-[100]"
-          aria-label="Call us"
-        >
-          <span
-            className="material-symbols-outlined text-3xl"
-            style={{ fontVariationSettings: "'FILL' 1" }}
-          >
-            phone_in_talk
-          </span>
-        </a>
+
       </main>
     </>
   )

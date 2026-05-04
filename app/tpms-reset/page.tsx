@@ -244,16 +244,7 @@ export default function TpmsResetPage() {
         </div>
       </section>
 
-      {/* Persistent Mobile FAB */}
-      <div className="md:hidden fixed bottom-6 right-6 z-[60]">
-        <a
-          className="w-16 h-16 bg-primary-container text-white rounded-full shadow-2xl flex items-center justify-center animate-pulse"
-          href="tel:07759708646"
-          aria-label="Call us"
-        >
-          <span className="material-symbols-outlined text-3xl fill-1">phone_in_talk</span>
-        </a>
-      </div>
+
     </div>
   )
 }

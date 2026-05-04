@@ -262,14 +262,7 @@ export default function EmergencyPunctureRepairPage() {
         </div>
       </section>
 
-      {/* Urgent FAB */}
-      <a
-        className="fixed bottom-6 right-6 w-16 h-16 bg-primary-container text-white rounded-full flex items-center justify-center shadow-2xl z-50 md:hidden active:scale-95 transition-all"
-        href="tel:07759708646"
-        aria-label="Call us"
-      >
-        <span className="material-symbols-outlined text-3xl fill-1">phone_in_talk</span>
-      </a>
+
     </div>
   )
 }

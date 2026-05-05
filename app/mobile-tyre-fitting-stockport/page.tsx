@@ -87,68 +87,118 @@ export default function StockportPage() {
           </div>
         </section>
 
-        {/* Services Bento Grid */}
-        <section className="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-10 sm:mb-12">
-            <h2 className="work-sans text-2xl sm:text-3xl font-bold text-[#1c1b1b] mb-4">Urgent Mobile Services</h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">We don&apos;t just fit tyres; we provide a complete roadside safety solution for Stockport motorists, 24 hours a day.</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {/* Large Puncture Card */}
-            <div className="md:col-span-2 bg-white p-8 rounded-xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-8 items-center group hover:shadow-lg transition-all">
-              <div className="flex-1">
-                <div className="w-12 h-12 bg-[#ffdad6] rounded-lg flex items-center justify-center text-[#dc2626] mb-4">
-                  <span className="material-symbols-outlined">build</span>
-                </div>
-                <h3 className="work-sans text-xl font-semibold mb-2">Expert Puncture Repair</h3>
-                <p className="text-slate-600 mb-4 leading-relaxed">Don&apos;t replace when you can repair. We provide safe, BSAU 159 standard roadside puncture repairs in Heaton Chapel, Reddish, and beyond.</p>
-                <div className="flex gap-2 flex-wrap">
-                  <span className="bg-[#c8e6ff] text-[#001e2e] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">From £45</span>
-                  <span className="bg-[#f0edec] text-slate-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Stockport Wide</span>
-                </div>
-              </div>
-              <div className="w-full md:w-1/3 h-48 rounded-lg overflow-hidden">
-                <img
-                  className="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxiGMvqlvvVprqIl-HT9oQ9KbDkVW-t8frd_bM6JYvzkyKqfbseboLYwyewz2CNHBxZ_QCrDDeYu7XLZuUCLzI3arh0FlYDRIqZXYoZXdXhhB7nVH2v6pfFpmH3fioEZLUlg5RJWnmuqyvRblMNQ3077EtKm3nt38kJwomiYJsKWMHFyRkATpa7y7iYc-4R1yOFJKOieeFaRFsYEWYdKcNJHN5gfx3LJo_zt_vEvHVClgShkJtnKC7Nt0o26Gz-Q0HUFRl-raXTVo"
-                  alt="Technician performing a puncture repair"
-                />
-              </div>
+        {/* Services Grid */}
+        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
+          <div className="max-w-7xl mx-auto">
+            {/* Heading */}
+            <div className="text-center mb-10 sm:mb-16">
+              <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+                What We Do
+              </span>
+              <h2
+                className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight"
+                style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+              >
+                Professional Roadside Assistance in Stockport
+              </h2>
+              <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
+                Comprehensive mobile vehicle support available every day of the year across Stockport and surrounding areas.
+              </p>
             </div>
-            {/* Home Fitting */}
-            <div className="bg-[#3e5e95] text-white p-8 rounded-xl shadow-sm flex flex-col justify-between hover:scale-[1.02] transition-transform">
+
+            {/* Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {[
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp',
+                  title: 'Mobile Tyre Fitting',
+                  desc: 'Emergency replacement at your location within 20-30 minutes.',
+                  badge: 'FAST RESPONSE',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting-airanko-NAQrFhRm9UilkOOWhZBEd5lhxc7eEz.webp',
+                  title: 'Home Tyre Fitting',
+                  desc: 'Convenient tyre replacement on your driveway while you work or relax.',
+                  badge: 'AT YOUR DOOR',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emeregency%20Puncture%20Repair-airanko-K3cI9fjWlcirkZkEwDEvdtRtKQg3B7.webp',
+                  title: 'Emergency Puncture Repair',
+                  desc: 'Professional plug and patch repair to save your tyre when possible.',
+                  badge: 'BS AU 159',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Jumpstart-onestop-airanko-bUQeSwSrfEEeS2vgU2IuyrDFFak87m.webp',
+                  title: 'JumpStart',
+                  desc: 'Fast battery jump-start service to get your vehicle running again without delay.',
+                  badge: '24/7 SERVICE',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TPMS%20Reset-airanko-LEqPbQFsdbmM1ZLc5m0aoAUKGG4haJ.webp',
+                  title: 'TPMS Reset',
+                  desc: 'Tyre pressure monitoring system reset after every tyre change or repair.',
+                  badge: 'ALL VEHICLES',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20Nut%20Removal-airanko-MV4iwDQaMKuuoUnbMrRrQW5QIDJQbV.webp',
+                  title: 'Locking Nut Removal',
+                  desc: 'Specialist damage-free removal of lost or broken locking wheel nuts.',
+                  badge: 'DAMAGE FREE',
+                },
+              ].map((card) => (
+                <div
+                  key={card.title}
+                  className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
+                >
+                  <div className="relative h-44 sm:h-52 overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={card.img}
+                      alt={card.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      width={600}
+                      height={400}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                    <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">
+                      {card.badge}
+                    </span>
+                  </div>
+                  <div className="p-5 sm:p-6">
+                    <h3
+                      className="text-base sm:text-lg font-semibold mb-2 text-[#0f172a]"
+                      style={{ fontFamily: 'var(--font-work-sans)' }}
+                    >
+                      {card.title}
+                    </h3>
+                    <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
+                    <div className="flex items-center justify-end">
+                      <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
+                        arrow_forward
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* CTA strip */}
+            <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
               <div>
-                <span className="material-symbols-outlined text-4xl mb-4 block">home_repair_service</span>
-                <h3 className="work-sans text-xl font-semibold mb-2">Home &amp; Work Fitting</h3>
-                <p className="text-slate-200 leading-relaxed">Fitting while you work or relax. We cover all residential and commercial Stockport postcodes including SK1-SK8.</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
+                <p className="text-slate-400 text-sm sm:text-base">
+                  Speak directly to a technician for an instant quote and arrival time.
+                </p>
               </div>
-              <button className="mt-6 text-white border-b-2 border-white/30 font-bold self-start text-sm">Learn More</button>
-            </div>
-            {/* Jump Starts */}
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-lg transition-all">
-              <div className="w-12 h-12 bg-[#ffdad6] rounded-lg flex items-center justify-center text-[#dc2626] mb-4">
-                <span className="material-symbols-outlined">bolt</span>
-              </div>
-              <h3 className="work-sans text-xl font-semibold mb-2">Emergency Jump Starts</h3>
-              <p className="text-slate-600 leading-relaxed">Flat battery near Stockport Viaduct? Our team carries heavy-duty boosters for all vehicle types.</p>
-            </div>
-            {/* Commercial */}
-            <div className="md:col-span-2 bg-white p-8 rounded-xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-8 items-center hover:shadow-lg transition-all">
-              <div className="w-full md:w-1/4 h-32 rounded-lg overflow-hidden order-last md:order-first">
-                <img
-                  className="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnP3XDSkRBLVlAvoHZmyIgZwFKhY7EigaSqXwGDwFFkya71f4VTTw0gSR79BjjJFFfC6etHyOnsCcqyxKeQsGU-PcVRpNrWyPwx8s23xJMSnTnr-ap_21ag_IZyAcDfzdNec5elXqcTk-lcpwH8t970Ts0mKKkZXBvlOXn9sGLgW482dv4_8gM90vv-iT5WszzQuvdVv9Et-tI-l_jDh8RQU4V4uEsmFlpamhBIQM-cRTSTvpU9H9mtlItVxo4uPQ39fOLumsndww"
-                  alt="Row of professional commercial vans ready for dispatch"
-                />
-              </div>
-              <div className="flex-1">
-                <h3 className="work-sans text-xl font-semibold mb-2">Commercial Fleet Support</h3>
-                <p className="text-slate-600 mb-4 leading-relaxed">Specialized tyre fitting for vans, HGVs, and fleets across the Stockport industrial zones. Minimize downtime with our 24/7 priority fleet service.</p>
-                <div className="flex gap-4">
-                  <span className="flex items-center gap-1 font-bold text-[#3e5e95] text-sm"><span className="material-symbols-outlined">check</span> Van Tyres</span>
-                  <span className="flex items-center gap-1 font-bold text-[#3e5e95] text-sm"><span className="material-symbols-outlined">check</span> Multi-car Discount</span>
-                </div>
-              </div>
+              <a
+                href="tel:07759708646"
+                className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
+              >
+                07759 708 646
+              </a>
             </div>
           </div>
         </section>

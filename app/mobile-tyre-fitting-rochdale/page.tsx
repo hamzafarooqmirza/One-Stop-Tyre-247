@@ -80,96 +80,118 @@ export default function RochdalePage() {
         </div>
       </section>
 
-      {/* Services Bento Grid */}
-      <section className="py-xl bg-[#fcf9f8]" id="services">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="mb-12">
-            <h2 className="font-h2 text-[#1c1b1b] mb-4 text-center">Comprehensive Roadside Assistance</h2>
-            <p className="text-center text-[#5c403c] max-w-2xl mx-auto leading-relaxed">Providing Rochdale motorists with expert tyre solutions and mechanical aid whenever and wherever required.</p>
+      {/* Services Grid */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50" id="services">
+        <div className="max-w-7xl mx-auto">
+          {/* Heading */}
+          <div className="text-center mb-10 sm:mb-16">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+              What We Do
+            </span>
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Professional Roadside Assistance in Rochdale
+            </h2>
+            <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
+              Comprehensive mobile vehicle support available every day of the year across Rochdale and surrounding areas.
+            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-            {/* Emergency Fitting Card */}
-            <div className="md:col-span-8 bg-white p-lg rounded-xl shadow-[0px_4px_20px_rgba(0,45,98,0.05)] border border-[#e5e2e1] relative overflow-hidden group">
-              <div className="relative z-10">
-                <div className="w-12 h-12 bg-[#ffdad6] rounded-lg flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-[#b70011] text-3xl">car_repair</span>
+
+          {/* Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {[
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp',
+                title: 'Mobile Tyre Fitting',
+                desc: 'Emergency replacement at your location within 20-30 minutes.',
+                badge: 'FAST RESPONSE',
+              },
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting-airanko-NAQrFhRm9UilkOOWhZBEd5lhxc7eEz.webp',
+                title: 'Home Tyre Fitting',
+                desc: 'Convenient tyre replacement on your driveway while you work or relax.',
+                badge: 'AT YOUR DOOR',
+              },
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emeregency%20Puncture%20Repair-airanko-K3cI9fjWlcirkZkEwDEvdtRtKQg3B7.webp',
+                title: 'Emergency Puncture Repair',
+                desc: 'Professional plug and patch repair to save your tyre when possible.',
+                badge: 'BS AU 159',
+              },
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Jumpstart-onestop-airanko-bUQeSwSrfEEeS2vgU2IuyrDFFak87m.webp',
+                title: 'JumpStart',
+                desc: 'Fast battery jump-start service to get your vehicle running again without delay.',
+                badge: '24/7 SERVICE',
+              },
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TPMS%20Reset-airanko-LEqPbQFsdbmM1ZLc5m0aoAUKGG4haJ.webp',
+                title: 'TPMS Reset',
+                desc: 'Tyre pressure monitoring system reset after every tyre change or repair.',
+                badge: 'ALL VEHICLES',
+              },
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20Nut%20Removal-airanko-MV4iwDQaMKuuoUnbMrRrQW5QIDJQbV.webp',
+                title: 'Locking Nut Removal',
+                desc: 'Specialist damage-free removal of lost or broken locking wheel nuts.',
+                badge: 'DAMAGE FREE',
+              },
+            ].map((card) => (
+              <div
+                key={card.title}
+                className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
+              >
+                <div className="relative h-44 sm:h-52 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={card.img}
+                    alt={card.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    width={600}
+                    height={400}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">
+                    {card.badge}
+                  </span>
                 </div>
-                <h3 className="font-h3 text-[#1c1b1b] mb-4">Emergency Mobile Tyre Fitting</h3>
-                <p className="text-[#5c403c] mb-6 max-w-lg">Our core service for Rochdale. We stock a massive range of premium, mid-range, and budget tyres for all vehicle types including cars, 4x4s, and light commercials. Available 24 hours a day, 365 days a year.</p>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center gap-3">
-                    <span className="material-symbols-outlined text-[#b70011] text-xl">check_circle</span>
-                    <span className="font-body-md">Roadside, Workplace or Home</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="material-symbols-outlined text-[#b70011] text-xl">check_circle</span>
-                    <span className="font-body-md">Locking Wheel Nut Removal</span>
-                  </li>
-                </ul>
-                <button className="bg-[#b70011] text-white px-8 py-3 rounded-lg font-label-bold flex items-center gap-2">
-                  CALL NOW <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                </button>
-              </div>
-              <img
-                alt="New Tyre"
-                className="absolute right-0 bottom-0 w-1/3 opacity-10 group-hover:opacity-20 transition-opacity"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzws1g39MMbabdP3gOhqpZXlrLKjBVUT_mo5zWX1KMwfQSj3TCbTJ_KaPjILz6AqXrbWXE4jY_0gjmQ1qDCiju7NyFL2DAQNcDVuM-gHeVQ0ABinZJUsxXlgoYwadKN3IsnGWvxqsLLZdseLUcPvzDL24uh7YwSk36ANeVgcFDBb2Is-9cdyGjkB5YGlq1dWHxwJGxl_4FJDMRuMYElcwwPDo6hQwklwU_Oko_hnen06iMazs1AW_ZA1p5N41jNBmBCv43pD5O030"
-              />
-            </div>
-            {/* Puncture Repair */}
-            <div className="md:col-span-4 bg-[#3e5e95] p-lg rounded-xl shadow-lg text-white">
-              <div className="w-12 h-12 bg-[#d7e2ff] rounded-lg flex items-center justify-center mb-6">
-                <span className="material-symbols-outlined text-[#001b3f] text-3xl">build</span>
-              </div>
-              <h3 className="font-h3 mb-4">Mobile Puncture Repair</h3>
-              <p className="text-blue-100 mb-8">Not every flat needs a new tyre. If it&apos;s safe to repair, we&apos;ll fix it on the spot to save you money.</p>
-              <div className="bg-blue-800/30 p-4 rounded-lg">
-                <div className="text-sm font-label-bold uppercase text-blue-200 mb-1">Starts From</div>
-                <div className="text-3xl font-h1">£45.00</div>
-              </div>
-            </div>
-            {/* Jump Starts */}
-            <div className="md:col-span-4 bg-white p-lg rounded-xl shadow-[0px_4px_20px_rgba(0,45,98,0.05)] border border-[#e5e2e1]">
-              <div className="w-12 h-12 bg-[#c8e6ff] rounded-lg flex items-center justify-center mb-6">
-                <span className="material-symbols-outlined text-[#005f88] text-3xl">bolt</span>
-              </div>
-              <h3 className="font-h3 text-[#1c1b1b] mb-4">Battery Jump Starts</h3>
-              <p className="text-[#5c403c]">Flat battery on a cold Rochdale morning? We carry high-power booster packs to get your engine running instantly.</p>
-            </div>
-            {/* Coverage */}
-            <div className="md:col-span-8 bg-[#ebe7e7] p-lg rounded-xl border border-[#e5e2e1] flex flex-col md:flex-row gap-8">
-              <div className="flex-1">
-                <h3 className="font-h3 text-[#1c1b1b] mb-4">Rochdale Coverage Area</h3>
-                <p className="text-[#5c403c] mb-6">We cover the entire Rochdale borough and surrounding Greater Manchester areas with rapid response times.</p>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="flex items-center gap-2 px-3 py-2 bg-white rounded border border-[#e5e2e1] font-label-bold text-xs">
-                    <span className="material-symbols-outlined text-[#b70011] text-base">location_on</span> M62 Motorway
-                  </div>
-                  <div className="flex items-center gap-2 px-3 py-2 bg-white rounded border border-[#e5e2e1] font-label-bold text-xs">
-                    <span className="material-symbols-outlined text-[#b70011] text-base">location_on</span> Town Centre
-                  </div>
-                  <div className="flex items-center gap-2 px-3 py-2 bg-white rounded border border-[#e5e2e1] font-label-bold text-xs">
-                    <span className="material-symbols-outlined text-[#b70011] text-base">location_on</span> Castleton
-                  </div>
-                  <div className="flex items-center gap-2 px-3 py-2 bg-white rounded border border-[#e5e2e1] font-label-bold text-xs">
-                    <span className="material-symbols-outlined text-[#b70011] text-base">location_on</span> Milnrow
-                  </div>
-                  <div className="flex items-center gap-2 px-3 py-2 bg-white rounded border border-[#e5e2e1] font-label-bold text-xs">
-                    <span className="material-symbols-outlined text-[#b70011] text-base">location_on</span> Littleborough
-                  </div>
-                  <div className="flex items-center gap-2 px-3 py-2 bg-white rounded border border-[#e5e2e1] font-label-bold text-xs">
-                    <span className="material-symbols-outlined text-[#b70011] text-base">location_on</span> Heywood
+                <div className="p-5 sm:p-6">
+                  <h3
+                    className="text-base sm:text-lg font-semibold mb-2 text-[#0f172a]"
+                    style={{ fontFamily: 'var(--font-work-sans)' }}
+                  >
+                    {card.title}
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
+                  <div className="flex items-center justify-end">
+                    <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
+                      arrow_forward
+                    </span>
                   </div>
                 </div>
               </div>
-              <div className="flex-1 min-h-[200px] bg-slate-200 rounded-lg overflow-hidden border border-[#e5e2e1]">
-                <img
-                  alt="Map Area"
-                  className="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2hbo202_eqbLyuDyBZo-qgTzpxW1zRRNY_c-VccIG578Fmz7CkmZ5W4I9iiv69rcgZ8x_8D9R1NFscTTpcmbj5vkPE1j-527JCwLPYcNxxcvjt5i1lVT4VNuXwC2uPohLWAeVV7C4e5v9wpg_YRlthAoeFAyOuHf_x941SVBDbMjum4QhEmEt5L9I_JSF757RKSb5vgBXyY_Cs4Yu-7MKnter8-nejNi7cunEsVqhFQbtsNKTJeK_PhN_HJsD9529gzxjsUb3oiM"
-                />
-              </div>
+            ))}
+          </div>
+
+          {/* CTA strip */}
+          <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
+            <div>
+              <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
+              <p className="text-slate-400 text-sm sm:text-base">
+                Speak directly to a technician for an instant quote and arrival time.
+              </p>
             </div>
+            <a
+              href="tel:07759708646"
+              className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
+              style={{ fontFamily: 'var(--font-work-sans)' }}
+            >
+              07759 708 646
+            </a>
           </div>
         </div>
       </section>

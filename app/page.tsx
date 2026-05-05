@@ -583,37 +583,79 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 8. MAP ────────────────────────────────────────── */}
-      <section className="relative h-[300px] sm:h-[450px] w-full border-t border-slate-200">
-        <iframe
-          className="w-full h-full grayscale-[0.2]"
-          src="https://maps.google.com/maps?q=United+Kingdom&t=&z=6&ie=UTF8&iwloc=&output=embed"
-          frameBorder="0"
-          scrolling="no"
-          title="Service area map"
-          aria-label="Google map showing UK nationwide service area"
-          loading="lazy"
-        />
-        <div className="absolute top-4 left-4 sm:top-10 sm:left-10 z-10">
-          <div className="bg-white p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-2xl border border-slate-100 max-w-[200px] sm:max-w-xs">
-            <h4 className="font-bold text-[#0f172a] mb-1 sm:mb-2 flex items-center gap-2 text-sm sm:text-base">
-              <span className="material-symbols-outlined text-[#b70011] text-[18px]">my_location</span>
-              Nationwide Coverage
-            </h4>
-            <p className="text-xs sm:text-sm text-slate-600 mb-3 sm:mb-4 hidden sm:block">
-              We cover the entire UK with rapid response units reaching you within 20-30 minutes.
-            </p>
-            <div className="flex flex-wrap gap-1 sm:gap-2">
-              {['ENGLAND', 'SCOTLAND', 'WALES', 'N.IRELAND'].map((tag) => (
+      {/* ── 8. MAP ────────────────────────────────��───────── */}
+      {/* ── 8. MAP + LOCATIONS ───────────────────────────── */}
+      <section className="border-t border-slate-200 flex flex-col lg:flex-row" style={{ minHeight: '520px' }}>
+        {/* Left — map */}
+        <div className="w-full lg:w-1/2 h-[300px] lg:h-auto">
+          <iframe
+            className="w-full h-full"
+            src="https://maps.google.com/maps?q=Greater+Manchester,+UK&t=&z=10&ie=UTF8&iwloc=&output=embed"
+            frameBorder="0"
+            scrolling="no"
+            title="Service area map"
+            aria-label="Google map showing Greater Manchester service area"
+            loading="lazy"
+          />
+        </div>
+
+        {/* Right — locations */}
+        <div className="w-full lg:w-1/2 bg-[#0f172a] px-6 sm:px-10 py-10 sm:py-14 flex flex-col justify-center">
+          <span className="text-[#b70011] font-bold uppercase tracking-widest text-xs mb-3 block">
+            Our Service Areas
+          </span>
+          <h2
+            className="text-white text-2xl sm:text-3xl font-bold mb-2 leading-tight text-balance"
+            style={{ fontFamily: 'var(--font-work-sans)' }}
+          >
+            We Come to You — Wherever You Are
+          </h2>
+          <p className="text-slate-400 text-sm mb-8 leading-relaxed">
+            One Stop Tyres covers Greater Manchester and surrounding areas 24/7. Select your location for local service information.
+          </p>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-1.5">
+            {[
+              { name: 'Manchester',    href: '/mobile-tyre-fitting-manchester' },
+              { name: 'Bolton',        href: '/mobile-tyre-fitting-bolton' },
+              { name: 'Bury',          href: '/mobile-tyre-fitting-bury' },
+              { name: 'Oldham',        href: '/mobile-tyre-fitting-oldham' },
+              { name: 'Rochdale',      href: '/mobile-tyre-fitting-rochdale' },
+              { name: 'Stockport',     href: '/mobile-tyre-fitting-stockport' },
+              { name: 'Tameside',      href: '/mobile-tyre-fitting-tameside' },
+              { name: 'Trafford',      href: '/mobile-tyre-fitting-trafford' },
+              { name: 'Wigan',         href: '/mobile-tyre-fitting-wigan' },
+              { name: 'M60 Motorway',  href: '/mobile-tyre-fitting-m60' },
+              { name: 'M602 Motorway', href: '/mobile-tyre-fitting-m602' },
+              { name: 'M61 Motorway',  href: '/mobile-tyre-fitting-m61' },
+              { name: 'M62 Motorway',  href: '/mobile-tyre-fitting-m62' },
+              { name: 'M66 Motorway',  href: '/mobile-tyre-fitting-m66' },
+              { name: 'M67 Motorway',  href: '/mobile-tyre-fitting-m67' },
+              { name: 'A627 Road',     href: '/mobile-tyre-fitting-a627' },
+            ].map((loc) => (
+              <a
+                key={loc.href}
+                href={loc.href}
+                className="flex items-center gap-2 text-slate-300 hover:text-white text-sm font-medium py-1.5 group transition-colors"
+              >
                 <span
-                  key={tag}
-                  className="bg-slate-100 px-2 py-1 rounded text-[9px] sm:text-[10px] font-bold text-slate-500"
+                  className="material-symbols-outlined text-[#b70011] shrink-0 group-hover:scale-110 transition-transform"
+                  style={{ fontSize: '14px' }}
                 >
-                  {tag}
+                  location_on
                 </span>
-              ))}
-            </div>
+                {loc.name}
+              </a>
+            ))}
           </div>
+
+          <a
+            href="/service-area"
+            className="mt-8 self-start inline-flex items-center gap-2 bg-[#b70011] text-white text-sm font-bold px-5 py-3 rounded-xl hover:bg-red-700 transition-colors"
+          >
+            <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>map</span>
+            View Full Service Area
+          </a>
         </div>
       </section>
 

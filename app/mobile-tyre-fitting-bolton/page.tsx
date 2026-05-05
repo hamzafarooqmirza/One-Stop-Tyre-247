@@ -18,17 +18,17 @@ export default function BoltonPage() {
           <div className="absolute inset-0 bg-[#0f172a]/75 lg:bg-gradient-to-r lg:from-slate-950 lg:to-transparent z-10"></div>
           <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 py-20 lg:py-24">
             <div className="flex flex-col justify-center">
-              <div className="inline-flex items-center gap-2 bg-[#dc2626]/20 text-[#fff6f5] border border-[#dc2626]/30 px-3 py-1 rounded-full mb-6 w-fit">
+              <div className="inline-flex items-center gap-2 bg-[#dc2626]/20 text-[#fff6f5] border border-[#dc2626]/30 px-3 py-1 rounded-full mb-4 w-fit">
                 <span className="material-symbols-outlined text-sm" style={{fontVariationSettings: "'FILL' 1"}}>emergency_home</span>
                 <span className="text-label-bold">20-30 MIN ARRIVAL IN BOLTON</span>
               </div>
               <h1 className="font-h1 text-3xl sm:text-4xl lg:text-5xl text-white mb-6 leading-tight">
                 Emergency Mobile Tyre Fitting <span className="text-[#dc2626]">Bolton 24/7</span>
               </h1>
-              <p className="font-body-lg text-body-lg text-slate-300 mb-10 max-w-lg">
+              <p className="font-body-lg text-body-lg text-slate-300 mb-6 max-w-lg leading-relaxed">
                 Stuck with a puncture near the Reebok or on the A666? Our expert technicians provide rapid roadside tyre replacement across Bolton, Farnworth, and Horwich.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 mt-6">
                 <button className="bg-[#dc2626] text-white px-8 py-5 rounded-lg font-call-to-action flex items-center justify-center gap-3 shadow-lg hover:bg-[#b70011] transition-all">
                   <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>call</span>
                   BOOK EMERGENCY REPAIR
@@ -61,10 +61,10 @@ export default function BoltonPage() {
         </section>
 
         {/* Bento Grid Services */}
-        <section className="py-xl max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12 sm:mb-16">
+        <section className="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
             <h2 className="font-h2 text-2xl sm:text-[32px] mb-4 text-[#1c1b1b]">Tyre Services We Provide in Bolton</h2>
-            <p className="font-body-md text-[#5c403c] max-w-2xl mx-auto">From high-performance tyres for the motorway to budget options for local commuting, we carry all stock for immediate fitting.</p>
+            <p className="font-body-md text-[#5c403c] max-w-2xl mx-auto leading-relaxed">From high-performance tyres for the motorway to budget options for local commuting, we carry all stock for immediate fitting.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Large Feature Card */}

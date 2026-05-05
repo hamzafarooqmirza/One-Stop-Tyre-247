@@ -15,13 +15,13 @@ export default function TamesidePage() {
         }}
       >
         <div className="max-w-4xl mx-auto py-20">
-          <div className="inline-flex items-center gap-2 bg-[#dc2626] text-white px-4 py-2 rounded-full mb-6 animate-pulse">
+          <div className="inline-flex items-center gap-2 bg-[#dc2626] text-white px-4 py-2 rounded-full mb-4 animate-pulse">
             <span className="material-symbols-outlined text-sm" style={{fontVariationSettings: "'FILL' 1"}}>emergency</span>
             <span className="text-label-bold">EMERGENCY TYRE FITTING TAMESIDE</span>
           </div>
           <h1 className="font-h1 text-3xl sm:text-4xl lg:text-5xl text-white mb-6">Mobile Tyre Fitting Tameside: 24/7 Roadside Response</h1>
-          <p className="font-body-lg text-body-lg text-white/90 mb-8 max-w-2xl mx-auto">Don&apos;t let a puncture ruin your journey through Ashton, Stalybridge, or Hyde. Our Tameside mobile tyre units arrive within 20-30 minutes to get you moving again.</p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <p className="font-body-lg text-body-lg text-white/90 mb-6 max-w-2xl mx-auto leading-relaxed">Don&apos;t let a puncture ruin your journey through Ashton, Stalybridge, or Hyde. Our Tameside mobile tyre units arrive within 20-30 minutes to get you moving again.</p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
             <a className="bg-[#dc2626] text-white font-call-to-action py-4 px-10 rounded-lg flex items-center justify-center gap-3 shadow-lg hover:bg-[#b70011] transition-colors" href="tel:0800000000">
               <span className="material-symbols-outlined">phone_in_talk</span>
               Call for Immediate Help
@@ -68,7 +68,7 @@ export default function TamesidePage() {
               <div>
                 <span className="material-symbols-outlined text-[#b70011] text-5xl mb-6 block">tire_repair</span>
                 <h3 className="font-h3 text-h3 mb-4">Emergency Roadside Assistance</h3>
-                <p className="text-body-md text-[#5c403c] mb-6">Stuck on the M60 or a quiet Tameside road? Our flagship service provides rapid response for punctures and blowouts. We carry a wide range of tyre sizes in our mobile workshops to ensure a first-time fix.</p>
+                <p className="text-body-md text-[#5c403c] mb-6 leading-relaxed">Stuck on the M60 or a quiet Tameside road? Our flagship service provides rapid response for punctures and blowouts. We carry a wide range of tyre sizes in our mobile workshops to ensure a first-time fix.</p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center gap-3">
                     <span className="material-symbols-outlined text-[#b70011]" style={{fontVariationSettings: "'FILL' 1"}}>check_circle</span>
@@ -111,8 +111,8 @@ export default function TamesidePage() {
       <section className="py-xl bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
           <div>
-            <h2 className="font-h2 text-h2 text-[#1c1b1b] mb-6">Serving All of Tameside &amp; Surrounding Areas</h2>
-            <p className="text-body-lg text-[#5c403c] mb-8">Our local technicians are based strategically throughout the borough to ensure we can reach you in under an hour, no matter where you are.</p>
+            <h2 className="font-h2 text-h2 text-[#1c1b1b] mb-5">Serving All of Tameside &amp; Surrounding Areas</h2>
+            <p className="text-body-lg text-[#5c403c] mb-8 leading-relaxed">Our local technicians are based strategically throughout the borough to ensure we can reach you in under an hour, no matter where you are.</p>
             <div className="grid grid-cols-2 gap-4">
               <div className="flex items-center gap-2 p-3 bg-[#f0edec] rounded-lg">
                 <span className="material-symbols-outlined text-[#b70011]">location_on</span>
@@ -154,8 +154,8 @@ export default function TamesidePage() {
       {/* Call to Action / Urgency Block */}
       <section className="py-xl bg-[#dc2626] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="font-h1 text-2xl sm:text-3xl lg:text-4xl mb-6">Facing a Tyre Emergency in Tameside Right Now?</h2>
-          <p className="text-body-lg mb-10 opacity-90">Our dispatchers are standing by 24/7. Call our priority line and we&apos;ll send the nearest technician to your exact location immediately.</p>
+          <h2 className="font-h1 text-2xl sm:text-3xl lg:text-4xl mb-5">Facing a Tyre Emergency in Tameside Right Now?</h2>
+          <p className="text-body-lg mb-8 opacity-90 leading-relaxed">Our dispatchers are standing by 24/7. Call our priority line and we&apos;ll send the nearest technician to your exact location immediately.</p>
           <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl inline-block border border-white/20">
             <p className="font-label-bold uppercase tracking-widest mb-4">Emergency Hotline</p>
             <a className="text-4xl md:text-6xl font-black block mb-6" href="tel:0800000000">0800 000 000</a>

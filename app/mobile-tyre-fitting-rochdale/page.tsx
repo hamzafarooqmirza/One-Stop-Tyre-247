@@ -17,10 +17,10 @@ export default function RochdalePage() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-20 w-full">
           <div className="max-w-2xl">
-            <div className="inline-block bg-[#dc2626] text-white px-4 py-1 rounded-full mb-6 font-label-bold text-sm tracking-widest uppercase">Emergency Service Available</div>
+            <div className="inline-block bg-[#dc2626] text-white px-4 py-1 rounded-full mb-4 font-label-bold text-sm tracking-widest uppercase">Emergency Service Available</div>
             <h1 className="font-h1 text-3xl sm:text-4xl lg:text-5xl text-white mb-6 leading-tight">24/7 Mobile Tyre Fitting in Rochdale</h1>
-            <p className="font-body-lg text-slate-100 mb-8 max-w-xl">Stranded with a flat tyre? Whether you&apos;re on the M62, in Rochdale Town Centre, or parked at Hollingworth Lake, our expert technicians arrive within 20-30 minutes to get you moving again.</p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <p className="font-body-lg text-slate-100 mb-6 max-w-xl leading-relaxed">Stranded with a flat tyre? Whether you&apos;re on the M62, in Rochdale Town Centre, or parked at Hollingworth Lake, our expert technicians arrive within 20-30 minutes to get you moving again.</p>
+            <div className="flex flex-col sm:flex-row gap-4 mt-6">
               <a className="bg-[#dc2626] hover:bg-[#b70011] transition-colors text-white font-call-to-action py-4 px-8 rounded-lg flex items-center justify-center gap-3 shadow-lg" href="tel:0800123456">
                 <span className="material-symbols-outlined text-2xl">phone_in_talk</span>
                 CALL EMERGENCY DISPATCH
@@ -68,9 +68,9 @@ export default function RochdalePage() {
       {/* Services Bento Grid */}
       <section className="py-xl bg-[#fcf9f8]" id="services">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="mb-lg">
+          <div className="mb-12">
             <h2 className="font-h2 text-[#1c1b1b] mb-4 text-center">Comprehensive Roadside Assistance</h2>
-            <p className="text-center text-[#5c403c] max-w-2xl mx-auto">Providing Rochdale motorists with expert tyre solutions and mechanical aid whenever and wherever required.</p>
+            <p className="text-center text-[#5c403c] max-w-2xl mx-auto leading-relaxed">Providing Rochdale motorists with expert tyre solutions and mechanical aid whenever and wherever required.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
             {/* Emergency Fitting Card */}
@@ -216,7 +216,7 @@ export default function RochdalePage() {
       {/* FAQ Section */}
       <section className="py-xl bg-[#fcf9f8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-h2 text-[#1c1b1b] mb-lg text-center">Frequently Asked Questions</h2>
+          <h2 className="font-h2 text-[#1c1b1b] mb-10 text-center">Frequently Asked Questions</h2>
           <div className="space-y-4">
             <details className="group bg-white p-6 rounded-lg border border-[#e5e2e1] shadow-sm open:shadow-md transition-all">
               <summary className="flex justify-between items-center cursor-pointer list-none">

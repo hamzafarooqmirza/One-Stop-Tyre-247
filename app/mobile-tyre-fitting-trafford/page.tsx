@@ -16,18 +16,18 @@ export default function TraffordPage() {
           <div className="absolute inset-0 bg-[#0f172a]/75 lg:bg-gradient-to-r lg:from-slate-950 lg:via-slate-900/80 lg:to-transparent"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-24 grid lg:grid-cols-2 gap-12 items-center w-full">
-          <div className="space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#b70011]/20 border border-[#b70011]/30 rounded-full text-[#ffb4ab] font-label-bold">
+          <div>
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#b70011]/20 border border-[#b70011]/30 rounded-full text-[#ffb4ab] font-label-bold mb-4">
               <span className="w-2 h-2 rounded-full bg-[#b70011] animate-pulse"></span>
               20-30 MINUTE ARRIVAL IN TRAFFORD
             </div>
-            <h1 className="font-h1 text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight">
+            <h1 className="font-h1 text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight mb-6">
               Emergency Mobile Tyre Fitting <span className="text-[#ffb4ab]">Trafford</span>
             </h1>
-            <p className="text-body-lg text-slate-300 max-w-xl">
+            <p className="text-body-lg text-slate-300 max-w-xl leading-relaxed mb-6">
               Stuck with a puncture near the Trafford Centre or M60? Our expert technicians provide rapid roadside tyre replacement 24/7. Professional service, competitive rates, and immediate response.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 mt-6">
               <button className="bg-[#dc2626] text-white px-8 py-5 rounded-lg font-call-to-action flex items-center justify-center gap-3 hover:bg-[#b70011] transition-colors shadow-2xl">
                 <span className="material-symbols-outlined">phone_in_talk</span>
                 GET AN INSTANT QUOTE
@@ -63,9 +63,9 @@ export default function TraffordPage() {
 
       {/* Services Bento Grid */}
       <section className="py-xl max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-12 sm:mb-16">
+        <div className="text-center mb-12">
           <h2 className="font-h2 text-[#1c1b1b] text-2xl sm:text-3xl lg:text-4xl mb-4">Specialist Tyres Services in Trafford</h2>
-          <p className="text-body-lg text-[#5c403c] max-w-2xl mx-auto">Providing comprehensive roadside assistance from Altrincham to Stretford and everywhere in between.</p>
+          <p className="text-body-lg text-[#5c403c] max-w-2xl mx-auto leading-relaxed">Providing comprehensive roadside assistance from Altrincham to Stretford and everywhere in between.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Puncture Repair */}
@@ -145,8 +145,8 @@ export default function TraffordPage() {
       <section className="bg-slate-100 py-xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="font-h2 text-slate-900">Coverage Across All of Trafford</h2>
-            <p className="text-body-lg text-slate-600">Our strategic location near the M60 allows us to reach any part of Trafford within 45 minutes on average. Whether you&apos;re at work, home, or the roadside, we come to you.</p>
+            <h2 className="font-h2 text-slate-900 mb-5">Coverage Across All of Trafford</h2>
+            <p className="text-body-lg text-slate-600 leading-relaxed">Our strategic location near the M60 allows us to reach any part of Trafford within 45 minutes on average. Whether you&apos;re at work, home, or the roadside, we come to you.</p>
             <div className="grid grid-cols-2 gap-4">
               <div className="flex items-center gap-2 bg-white p-3 rounded-lg border border-slate-200">
                 <span className="material-symbols-outlined text-[#b70011]">pin_drop</span>

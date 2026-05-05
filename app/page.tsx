@@ -1,4 +1,5 @@
 import BrandCarousel from '@/components/BrandCarousel'
+import QuoteForm from '@/components/QuoteForm'
 
 /* ─── Reusable star row ─────────────────────────────────── */
 function Stars() {
@@ -522,62 +523,7 @@ export default function Home() {
           {/* Form */}
           <div className="w-full lg:w-2/3">
             <div className="bg-slate-50 p-5 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl border border-slate-100 shadow-sm">
-              <form className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-                <div>
-                  <label className="block text-sm font-bold text-[#0f172a] mb-2">Full Name</label>
-                  <input
-                    type="text"
-                    placeholder="e.g. John Doe"
-                    className="w-full border border-slate-200 rounded-xl p-3 sm:p-4 bg-white focus:outline-none focus:ring-2 focus:ring-[#b70011] focus:border-[#b70011] transition text-sm"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-bold text-[#0f172a] mb-2">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    placeholder="07XXX XXXXXX"
-                    className="w-full border border-slate-200 rounded-xl p-3 sm:p-4 bg-white focus:outline-none focus:ring-2 focus:ring-[#b70011] focus:border-[#b70011] transition text-sm"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-bold text-[#0f172a] mb-2">
-                    Vehicle Registration
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="AB12 CDE"
-                    className="w-full border border-slate-200 rounded-xl p-3 sm:p-4 bg-white focus:outline-none focus:ring-2 focus:ring-[#b70011] focus:border-[#b70011] transition text-sm"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-bold text-[#0f172a] mb-2">Postcode</label>
-                  <input
-                    type="text"
-                    placeholder="M1 1AA"
-                    className="w-full border border-slate-200 rounded-xl p-3 sm:p-4 bg-white focus:outline-none focus:ring-2 focus:ring-[#b70011] focus:border-[#b70011] transition text-sm"
-                  />
-                </div>
-                <div className="sm:col-span-2">
-                  <label className="block text-sm font-bold text-[#0f172a] mb-2">
-                    Message / Tyre Size
-                  </label>
-                  <textarea
-                    placeholder="Tell us what you need..."
-                    className="w-full border border-slate-200 rounded-xl p-3 sm:p-4 h-28 sm:h-32 bg-white focus:outline-none focus:ring-2 focus:ring-[#b70011] focus:border-[#b70011] transition text-sm"
-                  />
-                </div>
-                <div className="sm:col-span-2">
-                  <button
-                    type="submit"
-                    className="w-full bg-[#0f172a] text-white py-4 sm:py-5 rounded-xl hover:bg-slate-800 shadow-lg transition-all uppercase tracking-wider text-sm font-bold"
-                    style={{ fontFamily: 'var(--font-work-sans)' }}
-                  >
-                    Submit Request
-                  </button>
-                </div>
-              </form>
+              <QuoteForm />
             </div>
           </div>
         </div>

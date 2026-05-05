@@ -92,6 +92,15 @@
   --color-navy-trust: #002D62;
 }
 
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
 @layer base {
   * {
     box-sizing: border-box;

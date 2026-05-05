@@ -1,3 +1,5 @@
+import BrandCarousel from '@/components/BrandCarousel'
+
 /* ── Shared WhatsApp SVG ─────────────────────────────────── */
 function WhatsAppIcon() {
   return (
@@ -286,6 +288,9 @@ export default function ServicePage({
           </div>
         </div>
       </section>
+
+      {/* ── Brand Logos Carousel ─────────────────────────── */}
+      <BrandCarousel />
 
       {/* ── 4. WHAT'S INCLUDED + HOW IT WORKS ────────────── */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 bg-slate-50">

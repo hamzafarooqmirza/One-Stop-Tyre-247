@@ -78,7 +78,7 @@ export default function BrandCarousel() {
               key={`${brand.name}-${i}`}
               src={brand.src}
               alt={`${brand.name} tyre brand logo`}
-              className="h-10 sm:h-12 w-auto object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+              className="h-10 sm:h-12 w-auto object-contain flex-shrink-0 transition-all duration-300 opacity-90 hover:opacity-100"
               width={160}
               height={48}
               loading="lazy"

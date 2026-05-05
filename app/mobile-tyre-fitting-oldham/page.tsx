@@ -90,48 +90,113 @@ export default function OldhamPage() {
           </div>
         </section>
 
-        {/* Services Bento Grid */}
-        <section className="bg-[#f6f3f2] py-12 sm:py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <h2 className="work-sans text-2xl sm:text-3xl font-bold text-center mb-12 sm:mb-16 text-[#1c1b1b] uppercase">Our Mobile Tyre Services</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {/* Emergency Roadside - Large */}
-              <div className="md:col-span-2 bg-white p-8 rounded-xl border border-[#e6bdb8] flex flex-col justify-between shadow-sm hover:border-[#b70011] transition-all group">
-                <div>
-                  <span className="material-symbols-outlined text-[#dc2626] text-4xl mb-4 block">car_repair</span>
-                  <h3 className="work-sans text-2xl font-semibold mb-4">Emergency Roadside Fitting</h3>
-                  <p className="text-[#5c403c] leading-relaxed">Stuck on the A62 or M60? Our emergency units are on standby 24/7 to replace your tyres anywhere in Oldham, getting you back on your journey safely.</p>
+        {/* Services Grid */}
+        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-10 sm:mb-16">
+              <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+                What We Do
+              </span>
+              <h2
+                className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight"
+                style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+              >
+                Professional Roadside Assistance in Oldham
+              </h2>
+              <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
+                Comprehensive mobile vehicle support available every day of the year across Oldham and surrounding areas.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {[
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp',
+                  title: 'Mobile Tyre Fitting',
+                  desc: 'Emergency replacement at your location within 20-30 minutes.',
+                  badge: 'FAST RESPONSE',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting-airanko-NAQrFhRm9UilkOOWhZBEd5lhxc7eEz.webp',
+                  title: 'Home Tyre Fitting',
+                  desc: 'Convenient tyre replacement on your driveway while you work or relax.',
+                  badge: 'AT YOUR DOOR',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emeregency%20Puncture%20Repair-airanko-K3cI9fjWlcirkZkEwDEvdtRtKQg3B7.webp',
+                  title: 'Emergency Puncture Repair',
+                  desc: 'Professional plug and patch repair to save your tyre when possible.',
+                  badge: 'BS AU 159',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Jumpstart-onestop-airanko-bUQeSwSrfEEeS2vgU2IuyrDFFak87m.webp',
+                  title: 'JumpStart',
+                  desc: 'Fast battery jump-start service to get your vehicle running again without delay.',
+                  badge: '24/7 SERVICE',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TPMS%20Reset-airanko-LEqPbQFsdbmM1ZLc5m0aoAUKGG4haJ.webp',
+                  title: 'TPMS Reset',
+                  desc: 'Tyre pressure monitoring system reset after every tyre change or repair.',
+                  badge: 'ALL VEHICLES',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20Nut%20Removal-airanko-MV4iwDQaMKuuoUnbMrRrQW5QIDJQbV.webp',
+                  title: 'Locking Nut Removal',
+                  desc: 'Specialist damage-free removal of lost or broken locking wheel nuts.',
+                  badge: 'DAMAGE FREE',
+                },
+              ].map((card) => (
+                <div
+                  key={card.title}
+                  className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
+                >
+                  <div className="relative h-44 sm:h-52 overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={card.img}
+                      alt={card.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      width={600}
+                      height={400}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                    <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">
+                      {card.badge}
+                    </span>
+                  </div>
+                  <div className="p-5 sm:p-6">
+                    <h3
+                      className="text-base sm:text-lg font-semibold mb-2 text-[#0f172a]"
+                      style={{ fontFamily: 'var(--font-work-sans)' }}
+                    >
+                      {card.title}
+                    </h3>
+                    <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
+                    <div className="flex items-center justify-end">
+                      <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
+                        arrow_forward
+                      </span>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex flex-wrap gap-2 mt-6">
-                  <span className="bg-[#005f88]/10 text-[#004c6d] px-4 py-1 text-xs font-bold rounded-full uppercase">Rapid Response</span>
-                  <span className="bg-[#005f88]/10 text-[#004c6d] px-4 py-1 text-xs font-bold rounded-full uppercase">All Makes</span>
-                </div>
+              ))}
+            </div>
+            <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
+              <div>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
+                <p className="text-slate-400 text-sm sm:text-base">
+                  Speak directly to a technician for an instant quote and arrival time.
+                </p>
               </div>
-              {/* At-Home */}
-              <div className="bg-[#3e5e95] p-8 rounded-xl text-white flex flex-col justify-between">
-                <span className="material-symbols-outlined text-4xl mb-4">home_repair_service</span>
-                <h3 className="work-sans text-2xl font-semibold mb-4">At-Home Service</h3>
-                <p className="opacity-90 leading-relaxed">Enjoy the convenience of professional tyre fitting in your driveway. No more waiting at garages; we bring the shop to you.</p>
-              </div>
-              {/* Puncture */}
-              <div className="bg-white p-8 rounded-xl border border-[#e6bdb8] shadow-sm hover:border-[#b70011] transition-all">
-                <span className="material-symbols-outlined text-[#dc2626] text-4xl mb-4 block">build</span>
-                <h3 className="work-sans text-2xl font-semibold mb-4">Puncture Repairs</h3>
-                <p className="text-[#5c403c] leading-relaxed">Safe, legal puncture repairs that save you the cost of a new tyre whenever possible.</p>
-              </div>
-              {/* Commercial - Large */}
-              <div className="md:col-span-2 bg-white p-8 rounded-xl border border-[#e6bdb8] flex flex-col md:flex-row gap-8 items-center shadow-sm hover:border-[#b70011] transition-all">
-                <div className="flex-1">
-                  <span className="material-symbols-outlined text-[#dc2626] text-4xl mb-4 block">tire_repair</span>
-                  <h3 className="work-sans text-2xl font-semibold mb-4">Commercial &amp; Fleet</h3>
-                  <p className="text-[#5c403c] leading-relaxed">We provide priority tyre maintenance and emergency repair services for local Oldham businesses and delivery fleets.</p>
-                </div>
-                <img
-                  alt="Commercial Fleet Oldham"
-                  className="w-48 h-48 rounded-lg object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy6fp3KlkGyHBX7y9aXFItpQOBYzSgBDR_v42mX_k0DOE79bflWDTAPChgefqoP_6Jf-BnkWuYDTIg9UySh_5H0_uEGBaMxRn2gHnqie_ndRTV5zJB81FIFrBzEHMbSM19zH0npOBEQs_HhazGwskp6-wwNjip0_6F-lLAq6BNXKB-Yp2L4YW_-niFVXTsyVxDTV6RXsN7FIVQg4OQFsLD7uQEyddLqUMlthy-atLgJMKroyFX_ppr2CFZVlm6eipalzE222GmFAE"
-                />
-              </div>
+              <a
+                href="tel:07759708646"
+                className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
+              >
+                07759 708 646
+              </a>
             </div>
           </div>
         </section>

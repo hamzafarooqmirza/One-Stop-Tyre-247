@@ -66,73 +66,113 @@ export default function BuryPage() {
           </div>
         </section>
 
-        {/* Bento Grid Services */}
-        <section className="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="mb-12">
-            <h2 className="work-sans text-2xl sm:text-3xl font-bold mb-4" style={{ letterSpacing: '-0.01em' }}>Complete Tyre Care in Bury</h2>
-            <p className="text-slate-600 leading-relaxed">Professional, swift, and reliable services across BL8, BL9 and surrounding areas.</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-            {/* Large Card */}
-            <div className="md:col-span-8 bg-white p-8 rounded-xl shadow-md border border-slate-100 flex flex-col justify-between">
-              <div>
-                <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-[#dc2626] text-4xl">tire_repair</span>
-                </div>
-                <h3 className="work-sans text-2xl font-semibold mb-4">Emergency Roadside Fitting</h3>
-                <p className="text-slate-600 mb-6 leading-relaxed">Our flagship service in Bury. Whether it&apos;s a blowout on the A56 or a flat in a residential driveway, we carry a massive stock of tyres for all vehicle types—from family hatchbacks to commercial vans. Available 24/7, 365 days a year.</p>
-                <div className="flex flex-wrap gap-3 mb-8">
-                  <span className="bg-blue-50 text-[#001e2e] px-3 py-1 rounded-full text-xs font-bold">M66 Specialists</span>
-                  <span className="bg-blue-50 text-[#001e2e] px-3 py-1 rounded-full text-xs font-bold">All Major Brands</span>
-                  <span className="bg-blue-50 text-[#001e2e] px-3 py-1 rounded-full text-xs font-bold">20-30 Min Wait</span>
-                </div>
-              </div>
-              <div className="text-right">
-                <span className="font-bold text-[#dc2626] text-xl">From £45.00</span>
-              </div>
+        {/* Services Grid */}
+        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-10 sm:mb-16">
+              <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+                What We Do
+              </span>
+              <h2
+                className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight"
+                style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+              >
+                Professional Roadside Assistance in Bury
+              </h2>
+              <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
+                Comprehensive mobile vehicle support available every day of the year across Bury and surrounding areas.
+              </p>
             </div>
-            {/* EV Card */}
-            <div className="md:col-span-4 bg-[#3e5e95] p-8 rounded-xl shadow-md flex flex-col justify-between">
-              <span className="material-symbols-outlined text-white text-4xl mb-4">electric_car</span>
-              <div>
-                <h3 className="work-sans text-2xl font-semibold text-white mb-2">EV Tyre Specialists</h3>
-                <p className="text-blue-100 opacity-80 leading-relaxed">High-torque tyre replacements specifically for electric and hybrid vehicles in the Bury area.</p>
-              </div>
-              <div className="mt-6">
-                <button className="text-white underline font-bold text-sm">View Specs</button>
-              </div>
-            </div>
-            {/* Puncture Card */}
-            <div className="md:col-span-4 bg-white p-8 rounded-xl shadow-md border border-slate-100">
-              <span className="material-symbols-outlined text-[#dc2626] text-4xl mb-4 block">build</span>
-              <h3 className="work-sans text-2xl font-semibold mb-2">Puncture Repair</h3>
-              <p className="text-slate-600 mb-4 leading-relaxed">Safe, BSAU 159 standard repairs to save you the cost of a full new tyre whenever possible.</p>
-              <span className="font-bold text-slate-900 text-sm">Professional Plugging</span>
-            </div>
-            {/* Trust Card */}
-            <div className="md:col-span-8 bg-slate-900 p-8 rounded-xl relative overflow-hidden">
-              <div className="absolute right-0 bottom-0 opacity-20 transform translate-x-1/4 translate-y-1/4">
-                <span className="material-symbols-outlined text-white" style={{ fontSize: '200px' }}>verified</span>
-              </div>
-              <div className="relative z-10">
-                <h3 className="work-sans text-2xl font-semibold text-white mb-4">Trust The Bury Experts</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
-                  <div className="flex gap-4">
-                    <span className="material-symbols-outlined text-red-500">check_circle</span>
-                    <div>
-                      <h4 className="text-white font-bold">Fully Insured</h4>
-                      <p className="text-slate-400 text-sm">Comprehensive cover for your peace of mind.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {[
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp',
+                  title: 'Mobile Tyre Fitting',
+                  desc: 'Emergency replacement at your location within 20-30 minutes.',
+                  badge: 'FAST RESPONSE',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting-airanko-NAQrFhRm9UilkOOWhZBEd5lhxc7eEz.webp',
+                  title: 'Home Tyre Fitting',
+                  desc: 'Convenient tyre replacement on your driveway while you work or relax.',
+                  badge: 'AT YOUR DOOR',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emeregency%20Puncture%20Repair-airanko-K3cI9fjWlcirkZkEwDEvdtRtKQg3B7.webp',
+                  title: 'Emergency Puncture Repair',
+                  desc: 'Professional plug and patch repair to save your tyre when possible.',
+                  badge: 'BS AU 159',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Jumpstart-onestop-airanko-bUQeSwSrfEEeS2vgU2IuyrDFFak87m.webp',
+                  title: 'JumpStart',
+                  desc: 'Fast battery jump-start service to get your vehicle running again without delay.',
+                  badge: '24/7 SERVICE',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TPMS%20Reset-airanko-LEqPbQFsdbmM1ZLc5m0aoAUKGG4haJ.webp',
+                  title: 'TPMS Reset',
+                  desc: 'Tyre pressure monitoring system reset after every tyre change or repair.',
+                  badge: 'ALL VEHICLES',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20Nut%20Removal-airanko-MV4iwDQaMKuuoUnbMrRrQW5QIDJQbV.webp',
+                  title: 'Locking Nut Removal',
+                  desc: 'Specialist damage-free removal of lost or broken locking wheel nuts.',
+                  badge: 'DAMAGE FREE',
+                },
+              ].map((card) => (
+                <div
+                  key={card.title}
+                  className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
+                >
+                  <div className="relative h-44 sm:h-52 overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={card.img}
+                      alt={card.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      width={600}
+                      height={400}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                    <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">
+                      {card.badge}
+                    </span>
+                  </div>
+                  <div className="p-5 sm:p-6">
+                    <h3
+                      className="text-base sm:text-lg font-semibold mb-2 text-[#0f172a]"
+                      style={{ fontFamily: 'var(--font-work-sans)' }}
+                    >
+                      {card.title}
+                    </h3>
+                    <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
+                    <div className="flex items-center justify-end">
+                      <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
+                        arrow_forward
+                      </span>
                     </div>
                   </div>
-                  <div className="flex gap-4">
-                    <span className="material-symbols-outlined text-red-500">check_circle</span>
-                    <div>
-                      <h4 className="text-white font-bold">Mobile Balancing</h4>
-                      <p className="text-slate-400 text-sm">Computerized wheel balancing on-site.</p>
-                    </div>
-                  </div>
                 </div>
+              ))}
+            </div>
+            <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
+              <div>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
+                <p className="text-slate-400 text-sm sm:text-base">
+                  Speak directly to a technician for an instant quote and arrival time.
+                </p>
               </div>
+              <a
+                href="tel:07759708646"
+                className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
+              >
+                07759 708 646
+              </a>
             </div>
           </div>
         </section>

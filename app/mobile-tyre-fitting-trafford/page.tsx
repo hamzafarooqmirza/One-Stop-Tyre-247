@@ -83,82 +83,113 @@ export default function TraffordPage() {
         </div>
       </section>
 
-      {/* Services Bento Grid */}
-      <section className="py-xl max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-12">
-          <h2 className="font-h2 text-[#1c1b1b] text-2xl sm:text-3xl lg:text-4xl mb-4">Specialist Tyres Services in Trafford</h2>
-          <p className="text-body-lg text-[#5c403c] max-w-2xl mx-auto leading-relaxed">Providing comprehensive roadside assistance from Altrincham to Stretford and everywhere in between.</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Puncture Repair */}
-          <div className="md:col-span-2 bg-white p-10 rounded-xl shadow-[0px_4px_20px_rgba(0,45,98,0.05)] border border-slate-100 flex flex-col md:flex-row gap-8 items-center overflow-hidden">
-            <div className="flex-1 space-y-4">
-              <div className="w-16 h-16 bg-[#ffdad6] rounded-xl flex items-center justify-center text-[#b70011]">
-                <span className="material-symbols-outlined text-4xl">build</span>
-              </div>
-              <h3 className="font-h3">Rapid Puncture Repair</h3>
-              <p className="text-body-md text-slate-600">If your tyre is repairable, we&apos;ll fix it on the spot. We use BSAU 159 compliant materials to ensure your safety and save you the cost of a new tyre where possible.</p>
-              <div className="flex gap-2">
-                <span className="px-3 py-1 bg-[#c8e6ff] text-[#004c6d] rounded-full text-xs font-bold uppercase">Mobile Workshop</span>
-                <span className="px-3 py-1 bg-[#c8e6ff] text-[#004c6d] rounded-full text-xs font-bold uppercase">All Brands</span>
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 aspect-video rounded-lg overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYQXjsPeVyg3pO9C54MqLgBJ-RpwSTw8OdYJt7evoxARdpP4u6bIdMX_SCwvIGYqGPnEo2eML-rM9bSnzX12eNZp0QxjRDbQca9wohqAT_EqDfhMaPXqKOgusS5eGYayn635edjfZGnfEKjG1KcW67bGRB5kx612v-0AwlnUuOOY6X6Fkzo63lebupp57oBoiev4L51sca5jiDEwGS0mC8vWaNBLnomBJClOEc3FsVRn8ndXgi3XGnPT6e6p1IuqPWh-mk2_RpwGE"
-                alt="Macro close-up of a car tyre being repaired"
-              />
-            </div>
+      {/* Services Grid */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10 sm:mb-16">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+              What We Do
+            </span>
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Professional Roadside Assistance in Trafford
+            </h2>
+            <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
+              Comprehensive mobile vehicle support available every day of the year across Trafford and surrounding areas.
+            </p>
           </div>
-          {/* Locking Nut Removal */}
-          <div className="bg-[#3e5e95] text-white p-10 rounded-xl shadow-[0px_4px_20px_rgba(0,45,98,0.05)] flex flex-col justify-between">
-            <div className="space-y-4">
-              <span className="material-symbols-outlined text-5xl">vpn_key</span>
-              <h3 className="font-h3">Locking Nut Removal</h3>
-              <p className="opacity-80">Lost your key? No problem. We carry specialist extraction tools to remove locking wheel nuts safely without damaging your alloys.</p>
-            </div>
-            <div className="text-right font-label-bold text-[#87ceff] mt-8">
-              FROM £45.00
-            </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {[
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp',
+                title: 'Mobile Tyre Fitting',
+                desc: 'Emergency replacement at your location within 20-30 minutes.',
+                badge: 'FAST RESPONSE',
+              },
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting-airanko-NAQrFhRm9UilkOOWhZBEd5lhxc7eEz.webp',
+                title: 'Home Tyre Fitting',
+                desc: 'Convenient tyre replacement on your driveway while you work or relax.',
+                badge: 'AT YOUR DOOR',
+              },
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emeregency%20Puncture%20Repair-airanko-K3cI9fjWlcirkZkEwDEvdtRtKQg3B7.webp',
+                title: 'Emergency Puncture Repair',
+                desc: 'Professional plug and patch repair to save your tyre when possible.',
+                badge: 'BS AU 159',
+              },
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Jumpstart-onestop-airanko-bUQeSwSrfEEeS2vgU2IuyrDFFak87m.webp',
+                title: 'JumpStart',
+                desc: 'Fast battery jump-start service to get your vehicle running again without delay.',
+                badge: '24/7 SERVICE',
+              },
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TPMS%20Reset-airanko-LEqPbQFsdbmM1ZLc5m0aoAUKGG4haJ.webp',
+                title: 'TPMS Reset',
+                desc: 'Tyre pressure monitoring system reset after every tyre change or repair.',
+                badge: 'ALL VEHICLES',
+              },
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20Nut%20Removal-airanko-MV4iwDQaMKuuoUnbMrRrQW5QIDJQbV.webp',
+                title: 'Locking Nut Removal',
+                desc: 'Specialist damage-free removal of lost or broken locking wheel nuts.',
+                badge: 'DAMAGE FREE',
+              },
+            ].map((card) => (
+              <div
+                key={card.title}
+                className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
+              >
+                <div className="relative h-44 sm:h-52 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={card.img}
+                    alt={card.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    width={600}
+                    height={400}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">
+                    {card.badge}
+                  </span>
+                </div>
+                <div className="p-5 sm:p-6">
+                  <h3
+                    className="text-base sm:text-lg font-semibold mb-2 text-[#0f172a]"
+                    style={{ fontFamily: 'var(--font-work-sans)' }}
+                  >
+                    {card.title}
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
+                  <div className="flex items-center justify-end">
+                    <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
+                      arrow_forward
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-          {/* Roadside Recovery */}
-          <div className="bg-slate-50 p-10 rounded-xl border border-slate-200 flex flex-col justify-between">
-            <div className="space-y-4">
-              <span className="material-symbols-outlined text-5xl text-[#b70011]">minor_crash</span>
-              <h3 className="font-h3 text-slate-900">Roadside Recovery</h3>
-              <p className="text-slate-600">If the damage is too severe, we offer recovery services to get your vehicle to your chosen destination safely.</p>
+          <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
+            <div>
+              <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
+              <p className="text-slate-400 text-sm sm:text-base">
+                Speak directly to a technician for an instant quote and arrival time.
+              </p>
             </div>
-            <a className="inline-flex items-center gap-2 text-[#b70011] font-label-bold mt-8 group" href="#">
-              LEARN MORE <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            <a
+              href="tel:07759708646"
+              className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
+              style={{ fontFamily: 'var(--font-work-sans)' }}
+            >
+              07759 708 646
             </a>
-          </div>
-          {/* Jump Starts */}
-          <div className="md:col-span-2 bg-white p-10 rounded-xl shadow-[0px_4px_20px_rgba(0,45,98,0.05)] border border-slate-100 flex flex-col md:flex-row gap-8 items-center overflow-hidden">
-            <div className="w-full md:w-1/2 aspect-video rounded-lg overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnY7YSIt-dmLAmGx4fbdvvjI6eMH2Dj6ud2IHlPE0QCsOQ-ywC8xUumronvASeZzLBDaJR3W675II5wB0K8zjBRN5g-mxxJCoHoT3m0rXl_V9VCwmnDaGPcYv-efCvxcajd6Kns9Mt5dphxPBUA9QBz22npRYYUBPw0AuWeBpSelqENCtOb1J4UrnWUcUJ_lIZ_A53anRfp1Ts6ZGKe8DFarVMud2s83WyyAMcWpISNiPxA1vixIgja5cw2Ddi7PVfTOFCA5zrRLI"
-                alt="Modern high-tech battery jumping cables connected to a luxury vehicle"
-              />
-            </div>
-            <div className="flex-1 space-y-4">
-              <div className="w-16 h-16 bg-[#d7e2ff] rounded-xl flex items-center justify-center text-[#3e5e95]">
-                <span className="material-symbols-outlined text-4xl">bolt</span>
-              </div>
-              <h3 className="font-h3">Emergency Jump Start</h3>
-              <p className="text-body-md text-slate-600">Flat battery in Trafford? We provide rapid jump-start services and battery testing for all vehicle types including start-stop systems and EVs.</p>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2 text-slate-700">
-                  <span className="material-symbols-outlined text-[#b70011] text-sm">check_circle</span>
-                  Heavy Duty Booster Packs
-                </li>
-                <li className="flex items-center gap-2 text-slate-700">
-                  <span className="material-symbols-outlined text-[#b70011] text-sm">check_circle</span>
-                  Battery Health Reports
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </section>

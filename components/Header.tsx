@@ -1,36 +1,111 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { usePathname } from 'next/navigation'
 
-const navLinks = [
-  { label: 'Home', href: '/', icon: 'home' },
-  { label: 'About Us', href: '/about', icon: 'info' },
-  { label: 'Services', href: '/services', icon: 'build' },
-  { label: 'Service Area', href: '/service-area', icon: 'map' },
-  { label: 'Contact', href: '/contact', icon: 'contact_support' },
+// ─── Data ────────────────────────────────────────────────────────────────────
+
+const serviceLinks = [
+  {
+    label: 'Mobile Tyre Fitting',
+    href: '/mobile-tyre-fitting',
+    icon: 'tire_repair',
+    desc: 'Roadside or driveway — we come to you',
+  },
+  {
+    label: 'Home Tyre Fitting',
+    href: '/home-tyre-fitting',
+    icon: 'home_repair_service',
+    desc: 'Fitted while you work or relax at home',
+  },
+  {
+    label: 'Emergency Puncture Repair',
+    href: '/emergency-puncture-repair',
+    icon: 'construction',
+    desc: 'BS AU 159 compliant plug & patch repair',
+  },
+  {
+    label: 'Jump Start',
+    href: '/jump-start',
+    icon: 'bolt',
+    desc: 'Dead battery? Back on the road in minutes',
+  },
+  {
+    label: 'TPMS Reset',
+    href: '/tpms-reset',
+    icon: 'speed',
+    desc: 'Sensor diagnostics & reset for all vehicles',
+  },
+  {
+    label: 'Locking Nut Removal',
+    href: '/locking-nut-removal',
+    icon: 'lock_open',
+    desc: 'Damage-free removal with specialist tools',
+  },
 ]
+
+const cityLinks = [
+  { label: 'Manchester', href: '/mobile-tyre-fitting-manchester', icon: 'location_city' },
+  { label: 'Bolton', href: '/mobile-tyre-fitting-bolton', icon: 'location_city' },
+  { label: 'Bury', href: '/mobile-tyre-fitting-bury', icon: 'location_city' },
+  { label: 'Oldham', href: '/mobile-tyre-fitting-oldham', icon: 'location_city' },
+  { label: 'Rochdale', href: '/mobile-tyre-fitting-rochdale', icon: 'location_city' },
+  { label: 'Stockport', href: '/mobile-tyre-fitting-stockport', icon: 'location_city' },
+  { label: 'Tameside', href: '/mobile-tyre-fitting-tameside', icon: 'location_city' },
+  { label: 'Trafford', href: '/mobile-tyre-fitting-trafford', icon: 'location_city' },
+  { label: 'Wigan', href: '/mobile-tyre-fitting-wigan', icon: 'location_city' },
+]
+
+const motorwayLinks = [
+  { label: 'M60', href: '/mobile-tyre-fitting-m60', icon: 'route' },
+  { label: 'M602', href: '/mobile-tyre-fitting-m602', icon: 'route' },
+  { label: 'M61', href: '/mobile-tyre-fitting-m61', icon: 'route' },
+  { label: 'M62', href: '/mobile-tyre-fitting-m62', icon: 'route' },
+  { label: 'M66', href: '/mobile-tyre-fitting-m66', icon: 'route' },
+  { label: 'M67', href: '/mobile-tyre-fitting-m67', icon: 'route' },
+  { label: 'A627', href: '/mobile-tyre-fitting-a627', icon: 'route' },
+]
+
+// ─── Component ───────────────────────────────────────────────────────────────
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [servicesOpen, setServicesOpen] = useState(false)
+  const [areasOpen, setAreasOpen] = useState(false)
+  const [openMenu, setOpenMenu] = useState<'services' | 'areas' | null>(null)
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
   const pathname = usePathname()
 
   const isActive = (href: string) =>
     href === '/' ? pathname === '/' : pathname.startsWith(href)
 
-  // Lock body scroll when drawer is open
+  const isServicesActive =
+    isActive('/services') || serviceLinks.some((l) => isActive(l.href))
+  const isAreasActive =
+    isActive('/service-area') ||
+    cityLinks.some((l) => isActive(l.href)) ||
+    motorwayLinks.some((l) => isActive(l.href))
+
+  // Hover handlers with a small delay to prevent flicker when moving the
+  // cursor between the trigger and the panel.
+  function handleMouseEnter(menu: 'services' | 'areas') {
+    if (closeTimer.current) clearTimeout(closeTimer.current)
+    setOpenMenu(menu)
+  }
+
+  function handleMouseLeave() {
+    closeTimer.current = setTimeout(() => setOpenMenu(null), 150)
+  }
+
+  // Lock body scroll when mobile drawer is open
   useEffect(() => {
-    if (mobileOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = ''
-    }
+    document.body.style.overflow = mobileOpen ? 'hidden' : ''
     return () => { document.body.style.overflow = '' }
   }, [mobileOpen])
 
   return (
     <>
-      {/* Top Contact Bar — hidden on small screens */}
+      {/* Top Contact Bar */}
       <div className="hidden md:block bg-[#0f172a] text-white py-2 px-6 border-b border-white/10">
         <div className="max-w-7xl mx-auto flex justify-between items-center text-[12px] font-medium">
           <div className="flex items-center gap-5">
@@ -54,7 +129,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Main Header */}
+      {/* ── Main Header ─────────────────────────────────────────────────────── */}
       <header className="bg-white sticky top-0 z-50 shadow-sm border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 lg:h-20 relative flex items-center justify-between gap-4 lg:grid lg:grid-cols-[auto_1fr_auto] lg:gap-8">
 
@@ -66,10 +141,7 @@ export default function Header() {
               className="lg:hidden flex items-center gap-2 bg-[#b70011] hover:bg-red-700 text-white px-3 py-2 rounded-lg font-bold text-sm transition-all active:scale-95 shadow-md shadow-red-200"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
-              <span
-                className="material-symbols-outlined text-[18px]"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
+              <span className="material-symbols-outlined text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>
                 phone_in_talk
               </span>
             </a>
@@ -105,24 +177,274 @@ export default function Header() {
             />
           </a>
 
-          {/* Desktop Nav */}
+          {/* ── Desktop Nav ────────────────────────────────────────────────── */}
           <nav
             className="hidden lg:flex justify-self-center items-center gap-7 text-sm font-semibold whitespace-nowrap"
             style={{ fontFamily: 'var(--font-work-sans)' }}
           >
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className={
-                  isActive(link.href)
-                    ? 'text-[#b70011] border-b-2 border-[#b70011] pb-0.5 whitespace-nowrap'
-                    : 'text-slate-700 hover:text-[#b70011] transition-colors whitespace-nowrap'
-                }
+            {/* Home */}
+            <a
+              href="/"
+              className={isActive('/') ? 'text-[#b70011] border-b-2 border-[#b70011] pb-0.5' : 'text-slate-700 hover:text-[#b70011] transition-colors'}
+            >
+              Home
+            </a>
+
+            {/* About */}
+            <a
+              href="/about"
+              className={isActive('/about') ? 'text-[#b70011] border-b-2 border-[#b70011] pb-0.5' : 'text-slate-700 hover:text-[#b70011] transition-colors'}
+            >
+              About Us
+            </a>
+
+            {/* Services trigger */}
+            <div
+              className="relative"
+              onMouseEnter={() => handleMouseEnter('services')}
+              onMouseLeave={handleMouseLeave}
+            >
+              <button
+                className={`flex items-center gap-1 transition-colors ${
+                  isServicesActive || openMenu === 'services'
+                    ? 'text-[#b70011]'
+                    : 'text-slate-700 hover:text-[#b70011]'
+                } ${isServicesActive ? 'border-b-2 border-[#b70011] pb-0.5' : ''}`}
+                aria-haspopup="true"
+                aria-expanded={openMenu === 'services'}
               >
-                {link.label}
-              </a>
-            ))}
+                Services
+                <span
+                  className={`material-symbols-outlined text-[16px] transition-transform duration-200 ${openMenu === 'services' ? 'rotate-180' : ''}`}
+                >
+                  expand_more
+                </span>
+              </button>
+
+              {/* ── Services Mega Menu ──────────────────────────────────── */}
+              <div
+                className={`absolute left-1/2 -translate-x-1/2 top-[calc(100%+16px)] transition-all duration-200 origin-top ${
+                  openMenu === 'services'
+                    ? 'opacity-100 scale-y-100 pointer-events-auto'
+                    : 'opacity-0 scale-y-95 pointer-events-none'
+                }`}
+                style={{ width: '680px' }}
+              >
+                {/* Arrow */}
+                <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-l border-t border-slate-200 rotate-45 z-10" />
+
+                <div className="relative bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden z-20">
+                  <div className="grid grid-cols-[1fr_200px]">
+                    {/* Links grid */}
+                    <div className="p-5">
+                      <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3 px-1">
+                        Our Services
+                      </p>
+                      <div className="grid grid-cols-2 gap-1">
+                        {serviceLinks.map((link) => (
+                          <a
+                            key={link.href}
+                            href={link.href}
+                            className={`group flex items-start gap-3 p-3 rounded-xl transition-all ${
+                              isActive(link.href)
+                                ? 'bg-red-50'
+                                : 'hover:bg-slate-50'
+                            }`}
+                          >
+                            <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 mt-0.5 transition-colors ${
+                              isActive(link.href)
+                                ? 'bg-[#b70011]/10'
+                                : 'bg-slate-100 group-hover:bg-[#b70011]/10'
+                            }`}>
+                              <span className={`material-symbols-outlined text-[18px] transition-colors ${
+                                isActive(link.href)
+                                  ? 'text-[#b70011]'
+                                  : 'text-slate-500 group-hover:text-[#b70011]'
+                              }`} style={{ fontVariationSettings: "'FILL' 1" }}>
+                                {link.icon}
+                              </span>
+                            </div>
+                            <div className="min-w-0">
+                              <p className={`font-semibold text-sm leading-snug transition-colors ${
+                                isActive(link.href) ? 'text-[#b70011]' : 'text-slate-800 group-hover:text-[#b70011]'
+                              }`}>
+                                {link.label}
+                              </p>
+                              <p className="text-[11px] text-slate-500 leading-tight mt-0.5">{link.desc}</p>
+                            </div>
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Promo panel */}
+                    <div className="bg-[#0f172a] p-5 flex flex-col justify-between">
+                      <div>
+                        <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-3">
+                          Emergency?
+                        </p>
+                        <p className="text-white font-bold text-sm leading-snug mb-2">
+                          We respond in 20–30 minutes across Greater Manchester
+                        </p>
+                        <p className="text-white/50 text-[11px] leading-relaxed">
+                          Available 24/7, 365 days a year. No call-out fee.
+                        </p>
+                      </div>
+                      <a
+                        href="tel:07759708646"
+                        className="mt-4 flex items-center gap-2 bg-[#b70011] hover:bg-red-700 text-white font-bold text-sm px-4 py-2.5 rounded-xl transition-all active:scale-95"
+                      >
+                        <span className="material-symbols-outlined text-[16px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+                          phone_in_talk
+                        </span>
+                        07759 708 646
+                      </a>
+                      <a
+                        href="/services"
+                        className="mt-2 flex items-center justify-center gap-1 text-white/50 hover:text-white text-[11px] font-medium transition-colors"
+                      >
+                        View all services
+                        <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Service Area trigger */}
+            <div
+              className="relative"
+              onMouseEnter={() => handleMouseEnter('areas')}
+              onMouseLeave={handleMouseLeave}
+            >
+              <button
+                className={`flex items-center gap-1 transition-colors ${
+                  isAreasActive || openMenu === 'areas'
+                    ? 'text-[#b70011]'
+                    : 'text-slate-700 hover:text-[#b70011]'
+                } ${isAreasActive ? 'border-b-2 border-[#b70011] pb-0.5' : ''}`}
+                aria-haspopup="true"
+                aria-expanded={openMenu === 'areas'}
+              >
+                Service Area
+                <span
+                  className={`material-symbols-outlined text-[16px] transition-transform duration-200 ${openMenu === 'areas' ? 'rotate-180' : ''}`}
+                >
+                  expand_more
+                </span>
+              </button>
+
+              {/* ── Areas Mega Menu ─────────────────────────────────────── */}
+              <div
+                className={`absolute left-1/2 -translate-x-1/2 top-[calc(100%+16px)] transition-all duration-200 origin-top ${
+                  openMenu === 'areas'
+                    ? 'opacity-100 scale-y-100 pointer-events-auto'
+                    : 'opacity-0 scale-y-95 pointer-events-none'
+                }`}
+                style={{ width: '720px' }}
+              >
+                {/* Arrow */}
+                <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-l border-t border-slate-200 rotate-45 z-10" />
+
+                <div className="relative bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden z-20">
+                  <div className="grid grid-cols-[1fr_200px]">
+                    {/* Cities + Motorways */}
+                    <div className="p-5">
+                      {/* Cities */}
+                      <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3 px-1">
+                        City Areas
+                      </p>
+                      <div className="grid grid-cols-3 gap-1 mb-4">
+                        {cityLinks.map((link) => (
+                          <a
+                            key={link.href}
+                            href={link.href}
+                            className={`group flex items-center gap-2.5 px-3 py-2.5 rounded-xl transition-all ${
+                              isActive(link.href)
+                                ? 'bg-red-50 text-[#b70011]'
+                                : 'hover:bg-slate-50 text-slate-700 hover:text-[#b70011]'
+                            }`}
+                          >
+                            <span className={`material-symbols-outlined text-[15px] shrink-0 transition-colors ${
+                              isActive(link.href) ? 'text-[#b70011]' : 'text-slate-400 group-hover:text-[#b70011]'
+                            }`} style={{ fontVariationSettings: "'FILL' 1" }}>
+                              location_on
+                            </span>
+                            <span className="font-semibold text-sm">{link.label}</span>
+                          </a>
+                        ))}
+                      </div>
+
+                      {/* Divider */}
+                      <div className="border-t border-slate-100 mb-4" />
+
+                      {/* Motorways */}
+                      <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3 px-1">
+                        Motorways &amp; Roads
+                      </p>
+                      <div className="flex flex-wrap gap-1.5">
+                        {motorwayLinks.map((link) => (
+                          <a
+                            key={link.href}
+                            href={link.href}
+                            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-bold transition-all border ${
+                              isActive(link.href)
+                                ? 'bg-[#b70011] border-[#b70011] text-white'
+                                : 'border-slate-200 text-slate-600 hover:border-[#b70011] hover:text-[#b70011] hover:bg-red-50'
+                            }`}
+                          >
+                            <span className="material-symbols-outlined text-[13px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+                              route
+                            </span>
+                            {link.label}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Promo panel */}
+                    <div className="bg-[#0f172a] p-5 flex flex-col justify-between">
+                      <div>
+                        <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-3">
+                          Coverage
+                        </p>
+                        <p className="text-white font-bold text-sm leading-snug mb-2">
+                          Greater Manchester &amp; nationwide motorway coverage
+                        </p>
+                        <p className="text-white/50 text-[11px] leading-relaxed">
+                          9 city areas and 7 major motorways covered round the clock.
+                        </p>
+                      </div>
+                      <a
+                        href="/service-area"
+                        className="mt-4 flex items-center gap-2 bg-[#b70011] hover:bg-red-700 text-white font-bold text-sm px-4 py-2.5 rounded-xl transition-all active:scale-95"
+                      >
+                        <span className="material-symbols-outlined text-[16px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+                          map
+                        </span>
+                        Full Coverage Map
+                      </a>
+                      <a
+                        href="tel:07759708646"
+                        className="mt-2 flex items-center justify-center gap-1 text-white/50 hover:text-white text-[11px] font-medium transition-colors"
+                      >
+                        Call for nearest tech
+                        <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact */}
+            <a
+              href="/contact"
+              className={isActive('/contact') ? 'text-[#b70011] border-b-2 border-[#b70011] pb-0.5' : 'text-slate-700 hover:text-[#b70011] transition-colors'}
+            >
+              Contact
+            </a>
           </nav>
 
           {/* RIGHT — Mobile: Hamburger | Desktop: Call button */}
@@ -133,10 +455,7 @@ export default function Header() {
               className="hidden lg:flex items-center gap-2 bg-[#b70011] hover:bg-red-700 text-white px-4 py-2 rounded-lg font-bold text-sm transition-all active:scale-95 shadow-md shadow-red-200"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
-              <span
-                className="material-symbols-outlined text-[18px]"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
+              <span className="material-symbols-outlined text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>
                 phone_in_talk
               </span>
               07759 708 646
@@ -149,21 +468,15 @@ export default function Header() {
               aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
               aria-expanded={mobileOpen}
             >
-              <span
-                className={`w-5 h-0.5 block transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-[7px] bg-white' : 'bg-slate-700'}`}
-              />
-              <span
-                className={`w-5 h-0.5 block transition-all duration-300 ${mobileOpen ? 'opacity-0 bg-white' : 'bg-slate-700'}`}
-              />
-              <span
-                className={`w-5 h-0.5 block transition-all duration-300 ${mobileOpen ? '-rotate-45 -translate-y-[7px] bg-white' : 'bg-slate-700'}`}
-              />
+              <span className={`w-5 h-0.5 block transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-[7px] bg-white' : 'bg-slate-700'}`} />
+              <span className={`w-5 h-0.5 block transition-all duration-300 ${mobileOpen ? 'opacity-0 bg-white' : 'bg-slate-700'}`} />
+              <span className={`w-5 h-0.5 block transition-all duration-300 ${mobileOpen ? '-rotate-45 -translate-y-[7px] bg-white' : 'bg-slate-700'}`} />
             </button>
           </div>
         </div>
       </header>
 
-      {/* Mobile Drawer Overlay */}
+      {/* ── Mobile Drawer ───────────────────────────────────────────────────── */}
       <div
         className={`lg:hidden fixed inset-0 z-[100] transition-all duration-300 ${mobileOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
         aria-hidden={!mobileOpen}
@@ -181,7 +494,6 @@ export default function Header() {
         >
           {/* Drawer Header */}
           <div className="bg-[#0f172a] px-5 pt-6 pb-5 shrink-0">
-            {/* Close button */}
             <div className="flex items-center justify-between mb-5">
               <div>
                 <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-0.5">Navigation</p>
@@ -195,17 +507,12 @@ export default function Header() {
                 <span className="material-symbols-outlined text-white text-[20px]">close</span>
               </button>
             </div>
-
-            {/* Emergency call strip */}
             <a
               href="tel:07759708646"
               className="flex items-center gap-3 bg-[#b70011] hover:bg-red-700 transition-colors rounded-xl px-4 py-3 active:scale-[0.98]"
             >
               <div className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
-                <span
-                  className="material-symbols-outlined text-white text-[20px]"
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                >
+                <span className="material-symbols-outlined text-white text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>
                   phone_in_talk
                 </span>
               </div>
@@ -217,51 +524,175 @@ export default function Header() {
             </a>
           </div>
 
-          {/* Nav Links */}
+          {/* Scrollable Nav */}
           <nav className="flex-1 overflow-y-auto py-3">
-            <p className="px-5 pt-2 pb-2 text-[10px] font-bold uppercase tracking-widest text-slate-400">
-              Menu
-            </p>
-            {navLinks.map((link, i) => (
-              <a
-                key={link.label}
-                href={link.href}
-                onClick={() => setMobileOpen(false)}
-                className={`group flex items-center gap-4 px-5 py-3.5 mx-2 rounded-xl mb-0.5 transition-all ${
-                  isActive(link.href)
-                    ? 'bg-red-50 text-[#b70011]'
-                    : 'text-slate-700 hover:bg-slate-50 hover:text-[#b70011]'
+
+            {/* Simple links */}
+            <p className="px-5 pt-2 pb-2 text-[10px] font-bold uppercase tracking-widest text-slate-400">Menu</p>
+
+            <a
+              href="/"
+              onClick={() => setMobileOpen(false)}
+              className={`group flex items-center gap-4 px-5 py-3.5 mx-2 rounded-xl mb-0.5 transition-all ${isActive('/') ? 'bg-red-50 text-[#b70011]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#b70011]'}`}
+            >
+              <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isActive('/') ? 'bg-[#b70011]/10' : 'bg-slate-100 group-hover:bg-[#b70011]/10'}`}>
+                <span className={`material-symbols-outlined text-[18px] transition-colors ${isActive('/') ? 'text-[#b70011]' : 'text-slate-500 group-hover:text-[#b70011]'}`}>home</span>
+              </div>
+              <span className="font-semibold text-sm flex-1">Home</span>
+              {isActive('/') ? <span className="w-1.5 h-1.5 rounded-full bg-[#b70011] shrink-0" /> : <span className="material-symbols-outlined text-[16px] text-slate-300 group-hover:text-[#b70011]/40 transition-colors">chevron_right</span>}
+            </a>
+
+            <a
+              href="/about"
+              onClick={() => setMobileOpen(false)}
+              className={`group flex items-center gap-4 px-5 py-3.5 mx-2 rounded-xl mb-0.5 transition-all ${isActive('/about') ? 'bg-red-50 text-[#b70011]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#b70011]'}`}
+            >
+              <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isActive('/about') ? 'bg-[#b70011]/10' : 'bg-slate-100 group-hover:bg-[#b70011]/10'}`}>
+                <span className={`material-symbols-outlined text-[18px] transition-colors ${isActive('/about') ? 'text-[#b70011]' : 'text-slate-500 group-hover:text-[#b70011]'}`}>info</span>
+              </div>
+              <span className="font-semibold text-sm flex-1">About Us</span>
+              {isActive('/about') ? <span className="w-1.5 h-1.5 rounded-full bg-[#b70011] shrink-0" /> : <span className="material-symbols-outlined text-[16px] text-slate-300 group-hover:text-[#b70011]/40 transition-colors">chevron_right</span>}
+            </a>
+
+            {/* ── Services Accordion ─────────────────────────────────────── */}
+            <div className="mx-2 mb-0.5">
+              <button
+                onClick={() => setServicesOpen((v) => !v)}
+                className={`w-full flex items-center gap-4 px-5 py-3.5 rounded-xl transition-all ${
+                  isServicesActive ? 'bg-red-50 text-[#b70011]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#b70011]'
                 }`}
-                style={{ animationDelay: `${i * 40}ms` }}
               >
-                <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${
-                  isActive(link.href) ? 'bg-[#b70011]/10' : 'bg-slate-100 group-hover:bg-[#b70011]/10'
-                }`}>
-                  <span className={`material-symbols-outlined text-[18px] transition-colors ${
-                    isActive(link.href) ? 'text-[#b70011]' : 'text-slate-500 group-hover:text-[#b70011]'
-                  }`}>
-                    {link.icon}
-                  </span>
+                <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isServicesActive ? 'bg-[#b70011]/10' : 'bg-slate-100'}`}>
+                  <span className={`material-symbols-outlined text-[18px] transition-colors ${isServicesActive ? 'text-[#b70011]' : 'text-slate-500'}`}>build</span>
                 </div>
-                <span className="font-semibold text-sm flex-1">{link.label}</span>
-                {isActive(link.href) && (
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#b70011] shrink-0" />
-                )}
-                {!isActive(link.href) && (
-                  <span className="material-symbols-outlined text-[16px] text-slate-300 group-hover:text-[#b70011]/40 transition-colors">
-                    chevron_right
-                  </span>
-                )}
-              </a>
-            ))}
+                <span className="font-semibold text-sm flex-1 text-left">Services</span>
+                <span className={`material-symbols-outlined text-[18px] transition-transform duration-200 ${servicesOpen ? 'rotate-180 text-[#b70011]' : 'text-slate-400'}`}>
+                  expand_more
+                </span>
+              </button>
+
+              {/* Services sub-links */}
+              <div className={`overflow-hidden transition-all duration-300 ${servicesOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                <div className="pt-1 pb-2 ml-4 pl-4 border-l-2 border-slate-100 mt-1">
+                  <a
+                    href="/services"
+                    onClick={() => setMobileOpen(false)}
+                    className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-slate-400 hover:text-[#b70011] transition-colors mb-1"
+                  >
+                    <span className="material-symbols-outlined text-[14px]">grid_view</span>
+                    All Services
+                  </a>
+                  {serviceLinks.map((link) => (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      onClick={() => setMobileOpen(false)}
+                      className={`group flex items-center gap-3 px-3 py-2.5 rounded-xl mb-0.5 transition-all ${
+                        isActive(link.href) ? 'bg-red-50 text-[#b70011]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#b70011]'
+                      }`}
+                    >
+                      <div className={`w-7 h-7 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isActive(link.href) ? 'bg-[#b70011]/10' : 'bg-slate-100 group-hover:bg-[#b70011]/10'}`}>
+                        <span className={`material-symbols-outlined text-[15px] transition-colors ${isActive(link.href) ? 'text-[#b70011]' : 'text-slate-500 group-hover:text-[#b70011]'}`} style={{ fontVariationSettings: "'FILL' 1" }}>
+                          {link.icon}
+                        </span>
+                      </div>
+                      <span className="font-semibold text-sm">{link.label}</span>
+                      {isActive(link.href) && <span className="ml-auto w-1.5 h-1.5 rounded-full bg-[#b70011] shrink-0" />}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* ── Service Area Accordion ─────────────────────────────────── */}
+            <div className="mx-2 mb-0.5">
+              <button
+                onClick={() => setAreasOpen((v) => !v)}
+                className={`w-full flex items-center gap-4 px-5 py-3.5 rounded-xl transition-all ${
+                  isAreasActive ? 'bg-red-50 text-[#b70011]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#b70011]'
+                }`}
+              >
+                <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isAreasActive ? 'bg-[#b70011]/10' : 'bg-slate-100'}`}>
+                  <span className={`material-symbols-outlined text-[18px] transition-colors ${isAreasActive ? 'text-[#b70011]' : 'text-slate-500'}`}>map</span>
+                </div>
+                <span className="font-semibold text-sm flex-1 text-left">Service Area</span>
+                <span className={`material-symbols-outlined text-[18px] transition-transform duration-200 ${areasOpen ? 'rotate-180 text-[#b70011]' : 'text-slate-400'}`}>
+                  expand_more
+                </span>
+              </button>
+
+              <div className={`overflow-hidden transition-all duration-300 ${areasOpen ? 'max-h-[900px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                <div className="pt-1 pb-2 ml-4 pl-4 border-l-2 border-slate-100 mt-1">
+                  <a
+                    href="/service-area"
+                    onClick={() => setMobileOpen(false)}
+                    className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-slate-400 hover:text-[#b70011] transition-colors mb-1"
+                  >
+                    <span className="material-symbols-outlined text-[14px]">map</span>
+                    Full Coverage Map
+                  </a>
+
+                  <p className="px-3 pt-1 pb-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                    City Areas
+                  </p>
+                  {cityLinks.map((link) => (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      onClick={() => setMobileOpen(false)}
+                      className={`group flex items-center gap-3 px-3 py-2.5 rounded-xl mb-0.5 transition-all ${
+                        isActive(link.href) ? 'bg-red-50 text-[#b70011]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#b70011]'
+                      }`}
+                    >
+                      <span className={`material-symbols-outlined text-[15px] shrink-0 transition-colors ${isActive(link.href) ? 'text-[#b70011]' : 'text-slate-400 group-hover:text-[#b70011]'}`} style={{ fontVariationSettings: "'FILL' 1" }}>
+                        location_on
+                      </span>
+                      <span className="font-semibold text-sm">{link.label}</span>
+                      {isActive(link.href) && <span className="ml-auto w-1.5 h-1.5 rounded-full bg-[#b70011] shrink-0" />}
+                    </a>
+                  ))}
+
+                  <p className="px-3 pt-3 pb-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                    Motorways &amp; Roads
+                  </p>
+                  <div className="flex flex-wrap gap-1.5 px-3 pb-2">
+                    {motorwayLinks.map((link) => (
+                      <a
+                        key={link.href}
+                        href={link.href}
+                        onClick={() => setMobileOpen(false)}
+                        className={`flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-bold transition-all border ${
+                          isActive(link.href)
+                            ? 'bg-[#b70011] border-[#b70011] text-white'
+                            : 'border-slate-200 text-slate-600 hover:border-[#b70011] hover:text-[#b70011]'
+                        }`}
+                      >
+                        <span className="material-symbols-outlined text-[12px]" style={{ fontVariationSettings: "'FILL' 1" }}>route</span>
+                        {link.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact */}
+            <a
+              href="/contact"
+              onClick={() => setMobileOpen(false)}
+              className={`group flex items-center gap-4 px-5 py-3.5 mx-2 rounded-xl mb-0.5 transition-all ${isActive('/contact') ? 'bg-red-50 text-[#b70011]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#b70011]'}`}
+            >
+              <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isActive('/contact') ? 'bg-[#b70011]/10' : 'bg-slate-100 group-hover:bg-[#b70011]/10'}`}>
+                <span className={`material-symbols-outlined text-[18px] transition-colors ${isActive('/contact') ? 'text-[#b70011]' : 'text-slate-500 group-hover:text-[#b70011]'}`}>contact_support</span>
+              </div>
+              <span className="font-semibold text-sm flex-1">Contact</span>
+              {isActive('/contact') ? <span className="w-1.5 h-1.5 rounded-full bg-[#b70011] shrink-0" /> : <span className="material-symbols-outlined text-[16px] text-slate-300 group-hover:text-[#b70011]/40 transition-colors">chevron_right</span>}
+            </a>
           </nav>
 
           {/* Drawer Footer */}
           <div className="shrink-0 border-t border-slate-100 px-5 py-4 space-y-3">
-            <a
-              href="mailto:info@onestoptyres247.co.uk"
-              className="flex items-center gap-3 group"
-            >
+            <a href="mailto:info@onestoptyres247.co.uk" className="flex items-center gap-3 group">
               <div className="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center shrink-0">
                 <span className="material-symbols-outlined text-[16px] text-slate-500">mail</span>
               </div>

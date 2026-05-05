@@ -57,7 +57,7 @@ export default function Home() {
   return (
     <div className="text-[#1c1b1b]" style={{ fontFamily: 'var(--font-inter)' }}>
       {/* ── 1. HERO ───────────────────────────────────────── */}
-      <section className="relative bg-[#0f172a] overflow-hidden min-h-[100svh] lg:min-h-[600px] flex flex-col lg:flex-row">
+      <section className="relative bg-[#0f172a] overflow-hidden min-h-[80svh] lg:min-h-[600px] flex flex-col lg:flex-row">
 
         {/* Background image — full bleed on mobile, right half on desktop */}
         <div className="absolute inset-0 lg:left-1/2">
@@ -79,7 +79,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 w-full lg:w-1/2 flex items-center px-5 sm:px-8 py-24 lg:py-28">
+        <div className="relative z-10 w-full lg:w-1/2 flex items-center px-5 sm:px-8 pt-20 pb-10 sm:py-20 lg:py-28">
           <div className="w-full max-w-lg mx-auto lg:ml-auto lg:mr-10">
 
             {/* Badge */}
@@ -139,8 +139,8 @@ export default function Home() {
                 <span className="text-sm font-medium">Fully Insured</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-[#b70011] text-[18px]">payments</span>
-                <span className="text-sm font-medium">Card/Cash Accepted</span>
+                <span className="material-symbols-outlined text-[#b70011] text-[18px]">task_alt</span>
+                <span className="text-sm font-medium">All Payment Methods Welcome</span>
               </div>
             </div>
 

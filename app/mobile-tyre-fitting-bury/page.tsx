@@ -19,17 +19,17 @@ export default function BuryPage() {
           </div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 z-10 w-full">
             <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 bg-[#dc2626] text-white px-4 py-2 rounded-full mb-6 text-sm font-bold">
+              <div className="inline-flex items-center gap-2 bg-[#dc2626] text-white px-4 py-2 rounded-full mb-4 text-sm font-bold">
                 <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>emergency_home</span>
                 URGENT ASSISTANCE: 20-30 MIN ARRIVAL IN BURY
               </div>
               <h1 className="work-sans text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight" style={{ letterSpacing: '-0.02em' }}>
                 Mobile Tyre Fitting <span className="text-[#dc2626]">Bury</span> – 24/7 Emergency Support
               </h1>
-              <p className="text-lg text-slate-300 mb-8 max-w-2xl leading-relaxed">
+              <p className="text-lg text-slate-300 mb-6 max-w-2xl leading-relaxed">
                 Stranded on the M66 or stuck in the heart of Bury? Our rapid-response mobile tyre units cover every corner of Bury 24 hours a day. We bring the garage to you, ensuring you&apos;re back on the road within the hour.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 mt-6">
                 <button className="bg-[#dc2626] text-white work-sans font-bold text-lg py-5 px-10 rounded-lg flex items-center justify-center gap-3 hover:bg-[#b70011] transition-all">
                   <span className="material-symbols-outlined">call</span>
                   CALL 0800-TYRE-FIT
@@ -43,10 +43,10 @@ export default function BuryPage() {
         </section>
 
         {/* Bento Grid Services */}
-        <section className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="mb-12 sm:mb-16">
+        <section className="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="mb-12">
             <h2 className="work-sans text-2xl sm:text-3xl font-bold mb-4" style={{ letterSpacing: '-0.01em' }}>Complete Tyre Care in Bury</h2>
-            <p className="text-slate-600">Professional, swift, and reliable services across BL8, BL9 and surrounding areas.</p>
+            <p className="text-slate-600 leading-relaxed">Professional, swift, and reliable services across BL8, BL9 and surrounding areas.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
             {/* Large Card */}

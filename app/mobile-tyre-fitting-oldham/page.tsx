@@ -18,11 +18,11 @@ export default function OldhamPage() {
             />
           </div>
           <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 py-20 w-full">
-            <div className="max-w-2xl space-y-6">
-              <span className="inline-block bg-[#dc2626] text-white px-4 py-1 font-bold text-sm rounded">24/7 EMERGENCY COVERAGE</span>
-              <h1 className="work-sans text-3xl sm:text-4xl lg:text-5xl font-bold text-white uppercase tracking-tighter">Mobile Tyre Fitting in Oldham</h1>
-              <p className="text-lg text-slate-200 leading-relaxed">Fast and reliable mobile tyre fitting service available 24/7 in Oldham and surrounding areas. We come to you at home, work, or roadside.</p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="max-w-2xl">
+              <span className="inline-block bg-[#dc2626] text-white px-4 py-1 font-bold text-sm rounded mb-4">24/7 EMERGENCY COVERAGE</span>
+              <h1 className="work-sans text-3xl sm:text-4xl lg:text-5xl font-bold text-white uppercase tracking-tighter mb-6">Mobile Tyre Fitting in Oldham</h1>
+              <p className="text-lg text-slate-200 leading-relaxed mb-6">Fast and reliable mobile tyre fitting service available 24/7 in Oldham and surrounding areas. We come to you at home, work, or roadside.</p>
+              <div className="flex flex-col sm:flex-row gap-4 mt-6">
                 <a className="bg-[#dc2626] text-white work-sans font-bold text-lg h-14 px-10 flex items-center justify-center rounded-lg shadow-lg active:scale-95 transition-all" href="tel:0800000000">
                   CALL NOW
                 </a>
@@ -35,15 +35,15 @@ export default function OldhamPage() {
         </section>
 
         {/* Intro Section */}
-        <section className="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6">
+        <section className="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
-              <h2 className="work-sans text-3xl font-bold mb-6 text-[#1c1b1b]">Mobile Tyre Fitting Services in Oldham</h2>
-              <div className="space-y-4 text-[#5c403c] leading-relaxed">
+              <h2 className="work-sans text-3xl font-bold mb-5 text-[#1c1b1b]">Mobile Tyre Fitting Services in Oldham</h2>
+              <div className="space-y-4 text-[#5c403c] leading-relaxed mb-6">
                 <p>When you&apos;re stuck with a puncture or a blown tyre, you need a service that responds with high urgency. One Stop Tyres 24/7 provides premier local Oldham coverage, ensuring our technicians reach you within 20-30 minutes regardless of your location in the borough.</p>
                 <p>Our rapid arrival times cover everything from Chadderton and Failsworth to Royton and Shaw. We pride ourselves on institutional trust and grit, delivering high-end roadside solutions to keep Oldham moving.</p>
               </div>
-              <div className="mt-8 flex gap-6">
+              <div className="mt-4 flex gap-6">
                 <div className="flex items-center gap-2">
                   <span className="material-symbols-outlined text-[#b70011]">verified</span>
                   <span className="font-bold text-sm">Fully Certified</span>

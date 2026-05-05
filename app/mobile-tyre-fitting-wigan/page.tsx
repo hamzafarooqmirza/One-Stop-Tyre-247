@@ -19,13 +19,13 @@ export default function WiganPage() {
           </div>
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
             <div>
-              <div className="inline-flex items-center bg-[#dc2626] text-white px-4 py-2 rounded-full mb-6 text-sm font-bold gap-2">
+              <div className="inline-flex items-center bg-[#dc2626] text-white px-4 py-2 rounded-full mb-4 text-sm font-bold gap-2">
                 <span className="material-symbols-outlined text-sm">bolt</span>
                 20-30 MINUTE ARRIVAL IN WIGAN
               </div>
               <h1 className="work-sans text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight">Emergency Mobile Tyre Fitting in Wigan</h1>
-              <p className="text-lg mb-8 opacity-90 leading-relaxed">Stranded on the A49 or M6? Our expert mobile technicians provide 24/7 rapid roadside tyre replacement and puncture repair throughout Wigan and the surrounding Greater Manchester area.</p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <p className="text-lg mb-6 opacity-90 leading-relaxed">Stranded on the A49 or M6? Our expert mobile technicians provide 24/7 rapid roadside tyre replacement and puncture repair throughout Wigan and the surrounding Greater Manchester area.</p>
+              <div className="flex flex-col sm:flex-row gap-4 mt-6">
                 <a className="bg-[#dc2626] text-white work-sans font-bold px-8 py-5 rounded-lg flex items-center justify-center shadow-lg hover:bg-[#b70011] transition-all gap-2" href="tel:08000000000">
                   <span className="material-symbols-outlined">call</span>
                   CALL EMERGENCY DISPATCH
@@ -57,9 +57,9 @@ export default function WiganPage() {
         {/* Services Grid */}
         <section className="py-12 sm:py-16 bg-[#fcf9f8]" id="services">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="text-center mb-12 sm:mb-16">
+            <div className="text-center mb-12">
               <h2 className="work-sans text-2xl sm:text-3xl font-bold mb-4">Roadside Assistance Services in Wigan</h2>
-              <p className="text-lg max-w-2xl mx-auto text-slate-600">Professional, high-urgency solutions to get you back on the road safely and swiftly.</p>
+              <p className="text-lg max-w-2xl mx-auto text-slate-600 leading-relaxed">Professional, high-urgency solutions to get you back on the road safely and swiftly.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
@@ -91,7 +91,7 @@ export default function WiganPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
               <div className="lg:col-span-8">
                 <div className="bg-white p-8 sm:p-10 rounded-2xl h-full shadow-sm">
-                  <h2 className="work-sans text-2xl sm:text-3xl font-bold mb-6">Serving the Entire Wigan Borough</h2>
+                  <h2 className="work-sans text-2xl sm:text-3xl font-bold mb-5">Serving the Entire Wigan Borough</h2>
                   <p className="text-lg text-slate-600 mb-8 leading-relaxed">Our dispatch centre is strategically located to provide the fastest response times in Wigan. We don&apos;t just stay in the town centre; we cover every outlying district with 24-hour availability.</p>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-slate-700 font-semibold">
                     {['Standish', 'Ashton-in-Makerfield', 'Hindley', 'Orrell', 'Pemberton', 'Ince-in-Makerfield', 'Platt Bridge', 'Abram'].map((area) => (

@@ -19,16 +19,16 @@ export default function StockportPage() {
           </div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
             <div>
-              <div className="inline-block bg-[#dc2626] text-white px-4 py-1 rounded-full text-sm font-bold mb-6">
+              <div className="inline-block bg-[#dc2626] text-white px-4 py-1 rounded-full text-sm font-bold mb-4">
                 STOCKPORT EMERGENCY TYRE FITTING
               </div>
               <h1 className="work-sans text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                 Fastest Mobile Tyre Fitting in <span className="text-[#dc2626]">Stockport</span> — We Come to You 24/7
               </h1>
-              <p className="text-lg text-slate-300 mb-8 max-w-xl leading-relaxed">
+              <p className="text-lg text-slate-300 mb-6 max-w-xl leading-relaxed">
                 Stuck on the A6 or stranded in Cheadle? Our rapid response teams are stationed across Stockport to provide 20-30 minute emergency tyre repairs and replacements.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 mt-6">
                 <button className="bg-[#dc2626] text-white px-8 py-4 rounded-xl work-sans font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-all">
                   <span className="material-symbols-outlined">call</span>
                   Emergency Call Out
@@ -163,7 +163,7 @@ export default function StockportPage() {
                 </div>
               </div>
               <div>
-                <h2 className="work-sans text-2xl sm:text-3xl font-bold text-[#1c1b1b] mb-8">The Preferred Mobile Tyre Service in <span className="text-[#b70011]">Stockport</span></h2>
+                <h2 className="work-sans text-2xl sm:text-3xl font-bold text-[#1c1b1b] mb-5">The Preferred Mobile Tyre Service in <span className="text-[#b70011]">Stockport</span></h2>
                 <ul className="space-y-6">
                   {[
                     { title: 'Local Knowledge', desc: "We know Stockport's roads—from the tight streets of Edgeley to the suburban lanes of Marple. We navigate traffic to reach you faster." },
@@ -191,7 +191,7 @@ export default function StockportPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-1 flex flex-col justify-center">
               <h2 className="work-sans text-3xl font-bold mb-4">Stockport Coverage</h2>
-              <p className="text-slate-600 mb-8 leading-relaxed">We provide complete coverage across the Metropolitan Borough of Stockport and surrounding areas including:</p>
+              <p className="text-slate-600 mb-6 leading-relaxed">We provide complete coverage across the Metropolitan Borough of Stockport and surrounding areas including:</p>
               <div className="grid grid-cols-2 gap-x-4 gap-y-2">
                 {['Bramhall', 'Cheadle', 'Gatley', 'Hazel Grove', 'Marple', 'Reddish', 'Romiley', 'Bredbury'].map((area) => (
                   <span key={area} className="flex items-center gap-2 font-bold text-sm text-slate-700">

@@ -1,3 +1,5 @@
+import BrandCarousel from '@/components/BrandCarousel'
+
 /* ─── Reusable star row ─────────────────────────────────── */
 function Stars() {
   return (
@@ -371,25 +373,7 @@ export default function Home() {
       </section>
 
       {/* ── 5. BRAND LOGOS ────────────────────────────────── */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-white border-y border-slate-100">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-center text-slate-400 font-bold uppercase tracking-widest text-xs mb-8 sm:mb-12">
-            Authorized Dealer of All Premium Brands
-          </h2>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-4 sm:gap-8 grayscale opacity-60 hover:grayscale-0 transition-all items-center">
-            {['MICHELIN', 'PIRELLI', 'CONTINENTAL', 'GOODYEAR', 'BRIDGESTONE', 'DUNLOP'].map(
-              (brand) => (
-                <div
-                  key={brand}
-                  className="flex items-center justify-center font-black text-sm sm:text-xl italic text-slate-800 text-center"
-                >
-                  {brand}
-                </div>
-              )
-            )}
-          </div>
-        </div>
-      </section>
+      <BrandCarousel />
 
       {/* ── 6. REVIEWS ────────────────────────────────────── */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">

@@ -65,8 +65,11 @@ export default function BrandCarousel() {
         <div className="pointer-events-none absolute right-0 top-0 h-full w-16 sm:w-24 z-10 bg-gradient-to-l from-white to-transparent" />
 
         <div
-          className="flex gap-10 sm:gap-16 items-center animate-marquee whitespace-nowrap"
-          style={{ width: 'max-content' }}
+          className="flex gap-10 sm:gap-16 items-center whitespace-nowrap"
+          style={{
+            width: 'max-content',
+            animation: 'marquee 28s linear infinite',
+          }}
           aria-hidden="false"
         >
           {TRACK.map((brand, i) => (

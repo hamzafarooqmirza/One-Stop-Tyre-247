@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
         {/* Brand */}
         <div className="space-y-8">
-          <a href="#" aria-label="One Stop Mobile Tyres 24/7 - Home">
+          <a href="#" aria-label="One Stop Mobile Tyres 24/7 - Home" className="flex justify-center md:justify-start">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One-Stop%20Loog-airanko-Qpv1QvladNLpRhg8X3Hs6SzyydzFMq.webp"
@@ -12,18 +12,10 @@ export default function Footer() {
               className="h-20 w-auto"
             />
           </a>
-          <p className="text-slate-400 text-sm leading-relaxed">
+          <p className="text-slate-400 text-sm leading-relaxed text-center md:text-left mt-6">
             The premier 24/7 emergency roadside assistance partner across Greater Manchester.
             Rapid response, professional service, and transparent pricing.
           </p>
-          <div className="flex gap-4">
-            <span className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-[#b70011] transition-all cursor-pointer">
-              <span className="material-symbols-outlined text-lg">public</span>
-            </span>
-            <span className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-[#b70011] transition-all cursor-pointer">
-              <span className="material-symbols-outlined text-lg">share</span>
-            </span>
-          </div>
           <ul className="space-y-4 text-slate-400 text-sm font-medium pt-2">
             <li className="flex items-center gap-3">
               <span className="material-symbols-outlined text-[#b70011] text-lg">call</span>

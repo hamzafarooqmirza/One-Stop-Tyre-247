@@ -176,7 +176,118 @@ export default function ServicePage({
         </div>
       </section>
 
-      {/* ── 3. WHAT'S INCLUDED + HOW IT WORKS ────────────── */}
+      {/* ── 3. SERVICES GRID ─────────────────────────────── */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10 sm:mb-16">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+              What We Do
+            </span>
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Professional Roadside Assistance
+            </h2>
+            <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
+              Comprehensive mobile vehicle support available every day of the year across the UK.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {[
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp',
+                title: 'Mobile Tyre Fitting',
+                desc: 'Emergency replacement at your location within 20-30 minutes.',
+                badge: 'FAST RESPONSE',
+              },
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting-airanko-NAQrFhRm9UilkOOWhZBEd5lhxc7eEz.webp',
+                title: 'Home Tyre Fitting',
+                desc: 'Convenient tyre replacement on your driveway while you work or relax.',
+                badge: 'AT YOUR DOOR',
+              },
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emeregency%20Puncture%20Repair-airanko-K3cI9fjWlcirkZkEwDEvdtRtKQg3B7.webp',
+                title: 'Emergency Puncture Repair',
+                desc: 'Professional plug and patch repair to save your tyre when possible.',
+                badge: 'BS AU 159',
+              },
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Jumpstart-onestop-airanko-bUQeSwSrfEEeS2vgU2IuyrDFFak87m.webp',
+                title: 'JumpStart',
+                desc: 'Fast battery jump-start service to get your vehicle running again without delay.',
+                badge: '24/7 SERVICE',
+              },
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TPMS%20Reset-airanko-LEqPbQFsdbmM1ZLc5m0aoAUKGG4haJ.webp',
+                title: 'TPMS Reset',
+                desc: 'Tyre pressure monitoring system reset after every tyre change or repair.',
+                badge: 'ALL VEHICLES',
+              },
+              {
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20Nut%20Removal-airanko-MV4iwDQaMKuuoUnbMrRrQW5QIDJQbV.webp',
+                title: 'Locking Nut Removal',
+                desc: 'Specialist damage-free removal of lost or broken locking wheel nuts.',
+                badge: 'DAMAGE FREE',
+              },
+            ].map((card) => (
+              <div
+                key={card.title}
+                className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
+              >
+                <div className="relative h-44 sm:h-52 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={card.img}
+                    alt={card.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    width={600}
+                    height={400}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">
+                    {card.badge}
+                  </span>
+                </div>
+                <div className="p-5 sm:p-6">
+                  <h3
+                    className="text-base sm:text-lg font-semibold mb-2 text-[#0f172a]"
+                    style={{ fontFamily: 'var(--font-work-sans)' }}
+                  >
+                    {card.title}
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
+                  <div className="flex items-center justify-end">
+                    <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
+                      arrow_forward
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
+            <div>
+              <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
+              <p className="text-slate-400 text-sm sm:text-base">
+                Speak directly to a technician for an instant quote and arrival time.
+              </p>
+            </div>
+            <a
+              href="tel:07759708646"
+              className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
+              style={{ fontFamily: 'var(--font-work-sans)' }}
+            >
+              07759 708 646
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 4. WHAT'S INCLUDED + HOW IT WORKS ────────────── */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 bg-slate-50">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* What's Included */}
@@ -213,7 +324,7 @@ export default function ServicePage({
         </div>
       </section>
 
-      {/* ── 4. WHY CHOOSE US + BENEFITS ─────────────────── */}
+      {/* ── 5. WHY CHOOSE US + BENEFITS ─────────────────── */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Why Choose Us */}
@@ -230,7 +341,7 @@ export default function ServicePage({
         </div>
       </section>
 
-      {/* ── 5. WHEN YOU NEED IT ─────────────────────────── */}
+      {/* ── 6. WHEN YOU NEED IT ─────────────────────────── */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 bg-[#0f172a] text-white relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-5 pointer-events-none"
@@ -253,7 +364,7 @@ export default function ServicePage({
         </div>
       </section>
 
-      {/* ── 6. FAQ ──────────────────────────────────────── */}
+      {/* ── 7. FAQ ──────────────────────────────────────── */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10 sm:mb-14">
@@ -281,7 +392,7 @@ export default function ServicePage({
         </div>
       </section>
 
-      {/* ── 7. FINAL CTA ────────────────────────────────── */}
+      {/* ── 8. FINAL CTA ────────────────────────────────── */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
         <div className="max-w-3xl mx-auto bg-[#0f172a] rounded-2xl sm:rounded-3xl p-8 sm:p-12 text-center shadow-2xl">
           <h2

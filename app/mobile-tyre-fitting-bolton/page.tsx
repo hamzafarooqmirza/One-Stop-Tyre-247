@@ -83,70 +83,113 @@ export default function BoltonPage() {
           </div>
         </section>
 
-        {/* Bento Grid Services */}
-        <section className="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12">
-            <h2 className="font-h2 text-2xl sm:text-[32px] mb-4 text-[#1c1b1b]">Tyre Services We Provide in Bolton</h2>
-            <p className="font-body-md text-[#5c403c] max-w-2xl mx-auto leading-relaxed">From high-performance tyres for the motorway to budget options for local commuting, we carry all stock for immediate fitting.</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Large Feature Card */}
-            <div className="md:col-span-2 md:row-span-2 bg-white rounded-xl overflow-hidden shadow-md border border-slate-100 group">
-              <div className="h-64 overflow-hidden relative">
-                <img
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5d2QnbwoTUMyhv9wQE9RBmwaSJskZjhBpyoeAl1AEWRAdf2pIdPqEZSXAldUQWYquyLTaZB0-aqgsw66hfBLK-S2pe7tJIdYxsdYfdn_KJ-Jg9dA1Cg2e3PU8Z775GpFuJ2-C8atuVLlaL83n7StePVoUJmw0MEtRNaJ-zHYUM4MADyAVsdbnNhDXO6ambD2WsR-4kFDuIkOfMhXQUJ1RxB_YaPJpy8ca_qY8anDwlR6nUN_adksFg-GXN7ZiOT_NNiCbfGF6AK4"
-                  alt="Professional mechanic fitting a tyre"
-                />
-                <div className="absolute top-4 left-4 bg-[#dc2626] text-white px-3 py-1 rounded text-label-bold">POPULAR</div>
-              </div>
-              <div className="p-8">
-                <h3 className="font-h3 text-h3 mb-4">Mobile Tyre Fitting</h3>
-                <p className="font-body-md text-[#5c403c] mb-6">The most convenient way to replace your tyres. We come to your home, workplace, or the roadside anywhere in Bolton. No need to visit a garage and wait in line—we bring the workshop to you.</p>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                  <li className="flex items-center gap-2 text-[#1c1b1b]">
-                    <span className="material-symbols-outlined text-[#dc2626]">check_circle</span>
-                    All major brands stocked
-                  </li>
-                  <li className="flex items-center gap-2 text-[#1c1b1b]">
-                    <span className="material-symbols-outlined text-[#dc2626]">check_circle</span>
-                    Digital wheel balancing
-                  </li>
-                  <li className="flex items-center gap-2 text-[#1c1b1b]">
-                    <span className="material-symbols-outlined text-[#dc2626]">check_circle</span>
-                    New valves included
-                  </li>
-                  <li className="flex items-center gap-2 text-[#1c1b1b]">
-                    <span className="material-symbols-outlined text-[#dc2626]">check_circle</span>
-                    Old tyre disposal
-                  </li>
-                </ul>
-                <button className="text-[#3e5e95] font-call-to-action flex items-center gap-2 hover:gap-4 transition-all">
-                  LEARN MORE <span className="material-symbols-outlined">arrow_forward</span>
-                </button>
-              </div>
+        {/* Services Grid */}
+        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-10 sm:mb-16">
+              <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+                What We Do
+              </span>
+              <h2
+                className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight"
+                style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+              >
+                Professional Roadside Assistance in Bolton
+              </h2>
+              <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
+                Comprehensive mobile vehicle support available every day of the year across Bolton and surrounding areas.
+              </p>
             </div>
-            {/* Puncture Card */}
-            <div className="bg-[#a2c1ff] rounded-xl p-8 flex flex-col justify-between group">
-              <div>
-                <span className="material-symbols-outlined text-[#3e5e95] text-5xl mb-6 block">build</span>
-                <h3 className="font-h3 text-h3 text-[#2d4e85] mb-4">Puncture Repair</h3>
-                <p className="font-body-md text-[#2d4e85] opacity-80">BS AU 159 standard repairs carried out at your location. If it&apos;s safe to fix, we&apos;ll save you the cost of a new tyre.</p>
-              </div>
-              <div className="mt-8">
-                <span className="text-label-bold text-[#3e5e95]">FROM £45.00</span>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {[
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp',
+                  title: 'Mobile Tyre Fitting',
+                  desc: 'Emergency replacement at your location within 20-30 minutes.',
+                  badge: 'FAST RESPONSE',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting-airanko-NAQrFhRm9UilkOOWhZBEd5lhxc7eEz.webp',
+                  title: 'Home Tyre Fitting',
+                  desc: 'Convenient tyre replacement on your driveway while you work or relax.',
+                  badge: 'AT YOUR DOOR',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emeregency%20Puncture%20Repair-airanko-K3cI9fjWlcirkZkEwDEvdtRtKQg3B7.webp',
+                  title: 'Emergency Puncture Repair',
+                  desc: 'Professional plug and patch repair to save your tyre when possible.',
+                  badge: 'BS AU 159',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Jumpstart-onestop-airanko-bUQeSwSrfEEeS2vgU2IuyrDFFak87m.webp',
+                  title: 'JumpStart',
+                  desc: 'Fast battery jump-start service to get your vehicle running again without delay.',
+                  badge: '24/7 SERVICE',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TPMS%20Reset-airanko-LEqPbQFsdbmM1ZLc5m0aoAUKGG4haJ.webp',
+                  title: 'TPMS Reset',
+                  desc: 'Tyre pressure monitoring system reset after every tyre change or repair.',
+                  badge: 'ALL VEHICLES',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20Nut%20Removal-airanko-MV4iwDQaMKuuoUnbMrRrQW5QIDJQbV.webp',
+                  title: 'Locking Nut Removal',
+                  desc: 'Specialist damage-free removal of lost or broken locking wheel nuts.',
+                  badge: 'DAMAGE FREE',
+                },
+              ].map((card) => (
+                <div
+                  key={card.title}
+                  className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
+                >
+                  <div className="relative h-44 sm:h-52 overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={card.img}
+                      alt={card.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      width={600}
+                      height={400}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                    <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">
+                      {card.badge}
+                    </span>
+                  </div>
+                  <div className="p-5 sm:p-6">
+                    <h3
+                      className="text-base sm:text-lg font-semibold mb-2 text-[#0f172a]"
+                      style={{ fontFamily: 'var(--font-work-sans)' }}
+                    >
+                      {card.title}
+                    </h3>
+                    <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
+                    <div className="flex items-center justify-end">
+                      <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
+                        arrow_forward
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
-            {/* Jump Starts Card */}
-            <div className="bg-[#ebe7e7] rounded-xl p-8 flex flex-col justify-between group">
+            <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
               <div>
-                <span className="material-symbols-outlined text-[#5c403c] text-5xl mb-6 block">bolt</span>
-                <h3 className="font-h3 text-h3 text-[#1c1b1b] mb-4">Jump Starts</h3>
-                <p className="font-body-md text-[#5c403c]">Flat battery in the Bolton cold? We provide professional jump-start services and battery testing for all vehicle types.</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
+                <p className="text-slate-400 text-sm sm:text-base">
+                  Speak directly to a technician for an instant quote and arrival time.
+                </p>
               </div>
-              <div className="mt-8">
-                <span className="text-label-bold text-[#5c403c]">30 MIN RESPONSE</span>
-              </div>
+              <a
+                href="tel:07759708646"
+                className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
+              >
+                07759 708 646
+              </a>
             </div>
           </div>
         </section>

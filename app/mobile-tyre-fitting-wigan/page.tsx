@@ -80,32 +80,112 @@ export default function WiganPage() {
         </section>
 
         {/* Services Grid */}
-        <section className="py-12 sm:py-16 bg-[#fcf9f8]" id="services">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="text-center mb-12">
-              <h2 className="work-sans text-2xl sm:text-3xl font-bold mb-4">Roadside Assistance Services in Wigan</h2>
-              <p className="text-lg max-w-2xl mx-auto text-slate-600 leading-relaxed">Professional, high-urgency solutions to get you back on the road safely and swiftly.</p>
+        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50" id="services">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-10 sm:mb-16">
+              <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+                What We Do
+              </span>
+              <h2
+                className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight"
+                style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+              >
+                Professional Roadside Assistance in Wigan
+              </h2>
+              <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
+                Comprehensive mobile vehicle support available every day of the year across Wigan and surrounding areas.
+              </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {[
-                { icon: 'tire_repair', title: 'Mobile Tyre Fitting', desc: "Whether at home, work, or the roadside, we bring the tyre shop to you. Rapid fitting for cars, vans, and 4x4s.", badge: 'From £45', color: 'bg-[#ffdad6]', iconColor: 'text-[#b70011]' },
-                { icon: 'build', title: 'Puncture Repair', desc: "Safe, BS AU 159 compliant repairs on the spot. If it can be fixed, we'll save you the cost of a new tyre.", badge: 'Fast Repair', color: 'bg-[#d7e2ff]', iconColor: 'text-[#3e5e95]' },
-                { icon: 'bolt', title: 'Jump Starts', desc: "Flat battery in the cold? Our technicians carry heavy-duty jump packs to get any engine started instantly.", badge: '24/7 Service', color: 'bg-[#c8e6ff]', iconColor: 'text-[#005f88]' },
-              ].map((service) => (
-                <div key={service.title} className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:border-[#3e5e95] transition-all group flex flex-col">
-                  <div className={`w-14 h-14 ${service.color} rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
-                    <span className={`material-symbols-outlined text-3xl ${service.iconColor}`}>{service.icon}</span>
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp',
+                  title: 'Mobile Tyre Fitting',
+                  desc: 'Emergency replacement at your location within 20-30 minutes.',
+                  badge: 'FAST RESPONSE',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting-airanko-NAQrFhRm9UilkOOWhZBEd5lhxc7eEz.webp',
+                  title: 'Home Tyre Fitting',
+                  desc: 'Convenient tyre replacement on your driveway while you work or relax.',
+                  badge: 'AT YOUR DOOR',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emeregency%20Puncture%20Repair-airanko-K3cI9fjWlcirkZkEwDEvdtRtKQg3B7.webp',
+                  title: 'Emergency Puncture Repair',
+                  desc: 'Professional plug and patch repair to save your tyre when possible.',
+                  badge: 'BS AU 159',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Jumpstart-onestop-airanko-bUQeSwSrfEEeS2vgU2IuyrDFFak87m.webp',
+                  title: 'JumpStart',
+                  desc: 'Fast battery jump-start service to get your vehicle running again without delay.',
+                  badge: '24/7 SERVICE',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TPMS%20Reset-airanko-LEqPbQFsdbmM1ZLc5m0aoAUKGG4haJ.webp',
+                  title: 'TPMS Reset',
+                  desc: 'Tyre pressure monitoring system reset after every tyre change or repair.',
+                  badge: 'ALL VEHICLES',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20Nut%20Removal-airanko-MV4iwDQaMKuuoUnbMrRrQW5QIDJQbV.webp',
+                  title: 'Locking Nut Removal',
+                  desc: 'Specialist damage-free removal of lost or broken locking wheel nuts.',
+                  badge: 'DAMAGE FREE',
+                },
+              ].map((card) => (
+                <div
+                  key={card.title}
+                  className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
+                >
+                  <div className="relative h-44 sm:h-52 overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={card.img}
+                      alt={card.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      width={600}
+                      height={400}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                    <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">
+                      {card.badge}
+                    </span>
                   </div>
-                  <h3 className="work-sans text-2xl font-semibold mb-3">{service.title}</h3>
-                  <p className="text-slate-600 mb-6 flex-1 leading-relaxed">{service.desc}</p>
-                  <div className="flex justify-between items-center mt-auto">
-                    <span className="bg-[#005f88]/10 text-[#004c6d] px-3 py-1 rounded font-bold text-sm">{service.badge}</span>
-                    <a className="text-[#b70011] font-bold flex items-center hover:underline text-sm" href="#">
-                      Details <span className="material-symbols-outlined text-sm ml-1">arrow_forward</span>
-                    </a>
+                  <div className="p-5 sm:p-6">
+                    <h3
+                      className="text-base sm:text-lg font-semibold mb-2 text-[#0f172a]"
+                      style={{ fontFamily: 'var(--font-work-sans)' }}
+                    >
+                      {card.title}
+                    </h3>
+                    <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
+                    <div className="flex items-center justify-end">
+                      <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
+                        arrow_forward
+                      </span>
+                    </div>
                   </div>
                 </div>
               ))}
+            </div>
+            <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
+              <div>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
+                <p className="text-slate-400 text-sm sm:text-base">
+                  Speak directly to a technician for an instant quote and arrival time.
+                </p>
+              </div>
+              <a
+                href="tel:07759708646"
+                className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
+              >
+                07759 708 646
+              </a>
             </div>
           </div>
         </section>

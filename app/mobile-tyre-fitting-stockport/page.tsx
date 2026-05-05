@@ -125,7 +125,7 @@ export default function StockportPage() {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emeregency%20Puncture%20Repair-airanko-K3cI9fjWlcirkZkEwDEvdtRtKQg3B7.webp',
                   title: 'Emergency Puncture Repair',
                   desc: 'Professional plug and patch repair to save your tyre when possible.',
-                  badge: 'BS AU 159',
+                  badge: 'CERTIFIED REPAIR',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Jumpstart-onestop-airanko-bUQeSwSrfEEeS2vgU2IuyrDFFak87m.webp',

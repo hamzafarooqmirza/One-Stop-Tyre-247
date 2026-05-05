@@ -186,7 +186,7 @@ export default function Home() {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp',
                 title: 'Emergency Puncture Repair',
                 desc: 'Professional plug and patch repair to save your tyre when possible.',
-                badge: 'BS AU 159',
+                badge: 'CERTIFIED REPAIR',
               },
               {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp',

@@ -220,7 +220,7 @@ export default function ServicePage({
                 badge: '24/7 SERVICE',
               },
               {
-                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TPMS%20Reset-airanko-LEqPbQFsdbmM1ZLc5m0aoAUKGG4haJ.webp',
+                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp',
                 title: 'TPMS Reset',
                 desc: 'Tyre pressure monitoring system reset after every tyre change or repair.',
                 badge: 'ALL VEHICLES',

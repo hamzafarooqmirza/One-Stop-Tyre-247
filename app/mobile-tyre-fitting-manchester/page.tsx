@@ -1,3 +1,7 @@
+import BrandCarousel from '@/components/BrandCarousel'
+import WhyChooseUs from '@/components/WhyChooseUs'
+import CityFaq from '@/components/CityFaq'
+
 export const metadata = {
   title: 'Mobile Tyre Fitting in Manchester | One Stop Tyres 24/7',
 }
@@ -256,40 +260,8 @@ export default function ManchesterPage() {
           </div>
         </section>
 
-        {/* Why Choose Us - Bento Grid Style */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="font-h2 text-2xl sm:text-[32px] mb-10">Why Choose One Stop Tyres 24/7 in Manchester</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="md:col-span-2 bg-[#3e5e95] text-white p-8 rounded-2xl flex flex-col justify-between">
-                <div>
-                  <h3 className="font-h3 text-h3 mb-4">Deep Local Knowledge</h3>
-                  <p className="font-body-lg leading-relaxed">Our Manchester-based teams know every shortcut and bypass across the Greater Manchester area, ensuring we beat traffic to reach you faster than any national chain.</p>
-                </div>
-                <div className="mt-8 flex items-center gap-4">
-                  <span className="material-symbols-outlined text-4xl">location_city</span>
-                  <span className="font-label-bold uppercase">Trusted by 10,000+ local drivers</span>
-                </div>
-              </div>
-              <div className="bg-[#dc2626] text-white p-8 rounded-2xl">
-                <h3 className="font-h3 text-h3 mb-4">24/7 Availability</h3>
-                <p className="leading-relaxed">Day or night, rain or shine. We never close because emergencies don&apos;t have business hours.</p>
-                <div className="text-6xl font-black opacity-20 mt-8">24H</div>
-              </div>
-              <div className="bg-slate-100 p-8 rounded-2xl">
-                <h3 className="font-h3 text-h3 mb-4 text-[#1c1b1b]">Premium Equipment</h3>
-                <p className="text-[#5c403c] leading-relaxed">We use dealership-grade balancing and fitting machines mounted in our mobile vans for a perfect finish.</p>
-              </div>
-              <div className="md:col-span-2 bg-[#005f88] text-white p-8 rounded-2xl flex items-center gap-8">
-                <div className="flex-1">
-                  <h3 className="font-h3 text-h3 mb-4">Rapid Response Fleet</h3>
-                  <p className="leading-relaxed">Our fleet is distributed across Manchester and Salford, allowing for sub-60 minute arrival times even during peak commute hours.</p>
-                </div>
-                <span className="material-symbols-outlined text-7xl opacity-20 hidden sm:block">shutter_speed</span>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Why Choose Us */}
+        <WhyChooseUs city="Manchester" />
 
         {/* Emergency Section */}
         <section className="py-16 sm:py-20 px-4 sm:px-6 bg-slate-900 text-white overflow-hidden relative">
@@ -347,42 +319,35 @@ export default function ManchesterPage() {
           </div>
         </section>
 
+        {/* Brand Carousel */}
+        <BrandCarousel />
+
         {/* FAQ Section */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="font-h2 text-h2 text-center mb-10">Frequently Asked Questions</h2>
-            <div className="space-y-4">
-              <details className="group bg-[#fcf9f8] rounded-xl p-6 border border-slate-100 open:shadow-md transition-all">
-                <summary className="list-none flex justify-between items-center cursor-pointer font-h3 text-h3 text-lg">
-                  Do you cover all areas of Greater Manchester?
-                  <span className="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
-                </summary>
-                <p className="mt-4 text-[#5c403c] leading-relaxed">Yes, we cover the entire Greater Manchester region including Salford, Trafford, Oldham, Stockport, Bury, Bolton, Rochdale, and Tameside, as well as the city center and Manchester Airport.</p>
-              </details>
-              <details className="group bg-[#fcf9f8] rounded-xl p-6 border border-slate-100 open:shadow-md transition-all">
-                <summary className="list-none flex justify-between items-center cursor-pointer font-h3 text-h3 text-lg">
-                  How long does a mobile tyre fitting take?
-                  <span className="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
-                </summary>
-                <p className="mt-4 text-[#5c403c] leading-relaxed">A single tyre replacement typically takes 20-30 minutes once our technician arrives. A full set of four tyres usually takes 45-60 minutes.</p>
-              </details>
-              <details className="group bg-[#fcf9f8] rounded-xl p-6 border border-slate-100 open:shadow-md transition-all">
-                <summary className="list-none flex justify-between items-center cursor-pointer font-h3 text-h3 text-lg">
-                  Do you offer 24-hour emergency service in Manchester?
-                  <span className="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
-                </summary>
-                <p className="mt-4 text-[#5c403c] leading-relaxed">Yes, we operate 24 hours a day, 7 days a week, 365 days a year. Our emergency dispatch line is always staffed and ready to send a technician to your location.</p>
-              </details>
-              <details className="group bg-[#fcf9f8] rounded-xl p-6 border border-slate-100 open:shadow-md transition-all">
-                <summary className="list-none flex justify-between items-center cursor-pointer font-h3 text-h3 text-lg">
-                  What tyre brands do you carry?
-                  <span className="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
-                </summary>
-                <p className="mt-4 text-[#5c403c] leading-relaxed">We stock all major premium brands including Michelin, Continental, Bridgestone, and Pirelli, as well as mid-range and budget options to suit all price points.</p>
-              </details>
-            </div>
-          </div>
-        </section>
+        <CityFaq
+          city="Manchester"
+          faqs={[
+            {
+              q: 'Do you cover all areas of Greater Manchester?',
+              a: 'Yes, we cover the entire Greater Manchester region including Salford, Trafford, Oldham, Stockport, Bury, Bolton, Rochdale, and Tameside, as well as the city centre and Manchester Airport.',
+            },
+            {
+              q: 'How long does a mobile tyre fitting take in Manchester?',
+              a: 'A single tyre replacement typically takes 20-30 minutes once our technician arrives. A full set of four tyres usually takes 45-60 minutes.',
+            },
+            {
+              q: 'Do you offer 24-hour emergency service in Manchester?',
+              a: 'Yes, we operate 24 hours a day, 7 days a week, 365 days a year. Our emergency dispatch line is always staffed and ready to send a technician to your location.',
+            },
+            {
+              q: 'What tyre brands do you carry for Manchester drivers?',
+              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, and Pirelli, as well as mid-range and budget options to suit all price points.',
+            },
+            {
+              q: 'Can you assist with tyre emergencies on the M60 ring road?',
+              a: 'Absolutely. Our emergency units are priority-dispatched for motorway breakdowns on the M60, M62, and M56, equipped with safety lighting and barriers for your protection.',
+            },
+          ]}
+        />
 
         {/* Final CTA Section */}
         <section className="py-16 sm:py-20 px-4 sm:px-6 bg-[#f0edec] relative">

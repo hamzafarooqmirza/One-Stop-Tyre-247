@@ -232,87 +232,73 @@ export default function Header() {
                     ? 'opacity-100 scale-y-100 pointer-events-auto'
                     : 'opacity-0 scale-y-95 pointer-events-none'
                 }`}
-                style={{ width: '740px' }}
+                style={{ width: '620px' }}
               >
                 {/* Arrow */}
                 <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-l border-t border-slate-200 rotate-45 z-10" />
 
                 <div className="relative bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden z-20">
-                  <div className="grid grid-cols-[1fr_240px] min-h-[300px]">
-                    {/* Links grid */}
-                    <div className="p-5">
-                      <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3 px-1">
-                        Our Services
-                      </p>
-                      <div className="grid grid-cols-2 gap-1">
-                        {serviceLinks.map((link) => (
-                          <a
-                            key={link.href}
-                            href={link.href}
-                            className={`group flex items-start gap-3 p-3 rounded-xl transition-all ${
+                  {/* Links grid */}
+                  <div className="p-5">
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3 px-1">
+                      Our Services
+                    </p>
+                    <div className="grid grid-cols-2 gap-1">
+                      {serviceLinks.map((link) => (
+                        <a
+                          key={link.href}
+                          href={link.href}
+                          className={`group flex items-start gap-3 p-3 rounded-xl transition-all ${
+                            isActive(link.href)
+                              ? 'bg-red-50'
+                              : 'hover:bg-slate-50'
+                          }`}
+                        >
+                          <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 mt-0.5 transition-colors ${
+                            isActive(link.href)
+                              ? 'bg-[#b70011]/10'
+                              : 'bg-slate-100 group-hover:bg-[#b70011]/10'
+                          }`}>
+                            <span className={`material-symbols-outlined text-[18px] transition-colors ${
                               isActive(link.href)
-                                ? 'bg-red-50'
-                                : 'hover:bg-slate-50'
-                            }`}
-                          >
-                            <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 mt-0.5 transition-colors ${
-                              isActive(link.href)
-                                ? 'bg-[#b70011]/10'
-                                : 'bg-slate-100 group-hover:bg-[#b70011]/10'
+                                ? 'text-[#b70011]'
+                                : 'text-slate-500 group-hover:text-[#b70011]'
+                            }`} style={{ fontVariationSettings: "'FILL' 1" }}>
+                              {link.icon}
+                            </span>
+                          </div>
+                          <div className="min-w-0">
+                            <p className={`font-semibold text-sm leading-snug transition-colors ${
+                              isActive(link.href) ? 'text-[#b70011]' : 'text-slate-800 group-hover:text-[#b70011]'
                             }`}>
-                              <span className={`material-symbols-outlined text-[18px] transition-colors ${
-                                isActive(link.href)
-                                  ? 'text-[#b70011]'
-                                  : 'text-slate-500 group-hover:text-[#b70011]'
-                              }`} style={{ fontVariationSettings: "'FILL' 1" }}>
-                                {link.icon}
-                              </span>
-                            </div>
-                            <div className="min-w-0">
-                              <p className={`font-semibold text-sm leading-snug transition-colors ${
-                                isActive(link.href) ? 'text-[#b70011]' : 'text-slate-800 group-hover:text-[#b70011]'
-                              }`}>
-                                {link.label}
-                              </p>
-                              <p className="text-[11px] text-slate-500 leading-tight mt-0.5">{link.desc}</p>
-                            </div>
-                          </a>
-                        ))}
-                      </div>
+                              {link.label}
+                            </p>
+                            <p className="text-[11px] text-slate-500 leading-tight mt-0.5">{link.desc}</p>
+                          </div>
+                        </a>
+                      ))}
                     </div>
+                  </div>
 
-                    {/* Promo panel */}
-                    <div className="bg-[#0f172a] p-5 flex flex-col gap-4 min-w-0">
-                      <div className="min-w-0">
-                        <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-2">
-                          Emergency?
-                        </p>
-                        <p className="text-white font-bold text-[13px] leading-snug mb-1.5 break-words">
-                          We respond in 20–30 minutes across Greater Manchester
-                        </p>
-                        <p className="text-white/50 text-[11px] leading-snug break-words">
-                          Available 24/7, 365 days a year. No call-out fee.
-                        </p>
-                      </div>
-                      <div className="mt-auto flex flex-col gap-2">
-                        <a
-                          href="tel:07759708646"
-                          className="flex items-center gap-2 bg-[#b70011] hover:bg-red-700 text-white font-bold text-sm px-4 py-2.5 rounded-xl transition-all active:scale-95 whitespace-nowrap"
-                        >
-                          <span className="material-symbols-outlined text-[16px]" style={{ fontVariationSettings: "'FILL' 1" }}>
-                            phone_in_talk
-                          </span>
-                          07759 708 646
-                        </a>
-                        <a
-                          href="/services"
-                          className="flex items-center justify-center gap-1 text-white/50 hover:text-white text-[11px] font-medium transition-colors"
-                        >
-                          View all services
-                          <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
-                        </a>
-                      </div>
+                  {/* Footer bar */}
+                  <div className="flex items-center justify-between gap-4 px-5 py-3 bg-slate-50 border-t border-slate-100">
+                    <div className="flex items-center gap-2 min-w-0">
+                      <span className="material-symbols-outlined text-[18px] text-[#b70011] shrink-0" style={{ fontVariationSettings: "'FILL' 1" }}>
+                        bolt
+                      </span>
+                      <p className="text-[12px] text-slate-600 leading-tight">
+                        <span className="font-bold text-slate-800">20–30 min response</span> across Greater Manchester
+                      </p>
                     </div>
+                    <a
+                      href="tel:07759708646"
+                      className="flex items-center gap-1.5 bg-[#b70011] hover:bg-red-700 text-white font-bold text-[13px] px-3.5 py-2 rounded-lg transition-all active:scale-95 whitespace-nowrap shrink-0"
+                    >
+                      <span className="material-symbols-outlined text-[15px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+                        phone_in_talk
+                      </span>
+                      Call Now
+                    </a>
                   </div>
                 </div>
               </div>
@@ -348,99 +334,85 @@ export default function Header() {
                     ? 'opacity-100 scale-y-100 pointer-events-auto'
                     : 'opacity-0 scale-y-95 pointer-events-none'
                 }`}
-                style={{ width: '800px' }}
+                style={{ width: '620px' }}
               >
                 {/* Arrow */}
                 <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-l border-t border-slate-200 rotate-45 z-10" />
 
                 <div className="relative bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden z-20">
-                  <div className="grid grid-cols-[1fr_260px] min-h-[340px]">
-                    {/* Cities + Motorways */}
-                    <div className="p-5">
-                      {/* Cities */}
-                      <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3 px-1">
-                        City Areas
-                      </p>
-                      <div className="grid grid-cols-3 gap-1 mb-4">
-                        {cityLinks.map((link) => (
-                          <a
-                            key={link.href}
-                            href={link.href}
-                            className={`group flex items-center gap-2.5 px-3 py-2.5 rounded-xl transition-all ${
-                              isActive(link.href)
-                                ? 'bg-red-50 text-[#b70011]'
-                                : 'hover:bg-slate-50 text-slate-700 hover:text-[#b70011]'
-                            }`}
-                          >
-                            <span className={`material-symbols-outlined text-[15px] shrink-0 transition-colors ${
-                              isActive(link.href) ? 'text-[#b70011]' : 'text-slate-400 group-hover:text-[#b70011]'
-                            }`} style={{ fontVariationSettings: "'FILL' 1" }}>
-                              location_on
-                            </span>
-                            <span className="font-semibold text-sm">{link.label}</span>
-                          </a>
-                        ))}
-                      </div>
-
-                      {/* Divider */}
-                      <div className="border-t border-slate-100 mb-4" />
-
-                      {/* Motorways */}
-                      <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3 px-1">
-                        Motorways &amp; Roads
-                      </p>
-                      <div className="flex flex-wrap gap-1.5">
-                        {motorwayLinks.map((link) => (
-                          <a
-                            key={link.href}
-                            href={link.href}
-                            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-bold transition-all border ${
-                              isActive(link.href)
-                                ? 'bg-[#b70011] border-[#b70011] text-white'
-                                : 'border-slate-200 text-slate-600 hover:border-[#b70011] hover:text-[#b70011] hover:bg-red-50'
-                            }`}
-                          >
-                            <span className="material-symbols-outlined text-[13px]" style={{ fontVariationSettings: "'FILL' 1" }}>
-                              route
-                            </span>
-                            {link.label}
-                          </a>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Promo panel */}
-                    <div className="bg-[#0f172a] p-5 flex flex-col gap-4 min-w-0">
-                      <div className="min-w-0">
-                        <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-2">
-                          Coverage
-                        </p>
-                        <p className="text-white font-bold text-[13px] leading-snug mb-1.5 break-words">
-                          Greater Manchester &amp; nationwide motorway coverage
-                        </p>
-                        <p className="text-white/50 text-[11px] leading-snug break-words">
-                          9 city areas and 7 major motorways covered round the clock.
-                        </p>
-                      </div>
-                      <div className="mt-auto flex flex-col gap-2">
+                  {/* Cities + Motorways */}
+                  <div className="p-5">
+                    {/* Cities */}
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3 px-1">
+                      City Areas
+                    </p>
+                    <div className="grid grid-cols-3 gap-1 mb-4">
+                      {cityLinks.map((link) => (
                         <a
-                          href="/service-area"
-                          className="flex items-center gap-2 bg-[#b70011] hover:bg-red-700 text-white font-bold text-sm px-4 py-2.5 rounded-xl transition-all active:scale-95 whitespace-nowrap"
+                          key={link.href}
+                          href={link.href}
+                          className={`group flex items-center gap-2.5 px-3 py-2.5 rounded-xl transition-all ${
+                            isActive(link.href)
+                              ? 'bg-red-50 text-[#b70011]'
+                              : 'hover:bg-slate-50 text-slate-700 hover:text-[#b70011]'
+                          }`}
                         >
-                          <span className="material-symbols-outlined text-[16px]" style={{ fontVariationSettings: "'FILL' 1" }}>
-                            map
+                          <span className={`material-symbols-outlined text-[15px] shrink-0 transition-colors ${
+                            isActive(link.href) ? 'text-[#b70011]' : 'text-slate-400 group-hover:text-[#b70011]'
+                          }`} style={{ fontVariationSettings: "'FILL' 1" }}>
+                            location_on
                           </span>
-                          Full Coverage Map
+                          <span className="font-semibold text-sm">{link.label}</span>
                         </a>
-                        <a
-                          href="tel:07759708646"
-                          className="flex items-center justify-center gap-1 text-white/50 hover:text-white text-[11px] font-medium transition-colors whitespace-nowrap"
-                        >
-                          Call for nearest tech
-                          <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
-                        </a>
-                      </div>
+                      ))}
                     </div>
+
+                    {/* Divider */}
+                    <div className="border-t border-slate-100 mb-4" />
+
+                    {/* Motorways */}
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3 px-1">
+                      Motorways &amp; Roads
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {motorwayLinks.map((link) => (
+                        <a
+                          key={link.href}
+                          href={link.href}
+                          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-bold transition-all border ${
+                            isActive(link.href)
+                              ? 'bg-[#b70011] border-[#b70011] text-white'
+                              : 'border-slate-200 text-slate-600 hover:border-[#b70011] hover:text-[#b70011] hover:bg-red-50'
+                          }`}
+                        >
+                          <span className="material-symbols-outlined text-[13px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+                            route
+                          </span>
+                          {link.label}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Footer bar */}
+                  <div className="flex items-center justify-between gap-4 px-5 py-3 bg-slate-50 border-t border-slate-100">
+                    <div className="flex items-center gap-2 min-w-0">
+                      <span className="material-symbols-outlined text-[18px] text-[#b70011] shrink-0" style={{ fontVariationSettings: "'FILL' 1" }}>
+                        location_on
+                      </span>
+                      <p className="text-[12px] text-slate-600 leading-tight">
+                        <span className="font-bold text-slate-800">9 cities &amp; 7 motorways</span> covered 24/7
+                      </p>
+                    </div>
+                    <a
+                      href="/service-area"
+                      className="flex items-center gap-1.5 bg-[#b70011] hover:bg-red-700 text-white font-bold text-[13px] px-3.5 py-2 rounded-lg transition-all active:scale-95 whitespace-nowrap shrink-0"
+                    >
+                      <span className="material-symbols-outlined text-[15px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+                        map
+                      </span>
+                      Coverage Map
+                    </a>
                   </div>
                 </div>
               </div>

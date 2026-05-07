@@ -66,25 +66,7 @@ export default function BoltonPage() {
                 </div>
               </div>
             </div>
-            <div className="hidden lg:flex items-center justify-center">
-              <div className="bg-white p-8 rounded-xl shadow-2xl w-full max-w-md">
-                <h3 className="font-h3 text-h3 text-[#1c1b1b] mb-6">Rapid Response Quote</h3>
-                <form className="space-y-4">
-                  <div>
-                    <label className="block text-label-bold text-[#5c403c] mb-2">Tyre Size (e.g. 205/55/R16)</label>
-                    <input className="w-full bg-[#f6f3f2] border border-[#e6bdb8] rounded-lg p-3 focus:outline-none focus:border-[#3e5e95] transition-colors" placeholder="Enter size" type="text" />
-                  </div>
-                  <div>
-                    <label className="block text-label-bold text-[#5c403c] mb-2">Location in Bolton</label>
-                    <input className="w-full bg-[#f6f3f2] border border-[#e6bdb8] rounded-lg p-3 focus:outline-none focus:border-[#3e5e95] transition-colors" placeholder="e.g. BL1 1AA" type="text" />
-                  </div>
-                  <button className="w-full bg-[#3e5e95] text-white py-4 rounded-lg font-call-to-action hover:opacity-90 transition-opacity">
-                    GET INSTANT PRICE
-                  </button>
-                  <p className="text-center text-xs text-[#5c403c]">Average response time: 20-30 minutes today.</p>
-                </form>
-              </div>
-            </div>
+
           </div>
         </section>
 

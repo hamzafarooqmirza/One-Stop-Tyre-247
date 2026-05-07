@@ -63,61 +63,11 @@ export default function ManchesterPage() {
                 </div>
               </div>
             </div>
-            <div className="hidden lg:block">
-              <div className="bg-white/10 backdrop-blur-md p-lg rounded-xl border border-white/20 shadow-2xl">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 bg-[#dc2626] rounded-full flex items-center justify-center">
-                    <span className="material-symbols-outlined text-white">schedule</span>
-                  </div>
-                  <div>
-                    <div className="text-label-bold text-white/70">Estimated Arrival</div>
-                    <div className="text-h3 font-h3 text-white">20-30 Minutes</div>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3 text-white/90">
-                    <span className="material-symbols-outlined text-[#87ceff]">check_circle</span>
-                    <span>No hidden call-out fees</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-white/90">
-                    <span className="material-symbols-outlined text-[#87ceff]">check_circle</span>
-                    <span>All tyre brands &amp; sizes in stock</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-white/90">
-                    <span className="material-symbols-outlined text-[#87ceff]">check_circle</span>
-                    <span>Professional UK-wide network</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+
           </div>
         </section>
 
-        {/* Intro Section */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-[#fcf9f8]">
-          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
-            <div className="flex flex-col gap-0">
-              <h2 className="font-h2 text-h2 text-[#1c1b1b] mb-4">Mobile Tyre Fitting Services in Manchester</h2>
-              <p className="font-body-md text-body-md text-[#5c403c] leading-relaxed mb-6">
-                One Stop Tyres 24/7 provides comprehensive mobile tyre fitting throughout Manchester. Whether you&apos;re stuck on the M60, stranded at Manchester Airport, or at home in Didsbury, our local technicians are strategically positioned to provide quick emergency response. We understand the urgency of tyre mishaps, which is why we&apos;ve optimized our Manchester dispatch for maximum efficiency.
-              </p>
-              <div className="flex flex-wrap gap-2 mt-4">
-                <span className="bg-[#c8e6ff]/30 text-[#004c6d] px-4 py-1 rounded text-label-bold">Salford</span>
-                <span className="bg-[#c8e6ff]/30 text-[#004c6d] px-4 py-1 rounded text-label-bold">Trafford</span>
-                <span className="bg-[#c8e6ff]/30 text-[#004c6d] px-4 py-1 rounded text-label-bold">Oldham</span>
-                <span className="bg-[#c8e6ff]/30 text-[#004c6d] px-4 py-1 rounded text-label-bold">Stockport</span>
-                <span className="bg-[#c8e6ff]/30 text-[#004c6d] px-4 py-1 rounded text-label-bold">Bury</span>
-              </div>
-            </div>
-            <div className="rounded-xl overflow-hidden shadow-xl aspect-video bg-[#ebe7e7] relative">
-              <img
-                className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuADDzUwoq4A7m7ussR8CuJkSuw6-6uHsKPQWHDXtmuQZVKivLzhepaz79HlVA-0CWHYxRyADPZYCFQG8TveWDdJYQ5xSliwR8ariNuMe6JkaQMb5xih7ySPTcJpZ7CIxNKC6J2c9g0MiD7WoOoQtgP_38TuFsYqjyO6EqxBwTrtu6TwsHc_EXWt4ELcZH5S5C3TSCwV83XlBfrwN0Wc91frXYKaC9h_mtdpkdnVuqGcbvtkb6DTY9LWjEldLPdJmUDjW5a0PxIvLcM"
-                alt="Digital map highlighting Greater Manchester area"
-              />
-            </div>
-          </div>
-        </section>
+
 
         {/* Services Grid */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
@@ -230,94 +180,14 @@ export default function ManchesterPage() {
           </div>
         </section>
 
-        {/* How it Works */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-slate-50">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="font-h2 text-2xl sm:text-[32px] text-center mb-12">How it Works</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 relative">
-              <div className="hidden md:block absolute top-12 left-1/4 right-1/4 h-0.5 bg-slate-200 -z-0"></div>
-              <div className="relative z-10 text-center flex flex-col items-center">
-                <div className="w-16 h-16 bg-white border-4 border-[#b70011] rounded-full flex items-center justify-center font-h3 text-h3 text-[#b70011] mb-4">1</div>
-                <h4 className="font-h3 text-h3 text-sm mb-3">Call Us</h4>
-                <p className="text-[#5c403c] text-sm leading-relaxed">Tell us your location and tyre size.</p>
-              </div>
-              <div className="relative z-10 text-center flex flex-col items-center">
-                <div className="w-16 h-16 bg-white border-4 border-[#b70011] rounded-full flex items-center justify-center font-h3 text-h3 text-[#b70011] mb-4">2</div>
-                <h4 className="font-h3 text-h3 text-sm mb-3">Get Quote</h4>
-                <p className="text-[#5c403c] text-sm leading-relaxed">We provide an instant, all-inclusive price.</p>
-              </div>
-              <div className="relative z-10 text-center flex flex-col items-center">
-                <div className="w-16 h-16 bg-white border-4 border-[#b70011] rounded-full flex items-center justify-center font-h3 text-h3 text-[#b70011] mb-4">3</div>
-                <h4 className="font-h3 text-h3 text-sm mb-3">Technician Dispatched</h4>
-                <p className="text-[#5c403c] text-sm leading-relaxed">A local Manchester specialist arrives within 1 hour.</p>
-              </div>
-              <div className="relative z-10 text-center flex flex-col items-center">
-                <div className="w-16 h-16 bg-white border-4 border-[#b70011] rounded-full flex items-center justify-center font-h3 text-h3 text-[#b70011] mb-4">4</div>
-                <h4 className="font-h3 text-h3 text-sm mb-3">Back on Road</h4>
-                <p className="text-[#5c403c] text-sm leading-relaxed">Job completed safely so you can continue your journey.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+
 
         {/* Why Choose Us */}
         <WhyChooseUs city="Manchester" />
 
-        {/* Emergency Section */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-slate-900 text-white overflow-hidden relative">
-          <div className="absolute right-0 top-0 opacity-10 pointer-events-none">
-            <span className="material-symbols-outlined text-[300px]" style={{fontVariationSettings: "'FILL' 1"}}>warning</span>
-          </div>
-          <div className="max-w-7xl mx-auto relative z-10">
-            <div className="max-w-2xl">
-              <h2 className="font-h2 text-h2 mb-5 text-red-500">Emergency Tyre Assistance in Manchester</h2>
-              <p className="font-body-lg text-body-lg mb-8 text-slate-300 leading-relaxed">
-                Manchester&apos;s busy motorways like the M60, M62, and M56 are hotspots for tyre emergencies. Being stranded on a fast road is dangerous. Our emergency units are priority-dispatched for motorway breakdowns, equipped with high-intensity lighting and safety barriers to ensure your roadside repair is handled with the highest safety standards.
-              </p>
-              <a className="inline-flex items-center gap-4 bg-[#dc2626] text-white px-10 py-5 rounded-lg font-call-to-action shadow-2xl hover:scale-105 transition-transform mt-6" href="tel:07759708646">
-                <span className="material-symbols-outlined">call</span>
-                PRIORITY EMERGENCY CALL
-              </a>
-            </div>
-          </div>
-        </section>
 
-        {/* Benefits Section */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-[#fcf9f8]">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="font-h2 text-2xl sm:text-[32px] text-center mb-12">Benefits of Our Mobile Tyre Fitting in Manchester</h2>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center mx-auto mb-4">
-                  <span className="material-symbols-outlined text-[#b70011]">euro_symbol</span>
-                </div>
-                <h4 className="font-label-bold text-lg mb-3">Cost Effective</h4>
-                <p className="text-sm text-[#5c403c] leading-relaxed">Save on towing fees and travel costs. We bring the garage to you.</p>
-              </div>
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center mx-auto mb-4">
-                  <span className="material-symbols-outlined text-[#b70011]">update</span>
-                </div>
-                <h4 className="font-label-bold text-lg mb-3">Time Saving</h4>
-                <p className="text-sm text-[#5c403c] leading-relaxed">Don&apos;t waste half a day at a tyre center. We work while you&apos;re at home or work.</p>
-              </div>
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center mx-auto mb-4">
-                  <span className="material-symbols-outlined text-[#b70011]">verified_user</span>
-                </div>
-                <h4 className="font-label-bold text-lg mb-3">Safety First</h4>
-                <p className="text-sm text-[#5c403c] leading-relaxed">Don&apos;t risk driving on a damaged tyre. We&apos;ll come and fix it safely on-site.</p>
-              </div>
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center mx-auto mb-4">
-                  <span className="material-symbols-outlined text-[#b70011]">local_parking</span>
-                </div>
-                <h4 className="font-label-bold text-lg mb-3">Stress Free</h4>
-                <p className="text-sm text-[#5c403c] leading-relaxed">Simple booking, transparent pricing, and professional service across M-postcodes.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+
+
 
         {/* Brand Carousel */}
         <BrandCarousel />

@@ -62,12 +62,12 @@ export default function Home() {
         {/* Background image — full bleed on mobile, right half on desktop */}
         <div className="absolute inset-0 lg:left-1/2">
           <picture>
-            <source srcSet="/images/hero-tyre-fitting.webp" type="image/webp" />
+            <source srcSet="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko%20%281%29-2niHlhcLFs37TFtkZ5lIBe0UubGjUQ.webp" type="image/webp" />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               className="w-full h-full object-cover object-center"
-              src="https://ss5vlswhqmiddtca.public.blob.vercel-storage.com/Hero%20section%20image%20for%20one%20stop-airanko-GThUaVjbwZmY4iQO0czB2NrcyiFDuj.webp"
-              alt="One Stop Mobile Tyres 24/7 branded van ready for emergency tyre fitting in Manchester"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko%20%281%29-2niHlhcLFs37TFtkZ5lIBe0UubGjUQ.webp"
+              alt="One Stop Mobile Tyres 24/7 branded van at a residential home tyre fitting in Manchester"
               width={1600}
               height={1067}
               fetchPriority="high"

@@ -88,26 +88,30 @@ function GoogleG({ className = 'w-4 h-4' }: { className?: string }) {
 }
 
 export default function ReviewsCarousel() {
-  // Touch-hold pause is tracked manually because :hover doesn't trigger reliably
-  // on touch devices. Mouse hover is handled purely with the `group-hover` CSS variant.
-  const [touchPaused, setTouchPaused] = useState(false)
+  // Pause is tracked in state so it works identically for mouse hover and
+  // touch press-and-hold across all browsers (some Tailwind arbitrary variants
+  // don't reliably toggle `animation-play-state` on every engine).
+  const [paused, setPaused] = useState(false)
 
   return (
     <div
-      className="group relative overflow-hidden"
-      onTouchStart={() => setTouchPaused(true)}
-      onTouchEnd={() => setTouchPaused(false)}
-      onTouchCancel={() => setTouchPaused(false)}
+      className="relative overflow-hidden"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+      onFocusCapture={() => setPaused(true)}
+      onBlurCapture={() => setPaused(false)}
+      onTouchStart={() => setPaused(true)}
+      onTouchEnd={() => setPaused(false)}
+      onTouchCancel={() => setPaused(false)}
     >
       {/* Edge fades */}
       <div className="pointer-events-none absolute left-0 top-0 h-full w-6 sm:w-10 z-10 bg-gradient-to-r from-slate-50 to-transparent" />
       <div className="pointer-events-none absolute right-0 top-0 h-full w-6 sm:w-10 z-10 bg-gradient-to-l from-slate-50 to-transparent" />
 
-      {/* Marquee track: animates by default, pauses on hover (desktop) or touch hold (mobile). */}
+      {/* Marquee track: animates by default, pauses on hover or touch hold. */}
       <div
-        className={`flex w-max gap-4 sm:gap-6 animate-marquee group-hover:[animation-play-state:paused] motion-reduce:[animation-play-state:paused] ${
-          touchPaused ? '[animation-play-state:paused]' : ''
-        }`}
+        className="flex w-max gap-4 sm:gap-6 animate-marquee motion-reduce:[animation-play-state:paused]"
+        style={{ animationPlayState: paused ? 'paused' : 'running' }}
       >
         {LOOP.map((r, i) => (
           <div

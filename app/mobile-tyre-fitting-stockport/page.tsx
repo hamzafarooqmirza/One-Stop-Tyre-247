@@ -1,3 +1,7 @@
+import BrandCarousel from '@/components/BrandCarousel'
+import WhyChooseUs from '@/components/WhyChooseUs'
+import CityFaq from '@/components/CityFaq'
+
 export const metadata = {
   title: 'Mobile Tyre Fitting Stockport | Emergency Roadside Assistance 24/7',
   description: 'Stuck on the A6 or stranded in Cheadle? Our rapid response teams are stationed across Stockport to provide 20-30 minute emergency tyre repairs and replacements.',
@@ -204,46 +208,7 @@ export default function StockportPage() {
         </section>
 
         {/* Why Choose Us */}
-        <section className="bg-[#f6f3f2] py-12 sm:py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-              <div className="relative">
-                <img
-                  className="rounded-2xl shadow-2xl relative z-10"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-0-SyJhT_cMu92G4ajh2JO0jJCWuJn5Nsa4tCpMiK9FLPEmGl5EijiS7Nxvhd7Fk6NGS8IDsjYWjwn95xKO-UcpSeLQruuNKFMpGHOppT1CfhoTIA6wKAmlkqd2M9HWV18bxh6N_mC7gUiplEXA4CmO8H8BHBpaJ6-yWL5_X6CDNdzFcZgrOPXWy9s-88mddKxEKGYFqrq8_ac6TkTKX-0COJEmLJM-TgHwldzHCs-Cgk5zwNgYNeYo2VFe6Xvyyk75hCgr3WAuA"
-                  alt="Professional technician checking tread depth"
-                />
-                <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl z-20 border-b-4 border-[#dc2626]">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="material-symbols-outlined text-yellow-500" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="font-bold text-lg">4.9/5 Rating</span>
-                  </div>
-                  <p className="text-xs text-slate-500 font-bold uppercase tracking-widest">Based on 1,200+ Stockport jobs</p>
-                </div>
-              </div>
-              <div>
-                <h2 className="work-sans text-2xl sm:text-3xl font-bold text-[#1c1b1b] mb-5">The Preferred Mobile Tyre Service in <span className="text-[#b70011]">Stockport</span></h2>
-                <ul className="space-y-6">
-                  {[
-                    { title: 'Local Knowledge', desc: "We know Stockport's roads—from the tight streets of Edgeley to the suburban lanes of Marple. We navigate traffic to reach you faster." },
-                    { title: 'Stock for All Vehicles', desc: 'Budget, Mid-range, and Premium brands always in stock. Whether you drive a Ford or a Ferrari, we have the right rubber ready.' },
-                    { title: 'Contactless Payment', desc: 'Pay securely by card at the roadside. No cash needed, no awkward trips to the ATM in the middle of the night.' },
-                  ].map((item) => (
-                    <li key={item.title} className="flex gap-4">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#3e5e95] text-white flex items-center justify-center">
-                        <span className="material-symbols-outlined text-sm">done_all</span>
-                      </div>
-                      <div>
-                        <h4 className="work-sans text-lg font-semibold mb-1">{item.title}</h4>
-                        <p className="text-slate-600 leading-relaxed">{item.desc}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
+        <WhyChooseUs city="Stockport" />
 
         {/* Coverage Map */}
         <section className="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6">
@@ -275,6 +240,31 @@ export default function StockportPage() {
             </div>
           </div>
         </section>
+        {/* Brand Carousel */}
+        <BrandCarousel />
+
+        {/* FAQ */}
+        <CityFaq
+          city="Stockport"
+          faqs={[
+            {
+              q: 'How quickly can you reach me in Stockport?',
+              a: 'Our rapid response teams are stationed across Stockport, enabling us to reach most of the borough including Bramhall, Cheadle, Heaton Moor, and Marple within 20-30 minutes.',
+            },
+            {
+              q: 'Do you cover the A6 and M60 near Stockport?',
+              a: 'Yes. We provide full emergency tyre fitting on the A6, M60, and all major routes through the Stockport metropolitan borough, 24 hours a day.',
+            },
+            {
+              q: 'What tyre brands do you stock for Stockport drivers?',
+              a: 'We stock all premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, alongside mid-range and budget options for all budgets.',
+            },
+            {
+              q: 'Can you fit tyres at my home in Hazel Grove or Romiley?',
+              a: 'Absolutely. Our home tyre fitting service covers all of Stockport borough including Hazel Grove, Romiley, Bredbury, and Gatley — we come to you at a time that suits.',
+            },
+          ]}
+        />
       </main>
     </div>
   )

@@ -1,3 +1,7 @@
+import BrandCarousel from '@/components/BrandCarousel'
+import WhyChooseUs from '@/components/WhyChooseUs'
+import CityFaq from '@/components/CityFaq'
+
 export const metadata = {
   title: 'Mobile Tyre Fitting Rochdale | 24/7 Emergency Service | One Stop Tyres 24/7',
   description: 'Fast 24/7 mobile tyre fitting in Rochdale. Emergency roadside assistance for M62, Town Centre, and Littleborough. 20-30 min arrival. Call One Stop Tyres 24/7 now.',
@@ -250,41 +254,34 @@ export default function RochdalePage() {
         </div>
       </section>
 
+      {/* Why Choose Us */}
+      <WhyChooseUs city="Rochdale" />
+
+      {/* Brand Carousel */}
+      <BrandCarousel />
+
       {/* FAQ Section */}
-      <section className="py-xl bg-[#fcf9f8]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-h2 text-[#1c1b1b] mb-10 text-center">Frequently Asked Questions</h2>
-          <div className="space-y-4">
-            <details className="group bg-white p-6 rounded-lg border border-[#e5e2e1] shadow-sm open:shadow-md transition-all">
-              <summary className="flex justify-between items-center cursor-pointer list-none">
-                <span className="font-label-bold text-lg">Do you cover the M62 near Rochdale?</span>
-                <span className="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
-              </summary>
-              <div className="mt-4 text-[#5c403c] leading-relaxed">
-                Yes, we provide emergency tyre services for the M62 between Junction 18 (Simister Island) and Junction 22 (Rishworth Moor). We are experts at safe roadside recovery and fitting on the motorway network.
-              </div>
-            </details>
-            <details className="group bg-white p-6 rounded-lg border border-[#e5e2e1] shadow-sm open:shadow-md transition-all">
-              <summary className="flex justify-between items-center cursor-pointer list-none">
-                <span className="font-label-bold text-lg">What tyres do you stock?</span>
-                <span className="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
-              </summary>
-              <div className="mt-4 text-[#5c403c] leading-relaxed">
-                We carry a wide range of all-season, summer, and winter tyres. This includes premium brands like Michelin, Continental, and Bridgestone, as well as high-quality mid-range and budget options to suit all price points.
-              </div>
-            </details>
-            <details className="group bg-white p-6 rounded-lg border border-[#e5e2e1] shadow-sm open:shadow-md transition-all">
-              <summary className="flex justify-between items-center cursor-pointer list-none">
-                <span className="font-label-bold text-lg">Can you come to my workplace in Kingsway?</span>
-                <span className="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
-              </summary>
-              <div className="mt-4 text-[#5c403c] leading-relaxed">
-                Absolutely. We frequently visit business parks like Kingsway, Sandbrook Park, and Stakehill. We can fit your tyres while you work, so you don&apos;t lose time visiting a traditional garage.
-              </div>
-            </details>
-          </div>
-        </div>
-      </section>
+      <CityFaq
+        city="Rochdale"
+        faqs={[
+          {
+            q: 'Do you cover the M62 near Rochdale?',
+            a: 'Yes, we provide emergency tyre services for the M62 between Junction 18 (Simister Island) and Junction 22 (Rishworth Moor). We are experts at safe roadside recovery and fitting on the motorway network.',
+          },
+          {
+            q: 'What tyre brands do you stock for Rochdale drivers?',
+            a: 'We carry a wide range of all-season, summer, and winter tyres including premium brands like Michelin, Continental, and Bridgestone, as well as high-quality mid-range and budget options.',
+          },
+          {
+            q: 'Can you come to my workplace at Kingsway Business Park?',
+            a: 'Absolutely. We frequently visit business parks like Kingsway, Sandbrook Park, and Stakehill. We fit your tyres while you work, saving you time at a traditional garage.',
+          },
+          {
+            q: 'How fast can you reach me in Rochdale town centre?',
+            a: 'Our average arrival time in Rochdale town centre is 20-30 minutes. We also cover Heywood, Middleton, Littleborough, and Milnrow with the same rapid response.',
+          },
+        ]}
+      />
 
     </div>
   )

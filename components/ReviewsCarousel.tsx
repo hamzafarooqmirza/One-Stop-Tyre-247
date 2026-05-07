@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 
 type Review = {
   initials: string
@@ -60,6 +60,13 @@ const REVIEWS: Review[] = [
   },
 ]
 
+// Render the list 3x so the user can never reach an empty edge before we
+// silently wrap the scroll position back to the start of the second copy.
+const LOOP = [...REVIEWS, ...REVIEWS, ...REVIEWS]
+
+// Pixels per second the track auto-scrolls when not paused.
+const SPEED = 40
+
 function GoogleG({ className = 'w-4 h-4' }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" aria-hidden="true">
@@ -85,60 +92,89 @@ function GoogleG({ className = 'w-4 h-4' }: { className?: string }) {
 
 export default function ReviewsCarousel() {
   const trackRef = useRef<HTMLDivElement>(null)
-  const [canPrev, setCanPrev] = useState(false)
-  const [canNext, setCanNext] = useState(true)
+  const pausedRef = useRef(false)
+  const rafRef = useRef<number | null>(null)
+  const lastTsRef = useRef<number | null>(null)
 
-  const updateButtons = useCallback(() => {
+  // Keep the visible scroll position in sync with the middle copy of the list.
+  const normalize = useCallback(() => {
     const el = trackRef.current
     if (!el) return
-    const { scrollLeft, scrollWidth, clientWidth } = el
-    setCanPrev(scrollLeft > 4)
-    setCanNext(scrollLeft + clientWidth < scrollWidth - 4)
+    // Width of a single copy of the list (1/3 of total scroll width).
+    const setWidth = el.scrollWidth / 3
+    if (setWidth <= 0) return
+    if (el.scrollLeft >= setWidth * 2) {
+      el.scrollLeft -= setWidth
+    } else if (el.scrollLeft < setWidth) {
+      el.scrollLeft += setWidth
+    }
   }, [])
 
+  // Auto-scroll loop using requestAnimationFrame for smooth, framerate-aware motion.
   useEffect(() => {
     const el = trackRef.current
     if (!el) return
-    updateButtons()
-    el.addEventListener('scroll', updateButtons, { passive: true })
-    window.addEventListener('resize', updateButtons)
-    return () => {
-      el.removeEventListener('scroll', updateButtons)
-      window.removeEventListener('resize', updateButtons)
-    }
-  }, [updateButtons])
 
-  const scrollByPage = (dir: 1 | -1) => {
-    const el = trackRef.current
-    if (!el) return
-    // Scroll by one card width so users can step through one review at a time.
-    const firstCard = el.querySelector<HTMLElement>('[data-review-card]')
-    const step = firstCard ? firstCard.offsetWidth + 24 /* gap-6 */ : el.clientWidth
-    el.scrollBy({ left: dir * step, behavior: 'smooth' })
+    // Start in the middle copy so we can scroll forwards or backwards seamlessly.
+    const initial = () => {
+      const setWidth = el.scrollWidth / 3
+      el.scrollLeft = setWidth
+    }
+    initial()
+
+    const tick = (ts: number) => {
+      if (lastTsRef.current == null) lastTsRef.current = ts
+      const dt = (ts - lastTsRef.current) / 1000
+      lastTsRef.current = ts
+
+      if (!pausedRef.current && el) {
+        el.scrollLeft += SPEED * dt
+        normalize()
+      }
+      rafRef.current = requestAnimationFrame(tick)
+    }
+    rafRef.current = requestAnimationFrame(tick)
+
+    const onResize = () => initial()
+    window.addEventListener('resize', onResize)
+
+    // Pause when the page/tab is hidden so the loop doesn't drift.
+    const onVisibility = () => {
+      pausedRef.current = document.hidden ? true : pausedRef.current
+      lastTsRef.current = null
+    }
+    document.addEventListener('visibilitychange', onVisibility)
+
+    return () => {
+      if (rafRef.current != null) cancelAnimationFrame(rafRef.current)
+      window.removeEventListener('resize', onResize)
+      document.removeEventListener('visibilitychange', onVisibility)
+    }
+  }, [normalize])
+
+  const pause = () => {
+    pausedRef.current = true
+    lastTsRef.current = null
+  }
+  const resume = () => {
+    pausedRef.current = false
+    lastTsRef.current = null
   }
 
-  return (
-    <div className="relative">
-      {/* Prev / Next buttons */}
-      <button
-        type="button"
-        onClick={() => scrollByPage(-1)}
-        disabled={!canPrev}
-        aria-label="Previous reviews"
-        className="hidden md:flex absolute -left-4 lg:-left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 items-center justify-center rounded-full bg-white shadow-md border border-slate-200 text-[#0f172a] hover:bg-[#b70011] hover:text-white hover:border-[#b70011] transition-colors disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-[#0f172a] disabled:hover:border-slate-200"
-      >
-        <span className="material-symbols-outlined text-[22px]">chevron_left</span>
-      </button>
-      <button
-        type="button"
-        onClick={() => scrollByPage(1)}
-        disabled={!canNext}
-        aria-label="Next reviews"
-        className="hidden md:flex absolute -right-4 lg:-right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 items-center justify-center rounded-full bg-white shadow-md border border-slate-200 text-[#0f172a] hover:bg-[#b70011] hover:text-white hover:border-[#b70011] transition-colors disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-[#0f172a] disabled:hover:border-slate-200"
-      >
-        <span className="material-symbols-outlined text-[22px]">chevron_right</span>
-      </button>
+  // Also normalize when the user manually scrolls (drag / arrows / wheel).
+  const onScroll = () => normalize()
 
+  return (
+    <div
+      className="relative"
+      onMouseEnter={pause}
+      onMouseLeave={resume}
+      onTouchStart={pause}
+      onTouchEnd={resume}
+      onTouchCancel={resume}
+      onFocus={pause}
+      onBlur={resume}
+    >
       {/* Edge fades */}
       <div className="pointer-events-none absolute left-0 top-0 h-full w-6 sm:w-10 z-10 bg-gradient-to-r from-slate-50 to-transparent" />
       <div className="pointer-events-none absolute right-0 top-0 h-full w-6 sm:w-10 z-10 bg-gradient-to-l from-slate-50 to-transparent" />
@@ -146,20 +182,22 @@ export default function ReviewsCarousel() {
       {/* Scrollable track */}
       <div
         ref={trackRef}
-        className="flex gap-4 sm:gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+        onScroll={onScroll}
+        className="flex gap-4 sm:gap-6 overflow-x-auto scroll-smooth pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
       >
-        {REVIEWS.map((r) => (
+        {LOOP.map((r, i) => (
           <div
-            key={r.name}
+            key={`${r.name}-${i}`}
             data-review-card
-            className="snap-start shrink-0 basis-[85%] sm:basis-[calc((100%-1.5rem)/2)] lg:basis-[calc((100%-4.5rem)/4)] bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col gap-4"
+            aria-hidden={i >= REVIEWS.length && i < REVIEWS.length * 2 ? undefined : true}
+            className="shrink-0 basis-[85%] sm:basis-[calc((100%-1.5rem)/2)] lg:basis-[calc((100%-4.5rem)/4)] bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col gap-4"
           >
             {/* Stars row */}
             <div className="flex items-center justify-between">
               <div className="flex text-yellow-400 gap-0.5">
-                {Array.from({ length: 5 }).map((_, i) => (
+                {Array.from({ length: 5 }).map((_, j) => (
                   <span
-                    key={i}
+                    key={j}
                     className="material-symbols-outlined text-[16px]"
                     style={{ fontVariationSettings: "'FILL' 1" }}
                   >

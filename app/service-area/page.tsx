@@ -130,7 +130,7 @@ export default function ServiceAreaPage() {
   return (
     <div className="bg-surface font-body-md text-on-background antialiased">
       {/* ── Hero ── */}
-      <section className="relative h-[500px] min-h-[380px] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[400px] sm:min-h-[450px] lg:h-[500px] flex items-center justify-center overflow-hidden py-16 sm:py-20">
         <div className="absolute inset-0 bg-secondary/85 z-10" />
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -141,22 +141,22 @@ export default function ServiceAreaPage() {
           height={500}
           loading="eager"
         />
-        <div className="relative z-20 text-center px-5 max-w-3xl mx-auto">
-          <span className="inline-block bg-primary/20 border border-primary/40 text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
+        <div className="relative z-20 text-center px-4 sm:px-5 max-w-3xl mx-auto">
+          <span className="inline-block bg-primary/20 border border-primary/40 text-white text-[10px] sm:text-xs font-bold uppercase tracking-widest px-3 sm:px-4 py-1 sm:py-1.5 rounded-full mb-4 sm:mb-5">
             Greater Manchester
           </span>
-          <h1 className="font-h1 text-h1 text-white mb-5 text-balance">
+          <h1 className="font-h1 text-2xl sm:text-3xl lg:text-h1 text-white mb-4 sm:mb-5 text-balance leading-tight">
             Our Service Area
           </h1>
-          <p className="font-body-lg text-body-lg text-white/90 max-w-2xl mx-auto mb-8 text-pretty">
+          <p className="font-body-lg text-sm sm:text-base lg:text-body-lg text-white/90 max-w-2xl mx-auto mb-6 sm:mb-8 text-pretty leading-relaxed">
             We cover all 9 Greater Manchester districts and 7 major motorways — wherever you
             are, we&apos;ll come to you, 24 hours a day, 7 days a week.
           </p>
           <a
             href="tel:07759708646"
-            className="inline-flex items-center gap-2 bg-primary text-white font-call-to-action text-call-to-action px-8 py-4 rounded-xl hover:bg-primary/90 transition-all shadow-lg uppercase"
+            className="inline-flex items-center gap-2 bg-primary text-white font-call-to-action text-sm sm:text-base lg:text-call-to-action px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-primary/90 transition-all shadow-lg uppercase"
           >
-            <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>
+            <span className="material-symbols-outlined text-lg sm:text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>
               phone_in_talk
             </span>
             07759 708 646
@@ -165,19 +165,19 @@ export default function ServiceAreaPage() {
       </section>
 
       {/* ── Trust badges ── */}
-      <section className="bg-white border-b border-slate-100 py-6 px-5">
-        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+      <section className="bg-white border-b border-slate-100 py-4 sm:py-6 px-4 sm:px-5">
+        <div className="max-w-5xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
           {trustBadges.map((b) => (
             <div
               key={b.label}
-              className="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low"
+              className="flex items-center gap-2 sm:gap-3 p-2 sm:p-3 rounded-xl bg-surface-container-low"
             >
-              <div className="bg-primary/10 p-2.5 rounded-lg shrink-0">
-                <span className="material-symbols-outlined text-primary text-xl">{b.icon}</span>
+              <div className="bg-primary/10 p-2 sm:p-2.5 rounded-lg shrink-0">
+                <span className="material-symbols-outlined text-primary text-lg sm:text-xl">{b.icon}</span>
               </div>
-              <div>
-                <p className="font-label-bold text-label-bold text-secondary leading-tight">{b.label}</p>
-                <p className="text-xs text-on-surface-variant">{b.sub}</p>
+              <div className="min-w-0">
+                <p className="font-label-bold text-xs sm:text-label-bold text-secondary leading-tight truncate">{b.label}</p>
+                <p className="text-[10px] sm:text-xs text-on-surface-variant">{b.sub}</p>
               </div>
             </div>
           ))}
@@ -185,19 +185,19 @@ export default function ServiceAreaPage() {
       </section>
 
       {/* ── Town & District areas ── */}
-      <section className="py-xl px-5 max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="font-h2 text-h2 text-secondary mb-3 text-balance">
+      <section className="py-12 sm:py-16 lg:py-xl px-4 sm:px-5 max-w-7xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 text-secondary mb-3 text-balance leading-tight">
             Towns &amp; Districts We Cover
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-4" />
-          <p className="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto text-pretty">
+          <div className="w-16 sm:w-20 h-1 bg-primary mx-auto rounded-full mb-3 sm:mb-4" />
+          <p className="font-body-md text-sm sm:text-body-md text-on-surface-variant max-w-xl mx-auto text-pretty">
             Click on any area below to see our dedicated coverage page, including local junction
             details, postcodes and service information.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {townAreas.map((area) => (
             <a
               key={area.name}
@@ -232,20 +232,20 @@ export default function ServiceAreaPage() {
       </section>
 
       {/* ── Motorway / road coverage ── */}
-      <section className="bg-surface-container py-xl px-5">
+      <section className="bg-surface-container py-12 sm:py-16 lg:py-xl px-4 sm:px-5">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="font-h2 text-h2 text-secondary mb-3 text-balance">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 text-secondary mb-3 text-balance leading-tight">
               Motorway &amp; Road Coverage
             </h2>
-            <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-4" />
-            <p className="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto text-pretty">
+            <div className="w-16 sm:w-20 h-1 bg-primary mx-auto rounded-full mb-3 sm:mb-4" />
+            <p className="font-body-md text-sm sm:text-body-md text-on-surface-variant max-w-xl mx-auto text-pretty">
               Broken down on a motorway? Our rapid response team covers every major road
               in and around Greater Manchester, 24/7.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
             {motorwayAreas.map((road) => (
               <a
                 key={road.name}
@@ -275,20 +275,20 @@ export default function ServiceAreaPage() {
       </section>
 
       {/* ── "Not sure?" coverage checker CTA ── */}
-      <section className="py-xl px-5">
-        <div className="max-w-4xl mx-auto bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden">
+      <section className="py-12 sm:py-16 lg:py-xl px-4 sm:px-5">
+        <div className="max-w-4xl mx-auto bg-white rounded-2xl sm:rounded-3xl border border-slate-100 shadow-sm overflow-hidden">
           <div className="flex flex-col md:flex-row">
-            <div className="bg-secondary p-8 md:p-10 flex flex-col justify-center md:w-2/5 shrink-0">
-              <span className="material-symbols-outlined text-white/30 text-[80px] mb-4" style={{ fontVariationSettings: "'FILL' 1" }}>
+            <div className="bg-secondary p-6 sm:p-8 md:p-10 flex flex-col justify-center md:w-2/5 shrink-0">
+              <span className="material-symbols-outlined text-white/30 text-[50px] sm:text-[80px] mb-3 sm:mb-4" style={{ fontVariationSettings: "'FILL' 1" }}>
                 help
               </span>
-              <h3 className="font-h2 text-2xl text-white mb-2 text-balance">Not sure if we cover your area?</h3>
-              <p className="text-white/70 text-sm leading-relaxed">
+              <h3 className="font-h2 text-xl sm:text-2xl text-white mb-2 text-balance">Not sure if we cover your area?</h3>
+              <p className="text-white/70 text-xs sm:text-sm leading-relaxed">
                 Simply give us a call and we&apos;ll let you know instantly. We&apos;re constantly expanding our coverage.
               </p>
             </div>
-            <div className="p-8 md:p-10 flex flex-col justify-center gap-5">
-              <p className="font-body-lg text-body-lg text-on-surface-variant text-pretty">
+            <div className="p-6 sm:p-8 md:p-10 flex flex-col justify-center gap-4 sm:gap-5">
+              <p className="font-body-lg text-sm sm:text-base lg:text-body-lg text-on-surface-variant text-pretty">
                 Our dispatch team can confirm coverage for your exact postcode and give you an
                 estimated arrival time in under 60 seconds.
               </p>
@@ -322,24 +322,24 @@ export default function ServiceAreaPage() {
       </section>
 
       {/* ── Emergency CTA banner ── */}
-      <section className="px-5 mb-xl">
+      <section className="px-4 sm:px-5 mb-12 sm:mb-16 lg:mb-xl">
         <div className="max-w-7xl mx-auto bg-primary rounded-2xl overflow-hidden shadow-2xl relative">
-          <div className="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
-            <span className="material-symbols-outlined text-[200px]">tire_repair</span>
+          <div className="absolute top-0 right-0 p-4 sm:p-8 opacity-10 pointer-events-none">
+            <span className="material-symbols-outlined text-[100px] sm:text-[150px] lg:text-[200px]">tire_repair</span>
           </div>
-          <div className="p-8 md:px-14 md:py-12 flex flex-col md:flex-row justify-between items-center gap-6 relative z-10">
-            <div className="text-white text-center md:text-left">
-              <h2 className="font-h1 text-h1 mb-2 text-balance">Broken Down Right Now?</h2>
-              <p className="font-body-lg text-body-lg text-white/90">
+          <div className="p-6 sm:p-8 lg:px-14 lg:py-12 flex flex-col sm:flex-row justify-between items-center gap-5 sm:gap-6 relative z-10">
+            <div className="text-white text-center sm:text-left">
+              <h2 className="font-h1 text-2xl sm:text-3xl lg:text-h1 mb-2 text-balance">Broken Down Right Now?</h2>
+              <p className="font-body-lg text-sm sm:text-base lg:text-body-lg text-white/90">
                 Call immediately — our team is standing by 24/7 across Greater Manchester.
               </p>
-              <div className="mt-5 flex items-center justify-center md:justify-start gap-4">
-                <span className="material-symbols-outlined text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
-                <span className="text-3xl md:text-4xl font-black font-h1">07759 708 646</span>
+              <div className="mt-4 sm:mt-5 flex items-center justify-center sm:justify-start gap-3 sm:gap-4">
+                <span className="material-symbols-outlined text-2xl sm:text-3xl lg:text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
+                <span className="text-xl sm:text-2xl lg:text-4xl font-black font-h1">07759 708 646</span>
               </div>
             </div>
             <a
-              className="bg-white text-primary font-h2 text-h2 px-10 py-5 rounded-xl hover:bg-gray-100 transition-all uppercase shadow-lg text-center min-w-[200px] shrink-0"
+              className="bg-white text-primary font-h2 text-base sm:text-xl lg:text-h2 px-6 sm:px-10 py-4 sm:py-5 rounded-xl hover:bg-gray-100 transition-all uppercase shadow-lg text-center w-full sm:w-auto sm:min-w-[180px] lg:min-w-[200px] shrink-0"
               href="tel:07759708646"
             >
               CALL NOW
@@ -349,22 +349,22 @@ export default function ServiceAreaPage() {
       </section>
 
       {/* Mobile bottom nav */}
-      <nav className="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-white border-t border-gray-100 shadow-[0_-4px_20px_rgba(0,45,98,0.05)] rounded-t-2xl">
-        <a className="flex flex-col items-center justify-center text-gray-500" href="/">
-          <span className="material-symbols-outlined">home</span>
-          <span className="text-[10px] font-semibold font-h3">Home</span>
+      <nav className="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 sm:px-4 py-2 bg-white border-t border-gray-100 shadow-[0_-4px_20px_rgba(0,45,98,0.05)] rounded-t-2xl">
+        <a className="flex flex-col items-center justify-center text-gray-500 py-1 px-2" href="/">
+          <span className="material-symbols-outlined text-xl">home</span>
+          <span className="text-[9px] sm:text-[10px] font-semibold font-h3">Home</span>
         </a>
-        <a className="flex flex-col items-center justify-center text-gray-500" href="/services">
-          <span className="material-symbols-outlined">tire_repair</span>
-          <span className="text-[10px] font-semibold font-h3">Services</span>
+        <a className="flex flex-col items-center justify-center text-gray-500 py-1 px-2" href="/services">
+          <span className="material-symbols-outlined text-xl">tire_repair</span>
+          <span className="text-[9px] sm:text-[10px] font-semibold font-h3">Services</span>
         </a>
-        <a className="flex flex-col items-center justify-center text-gray-500" href="tel:07759708646">
-          <span className="material-symbols-outlined">emergency</span>
-          <span className="text-[10px] font-semibold font-h3">Emergency</span>
+        <a className="flex flex-col items-center justify-center text-gray-500 py-1 px-2" href="tel:07759708646">
+          <span className="material-symbols-outlined text-xl">emergency</span>
+          <span className="text-[9px] sm:text-[10px] font-semibold font-h3">Emergency</span>
         </a>
-        <a className="flex flex-col items-center justify-center bg-red-50 text-red-600 rounded-xl px-3 py-1.5" href="/service-area">
-          <span className="material-symbols-outlined">map</span>
-          <span className="text-[10px] font-semibold font-h3">Area</span>
+        <a className="flex flex-col items-center justify-center bg-red-50 text-red-600 rounded-xl px-2 sm:px-3 py-1.5" href="/service-area">
+          <span className="material-symbols-outlined text-xl">map</span>
+          <span className="text-[9px] sm:text-[10px] font-semibold font-h3">Area</span>
         </a>
       </nav>
 

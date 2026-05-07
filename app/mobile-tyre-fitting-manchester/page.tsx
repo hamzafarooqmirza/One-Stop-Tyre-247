@@ -220,17 +220,17 @@ export default function ManchesterPage() {
         />
 
         {/* Final CTA Section */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
+        <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-h2 text-h2 mb-5">Need a Tyre Fitted in Manchester Right Now?</h2>
-            <p className="font-body-lg text-[#5c403c] leading-relaxed mb-8">Don&apos;t wait by the roadside. Call our dedicated Manchester line and get a technician dispatched in minutes.</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
-              <a className="flex items-center justify-center gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-10 py-5 rounded-lg font-call-to-action transition-all shadow-xl" href="tel:07759708646">
-                <span className="material-symbols-outlined">phone_in_talk</span>
+            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Manchester Right Now?</h2>
+            <p className="font-body-lg text-sm sm:text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Manchester line and get a technician dispatched in minutes.</p>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
+              <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-sm sm:text-base transition-all shadow-xl" href="tel:07759708646">
+                <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>
                 Call Now
               </a>
-              <a className="flex items-center justify-center gap-3 bg-[#1c1b1b] hover:bg-slate-800 text-white px-10 py-5 rounded-lg font-call-to-action transition-all shadow-xl" href="https://wa.me/447759708646">
-                <span className="material-symbols-outlined text-[#25D366]" style={{fontVariationSettings: "'FILL' 1"}}>chat</span>
+              <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#1c1b1b] hover:bg-slate-800 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-sm sm:text-base transition-all shadow-xl" href="https://wa.me/447759708646">
+                <span className="material-symbols-outlined text-[#25D366] text-xl sm:text-2xl" style={{fontVariationSettings: "'FILL' 1"}}>chat</span>
                 WhatsApp Us
               </a>
             </div>

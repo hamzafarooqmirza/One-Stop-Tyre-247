@@ -22,7 +22,7 @@ export default function OldhamPage() {
             />
           </div>
           <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 py-20 w-full">
-            <div className="max-w-2xl">
+            <div className="max-w-2xl mx-auto text-center">
               <span className="inline-block bg-[#dc2626] text-white px-4 py-1 font-bold text-sm rounded mb-4">24/7 EMERGENCY COVERAGE</span>
               <h1
                 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance"
@@ -32,7 +32,7 @@ export default function OldhamPage() {
                 <span className="text-[#b70011]">Oldham</span>
               </h1>
               <p className="text-lg text-slate-200 leading-relaxed mb-8">Fast and reliable mobile tyre fitting service available 24/7 in Oldham and surrounding areas. We come to you at home, work, or roadside.</p>
-              <div className="flex flex-col sm:flex-row gap-3 mb-8">
+              <div className="flex flex-col sm:flex-row gap-3 mb-8 justify-center">
                 <a
                   href="tel:07759708646"
                   className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 transition-all text-base sm:text-lg"
@@ -50,7 +50,7 @@ export default function OldhamPage() {
                   WHATSAPP
                 </a>
               </div>
-              <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/70">
+              <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/70 justify-center">
                 <div className="flex items-center gap-2">
                   <span className="material-symbols-outlined text-[#b70011] text-[18px]">verified</span>
                   <span className="text-sm font-medium">Fully Insured</span>
@@ -236,11 +236,11 @@ export default function OldhamPage() {
             <span className="material-symbols-outlined" style={{ fontSize: '300px' }}>emergency_home</span>
           </div>
           <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
-            <h2 className="work-sans text-3xl font-bold mb-4 uppercase">Emergency Tyre Assistance in Oldham</h2>
-            <p className="text-lg mb-8 max-w-3xl mx-auto leading-relaxed">Facing a blowout at night? Don&apos;t leave your car abandoned. Our 24-hour rapid response team is ready now.</p>
-            <a className="inline-flex items-center gap-4 bg-white text-[#b70011] work-sans font-bold text-lg h-16 px-16 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all" href="tel:0800000000">
-              <span className="material-symbols-outlined">phone_in_talk</span>
-              CALL EMERGENCY LINE NOW
+            <h2 className="work-sans text-2xl sm:text-3xl font-bold mb-4 uppercase">Emergency Tyre Assistance in Oldham</h2>
+            <p className="text-base sm:text-lg mb-8 max-w-3xl mx-auto leading-relaxed">Facing a blowout at night? Don&apos;t leave your car abandoned. Our 24-hour rapid response team is ready now.</p>
+            <a className="inline-flex items-center justify-center gap-3 sm:gap-4 bg-white text-[#b70011] work-sans font-bold text-sm sm:text-lg w-full sm:w-auto max-w-full px-6 sm:px-12 lg:px-16 py-4 sm:h-16 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all text-center" href="tel:0800000000">
+              <span className="material-symbols-outlined text-xl sm:text-2xl flex-shrink-0">phone_in_talk</span>
+              <span className="whitespace-normal sm:whitespace-nowrap">CALL EMERGENCY LINE NOW</span>
             </a>
           </div>
         </section>
@@ -297,7 +297,7 @@ export default function OldhamPage() {
             <h2 className="work-sans text-2xl sm:text-3xl font-bold mb-4 uppercase text-[#1c1b1b]">Need Mobile Tyre Fitting in Oldham?</h2>
             <p className="text-lg mb-10 text-[#5c403c] leading-relaxed">Don&apos;t wait. Get a professional technician at your location in under an hour.</p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <a className="bg-[#dc2626] text-white work-sans font-bold text-lg h-16 px-16 flex items-center justify-center rounded-lg shadow-xl active:scale-95 transition-all" href="tel:0800000000">
+              <a className="bg-[#dc2626] text-white work-sans font-bold text-base sm:text-lg px-6 sm:px-12 lg:px-16 py-4 sm:h-16 flex items-center justify-center rounded-lg shadow-xl active:scale-95 transition-all w-full sm:w-auto" href="tel:0800000000">
                 CALL 0800 000 000
               </a>
             </div>

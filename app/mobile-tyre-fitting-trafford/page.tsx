@@ -19,8 +19,8 @@ export default function TraffordPage() {
           />
           <div className="absolute inset-0 bg-[#0f172a]/75 lg:bg-gradient-to-r lg:from-slate-950 lg:via-slate-900/80 lg:to-transparent"></div>
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-24 grid lg:grid-cols-2 gap-12 items-center w-full">
-          <div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-24 w-full">
+          <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#b70011]/20 border border-[#b70011]/30 rounded-full text-[#ffb4ab] font-label-bold mb-4">
               <span className="w-2 h-2 rounded-full bg-[#b70011] animate-pulse"></span>
               20-30 MINUTE ARRIVAL IN TRAFFORD
@@ -32,10 +32,10 @@ export default function TraffordPage() {
               Emergency Mobile Tyre Fitting{' '}
               <span className="text-[#b70011]">Trafford</span>
             </h1>
-            <p className="text-body-lg text-slate-300 max-w-xl leading-relaxed mb-8">
+            <p className="text-body-lg text-slate-300 max-w-xl mx-auto leading-relaxed mb-8">
               Stuck with a puncture near the Trafford Centre or M60? Our expert technicians provide rapid roadside tyre replacement 24/7. Professional service, competitive rates, and immediate response.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 mb-8">
+            <div className="flex flex-col sm:flex-row gap-3 mb-8 justify-center">
               <a
                 href="tel:07759708646"
                 className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 transition-all text-base sm:text-lg"
@@ -53,7 +53,7 @@ export default function TraffordPage() {
                 WHATSAPP
               </a>
             </div>
-            <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/70">
+            <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/70 justify-center">
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-[#b70011] text-[18px]">verified</span>
                 <span className="text-sm font-medium">Fully Insured</span>
@@ -63,26 +63,6 @@ export default function TraffordPage() {
                 <span className="text-sm font-medium">Card/Cash Accepted</span>
               </div>
             </div>
-          </div>
-          {/* Quick Quote Card */}
-          <div className="bg-white p-8 rounded-xl shadow-[0px_4px_20px_rgba(0,45,98,0.05)] border border-slate-100 hidden lg:block">
-            <h3 className="font-h3 text-slate-900 mb-6">Request Emergency Help</h3>
-            <form className="space-y-4">
-              <div>
-                <label className="block text-slate-600 font-label-bold mb-2">Registration Number</label>
-                <input className="w-full p-4 bg-slate-50 border-slate-200 rounded-lg focus:ring-[#3e5e95] focus:border-[#3e5e95] transition-all font-h2 text-center uppercase tracking-widest text-2xl" placeholder="e.g. TR66 FRD" type="text" />
-              </div>
-              <div>
-                <label className="block text-slate-600 font-label-bold mb-2">Current Location in Trafford</label>
-                <div className="relative">
-                  <span className="absolute left-4 top-4 material-symbols-outlined text-slate-400">location_on</span>
-                  <input className="w-full p-4 pl-12 bg-slate-50 border-slate-200 rounded-lg" placeholder="Postcode or Landmark" type="text" />
-                </div>
-              </div>
-              <button className="w-full bg-[#3e5e95] text-white py-4 rounded-lg font-call-to-action hover:opacity-90 transition-opacity" type="submit">
-                LOCATE TECHNICIAN
-              </button>
-            </form>
           </div>
         </div>
       </section>

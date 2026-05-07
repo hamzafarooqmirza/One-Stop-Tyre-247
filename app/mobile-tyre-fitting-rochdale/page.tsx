@@ -14,7 +14,7 @@ export default function RochdalePage() {
       <section
         className="min-h-[100svh] lg:min-h-[600px] flex items-center text-white relative"
         style={{
-          background: "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')",
+          background: "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}

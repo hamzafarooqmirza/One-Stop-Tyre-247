@@ -232,13 +232,13 @@ export default function Header() {
                     ? 'opacity-100 scale-y-100 pointer-events-auto'
                     : 'opacity-0 scale-y-95 pointer-events-none'
                 }`}
-                style={{ width: '720px' }}
+                style={{ width: '740px' }}
               >
                 {/* Arrow */}
                 <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-l border-t border-slate-200 rotate-45 z-10" />
 
                 <div className="relative bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden z-20">
-                  <div className="grid grid-cols-[1fr_220px]">
+                  <div className="grid grid-cols-[1fr_240px] min-h-[300px]">
                     {/* Links grid */}
                     <div className="p-5">
                       <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3 px-1">
@@ -282,19 +282,19 @@ export default function Header() {
                     </div>
 
                     {/* Promo panel */}
-                    <div className="bg-[#0f172a] p-5 flex flex-col justify-between min-w-0">
+                    <div className="bg-[#0f172a] p-5 flex flex-col gap-4 min-w-0">
                       <div className="min-w-0">
-                        <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-3">
+                        <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-2">
                           Emergency?
                         </p>
-                        <p className="text-white font-bold text-sm leading-snug mb-2 break-words">
+                        <p className="text-white font-bold text-[13px] leading-snug mb-1.5 break-words">
                           We respond in 20–30 minutes across Greater Manchester
                         </p>
-                        <p className="text-white/50 text-[11px] leading-relaxed break-words">
+                        <p className="text-white/50 text-[11px] leading-snug break-words">
                           Available 24/7, 365 days a year. No call-out fee.
                         </p>
                       </div>
-                      <div className="mt-4 flex flex-col gap-2">
+                      <div className="mt-auto flex flex-col gap-2">
                         <a
                           href="tel:07759708646"
                           className="flex items-center gap-2 bg-[#b70011] hover:bg-red-700 text-white font-bold text-sm px-4 py-2.5 rounded-xl transition-all active:scale-95 whitespace-nowrap"
@@ -348,13 +348,13 @@ export default function Header() {
                     ? 'opacity-100 scale-y-100 pointer-events-auto'
                     : 'opacity-0 scale-y-95 pointer-events-none'
                 }`}
-                style={{ width: '780px' }}
+                style={{ width: '800px' }}
               >
                 {/* Arrow */}
                 <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-l border-t border-slate-200 rotate-45 z-10" />
 
                 <div className="relative bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden z-20">
-                  <div className="grid grid-cols-[1fr_240px]">
+                  <div className="grid grid-cols-[1fr_260px] min-h-[340px]">
                     {/* Cities + Motorways */}
                     <div className="p-5">
                       {/* Cities */}
@@ -410,34 +410,36 @@ export default function Header() {
                     </div>
 
                     {/* Promo panel */}
-                    <div className="bg-[#0f172a] p-5 flex flex-col justify-between min-w-0">
+                    <div className="bg-[#0f172a] p-5 flex flex-col gap-4 min-w-0">
                       <div className="min-w-0">
-                        <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-3">
+                        <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-2">
                           Coverage
                         </p>
-                        <p className="text-white font-bold text-sm leading-snug mb-2 break-words">
+                        <p className="text-white font-bold text-[13px] leading-snug mb-1.5 break-words">
                           Greater Manchester &amp; nationwide motorway coverage
                         </p>
-                        <p className="text-white/50 text-[11px] leading-relaxed break-words">
+                        <p className="text-white/50 text-[11px] leading-snug break-words">
                           9 city areas and 7 major motorways covered round the clock.
                         </p>
                       </div>
-                      <a
-                        href="/service-area"
-                        className="mt-4 flex items-center gap-2 bg-[#b70011] hover:bg-red-700 text-white font-bold text-sm px-4 py-2.5 rounded-xl transition-all active:scale-95 whitespace-nowrap"
-                      >
-                        <span className="material-symbols-outlined text-[16px]" style={{ fontVariationSettings: "'FILL' 1" }}>
-                          map
-                        </span>
-                        Full Coverage Map
-                      </a>
-                      <a
-                        href="tel:07759708646"
-                        className="mt-2 flex items-center justify-center gap-1 text-white/50 hover:text-white text-[11px] font-medium transition-colors whitespace-nowrap"
-                      >
-                        Call for nearest tech
-                        <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
-                      </a>
+                      <div className="mt-auto flex flex-col gap-2">
+                        <a
+                          href="/service-area"
+                          className="flex items-center gap-2 bg-[#b70011] hover:bg-red-700 text-white font-bold text-sm px-4 py-2.5 rounded-xl transition-all active:scale-95 whitespace-nowrap"
+                        >
+                          <span className="material-symbols-outlined text-[16px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+                            map
+                          </span>
+                          Full Coverage Map
+                        </a>
+                        <a
+                          href="tel:07759708646"
+                          className="flex items-center justify-center gap-1 text-white/50 hover:text-white text-[11px] font-medium transition-colors whitespace-nowrap"
+                        >
+                          Call for nearest tech
+                          <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>

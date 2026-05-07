@@ -21,8 +21,8 @@ export default function StockportPage() {
             />
             <div className="absolute inset-0 bg-slate-900/60 lg:bg-transparent"></div>
           </div>
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
-            <div>
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-24 w-full">
+            <div className="max-w-3xl mx-auto text-center">
               <div className="inline-block bg-[#dc2626] text-white px-4 py-1 rounded-full text-sm font-bold mb-4">
                 STOCKPORT EMERGENCY TYRE FITTING
               </div>
@@ -34,10 +34,10 @@ export default function StockportPage() {
                 <span className="text-[#b70011]">Stockport</span>{' '}
                 — We Come to You 24/7
               </h1>
-              <p className="text-lg text-slate-300 mb-8 max-w-xl leading-relaxed">
+              <p className="text-lg text-slate-300 mb-8 max-w-xl mx-auto leading-relaxed">
                 Stuck on the A6 or stranded in Cheadle? Our rapid response teams are stationed across Stockport to provide 20-30 minute emergency tyre repairs and replacements.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 mb-8">
+              <div className="flex flex-col sm:flex-row gap-3 mb-8 justify-center">
                 <a
                   href="tel:07759708646"
                   className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 transition-all text-base sm:text-lg"
@@ -55,7 +55,7 @@ export default function StockportPage() {
                   WHATSAPP
                 </a>
               </div>
-              <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/70">
+              <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/70 justify-center">
                 <div className="flex items-center gap-2">
                   <span className="material-symbols-outlined text-[#b70011] text-[18px]">verified</span>
                   <span className="text-sm font-medium">Fully Insured</span>
@@ -64,28 +64,6 @@ export default function StockportPage() {
                   <span className="material-symbols-outlined text-[#b70011] text-[18px]">payments</span>
                   <span className="text-sm font-medium">Card/Cash Accepted</span>
                 </div>
-              </div>
-            </div>
-            <div className="hidden lg:block">
-              <div className="bg-white p-8 rounded-2xl shadow-2xl text-slate-900 border-l-8 border-[#dc2626]">
-                <h3 className="work-sans text-xl font-semibold mb-4">Request Immediate Help</h3>
-                <form className="space-y-4">
-                  <div>
-                    <label className="block text-xs font-bold uppercase text-slate-500 mb-1">Your Location in Stockport</label>
-                    <input className="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 focus:ring-[#3e5e95] focus:border-[#3e5e95] outline-none" placeholder="e.g. SK1, Heaton Moor, Bramhall..." type="text" />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-bold uppercase text-slate-500 mb-1">Tyre Size (If known)</label>
-                    <input className="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 focus:ring-[#3e5e95] focus:border-[#3e5e95] outline-none" placeholder="e.g. 205/55 R16" type="text" />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-bold uppercase text-slate-500 mb-1">Mobile Number</label>
-                    <input className="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 focus:ring-[#3e5e95] focus:border-[#3e5e95] outline-none" placeholder="For instant technician dispatch" type="tel" />
-                  </div>
-                  <button className="w-full bg-[#3e5e95] text-white py-4 rounded-xl work-sans font-bold shadow-lg hover:brightness-110 transition-all" type="submit">
-                    Dispatch Technician Now
-                  </button>
-                </form>
               </div>
             </div>
           </div>

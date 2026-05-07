@@ -269,19 +269,6 @@ export default function TamesidePage() {
         ]}
       />
 
-      {/* Call to Action / Urgency Block */}
-      <section className="py-xl bg-[#dc2626] text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="font-h1 text-2xl sm:text-3xl lg:text-4xl mb-5">Facing a Tyre Emergency in Tameside Right Now?</h2>
-          <p className="text-body-lg mb-8 opacity-90 leading-relaxed">Our dispatchers are standing by 24/7. Call our priority line and we&apos;ll send the nearest technician to your exact location immediately.</p>
-          <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl inline-block border border-white/20">
-            <p className="font-label-bold uppercase tracking-widest mb-4">Emergency Hotline</p>
-            <a className="text-4xl md:text-6xl font-black block mb-6" href="tel:0800000000">0800 000 000</a>
-            <p className="text-body-md italic">Averaging 42 minute arrival time in Tameside today.</p>
-          </div>
-        </div>
-      </section>
-
     </div>
   )
 }

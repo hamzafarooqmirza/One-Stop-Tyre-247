@@ -20,8 +20,8 @@ export default function ManchesterPage() {
             />
             <div className="absolute inset-0 bg-[#0f172a]/75 lg:bg-gradient-to-r lg:from-slate-950 lg:via-slate-900/80 lg:to-transparent"></div>
           </div>
-          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
-            <div className="flex flex-col gap-0">
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-24">
+            <div className="max-w-3xl mx-auto text-center flex flex-col items-center gap-0">
               <div className="inline-flex items-center gap-2 bg-[#dc2626] text-white px-4 py-1 rounded-full text-label-bold animate-pulse mb-4 w-fit">
                 <span className="material-symbols-outlined text-[18px]" style={{fontVariationSettings: "'FILL' 1"}}>emergency</span>
                 24/7 MANCHESTER EMERGENCY RESPONSE
@@ -33,8 +33,8 @@ export default function ManchesterPage() {
                 Mobile Tyre Fitting in{' '}
                 <span className="text-[#b70011]">Manchester</span>
               </h1>
-              <p className="font-body-lg text-base sm:text-lg text-slate-300 max-w-lg leading-relaxed mb-8">Fast and reliable mobile tyre fitting service available 24/7 in Manchester and surrounding areas. We come to you, wherever you are.</p>
-              <div className="flex flex-col sm:flex-row gap-3 mb-8">
+              <p className="font-body-lg text-base sm:text-lg text-slate-300 max-w-lg mx-auto leading-relaxed mb-8">Fast and reliable mobile tyre fitting service available 24/7 in Manchester and surrounding areas. We come to you, wherever you are.</p>
+              <div className="flex flex-col sm:flex-row gap-3 mb-8 justify-center">
                 <a
                   href="tel:07759708646"
                   className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 transition-all text-base sm:text-lg"
@@ -52,7 +52,7 @@ export default function ManchesterPage() {
                   WHATSAPP
                 </a>
               </div>
-              <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/70">
+              <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/70 justify-center">
                 <div className="flex items-center gap-2">
                   <span className="material-symbols-outlined text-[#b70011] text-[18px]">verified</span>
                   <span className="text-sm font-medium">Fully Insured</span>

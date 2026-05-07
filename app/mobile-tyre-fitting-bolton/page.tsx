@@ -21,8 +21,8 @@ export default function BoltonPage() {
             />
           </div>
           <div className="absolute inset-0 bg-[#0f172a]/75 lg:bg-gradient-to-r lg:from-slate-950 lg:to-transparent z-10"></div>
-          <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 py-20 lg:py-24">
-            <div className="flex flex-col justify-center">
+          <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-24 w-full">
+            <div className="max-w-3xl mx-auto text-center flex flex-col items-center justify-center">
               <div className="inline-flex items-center gap-2 bg-[#dc2626]/20 text-[#fff6f5] border border-[#dc2626]/30 px-3 py-1 rounded-full mb-4 w-fit">
                 <span className="material-symbols-outlined text-sm" style={{fontVariationSettings: "'FILL' 1"}}>emergency_home</span>
                 <span className="text-label-bold">20-30 MIN ARRIVAL IN BOLTON</span>
@@ -34,10 +34,10 @@ export default function BoltonPage() {
                 Emergency Mobile Tyre Fitting{' '}
                 <span className="text-[#b70011]">Bolton 24/7</span>
               </h1>
-              <p className="font-body-lg text-body-lg text-slate-300 mb-8 max-w-lg leading-relaxed">
+              <p className="font-body-lg text-body-lg text-slate-300 mb-8 max-w-lg mx-auto leading-relaxed">
                 Stuck with a puncture near the Reebok or on the A666? Our expert technicians provide rapid roadside tyre replacement across Bolton, Farnworth, and Horwich.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 mb-8">
+              <div className="flex flex-col sm:flex-row gap-3 mb-8 justify-center">
                 <a
                   href="tel:07759708646"
                   className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 transition-all text-base sm:text-lg"
@@ -55,7 +55,7 @@ export default function BoltonPage() {
                   WHATSAPP
                 </a>
               </div>
-              <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/70">
+              <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/70 justify-center">
                 <div className="flex items-center gap-2">
                   <span className="material-symbols-outlined text-[#b70011] text-[18px]">verified</span>
                   <span className="text-sm font-medium">Fully Insured</span>

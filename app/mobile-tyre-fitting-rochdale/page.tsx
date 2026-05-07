@@ -20,7 +20,7 @@ export default function RochdalePage() {
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-20 w-full">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl mx-auto text-center">
             <div className="inline-block bg-[#dc2626] text-white px-4 py-1 rounded-full mb-4 font-label-bold text-sm tracking-widest uppercase">Emergency Service Available</div>
             <h1
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance"
@@ -29,8 +29,8 @@ export default function RochdalePage() {
               24/7 Mobile Tyre Fitting in{' '}
               <span className="text-[#b70011]">Rochdale</span>
             </h1>
-            <p className="font-body-lg text-slate-100 mb-8 max-w-xl leading-relaxed">Stranded with a flat tyre? Whether you&apos;re on the M62, in Rochdale Town Centre, or parked at Hollingworth Lake, our expert technicians arrive within 20-30 minutes to get you moving again.</p>
-            <div className="flex flex-col sm:flex-row gap-3 mb-8">
+            <p className="font-body-lg text-slate-100 mb-8 max-w-xl mx-auto leading-relaxed">Stranded with a flat tyre? Whether you&apos;re on the M62, in Rochdale Town Centre, or parked at Hollingworth Lake, our expert technicians arrive within 20-30 minutes to get you moving again.</p>
+            <div className="flex flex-col sm:flex-row gap-3 mb-8 justify-center">
               <a
                 href="tel:07759708646"
                 className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 transition-all text-base sm:text-lg"
@@ -48,7 +48,7 @@ export default function RochdalePage() {
                 WHATSAPP
               </a>
             </div>
-            <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/70">
+            <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/70 justify-center">
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-[#b70011] text-[18px]">verified</span>
                 <span className="text-sm font-medium">Fully Insured</span>

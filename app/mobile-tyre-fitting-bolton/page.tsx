@@ -1,3 +1,7 @@
+import BrandCarousel from '@/components/BrandCarousel'
+import WhyChooseUs from '@/components/WhyChooseUs'
+import CityFaq from '@/components/CityFaq'
+
 export const metadata = {
   title: 'Mobile Tyre Fitting Bolton | 24/7 Emergency Service | One Stop Tyres 24/7',
 }
@@ -9,6 +13,7 @@ export default function BoltonPage() {
         {/* Hero Section */}
         <section className="relative min-h-[100svh] lg:min-h-[600px] flex items-center overflow-hidden bg-slate-900">
           <div className="absolute inset-0 z-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               className="w-full h-full object-cover opacity-40"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWRHcG5Yq1w-p0lx2dCmskXprqQ8BVFsQm9GWU1KDecKdfF7xNkFVpvBooVDgTM_tXZ9tWyD-H6EKn11-PQYJS9qi0AZWVw2cWLCnIG3IuHsJTkBZ74m4XD9Kgqvug2JP91HXI642wqA9p6K8NrR5684YNPTG94cdsn51Sld0OiXccRXLYihx35J91OPtwSeFSLTUQnxs4fSwJtOI46S5s6u2Q51C6rHnUp7-Ins3g1qA6vSjUHbzvWjmNf_meQIL-olV4ypY1wVo"
@@ -56,8 +61,8 @@ export default function BoltonPage() {
                   <span className="text-sm font-medium">Fully Insured</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-[#b70011] text-[18px]">payments</span>
-                  <span className="text-sm font-medium">Card/Cash Accepted</span>
+                  <span className="material-symbols-outlined text-[#b70011] text-[18px]">task_alt</span>
+                  <span className="text-sm font-medium">All Payment Methods Welcome</span>
                 </div>
               </div>
             </div>
@@ -76,7 +81,7 @@ export default function BoltonPage() {
                   <button className="w-full bg-[#3e5e95] text-white py-4 rounded-lg font-call-to-action hover:opacity-90 transition-opacity">
                     GET INSTANT PRICE
                   </button>
-                  <p className="text-center text-xs text-[#5c403c]">Average response time: 42 minutes today.</p>
+                  <p className="text-center text-xs text-[#5c403c]">Average response time: 20-30 minutes today.</p>
                 </form>
               </div>
             </div>
@@ -194,53 +199,11 @@ export default function BoltonPage() {
           </div>
         </section>
 
-        {/* Trust Section */}
-        <section className="bg-white py-xl border-y border-slate-100">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div className="order-2 lg:order-1">
-              <img
-                className="rounded-2xl shadow-xl"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVrPZpsRrvVIy8OMnWu6bdNtm1zrmT1z3BmFFvgG3XDFgGAcHSHg2nTF2L0jBgiDxKgJhML6FQe-NhO_69cBTU1I_mQpOE3VgwK5JdxzLfJlCqvcC8-oZJm3TLe9XOPkyXpeSXUBz_kIyqlkgU9udXjzLJ0YudBfPvQf-IbGRKiiSiCBKwvAzyRC73a709IuwFWbfsCRhB8evWPpOv5e3AAzvBjLPjwChrWUuhDCwI3rVXE-J0vsviyl2U4KTSrVFwewj0g8K8d2A"
-                alt="Clean, organized mobile tyre fitting van interior"
-              />
-            </div>
-            <div className="order-1 lg:order-2">
-              <h2 className="font-h2 text-h2 mb-6">Why Bolton Drivers Choose Us?</h2>
-              <div className="space-y-8">
-                <div className="flex gap-4">
-                  <div className="bg-[#ffdad6] w-12 h-12 rounded-full flex items-center justify-center shrink-0">
-                    <span className="material-symbols-outlined text-[#410002]">speed</span>
-                  </div>
-                  <div>
-                    <h4 className="font-h3 text-h3 text-lg mb-2">Fastest Response in BL1-BL9</h4>
-                    <p className="text-[#5c403c]">Strategically based to reach Bolton town centre, Great Lever, and Smithills within 40 minutes.</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="bg-[#c8e6ff] w-12 h-12 rounded-full flex items-center justify-center shrink-0">
-                    <span className="material-symbols-outlined text-[#001e2e]">payments</span>
-                  </div>
-                  <div>
-                    <h4 className="font-h3 text-h3 text-lg mb-2">No Hidden Call-out Fees</h4>
-                    <p className="text-[#5c403c]">Transparent pricing given upfront. The price we quote over the phone is the price you pay on-site.</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="bg-[#d7e2ff] w-12 h-12 rounded-full flex items-center justify-center shrink-0">
-                    <span className="material-symbols-outlined text-[#001b3f]">verified_user</span>
-                  </div>
-                  <div>
-                    <h4 className="font-h3 text-h3 text-lg mb-2">Fully Certified Technicians</h4>
-                    <p className="text-[#5c403c]">All our fitters are IMI certified and insured to work on everything from family hatchbacks to prestige electric vehicles.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Why Choose Us */}
+        <WhyChooseUs city="Bolton" />
 
         {/* Area Coverage Section */}
-        <section className="py-xl bg-[#f6f3f2] overflow-hidden">
+        <section className="py-16 sm:py-20 bg-[#f6f3f2] overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-5">
@@ -263,6 +226,7 @@ export default function BoltonPage() {
               </div>
               <div className="lg:col-span-7 relative">
                 <div className="bg-slate-300 w-full aspect-video rounded-3xl overflow-hidden shadow-2xl">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     className="w-full h-full object-cover"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-fGW5ZX_X7qj5vNHTEPTR-0tCtTtXJrFaJXd4UdJSRKZnDo3EZHn76ZgQniVW47kraGpBbdTaIQyaFxr2XE6UH7eD9nafiJA927yQE4CVLOsfL2wC9cXksgPLUxT9bai9X5u_NtcLTAnJKOEtYsQX-CwnMmSaHZeTKzTwxcLbgpcuj2kFqvgCeTtQj31brvrq4lNHO2SS2780SgBykGRxOX5m4b6THefeNY79hi1rhu7JMxpNuhZUJWHalqAobUe3fLd6V08VHS4"
@@ -278,26 +242,45 @@ export default function BoltonPage() {
           </div>
         </section>
 
+        {/* Brand Carousel */}
+        <BrandCarousel />
+
+        {/* FAQ */}
+        <CityFaq
+          city="Bolton"
+          faqs={[
+            {
+              q: 'How quickly can you reach me in Bolton?',
+              a: 'Our mobile units are strategically positioned across Bolton, meaning we can typically reach Bolton Town Centre, Farnworth, Horwich, and surrounding areas within 20-30 minutes.',
+            },
+            {
+              q: 'Do you cover the M61 and A666 in Bolton?',
+              a: 'Yes. We provide full motorway and A-road emergency tyre fitting across the M61, A666, A58, and all major routes through the Bolton borough.',
+            },
+            {
+              q: 'What tyre brands do you carry for Bolton customers?',
+              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, as well as mid-range and budget options to suit every price point.',
+            },
+            {
+              q: 'Are you available on Bank Holidays in Bolton?',
+              a: 'Absolutely. We operate 24 hours a day, 365 days a year — including all Bank Holidays. A tyre emergency does not keep office hours, and neither do we.',
+            },
+          ]}
+        />
+
         {/* CTA Section */}
-        <section className="py-xl">
+        <section className="py-16 sm:py-20">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
             <div className="bg-slate-900 rounded-2xl sm:rounded-[2rem] p-8 sm:p-12 text-center relative overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-[#dc2626]/10 blur-[100px] rounded-full"></div>
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#3e5e95]/10 blur-[100px] rounded-full"></div>
               <h2 className="font-h1 text-2xl sm:text-3xl lg:text-4xl text-white mb-6 relative z-10">Stuck with a flat in Bolton?</h2>
-              <p className="text-slate-400 text-lg mb-10 max-w-2xl mx-auto relative z-10">Don&apos;t wait for hours on a recovery truck. Call our direct Bolton emergency line and we&apos;ll dispatch the nearest fitter immediately.</p>
+              <p className="text-slate-400 text-lg mb-10 max-w-2xl mx-auto relative z-10">Don&apos;t wait for hours on a recovery truck. Call our Bolton emergency line and we&apos;ll dispatch the nearest fitter immediately.</p>
               <div className="flex flex-col sm:flex-row justify-center gap-6 relative z-10">
-                <a className="bg-[#dc2626] text-white px-10 py-6 rounded-xl font-call-to-action text-2xl flex items-center justify-center gap-4 hover:scale-105 transition-transform" href="tel:08001234567">
-                  <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>phone_in_talk</span>
-                  0800 123 4567
+                <a className="bg-[#dc2626] text-white px-10 py-6 rounded-xl font-call-to-action text-2xl flex items-center justify-center gap-4 hover:scale-105 transition-transform" href="tel:07759708646">
+                  <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>call</span>
+                  07759 708 646
                 </a>
-                <div className="flex flex-col justify-center text-left">
-                  <p className="text-white font-label-bold flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-green-500"></span>
-                    Technicians Available Now
-                  </p>
-                  <p className="text-slate-500 text-sm">Typical arrival time: 42 mins</p>
-                </div>
               </div>
             </div>
           </div>

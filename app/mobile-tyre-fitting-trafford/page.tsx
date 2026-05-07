@@ -1,3 +1,7 @@
+import BrandCarousel from '@/components/BrandCarousel'
+import WhyChooseUs from '@/components/WhyChooseUs'
+import CityFaq from '@/components/CityFaq'
+
 export const metadata = {
   title: 'Mobile Tyre Fitting Trafford | One Stop Tyres 24/7 | Emergency Roadside Assistance',
 }
@@ -244,29 +248,33 @@ export default function TraffordPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-xl max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="bg-[#3e5e95] rounded-2xl sm:rounded-3xl p-8 sm:p-12 overflow-hidden relative">
-          <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-white">
-            <div className="space-y-2">
-              <h4 className="text-4xl font-black text-[#87ceff]">30m</h4>
-              <p className="font-label-bold opacity-80 uppercase tracking-wider">Avg Response</p>
-            </div>
-            <div className="space-y-2">
-              <h4 className="text-4xl font-black text-[#87ceff]">24/7</h4>
-              <p className="font-label-bold opacity-80 uppercase tracking-wider">Full Availability</p>
-            </div>
-            <div className="space-y-2">
-              <h4 className="text-4xl font-black text-[#87ceff]">10k+</h4>
-              <p className="font-label-bold opacity-80 uppercase tracking-wider">Tyres in Stock</p>
-            </div>
-            <div className="space-y-2">
-              <h4 className="text-4xl font-black text-[#87ceff]">5★</h4>
-              <p className="font-label-bold opacity-80 uppercase tracking-wider">Google Rating</p>
-            </div>
-          </div>
-          <div className="absolute right-0 top-0 h-full w-1/3 bg-white/5 skew-x-12"></div>
-        </div>
-      </section>
+      <WhyChooseUs city="Trafford" />
+
+      {/* Brand Carousel */}
+      <BrandCarousel />
+
+      {/* FAQ */}
+      <CityFaq
+        city="Trafford"
+        faqs={[
+          {
+            q: 'How quickly can you reach me near the Trafford Centre?',
+            a: 'Our strategic location near the M60 allows us to reach the Trafford Centre and surrounding areas within 20-30 minutes. We cover Stretford, Sale, Altrincham, Urmston, and Old Trafford.',
+          },
+          {
+            q: 'Do you cover the M60 and M63 through Trafford?',
+            a: 'Yes. We provide 24/7 emergency tyre fitting on the M60 and all major A-roads through Trafford, including the A56 and A57.',
+          },
+          {
+            q: 'What tyre brands do you stock for Trafford drivers?',
+            a: 'We carry all major premium brands including Michelin, Continental, Bridgestone, Pirelli, and Goodyear, alongside mid-range and budget options to suit every vehicle.',
+          },
+          {
+            q: 'Can you come to my home in Altrincham or Sale?',
+            a: 'Absolutely. Our home tyre fitting service covers the entire Trafford borough. We come to your driveway and fit your tyres while you relax at home.',
+          },
+        ]}
+      />
 
     </div>
   )

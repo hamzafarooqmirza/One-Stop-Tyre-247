@@ -1,3 +1,7 @@
+import BrandCarousel from '@/components/BrandCarousel'
+import WhyChooseUs from '@/components/WhyChooseUs'
+import CityFaq from '@/components/CityFaq'
+
 export const metadata = {
   title: 'Mobile Tyre Fitting Tameside | 24/7 Emergency Service | One Stop Tyres 24/7',
 }
@@ -235,6 +239,35 @@ export default function TamesidePage() {
           </div>
         </div>
       </section>
+
+      {/* Why Choose Us */}
+      <WhyChooseUs city="Tameside" />
+
+      {/* Brand Carousel */}
+      <BrandCarousel />
+
+      {/* FAQ */}
+      <CityFaq
+        city="Tameside"
+        faqs={[
+          {
+            q: 'How fast can you reach me in Tameside?',
+            a: 'Our Tameside mobile units are strategically positioned to reach Ashton-under-Lyne, Hyde, Stalybridge, Denton, and Dukinfield within 20-30 minutes.',
+          },
+          {
+            q: 'Do you cover the M67 motorway through Tameside?',
+            a: 'Yes. We provide full emergency tyre coverage on the M67 and all major routes through Tameside including the A57 and A6017, 24 hours a day.',
+          },
+          {
+            q: 'What tyre brands do you stock for Tameside customers?',
+            a: 'We carry all major brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, plus mid-range and budget options for every vehicle and budget.',
+          },
+          {
+            q: 'Can you come to my location in Mossley or Longdendale?',
+            a: 'Absolutely. Our coverage extends across the full Tameside borough including Mossley, Droylsden, Audenshaw, and Longdendale Valley.',
+          },
+        ]}
+      />
 
       {/* Call to Action / Urgency Block */}
       <section className="py-xl bg-[#dc2626] text-white">

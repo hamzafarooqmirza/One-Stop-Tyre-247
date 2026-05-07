@@ -1,3 +1,7 @@
+import BrandCarousel from '@/components/BrandCarousel'
+import WhyChooseUs from '@/components/WhyChooseUs'
+import CityFaq from '@/components/CityFaq'
+
 export const metadata = {
   title: 'Mobile Tyre Fitting Oldham | 24/7 Emergency Service | One Stop Tyres 24/7',
   description: 'Fast and reliable mobile tyre fitting service available 24/7 in Oldham and surrounding areas. 20-30 min arrival in Chadderton, Failsworth, Royton, Shaw and more.',
@@ -224,34 +228,7 @@ export default function OldhamPage() {
         </section>
 
         {/* Why Choose Us */}
-        <section className="bg-[#1c1b1b] py-12 sm:py-16 text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <h2 className="work-sans text-2xl sm:text-3xl font-bold mb-12 sm:mb-16 uppercase tracking-tight">Why Choose One Stop Tyres 24/7 in Oldham</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              <div className="space-y-6">
-                {[
-                  { title: 'Hyper-Local Experts', desc: 'Our technicians know Oldham like the back of their hands, navigating the back roads and busy hubs to reach you faster.', highlight: true },
-                  { title: 'Massive Inventory', desc: 'From budget to premium brands like Michelin and Pirelli, we stock all sizes for cars, vans, and SUVs.', highlight: false },
-                  { title: 'Fixed Pricing', desc: "The price we quote is the price you pay. No roadside haggling or emergency surcharges hidden in the small print.", highlight: false },
-                ].map((item) => (
-                  <div key={item.title} className={`flex gap-6 border-l-4 ${item.highlight ? 'border-[#dc2626]' : 'border-slate-700'} pl-6 py-2`}>
-                    <div>
-                      <h4 className="work-sans text-lg font-semibold mb-2">{item.title}</h4>
-                      <p className="text-slate-400 leading-relaxed">{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="bg-slate-900 rounded-2xl overflow-hidden relative">
-                <img
-                  alt="Oldham Professional Service"
-                  className="w-full h-full object-cover rounded-xl opacity-60"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD--y7QCIKBFoPb3b-qHgswMzwFNBk-SLRijjkNQ02gsBXXW4zg-XECjLlCPq9SJN68pKqy_TOrLTrwniWvNaywRN2zBw0sgdSfOOKbTo1V6an0QhBdDWZT7KOKql2ysSeIoR5cSzW3p0I4YErurctWWqEQ8HV3_FAXo3wkt2ujTJxAC8zZ5cJfKEo9zSWHGjfa5MZn83lj_HS5b-fZ3i8Xy-AvVeY8s3fM29feBwlKqhQs9rPR_EOGLjd9igHUghuoNJCN3nGybEs"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+        <WhyChooseUs city="Oldham" />
 
         {/* Emergency CTA */}
         <section className="bg-[#dc2626] py-12 sm:py-16 text-white relative overflow-hidden">
@@ -288,27 +265,31 @@ export default function OldhamPage() {
           </div>
         </section>
 
+        {/* Brand Carousel */}
+        <BrandCarousel />
+
         {/* FAQ */}
-        <section className="bg-[#ebe7e7] py-12 sm:py-16">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="work-sans text-2xl sm:text-3xl font-bold text-center mb-12 sm:mb-16 uppercase">Oldham Service FAQ</h2>
-            <div className="space-y-4">
-              {[
-                { q: 'How quickly can you reach me in Oldham?', a: 'Our average response time for Oldham (OL1 - OL9) is between 30 to 60 minutes. We have local technicians stationed near the town centre for immediate dispatch.' },
-                { q: 'Do you cover Saddleworth and upland areas?', a: 'Yes, our 4x4-capable mobile units regularly service Greenfield, Uppermill, and Delph, even in challenging weather conditions.' },
-                { q: 'Can you fit tyres for electric vehicles (EVs)?', a: 'Absolutely. We carry specialized EV-rated tyres and use the correct jacking equipment for Teslas and other electric car brands common in Oldham.' },
-              ].map((faq) => (
-                <details key={faq.q} className="group bg-white rounded-lg border border-[#e6bdb8] overflow-hidden">
-                  <summary className="flex justify-between items-center p-6 cursor-pointer font-bold hover:bg-slate-50 list-none">
-                    {faq.q}
-                    <span className="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
-                  </summary>
-                  <div className="px-6 pb-6 text-[#5c403c] leading-relaxed">{faq.a}</div>
-                </details>
-              ))}
-            </div>
-          </div>
-        </section>
+        <CityFaq
+          city="Oldham"
+          faqs={[
+            {
+              q: 'How quickly can you reach me in Oldham?',
+              a: 'Our average response time for Oldham (OL1–OL9) is 20-30 minutes. We have local technicians stationed near the town centre for immediate dispatch.',
+            },
+            {
+              q: 'Do you cover Saddleworth and upland areas of Oldham?',
+              a: 'Yes, our 4x4-capable mobile units regularly service Greenfield, Uppermill, and Delph, even in challenging weather conditions.',
+            },
+            {
+              q: 'Can you fit tyres for electric vehicles (EVs) in Oldham?',
+              a: 'Absolutely. We carry specialist EV-rated tyres and use the correct jacking equipment for Tesla and other electric car brands.',
+            },
+            {
+              q: 'What tyre brands do you carry for Oldham drivers?',
+              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, and Pirelli, as well as mid-range and budget options to suit every price point.',
+            },
+          ]}
+        />
 
         {/* Final CTA */}
         <section className="py-12 sm:py-16 bg-white">

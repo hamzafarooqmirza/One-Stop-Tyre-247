@@ -1,3 +1,7 @@
+import BrandCarousel from '@/components/BrandCarousel'
+import WhyChooseUs from '@/components/WhyChooseUs'
+import CityFaq from '@/components/CityFaq'
+
 export const metadata = {
   title: 'Mobile Tyre Fitting Bury | One Stop Tyres 24/7 | Emergency Roadside Assistance',
   description: 'Stranded in Bury? Our rapid-response mobile tyre units cover every corner of Bury 24 hours a day. 20-30 min arrival on M66, A56 and all surrounding areas.',
@@ -242,6 +246,34 @@ export default function BuryPage() {
             ))}
           </div>
         </section>
+        {/* Why Choose Us */}
+        <WhyChooseUs city="Bury" />
+
+        {/* Brand Carousel */}
+        <BrandCarousel />
+
+        {/* FAQ */}
+        <CityFaq
+          city="Bury"
+          faqs={[
+            {
+              q: 'How quickly can you reach me in Bury?',
+              a: 'Our mobile units are positioned across the Bury borough, meaning we can typically reach Bury Town Centre, Ramsbottom, Radcliffe, Whitefield, and surrounding areas within 20-30 minutes.',
+            },
+            {
+              q: 'Do you cover the M66 motorway near Bury?',
+              a: 'Yes. We provide full emergency motorway tyre coverage on the M66 from Junction 1 through to Junction 4, as well as the A56 and all major routes through the Bury borough.',
+            },
+            {
+              q: 'What tyre brands do you stock for Bury customers?',
+              a: 'We carry all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, plus mid-range and budget options to suit every requirement.',
+            },
+            {
+              q: 'Can you fit tyres at my workplace in Radcliffe or Whitefield?',
+              a: 'Absolutely. We regularly visit business parks and workplaces across the Bury area. We fit your tyres while you work, saving you time and the hassle of visiting a garage.',
+            },
+          ]}
+        />
       </main>
     </div>
   )

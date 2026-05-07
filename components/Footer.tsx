@@ -1,4 +1,11 @@
+'use client'
+
+import { usePathname } from 'next/navigation'
+
 export default function Footer() {
+  const pathname = usePathname()
+  const isContactPage = pathname === '/contact'
+
   return (
     <footer className="bg-[#0f172a] text-white pt-12 sm:pt-16 lg:pt-24 pb-8 sm:pb-12 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-16 mb-10 sm:mb-16 lg:mb-20">
@@ -114,17 +121,19 @@ export default function Footer() {
           © 2026 One Stop Tyres 24/7. High-Urgency Emergency Roadside Assistance UK. All Rights
           Reserved.
         </p>
-        <p className="text-slate-600 text-[10px] sm:text-[11px] text-center sm:text-right">
-          Designed &amp; Developed By{' '}
-          <a
-            href="https://linkedo.co.uk"
-            rel="nofollow noopener noreferrer"
-            target="_blank"
-            className="text-slate-400 hover:text-[#b70011] transition-colors font-semibold"
-          >
-            Linkedo
-          </a>
-        </p>
+        {isContactPage && (
+          <p className="text-slate-600 text-[10px] sm:text-[11px] text-center sm:text-right">
+            Designed &amp; Developed By{' '}
+            <a
+              href="https://linkedo.co.uk"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              className="text-slate-400 hover:text-[#b70011] transition-colors font-semibold"
+            >
+              Linkedo
+            </a>
+          </p>
+        )}
       </div>
     </footer>
   )

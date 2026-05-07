@@ -21,8 +21,8 @@ export default function WiganPage() {
             />
             <div className="absolute inset-0 bg-[#313030]/60"></div>
           </div>
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
-            <div>
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-24 w-full">
+            <div className="max-w-3xl mx-auto text-center">
               <div className="inline-flex items-center bg-[#dc2626] text-white px-4 py-2 rounded-full mb-4 text-sm font-bold gap-2">
                 <span className="material-symbols-outlined text-sm">bolt</span>
                 20-30 MINUTE ARRIVAL IN WIGAN
@@ -35,7 +35,7 @@ export default function WiganPage() {
                 <span className="text-[#b70011]">Wigan</span>
               </h1>
               <p className="text-lg mb-8 opacity-90 leading-relaxed">Stranded on the A49 or M6? Our expert mobile technicians provide 24/7 rapid roadside tyre replacement and puncture repair throughout Wigan and the surrounding Greater Manchester area.</p>
-              <div className="flex flex-col sm:flex-row gap-3 mb-8">
+              <div className="flex flex-col sm:flex-row gap-3 mb-8 justify-center">
                 <a
                   href="tel:07759708646"
                   className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 transition-all text-base sm:text-lg"
@@ -53,7 +53,7 @@ export default function WiganPage() {
                   WHATSAPP
                 </a>
               </div>
-              <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/70">
+              <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/70 justify-center">
                 <div className="flex items-center gap-2">
                   <span className="material-symbols-outlined text-[#b70011] text-[18px]">verified</span>
                   <span className="text-sm font-medium">Fully Insured</span>
@@ -63,22 +63,6 @@ export default function WiganPage() {
                   <span className="text-sm font-medium">Card/Cash Accepted</span>
                 </div>
               </div>
-            </div>
-            <div className="hidden lg:block bg-white/10 backdrop-blur-md p-8 rounded-xl border border-white/20">
-              <h3 className="work-sans text-2xl font-semibold mb-4">Why Wigan Drivers Trust Us:</h3>
-              <ul className="space-y-4">
-                {[
-                  'Rapid Response to M6, A49, and A580 East Lancs',
-                  'All Tyre Sizes & Brands in Stock 24/7',
-                  'Certified Techs for Luxury & Electric Vehicles',
-                  'No Hidden Call-out Fees – Fixed Pricing',
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-[#ffb4ab]">check_circle</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </section>

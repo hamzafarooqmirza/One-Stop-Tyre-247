@@ -76,8 +76,12 @@ export default function Header() {
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
   const pathname = usePathname()
 
-  const isActive = (href: string) =>
-    href === '/' ? pathname === '/' : pathname.startsWith(href)
+  const isActive = (href: string) => {
+    if (href === '/') return pathname === '/'
+    // Ensure we match on a full path segment boundary (e.g. /mobile-tyre-fitting
+    // must NOT match /mobile-tyre-fitting-manchester)
+    return pathname === href || pathname.startsWith(href + '/')
+  }
 
   const isServicesActive =
     isActive('/services') || serviceLinks.some((l) => isActive(l.href))

@@ -404,7 +404,7 @@ export default function Home() {
                   <span key={i} className="material-symbols-outlined text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 ))}
               </div>
-              <span className="text-sm font-bold text-[#0f172a]">4.9 / 5</span>
+              <span className="text-sm font-bold text-[#0f172a]">5 / 5</span>
               <span className="text-xs text-slate-400 font-medium hidden sm:inline">Based on Google Reviews</span>
             </div>
           </div>
@@ -413,25 +413,53 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {[
               {
-                initials: 'JD',
-                name: 'James D.',
-                when: '2 days ago',
+                initials: 'LN',
+                name: 'Lucy Norris',
+                when: 'a week ago',
                 review:
-                  'Brilliant service! Had a puncture on the M60 at 2 AM. The guy arrived in 35 minutes and had me back on the road in no time. Highly recommend One Stop Tyres.',
+                  'Called this evening needing an emergency replacement tyre, and Adam couldn’t have been more helpful. He quickly sourced a tyre for me, even though it’s not one that’s widely stocked and had everything sorted in no time. From the initial call to being back on the road, it took just over an hour.\n\nGreat service, thanks Adam.',
               },
               {
-                initials: 'SC',
-                name: 'Sarah C.',
-                when: '1 week ago',
+                initials: 'NR',
+                name: 'Nathan Reid',
+                when: '3 weeks ago',
                 review:
-                  'So convenient having them come to my workplace. Very professional technician, fair price, and no mess. Will definitely use them again for regular tyre changes.',
+                  'Nomz was wonderful! Great experience, fast, friendly, and does exactly as you’d expect. Thanks for getting me back on the road!',
               },
               {
-                initials: 'MR',
-                name: 'Mark R.',
-                when: '3 days ago',
+                initials: 'PM',
+                name: 'paul madden',
+                when: 'a month ago',
                 review:
-                  'Locked wheel nut was a nightmare until these guys came. No damage to the alloy and sorted it quickly. Friendly service and decent prices.',
+                  'quick response when really needed and friendly staff when spoke to on phone and when fitter came to do tyre',
+              },
+              {
+                initials: 'T',
+                name: 'Tez',
+                when: '2 months ago',
+                review:
+                  'Excellent service amazing response and back as fast as we could expect at 3 am highly recommend',
+              },
+              {
+                initials: 'AH',
+                name: 'Arzu Hussain',
+                when: '2 months ago',
+                review:
+                  'What a superstar !!!! Came out to the rescue and got me back on road !!! Highly recommend . Great service',
+              },
+              {
+                initials: 'KD',
+                name: 'Kayleigh Davidson',
+                when: '2 months ago',
+                review:
+                  "Called out for an emergency fix as the car wasn't drivable. I was kept updated with an ETA and the service was swift when he did arrive. The fitter was polite and friendly. Would definitely use again.",
+              },
+              {
+                initials: 'IM',
+                name: 'Ibrahim Mahmood',
+                when: '2 months ago',
+                review:
+                  'Came out within 20 mins , 4am . Absolute amazing service',
               },
             ].map((r) => (
               <div
@@ -454,7 +482,7 @@ export default function Home() {
                 </div>
 
                 {/* Review text */}
-                <p className="text-slate-600 text-sm leading-relaxed flex-1">&ldquo;{r.review}&rdquo;</p>
+                <p className="text-slate-600 text-sm leading-relaxed flex-1 whitespace-pre-line">&ldquo;{r.review}&rdquo;</p>
 
                 {/* Author */}
                 <div className="flex items-center gap-3 pt-3 border-t border-slate-100">
@@ -472,7 +500,12 @@ export default function Home() {
 
           {/* View all link */}
           <div className="text-center mt-8">
-            <a href="#" className="inline-flex items-center gap-1.5 text-[#b70011] font-bold text-sm hover:underline">
+            <a
+              href="https://share.google/bejdYHzU10lFRVv4E"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-[#b70011] font-bold text-sm hover:underline"
+            >
               View all Google reviews
               <span className="material-symbols-outlined text-[16px]">open_in_new</span>
             </a>

@@ -227,18 +227,18 @@ export default function Header() {
 
               {/* ── Services Mega Menu ──────────────────────────────────── */}
               <div
-                className={`absolute left-1/2 -translate-x-1/2 top-[calc(100%+16px)] transition-all duration-200 origin-top ${
+                className={`absolute left-0 top-[calc(100%+16px)] transition-all duration-200 origin-top ${
                   openMenu === 'services'
                     ? 'opacity-100 scale-y-100 pointer-events-auto'
                     : 'opacity-0 scale-y-95 pointer-events-none'
                 }`}
-                style={{ width: '720px' }}
+                style={{ width: '680px', maxWidth: 'calc(100vw - 2rem)' }}
               >
                 {/* Arrow */}
-                <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-l border-t border-slate-200 rotate-45 z-10" />
+                <div className="absolute -top-2 left-8 w-4 h-4 bg-white border-l border-t border-slate-200 rotate-45 z-10" />
 
                 <div className="relative bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden z-20">
-                  <div className="grid grid-cols-[1fr_220px]">
+                  <div className="grid grid-cols-[1fr_200px]">
                     {/* Links grid */}
                     <div className="p-5">
                       <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3 px-1">
@@ -343,18 +343,18 @@ export default function Header() {
 
               {/* ── Areas Mega Menu ─────────────────────────────────────── */}
               <div
-                className={`absolute left-1/2 -translate-x-1/2 top-[calc(100%+16px)] transition-all duration-200 origin-top ${
+                className={`absolute left-0 top-[calc(100%+16px)] transition-all duration-200 origin-top ${
                   openMenu === 'areas'
                     ? 'opacity-100 scale-y-100 pointer-events-auto'
                     : 'opacity-0 scale-y-95 pointer-events-none'
                 }`}
-                style={{ width: '780px' }}
+                style={{ width: '740px', maxWidth: 'calc(100vw - 2rem)' }}
               >
                 {/* Arrow */}
-                <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-l border-t border-slate-200 rotate-45 z-10" />
+                <div className="absolute -top-2 left-8 w-4 h-4 bg-white border-l border-t border-slate-200 rotate-45 z-10" />
 
                 <div className="relative bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden z-20">
-                  <div className="grid grid-cols-[1fr_240px]">
+                  <div className="grid grid-cols-[1fr_220px]">
                     {/* Cities + Motorways */}
                     <div className="p-5">
                       {/* Cities */}

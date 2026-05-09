@@ -1,74 +1,70 @@
 import BrandCarousel from '@/components/BrandCarousel'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import CityFaq from '@/components/CityFaq'
+import ReviewsCarousel from '@/components/ReviewsCarousel'
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting Bury | One Stop Tyres 24/7 | Emergency Roadside Assistance',
-  description: 'Stranded in Bury? Our rapid-response mobile tyre units cover every corner of Bury 24 hours a day. 20-30 min arrival on M66, A56 and all surrounding areas.',
+  title: 'Mobile Tyre Fitting in Bury | One Stop Tyres 24/7',
 }
 
 export default function BuryPage() {
   return (
-    <div className="bg-[#fcf9f8] text-[#1c1b1b] overflow-x-hidden" style={{ fontFamily: 'Inter, sans-serif' }}>
+    <div className="bg-[#fcf9f8] text-[#1c1b1b] font-body-md">
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[100svh] lg:min-h-[600px] flex items-center bg-[#1c1b1b] overflow-hidden">
-          <div className="absolute inset-0">
-            <img
-              className="w-full h-full object-cover opacity-40"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGZDhN9FUlFZutp_QbQgvUisUHwHOjKJQH8hkyXplJM7vk-RaCp4QYmfwRB9tyTO_FkwqjCEmuhoxa_t6b5nZ31qVQVvVIA2139m7uL504i6ffeCV-PxW6-zBiYlgv_PxpiPGxLrz9E5_0h8cw4pbG25uPQQm8ZnNAwRauwwMZpoV06EWRvbx0hmkk3K_mMu4Be6UKbvdDi4KGspJw3Ss9cngd-xuUWi0yUuinwpgnFMlvDeSlYaF6C6HIEBpgjhHTnuSGuefs8Ww"
-              alt="Professional roadside assistance scene in Bury at twilight"
-            />
-            <div className="absolute inset-0 bg-[#1c1b1b]/60"></div>
-          </div>
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 z-10 w-full">
-            <div className="max-w-3xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 bg-[#dc2626] text-white px-4 py-2 rounded-full mb-4 text-sm font-bold">
-                <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>emergency_home</span>
-                URGENT ASSISTANCE: 20-30 MIN ARRIVAL IN BURY
-              </div>
-              <h1
-                className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance"
-                style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
+        <section
+          className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-center text-center px-4"
+          style={{
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuBGZDhN9FUlFZutp_QbQgvUisUHwHOjKJQH8hkyXplJM7vk-RaCp4QYmfwRB9tyTO_FkwqjCEmuhoxa_t6b5nZ31qVQVvVIA2139m7uL504i6ffeCV-PxW6-zBiYlgv_PxpiPGxLrz9E5_0h8cw4pbG25uPQQm8ZnNAwRauwwMZpoV06EWRvbx0hmkk3K_mMu4Be6UKbvdDi4KGspJw3Ss9cngd-xuUWi0yUuinwpgnFMlvDeSlYaF6C6HIEBpgjhHTnuSGuefs8Ww)",
+            backgroundSize: "cover",
+            backgroundPosition: "center"
+          }}
+        >
+          <div className="max-w-4xl mx-auto py-20">
+            <div className="inline-flex items-center gap-2 bg-[#dc2626] text-white px-4 py-2 rounded-full mb-4 animate-pulse">
+              <span className="material-symbols-outlined text-sm" style={{fontVariationSettings: "'FILL' 1"}}>emergency</span>
+              <span className="text-label-bold">24/7 BURY EMERGENCY RESPONSE</span>
+            </div>
+            <h1
+              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
+            >
+              Mobile Tyre Fitting in{' '}
+              <span className="text-[#b70011]">Bury</span>
+            </h1>
+            <p className="font-body-lg text-base sm:text-lg text-white/90 max-w-2xl mx-auto leading-relaxed mb-8">Stranded on the M66 or stuck in the heart of Bury? Our rapid-response mobile tyre units cover every corner of Bury 24 hours a day. We bring the garage to you, ensuring you&apos;re back on the road within the hour.</p>
+            <div className="flex flex-col sm:flex-row justify-center gap-3 mb-8">
+              <a
+                href="tel:07759708646"
+                className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 transition-all text-base sm:text-lg"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
               >
-                Mobile Tyre Fitting{' '}
-                <span className="text-[#b70011]">Bury</span>{' '}
-                – 24/7 Emergency Support
-              </h1>
-              <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-                Stranded on the M66 or stuck in the heart of Bury? Our rapid-response mobile tyre units cover every corner of Bury 24 hours a day. We bring the garage to you, ensuring you&apos;re back on the road within the hour.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 mb-8 justify-center">
-                <a
-                  href="tel:07759708646"
-                  className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 transition-all text-base sm:text-lg"
-                  style={{ fontFamily: 'var(--font-work-sans)' }}
-                >
-                  <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
-                  CALL NOW
-                </a>
-                <a
-                  href="https://wa.me/447759708646"
-                  className="bg-white/10 border border-white/20 text-white font-black px-8 py-4 rounded-xl flex items-center justify-center gap-2.5 hover:bg-white/20 transition-all text-base sm:text-lg"
-                  style={{ fontFamily: 'var(--font-work-sans)' }}
-                >
-                  <svg className="w-5 h-5 fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
-                  WHATSAPP
-                </a>
+                <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
+                CALL NOW
+              </a>
+              <a
+                href="https://wa.me/447759708646"
+                className="bg-white/10 border border-white/20 text-white font-black px-8 py-4 rounded-xl flex items-center justify-center gap-2.5 hover:bg-white/20 transition-all text-base sm:text-lg"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
+              >
+                <svg className="w-5 h-5 fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+                WHATSAPP
+              </a>
+            </div>
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-white/70">
+              <div className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-[#b70011] text-[18px]">verified</span>
+                <span className="text-sm font-medium">Fully Insured</span>
               </div>
-              <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/70 justify-center">
-                <div className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-[#b70011] text-[18px]">verified</span>
-                  <span className="text-sm font-medium">Fully Insured</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-[#b70011] text-[18px]">payments</span>
-                  <span className="text-sm font-medium">Card/Cash Accepted</span>
-                </div>
+              <div className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-[#b70011] text-[18px]">payments</span>
+                <span className="text-sm font-medium">Card/Cash Accepted</span>
               </div>
             </div>
           </div>
         </section>
+
+
 
         {/* Services Grid */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
@@ -181,78 +177,64 @@ export default function BuryPage() {
           </div>
         </section>
 
-        {/* Emergency CTA Section */}
-        <section className="bg-[#dc2626] py-12 sm:py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
-            <div className="text-white">
-              <h2 className="work-sans text-3xl font-bold mb-2">Need a tyre in Bury right now?</h2>
-              <p className="text-lg opacity-90">Our mobile technicians are currently patrolling near the Rock Shopping Centre and Whitefield.</p>
-            </div>
-            <div className="flex items-center gap-6">
-              <div className="text-right hidden sm:block">
-                <p className="text-white text-sm font-bold uppercase">Emergency Line</p>
-                <p className="text-white text-2xl font-black">0800 123 4567</p>
+
+
+        {/* Why Choose Us */}
+        <WhyChooseUs city="Bury" />
+
+
+
+
+        {/* Brand Carousel */}
+        <BrandCarousel />
+
+        {/* Reviews Section */}
+        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-10 sm:mb-14">
+              <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
+                Google Reviews
+              </span>
+              <h2
+                className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-4"
+                style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+              >
+                What Our Customers Say
+              </h2>
+              <div className="inline-flex items-center gap-3 bg-white border border-slate-200 shadow-sm rounded-full px-5 py-2.5">
+                <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" aria-label="Google">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/>
+                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                </svg>
+                <div className="flex text-yellow-400 gap-0.5">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <span key={i} className="material-symbols-outlined text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  ))}
+                </div>
+                <span className="text-sm font-bold text-[#0f172a]">5 / 5</span>
+                <span className="text-xs text-slate-400 font-medium hidden sm:inline">Based on Google Reviews</span>
               </div>
-              <a className="bg-white text-[#dc2626] px-8 py-4 rounded-full work-sans font-bold shadow-lg hover:scale-105 transition-transform" href="tel:08001234567">
-                CALL NOW
+            </div>
+
+            <ReviewsCarousel />
+
+            <div className="text-center mt-8">
+              <a
+                href="https://share.google/bejdYHzU10lFRVv4E"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-[#b70011] font-bold text-sm hover:underline"
+              >
+                View all Google reviews
+                <span className="material-symbols-outlined text-[16px]">open_in_new</span>
               </a>
             </div>
           </div>
         </section>
 
-        {/* Coverage Area */}
-        <section className="py-16 sm:py-24 bg-[#f6f3f2]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <h2 className="work-sans text-3xl font-bold mb-6">Serving All of Bury &amp; Beyond</h2>
-              <p className="text-lg text-slate-700 mb-8 leading-relaxed">We don&apos;t just cover the town center. Our mobile tyre fitting vans are dispatched across the entire metropolitan borough, reaching you quickly wherever you are.</p>
-              <ul className="grid grid-cols-2 gap-4">
-                {['Ramsbottom', 'Tottington', 'Radcliffe', 'Whitefield', 'Prestwich', 'Summerseat'].map((area) => (
-                  <li key={area} className="flex items-center gap-2 font-semibold">
-                    <span className="material-symbols-outlined text-[#b70011]">location_on</span>
-                    {area}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="rounded-2xl overflow-hidden h-96 shadow-xl border-4 border-white">
-              <img
-                className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-WKuD-yF7XrwU4qxj_41AU7_4OwuJvrmgFDwHshqnglto0a-Hx0NCBo94rHERiuKyMG1F8MdAVsN3YtsQsXpplqQi-oGpO2CMPXvQz97s-RkMi2VNp2FY5kP_VQn_D_r7bKsHw2CFJuhIQBkXV69Etm3flrjAw6DDKB46e67WPaS-8w4uWMWhERoIPcNTZe5DEvTYWcVQxiymqt72YzJ9MDl8MP7l5dLDgQgtNaYR4fEqDtumyqyIjQtkJ5nVNEmysT1S9kGiVyk"
-                alt="Satellite map of Bury and Greater Manchester area"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* Testimonials */}
-        <section className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="work-sans text-2xl sm:text-3xl font-bold text-center mb-12 sm:mb-16">What Bury Drivers Say</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { quote: 'Stuck on the M66 near Ramsbottom exit at 11 PM. One Stop Tyres were there in 35 minutes. Brilliant service, saved my night!', author: 'David R., Bury Resident' },
-              { quote: 'Needed a specific tyre for my Tesla. They had it in stock and fitted it at my workplace in Radcliffe. Highly professional.', author: 'Sarah M., EV Owner' },
-              { quote: 'The only company that answered at 3 AM on a Sunday. Had me back on the road in under an hour. Absolute lifesavers.', author: 'James L., Delivery Driver' },
-            ].map((review) => (
-              <div key={review.author} className="bg-white p-8 rounded-xl shadow-sm border border-slate-100">
-                <div className="flex text-yellow-400 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                  ))}
-                </div>
-                <p className="italic text-slate-700 mb-6">&quot;{review.quote}&quot;</p>
-                <p className="font-bold text-sm">— {review.author}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-        {/* Why Choose Us */}
-        <WhyChooseUs city="Bury" />
-
-        {/* Brand Carousel */}
-        <BrandCarousel />
-
-        {/* FAQ */}
+        {/* FAQ Section */}
         <CityFaq
           city="Bury"
           faqs={[
@@ -274,6 +256,24 @@ export default function BuryPage() {
             },
           ]}
         />
+
+        {/* Final CTA Section */}
+        <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Bury Right Now?</h2>
+            <p className="font-body-lg text-sm sm:text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Bury line and get a technician dispatched in minutes.</p>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
+              <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-sm sm:text-base transition-all shadow-xl" href="tel:07759708646">
+                <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>
+                Call Now
+              </a>
+              <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#1c1b1b] hover:bg-slate-800 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-sm sm:text-base transition-all shadow-xl" href="https://wa.me/447759708646">
+                <span className="material-symbols-outlined text-[#25D366] text-xl sm:text-2xl" style={{fontVariationSettings: "'FILL' 1"}}>chat</span>
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   )

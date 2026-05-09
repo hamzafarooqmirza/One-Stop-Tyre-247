@@ -31,7 +31,7 @@ export default function M61Page() {
         'M61 emergency priority — we prioritise M61 emergencies above all standard call-outs',
       ]}
       benefits={[
-        'Average M61 arrival time of 35-45 minutes',
+        'Average M61 arrival time of 20-30 minutes',
         'Bolton depot gives fastest access to J4, J5, and J6 — typically within 30 minutes',
         'Full coverage from Junction 1 (M60 Interchange) to Junction 8 (Chorley/M6)',
         'Chapter 8 high-visibility lighting for safe hard shoulder working',

@@ -45,7 +45,7 @@ export default function M602Page() {
         },
         {
           q: 'How quickly can you get to me on the M602?',
-          a: 'Our average response time for the M602 corridor is 30-45 minutes. Traffic conditions in Salford can vary, but our local base gives us a distinct advantage over national providers.',
+          a: 'Our average response time for the M602 corridor is 20-30 minutes. Traffic conditions in Salford can vary, but our local base gives us a distinct advantage over national providers.',
         },
         {
           q: 'Do you work through the night?',

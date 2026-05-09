@@ -236,13 +236,13 @@ export default function AboutPage() {
                   <span className="text-[10px] sm:text-xs uppercase font-bold tracking-widest block mb-1 sm:mb-2 opacity-60">
                     Avg. Response
                   </span>
-                  <span className="text-xl sm:text-2xl font-black">45 MIN</span>
+                  <span className="text-xl sm:text-2xl font-black">30 MIN</span>
                 </div>
                 <div className="flex-1 bg-white/10 p-3 sm:p-4 rounded-lg backdrop-blur-sm">
                   <span className="text-[10px] sm:text-xs uppercase font-bold tracking-widest block mb-1 sm:mb-2 opacity-60">
                     Rating
                   </span>
-                  <span className="text-xl sm:text-2xl font-black">4.9/5.0</span>
+                  <span className="text-xl sm:text-2xl font-black">5.0/5.0</span>
                 </div>
               </div>
             </div>

@@ -158,16 +158,19 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Map image */}
+              {/* Live Google Map */}
               <div
-                className="h-48 sm:h-64 rounded-xl overflow-hidden border border-slate-100 grayscale hover:grayscale-0 transition-all duration-500"
+                className="h-48 sm:h-64 rounded-xl overflow-hidden border border-slate-100"
                 style={{ boxShadow: '0px 4px 20px rgba(0,45,98,0.05)' }}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  className="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkfLn-iAVLGBNe_5-oKdPZLR8JV8CZKL-QDb9kGdHPrGnbOXvBwlWw0dTLQmckhlC_CWL9JMUa15Kr-LX4bHOR3YgxsUi5DrKwgbrQYw1-RtD5IgLbUelvfg9m0Q4BCLzqV5NXuDetOZqn9Au0pu9U8f6gJZy3igbwvc-uy2x79yd23MiSkt67T2RHIP_EuNU4QVgqSb1VLWYpnKltA-NjNEsFK1VcHfgQMjSnFTTPPv_hvnMxypMZpECmWQ8_xjCFIi4d9wWf2ts"
-                  alt="UK coverage map"
+                <iframe
+                  className="w-full h-full"
+                  src="https://maps.google.com/maps?q=Greater+Manchester,+UK&t=&z=10&ie=UTF8&iwloc=&output=embed"
+                  frameBorder="0"
+                  scrolling="no"
+                  title="One Stop Tyres 24/7 service area map"
+                  aria-label="Google map showing One Stop Tyres 24/7 service area across Greater Manchester"
+                  loading="lazy"
                 />
               </div>
             </div>

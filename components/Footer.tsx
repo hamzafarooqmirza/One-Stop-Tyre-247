@@ -100,6 +100,7 @@ export default function Footer() {
               { label: 'Mobile Tyre Fitting M60', href: '/mobile-tyre-fitting-m60' },
               { label: 'Mobile Tyre Fitting M61', href: '/mobile-tyre-fitting-m61' },
               { label: 'Mobile Tyre Fitting M62', href: '/mobile-tyre-fitting-m62' },
+              { label: 'Mobile Tyre Fitting M56', href: '/mobile-tyre-fitting-m56' },
               { label: 'Mobile Tyre Fitting M602', href: '/mobile-tyre-fitting-m602' },
               { label: 'Mobile Tyre Fitting M66', href: '/mobile-tyre-fitting-m66' },
               { label: 'Mobile Tyre Fitting M67', href: '/mobile-tyre-fitting-m67' },

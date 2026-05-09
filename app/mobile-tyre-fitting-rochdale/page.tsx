@@ -1,36 +1,39 @@
 import BrandCarousel from '@/components/BrandCarousel'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import CityFaq from '@/components/CityFaq'
+import ReviewsCarousel from '@/components/ReviewsCarousel'
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting Rochdale | 24/7 Emergency Service | One Stop Tyres 24/7',
-  description: 'Fast 24/7 mobile tyre fitting in Rochdale. Emergency roadside assistance for M62, Town Centre, and Littleborough. 20-30 min arrival. Call One Stop Tyres 24/7 now.',
+  title: 'Mobile Tyre Fitting in Rochdale | One Stop Tyres 24/7',
 }
 
 export default function RochdalePage() {
   return (
     <div className="bg-[#fcf9f8] text-[#1c1b1b] font-body-md">
-      {/* Hero Section */}
-      <section
-        className="min-h-[100svh] lg:min-h-[600px] flex items-center text-white relative"
-        style={{
-          background: "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp')",
-          backgroundSize: "cover",
-          backgroundPosition: "center"
-        }}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-20 w-full">
-          <div className="max-w-2xl mx-auto text-center">
-            <div className="inline-block bg-[#dc2626] text-white px-4 py-1 rounded-full mb-4 font-label-bold text-sm tracking-widest uppercase">Emergency Service Available</div>
+      <main>
+        {/* Hero Section */}
+        <section
+          className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-center text-center px-4"
+          style={{
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp)",
+            backgroundSize: "cover",
+            backgroundPosition: "center"
+          }}
+        >
+          <div className="max-w-4xl mx-auto py-20">
+            <div className="inline-flex items-center gap-2 bg-[#dc2626] text-white px-4 py-2 rounded-full mb-4 animate-pulse">
+              <span className="material-symbols-outlined text-sm" style={{fontVariationSettings: "'FILL' 1"}}>emergency</span>
+              <span className="text-label-bold">24/7 ROCHDALE EMERGENCY RESPONSE</span>
+            </div>
             <h1
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              24/7 Mobile Tyre Fitting in{' '}
+              Mobile Tyre Fitting in{' '}
               <span className="text-[#b70011]">Rochdale</span>
             </h1>
-            <p className="font-body-lg text-slate-100 mb-8 max-w-xl mx-auto leading-relaxed">Stranded with a flat tyre? Whether you&apos;re on the M62, in Rochdale Town Centre, or parked at Hollingworth Lake, our expert technicians arrive within 20-30 minutes to get you moving again.</p>
-            <div className="flex flex-col sm:flex-row gap-3 mb-8 justify-center">
+            <p className="font-body-lg text-base sm:text-lg text-white/90 max-w-2xl mx-auto leading-relaxed mb-8">Stranded with a flat tyre? Whether you&apos;re on the M62, in Rochdale Town Centre, or parked at Hollingworth Lake, our expert technicians arrive within 20-30 minutes to get you moving again.</p>
+            <div className="flex flex-col sm:flex-row justify-center gap-3 mb-8">
               <a
                 href="tel:07759708646"
                 className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 transition-all text-base sm:text-lg"
@@ -48,7 +51,7 @@ export default function RochdalePage() {
                 WHATSAPP
               </a>
             </div>
-            <div className="flex flex-wrap gap-x-6 gap-y-2 text-white/70 justify-center">
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-white/70">
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-[#b70011] text-[18px]">verified</span>
                 <span className="text-sm font-medium">Fully Insured</span>
@@ -59,230 +62,219 @@ export default function RochdalePage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Trust Stats */}
-      <section className="bg-[#fcf9f8] py-10 sm:py-12 border-b border-[#e5e2e1]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
-          <div className="text-center">
-            <div className="text-3xl font-h1 text-[#b70011] mb-1">5000+</div>
-            <div className="text-sm font-label-bold text-[#5c403c] uppercase tracking-tighter">Tyres Fitted</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-h1 text-[#b70011] mb-1">24/7</div>
-            <div className="text-sm font-label-bold text-[#5c403c] uppercase tracking-tighter">Availability</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-h1 text-[#b70011] mb-1">100%</div>
-            <div className="text-sm font-label-bold text-[#5c403c] uppercase tracking-tighter">Satisfaction</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-h1 text-[#b70011] mb-1">30m</div>
-            <div className="text-sm font-label-bold text-[#5c403c] uppercase tracking-tighter">Avg Response</div>
-          </div>
-        </div>
-      </section>
 
-      {/* Services Grid */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50" id="services">
-        <div className="max-w-7xl mx-auto">
-          {/* Heading */}
-          <div className="text-center mb-10 sm:mb-16">
-            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
-              What We Do
-            </span>
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Professional Roadside Assistance in Rochdale
-            </h2>
-            <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
-              Comprehensive mobile vehicle support available every day of the year across Rochdale and surrounding areas.
-            </p>
-          </div>
 
-          {/* Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {[
-              {
-                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp',
-                title: 'Mobile Tyre Fitting',
-                desc: 'Emergency replacement at your location within 20-30 minutes.',
-                badge: 'FAST RESPONSE',
-              },
-              {
-                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting-airanko-NAQrFhRm9UilkOOWhZBEd5lhxc7eEz.webp',
-                title: 'Home Tyre Fitting',
-                desc: 'Convenient tyre replacement on your driveway while you work or relax.',
-                badge: 'AT YOUR DOOR',
-              },
-              {
-                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emeregency%20Puncture%20Repair-airanko-K3cI9fjWlcirkZkEwDEvdtRtKQg3B7.webp',
-                title: 'Emergency Puncture Repair',
-                desc: 'Professional plug and patch repair to save your tyre when possible.',
-                badge: 'CERTIFIED REPAIR',
-              },
-              {
-                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Jumpstart-onestop-airanko-bUQeSwSrfEEeS2vgU2IuyrDFFak87m.webp',
-                title: 'JumpStart',
-                desc: 'Fast battery jump-start service to get your vehicle running again without delay.',
-                badge: '24/7 SERVICE',
-              },
-              {
-                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TPMS%20Reset-airanko-LEqPbQFsdbmM1ZLc5m0aoAUKGG4haJ.webp',
-                title: 'TPMS Reset',
-                desc: 'Tyre pressure monitoring system reset after every tyre change or repair.',
-                badge: 'ALL VEHICLES',
-              },
-              {
-                img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20Nut%20Removal-airanko-MV4iwDQaMKuuoUnbMrRrQW5QIDJQbV.webp',
-                title: 'Locking Nut Removal',
-                desc: 'Specialist damage-free removal of lost or broken locking wheel nuts.',
-                badge: 'DAMAGE FREE',
-              },
-            ].map((card) => (
-              <div
-                key={card.title}
-                className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
+        {/* Services Grid */}
+        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-10 sm:mb-16">
+              <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+                What We Do
+              </span>
+              <h2
+                className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight"
+                style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
               >
-                <div className="relative h-44 sm:h-52 overflow-hidden">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={card.img}
-                    alt={card.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    width={600}
-                    height={400}
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                  <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">
-                    {card.badge}
-                  </span>
-                </div>
-                <div className="p-5 sm:p-6">
-                  <h3
-                    className="text-base sm:text-lg font-semibold mb-2 text-[#0f172a]"
-                    style={{ fontFamily: 'var(--font-work-sans)' }}
-                  >
-                    {card.title}
-                  </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
-                  <div className="flex items-center justify-end">
-                    <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
-                      arrow_forward
-                    </span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* CTA strip */}
-          <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
-            <div>
-              <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
-              <p className="text-slate-400 text-sm sm:text-base">
-                Speak directly to a technician for an instant quote and arrival time.
+                Professional Roadside Assistance in Rochdale
+              </h2>
+              <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
+                Comprehensive mobile vehicle support available every day of the year across Rochdale and surrounding areas.
               </p>
             </div>
-            <a
-              href="tel:07759708646"
-              className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
-              style={{ fontFamily: 'var(--font-work-sans)' }}
-            >
-              07759 708 646
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Booking CTA / Process */}
-      <section className="bg-[#dc2626] text-white py-xl">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-10 sm:gap-12 items-center">
-          <div>
-            <h2 className="font-h1 text-2xl sm:text-3xl lg:text-4xl mb-6">Need a Tyre Change Right Now?</h2>
-            <p className="text-[#ffdad6] mb-8 font-body-lg">Don&apos;t wait for a tow truck. We come to you and change your tyre while you wait in the safety of your vehicle.</p>
-            <div className="space-y-6">
-              <div className="flex gap-4">
-                <div className="w-10 h-10 rounded-full border-2 border-[#ffdad6] flex items-center justify-center font-bold">1</div>
-                <div>
-                  <div className="font-label-bold text-lg mb-1">Call Our Dispatch</div>
-                  <p className="text-[#ffdad6]">Tell us your location and tyre size (on the tyre sidewall).</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {[
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp',
+                  title: 'Mobile Tyre Fitting',
+                  desc: 'Emergency replacement at your location within 20-30 minutes.',
+                  badge: 'FAST RESPONSE',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting-airanko-NAQrFhRm9UilkOOWhZBEd5lhxc7eEz.webp',
+                  title: 'Home Tyre Fitting',
+                  desc: 'Convenient tyre replacement on your driveway while you work or relax.',
+                  badge: 'AT YOUR DOOR',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emeregency%20Puncture%20Repair-airanko-K3cI9fjWlcirkZkEwDEvdtRtKQg3B7.webp',
+                  title: 'Emergency Puncture Repair',
+                  desc: 'Professional plug and patch repair to save your tyre when possible.',
+                  badge: 'CERTIFIED REPAIR',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Jumpstart-onestop-airanko-bUQeSwSrfEEeS2vgU2IuyrDFFak87m.webp',
+                  title: 'JumpStart',
+                  desc: 'Fast battery jump-start service to get your vehicle running again without delay.',
+                  badge: '24/7 SERVICE',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TPMS%20Reset-airanko-LEqPbQFsdbmM1ZLc5m0aoAUKGG4haJ.webp',
+                  title: 'TPMS Reset',
+                  desc: 'Tyre pressure monitoring system reset after every tyre change or repair.',
+                  badge: 'ALL VEHICLES',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20Nut%20Removal-airanko-MV4iwDQaMKuuoUnbMrRrQW5QIDJQbV.webp',
+                  title: 'Locking Nut Removal',
+                  desc: 'Specialist damage-free removal of lost or broken locking wheel nuts.',
+                  badge: 'DAMAGE FREE',
+                },
+              ].map((card) => (
+                <div
+                  key={card.title}
+                  className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
+                >
+                  <div className="relative h-44 sm:h-52 overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={card.img}
+                      alt={card.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      width={600}
+                      height={400}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                    <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">
+                      {card.badge}
+                    </span>
+                  </div>
+                  <div className="p-5 sm:p-6">
+                    <h3
+                      className="text-base sm:text-lg font-semibold mb-2 text-[#0f172a]"
+                      style={{ fontFamily: 'var(--font-work-sans)' }}
+                    >
+                      {card.title}
+                    </h3>
+                    <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
+                    <div className="flex items-center justify-end">
+                      <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
+                        arrow_forward
+                      </span>
+                    </div>
+                  </div>
                 </div>
+              ))}
+            </div>
+            <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
+              <div>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
+                <p className="text-slate-400 text-sm sm:text-base">
+                  Speak directly to a technician for an instant quote and arrival time.
+                </p>
               </div>
-              <div className="flex gap-4">
-                <div className="w-10 h-10 rounded-full border-2 border-[#ffdad6] flex items-center justify-center font-bold">2</div>
-                <div>
-                  <div className="font-label-bold text-lg mb-1">Get a Fixed Quote</div>
-                  <p className="text-[#ffdad6]">We provide a transparent price with no hidden call-out fees.</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="w-10 h-10 rounded-full border-2 border-[#ffdad6] flex items-center justify-center font-bold">3</div>
-                <div>
-                  <div className="font-label-bold text-lg mb-1">Technician Dispatched</div>
-                  <p className="text-[#ffdad6]">Our mobile van arrives and fits your tyre in 20-30 mins.</p>
-                </div>
-              </div>
+              <a
+                href="tel:07759708646"
+                className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
+              >
+                07759 708 646
+              </a>
             </div>
           </div>
-          <div className="bg-white p-8 rounded-xl shadow-2xl text-[#1c1b1b]">
-            <h3 className="font-h3 mb-6">Request Callback</h3>
-            <form className="space-y-4">
-              <div>
-                <label className="block text-sm font-label-bold mb-1 text-[#5c403c]">Your Phone Number</label>
-                <input className="w-full bg-[#f6f3f2] border-[#e5e2e1] rounded-lg p-3 focus:ring-[#3e5e95] focus:border-[#3e5e95]" placeholder="07xxx xxxxxx" type="tel" />
+        </section>
+
+
+
+        {/* Why Choose Us */}
+        <WhyChooseUs city="Rochdale" />
+
+
+
+
+        {/* Brand Carousel */}
+        <BrandCarousel />
+
+        {/* Reviews Section */}
+        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-10 sm:mb-14">
+              <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
+                Google Reviews
+              </span>
+              <h2
+                className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-4"
+                style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+              >
+                What Our Customers Say
+              </h2>
+              <div className="inline-flex items-center gap-3 bg-white border border-slate-200 shadow-sm rounded-full px-5 py-2.5">
+                <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" aria-label="Google">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/>
+                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                </svg>
+                <div className="flex text-yellow-400 gap-0.5">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <span key={i} className="material-symbols-outlined text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  ))}
+                </div>
+                <span className="text-sm font-bold text-[#0f172a]">5 / 5</span>
+                <span className="text-xs text-slate-400 font-medium hidden sm:inline">Based on Google Reviews</span>
               </div>
-              <div>
-                <label className="block text-sm font-label-bold mb-1 text-[#5c403c]">Tyre Size (Optional)</label>
-                <input className="w-full bg-[#f6f3f2] border-[#e5e2e1] rounded-lg p-3 focus:ring-[#3e5e95] focus:border-[#3e5e95]" placeholder="e.g. 205/55 R16" type="text" />
-              </div>
-              <div>
-                <label className="block text-sm font-label-bold mb-1 text-[#5c403c]">Location in Rochdale</label>
-                <input className="w-full bg-[#f6f3f2] border-[#e5e2e1] rounded-lg p-3 focus:ring-[#3e5e95] focus:border-[#3e5e95]" placeholder="Postcode or Street Name" type="text" />
-              </div>
-              <button className="w-full bg-[#dc2626] text-white py-4 rounded-lg font-call-to-action shadow-md hover:bg-[#b70011] transition-all">
-                REQUEST URGENT CALLBACK
-              </button>
-              <p className="text-center text-xs text-[#5c403c] mt-4">We typically call back within 120 seconds for all emergency requests.</p>
-            </form>
+            </div>
+
+            <ReviewsCarousel />
+
+            <div className="text-center mt-8">
+              <a
+                href="https://share.google/bejdYHzU10lFRVv4E"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-[#b70011] font-bold text-sm hover:underline"
+              >
+                View all Google reviews
+                <span className="material-symbols-outlined text-[16px]">open_in_new</span>
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Why Choose Us */}
-      <WhyChooseUs city="Rochdale" />
+        {/* FAQ Section */}
+        <CityFaq
+          city="Rochdale"
+          faqs={[
+            {
+              q: 'Do you cover the M62 near Rochdale?',
+              a: 'Yes, we provide emergency tyre services for the M62 between Junction 18 (Simister Island) and Junction 22 (Rishworth Moor). We are experts at safe roadside recovery and fitting on the motorway network.',
+            },
+            {
+              q: 'What tyre brands do you stock for Rochdale drivers?',
+              a: 'We carry a wide range of all-season, summer, and winter tyres including premium brands like Michelin, Continental, and Bridgestone, as well as high-quality mid-range and budget options.',
+            },
+            {
+              q: 'Can you come to my workplace at Kingsway Business Park?',
+              a: 'Absolutely. We frequently visit business parks like Kingsway, Sandbrook Park, and Stakehill. We fit your tyres while you work, saving you time at a traditional garage.',
+            },
+            {
+              q: 'How fast can you reach me in Rochdale town centre?',
+              a: 'Our average arrival time in Rochdale town centre is 20-30 minutes. We also cover Heywood, Middleton, Littleborough, and Milnrow with the same rapid response.',
+            },
+          ]}
+        />
 
-      {/* Brand Carousel */}
-      <BrandCarousel />
-
-      {/* FAQ Section */}
-      <CityFaq
-        city="Rochdale"
-        faqs={[
-          {
-            q: 'Do you cover the M62 near Rochdale?',
-            a: 'Yes, we provide emergency tyre services for the M62 between Junction 18 (Simister Island) and Junction 22 (Rishworth Moor). We are experts at safe roadside recovery and fitting on the motorway network.',
-          },
-          {
-            q: 'What tyre brands do you stock for Rochdale drivers?',
-            a: 'We carry a wide range of all-season, summer, and winter tyres including premium brands like Michelin, Continental, and Bridgestone, as well as high-quality mid-range and budget options.',
-          },
-          {
-            q: 'Can you come to my workplace at Kingsway Business Park?',
-            a: 'Absolutely. We frequently visit business parks like Kingsway, Sandbrook Park, and Stakehill. We fit your tyres while you work, saving you time at a traditional garage.',
-          },
-          {
-            q: 'How fast can you reach me in Rochdale town centre?',
-            a: 'Our average arrival time in Rochdale town centre is 20-30 minutes. We also cover Heywood, Middleton, Littleborough, and Milnrow with the same rapid response.',
-          },
-        ]}
-      />
-
+        {/* Final CTA Section */}
+        <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Rochdale Right Now?</h2>
+            <p className="font-body-lg text-sm sm:text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Rochdale line and get a technician dispatched in minutes.</p>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
+              <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-sm sm:text-base transition-all shadow-xl" href="tel:07759708646">
+                <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>
+                Call Now
+              </a>
+              <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#1c1b1b] hover:bg-slate-800 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-sm sm:text-base transition-all shadow-xl" href="https://wa.me/447759708646">
+                <span className="material-symbols-outlined text-[#25D366] text-xl sm:text-2xl" style={{fontVariationSettings: "'FILL' 1"}}>chat</span>
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
   )
 }

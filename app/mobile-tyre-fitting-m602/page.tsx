@@ -18,7 +18,7 @@ export default function M602Page() {
         'All Sizes Stocked including Run-Flat tyres',
         'Locking Nut Removal',
         'Digital Balancing',
-        'Puncture Repair to BSAU 159 standards — starting from £45',
+        'Puncture Repair to BSAU 159 standards',
         'TPMS Reset — modern sensor calibration to clear dashboard errors after fitting',
         'Jump Starts — high-power packs for flat batteries on the hard shoulder',
         'Valve Replacement — fixing slow leaks caused by corroded or damaged tyre valves',

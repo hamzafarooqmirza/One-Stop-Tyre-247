@@ -15,7 +15,7 @@ export default function M61Page() {
       introBody="The M61 is a critical artery connecting Bolton, Manchester, and Preston. Traffic volume is high, and a tyre puncture can happen at any moment, leaving you stranded in a dangerous position. At One Stop Tyres 24/7, we specialise in rapid-response mobile tyre fitting specifically for the M61 corridor. Our fleet of fully equipped vans is strategically positioned near major junctions to ensure that whether you're heading south towards the M60 or north towards the M6, help is never more than a phone call away. Our main depot is located in the Bolton area, and we patrol the M61 24/7."
       included={[
         'Emergency Roadside Replacement — instant on-site replacements for all passenger and light commercial vehicles, all major brands, run-flat tyres, locking nut removal, and high performance tyres',
-        'Puncture Repair — on-site repairs following BSAU159 standards, from £45.00',
+        'Puncture Repair — on-site repairs following BSAU159 standards',
         'Home or Work Fitting — schedule a fitting at your convenience near the M61',
         'Jump Starts — heavy-duty jump packs to get your engine turning instantly',
         'Wheel Balancing — digital balancing included with every fitting for a smooth, vibration-free drive',

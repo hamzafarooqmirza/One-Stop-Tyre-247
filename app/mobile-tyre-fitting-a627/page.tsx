@@ -15,7 +15,7 @@ export default function A627Page() {
       introBody="Getting a flat tyre on the A627 can be a stressful experience, especially during peak commuter hours or late at night. One Stop Tyres 24/7 provides a dedicated rapid-response team specifically for the A627 corridor. Our expert technicians are strategically positioned to reach you within 20-30 minutes, ensuring you aren't left waiting on a dangerous roadside. We handle everything from simple punctures to complete blowouts for cars, vans, and 4x4s, using industry-leading equipment and high-quality tyres to get you back on your journey safely."
       included={[
         'Emergency Puncture Repair — on-site repairs following BS AU 159 standards to save you time and money on the A627',
-        'New Tyre Installation — all major brands and sizes, premium to budget, prices from £65',
+        'New Tyre Installation — all major brands and sizes, premium to budget',
         'Jump Starts — heavy-duty jump start services to get your engine running again instantly',
         'Locking Nut Removal — specialist tools to safely remove locking wheel nuts without damaging your alloys',
         'Wheel Balancing — every new tyre precision balanced on-site using mobile balancing units',

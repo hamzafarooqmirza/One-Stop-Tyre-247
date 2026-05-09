@@ -1,61 +1,280 @@
-import ServicePage from '@/components/ServicePage'
+import BrandCarousel from '@/components/BrandCarousel'
+import WhyChooseUs from '@/components/WhyChooseUs'
+import CityFaq from '@/components/CityFaq'
+import ReviewsCarousel from '@/components/ReviewsCarousel'
 
 export const metadata = {
   title: 'M62 Mobile Tyre Fitting | 24/7 Emergency Roadside Assistance | One Stop Tyres 24/7',
-  description:
-    'Stuck on the M62? From Liverpool to Hull, we provide 24/7 emergency tyre repairs and replacements with a 20-30 minute arrival time.',
 }
 
 export default function M62Page() {
   return (
-    <ServicePage
-      title="M62 Mobile Tyre Fitting & Roadside Assistance"
-      serviceName="M62 Mobile Tyre Fitting"
-      heroSubheading="Stuck on the M62? From Liverpool to Hull, we provide 24/7 emergency tyre repairs and replacements with a 20-30 minute arrival time. Don't wait on the hard shoulder — call the experts now."
-      introBody="Crossing the spine of England, the M62 is vital and volatile. We cover every mile, every junction, and every service station across the Trans-Pennine route. Our strategic positioning near major junctions like J18 (Simister Island) and J22 (Rishworth Moor) ensures we reach you before anyone else. From commercial vans crossing the Pennines to standard family cars, we carry a vast range of premium and budget tyres in every van."
-      included={[
-        'Emergency tyre replacement for all vehicle types — cars, vans, and commercial vehicles',
-        'All tyre sizes stocked — premium and budget brands in every van',
-        'Puncture repairs to British Standards',
-        'Full M62 corridor coverage from Liverpool to Hull',
-        'Greater Manchester sections — Eccles, Simister Island, Rochdale (J18–J21)',
-        'Pennine Crossing — high-altitude all-weather assistance through Scammonden Water and Rishworth Moor',
-        'West & East Yorkshire — Huddersfield, Leeds, Ferrybridge, and through to the Humber Bridge',
-        'Service station attendance — Birch Services, Hartshead Moor, Ferrybridge, and Burtonwood',
-      ]}
-      whyChooseUs={[
-        '20-30 minute arrival — strategic positioning near major junctions like J18 and J22',
-        'All tyre sizes in stock — from budget to premium for all vehicle types',
-        'M62 Safety Experts — specifically trained for high-speed roadside recovery and hazardous hard shoulder repairs',
-        '"Lost a tyre near Ferrybridge at 2 AM. One Stop Tyres were there within 40 minutes. Truly a lifesaver." — Dave H., Haulage Driver',
-        '24/7 emergency dispatch — every motorway call-out treated as high-priority',
-      ]}
-      benefits={[
-        'Junction-by-junction coverage across the entire Trans-Pennine route',
-        'All-weather capability for high-altitude Pennine conditions',
-        'Service station fitting — we attend all major M62 services',
-        'Commercial vehicle specialists — large stock of commercial-rated tyres',
-        'Fastest response in the region due to strategic depot positioning',
-      ]}
-      whenYouNeedIt="Whether you've suffered a tyre blowout near Simister Island, a puncture on the Pennine crossing, or a flat near Ferrybridge — our team is ready to respond immediately. If you've managed to limp your vehicle to a service station at Birch, Hartshead Moor, Ferrybridge, or Burtonwood, we can perform a full tyre replacement or puncture repair in the car park while you wait. Our dispatchers treat every M62 motorway call-out as a high-priority emergency."
-      faqs={[
-        {
-          q: 'Do you cover the entire length of the M62?',
-          a: 'Yes, we cover the full M62 from its western end near Liverpool all the way through Greater Manchester, across the Pennines, through West Yorkshire and East Yorkshire to the Humber Bridge area.',
-        },
-        {
-          q: 'Can you attend the M62 service stations?',
-          a: 'Absolutely. We attend Birch Services, Hartshead Moor Services, Ferrybridge Services, and Burtonwood Services. If you can safely reach any of these, we can fit your tyre in the car park.',
-        },
-        {
-          q: 'What is your average response time on the M62?',
-          a: 'Our average arrival time is 20-30 minutes. Our strategic positioning near J18 (Simister Island) and J22 (Rishworth Moor) ensures we can reach most M62 locations quickly.',
-        },
-        {
-          q: 'Do you carry commercial van tyres for the M62?',
-          a: 'Yes, every van in our fleet carries a range of commercial-rated tyres suitable for all popular van makes and models used on the M62 Trans-Pennine route.',
-        },
-      ]}
-    />
+    <div className="bg-[#fcf9f8] text-[#1c1b1b] font-body-md">
+      <main>
+        {/* Hero Section */}
+        <section
+          className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-center text-center px-4"
+          style={{
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp)",
+            backgroundSize: "cover",
+            backgroundPosition: "center"
+          }}
+        >
+          <div className="max-w-4xl mx-auto py-20">
+            <div className="inline-flex items-center gap-2 bg-[#dc2626] text-white px-4 py-2 rounded-full mb-4 animate-pulse">
+              <span className="material-symbols-outlined text-sm" style={{fontVariationSettings: "'FILL' 1"}}>emergency</span>
+              <span className="text-label-bold">24/7 M62 EMERGENCY RESPONSE</span>
+            </div>
+            <h1
+              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
+            >
+              Mobile Tyre Fitting on the{' '}
+              <span className="text-[#b70011]">M62</span>
+            </h1>
+            <p className="font-body-lg text-base sm:text-lg text-white/90 max-w-2xl mx-auto leading-relaxed mb-8">Stuck on the M62? From Liverpool to Hull, we provide 24/7 emergency tyre repairs and replacements with a 20-30 minute arrival time. Don&apos;t wait on the hard shoulder — call the experts now.</p>
+            <div className="flex flex-col sm:flex-row justify-center gap-3 mb-8">
+              <a
+                href="tel:07759708646"
+                className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 transition-all text-base sm:text-lg"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
+              >
+                <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
+                CALL NOW
+              </a>
+              <a
+                href="https://wa.me/447759708646"
+                className="bg-white/10 border border-white/20 text-white font-black px-8 py-4 rounded-xl flex items-center justify-center gap-2.5 hover:bg-white/20 transition-all text-base sm:text-lg"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
+              >
+                <svg className="w-5 h-5 fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
+                WHATSAPP
+              </a>
+            </div>
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-white/70">
+              <div className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-[#b70011] text-[18px]">verified</span>
+                <span className="text-sm font-medium">Fully Insured</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-[#b70011] text-[18px]">payments</span>
+                <span className="text-sm font-medium">Card/Cash Accepted</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        {/* Services Grid */}
+        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-10 sm:mb-16">
+              <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+                What We Do
+              </span>
+              <h2
+                className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight"
+                style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+              >
+                Professional Roadside Assistance on the M62
+              </h2>
+              <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
+                Comprehensive mobile vehicle support available every day of the year across the entire Trans-Pennine M62 corridor.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {[
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp',
+                  title: 'Mobile Tyre Fitting',
+                  desc: 'Emergency replacement at your location within 20-30 minutes.',
+                  badge: 'FAST RESPONSE',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting-airanko-NAQrFhRm9UilkOOWhZBEd5lhxc7eEz.webp',
+                  title: 'Home Tyre Fitting',
+                  desc: 'Convenient tyre replacement on your driveway while you work or relax.',
+                  badge: 'AT YOUR DOOR',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emeregency%20Puncture%20Repair-airanko-K3cI9fjWlcirkZkEwDEvdtRtKQg3B7.webp',
+                  title: 'Emergency Puncture Repair',
+                  desc: 'Professional plug and patch repair to save your tyre when possible.',
+                  badge: 'CERTIFIED REPAIR',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Jumpstart-onestop-airanko-bUQeSwSrfEEeS2vgU2IuyrDFFak87m.webp',
+                  title: 'JumpStart',
+                  desc: 'Fast battery jump-start service to get your vehicle running again without delay.',
+                  badge: '24/7 SERVICE',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TPMS%20Reset-airanko-LEqPbQFsdbmM1ZLc5m0aoAUKGG4haJ.webp',
+                  title: 'TPMS Reset',
+                  desc: 'Tyre pressure monitoring system reset after every tyre change or repair.',
+                  badge: 'ALL VEHICLES',
+                },
+                {
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20Nut%20Removal-airanko-MV4iwDQaMKuuoUnbMrRrQW5QIDJQbV.webp',
+                  title: 'Locking Nut Removal',
+                  desc: 'Specialist damage-free removal of lost or broken locking wheel nuts.',
+                  badge: 'DAMAGE FREE',
+                },
+              ].map((card) => (
+                <div
+                  key={card.title}
+                  className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
+                >
+                  <div className="relative h-44 sm:h-52 overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={card.img}
+                      alt={card.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      width={600}
+                      height={400}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                    <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">
+                      {card.badge}
+                    </span>
+                  </div>
+                  <div className="p-5 sm:p-6">
+                    <h3
+                      className="text-base sm:text-lg font-semibold mb-2 text-[#0f172a]"
+                      style={{ fontFamily: 'var(--font-work-sans)' }}
+                    >
+                      {card.title}
+                    </h3>
+                    <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
+                    <div className="flex items-center justify-end">
+                      <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
+                        arrow_forward
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
+              <div>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
+                <p className="text-slate-400 text-sm sm:text-base">
+                  Speak directly to a technician for an instant quote and arrival time.
+                </p>
+              </div>
+              <a
+                href="tel:07759708646"
+                className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
+              >
+                07759 708 646
+              </a>
+            </div>
+          </div>
+        </section>
+
+
+
+        {/* Why Choose Us */}
+        <WhyChooseUs city="M62" />
+
+
+
+
+        {/* Brand Carousel */}
+        <BrandCarousel />
+
+        {/* Reviews Section */}
+        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-10 sm:mb-14">
+              <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
+                Google Reviews
+              </span>
+              <h2
+                className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-4"
+                style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+              >
+                What Our Customers Say
+              </h2>
+              <div className="inline-flex items-center gap-3 bg-white border border-slate-200 shadow-sm rounded-full px-5 py-2.5">
+                <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" aria-label="Google">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/>
+                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                </svg>
+                <div className="flex text-yellow-400 gap-0.5">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <span key={i} className="material-symbols-outlined text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  ))}
+                </div>
+                <span className="text-sm font-bold text-[#0f172a]">5 / 5</span>
+                <span className="text-xs text-slate-400 font-medium hidden sm:inline">Based on Google Reviews</span>
+              </div>
+            </div>
+
+            <ReviewsCarousel />
+
+            <div className="text-center mt-8">
+              <a
+                href="https://share.google/bejdYHzU10lFRVv4E"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-[#b70011] font-bold text-sm hover:underline"
+              >
+                View all Google reviews
+                <span className="material-symbols-outlined text-[16px]">open_in_new</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <CityFaq
+          city="M62"
+          faqs={[
+            {
+              q: 'Do you cover the entire length of the M62?',
+              a: 'Yes, we cover the full M62 from its western end near Liverpool all the way through Greater Manchester, across the Pennines, through West Yorkshire and East Yorkshire to the Humber Bridge area.',
+            },
+            {
+              q: 'Can you attend the M62 service stations?',
+              a: 'Absolutely. We attend Birch Services, Hartshead Moor Services, Ferrybridge Services, and Burtonwood Services. If you can safely reach any of these, we can fit your tyre in the car park.',
+            },
+            {
+              q: 'What is your average response time on the M62?',
+              a: 'Our average arrival time is 20-30 minutes. Our strategic positioning near J18 (Simister Island) and J22 (Rishworth Moor) ensures we can reach most M62 locations quickly.',
+            },
+            {
+              q: 'Do you carry commercial van tyres for the M62?',
+              a: 'Yes, every van in our fleet carries a range of commercial-rated tyres suitable for all popular van makes and models used on the M62 Trans-Pennine route.',
+            },
+          ]}
+        />
+
+        {/* Final CTA Section */}
+        <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted on the M62 Right Now?</h2>
+            <p className="font-body-lg text-sm sm:text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait on the hard shoulder. Call our dedicated M62 line and get a technician dispatched in minutes.</p>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
+              <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-sm sm:text-base transition-all shadow-xl" href="tel:07759708646">
+                <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>
+                Call Now
+              </a>
+              <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#1c1b1b] hover:bg-slate-800 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-sm sm:text-base transition-all shadow-xl" href="https://wa.me/447759708646">
+                <span className="material-symbols-outlined text-[#25D366] text-xl sm:text-2xl" style={{fontVariationSettings: "'FILL' 1"}}>chat</span>
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   )
 }

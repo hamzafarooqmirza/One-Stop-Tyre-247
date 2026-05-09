@@ -1,14 +1,15 @@
 import BrandCarousel from '@/components/BrandCarousel'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import CityFaq from '@/components/CityFaq'
+import ReviewsCarousel from '@/components/ReviewsCarousel'
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting Bolton | 24/7 Emergency Service | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Bolton | One Stop Tyres 24/7',
 }
 
 export default function BoltonPage() {
   return (
-    <div className="bg-[#fcf9f8] text-[#1c1b1b] font-body-md overflow-x-hidden">
+    <div className="bg-[#fcf9f8] text-[#1c1b1b] font-body-md">
       <main>
         {/* Hero Section */}
         <section
@@ -22,14 +23,14 @@ export default function BoltonPage() {
           <div className="max-w-4xl mx-auto py-20">
             <div className="inline-flex items-center gap-2 bg-[#dc2626] text-white px-4 py-2 rounded-full mb-4 animate-pulse">
               <span className="material-symbols-outlined text-sm" style={{fontVariationSettings: "'FILL' 1"}}>emergency</span>
-              <span className="text-label-bold">20-30 MIN ARRIVAL IN BOLTON</span>
+              <span className="text-label-bold">24/7 BOLTON EMERGENCY RESPONSE</span>
             </div>
             <h1
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              Emergency Mobile Tyre Fitting{' '}
-              <span className="text-[#b70011]">Bolton 24/7</span>
+              Mobile Tyre Fitting in{' '}
+              <span className="text-[#b70011]">Bolton</span>
             </h1>
             <p className="font-body-lg text-base sm:text-lg text-white/90 max-w-2xl mx-auto leading-relaxed mb-8">Stuck with a puncture near the Reebok or on the A666? Our expert technicians provide rapid roadside tyre replacement across Bolton, Farnworth, and Horwich.</p>
             <div className="flex flex-col sm:flex-row justify-center gap-3 mb-8">
@@ -62,6 +63,8 @@ export default function BoltonPage() {
             </div>
           </div>
         </section>
+
+
 
         {/* Services Grid */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
@@ -174,53 +177,64 @@ export default function BoltonPage() {
           </div>
         </section>
 
+
+
         {/* Why Choose Us */}
         <WhyChooseUs city="Bolton" />
 
-        {/* Area Coverage Section */}
-        <section className="py-16 sm:py-20 bg-[#f6f3f2] overflow-hidden">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-              <div className="lg:col-span-5">
-                <h2 className="font-h2 text-h2 mb-6">Full Bolton Coverage Area</h2>
-                <p className="font-body-lg text-body-lg text-[#5c403c] mb-8">We cover the entire Metropolitan Borough of Bolton and surrounding Greater Manchester suburbs.</p>
-                <div className="grid grid-cols-2 gap-x-8 gap-y-3 mb-10">
-                  <span className="flex items-center gap-2 font-label-bold"><span className="w-1.5 h-1.5 rounded-full bg-[#b70011]"></span> Bolton Town Centre</span>
-                  <span className="flex items-center gap-2 font-label-bold"><span className="w-1.5 h-1.5 rounded-full bg-[#b70011]"></span> Farnworth</span>
-                  <span className="flex items-center gap-2 font-label-bold"><span className="w-1.5 h-1.5 rounded-full bg-[#b70011]"></span> Horwich</span>
-                  <span className="flex items-center gap-2 font-label-bold"><span className="w-1.5 h-1.5 rounded-full bg-[#b70011]"></span> Westhoughton</span>
-                  <span className="flex items-center gap-2 font-label-bold"><span className="w-1.5 h-1.5 rounded-full bg-[#b70011]"></span> Little Lever</span>
-                  <span className="flex items-center gap-2 font-label-bold"><span className="w-1.5 h-1.5 rounded-full bg-[#b70011]"></span> Blackrod</span>
-                  <span className="flex items-center gap-2 font-label-bold"><span className="w-1.5 h-1.5 rounded-full bg-[#b70011]"></span> Bromley Cross</span>
-                  <span className="flex items-center gap-2 font-label-bold"><span className="w-1.5 h-1.5 rounded-full bg-[#b70011]"></span> Kearsley</span>
-                </div>
-                <div className="p-6 bg-white rounded-xl border-l-4 border-[#b70011] shadow-sm">
-                  <p className="italic text-[#5c403c]">&quot;Had a blowout on the M61 near the Bolton turnoff. One Stop Tyres were there in 35 minutes and had me back on the road. Professional and efficient.&quot;</p>
-                  <p className="mt-4 font-label-bold">— David R., Horwich</p>
-                </div>
-              </div>
-              <div className="lg:col-span-7 relative">
-                <div className="bg-slate-300 w-full aspect-video rounded-3xl overflow-hidden shadow-2xl">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-fGW5ZX_X7qj5vNHTEPTR-0tCtTtXJrFaJXd4UdJSRKZnDo3EZHn76ZgQniVW47kraGpBbdTaIQyaFxr2XE6UH7eD9nafiJA927yQE4CVLOsfL2wC9cXksgPLUxT9bai9X5u_NtcLTAnJKOEtYsQX-CwnMmSaHZeTKzTwxcLbgpcuj2kFqvgCeTtQj31brvrq4lNHO2SS2780SgBykGRxOX5m4b6THefeNY79hi1rhu7JMxpNuhZUJWHalqAobUe3fLd6V08VHS4"
-                    alt="Aerial map view of Bolton UK highlighting major road networks"
-                  />
-                </div>
-                <div className="absolute -bottom-6 -right-6 bg-[#dc2626] text-white p-6 rounded-2xl shadow-xl hidden sm:block">
-                  <p className="text-3xl font-black">24/7</p>
-                  <p className="text-sm font-bold uppercase tracking-widest">Availability</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
+
 
         {/* Brand Carousel */}
         <BrandCarousel />
 
-        {/* FAQ */}
+        {/* Reviews Section */}
+        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-10 sm:mb-14">
+              <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
+                Google Reviews
+              </span>
+              <h2
+                className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-4"
+                style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+              >
+                What Our Customers Say
+              </h2>
+              <div className="inline-flex items-center gap-3 bg-white border border-slate-200 shadow-sm rounded-full px-5 py-2.5">
+                <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" aria-label="Google">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/>
+                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                </svg>
+                <div className="flex text-yellow-400 gap-0.5">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <span key={i} className="material-symbols-outlined text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  ))}
+                </div>
+                <span className="text-sm font-bold text-[#0f172a]">5 / 5</span>
+                <span className="text-xs text-slate-400 font-medium hidden sm:inline">Based on Google Reviews</span>
+              </div>
+            </div>
+
+            <ReviewsCarousel />
+
+            <div className="text-center mt-8">
+              <a
+                href="https://share.google/bejdYHzU10lFRVv4E"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-[#b70011] font-bold text-sm hover:underline"
+              >
+                View all Google reviews
+                <span className="material-symbols-outlined text-[16px]">open_in_new</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
         <CityFaq
           city="Bolton"
           faqs={[
@@ -243,20 +257,20 @@ export default function BoltonPage() {
           ]}
         />
 
-        {/* CTA Section */}
-        <section className="py-16 sm:py-20">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <div className="bg-slate-900 rounded-2xl sm:rounded-[2rem] p-8 sm:p-12 text-center relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[#dc2626]/10 blur-[100px] rounded-full"></div>
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#3e5e95]/10 blur-[100px] rounded-full"></div>
-              <h2 className="font-h1 text-2xl sm:text-3xl lg:text-4xl text-white mb-6 relative z-10">Stuck with a flat in Bolton?</h2>
-              <p className="text-slate-400 text-lg mb-10 max-w-2xl mx-auto relative z-10">Don&apos;t wait for hours on a recovery truck. Call our Bolton emergency line and we&apos;ll dispatch the nearest fitter immediately.</p>
-              <div className="flex flex-col sm:flex-row justify-center gap-6 relative z-10">
-                <a className="bg-[#dc2626] text-white px-10 py-6 rounded-xl font-call-to-action text-2xl flex items-center justify-center gap-4 hover:scale-105 transition-transform" href="tel:07759708646">
-                  <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>call</span>
-                  07759 708 646
-                </a>
-              </div>
+        {/* Final CTA Section */}
+        <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Bolton Right Now?</h2>
+            <p className="font-body-lg text-sm sm:text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Bolton line and get a technician dispatched in minutes.</p>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
+              <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-sm sm:text-base transition-all shadow-xl" href="tel:07759708646">
+                <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>
+                Call Now
+              </a>
+              <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#1c1b1b] hover:bg-slate-800 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-sm sm:text-base transition-all shadow-xl" href="https://wa.me/447759708646">
+                <span className="material-symbols-outlined text-[#25D366] text-xl sm:text-2xl" style={{fontVariationSettings: "'FILL' 1"}}>chat</span>
+                WhatsApp Us
+              </a>
             </div>
           </div>
         </section>

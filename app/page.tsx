@@ -176,41 +176,48 @@ export default function Home() {
                 title: 'Mobile Tyre Fitting',
                 desc: 'Emergency replacement at your location within 20-30 minutes.',
                 badge: 'FAST RESPONSE',
+                href: '/mobile-tyre-fitting',
               },
               {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp',
                 title: 'Home Tyre Fitting',
                 desc: 'Convenient tyre replacement on your driveway while you work or relax.',
                 badge: 'AT YOUR DOOR',
+                href: '/home-tyre-fitting',
               },
               {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp',
                 title: 'Emergency Puncture Repair',
                 desc: 'Professional plug and patch repair to save your tyre when possible.',
                 badge: 'CERTIFIED REPAIR',
+                href: '/emergency-puncture-repair',
               },
               {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp',
                 title: 'JumpStart',
                 desc: 'Fast battery jump-start service to get your vehicle running again without delay.',
                 badge: '24/7 SERVICE',
+                href: '/jump-start',
               },
               {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp',
                 title: 'TPMS Reset',
                 desc: 'Tyre pressure monitoring system reset after every tyre change or repair.',
                 badge: 'ALL VEHICLES',
+                href: '/tpms-reset',
               },
               {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp',
                 title: 'Locking Nut Removal',
                 desc: 'Specialist damage-free removal of lost or broken locking wheel nuts.',
                 badge: 'DAMAGE FREE',
+                href: '/locking-nut-removal',
               },
             ].map((card) => (
-              <div
+              <a
                 key={card.title}
-                className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
+                href={card.href}
+                className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011] cursor-pointer"
               >
                 <div className="relative h-44 sm:h-52 overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -242,7 +249,7 @@ export default function Home() {
                     </span>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
 

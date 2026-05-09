@@ -523,6 +523,7 @@ export default function Home() {
               { name: 'M602 Motorway', href: '/mobile-tyre-fitting-m602' },
               { name: 'M61 Motorway',  href: '/mobile-tyre-fitting-m61' },
               { name: 'M62 Motorway',  href: '/mobile-tyre-fitting-m62' },
+              { name: 'M56 Motorway',  href: '/mobile-tyre-fitting-m56' },
               { name: 'M66 Motorway',  href: '/mobile-tyre-fitting-m66' },
               { name: 'M67 Motorway',  href: '/mobile-tyre-fitting-m67' },
               { name: 'A627 Road',     href: '/mobile-tyre-fitting-a627' },

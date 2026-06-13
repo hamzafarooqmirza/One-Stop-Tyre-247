@@ -76,7 +76,7 @@ export default function ContactPage() {
                 <div className="space-y-5 sm:space-y-6">
                   {/* Phone */}
                   <div className="flex items-start gap-3 sm:gap-4">
-                    <div className="bg-[#ffdad6] p-2.5 sm:p-3 rounded-lg text-[#FF7A88] shrink-0">
+                    <div className="bg-[#ffdad6] p-2.5 sm:p-3 rounded-lg text-[#b70011] shrink-0">
                       <span
                         className="material-symbols-outlined text-xl sm:text-2xl"
                         style={{ fontVariationSettings: "'FILL' 1" }}
@@ -89,7 +89,7 @@ export default function ContactPage() {
                         Emergency Phone
                       </p>
                       <p
-                        className="text-[#FF7A88] text-lg sm:text-xl lg:text-2xl font-semibold break-all"
+                        className="text-[#b70011] text-lg sm:text-xl lg:text-2xl font-semibold break-all"
                         style={{ fontFamily: 'Work Sans, sans-serif' }}
                       >
                         07759 708 646
@@ -146,8 +146,8 @@ export default function ContactPage() {
                 </div>
 
                 {/* 24/7 note */}
-                <div className="mt-8 sm:mt-12 p-4 sm:p-6 bg-[#f6f3f2] rounded-lg" style={{ borderLeft: '4px solid #FF7A88' }}>
-                  <h3 className="text-[#FF7A88] mb-2 flex items-center gap-2 text-sm font-semibold">
+                <div className="mt-8 sm:mt-12 p-4 sm:p-6 bg-[#f6f3f2] rounded-lg" style={{ borderLeft: '4px solid #b70011' }}>
+                  <h3 className="text-[#b70011] mb-2 flex items-center gap-2 text-sm font-semibold">
                     <span className="material-symbols-outlined text-sm">schedule</span>
                     24/7 EMERGENCY ASSISTANCE
                   </h3>
@@ -314,7 +314,7 @@ export default function ContactPage() {
             >
               Why Contact One Stop Tyres 24/7
             </h2>
-            <div className="h-1 w-24 bg-[#FF7A88] mx-auto rounded-full" />
+            <div className="h-1 w-24 bg-[#b70011] mx-auto rounded-full" />
           </div>
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             {[
@@ -325,10 +325,10 @@ export default function ContactPage() {
             ].map((item) => (
               <div
                 key={item.title}
-                className="bg-white p-6 sm:p-8 rounded-xl border-t-4 border-[#FF7A88]"
+                className="bg-white p-6 sm:p-8 rounded-xl border-t-4 border-[#b70011]"
                 style={{ boxShadow: '0px 4px 20px rgba(0,45,98,0.05)' }}
               >
-                <div className="text-[#FF7A88] mb-3 sm:mb-4">
+                <div className="text-[#b70011] mb-3 sm:mb-4">
                   <span className="material-symbols-outlined text-3xl sm:text-4xl">
                     {item.icon}
                   </span>

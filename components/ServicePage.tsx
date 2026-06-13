@@ -43,7 +43,7 @@ function BulletList({ items }: { items: string[] }) {
       {items.map((item) => (
         <li key={item} className="flex items-start gap-3">
           <span
-            className="material-symbols-outlined text-[#FF7A88] text-[18px] mt-0.5 shrink-0"
+            className="material-symbols-outlined text-[#b70011] text-[18px] mt-0.5 shrink-0"
             style={{ fontVariationSettings: "'FILL' 1" }}
           >
             check_circle
@@ -59,7 +59,7 @@ function SectionHeading({ label, title }: { label?: string; title: string }) {
   return (
     <div className="mb-8">
       {label && (
-        <span className="text-[#FF7A88] font-bold uppercase tracking-widest text-sm mb-2 block">
+        <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
           {label}
         </span>
       )}
@@ -182,7 +182,7 @@ export default function ServicePage({
       <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 sm:mb-16">
-            <span className="text-[#FF7A88] font-bold uppercase tracking-widest text-sm mb-2 block">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
               What We Do
             </span>
             <h2
@@ -236,7 +236,7 @@ export default function ServicePage({
             ].map((card) => (
               <div
                 key={card.title}
-                className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#FF7A88]"
+                className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
               >
                 <div className="relative h-44 sm:h-52 overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -250,7 +250,7 @@ export default function ServicePage({
                     decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                  <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#FF7A88] px-3 py-1 rounded-full">
+                  <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">
                     {card.badge}
                   </span>
                 </div>
@@ -263,7 +263,7 @@ export default function ServicePage({
                   </h3>
                   <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
                   <div className="flex items-center justify-end">
-                    <span className="material-symbols-outlined text-slate-400 group-hover:text-[#FF7A88] group-hover:translate-x-1 transition-all">
+                    <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
                       arrow_forward
                     </span>
                   </div>
@@ -313,7 +313,7 @@ export default function ServicePage({
               ].map((step) => (
                 <li key={step.n} className="flex items-start gap-4">
                   <div
-                    className="w-9 h-9 bg-[#FF7A88] rounded-xl flex items-center justify-center text-white font-black text-sm shrink-0"
+                    className="w-9 h-9 bg-[#b70011] rounded-xl flex items-center justify-center text-white font-black text-sm shrink-0"
                     style={{ fontFamily: 'var(--font-work-sans)' }}
                   >
                     {step.n}
@@ -373,7 +373,7 @@ export default function ServicePage({
       <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10 sm:mb-14">
-            <span className="text-[#FF7A88] font-bold uppercase tracking-widest text-sm mb-2 block">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
               Common Questions
             </span>
             <h2

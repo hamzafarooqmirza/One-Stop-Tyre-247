@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Mobile Tyre Fitting | One Stop Tyres 24/7',
   description:
-    "Professional, fast and reliable mobile tyre fitting available 24/7 nationwide. We bring the garage to you, whether you're at home, work, or stranded on the roadside.",
+    "Professional, fast and reliable mobile tyre fitting available 24/7 across Greater Manchester. We bring the garage to you, whether you're at home, work, or stranded on the roadside.",
 }
 
 const features = [
@@ -72,7 +72,7 @@ const scenarios = [
 const faqs = [
   {
     q: 'How quickly can you arrive?',
-    a: 'Our average response time nationwide is 30 to 60 minutes, depending on your exact location and current traffic conditions.',
+    a: 'Our average response time across Greater Manchester is 30 to 60 minutes, depending on your exact location and current traffic conditions.',
   },
   {
     q: 'What tyres do you stock?',
@@ -80,7 +80,7 @@ const faqs = [
   },
   {
     q: 'Do you cover all of the UK?',
-    a: 'Yes — we provide nationwide coverage across the UK, 24 hours a day, 7 days a week, including bank holidays and weekends.',
+    a: 'Yes — we provide coverage across Greater Manchester, 24 hours a day, 7 days a week, including bank holidays and weekends.',
   },
   {
     q: 'Can you fix a puncture instead of replacing it?',
@@ -98,13 +98,13 @@ export default function MobileTyreFittingPage() {
 
           <div className="z-10 order-2 lg:order-1">
             <span className="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-semibold tracking-wide mb-4">
-              Available Nationwide 24/7
+              Available 24/7 Across Greater Manchester
             </span>
             <h1 className="font-h1 text-2xl sm:text-3xl lg:text-[40px] font-bold text-on-surface mb-4 leading-tight">
               Mobile Tyre Fitting
             </h1>
             <p className="text-base sm:text-lg text-on-surface-variant mb-6 leading-relaxed">
-              Professional, fast and reliable service available 24/7 nationwide. We bring the garage to you, whether you&apos;re at home, work, or stranded on the roadside.
+              Professional, fast and reliable service available 24/7 across Greater Manchester. We bring the garage to you, whether you&apos;re at home, work, or stranded on the roadside.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
@@ -162,7 +162,7 @@ export default function MobileTyreFittingPage() {
                 Reliable Mobile Tyre Fitting Service
               </h2>
               <p className="text-sm sm:text-base text-on-surface-variant mb-3 leading-relaxed">
-                Don&apos;t let a puncture ruin your day. Our nationwide network of expert technicians is equipped with the latest technology to handle any tyre emergency. We stock a comprehensive range of premium, mid-range, and budget tyres for all vehicle makes and models.
+                Don&apos;t let a puncture ruin your day. Our Greater Manchester network of expert technicians is equipped with the latest technology to handle any tyre emergency. We stock a comprehensive range of premium, mid-range, and budget tyres for all vehicle makes and models.
               </p>
               <p className="text-sm sm:text-base text-on-surface-variant mb-6 leading-relaxed">
                 With our 24/7 rapid response, we typically arrive within 30–60 minutes, ensuring you&apos;re back on the road safely and swiftly. Our commitment to excellence means no hidden charges and transparent pricing from the moment you call.

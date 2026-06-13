@@ -70,7 +70,7 @@ export default function M62Page() {
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-10 sm:mb-16">
-              <span className="text-[#FF7A88] font-bold uppercase tracking-widest text-sm mb-2 block">
+              <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
                 What We Do
               </span>
               <h2
@@ -124,7 +124,7 @@ export default function M62Page() {
               ].map((card) => (
                 <div
                   key={card.title}
-                  className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#FF7A88]"
+                  className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
                 >
                   <div className="relative h-44 sm:h-52 overflow-hidden">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -138,7 +138,7 @@ export default function M62Page() {
                       decoding="async"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                    <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#FF7A88] px-3 py-1 rounded-full">
+                    <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">
                       {card.badge}
                     </span>
                   </div>
@@ -151,7 +151,7 @@ export default function M62Page() {
                     </h3>
                     <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
                     <div className="flex items-center justify-end">
-                      <span className="material-symbols-outlined text-slate-400 group-hover:text-[#FF7A88] group-hover:translate-x-1 transition-all">
+                      <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
                         arrow_forward
                       </span>
                     </div>
@@ -192,7 +192,7 @@ export default function M62Page() {
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-10 sm:mb-14">
-              <span className="text-[#FF7A88] font-bold uppercase tracking-widest text-sm mb-3 block">
+              <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
                 Google Reviews
               </span>
               <h2
@@ -225,7 +225,7 @@ export default function M62Page() {
                 href="https://share.google/bejdYHzU10lFRVv4E"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-[#FF7A88] font-bold text-sm hover:underline"
+                className="inline-flex items-center gap-1.5 text-[#b70011] font-bold text-sm hover:underline"
               >
                 View all Google reviews
                 <span className="material-symbols-outlined text-[16px]">open_in_new</span>
@@ -263,7 +263,7 @@ export default function M62Page() {
             <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted on the M62 Right Now?</h2>
             <p className="font-body-lg text-sm sm:text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait on the hard shoulder. Call our dedicated M62 line and get a technician dispatched in minutes.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
-              <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#FF7A88] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-sm sm:text-base transition-all shadow-xl" href="tel:07759708646">
+              <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-sm sm:text-base transition-all shadow-xl" href="tel:07759708646">
                 <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>
                 Call Now
               </a>

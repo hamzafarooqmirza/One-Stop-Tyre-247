@@ -109,8 +109,27 @@ export default function Home() {
               Across Greater Manchester
             </h1>
 
+            {/* Trust benefits */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-2.5 mb-8">
+              {[
+                'Rapid Response: 20 – 30 mins',
+                'Home, Work & Roadside Assistance',
+                'Lowest Price Guaranteed',
+                'All Payment Methods Welcome',
+                'Fully Insured',
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-2 text-white/85">
+                  <span
+                    className="material-symbols-outlined text-green-400 shrink-0 mt-0.5"
+                    style={{ fontSize: '18px', fontVariationSettings: "'FILL' 1" }}
+                  >check_circle</span>
+                  <span className="text-sm font-medium leading-snug">{item}</span>
+                </div>
+              ))}
+            </div>
+
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-3 mb-8">
+            <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href="tel:07759708646"
                 className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 transition-all text-base sm:text-lg"
@@ -134,25 +153,6 @@ export default function Home() {
                 </svg>
                 WHATSAPP
               </a>
-            </div>
-
-            {/* Trust benefits */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-2.5">
-              {[
-                'Rapid Response: 20 – 30 mins',
-                'Home, Work & Roadside Assistance',
-                'Lowest Price Guaranteed',
-                'All Payment Methods Welcome',
-                'Fully Insured',
-              ].map((item) => (
-                <div key={item} className="flex items-start gap-2 text-white/85">
-                  <span
-                    className="material-symbols-outlined text-green-400 shrink-0 mt-0.5"
-                    style={{ fontSize: '18px', fontVariationSettings: "'FILL' 1" }}
-                  >check_circle</span>
-                  <span className="text-sm font-medium leading-snug">{item}</span>
-                </div>
-              ))}
             </div>
 
           </div>

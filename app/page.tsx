@@ -101,18 +101,13 @@ export default function Home() {
             </div>
 
             <h1
-              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance"
+              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-6 leading-[1.1] font-black text-balance"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
               24/7 Emergency{' '}
               <span className="text-[#b70011]">Mobile Tyre Fitting</span>{' '}
               Across Greater Manchester
             </h1>
-
-            <p className="text-base sm:text-lg text-slate-300 mb-8 leading-relaxed">
-              Stranded with a puncture across Greater Manchester? Our professional technicians reach you fast at home,
-              work, or roadside to get you moving safely.
-            </p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3 mb-8">
@@ -145,7 +140,6 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-2.5">
               {[
                 'Rapid Response: 20 – 30 mins',
-                '24/7 Emergency Mobile Tyre Fitting & Puncture Repair',
                 'Home, Work & Roadside Assistance',
                 'Lowest Price Guaranteed',
                 'All Payment Methods Welcome',

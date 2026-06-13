@@ -6,7 +6,7 @@
 /* ─── Brand Token Overrides ─── */
 :root {
   /* Brand colours */
-  --brand-red: #b70011;
+  --brand-red: #FF7A88;
   --brand-red-dark: #93000a;
   --brand-blue: #0f172a;
   --brand-blue-mid: #1e293b;
@@ -34,7 +34,7 @@
   --radius-xl: calc(var(--radius) + 8px);
 
   /* ── HTML design system color tokens ── */
-  --color-primary: #b70011;
+  --color-primary: #FF7A88;
   --color-primary-container: #dc2626;
   --color-primary-fixed: #ffdad6;
   --color-primary-fixed-dim: #ffb4ab;

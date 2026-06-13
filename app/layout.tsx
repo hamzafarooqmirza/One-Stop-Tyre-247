@@ -139,7 +139,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <a
             href="tel:07759708646"
             aria-label="Call us now"
-            className="w-14 h-14 sm:w-16 sm:h-16 bg-[#b70011] hover:bg-red-700 rounded-full shadow-lg hover:shadow-xl flex items-center justify-center transition-all hover:scale-110 active:scale-95"
+            className="w-14 h-14 sm:w-16 sm:h-16 bg-[#FF7A88] hover:bg-red-700 rounded-full shadow-lg hover:shadow-xl flex items-center justify-center transition-all hover:scale-110 active:scale-95"
           >
             <span
               className="material-symbols-outlined text-white text-[28px] sm:text-[32px]"

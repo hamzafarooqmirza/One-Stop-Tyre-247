@@ -30,13 +30,13 @@ export default function StockportPage() {
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
               Mobile Tyre Fitting in{' '}
-              <span className="text-[#b70011]">Stockport</span>
+              <span className="text-[#FF7A88]">Stockport</span>
             </h1>
             <p className="font-body-lg text-base sm:text-lg text-white/90 max-w-2xl mx-auto leading-relaxed mb-8">Rapid 24/7 mobile tyre fitting across the Stockport borough — from the A6 and M60 to Bramhall, Cheadle, and Marple. Our technicians come to you in 20-30 minutes.</p>
             <div className="flex flex-col sm:flex-row justify-center gap-3 mb-8">
               <a
                 href="tel:07759708646"
-                className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 transition-all text-base sm:text-lg"
+                className="bg-[#FF7A88] text-white font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 transition-all text-base sm:text-lg"
                 style={{ fontFamily: 'var(--font-work-sans)' }}
               >
                 <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
@@ -53,11 +53,11 @@ export default function StockportPage() {
             </div>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-white/70">
               <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-[#b70011] text-[18px]">verified</span>
+                <span className="material-symbols-outlined text-[#FF7A88] text-[18px]">verified</span>
                 <span className="text-sm font-medium">Fully Insured</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-[#b70011] text-[18px]">payments</span>
+                <span className="material-symbols-outlined text-[#FF7A88] text-[18px]">payments</span>
                 <span className="text-sm font-medium">Card/Cash Accepted</span>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function StockportPage() {
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-10 sm:mb-16">
-              <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+              <span className="text-[#FF7A88] font-bold uppercase tracking-widest text-sm mb-2 block">
                 What We Do
               </span>
               <h2
@@ -124,7 +124,7 @@ export default function StockportPage() {
               ].map((card) => (
                 <div
                   key={card.title}
-                  className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
+                  className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#FF7A88]"
                 >
                   <div className="relative h-44 sm:h-52 overflow-hidden">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -138,7 +138,7 @@ export default function StockportPage() {
                       decoding="async"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                    <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">
+                    <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#FF7A88] px-3 py-1 rounded-full">
                       {card.badge}
                     </span>
                   </div>
@@ -151,7 +151,7 @@ export default function StockportPage() {
                     </h3>
                     <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
                     <div className="flex items-center justify-end">
-                      <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
+                      <span className="material-symbols-outlined text-slate-400 group-hover:text-[#FF7A88] group-hover:translate-x-1 transition-all">
                         arrow_forward
                       </span>
                     </div>
@@ -168,7 +168,7 @@ export default function StockportPage() {
               </div>
               <a
                 href="tel:07759708646"
-                className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
+                className="bg-[#FF7A88] text-white font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
                 style={{ fontFamily: 'var(--font-work-sans)' }}
               >
                 07759 708 646
@@ -192,7 +192,7 @@ export default function StockportPage() {
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-10 sm:mb-14">
-              <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
+              <span className="text-[#FF7A88] font-bold uppercase tracking-widest text-sm mb-3 block">
                 Google Reviews
               </span>
               <h2
@@ -225,7 +225,7 @@ export default function StockportPage() {
                 href="https://share.google/bejdYHzU10lFRVv4E"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-[#b70011] font-bold text-sm hover:underline"
+                className="inline-flex items-center gap-1.5 text-[#FF7A88] font-bold text-sm hover:underline"
               >
                 View all Google reviews
                 <span className="material-symbols-outlined text-[16px]">open_in_new</span>
@@ -263,7 +263,7 @@ export default function StockportPage() {
             <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Stockport Right Now?</h2>
             <p className="font-body-lg text-sm sm:text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Stockport line and get a technician dispatched in minutes.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
-              <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-sm sm:text-base transition-all shadow-xl" href="tel:07759708646">
+              <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#FF7A88] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-sm sm:text-base transition-all shadow-xl" href="tel:07759708646">
                 <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>
                 Call Now
               </a>

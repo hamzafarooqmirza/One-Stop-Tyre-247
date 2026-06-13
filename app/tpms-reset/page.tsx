@@ -98,7 +98,7 @@ export default function TpmsResetPage() {
 
           <div className="z-10 order-2 lg:order-1">
             <span className="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-semibold tracking-wide mb-4">
-              24/7 Nationwide Response
+              24/7 Greater Manchester Response
             </span>
             <h1 className="font-h1 text-2xl sm:text-3xl lg:text-[40px] font-bold text-on-surface mb-4 leading-tight">
               TPMS Reset

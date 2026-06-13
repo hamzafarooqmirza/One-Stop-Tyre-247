@@ -143,7 +143,7 @@ export default function Header() {
             <a
               href="tel:07759708646"
               aria-label="Call 07759 708 646"
-              className="lg:hidden flex items-center gap-2 bg-[#b70011] hover:bg-red-700 text-white px-3 py-2 rounded-lg font-bold text-sm transition-all active:scale-95 shadow-md shadow-red-200"
+              className="lg:hidden flex items-center gap-2 bg-[#FF7A88] hover:bg-red-700 text-white px-3 py-2 rounded-lg font-bold text-sm transition-all active:scale-95 shadow-md shadow-red-200"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
               <span className="material-symbols-outlined text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>
@@ -190,7 +190,7 @@ export default function Header() {
             {/* Home */}
             <a
               href="/"
-              className={isActive('/') ? 'text-[#b70011] border-b-2 border-[#b70011] pb-0.5' : 'text-slate-700 hover:text-[#b70011] transition-colors'}
+              className={isActive('/') ? 'text-[#FF7A88] border-b-2 border-[#FF7A88] pb-0.5' : 'text-slate-700 hover:text-[#FF7A88] transition-colors'}
             >
               Home
             </a>
@@ -198,7 +198,7 @@ export default function Header() {
             {/* About */}
             <a
               href="/about"
-              className={isActive('/about') ? 'text-[#b70011] border-b-2 border-[#b70011] pb-0.5' : 'text-slate-700 hover:text-[#b70011] transition-colors'}
+              className={isActive('/about') ? 'text-[#FF7A88] border-b-2 border-[#FF7A88] pb-0.5' : 'text-slate-700 hover:text-[#FF7A88] transition-colors'}
             >
               About Us
             </a>
@@ -212,9 +212,9 @@ export default function Header() {
               <button
                 className={`flex items-center gap-1 transition-colors ${
                   isServicesActive || openMenu === 'services'
-                    ? 'text-[#b70011]'
-                    : 'text-slate-700 hover:text-[#b70011]'
-                } ${isServicesActive ? 'border-b-2 border-[#b70011] pb-0.5' : ''}`}
+                    ? 'text-[#FF7A88]'
+                    : 'text-slate-700 hover:text-[#FF7A88]'
+                } ${isServicesActive ? 'border-b-2 border-[#FF7A88] pb-0.5' : ''}`}
                 aria-haspopup="true"
                 aria-expanded={openMenu === 'services'}
               >
@@ -257,20 +257,20 @@ export default function Header() {
                         >
                           <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 mt-0.5 transition-colors ${
                             isActive(link.href)
-                              ? 'bg-[#b70011]/10'
-                              : 'bg-slate-100 group-hover:bg-[#b70011]/10'
+                              ? 'bg-[#FF7A88]/10'
+                              : 'bg-slate-100 group-hover:bg-[#FF7A88]/10'
                           }`}>
                             <span className={`material-symbols-outlined text-[18px] transition-colors ${
                               isActive(link.href)
-                                ? 'text-[#b70011]'
-                                : 'text-slate-500 group-hover:text-[#b70011]'
+                                ? 'text-[#FF7A88]'
+                                : 'text-slate-500 group-hover:text-[#FF7A88]'
                             }`} style={{ fontVariationSettings: "'FILL' 1" }}>
                               {link.icon}
                             </span>
                           </div>
                           <div className="min-w-0">
                             <p className={`font-semibold text-sm leading-snug transition-colors ${
-                              isActive(link.href) ? 'text-[#b70011]' : 'text-slate-800 group-hover:text-[#b70011]'
+                              isActive(link.href) ? 'text-[#FF7A88]' : 'text-slate-800 group-hover:text-[#FF7A88]'
                             }`}>
                               {link.label}
                             </p>
@@ -284,7 +284,7 @@ export default function Header() {
                   {/* Footer bar */}
                   <div className="flex items-center justify-between gap-4 px-5 py-3 bg-slate-50 border-t border-slate-100">
                     <div className="flex items-center gap-2 min-w-0">
-                      <span className="material-symbols-outlined text-[18px] text-[#b70011] shrink-0" style={{ fontVariationSettings: "'FILL' 1" }}>
+                      <span className="material-symbols-outlined text-[18px] text-[#FF7A88] shrink-0" style={{ fontVariationSettings: "'FILL' 1" }}>
                         bolt
                       </span>
                       <p className="text-[12px] text-slate-600 leading-tight">
@@ -293,7 +293,7 @@ export default function Header() {
                     </div>
                     <a
                       href="tel:07759708646"
-                      className="flex items-center gap-1.5 bg-[#b70011] hover:bg-red-700 text-white font-bold text-[13px] px-3.5 py-2 rounded-lg transition-all active:scale-95 whitespace-nowrap shrink-0"
+                      className="flex items-center gap-1.5 bg-[#FF7A88] hover:bg-red-700 text-white font-bold text-[13px] px-3.5 py-2 rounded-lg transition-all active:scale-95 whitespace-nowrap shrink-0"
                     >
                       <span className="material-symbols-outlined text-[15px]" style={{ fontVariationSettings: "'FILL' 1" }}>
                         phone_in_talk
@@ -314,9 +314,9 @@ export default function Header() {
               <button
                 className={`flex items-center gap-1 transition-colors ${
                   isAreasActive || openMenu === 'areas'
-                    ? 'text-[#b70011]'
-                    : 'text-slate-700 hover:text-[#b70011]'
-                } ${isAreasActive ? 'border-b-2 border-[#b70011] pb-0.5' : ''}`}
+                    ? 'text-[#FF7A88]'
+                    : 'text-slate-700 hover:text-[#FF7A88]'
+                } ${isAreasActive ? 'border-b-2 border-[#FF7A88] pb-0.5' : ''}`}
                 aria-haspopup="true"
                 aria-expanded={openMenu === 'areas'}
               >
@@ -354,12 +354,12 @@ export default function Header() {
                           href={link.href}
                           className={`group flex items-center gap-2.5 px-3 py-2.5 rounded-xl transition-all ${
                             isActive(link.href)
-                              ? 'bg-red-50 text-[#b70011]'
-                              : 'hover:bg-slate-50 text-slate-700 hover:text-[#b70011]'
+                              ? 'bg-red-50 text-[#FF7A88]'
+                              : 'hover:bg-slate-50 text-slate-700 hover:text-[#FF7A88]'
                           }`}
                         >
                           <span className={`material-symbols-outlined text-[15px] shrink-0 transition-colors ${
-                            isActive(link.href) ? 'text-[#b70011]' : 'text-slate-400 group-hover:text-[#b70011]'
+                            isActive(link.href) ? 'text-[#FF7A88]' : 'text-slate-400 group-hover:text-[#FF7A88]'
                           }`} style={{ fontVariationSettings: "'FILL' 1" }}>
                             location_on
                           </span>
@@ -382,8 +382,8 @@ export default function Header() {
                           href={link.href}
                           className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-bold transition-all border ${
                             isActive(link.href)
-                              ? 'bg-[#b70011] border-[#b70011] text-white'
-                              : 'border-slate-200 text-slate-600 hover:border-[#b70011] hover:text-[#b70011] hover:bg-red-50'
+                              ? 'bg-[#FF7A88] border-[#FF7A88] text-white'
+                              : 'border-slate-200 text-slate-600 hover:border-[#FF7A88] hover:text-[#FF7A88] hover:bg-red-50'
                           }`}
                         >
                           <span className="material-symbols-outlined text-[13px]" style={{ fontVariationSettings: "'FILL' 1" }}>
@@ -398,7 +398,7 @@ export default function Header() {
                   {/* Footer bar */}
                   <div className="flex items-center justify-between gap-4 px-5 py-3 bg-slate-50 border-t border-slate-100">
                     <div className="flex items-center gap-2 min-w-0">
-                      <span className="material-symbols-outlined text-[18px] text-[#b70011] shrink-0" style={{ fontVariationSettings: "'FILL' 1" }}>
+                      <span className="material-symbols-outlined text-[18px] text-[#FF7A88] shrink-0" style={{ fontVariationSettings: "'FILL' 1" }}>
                         location_on
                       </span>
                       <p className="text-[12px] text-slate-600 leading-tight">
@@ -407,7 +407,7 @@ export default function Header() {
                     </div>
                     <a
                       href="/service-area"
-                      className="flex items-center gap-1.5 bg-[#b70011] hover:bg-red-700 text-white font-bold text-[13px] px-3.5 py-2 rounded-lg transition-all active:scale-95 whitespace-nowrap shrink-0"
+                      className="flex items-center gap-1.5 bg-[#FF7A88] hover:bg-red-700 text-white font-bold text-[13px] px-3.5 py-2 rounded-lg transition-all active:scale-95 whitespace-nowrap shrink-0"
                     >
                       <span className="material-symbols-outlined text-[15px]" style={{ fontVariationSettings: "'FILL' 1" }}>
                         map
@@ -422,7 +422,7 @@ export default function Header() {
             {/* Contact */}
             <a
               href="/contact"
-              className={isActive('/contact') ? 'text-[#b70011] border-b-2 border-[#b70011] pb-0.5' : 'text-slate-700 hover:text-[#b70011] transition-colors'}
+              className={isActive('/contact') ? 'text-[#FF7A88] border-b-2 border-[#FF7A88] pb-0.5' : 'text-slate-700 hover:text-[#FF7A88] transition-colors'}
             >
               Contact
             </a>
@@ -433,7 +433,7 @@ export default function Header() {
             <a
               href="tel:07759708646"
               aria-label="Call 07759 708 646"
-              className="hidden lg:flex items-center gap-2 bg-[#b70011] hover:bg-red-700 text-white px-4 py-2 rounded-lg font-bold text-sm transition-all active:scale-95 shadow-md shadow-red-200"
+              className="hidden lg:flex items-center gap-2 bg-[#FF7A88] hover:bg-red-700 text-white px-4 py-2 rounded-lg font-bold text-sm transition-all active:scale-95 shadow-md shadow-red-200"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
               <span className="material-symbols-outlined text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>
@@ -490,7 +490,7 @@ export default function Header() {
             </div>
             <a
               href="tel:07759708646"
-              className="flex items-center gap-3 bg-[#b70011] hover:bg-red-700 transition-colors rounded-xl px-4 py-3 active:scale-[0.98]"
+              className="flex items-center gap-3 bg-[#FF7A88] hover:bg-red-700 transition-colors rounded-xl px-4 py-3 active:scale-[0.98]"
             >
               <div className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
                 <span className="material-symbols-outlined text-white text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>
@@ -514,25 +514,25 @@ export default function Header() {
             <a
               href="/"
               onClick={() => setMobileOpen(false)}
-              className={`group flex items-center gap-4 px-5 py-3.5 mx-2 rounded-xl mb-0.5 transition-all ${isActive('/') ? 'bg-red-50 text-[#b70011]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#b70011]'}`}
+              className={`group flex items-center gap-4 px-5 py-3.5 mx-2 rounded-xl mb-0.5 transition-all ${isActive('/') ? 'bg-red-50 text-[#FF7A88]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#FF7A88]'}`}
             >
-              <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isActive('/') ? 'bg-[#b70011]/10' : 'bg-slate-100 group-hover:bg-[#b70011]/10'}`}>
-                <span className={`material-symbols-outlined text-[18px] transition-colors ${isActive('/') ? 'text-[#b70011]' : 'text-slate-500 group-hover:text-[#b70011]'}`}>home</span>
+              <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isActive('/') ? 'bg-[#FF7A88]/10' : 'bg-slate-100 group-hover:bg-[#FF7A88]/10'}`}>
+                <span className={`material-symbols-outlined text-[18px] transition-colors ${isActive('/') ? 'text-[#FF7A88]' : 'text-slate-500 group-hover:text-[#FF7A88]'}`}>home</span>
               </div>
               <span className="font-semibold text-sm flex-1">Home</span>
-              {isActive('/') ? <span className="w-1.5 h-1.5 rounded-full bg-[#b70011] shrink-0" /> : <span className="material-symbols-outlined text-[16px] text-slate-300 group-hover:text-[#b70011]/40 transition-colors">chevron_right</span>}
+              {isActive('/') ? <span className="w-1.5 h-1.5 rounded-full bg-[#FF7A88] shrink-0" /> : <span className="material-symbols-outlined text-[16px] text-slate-300 group-hover:text-[#FF7A88]/40 transition-colors">chevron_right</span>}
             </a>
 
             <a
               href="/about"
               onClick={() => setMobileOpen(false)}
-              className={`group flex items-center gap-4 px-5 py-3.5 mx-2 rounded-xl mb-0.5 transition-all ${isActive('/about') ? 'bg-red-50 text-[#b70011]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#b70011]'}`}
+              className={`group flex items-center gap-4 px-5 py-3.5 mx-2 rounded-xl mb-0.5 transition-all ${isActive('/about') ? 'bg-red-50 text-[#FF7A88]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#FF7A88]'}`}
             >
-              <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isActive('/about') ? 'bg-[#b70011]/10' : 'bg-slate-100 group-hover:bg-[#b70011]/10'}`}>
-                <span className={`material-symbols-outlined text-[18px] transition-colors ${isActive('/about') ? 'text-[#b70011]' : 'text-slate-500 group-hover:text-[#b70011]'}`}>info</span>
+              <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isActive('/about') ? 'bg-[#FF7A88]/10' : 'bg-slate-100 group-hover:bg-[#FF7A88]/10'}`}>
+                <span className={`material-symbols-outlined text-[18px] transition-colors ${isActive('/about') ? 'text-[#FF7A88]' : 'text-slate-500 group-hover:text-[#FF7A88]'}`}>info</span>
               </div>
               <span className="font-semibold text-sm flex-1">About Us</span>
-              {isActive('/about') ? <span className="w-1.5 h-1.5 rounded-full bg-[#b70011] shrink-0" /> : <span className="material-symbols-outlined text-[16px] text-slate-300 group-hover:text-[#b70011]/40 transition-colors">chevron_right</span>}
+              {isActive('/about') ? <span className="w-1.5 h-1.5 rounded-full bg-[#FF7A88] shrink-0" /> : <span className="material-symbols-outlined text-[16px] text-slate-300 group-hover:text-[#FF7A88]/40 transition-colors">chevron_right</span>}
             </a>
 
             {/* ── Services Accordion ─────────────────────────────────────── */}
@@ -540,14 +540,14 @@ export default function Header() {
               <button
                 onClick={() => setServicesOpen((v) => !v)}
                 className={`w-full flex items-center gap-4 px-5 py-3.5 rounded-xl transition-all ${
-                  isServicesActive ? 'bg-red-50 text-[#b70011]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#b70011]'
+                  isServicesActive ? 'bg-red-50 text-[#FF7A88]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#FF7A88]'
                 }`}
               >
-                <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isServicesActive ? 'bg-[#b70011]/10' : 'bg-slate-100'}`}>
-                  <span className={`material-symbols-outlined text-[18px] transition-colors ${isServicesActive ? 'text-[#b70011]' : 'text-slate-500'}`}>build</span>
+                <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isServicesActive ? 'bg-[#FF7A88]/10' : 'bg-slate-100'}`}>
+                  <span className={`material-symbols-outlined text-[18px] transition-colors ${isServicesActive ? 'text-[#FF7A88]' : 'text-slate-500'}`}>build</span>
                 </div>
                 <span className="font-semibold text-sm flex-1 text-left">Services</span>
-                <span className={`material-symbols-outlined text-[18px] transition-transform duration-200 ${servicesOpen ? 'rotate-180 text-[#b70011]' : 'text-slate-400'}`}>
+                <span className={`material-symbols-outlined text-[18px] transition-transform duration-200 ${servicesOpen ? 'rotate-180 text-[#FF7A88]' : 'text-slate-400'}`}>
                   expand_more
                 </span>
               </button>
@@ -558,7 +558,7 @@ export default function Header() {
                   <a
                     href="/services"
                     onClick={() => setMobileOpen(false)}
-                    className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-slate-400 hover:text-[#b70011] transition-colors mb-1"
+                    className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-slate-400 hover:text-[#FF7A88] transition-colors mb-1"
                   >
                     <span className="material-symbols-outlined text-[14px]">grid_view</span>
                     All Services
@@ -569,16 +569,16 @@ export default function Header() {
                       href={link.href}
                       onClick={() => setMobileOpen(false)}
                       className={`group flex items-center gap-3 px-3 py-2.5 rounded-xl mb-0.5 transition-all ${
-                        isActive(link.href) ? 'bg-red-50 text-[#b70011]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#b70011]'
+                        isActive(link.href) ? 'bg-red-50 text-[#FF7A88]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#FF7A88]'
                       }`}
                     >
-                      <div className={`w-7 h-7 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isActive(link.href) ? 'bg-[#b70011]/10' : 'bg-slate-100 group-hover:bg-[#b70011]/10'}`}>
-                        <span className={`material-symbols-outlined text-[15px] transition-colors ${isActive(link.href) ? 'text-[#b70011]' : 'text-slate-500 group-hover:text-[#b70011]'}`} style={{ fontVariationSettings: "'FILL' 1" }}>
+                      <div className={`w-7 h-7 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isActive(link.href) ? 'bg-[#FF7A88]/10' : 'bg-slate-100 group-hover:bg-[#FF7A88]/10'}`}>
+                        <span className={`material-symbols-outlined text-[15px] transition-colors ${isActive(link.href) ? 'text-[#FF7A88]' : 'text-slate-500 group-hover:text-[#FF7A88]'}`} style={{ fontVariationSettings: "'FILL' 1" }}>
                           {link.icon}
                         </span>
                       </div>
                       <span className="font-semibold text-sm">{link.label}</span>
-                      {isActive(link.href) && <span className="ml-auto w-1.5 h-1.5 rounded-full bg-[#b70011] shrink-0" />}
+                      {isActive(link.href) && <span className="ml-auto w-1.5 h-1.5 rounded-full bg-[#FF7A88] shrink-0" />}
                     </a>
                   ))}
                 </div>
@@ -590,14 +590,14 @@ export default function Header() {
               <button
                 onClick={() => setAreasOpen((v) => !v)}
                 className={`w-full flex items-center gap-4 px-5 py-3.5 rounded-xl transition-all ${
-                  isAreasActive ? 'bg-red-50 text-[#b70011]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#b70011]'
+                  isAreasActive ? 'bg-red-50 text-[#FF7A88]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#FF7A88]'
                 }`}
               >
-                <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isAreasActive ? 'bg-[#b70011]/10' : 'bg-slate-100'}`}>
-                  <span className={`material-symbols-outlined text-[18px] transition-colors ${isAreasActive ? 'text-[#b70011]' : 'text-slate-500'}`}>map</span>
+                <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isAreasActive ? 'bg-[#FF7A88]/10' : 'bg-slate-100'}`}>
+                  <span className={`material-symbols-outlined text-[18px] transition-colors ${isAreasActive ? 'text-[#FF7A88]' : 'text-slate-500'}`}>map</span>
                 </div>
                 <span className="font-semibold text-sm flex-1 text-left">Service Area</span>
-                <span className={`material-symbols-outlined text-[18px] transition-transform duration-200 ${areasOpen ? 'rotate-180 text-[#b70011]' : 'text-slate-400'}`}>
+                <span className={`material-symbols-outlined text-[18px] transition-transform duration-200 ${areasOpen ? 'rotate-180 text-[#FF7A88]' : 'text-slate-400'}`}>
                   expand_more
                 </span>
               </button>
@@ -607,7 +607,7 @@ export default function Header() {
                   <a
                     href="/service-area"
                     onClick={() => setMobileOpen(false)}
-                    className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-slate-400 hover:text-[#b70011] transition-colors mb-1"
+                    className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-slate-400 hover:text-[#FF7A88] transition-colors mb-1"
                   >
                     <span className="material-symbols-outlined text-[14px]">map</span>
                     Full Coverage Map
@@ -622,14 +622,14 @@ export default function Header() {
                       href={link.href}
                       onClick={() => setMobileOpen(false)}
                       className={`group flex items-center gap-3 px-3 py-2.5 rounded-xl mb-0.5 transition-all ${
-                        isActive(link.href) ? 'bg-red-50 text-[#b70011]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#b70011]'
+                        isActive(link.href) ? 'bg-red-50 text-[#FF7A88]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#FF7A88]'
                       }`}
                     >
-                      <span className={`material-symbols-outlined text-[15px] shrink-0 transition-colors ${isActive(link.href) ? 'text-[#b70011]' : 'text-slate-400 group-hover:text-[#b70011]'}`} style={{ fontVariationSettings: "'FILL' 1" }}>
+                      <span className={`material-symbols-outlined text-[15px] shrink-0 transition-colors ${isActive(link.href) ? 'text-[#FF7A88]' : 'text-slate-400 group-hover:text-[#FF7A88]'}`} style={{ fontVariationSettings: "'FILL' 1" }}>
                         location_on
                       </span>
                       <span className="font-semibold text-sm">{link.label}</span>
-                      {isActive(link.href) && <span className="ml-auto w-1.5 h-1.5 rounded-full bg-[#b70011] shrink-0" />}
+                      {isActive(link.href) && <span className="ml-auto w-1.5 h-1.5 rounded-full bg-[#FF7A88] shrink-0" />}
                     </a>
                   ))}
 
@@ -644,8 +644,8 @@ export default function Header() {
                         onClick={() => setMobileOpen(false)}
                         className={`flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-bold transition-all border ${
                           isActive(link.href)
-                            ? 'bg-[#b70011] border-[#b70011] text-white'
-                            : 'border-slate-200 text-slate-600 hover:border-[#b70011] hover:text-[#b70011]'
+                            ? 'bg-[#FF7A88] border-[#FF7A88] text-white'
+                            : 'border-slate-200 text-slate-600 hover:border-[#FF7A88] hover:text-[#FF7A88]'
                         }`}
                       >
                         <span className="material-symbols-outlined text-[12px]" style={{ fontVariationSettings: "'FILL' 1" }}>route</span>
@@ -661,13 +661,13 @@ export default function Header() {
             <a
               href="/contact"
               onClick={() => setMobileOpen(false)}
-              className={`group flex items-center gap-4 px-5 py-3.5 mx-2 rounded-xl mb-0.5 transition-all ${isActive('/contact') ? 'bg-red-50 text-[#b70011]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#b70011]'}`}
+              className={`group flex items-center gap-4 px-5 py-3.5 mx-2 rounded-xl mb-0.5 transition-all ${isActive('/contact') ? 'bg-red-50 text-[#FF7A88]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#FF7A88]'}`}
             >
-              <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isActive('/contact') ? 'bg-[#b70011]/10' : 'bg-slate-100 group-hover:bg-[#b70011]/10'}`}>
-                <span className={`material-symbols-outlined text-[18px] transition-colors ${isActive('/contact') ? 'text-[#b70011]' : 'text-slate-500 group-hover:text-[#b70011]'}`}>contact_support</span>
+              <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isActive('/contact') ? 'bg-[#FF7A88]/10' : 'bg-slate-100 group-hover:bg-[#FF7A88]/10'}`}>
+                <span className={`material-symbols-outlined text-[18px] transition-colors ${isActive('/contact') ? 'text-[#FF7A88]' : 'text-slate-500 group-hover:text-[#FF7A88]'}`}>contact_support</span>
               </div>
               <span className="font-semibold text-sm flex-1">Contact</span>
-              {isActive('/contact') ? <span className="w-1.5 h-1.5 rounded-full bg-[#b70011] shrink-0" /> : <span className="material-symbols-outlined text-[16px] text-slate-300 group-hover:text-[#b70011]/40 transition-colors">chevron_right</span>}
+              {isActive('/contact') ? <span className="w-1.5 h-1.5 rounded-full bg-[#FF7A88] shrink-0" /> : <span className="material-symbols-outlined text-[16px] text-slate-300 group-hover:text-[#FF7A88]/40 transition-colors">chevron_right</span>}
             </a>
           </nav>
 
@@ -679,7 +679,7 @@ export default function Header() {
               </div>
               <div className="min-w-0">
                 <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">Email</p>
-                <p className="text-xs font-medium text-slate-700 truncate group-hover:text-[#b70011] transition-colors">
+                <p className="text-xs font-medium text-slate-700 truncate group-hover:text-[#FF7A88] transition-colors">
                   info@onestoptyres247.co.uk
                 </p>
               </div>

@@ -80,7 +80,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 w-full lg:w-1/2 flex items-center px-5 sm:px-8 pt-20 pb-10 sm:py-20 lg:py-28">
+        <div className="relative z-10 w-full lg:w-1/2 flex items-center px-5 sm:px-8 pt-12 pb-10 sm:py-16 lg:py-20">
           <div className="w-full max-w-lg mx-auto lg:ml-auto lg:mr-10">
 
             {/* Google Rating Badge */}

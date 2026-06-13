@@ -46,7 +46,7 @@ export default function WhyChooseUs({ city }: { city: string }) {
 
         {/* Content */}
         <div className="order-1 lg:order-2">
-          <span className="text-[#FF7A88] font-bold uppercase tracking-widest text-xs sm:text-sm mb-2 sm:mb-3 block">
+          <span className="text-[#b70011] font-bold uppercase tracking-widest text-xs sm:text-sm mb-2 sm:mb-3 block">
             The Best Choice
           </span>
           <h2

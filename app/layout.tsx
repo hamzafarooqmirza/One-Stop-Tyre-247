@@ -75,7 +75,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://maps.google.com" />
-        {/* Google Tag Manager */}
+        {/* Google Tag Manager — container 1 */}
         <Script
           id="gtm-head"
           strategy="beforeInteractive"
@@ -87,12 +87,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-MP4JFM2K');`,
           }}
         />
+        {/* Google Tag Manager — container 2 */}
+        <Script
+          id="gtm-head-2"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NXMX7FVM');`,
+          }}
+        />
       </head>
       <body className="antialiased overflow-x-hidden">
-        {/* Google Tag Manager (noscript) */}
+        {/* Google Tag Manager noscript — container 1 */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-MP4JFM2K"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+        {/* Google Tag Manager noscript — container 2 */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NXMX7FVM"
             height="0"
             width="0"
             style={{ display: 'none', visibility: 'hidden' }}

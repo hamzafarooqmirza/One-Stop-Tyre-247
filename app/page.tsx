@@ -26,8 +26,8 @@ function FeatureItem({
   desc: string
 }) {
   return (
-    <li className="flex items-center gap-4 bg-slate-50 p-4 rounded-xl border-l-4 border-[#b70011]">
-      <span className="material-symbols-outlined text-[#b70011] bg-[#b70011]/10 p-2 rounded-lg font-bold">
+    <li className="flex items-center gap-4 bg-slate-50 p-4 rounded-xl border-l-4 border-[#FF7A88]">
+      <span className="material-symbols-outlined text-[#FF7A88] bg-[#FF7A88]/10 p-2 rounded-lg font-bold">
         {icon}
       </span>
       <div>
@@ -44,7 +44,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
     <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
       <button className="w-full flex justify-between items-center text-left font-bold text-lg text-[#0f172a] group">
         {q}
-        <span className="material-symbols-outlined group-hover:text-[#b70011] transition-colors">
+        <span className="material-symbols-outlined group-hover:text-[#FF7A88] transition-colors">
           expand_more
         </span>
       </button>
@@ -105,7 +105,7 @@ export default function Home() {
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
               24/7 Emergency{' '}
-              <span className="text-[#b70011]">Mobile Tyre Fitting</span>{' '}
+              <span className="text-[#FF7A88]">Mobile Tyre Fitting</span>{' '}
               Across Greater Manchester
             </h1>
 
@@ -132,7 +132,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href="tel:07759708646"
-                className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 transition-all text-base sm:text-lg"
+                className="bg-[#FF7A88] text-white font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 transition-all text-base sm:text-lg"
                 style={{ fontFamily: 'var(--font-work-sans)' }}
               >
                 <span
@@ -164,7 +164,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-10 sm:mb-16">
-            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+            <span className="text-[#FF7A88] font-bold uppercase tracking-widest text-sm mb-2 block">
               What We Do
             </span>
             <h2
@@ -227,7 +227,7 @@ export default function Home() {
               <a
                 key={card.title}
                 href={card.href}
-                className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011] cursor-pointer"
+                className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#FF7A88] cursor-pointer"
               >
                 <div className="relative h-44 sm:h-52 overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -241,7 +241,7 @@ export default function Home() {
                     decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                  <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">
+                  <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#FF7A88] px-3 py-1 rounded-full">
                     {card.badge}
                   </span>
                 </div>
@@ -254,7 +254,7 @@ export default function Home() {
                   </h3>
                   <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
                   <div className="flex items-center justify-end">
-                    <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
+                    <span className="material-symbols-outlined text-slate-400 group-hover:text-[#FF7A88] group-hover:translate-x-1 transition-all">
                       arrow_forward
                     </span>
                   </div>
@@ -273,7 +273,7 @@ export default function Home() {
             </div>
             <a
               href="tel:07759708646"
-              className="bg-[#b70011] text-white font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
+              className="bg-[#FF7A88] text-white font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
               07759 708 646
@@ -311,7 +311,7 @@ export default function Home() {
 
           {/* Content col */}
           <div className="w-full lg:w-1/2">
-            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
+            <span className="text-[#FF7A88] font-bold uppercase tracking-widest text-sm mb-3 block">
               The Best Choice
             </span>
             <h2
@@ -371,7 +371,7 @@ export default function Home() {
             ].map((step, idx) => (
               <div key={step.icon} className="relative">
                 <div
-                  className={`w-14 h-14 sm:w-20 sm:h-20 bg-[#b70011] rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-8 shadow-xl ${step.rot}`}
+                  className={`w-14 h-14 sm:w-20 sm:h-20 bg-[#FF7A88] rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-8 shadow-xl ${step.rot}`}
                 >
                   <span
                     className="material-symbols-outlined text-white text-[28px] sm:text-[36px]"
@@ -386,7 +386,7 @@ export default function Home() {
                 </h3>
                 <p className="text-slate-400 text-xs sm:text-sm">{step.desc}</p>
                 {idx < 3 && (
-                  <span className="hidden md:block absolute top-10 -right-6 text-[#b70011] material-symbols-outlined text-3xl">
+                  <span className="hidden md:block absolute top-10 -right-6 text-[#FF7A88] material-symbols-outlined text-3xl">
                     trending_flat
                   </span>
                 )}
@@ -405,7 +405,7 @@ export default function Home() {
 
           {/* Section header */}
           <div className="text-center mb-10 sm:mb-14">
-            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
+            <span className="text-[#FF7A88] font-bold uppercase tracking-widest text-sm mb-3 block">
               Google Reviews
             </span>
             <h2
@@ -441,7 +441,7 @@ export default function Home() {
               href="https://share.google/bejdYHzU10lFRVv4E"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-[#b70011] font-bold text-sm hover:underline"
+              className="inline-flex items-center gap-1.5 text-[#FF7A88] font-bold text-sm hover:underline"
             >
               View all Google reviews
               <span className="material-symbols-outlined text-[16px]">open_in_new</span>
@@ -469,7 +469,7 @@ export default function Home() {
             <div className="space-y-4 sm:space-y-6">
               <div className="flex items-start gap-3 sm:gap-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-slate-100 rounded-full flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-[#b70011]">location_on</span>
+                  <span className="material-symbols-outlined text-[#FF7A88]">location_on</span>
                 </div>
                 <div>
                   <p className="font-bold text-[#0f172a] text-sm sm:text-base">Service Area</p>
@@ -480,7 +480,7 @@ export default function Home() {
               </div>
               <div className="flex items-start gap-3 sm:gap-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-slate-100 rounded-full flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-[#b70011]">schedule</span>
+                  <span className="material-symbols-outlined text-[#FF7A88]">schedule</span>
                 </div>
                 <div>
                   <p className="font-bold text-[#0f172a] text-sm sm:text-base">Hours</p>
@@ -517,7 +517,7 @@ export default function Home() {
 
         {/* Right — locations */}
         <div className="w-full lg:w-1/2 bg-[#0f172a] px-6 sm:px-10 py-10 sm:py-14 flex flex-col justify-center">
-          <span className="text-[#b70011] font-bold uppercase tracking-widest text-xs mb-3 block">
+          <span className="text-[#FF7A88] font-bold uppercase tracking-widest text-xs mb-3 block">
             Our Service Areas
           </span>
           <h2
@@ -556,7 +556,7 @@ export default function Home() {
                 className="flex items-center gap-2 text-slate-300 hover:text-white text-sm font-medium py-1.5 group transition-colors"
               >
                 <span
-                  className="material-symbols-outlined text-[#b70011] shrink-0 group-hover:scale-110 transition-transform"
+                  className="material-symbols-outlined text-[#FF7A88] shrink-0 group-hover:scale-110 transition-transform"
                   style={{ fontSize: '14px' }}
                 >
                   location_on
@@ -568,7 +568,7 @@ export default function Home() {
 
           <a
             href="/service-area"
-            className="mt-8 self-start inline-flex items-center gap-2 bg-[#b70011] text-white text-sm font-bold px-5 py-3 rounded-xl hover:bg-red-700 transition-colors"
+            className="mt-8 self-start inline-flex items-center gap-2 bg-[#FF7A88] text-white text-sm font-bold px-5 py-3 rounded-xl hover:bg-red-700 transition-colors"
           >
             <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>map</span>
             View Full Service Area
@@ -580,7 +580,7 @@ export default function Home() {
       <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10 sm:mb-16">
-            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+            <span className="text-[#FF7A88] font-bold uppercase tracking-widest text-sm mb-2 block">
               Common Questions
             </span>
             <h2

@@ -70,7 +70,7 @@ export default function AboutPage() {
             <div className="space-y-8 sm:space-y-10">
               <div className="space-y-4">
                 <h2
-                  className="uppercase text-[#b70011] text-2xl sm:text-3xl lg:text-[32px] leading-tight font-bold"
+                  className="uppercase text-[#FF7A88] text-2xl sm:text-3xl lg:text-[32px] leading-tight font-bold"
                   style={{
                     fontFamily: 'Work Sans, sans-serif',
                     letterSpacing: '-0.01em',
@@ -92,7 +92,7 @@ export default function AboutPage() {
               {/* Mission box */}
               <div
                 className="bg-[#f0edec] p-6 sm:p-10 rounded-xl shadow-sm"
-                style={{ borderLeft: '8px solid #b70011' }}
+                style={{ borderLeft: '8px solid #FF7A88' }}
               >
                 <h2
                   className="mb-2 text-[#3e5e95] text-2xl sm:text-3xl lg:text-[32px] leading-tight font-bold"
@@ -117,7 +117,7 @@ export default function AboutPage() {
                 alt="Mobile service technician"
                 className="rounded-xl shadow-xl w-full object-cover h-[300px] sm:h-[400px] lg:h-[500px]"
               />
-              <div className="absolute bottom-0 left-2 sm:-bottom-6 sm:-left-6 bg-[#b70011] text-white p-4 sm:p-6 rounded-lg shadow-lg">
+              <div className="absolute bottom-0 left-2 sm:-bottom-6 sm:-left-6 bg-[#FF7A88] text-white p-4 sm:p-6 rounded-lg shadow-lg">
                 <span className="block text-3xl sm:text-4xl font-black">24/7</span>
                 <span className="block uppercase text-xs sm:text-sm font-semibold">
                   UK Coverage
@@ -150,9 +150,9 @@ export default function AboutPage() {
               ].map((item) => (
                 <div
                   key={item.title}
-                  className="bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-[#e6bdb8] hover:border-[#b70011] transition-colors group"
+                  className="bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-[#e6bdb8] hover:border-[#FF7A88] transition-colors group"
                 >
-                  <span className="material-symbols-outlined text-[#b70011] mb-3 sm:mb-4 block text-3xl sm:text-4xl">
+                  <span className="material-symbols-outlined text-[#FF7A88] mb-3 sm:mb-4 block text-3xl sm:text-4xl">
                     {item.icon}
                   </span>
                   <h3
@@ -193,7 +193,7 @@ export default function AboutPage() {
                 ].map((item) => (
                   <li key={item.title} className="flex items-start gap-3 sm:gap-4">
                     <span
-                      className="material-symbols-outlined text-[#b70011] shrink-0 text-xl sm:text-2xl"
+                      className="material-symbols-outlined text-[#FF7A88] shrink-0 text-xl sm:text-2xl"
                       style={{ fontVariationSettings: "'FILL' 1" }}
                     >
                       check_circle
@@ -267,7 +267,7 @@ export default function AboutPage() {
             </p>
             <a
               href="tel:07759708646"
-              className="inline-flex items-center justify-center gap-2 sm:gap-3 bg-white text-[#b70011] px-6 sm:px-12 py-4 sm:py-5 rounded-lg uppercase shadow-xl hover:bg-slate-100 active:scale-95 transition-all text-sm sm:text-xl font-bold"
+              className="inline-flex items-center justify-center gap-2 sm:gap-3 bg-white text-[#FF7A88] px-6 sm:px-12 py-4 sm:py-5 rounded-lg uppercase shadow-xl hover:bg-slate-100 active:scale-95 transition-all text-sm sm:text-xl font-bold"
               style={{
                 fontFamily: 'Work Sans, sans-serif',
                 letterSpacing: '0.02em',

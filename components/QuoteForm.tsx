@@ -24,7 +24,7 @@ export default function QuoteForm() {
   }
 
   const inputClass =
-    'w-full border border-slate-200 rounded-xl p-3 sm:p-4 bg-white focus:outline-none focus:ring-2 focus:ring-[#b70011] focus:border-[#b70011] transition text-sm'
+    'w-full border border-slate-200 rounded-xl p-3 sm:p-4 bg-white focus:outline-none focus:ring-2 focus:ring-[#FF7A88] focus:border-[#FF7A88] transition text-sm'
 
   return (
     <form

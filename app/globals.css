@@ -163,9 +163,13 @@
     overflow-x: hidden;
   }
 
-  /* Material Symbols helper */
+  /* Material Symbols helper — hidden until icon font is loaded to prevent text flash */
   .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    visibility: hidden;
+  }
+  .icons-ready .material-symbols-outlined {
+    visibility: visible;
   }
   .fill-1 {
     font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;

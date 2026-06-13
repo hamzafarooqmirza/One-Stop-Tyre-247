@@ -85,7 +85,7 @@ export default function AboutPage() {
                 </p>
                 <p className="text-[#5c403c] text-base sm:text-lg leading-relaxed">
                   With a focus on speed, reliability, and technical excellence, we have built a reputation
-                  as the nationwide authority in mobile tyre fitting. Our technicians are distributed
+                  as the Greater Manchester authority in mobile tyre fitting. Our technicians are distributed
                   strategically to reach you within 30 to 60 minutes, regardless of your location.
                 </p>
               </div>
@@ -187,7 +187,7 @@ export default function AboutPage() {
               <ul className="space-y-5 sm:space-y-6">
                 {[
                   { title: '24/7 Availability', desc: 'Day or night, rain or shine, we are always on call.' },
-                  { title: 'Fast Response Nationwide', desc: 'Average arrival time of 20-30 minutes across most UK postcodes.' },
+                  { title: 'Fast Response Across Greater Manchester', desc: 'Average arrival time of 20-30 minutes across most UK postcodes.' },
                   { title: 'Transparent Pricing', desc: 'No hidden fees. Upfront quotes provided before we dispatch.' },
                   { title: 'Experienced Technicians', desc: 'Fully certified experts with years of roadside experience.' },
                 ].map((item) => (

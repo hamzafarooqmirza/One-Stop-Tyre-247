@@ -124,7 +124,7 @@ export default function Header() {
             </span>
             <span className="flex items-center gap-1.5">
               <span className="material-symbols-outlined text-sm">location_on</span>
-              Nationwide
+              Greater Manchester
             </span>
           </div>
           <span className="flex items-center gap-1.5 font-bold text-red-400">
@@ -690,7 +690,7 @@ export default function Header() {
               </div>
               <div>
                 <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">Availability</p>
-                <p className="text-xs font-medium text-slate-700">24/7 Emergency — Nationwide</p>
+                <p className="text-xs font-medium text-slate-700">24/7 Emergency — Greater Manchester</p>
               </div>
             </div>
           </div>

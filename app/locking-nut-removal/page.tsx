@@ -20,7 +20,7 @@ const features = [
   {
     icon: 'bolt',
     title: 'Fast Response',
-    desc: 'Average arrival within 20–30 minutes nationwide, with emergency priority dispatch.',
+    desc: 'Average arrival within 20–30 minutes across Greater Manchester, with emergency priority dispatch.',
   },
   {
     icon: 'public',
@@ -84,7 +84,7 @@ const faqs = [
   },
   {
     q: 'How long does it take to arrive?',
-    a: 'Our average arrival time is 20–30 minutes nationwide, depending on your location and current traffic conditions.',
+    a: 'Our average arrival time is 20–30 minutes across Greater Manchester, depending on your location and current traffic conditions.',
   },
 ]
 
@@ -98,7 +98,7 @@ export default function LockingNutRemovalPage() {
 
           <div className="z-10 order-2 lg:order-1">
             <span className="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-semibold tracking-wide mb-4">
-              24/7 Nationwide Assistance
+              24/7 Greater Manchester Assistance
             </span>
             <h1 className="font-h1 text-2xl sm:text-3xl lg:text-[40px] font-bold text-on-surface mb-4 leading-tight">
               Locking Nut Removal

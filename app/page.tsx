@@ -76,7 +76,7 @@ export default function Home() {
             />
           </picture>
           {/* Overlay: strong dark on mobile for legibility, fade from left on desktop */}
-          <div className="absolute inset-0 bg-[#0f172a]/75 lg:bg-gradient-to-r lg:from-[#0f172a] lg:via-[#0f172a]/30 lg:to-transparent" />
+          <div className="absolute inset-0 bg-[#0f172a]/85 lg:bg-gradient-to-r lg:from-[#0f172a] lg:via-[#0f172a]/60 lg:to-[#0f172a]/20" />
         </div>
 
         {/* Content */}
@@ -98,11 +98,11 @@ export default function Home() {
             >
               24/7 Emergency{' '}
               <span className="text-[#b70011]">Mobile Tyre Fitting</span>{' '}
-              Nationwide
+              Across Greater Manchester
             </h1>
 
             <p className="text-base sm:text-lg text-slate-300 mb-8 leading-relaxed">
-              Stranded with a puncture anywhere in the UK? Our professional technicians reach you fast at home,
+              Stranded with a puncture across Greater Manchester? Our professional technicians reach you fast at home,
               work, or roadside to get you moving safely.
             </p>
 
@@ -305,7 +305,7 @@ export default function Home() {
               className="text-2xl sm:text-4xl lg:text-5xl text-[#0f172a] mb-5 sm:mb-8 leading-tight font-bold"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
-              Elite Mobile Tyre Fitting Service Nationwide
+              Elite Mobile Tyre Fitting Service Across Greater Manchester
             </h2>
             <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg">
               We understand that a flat tyre isn&apos;t just an inconvenience—it&apos;s a
@@ -459,7 +459,7 @@ export default function Home() {
                 <div>
                   <p className="font-bold text-[#0f172a] text-sm sm:text-base">Service Area</p>
                   <p className="text-sm text-slate-500">
-                    Nationwide coverage across England, Scotland, Wales &amp; N. Ireland.
+                    Coverage across Greater Manchester and surrounding areas.
                   </p>
                 </div>
               </div>

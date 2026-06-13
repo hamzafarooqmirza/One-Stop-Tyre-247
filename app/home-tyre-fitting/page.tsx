@@ -80,7 +80,7 @@ const faqs = [
   },
   {
     q: 'What areas do you cover?',
-    a: 'We provide 24/7 nationwide coverage across the UK. Our network of mobile technicians means we are never far from you.',
+    a: 'We provide 24/7 coverage across Greater Manchester. Our network of mobile technicians means we are never far from you.',
   },
   {
     q: 'How quickly can you arrive?',
@@ -98,7 +98,7 @@ export default function HomeTyreFittingPage() {
 
           <div className="z-10 order-2 lg:order-1">
             <span className="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-semibold tracking-wide mb-4">
-              Available Nationwide 24/7
+              Available 24/7 Across Greater Manchester
             </span>
             <h1 className="font-h1 text-2xl sm:text-3xl lg:text-[40px] font-bold text-on-surface mb-4 leading-tight">
               Home Tyre Fitting

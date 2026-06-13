@@ -15,7 +15,7 @@ export default function ContactPage() {
     },
     {
       q: 'Which areas do you cover?',
-      a: "We provide nationwide coverage across the UK. Whether you're on a motorway, in a city center, or a remote rural area, we can dispatch a mobile technician to assist you.",
+      a: "We provide coverage across Greater Manchester and surrounding areas, we can dispatch a mobile technician to assist you.",
     },
     {
       q: 'What is the best way to contact you?',
@@ -138,7 +138,7 @@ export default function ContactPage() {
                         className="text-[#1c1b1b] text-lg sm:text-xl lg:text-2xl font-semibold"
                         style={{ fontFamily: 'Work Sans, sans-serif' }}
                       >
-                        Nationwide UK
+                        Greater Manchester
                       </p>
                       <p className="text-xs sm:text-sm text-[#5c403c]">Strategic locations for 20-30m response</p>
                     </div>
@@ -319,7 +319,7 @@ export default function ContactPage() {
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             {[
               { icon: 'emergency_home', title: '24/7 Support', desc: 'Around the clock emergency support, 365 days a year.' },
-              { icon: 'speed', title: 'Fast Response', desc: 'Rapid nationwide coverage with 20-30 min arrival times.' },
+              { icon: 'speed', title: 'Fast Response', desc: 'Rapid Greater Manchester coverage with 20-30 min arrival times.' },
               { icon: 'engineering', title: 'Professional', desc: 'Expert technicians equipped with modern diagnostic tools.' },
               { icon: 'verified', title: 'Reliable', desc: 'Consistent, high-quality service you can trust every time.' },
             ].map((item) => (

@@ -118,12 +118,12 @@ export default function Home() {
                 'All Payment Methods Welcome',
                 'Fully Insured',
               ].map((item) => (
-                <div key={item} className="flex items-start gap-2 text-white/85">
+                <div key={item} className="flex items-center gap-2.5 text-white/90">
                   <span
-                    className="material-symbols-outlined text-green-400 shrink-0 mt-0.5"
-                    style={{ fontSize: '18px', fontVariationSettings: "'FILL' 1" }}
+                    className="material-symbols-outlined text-green-400 shrink-0"
+                    style={{ fontSize: '22px', fontVariationSettings: "'FILL' 1" }}
                   >check_circle</span>
-                  <span className="text-sm font-medium leading-snug">{item}</span>
+                  <span className="text-base font-semibold leading-snug">{item}</span>
                 </div>
               ))}
             </div>

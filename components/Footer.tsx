@@ -25,14 +25,14 @@ export default function Footer() {
           </p>
           <ul className="space-y-3 sm:space-y-4 text-slate-400 text-sm font-medium">
             <li className="flex items-center justify-center sm:justify-start gap-3">
-              <span className="material-symbols-outlined text-[#FF7A88] text-lg">call</span>
-              <a href="tel:07759708646" className="text-white font-bold hover:text-[#FF7A88] transition-colors">
+              <span className="material-symbols-outlined text-[#FF4444] text-lg">call</span>
+              <a href="tel:07759708646" className="text-white font-bold hover:text-[#FF4444] transition-colors">
                 07759 708 646
               </a>
             </li>
             <li className="flex items-center justify-center sm:justify-start gap-3">
-              <span className="material-symbols-outlined text-[#FF7A88] text-lg">mail</span>
-              <a href="mailto:info@onestoptyres247.co.uk" className="hover:text-[#FF7A88] transition-colors break-all text-xs sm:text-sm">
+              <span className="material-symbols-outlined text-[#FF4444] text-lg">mail</span>
+              <a href="mailto:info@onestoptyres247.co.uk" className="hover:text-[#FF4444] transition-colors break-all text-xs sm:text-sm">
                 info@onestoptyres247.co.uk
               </a>
             </li>
@@ -54,8 +54,8 @@ export default function Footer() {
               { label: 'TPMS Reset', href: '/tpms-reset' },
             ].map((item) => (
               <li key={item.href}>
-                <a href={item.href} className="hover:text-[#FF7A88] transition-colors flex items-center justify-center sm:justify-start gap-2 py-0.5">
-                  <span className="w-1 h-1 bg-[#FF7A88] rounded-full shrink-0" />
+                <a href={item.href} className="hover:text-[#FF4444] transition-colors flex items-center justify-center sm:justify-start gap-2 py-0.5">
+                  <span className="w-1 h-1 bg-[#FF4444] rounded-full shrink-0" />
                   {item.label}
                 </a>
               </li>
@@ -81,7 +81,7 @@ export default function Footer() {
               { label: 'Wigan', href: '/mobile-tyre-fitting-wigan' },
             ].map((area) => (
               <li key={area.href}>
-                <a href={area.href} className="hover:text-[#FF7A88] transition-colors flex items-center justify-center sm:justify-start gap-2 py-0.5">
+                <a href={area.href} className="hover:text-[#FF4444] transition-colors flex items-center justify-center sm:justify-start gap-2 py-0.5">
                   <span className="w-1 h-1 bg-slate-600 rounded-full shrink-0" />
                   {area.label}
                 </a>
@@ -106,7 +106,7 @@ export default function Footer() {
               { label: 'Mobile Tyre Fitting M67', href: '/mobile-tyre-fitting-m67' },
             ].map((road) => (
               <li key={road.href}>
-                <a href={road.href} className="hover:text-[#FF7A88] transition-colors flex items-center justify-center sm:justify-start gap-2 py-0.5">
+                <a href={road.href} className="hover:text-[#FF4444] transition-colors flex items-center justify-center sm:justify-start gap-2 py-0.5">
                   <span className="w-1 h-1 bg-slate-600 rounded-full shrink-0" />
                   {road.label}
                 </a>
@@ -129,7 +129,7 @@ export default function Footer() {
               href="https://linkedo.co.uk"
               rel="nofollow noopener noreferrer"
               target="_blank"
-              className="text-slate-400 hover:text-[#FF7A88] transition-colors font-semibold"
+              className="text-slate-400 hover:text-[#FF4444] transition-colors font-semibold"
             >
               Linkedo
             </a>

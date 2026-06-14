@@ -582,7 +582,7 @@ export default function Home() {
         <div className="w-full lg:w-1/2 h-[300px] lg:h-auto">
           <iframe
             className="w-full h-full"
-            src="https://maps.google.com/maps?q=Greater+Manchester,+UK&t=&z=10&ie=UTF8&iwloc=&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4741.379474172151!2d-2.1049285233703974!3d53.5454538598072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb920bfb7fecd%3A0x4edbef2355697975!2sOne%20Stop%20Mobile%20Tyres%2024%2F7!5e0!3m2!1sen!2s!4v1781464116347!5m2!1sen!2s"
             frameBorder="0"
             scrolling="no"
             title="Service area map"

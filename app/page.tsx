@@ -158,15 +158,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 2. SIMPLE STEPS ──────────────────────────────── */}
+      {/* ── 2. HOW IT WORKS ──────────────────────────────── */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 bg-[#f8f9fb] relative overflow-hidden">
-        {/* Subtle dot pattern */}
         <div
           className="absolute inset-0 opacity-[0.04] pointer-events-none"
           style={{ backgroundImage: 'radial-gradient(circle, #0f172a 1.5px, transparent 1.5px)', backgroundSize: '28px 28px' }}
         />
         <div className="max-w-7xl mx-auto relative z-10">
-          {/* Header */}
           <div className="text-center mb-12 sm:mb-16">
             <span className="inline-block text-[#b70011] font-bold uppercase tracking-widest text-xs sm:text-sm mb-3">
               How It Works
@@ -175,17 +173,15 @@ export default function Home() {
               className="text-2xl sm:text-3xl lg:text-[40px] font-black uppercase leading-tight text-balance"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
             >
-              <span className="text-[#0f172a]">4 Simple Steps To </span>
-              <span className="text-[#b70011]">Get Back On The Road</span>
+              <span className="text-[#0f172a]">4 Steps To Get You </span>
+              <span className="text-[#b70011]">Back On The Road</span>
             </h2>
             <p className="text-slate-500 mt-4 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
               Fast, professional mobile tyre fitting wherever you are — day or night, across Greater Manchester.
             </p>
           </div>
 
-          {/* Step cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
-            {/* Desktop connecting line */}
             <div className="absolute top-[3.25rem] left-[16%] right-[16%] h-px bg-slate-200 hidden lg:block" />
 
             {[
@@ -195,14 +191,12 @@ export default function Home() {
               { icon: 'directions_car', step: 4, title: 'Get Back On The Road',             desc: 'We fit your tyre quickly so you can continue your journey safely.' },
             ].map((item, idx) => (
               <div key={item.step} className="relative group">
-                {/* Arrow indicator between cards on desktop */}
                 {idx < 3 && (
                   <span className="material-symbols-outlined absolute -right-3.5 top-[2.25rem] z-20 text-[#b70011] text-2xl hidden lg:block">
                     chevron_right
                   </span>
                 )}
                 <div className="bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 p-6 sm:p-8 flex flex-col items-center text-center h-full">
-                  {/* Icon circle */}
                   <div className="w-[4.5rem] h-[4.5rem] bg-[#b70011]/8 rounded-2xl flex items-center justify-center mb-5 relative z-10 group-hover:bg-[#b70011]/12 transition-colors shrink-0">
                     <span
                       className="material-symbols-outlined text-[#b70011]"
@@ -211,22 +205,17 @@ export default function Home() {
                       {item.icon}
                     </span>
                   </div>
-                  {/* Step badge */}
-                  <div
-                    className="w-7 h-7 bg-[#0f172a] rounded-full flex items-center justify-center mb-4 shrink-0"
-                  >
+                  <div className="w-7 h-7 bg-[#0f172a] rounded-full flex items-center justify-center mb-4 shrink-0">
                     <span className="text-white text-xs font-black" style={{ fontFamily: 'var(--font-work-sans)' }}>
                       {item.step}
                     </span>
                   </div>
-                  {/* Title */}
                   <h3
                     className="text-base sm:text-lg font-bold text-[#0f172a] mb-2 leading-snug"
                     style={{ fontFamily: 'var(--font-work-sans)' }}
                   >
                     {item.title}
                   </h3>
-                  {/* Description */}
                   <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </div>

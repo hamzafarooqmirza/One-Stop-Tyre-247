@@ -104,9 +104,7 @@ export default function Home() {
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-6 leading-[1.1] font-black text-balance"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              24/7 Emergency{' '}
-              <span className="text-[#FF4444]">Mobile Tyre Fitting</span>{' '}
-              Across Greater Manchester
+              24/7 Emergency Mobile Tyre Fitting Across Greater Manchester
             </h1>
 
             {/* Trust benefits */}
@@ -159,7 +157,50 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 2. SERVICES ───────────────────────────────────── */}
+      {/* ── 2. SIMPLE STEPS ──────────────────────────────── */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2
+              className="text-2xl sm:text-3xl lg:text-4xl font-black uppercase leading-tight tracking-tight text-balance"
+              style={{ fontFamily: 'var(--font-work-sans)' }}
+            >
+              <span className="text-[#0f172a]">4 Simple Steps To </span>
+              <span className="text-[#b70011]">Get Back On The Road</span>
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-12 lg:gap-16">
+            {[
+              { icon: 'tire_repair',    step: 1, title: 'Confirm Your Tyre Size' },
+              { icon: 'pin_drop',       step: 2, title: 'Send Us Your Location' },
+              { icon: 'layers',         step: 3, title: 'Choose Branded or Economy Tyres' },
+              { icon: 'directions_car', step: 4, title: 'Get Back On The Road' },
+            ].map((item) => (
+              <div key={item.step} className="flex flex-col items-center text-center group">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 bg-slate-50 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-[#b70011]/8 transition-colors">
+                  <span
+                    className="material-symbols-outlined text-[#b70011]"
+                    style={{ fontSize: '52px', fontVariationSettings: "'FILL' 1" }}
+                  >
+                    {item.icon}
+                  </span>
+                </div>
+                <div className="w-8 h-8 bg-[#0f172a] rounded-full flex items-center justify-center mb-3 shrink-0">
+                  <span className="text-white font-black text-sm" style={{ fontFamily: 'var(--font-work-sans)' }}>{item.step}</span>
+                </div>
+                <h3
+                  className="text-lg sm:text-xl font-bold text-[#0f172a] leading-snug text-balance"
+                  style={{ fontFamily: 'var(--font-work-sans)' }}
+                >
+                  {item.title}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 3. SERVICES ───────────────────────────────────── */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
         <div className="max-w-7xl mx-auto">
           {/* Heading */}

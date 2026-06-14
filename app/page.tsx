@@ -158,7 +158,57 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 2. SERVICES ───────────────────────────────────── */}
+      {/* ── 2. HOW IT WORKS ───────────────────────────────── */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-[#0f172a] text-white relative overflow-hidden">
+        <div
+          className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none"
+          style={{
+            backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)',
+            backgroundSize: '40px 40px',
+          }}
+        />
+        <div className="max-w-7xl mx-auto text-center relative z-10">
+          <h2
+            className="text-2xl sm:text-[32px] font-bold mb-10 sm:mb-16"
+            style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+          >
+            4 Steps To Get You Back On The Road
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-12 relative">
+            {[
+              { icon: 'tire_repair',    title: 'Confirm Your Tyre Size',            desc: 'Tell us your vehicle and tyre size for an instant match and quote.',  rot: 'rotate-3' },
+              { icon: 'pin_drop',       title: 'Send Us Your Location',             desc: 'Share your exact location via call or WhatsApp pin for fast routing.', rot: '-rotate-3' },
+              { icon: 'local_car_wash', title: 'Choose Branded or Economy Tyres',  desc: 'Pick from premium brands or budget options — all quality guaranteed.',  rot: 'rotate-3' },
+              { icon: 'directions_car', title: 'Get Back On The Road',              desc: 'Our tech fits your tyre on-site. Pay and drive away safely.',           rot: '-rotate-3' },
+            ].map((step, idx) => (
+              <div key={step.icon} className="relative">
+                <div
+                  className={`w-14 h-14 sm:w-20 sm:h-20 bg-[#FF4444] rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-8 shadow-xl ${step.rot}`}
+                >
+                  <span
+                    className="material-symbols-outlined text-white text-[28px] sm:text-[36px]"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >{step.icon}</span>
+                </div>
+                <h3
+                  className="text-base sm:text-xl font-semibold mb-2 sm:mb-4 text-white"
+                  style={{ fontFamily: 'var(--font-work-sans)' }}
+                >
+                  {step.title}
+                </h3>
+                <p className="text-slate-400 text-xs sm:text-sm">{step.desc}</p>
+                {idx < 3 && (
+                  <span className="hidden md:block absolute top-10 -right-6 text-[#FF4444] material-symbols-outlined text-3xl">
+                    trending_flat
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 3. SERVICES ───────────────────────────────────── */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
@@ -345,57 +395,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 4. HOW IT WORKS ───────────────────────────────── */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-[#0f172a] text-white relative overflow-hidden">
-        <div
-          className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none"
-          style={{
-            backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)',
-            backgroundSize: '40px 40px',
-          }}
-        />
-        <div className="max-w-7xl mx-auto text-center relative z-10">
-          <h2
-            className="text-2xl sm:text-[32px] font-bold mb-10 sm:mb-16"
-            style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-          >
-            4 Steps To Get You Back On The Road
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-12 relative">
-            {[
-              { icon: 'tire_repair',    title: 'Confirm Your Tyre Size',            desc: 'Tell us your vehicle and tyre size for an instant match and quote.',  rot: 'rotate-3' },
-              { icon: 'pin_drop',       title: 'Send Us Your Location',             desc: 'Share your exact location via call or WhatsApp pin for fast routing.', rot: '-rotate-3' },
-              { icon: 'local_car_wash', title: 'Choose Branded or Economy Tyres',  desc: 'Pick from premium brands or budget options — all quality guaranteed.',  rot: 'rotate-3' },
-              { icon: 'directions_car', title: 'Get Back On The Road',              desc: 'Our tech fits your tyre on-site. Pay and drive away safely.',           rot: '-rotate-3' },
-            ].map((step, idx) => (
-              <div key={step.icon} className="relative">
-                <div
-                  className={`w-14 h-14 sm:w-20 sm:h-20 bg-[#FF4444] rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-8 shadow-xl ${step.rot}`}
-                >
-                  <span
-                    className="material-symbols-outlined text-white text-[28px] sm:text-[36px]"
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  >{step.icon}</span>
-                </div>
-                <h3
-                  className="text-base sm:text-xl font-semibold mb-2 sm:mb-4 text-white"
-                  style={{ fontFamily: 'var(--font-work-sans)' }}
-                >
-                  {step.title}
-                </h3>
-                <p className="text-slate-400 text-xs sm:text-sm">{step.desc}</p>
-                {idx < 3 && (
-                  <span className="hidden md:block absolute top-10 -right-6 text-[#FF4444] material-symbols-outlined text-3xl">
-                    trending_flat
-                  </span>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── 5. BRAND LOGOS ────────────────────────────────── */}
+      {/* ── 4. BRAND LOGOS ────────────────────────────────── */}
       <BrandCarousel />
 
       {/* ── 6. REVIEWS ────────────────────────────────────── */}

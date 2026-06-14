@@ -104,13 +104,13 @@ export default function Home() {
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-6 leading-[1.1] font-black text-balance"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              Mobile Tyre & Puncture Repair
+              24/7 Mobile Tyres & Puncture Repair
             </h1>
 
             {/* Trust benefits */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-2.5 mb-8">
               {[
-                '24/7 Emergency Response: 20 – 30 mins',
+                'Emergency Response: 20 – 30 mins',
                 'Coverage Across Greater Manchester',
                 'Home, Work & Roadside Assistance',
                 'Lowest Price Guaranteed',

@@ -104,9 +104,7 @@ export default function Home() {
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-6 leading-[1.1] font-black text-balance"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              24/7 Emergency{' '}
-              <span className="text-[#FF4444]">Mobile Tyre Fitting</span>{' '}
-              Across Greater Manchester
+              24/7 Emergency Mobile Tyre Fitting Across Greater Manchester
             </h1>
 
             {/* Trust benefits */}

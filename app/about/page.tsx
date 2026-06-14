@@ -46,7 +46,7 @@ export default function AboutPage() {
                 }}
               >
                 <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>
-                Call Now
+                07759 708 646
               </a>
               <a
                 href="https://wa.me/447759708646"
@@ -279,8 +279,8 @@ export default function AboutPage() {
               >
                 phone_enabled
               </span>
-              <span className="hidden sm:inline">CALL NOW: 07759 708 646</span>
-              <span className="sm:hidden">CALL NOW</span>
+              <span className="hidden sm:inline">07759 708 646: 07759 708 646</span>
+              <span className="sm:hidden">07759 708 646</span>
             </a>
           </div>
         </section>

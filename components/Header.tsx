@@ -298,7 +298,7 @@ export default function Header() {
                       <span className="material-symbols-outlined text-[15px]" style={{ fontVariationSettings: "'FILL' 1" }}>
                         phone_in_talk
                       </span>
-                      Call Now
+                      07759 708 646
                     </a>
                   </div>
                 </div>

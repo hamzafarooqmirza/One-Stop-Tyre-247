@@ -297,7 +297,7 @@ export default function ContactPage() {
               >
                 phone_in_talk
               </span>
-              Call Now
+              07759 708 646
             </a>
           </div>
         </section>

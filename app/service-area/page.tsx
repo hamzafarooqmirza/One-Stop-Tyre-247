@@ -342,7 +342,7 @@ export default function ServiceAreaPage() {
               className="bg-white text-primary font-h2 text-base sm:text-xl lg:text-h2 px-6 sm:px-10 py-4 sm:py-5 rounded-xl hover:bg-gray-100 transition-all uppercase shadow-lg text-center w-full sm:w-auto sm:min-w-[180px] lg:min-w-[200px] shrink-0"
               href="tel:07759708646"
             >
-              CALL NOW
+              07759 708 646
             </a>
           </div>
         </div>

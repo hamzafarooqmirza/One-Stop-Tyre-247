@@ -104,16 +104,17 @@ export default function Home() {
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-6 leading-[1.1] font-black text-balance"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              24/7 Emergency Mobile Tyre Fitting & Puncture Repair Across Greater Manchester
+              Mobile Tyre & Puncture Repair
             </h1>
 
             {/* Trust benefits */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-2.5 mb-8">
               {[
-                'Rapid Response: 20 – 30 mins',
+                '24/7 Emergency Response: 20 – 30 mins',
+                'Coverage Across Greater Manchester',
                 'Home, Work & Roadside Assistance',
                 'Lowest Price Guaranteed',
-                'All Payment Methods Welcome',
+                'All Payment Methods Accepted',
                 'Fully Insured',
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2.5 text-white/90">

@@ -209,7 +209,7 @@ export default function ServicesPage() {
               className="bg-white text-primary font-h2 text-base sm:text-xl lg:text-h2 px-6 sm:px-10 lg:px-xl py-3 sm:py-4 lg:py-md rounded-xl hover:bg-gray-100 transition-all uppercase shadow-lg text-center w-full sm:w-auto sm:min-w-[200px] lg:min-w-[240px]"
               href="tel:07759708646"
             >
-              CALL NOW
+              07759 708 646
             </a>
           </div>
         </div>

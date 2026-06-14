@@ -112,7 +112,7 @@ export default function LockingNutRemovalPage() {
                 className="bg-primary-container text-white font-semibold text-base py-3.5 px-6 rounded-lg flex items-center justify-center gap-2 hover:brightness-110 transition-all w-full sm:w-auto"
               >
                 <span className="material-symbols-outlined text-[20px]">call</span>
-                Call Now
+                07759 708 646
               </a>
               <a
                 href="https://wa.me/447759708646"

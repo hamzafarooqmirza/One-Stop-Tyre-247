@@ -140,7 +140,7 @@ export default function Home() {
                 >
                   call
                 </span>
-                CALL NOW
+                07759 708 646
               </a>
               <a
                 href="https://wa.me/447759708646"

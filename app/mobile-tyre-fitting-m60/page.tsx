@@ -30,13 +30,13 @@ export default function M60Page() {
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
               Mobile Tyre Fitting on the{' '}
-              <span className="text-[#FF7A88]">M60</span>
+              <span className="text-[#FF4444]">M60</span>
             </h1>
             <p className="font-body-lg text-base sm:text-lg text-white/90 max-w-2xl mx-auto leading-relaxed mb-8">Fast and reliable mobile tyre fitting service available 24/7 on the M60 and surrounding junctions. We arrive in 20-30 minutes to get you back on your journey safely.</p>
             <div className="flex flex-col sm:flex-row justify-center gap-3 mb-8">
               <a
                 href="tel:07759708646"
-                className="bg-[#FF7A88] text-[#121212] font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 hover:text-white transition-all text-base sm:text-lg"
+                className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 hover:text-white transition-all text-base sm:text-lg"
                 style={{ fontFamily: 'var(--font-work-sans)' }}
               >
                 <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
@@ -53,11 +53,11 @@ export default function M60Page() {
             </div>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-white/70">
               <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-[#FF7A88] text-[18px]">verified</span>
+                <span className="material-symbols-outlined text-[#FF4444] text-[18px]">verified</span>
                 <span className="text-sm font-medium">Fully Insured</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-[#FF7A88] text-[18px]">payments</span>
+                <span className="material-symbols-outlined text-[#FF4444] text-[18px]">payments</span>
                 <span className="text-sm font-medium">Card/Cash Accepted</span>
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function M60Page() {
               </div>
               <a
                 href="tel:07759708646"
-                className="bg-[#FF7A88] text-[#121212] font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
+                className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
                 style={{ fontFamily: 'var(--font-work-sans)' }}
               >
                 07759 708 646

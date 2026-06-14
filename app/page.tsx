@@ -105,7 +105,7 @@ export default function Home() {
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
               24/7 Emergency{' '}
-              <span className="text-[#FF7A88]">Mobile Tyre Fitting</span>{' '}
+              <span className="text-[#FF4444]">Mobile Tyre Fitting</span>{' '}
               Across Greater Manchester
             </h1>
 
@@ -132,7 +132,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href="tel:07759708646"
-                className="bg-[#FF7A88] text-[#121212] font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 hover:text-white transition-all text-base sm:text-lg"
+                className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 hover:text-white transition-all text-base sm:text-lg"
                 style={{ fontFamily: 'var(--font-work-sans)' }}
               >
                 <span
@@ -273,7 +273,7 @@ export default function Home() {
             </div>
             <a
               href="tel:07759708646"
-              className="bg-[#FF7A88] text-[#121212] font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
+              className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
               07759 708 646
@@ -371,7 +371,7 @@ export default function Home() {
             ].map((step, idx) => (
               <div key={step.icon} className="relative">
                 <div
-                  className={`w-14 h-14 sm:w-20 sm:h-20 bg-[#FF7A88] rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-8 shadow-xl ${step.rot}`}
+                  className={`w-14 h-14 sm:w-20 sm:h-20 bg-[#FF4444] rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-8 shadow-xl ${step.rot}`}
                 >
                   <span
                     className="material-symbols-outlined text-white text-[28px] sm:text-[36px]"
@@ -386,7 +386,7 @@ export default function Home() {
                 </h3>
                 <p className="text-slate-400 text-xs sm:text-sm">{step.desc}</p>
                 {idx < 3 && (
-                  <span className="hidden md:block absolute top-10 -right-6 text-[#FF7A88] material-symbols-outlined text-3xl">
+                  <span className="hidden md:block absolute top-10 -right-6 text-[#FF4444] material-symbols-outlined text-3xl">
                     trending_flat
                   </span>
                 )}
@@ -517,7 +517,7 @@ export default function Home() {
 
         {/* Right — locations */}
         <div className="w-full lg:w-1/2 bg-[#0f172a] px-6 sm:px-10 py-10 sm:py-14 flex flex-col justify-center">
-          <span className="text-[#FF7A88] font-bold uppercase tracking-widest text-xs mb-3 block">
+          <span className="text-[#FF4444] font-bold uppercase tracking-widest text-xs mb-3 block">
             Our Service Areas
           </span>
           <h2
@@ -556,7 +556,7 @@ export default function Home() {
                 className="flex items-center gap-2 text-slate-300 hover:text-white text-sm font-medium py-1.5 group transition-colors"
               >
                 <span
-                  className="material-symbols-outlined text-[#FF7A88] shrink-0 group-hover:scale-110 transition-transform"
+                  className="material-symbols-outlined text-[#FF4444] shrink-0 group-hover:scale-110 transition-transform"
                   style={{ fontSize: '14px' }}
                 >
                   location_on
@@ -568,7 +568,7 @@ export default function Home() {
 
           <a
             href="/service-area"
-            className="mt-8 self-start inline-flex items-center gap-2 bg-[#FF7A88] text-[#121212] text-sm font-bold px-5 py-3 rounded-xl hover:bg-red-700 hover:text-white transition-colors"
+            className="mt-8 self-start inline-flex items-center gap-2 bg-[#FF4444] text-[#121212] text-sm font-bold px-5 py-3 rounded-xl hover:bg-red-700 hover:text-white transition-colors"
           >
             <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>map</span>
             View Full Service Area

@@ -271,8 +271,8 @@ export default function OldhamPage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 className="relative z-10 rounded-2xl sm:rounded-3xl shadow-2xl border-4 sm:border-8 border-slate-50 w-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWrU29eU8IJezmfmnrskc3wJDaLWg_9f-9oulrYPvvMLrAtPIbD7MfljbG2nb4GtGVpm4Xd2xH9iOhv4ft0CmSx6OUFyoqz9fcN1GG4JKzJDDXCcomeefkmfZVUtTcytILQDHwXHb25A0IUEqXBLS7SQnna9qTKeitWyokBom48GllVdlW95s0NinEvX4eb7-L3pxPJb89dLW99ya18kgAin3kOmZcBLDK5AkCq55nsg1l3Jfgfv4TcsOdl-MCI8RArS2GV-90g3g"
-                alt="Technician changing a tyre professionally"
+                src="/images/Tyre fitting at home-airanko (1).webp"
+                alt="Tyre fitting at home in Oldham"
                 width={800}
                 height={600}
                 loading="lazy"
@@ -326,7 +326,7 @@ export default function OldhamPage() {
         </section>
 
         {/* ── 5. WHY OLDHAM DRIVERS CHOOSE US ──────────────── */}
-        <WhyChooseUs city="Oldham" />
+        <WhyChooseUs city="Oldham" image="/images/Tyres fitting anywhere-airanko (1).webp" />
 
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />

@@ -26,7 +26,8 @@ function FeatureItem({
   )
 }
 
-export default function WhyChooseUs({ city }: { city: string }) {
+export default function WhyChooseUs({ city, image }: { city: string; image?: string }) {
+  const imgSrc = image ?? "https://lh3.googleusercontent.com/aida-public/AB6AXuBVrPZpsRrvVIy8OMnWu6bdNtm1zrmT1z3BmFFvgG3XDFgGAcHSHg2nTF2L0jBgiDxKgJhML6FQe-NhO_69cBTU1I_mQpOE3VgwK5JdxzLfJlCqvcC8-oZJm3TLe9XOPkyXpeSXUBz_kIyqlkgU9udXjzLJ0YudBfPvQf-IbGRKiiSiCBKwvAzyRC73a709IuwFWbfsCRhB8evWPpOv5e3AAzvBjLPjwChrWUuhDCwI3rVXE-J0vsviyl2U4KTSrVFwewj0g8K8d2A"
   return (
     <section className="bg-white py-12 sm:py-16 lg:py-20 border-y border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
@@ -35,8 +36,8 @@ export default function WhyChooseUs({ city }: { city: string }) {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className="rounded-2xl shadow-xl w-full object-cover h-[250px] sm:h-[350px] lg:h-auto"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVrPZpsRrvVIy8OMnWu6bdNtm1zrmT1z3BmFFvgG3XDFgGAcHSHg2nTF2L0jBgiDxKgJhML6FQe-NhO_69cBTU1I_mQpOE3VgwK5JdxzLfJlCqvcC8-oZJm3TLe9XOPkyXpeSXUBz_kIyqlkgU9udXjzLJ0YudBfPvQf-IbGRKiiSiCBKwvAzyRC73a709IuwFWbfsCRhB8evWPpOv5e3AAzvBjLPjwChrWUuhDCwI3rVXE-J0vsviyl2U4KTSrVFwewj0g8K8d2A"
-            alt="Clean, organized mobile tyre fitting van interior"
+            src={imgSrc}
+            alt="Mobile tyre fitting service"
             width={800}
             height={600}
             loading="lazy"

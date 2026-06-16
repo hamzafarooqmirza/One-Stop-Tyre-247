@@ -28,18 +28,14 @@ export default function OldhamPage() {
 
         {/* ── 1. HERO ───────────────────────────────────────── */}
         <section
-          className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-center text-center px-4"
+          className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-start text-left px-4 sm:px-8 lg:px-16"
           style={{
             backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuD3WPBHLb8oI6NlUbetHGxrxiWajSXddJ-bMq4pXSVPaYFh3PHsgn8h-0s4S8J7GH0UAZC49r0ZOPOd8zn9mzDBHGPUfwUXg4IYvURi6te7Pm4lvXyaJUY6SuRJ6rb6uCQxg15PNiuqA5Ok8GbTsrdC_nNYlvlvwafoylbWszZHCZWoEKocqMKKMeY9zyVHzdry1KfQ5YcfiZSUNliH7NRGlfHQyNTAJDskniaZE4wCJGWbs0xVYMLXSLh2S9jTuRkmALRX7-tuz8I)",
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}
         >
-          <div className="max-w-4xl mx-auto py-20">
-            <div className="inline-flex items-center gap-2 bg-[#dc2626] text-white px-4 py-2 rounded-full mb-4 animate-pulse">
-              <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>emergency</span>
-              <span className="text-label-bold">24/7 OLDHAM EMERGENCY RESPONSE</span>
-            </div>
+          <div className="max-w-2xl py-20">
 
             <h1
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance"
@@ -48,12 +44,12 @@ export default function OldhamPage() {
               24/7 Mobile Tyre Fitting Oldham
             </h1>
 
-            <p className="text-white/80 text-sm sm:text-base leading-relaxed mb-6 max-w-2xl mx-auto">
+            <p className="text-white/80 text-sm sm:text-base leading-relaxed mb-6">
               Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance Across Oldham. We Come To Your Home, Workplace Or Roadside Location Within 20–30 Minutes.
             </p>
 
             {/* Trust bullets */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6 max-w-2xl mx-auto text-left">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
               {[
                 '20 Minute Emergency Response',
                 'Mobile Tyre Fitting At Home, Work Or Roadside',
@@ -90,7 +86,7 @@ export default function OldhamPage() {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row justify-center gap-3">
+            <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href="tel:07759708646"
                 className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 hover:text-white transition-all text-base sm:text-lg"

@@ -174,7 +174,7 @@ export default function WiganPage() {
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
             <div className="w-full lg:w-1/2 relative pb-8 sm:pb-10">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img className="relative z-10 rounded-2xl sm:rounded-3xl shadow-2xl border-4 sm:border-8 border-slate-50 w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWrU29eU8IJezmfmnrskc3wJDaLWg_9f-9oulrYPvvMLrAtPIbD7MfljbG2nb4GtGVpm4Xd2xH9iOhv4ft0CmSx6OUFyoqz9fcN1GG4JKzJDDXCcomeefkmfZVUtTcytILQDHwXHb25A0IUEqXBLS7SQnna9qTKeitWyokBom48GllVdlW95s0NinEvX4eb7-L3pxPJb89dLW99ya18kgAin3kOmZcBLDK5AkCq55nsg1l3Jfgfv4TcsOdl-MCI8RArS2GV-90g3g" alt="Mobile tyre fitting technician" width={800} height={600} loading="lazy" decoding="async" />
+              <img className="relative z-10 rounded-2xl sm:rounded-3xl shadow-2xl border-4 sm:border-8 border-slate-50 w-full object-cover" src="/images/Tyres fitting anywhere-airanko (1).webp" alt="Mobile tyre fitting technician" width={800} height={600} loading="lazy" decoding="async" />
               <div className="absolute bottom-2 right-2 sm:-bottom-2 sm:-right-2 bg-white p-4 sm:p-5 rounded-xl sm:rounded-2xl shadow-2xl z-20 max-w-[165px] sm:max-w-[195px] border border-slate-100">
                 <div className="flex text-yellow-400 gap-0.5 mb-1.5">
                   {Array.from({ length: 5 }).map((_, i) => (
@@ -206,7 +206,7 @@ export default function WiganPage() {
         </section>
 
         {/* ── 5. WHY CHOOSE US */}
-        <WhyChooseUs city="Wigan" image="/images/Tyres fitting anywhere-airanko (1).webp" />
+        <WhyChooseUs city="Wigan" image="/images/tyre fitting in emergergency-airanko (1).webp" />
 
         {/* ── 6. BRAND CAROUSEL */}
         <BrandCarousel />

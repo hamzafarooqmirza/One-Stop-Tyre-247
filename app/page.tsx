@@ -345,8 +345,8 @@ export default function Home() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               className="relative z-10 rounded-2xl sm:rounded-3xl shadow-2xl border-4 sm:border-8 border-slate-50 w-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWrU29eU8IJezmfmnrskc3wJDaLWg_9f-9oulrYPvvMLrAtPIbD7MfljbG2nb4GtGVpm4Xd2xH9iOhv4ft0CmSx6OUFyoqz9fcN1GG4JKzJDDXCcomeefkmfZVUtTcytILQDHwXHb25A0IUEqXBLS7SQnna9qTKeitWyokBom48GllVdlW95s0NinEvX4eb7-L3pxPJb89dLW99ya18kgAin3kOmZcBLDK5AkCq55nsg1l3Jfgfv4TcsOdl-MCI8RArS2GV-90g3g"
-              alt="Technician changing a tyre professionally"
+              src="/images/Mobile Tyre Fitting Manchester-airanko (1).webp"
+              alt="Mobile tyre fitting technician in Manchester"
               width={800}
               height={600}
               loading="lazy"

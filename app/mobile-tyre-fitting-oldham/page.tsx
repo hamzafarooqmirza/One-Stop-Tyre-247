@@ -30,7 +30,7 @@ export default function OldhamPage() {
         <section
           className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-start text-left px-4 sm:px-8 lg:px-16"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuD3WPBHLb8oI6NlUbetHGxrxiWajSXddJ-bMq4pXSVPaYFh3PHsgn8h-0s4S8J7GH0UAZC49r0ZOPOd8zn9mzDBHGPUfwUXg4IYvURi6te7Pm4lvXyaJUY6SuRJ6rb6uCQxg15PNiuqA5Ok8GbTsrdC_nNYlvlvwafoylbWszZHCZWoEKocqMKKMeY9zyVHzdry1KfQ5YcfiZSUNliH7NRGlfHQyNTAJDskniaZE4wCJGWbs0xVYMLXSLh2S9jTuRkmALRX7-tuz8I)",
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/hero-tyre-fitting.webp)",
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}
@@ -173,44 +173,51 @@ export default function OldhamPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {[
                 {
-                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20fitting-airanko-mB2PlClNhJqqD09qARja8bLAbTDtoE.webp',
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp',
                   title: 'Mobile Tyre Fitting Oldham',
                   desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Oldham. Fast response with premium and budget tyre options available.',
                   badge: 'FAST RESPONSE',
+                  href: '/mobile-tyre-fitting',
                 },
                 {
-                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting-airanko-NAQrFhRm9UilkOOWhZBEd5lhxc7eEz.webp',
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp',
                   title: 'Emergency Tyre Replacement',
                   desc: 'Emergency tyre replacement service across Oldham for damaged, worn or blown tyres. We get you safely back on the road quickly.',
                   badge: 'AT YOUR DOOR',
+                  href: '/home-tyre-fitting',
                 },
                 {
-                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emeregency%20Puncture%20Repair-airanko-K3cI9fjWlcirkZkEwDEvdtRtKQg3B7.webp',
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp',
                   title: 'Mobile Puncture Repair',
                   desc: 'Professional puncture repair service where safe and suitable. Quick roadside repairs to save you time and money.',
                   badge: 'CERTIFIED REPAIR',
+                  href: '/emergency-puncture-repair',
                 },
                 {
-                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Jumpstart-onestop-airanko-bUQeSwSrfEEeS2vgU2IuyrDFFak87m.webp',
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp',
                   title: 'Roadside Tyre Assistance',
                   desc: 'Emergency roadside tyre assistance throughout Oldham. Available 24 hours a day for tyre-related breakdowns and call-outs.',
                   badge: '24/7 SERVICE',
+                  href: '/services',
                 },
                 {
-                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TPMS%20Reset-airanko-LEqPbQFsdbmM1ZLc5m0aoAUKGG4haJ.webp',
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp',
                   title: 'TPMS Reset',
                   desc: 'Tyre pressure monitoring system reset and sensor checks after tyre replacement or puncture repairs.',
                   badge: 'ALL VEHICLES',
+                  href: '/tpms-reset',
                 },
                 {
-                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20Nut%20Removal-airanko-MV4iwDQaMKuuoUnbMrRrQW5QIDJQbV.webp',
+                  img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp',
                   title: 'Locking Nut Removal',
                   desc: 'Specialist locking wheel nut removal service for damaged, seized or missing locking wheel nuts.',
                   badge: 'DAMAGE FREE',
+                  href: '/locking-nut-removal',
                 },
               ].map((card) => (
-                <div
+                <a
                   key={card.title}
+                  href={card.href}
                   className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
                 >
                   <div className="relative h-44 sm:h-52 overflow-hidden">
@@ -243,7 +250,7 @@ export default function OldhamPage() {
                       </span>
                     </div>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
             <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
@@ -271,8 +278,8 @@ export default function OldhamPage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 className="relative z-10 rounded-2xl sm:rounded-3xl shadow-2xl border-4 sm:border-8 border-slate-50 w-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWrU29eU8IJezmfmnrskc3wJDaLWg_9f-9oulrYPvvMLrAtPIbD7MfljbG2nb4GtGVpm4Xd2xH9iOhv4ft0CmSx6OUFyoqz9fcN1GG4JKzJDDXCcomeefkmfZVUtTcytILQDHwXHb25A0IUEqXBLS7SQnna9qTKeitWyokBom48GllVdlW95s0NinEvX4eb7-L3pxPJb89dLW99ya18kgAin3kOmZcBLDK5AkCq55nsg1l3Jfgfv4TcsOdl-MCI8RArS2GV-90g3g"
-                alt="Technician changing a tyre professionally"
+                src="/images/Tyre fitting at home-airanko (1).webp"
+                alt="Tyre fitting at home in Oldham"
                 width={800}
                 height={600}
                 loading="lazy"
@@ -326,12 +333,121 @@ export default function OldhamPage() {
         </section>
 
         {/* ── 5. WHY OLDHAM DRIVERS CHOOSE US ──────────────── */}
-        <WhyChooseUs city="Oldham" />
+        <WhyChooseUs city="Oldham" image="/images/Tyres fitting anywhere-airanko (1).webp" />
 
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />
 
-        {/* ── 7. FAQ ────────────────────────────────────────── */}
+        {/* ── 7. MAP + SERVICE AREAS ────────────────────────── */}
+        <section className="border-t border-slate-200 flex flex-col lg:flex-row" style={{ minHeight: '520px' }}>
+          {/* Left — map */}
+          <div className="w-full lg:w-1/2 h-[300px] lg:h-auto">
+            <iframe
+              className="w-full h-full"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4741.379474172151!2d-2.1049285233703974!3d53.5454538598072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb920bfb7fecd%3A0x4edbef2355697975!2sOne%20Stop%20Mobile%20Tyres%2024%2F7!5e0!3m2!1sen!2s!4v1781464116347!5m2!1sen!2s"
+              frameBorder="0"
+              scrolling="no"
+              title="Oldham service area map"
+              aria-label="Google map showing Oldham and Greater Manchester service area"
+              loading="lazy"
+            />
+          </div>
+
+          {/* Right — areas */}
+          <div className="w-full lg:w-1/2 bg-[#0f172a] px-6 sm:px-10 py-10 sm:py-14 flex flex-col justify-center">
+            <span className="text-[#FF4444] font-bold uppercase tracking-widest text-xs mb-3 block">
+              Areas We Cover From Oldham
+            </span>
+            <h2
+              className="text-white text-2xl sm:text-3xl font-bold mb-2 leading-tight"
+              style={{ fontFamily: 'var(--font-work-sans)' }}
+            >
+              Mobile Tyre Fitting Across Greater Manchester
+            </h2>
+            <p className="text-slate-400 text-sm mb-8 leading-relaxed">
+              Based in Oldham, we provide 24/7 mobile tyre fitting, emergency tyre replacement and mobile puncture repair across all of Greater Manchester.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-3">
+              {[
+                {
+                  name: 'Manchester',
+                  postcodes: 'M1 – M90',
+                  spots: ['Piccadilly Gardens', 'Northern Quarter', 'Spinningfields'],
+                  href: '/mobile-tyre-fitting-manchester',
+                },
+                {
+                  name: 'Bolton',
+                  postcodes: 'BL1 – BL6',
+                  spots: ['Victoria Square', 'Middlebrook Retail', 'University of Bolton Stadium'],
+                  href: '/mobile-tyre-fitting-bolton',
+                },
+                {
+                  name: 'Bury',
+                  postcodes: 'BL8 – BL9',
+                  spots: ['Bury Market', 'The Rock Shopping Centre', 'Radcliffe Town Centre'],
+                  href: '/mobile-tyre-fitting-bury',
+                },
+                {
+                  name: 'Oldham',
+                  postcodes: 'OL1 – OL9',
+                  spots: ['Tommyfield Market', 'Saddleworth Moor', 'Oldham Athletic FC'],
+                  href: '/mobile-tyre-fitting-oldham',
+                },
+                {
+                  name: 'Rochdale',
+                  postcodes: 'OL11 – OL16',
+                  spots: ['Rochdale Town Hall', 'Hollingworth Lake', 'Rochdale Riverside'],
+                  href: '/mobile-tyre-fitting-rochdale',
+                },
+                {
+                  name: 'Stockport',
+                  postcodes: 'SK1 – SK6',
+                  spots: ['Stockport Viaduct', 'Merseyway Shopping', 'Edgeley Park'],
+                  href: '/mobile-tyre-fitting-stockport',
+                },
+                {
+                  name: 'Tameside',
+                  postcodes: 'OL6, OL7, SK14 – SK16',
+                  spots: ['Ashton-under-Lyne', 'Portland Basin Museum', 'Stamford Park'],
+                  href: '/mobile-tyre-fitting-tameside',
+                },
+                {
+                  name: 'Trafford',
+                  postcodes: 'M16, M17, M32, M41',
+                  spots: ['Old Trafford Stadium', 'MediaCityUK', 'The Trafford Centre'],
+                  href: '/mobile-tyre-fitting-trafford',
+                },
+                {
+                  name: 'Wigan',
+                  postcodes: 'WN1 – WN6',
+                  spots: ['Wigan Pier', 'DW Stadium', 'Robin Park Arena'],
+                  href: '/mobile-tyre-fitting-wigan',
+                },
+              ].map((area) => (
+                <a
+                  key={area.name}
+                  href={area.href}
+                  className="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#FF4444]/40 rounded-xl p-3 transition-all"
+                >
+                  <div className="flex items-start justify-between mb-1.5">
+                    <span className="text-white font-bold text-sm group-hover:text-[#FF4444] transition-colors">{area.name}</span>
+                    <span className="text-[#FF4444] text-[10px] font-bold bg-[#FF4444]/10 px-2 py-0.5 rounded-full shrink-0 ml-2">{area.postcodes}</span>
+                  </div>
+                  <div className="flex flex-wrap gap-1">
+                    {area.spots.map((spot) => (
+                      <span key={spot} className="text-slate-400 text-[10px] font-medium bg-white/5 px-1.5 py-0.5 rounded">
+                        {spot}
+                      </span>
+                    ))}
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── 8. FAQ ────────────────────────────────────────── */}
         <CityFaq
           city="Oldham"
           faqs={[

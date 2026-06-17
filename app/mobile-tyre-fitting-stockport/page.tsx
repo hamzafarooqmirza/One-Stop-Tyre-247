@@ -64,7 +64,7 @@ export default function StockportPage() {
                     style={{ fontSize: '20px', fontVariationSettings: "'FILL' 1" }}
                   >check_circle</span>
                   <span className="text-sm font-semibold leading-snug">{item}</span>
-                </div>
+                </a>
               ))}
             </div>
 
@@ -177,40 +177,47 @@ export default function StockportPage() {
                   title: 'Mobile Tyre Fitting Stockport',
                   desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Stockport. Fast response with premium and budget tyre options available.',
                   badge: 'FAST RESPONSE',
+                  href: '/mobile-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp',
                   title: 'Emergency Tyre Replacement',
                   desc: 'Emergency tyre replacement service across Stockport for damaged, worn or blown tyres. We get you safely back on the road quickly.',
                   badge: 'AT YOUR DOOR',
+                  href: '/home-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp',
                   title: 'Mobile Puncture Repair',
                   desc: 'Professional puncture repair service where safe and suitable. Quick roadside repairs to save you time and money.',
                   badge: 'CERTIFIED REPAIR',
+                  href: '/emergency-puncture-repair',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp',
                   title: 'Roadside Tyre Assistance',
                   desc: 'Emergency roadside tyre assistance throughout Stockport. Available 24 hours a day for tyre-related breakdowns and call-outs.',
                   badge: '24/7 SERVICE',
+                  href: '/services',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp',
                   title: 'TPMS Reset',
                   desc: 'Tyre pressure monitoring system reset and sensor checks after tyre replacement or puncture repairs.',
                   badge: 'ALL VEHICLES',
+                  href: '/tpms-reset',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp',
                   title: 'Locking Nut Removal',
                   desc: 'Specialist locking wheel nut removal service for damaged, seized or missing locking wheel nuts.',
                   badge: 'DAMAGE FREE',
+                  href: '/locking-nut-removal',
                 },
               ].map((card) => (
-                <div
+                <a
                   key={card.title}
+                  href={card.href}
                   className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]"
                 >
                   <div className="relative h-44 sm:h-52 overflow-hidden">
@@ -243,7 +250,7 @@ export default function StockportPage() {
                       </span>
                     </div>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
             <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">

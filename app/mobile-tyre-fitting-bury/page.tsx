@@ -30,7 +30,7 @@ export default function BuryPage() {
         <section
           className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-start text-left px-4 sm:px-8 lg:px-16"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuBGZDhN9FUlFZutp_QbQgvUisUHwHOjKJQH8hkyXplJM7vk-RaCp4QYmfwRB9tyTO_FkwqjCEmuhoxa_t6b5nZ31qVQVvVIA2139m7uL504i6ffeCV-PxW6-zBiYlgv_PxpiPGxLrz9E5_0h8cw4pbG25uPQQm8ZnNAwRauwwMZpoV06EWRvbx0hmkk3K_mMu4Be6UKbvdDi4KGspJw3Ss9cngd-xuUWi0yUuinwpgnFMlvDeSlYaF6C6HIEBpgjhHTnuSGuefs8Ww)",
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/hero-tyre-fitting.webp)",
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}

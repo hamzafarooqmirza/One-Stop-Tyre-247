@@ -30,7 +30,7 @@ export default function TamesidePage() {
         <section
           className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-start text-left px-4 sm:px-8 lg:px-16"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuA-lQ5gFH5jK3Fo6pxwB59kBLfwwfAB96rATZI1VOCDVcKzNuMpr1lQN8KH2SHY676vXIEiiF_TIH2vovCYh9eF332Ls8Sg3lxPUyycPYdBsn46hKbzZmn2cOAi1buTuCjl5sjGRy39JfA2K5zAxxJ3qygF7PSakzYymtQFNX0X8xnUuBC1Rha1q2oEY2pp5T-IG3XY2zdFZtp7CvXgOOnMm3L1L3d993Kr5SAoHb6tjygAPoYEmYUfx65ZspoKk7I1Y0-ArzQv-eo)",
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/hero-tyre-fitting.webp)",
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}

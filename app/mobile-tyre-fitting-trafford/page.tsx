@@ -30,7 +30,7 @@ export default function TraffordPage() {
         <section
           className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-start text-left px-4 sm:px-8 lg:px-16"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuCg002K0OOPUj2BWv1aNNo9razXyT2fSlEIwUDVdQGupgjSFDUcrCMcUq-DALcOEWWRpAA7TAfaJfZ699fvvfMyjZXAI5lGsWv4_-Z7UBU6e24eqt5n8Zl4KjC_C8GSL1nTNhdYy7gTOljMWus0u75lLq8ztF7AKtKgYpcysFVUByQFt3HmSjzB7FTYnbZ6t0ySopUIhFAXTMcpIyuPrsTlELOdImGcfMyYD6hJWppaZaG9FavlPs7UysrIAFXwy_SB4GwdsWhOHj4)",
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/hero-tyre-fitting.webp)",
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}

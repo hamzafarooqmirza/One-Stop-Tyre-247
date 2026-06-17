@@ -30,7 +30,7 @@ export default function WiganPage() {
         <section
           className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-start text-left px-4 sm:px-8 lg:px-16"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuA4rpTHiSRhm3EprGSlH6Cbc4wwHu6Drw_CEY746MO5une5waMm6EONnDOOKTtMrDxrR1QiLry6mgBRm606uA_VcFNGwPqBTGkApWekES7JWd4zLNyse0Txsd8nrjxYMZOzqd7Zpifh7UW98h5SNokAFxNH07JADa8DjHizKJP9Ku48b0GEazKgAvmiEV3agrQOyisol566Yd2SDaDqUATkSykBDrEF_hP2JLVfmfOcQG_w28ziDNuP4lkeLL3IPZ8LJl4s_HqRmGY)",
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/hero-tyre-fitting.webp)",
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}

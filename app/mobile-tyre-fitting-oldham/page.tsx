@@ -331,7 +331,116 @@ export default function OldhamPage() {
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />
 
-        {/* ── 7. FAQ ────────────────────────────────────────── */}
+        {/* ── 7. MAP + SERVICE AREAS ────────────────────────── */}
+        <section className="border-t border-slate-200 flex flex-col lg:flex-row" style={{ minHeight: '520px' }}>
+          {/* Left — map */}
+          <div className="w-full lg:w-1/2 h-[300px] lg:h-auto">
+            <iframe
+              className="w-full h-full"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4741.379474172151!2d-2.1049285233703974!3d53.5454538598072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb920bfb7fecd%3A0x4edbef2355697975!2sOne%20Stop%20Mobile%20Tyres%2024%2F7!5e0!3m2!1sen!2s!4v1781464116347!5m2!1sen!2s"
+              frameBorder="0"
+              scrolling="no"
+              title="Oldham service area map"
+              aria-label="Google map showing Oldham and Greater Manchester service area"
+              loading="lazy"
+            />
+          </div>
+
+          {/* Right — areas */}
+          <div className="w-full lg:w-1/2 bg-[#0f172a] px-6 sm:px-10 py-10 sm:py-14 flex flex-col justify-center">
+            <span className="text-[#FF4444] font-bold uppercase tracking-widest text-xs mb-3 block">
+              Areas We Cover From Oldham
+            </span>
+            <h2
+              className="text-white text-2xl sm:text-3xl font-bold mb-2 leading-tight"
+              style={{ fontFamily: 'var(--font-work-sans)' }}
+            >
+              Mobile Tyre Fitting Across Greater Manchester
+            </h2>
+            <p className="text-slate-400 text-sm mb-8 leading-relaxed">
+              Based in Oldham, we provide 24/7 mobile tyre fitting, emergency tyre replacement and mobile puncture repair across all of Greater Manchester.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-3">
+              {[
+                {
+                  name: 'Manchester',
+                  postcodes: 'M1 – M90',
+                  spots: ['Piccadilly Gardens', 'Northern Quarter', 'Spinningfields'],
+                  href: '/mobile-tyre-fitting-manchester',
+                },
+                {
+                  name: 'Bolton',
+                  postcodes: 'BL1 – BL6',
+                  spots: ['Victoria Square', 'Middlebrook Retail', 'University of Bolton Stadium'],
+                  href: '/mobile-tyre-fitting-bolton',
+                },
+                {
+                  name: 'Bury',
+                  postcodes: 'BL8 – BL9',
+                  spots: ['Bury Market', 'The Rock Shopping Centre', 'Radcliffe Town Centre'],
+                  href: '/mobile-tyre-fitting-bury',
+                },
+                {
+                  name: 'Oldham',
+                  postcodes: 'OL1 – OL9',
+                  spots: ['Tommyfield Market', 'Saddleworth Moor', 'Oldham Athletic FC'],
+                  href: '/mobile-tyre-fitting-oldham',
+                },
+                {
+                  name: 'Rochdale',
+                  postcodes: 'OL11 – OL16',
+                  spots: ['Rochdale Town Hall', 'Hollingworth Lake', 'Rochdale Riverside'],
+                  href: '/mobile-tyre-fitting-rochdale',
+                },
+                {
+                  name: 'Stockport',
+                  postcodes: 'SK1 – SK6',
+                  spots: ['Stockport Viaduct', 'Merseyway Shopping', 'Edgeley Park'],
+                  href: '/mobile-tyre-fitting-stockport',
+                },
+                {
+                  name: 'Tameside',
+                  postcodes: 'OL6, OL7, SK14 – SK16',
+                  spots: ['Ashton-under-Lyne', 'Portland Basin Museum', 'Stamford Park'],
+                  href: '/mobile-tyre-fitting-tameside',
+                },
+                {
+                  name: 'Trafford',
+                  postcodes: 'M16, M17, M32, M41',
+                  spots: ['Old Trafford Stadium', 'MediaCityUK', 'The Trafford Centre'],
+                  href: '/mobile-tyre-fitting-trafford',
+                },
+                {
+                  name: 'Wigan',
+                  postcodes: 'WN1 – WN6',
+                  spots: ['Wigan Pier', 'DW Stadium', 'Robin Park Arena'],
+                  href: '/mobile-tyre-fitting-wigan',
+                },
+              ].map((area) => (
+                <a
+                  key={area.name}
+                  href={area.href}
+                  className="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#FF4444]/40 rounded-xl p-3 transition-all"
+                >
+                  <div className="flex items-start justify-between mb-1.5">
+                    <span className="text-white font-bold text-sm group-hover:text-[#FF4444] transition-colors">{area.name}</span>
+                    <span className="text-[#FF4444] text-[10px] font-bold bg-[#FF4444]/10 px-2 py-0.5 rounded-full shrink-0 ml-2">{area.postcodes}</span>
+                  </div>
+                  <div className="flex flex-wrap gap-1">
+                    {area.spots.map((spot) => (
+                      <span key={spot} className="text-slate-400 text-[10px] font-medium bg-white/5 px-1.5 py-0.5 rounded">
+                        {spot}
+                      </span>
+                    ))}
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── 8. FAQ ────────────────────────────────────────── */}
         <CityFaq
           city="Oldham"
           faqs={[

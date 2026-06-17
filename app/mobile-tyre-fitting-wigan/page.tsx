@@ -54,7 +54,7 @@ export default function WiganPage() {
                 <div key={item} className="flex items-center gap-2.5 text-white/90">
                   <span className="material-symbols-outlined text-green-400 shrink-0" style={{ fontSize: '20px', fontVariationSettings: "'FILL' 1" }}>check_circle</span>
                   <span className="text-sm font-semibold leading-snug">{item}</span>
-                </a>
+                </div>
               ))}
             </div>
             <a href="https://maps.app.goo.gl/tqGMogzsNNn8EXjH8" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full px-4 py-2 mb-4">
@@ -146,7 +146,7 @@ export default function WiganPage() {
                 { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp', title: 'Locking Nut Removal', desc: 'Specialist locking wheel nut removal service for damaged, seized or missing locking wheel nuts.', badge: 'DAMAGE FREE',
                   href: '/locking-nut-removal' },
               ].map((card) => (
-                <div key={card.title} className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]">
+                <a key={card.title} href={card.href} className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]">
                   <div className="relative h-44 sm:h-52 overflow-hidden">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={card.img} alt={card.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={600} height={400} loading="lazy" decoding="async" />

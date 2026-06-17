@@ -64,7 +64,7 @@ export default function A627Page() {
                     style={{ fontSize: '20px', fontVariationSettings: "'FILL' 1" }}
                   >check_circle</span>
                   <span className="text-sm font-semibold leading-snug">{item}</span>
-                </a>
+                </div>
               ))}
             </div>
 

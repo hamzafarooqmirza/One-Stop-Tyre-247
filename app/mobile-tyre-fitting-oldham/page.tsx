@@ -30,7 +30,7 @@ export default function OldhamPage() {
         <section
           className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-start text-left px-4 sm:px-8 lg:px-16"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuD3WPBHLb8oI6NlUbetHGxrxiWajSXddJ-bMq4pXSVPaYFh3PHsgn8h-0s4S8J7GH0UAZC49r0ZOPOd8zn9mzDBHGPUfwUXg4IYvURi6te7Pm4lvXyaJUY6SuRJ6rb6uCQxg15PNiuqA5Ok8GbTsrdC_nNYlvlvwafoylbWszZHCZWoEKocqMKKMeY9zyVHzdry1KfQ5YcfiZSUNliH7NRGlfHQyNTAJDskniaZE4wCJGWbs0xVYMLXSLh2S9jTuRkmALRX7-tuz8I)",
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/hero-tyre-fitting.webp)",
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}

@@ -30,7 +30,7 @@ export default function StockportPage() {
         <section
           className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-start text-left px-4 sm:px-8 lg:px-16"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuAup35Fvnu1YnYxxCeZcIQQDwiQ-GaVTp63rm_rFlDnchfoi3AaQS25V1vqtsJ4rXR8oAivHBHfvvTYs49JdOmVr_GP17uKy1ydADdU5ZtznZ2Cs7TO7WZr4G1U0nts_dobjefnPiijoVUpQYF8cdPnCPx_0l5lcSCi3Y96N73PozGyaUCsrUIB6EbzeAQRAiMQwibfQ0s7k_AqpfJDkKk3RW_sM2ol79yN-lqe68zfpS05AED3m-bzVYfbsAPZiDEWS1wUUwrcB4U)",
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/hero-tyre-fitting.webp)",
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}

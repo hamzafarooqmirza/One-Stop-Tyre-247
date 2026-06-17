@@ -30,7 +30,7 @@ export default function BoltonPage() {
         <section
           className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-start text-left px-4 sm:px-8 lg:px-16"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuBWRHcG5Yq1w-p0lx2dCmskXprqQ8BVFsQm9GWU1KDecKdfF7xNkFVpvBooVDgTM_tXZ9tWyD-H6EKn11-PQYJS9qi0AZWVw2cWLCnIG3IuHsJTkBZ74m4XD9Kgqvug2JP91HXI642wqA9p6K8NrR5684YNPTG94cdsn51Sld0OiXccRXLYihx35J91OPtwSeFSLTUQnxs4fSwJtOI46S5s6u2Q51C6rHnUp7-Ins3g1qA6vSjUHbzvWjmNf_meQIL-olV4ypY1wVo)",
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/hero-tyre-fitting.webp)",
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}

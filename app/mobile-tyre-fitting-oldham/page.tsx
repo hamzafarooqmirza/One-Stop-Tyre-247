@@ -30,7 +30,7 @@ export default function OldhamPage() {
         <section
           className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-start text-left px-4 sm:px-8 lg:px-16"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('/images/Mobile%20Tyre%20Fitting%20One%20Stop%20Tyres%2024%207.webp')",
+            backgroundImage: "linear-gradient(to right, rgba(15, 23, 42, 0.92) 0%, rgba(15, 23, 42, 0.45) 100%), url('/images/Mobile%20Tyre%20Fitting%20One%20Stop%20Tyres%2024%207.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}

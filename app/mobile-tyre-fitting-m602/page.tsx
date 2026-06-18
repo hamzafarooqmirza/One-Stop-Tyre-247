@@ -328,7 +328,7 @@ export default function M602Page() {
           city="M602"
           faqs={[
             { q: 'Where on the M602 do you cover?', a: 'We cover the entire length of the M602, from Junction 1 (M60/M62 interchange) all the way to Junction 3 at Regent Road, Salford. We also cover surrounding areas like Eccles, Winton, and Pendleton.' },
-            { q: 'How quickly can you get to me on the M602?', a: 'Our average response time for the M602 corridor is 30-45 minutes. Traffic conditions in Salford can vary, but our local base gives us a distinct advantage over national providers.' },
+            { q: 'How quickly can you get to me on the M602?', a: 'Our average response time for the M602 corridor is 20-30 minutes. Traffic conditions in Salford can vary, but our local base gives us a distinct advantage over national providers.' },
             { q: 'Do you work through the night?', a: "Yes, we operate 24 hours a day, 365 days a year. Motorway emergencies don't stick to a 9-to-5 schedule, and neither do we." },
             { q: 'Can you fix a run-flat tyre?', a: 'Run-flat tyres generally cannot be repaired if they have been driven on while deflated, as the internal structure becomes compromised. However, we carry a wide range of replacement run-flat tyres to fit on-site.' },
           ]}

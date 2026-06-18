@@ -318,7 +318,7 @@ export default function StockportPage() {
         </section>
 
         {/* ── 5. WHY CHOOSE US ──────────────────────────────── */}
-        <WhyChooseUs city="Stockport" image="/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp" />
+        <WhyChooseUs city="Stockport" image="/images/Mobile Tyre Fitting Manchester-airanko (1).webp" />
 
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />

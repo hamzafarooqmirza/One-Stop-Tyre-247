@@ -30,7 +30,7 @@ export default function M60Page() {
         <section
           className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-start text-left px-4 sm:px-8 lg:px-16"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp)",
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('/images/Mobile%20Tyre%20Fitting%20One%20Stop%20Tyres%2024%207.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}

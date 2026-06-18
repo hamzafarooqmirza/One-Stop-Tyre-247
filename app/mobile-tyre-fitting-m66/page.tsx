@@ -318,7 +318,7 @@ export default function M66Page() {
         </section>
 
         {/* ── 5. WHY CHOOSE US ──────────────────────────────── */}
-        <WhyChooseUs city="M66" image="/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp" />
+        <WhyChooseUs city="M66" image="/images/Tyre fitting at home-airanko (1).webp" />
 
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />

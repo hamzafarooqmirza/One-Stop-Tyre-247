@@ -333,7 +333,7 @@ export default function BoltonPage() {
         </section>
 
         {/* ── 5. WHY BOLTON DRIVERS CHOOSE US ──────────────── */}
-        <WhyChooseUs city="Bolton" image="/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp" />
+        <WhyChooseUs city="Bolton" image="/images/Tyres fitting anywhere-airanko (1).webp" />
 
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />

@@ -30,7 +30,7 @@ export default function TraffordPage() {
         <section
           className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-start text-left px-4 sm:px-8 lg:px-16"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/hero-tyre-fitting.webp)",
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp)",
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}
@@ -278,7 +278,7 @@ export default function TraffordPage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 className="relative z-10 rounded-2xl sm:rounded-3xl shadow-2xl border-4 sm:border-8 border-slate-50 w-full object-cover"
-                src="/images/hero-tyre-fitting.webp"
+                src="/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp"
                 alt="Mobile tyre fitting technician in Trafford"
                 width={800}
                 height={600}

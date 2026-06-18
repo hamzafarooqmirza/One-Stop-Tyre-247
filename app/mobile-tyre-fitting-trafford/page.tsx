@@ -278,7 +278,7 @@ export default function TraffordPage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 className="relative z-10 rounded-2xl sm:rounded-3xl shadow-2xl border-4 sm:border-8 border-slate-50 w-full object-cover"
-                src="/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp"
+                src="/images/Mobile Tyre Fitting Manchester-airanko (1).webp"
                 alt="Mobile tyre fitting technician in Trafford"
                 width={800}
                 height={600}

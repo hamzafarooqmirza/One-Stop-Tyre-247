@@ -15,7 +15,7 @@ const features = [
   {
     icon: 'bolt',
     title: 'Fast Response',
-    desc: 'Emergency priority dispatch with an average arrival time of 30–60 minutes.',
+    desc: 'Emergency priority dispatch with an average arrival time of 20–30 minutes.',
   },
   {
     icon: 'engineering',
@@ -165,7 +165,7 @@ export default function MobileTyreFittingPage() {
                 Don&apos;t let a puncture ruin your day. Our Greater Manchester network of expert technicians is equipped with the latest technology to handle any tyre emergency. We stock a comprehensive range of premium, mid-range, and budget tyres for all vehicle makes and models.
               </p>
               <p className="text-sm sm:text-base text-on-surface-variant mb-6 leading-relaxed">
-                With our 24/7 rapid response, we typically arrive within 30–60 minutes, ensuring you&apos;re back on the road safely and swiftly. Our commitment to excellence means no hidden charges and transparent pricing from the moment you call.
+                With our 24/7 rapid response, we typically arrive within 20–30 minutes, ensuring you&apos;re back on the road safely and swiftly. Our commitment to excellence means no hidden charges and transparent pricing from the moment you call.
               </p>
               <div className="grid grid-cols-2 gap-3">
                 {['UK Wide Coverage', 'Fully Insured', 'Certified Techs', 'Modern Vans'].map((item) => (

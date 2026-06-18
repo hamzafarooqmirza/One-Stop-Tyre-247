@@ -121,7 +121,7 @@ const motorwayAreas = [
 // ── Trust badges ──────────────────────────────────────────────────────────────
 const trustBadges = [
   { icon: 'schedule', label: '24/7 Emergency', sub: 'Always on call' },
-  { icon: 'bolt', label: '30–60 Min', sub: 'Average arrival' },
+  { icon: 'bolt', label: '20–30 Min', sub: 'Average arrival' },
   { icon: 'public', label: '9 Districts', sub: 'Greater Manchester' },
   { icon: 'route', label: '7 Motorways', sub: 'Full roadside cover' },
 ]
@@ -314,7 +314,7 @@ export default function ServiceAreaPage() {
                 <span className="material-symbols-outlined text-sm text-green-500" style={{ fontVariationSettings: "'FILL' 1" }}>
                   check_circle
                 </span>
-                Typical response: 30–60 minutes anywhere in Greater Manchester
+                Typical response: 20–30 minutes anywhere in Greater Manchester
               </p>
             </div>
           </div>

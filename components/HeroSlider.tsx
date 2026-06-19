@@ -172,18 +172,18 @@ export default function HeroSlider() {
         <SlideBg image={slide.image} />
 
         {/* Content */}
-        <div className="relative z-10 h-full flex items-center px-5 sm:px-10 lg:px-16 xl:px-24 py-20 sm:py-16">
+        <div className="relative z-10 h-full flex items-center px-5 sm:px-10 lg:px-16 xl:px-24 pb-16">
           <div className="w-full max-w-2xl" key={contentKey}>
 
             {/* Badge */}
-            <span className="hero-badge inline-flex items-center gap-2 bg-[#b70011] text-white text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full mb-3 sm:mb-5 max-w-full">
-              <span className="w-1.5 h-1.5 rounded-full bg-white/80 animate-pulse shrink-0" />
-              <span className="truncate">{slide.badge}</span>
+            <span className="hero-badge inline-flex items-center gap-2 bg-[#b70011] text-white text-xs sm:text-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5">
+              <span className="w-1.5 h-1.5 rounded-full bg-white/80 animate-pulse" />
+              {slide.badge}
             </span>
 
             {/* Heading */}
             <h1
-              className="hero-h1 text-3xl sm:text-5xl lg:text-6xl xl:text-[68px] text-white font-black leading-[1.08] mb-3 sm:mb-5"
+              className="hero-h1 text-4xl sm:text-5xl lg:text-6xl xl:text-[68px] text-white font-black leading-[1.05] mb-5"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.03em' }}
             >
               {slide.heading.split('\n').map((line, i) => (
@@ -192,21 +192,21 @@ export default function HeroSlider() {
             </h1>
 
             {/* Body */}
-            <p className="hero-body text-white/75 text-xs sm:text-base lg:text-lg leading-relaxed mb-4 sm:mb-6 max-w-xl hidden sm:block">
+            <p className="hero-body text-white/75 text-sm sm:text-base lg:text-lg leading-relaxed mb-6 max-w-xl">
               {slide.body}
             </p>
 
             {/* Checklist */}
-            <div className="hero-list mb-4 sm:mb-6">
-              <p className="text-[#FF4444] text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-2 sm:mb-3">{slide.listLabel}</p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1.5 sm:gap-y-2">
-                {slide.items.map((item, idx) => (
-                  <div key={item} className={`flex items-center gap-2 sm:gap-2.5 text-white/90${idx >= 3 ? ' hidden sm:flex' : ''}`}>
+            <div className="hero-list mb-6">
+              <p className="text-[#FF4444] text-xs font-bold uppercase tracking-widest mb-3">{slide.listLabel}</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2">
+                {slide.items.map((item) => (
+                  <div key={item} className="flex items-center gap-2.5 text-white/90">
                     <span
                       className="material-symbols-outlined text-green-400 shrink-0"
-                      style={{ fontSize: '16px', fontVariationSettings: "'FILL' 1" }}
+                      style={{ fontSize: '18px', fontVariationSettings: "'FILL' 1" }}
                     >check_circle</span>
-                    <span className="text-xs sm:text-sm font-semibold">{item}</span>
+                    <span className="text-sm font-semibold">{item}</span>
                   </div>
                 ))}
               </div>
@@ -216,9 +216,9 @@ export default function HeroSlider() {
             <a
               href="https://maps.app.goo.gl/tqGMogzsNNn8EXjH8"
               target="_blank" rel="noopener noreferrer"
-              className="hero-badge-google inline-flex items-center gap-2 sm:gap-2.5 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full px-3 sm:px-4 py-1.5 sm:py-2 mb-4 sm:mb-6 hover:bg-white/20 transition-colors"
+              className="hero-badge-google inline-flex items-center gap-2.5 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full px-4 py-2 mb-6 hover:bg-white/20 transition-colors"
             >
-              <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24">
                 <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
                 <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
                 <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/>
@@ -226,26 +226,26 @@ export default function HeroSlider() {
               </svg>
               <div className="flex text-yellow-400 gap-px">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <span key={i} className="material-symbols-outlined text-[11px] sm:text-[13px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  <span key={i} className="material-symbols-outlined text-[13px]" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 ))}
               </div>
-              <span className="font-bold text-xs sm:text-sm">5.0</span>
-              <span className="text-white/50 text-[10px] sm:text-xs hidden sm:inline">Rated By Drivers Across Greater Manchester</span>
+              <span className="font-bold text-sm">5.0</span>
+              <span className="text-white/50 text-xs">Rated By Drivers Across Greater Manchester</span>
             </a>
 
             {/* CTAs */}
-            <div className="hero-ctas flex flex-col sm:flex-row gap-2.5 sm:gap-3">
+            <div className="hero-ctas flex flex-col sm:flex-row gap-3">
               <a
                 href="tel:07759708646"
-                className="bg-[#FF4444] hover:bg-red-700 text-white font-black px-6 sm:px-7 py-3.5 sm:py-4 rounded-xl flex items-center justify-center gap-2.5 transition-all text-sm sm:text-base shadow-2xl shadow-red-900/40 hover:scale-105"
+                className="bg-[#FF4444] hover:bg-red-700 text-white font-black px-7 py-4 rounded-xl flex items-center justify-center gap-2.5 transition-all text-base shadow-2xl shadow-red-900/40 hover:scale-105"
                 style={{ fontFamily: 'var(--font-work-sans)' }}
               >
-                <span className="material-symbols-outlined text-lg sm:text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
+                <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
                 CALL NOW
               </a>
               <a
                 href="https://wa.me/447759708646"
-                className="bg-[#25D366] hover:bg-[#1ebe5d] text-white font-black px-6 sm:px-7 py-3.5 sm:py-4 rounded-xl flex items-center justify-center gap-2.5 transition-all text-sm sm:text-base shadow-lg shadow-green-900/30 hover:scale-105"
+                className="bg-[#25D366] hover:bg-[#1ebe5d] text-white font-black px-7 py-4 rounded-xl flex items-center justify-center gap-2.5 transition-all text-base shadow-lg shadow-green-900/30 hover:scale-105"
                 style={{ fontFamily: 'var(--font-work-sans)' }}
               >
                 {WA_SVG}

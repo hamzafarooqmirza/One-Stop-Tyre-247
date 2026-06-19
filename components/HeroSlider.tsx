@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 
 const SLIDES = [
   {
+    image: '/images/Mobile%20Tyre%20Fitting%20One%20Stop%20Tyres%2024%207.webp',
     badge: 'Mobile Tyre Fitting & Emergency Tyre Repair',
     heading: 'Mobile Tyre Fitting\nNear Me – 24/7 Service',
     body: 'Need a mobile tyre fitter fast? Our fully equipped mobile tyre fitting vans provide emergency tyre repair, mobile tyre replacement and same day tyre fitting at your home, workplace or roadside location.',
@@ -17,6 +18,7 @@ const SLIDES = [
     ],
   },
   {
+    image: '/images/tyre%20fitting%20in%20emergergency-airanko%20(1).webp',
     badge: 'Emergency Mobile Tyre Service',
     heading: 'Flat Tyre?\nWe Come To You',
     body: 'Whether you need mobile tyre repair, emergency tyre replacement, or roadside tyre assistance, our experienced technicians can get you safely back on the road — no waiting for recovery trucks.',
@@ -30,6 +32,7 @@ const SLIDES = [
     ],
   },
   {
+    image: '/images/Tyre%20fitting%20at%20home-airanko%20(1).webp',
     badge: 'Same Day Mobile Tyre Replacement',
     heading: 'Professional Mobile\nTyre Fitters Near You',
     body: 'Our mobile tyre fitting service covers emergency call-outs, puncture repairs, tyre replacements and tyre recovery assistance. We bring the tyre shop directly to your location.',
@@ -141,7 +144,7 @@ export default function HeroSlider() {
       {/* Outgoing slide */}
       {prev !== null && transitioning && (
         <div className={`slide-panel ${slideOutClass}`} key={`out-${prev}`}>
-          <SlideBg />
+          <SlideBg image={SLIDES[prev].image} />
         </div>
       )}
 
@@ -150,7 +153,7 @@ export default function HeroSlider() {
         className={`slide-panel ${transitioning ? slideInClass : ''}`}
         key={`in-${current}`}
       >
-        <SlideBg />
+        <SlideBg image={slide.image} />
 
         {/* Content */}
         <div className="relative z-10 h-full flex items-center px-5 sm:px-10 lg:px-16 xl:px-24">
@@ -300,13 +303,13 @@ export default function HeroSlider() {
   )
 }
 
-function SlideBg() {
+function SlideBg({ image }: { image: string }) {
   return (
     <div className="absolute inset-0 bg-[#0f172a]">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         className="kb w-full h-full object-cover object-center"
-        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko%20%281%29-2niHlhcLFs37TFtkZ5lIBe0UubGjUQ.webp"
+        src={image}
         alt=""
         aria-hidden="true"
         width={1600}

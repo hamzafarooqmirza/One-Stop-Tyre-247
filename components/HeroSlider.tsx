@@ -113,14 +113,13 @@ export default function HeroSlider() {
   return (
     <section
       className="relative overflow-hidden"
-      style={{ minHeight: 'clamp(480px, 100svh, 820px)' }}
       onMouseEnter={() => { paused.current = true }}
       onMouseLeave={() => { paused.current = false }}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
       <style>{`
-        /* Slide panel transitions */
+        /* Background slide panels — absolutely positioned, animate */
         .slide-panel { position:absolute; inset:0; will-change:transform; }
         .slide-in-right  { animation: inRight  0.6s cubic-bezier(0.4,0,0.2,1) forwards; }
         .slide-out-left  { animation: outLeft  0.6s cubic-bezier(0.4,0,0.2,1) forwards; }
@@ -155,25 +154,25 @@ export default function HeroSlider() {
         @keyframes progress { from{width:0} to{width:100%} }
       `}</style>
 
-      {/* ── SLIDES STACK ── */}
-
-      {/* Outgoing slide */}
+      {/* ── BACKGROUND PANELS (absolutely positioned, slide in/out) ── */}
       {prev !== null && transitioning && (
         <div className={`slide-panel ${slideOutClass}`} key={`out-${prev}`}>
           <SlideBg image={SLIDES[prev].image} />
         </div>
       )}
-
-      {/* Incoming / current slide */}
       <div
         className={`slide-panel ${transitioning ? slideInClass : ''}`}
-        key={`in-${current}`}
+        key={`bg-${current}`}
       >
         <SlideBg image={slide.image} />
+      </div>
 
-        {/* Content */}
-        <div className="relative z-10 h-full flex items-center px-5 sm:px-10 lg:px-16 xl:px-24 pt-16 pb-16">
-          <div className="w-full max-w-2xl" key={contentKey}>
+      {/* ── CONTENT (normal document flow — section grows to fit this) ── */}
+      <div
+        className="relative z-10 flex flex-col justify-center px-5 sm:px-10 lg:px-16 xl:px-24 pt-16 pb-24"
+        style={{ minHeight: 'clamp(600px, 90svh, 820px)' }}
+      >
+        <div className="w-full max-w-2xl" key={contentKey}>
 
             {/* Badge */}
             <span className="hero-badge inline-flex items-center gap-2 bg-[#b70011] text-white text-xs sm:text-sm font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5">
@@ -255,7 +254,6 @@ export default function HeroSlider() {
 
           </div>
         </div>
-      </div>
 
       {/* ── BOTTOM BAR: counter + dots + progress ── */}
       <div className="absolute bottom-0 left-0 right-0 z-20 px-5 sm:px-10 lg:px-16 xl:px-24 pb-4 sm:pb-6 flex items-end justify-between gap-4">

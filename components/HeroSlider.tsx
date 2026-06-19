@@ -172,7 +172,7 @@ export default function HeroSlider() {
         <SlideBg image={slide.image} />
 
         {/* Content */}
-        <div className="relative z-10 h-full flex items-center px-5 sm:px-10 lg:px-16 xl:px-24 pb-16">
+        <div className="relative z-10 h-full flex items-center px-5 sm:px-10 lg:px-16 xl:px-24 pt-16 pb-16">
           <div className="w-full max-w-2xl" key={contentKey}>
 
             {/* Badge */}

@@ -130,7 +130,7 @@ export default function ContactPageClient() {
                         Email Support
                       </p>
                       <p
-                        className="text-[#1c1b1b] text-sm sm:text-base lg:text-lg font-semibold break-all"
+                        className="text-[#1c1b1b] text-base lg:text-lg font-semibold break-all"
                         style={{ fontFamily: 'Work Sans, sans-serif' }}
                       >
                         info@onestoptyres247.co.uk
@@ -208,7 +208,7 @@ export default function ContactPageClient() {
                 >
                   Send Us a Message
                 </h2>
-                <p className="text-[#5c403c] mb-6 sm:mb-8 text-sm sm:text-base leading-relaxed">
+                <p className="text-[#5c403c] mb-6 sm:mb-8 text-base leading-relaxed">
                   For non-urgent inquiries, booking requests, or detailed quotes, please fill out the
                   form below.
                 </p>
@@ -224,7 +224,7 @@ export default function ContactPageClient() {
                         required
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        className="w-full p-3 sm:p-4 bg-[#f6f3f2] border border-[#e6bdb8] rounded-lg focus:outline-none focus:border-[#3e5e95] transition-all text-sm sm:text-base"
+                        className="w-full p-3 sm:p-4 bg-[#f6f3f2] border border-[#e6bdb8] rounded-lg focus:outline-none focus:border-[#3e5e95] transition-all text-base"
                       />
                     </div>
                     <div>
@@ -237,7 +237,7 @@ export default function ContactPageClient() {
                         required
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
-                        className="w-full p-3 sm:p-4 bg-[#f6f3f2] border border-[#e6bdb8] rounded-lg focus:outline-none focus:border-[#3e5e95] transition-all text-sm sm:text-base"
+                        className="w-full p-3 sm:p-4 bg-[#f6f3f2] border border-[#e6bdb8] rounded-lg focus:outline-none focus:border-[#3e5e95] transition-all text-base"
                       />
                     </div>
                   </div>
@@ -251,7 +251,7 @@ export default function ContactPageClient() {
                         placeholder="john@example.com"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        className="w-full p-3 sm:p-4 bg-[#f6f3f2] border border-[#e6bdb8] rounded-lg focus:outline-none focus:border-[#3e5e95] transition-all text-sm sm:text-base"
+                        className="w-full p-3 sm:p-4 bg-[#f6f3f2] border border-[#e6bdb8] rounded-lg focus:outline-none focus:border-[#3e5e95] transition-all text-base"
                       />
                     </div>
                     <div>
@@ -263,7 +263,7 @@ export default function ContactPageClient() {
                         placeholder="E.g. M1 1AA"
                         value={location}
                         onChange={(e) => setLocation(e.target.value)}
-                        className="w-full p-3 sm:p-4 bg-[#f6f3f2] border border-[#e6bdb8] rounded-lg focus:outline-none focus:border-[#3e5e95] transition-all text-sm sm:text-base"
+                        className="w-full p-3 sm:p-4 bg-[#f6f3f2] border border-[#e6bdb8] rounded-lg focus:outline-none focus:border-[#3e5e95] transition-all text-base"
                       />
                     </div>
                   </div>
@@ -277,7 +277,7 @@ export default function ContactPageClient() {
                       required
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
-                      className="w-full p-3 sm:p-4 bg-[#f6f3f2] border border-[#e6bdb8] rounded-lg focus:outline-none focus:border-[#3e5e95] transition-all text-sm sm:text-base"
+                      className="w-full p-3 sm:p-4 bg-[#f6f3f2] border border-[#e6bdb8] rounded-lg focus:outline-none focus:border-[#3e5e95] transition-all text-base"
                     />
                   </div>
                   <button
@@ -373,7 +373,7 @@ export default function ContactPageClient() {
                 >
                   {item.title}
                 </h3>
-                <p className="text-[#5c403c] text-sm sm:text-base leading-relaxed">
+                <p className="text-[#5c403c] text-base leading-relaxed">
                   {item.desc}
                 </p>
               </div>
@@ -401,7 +401,7 @@ export default function ContactPageClient() {
                 >
                   <button
                     type="button"
-                    className="flex justify-between items-center w-full p-4 sm:p-6 text-left text-sm sm:text-base font-semibold gap-3"
+                    className="flex justify-between items-center w-full p-4 sm:p-6 text-left text-base font-semibold gap-3"
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
                     aria-expanded={openFaq === i}
                   >
@@ -414,7 +414,7 @@ export default function ContactPageClient() {
                     </span>
                   </button>
                   {openFaq === i && (
-                    <div className="px-4 sm:px-6 pb-4 sm:pb-6 text-[#5c403c] border-t border-slate-50 pt-3 sm:pt-4 text-sm sm:text-base leading-relaxed">
+                    <div className="px-4 sm:px-6 pb-4 sm:pb-6 text-[#5c403c] border-t border-slate-50 pt-3 sm:pt-4 text-base leading-relaxed">
                       {faq.a}
                     </div>
                   )}

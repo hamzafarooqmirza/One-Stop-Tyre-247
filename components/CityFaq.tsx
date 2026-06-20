@@ -14,7 +14,7 @@ function FaqItem({ q, a }: FaqEntry) {
           expand_more
         </span>
       </summary>
-      <p className="mt-3 sm:mt-4 text-[#5c403c] leading-relaxed text-sm sm:text-base">{a}</p>
+      <p className="mt-3 sm:mt-4 text-[#5c403c] leading-relaxed text-base">{a}</p>
     </details>
   )
 }

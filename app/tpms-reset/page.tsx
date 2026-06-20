@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: 'TPMS Reset | One Stop Tyres 24/7',
   description:
     'Professional, fast and reliable TPMS reset available 24/7 across the UK. We clear dashboard warnings and calibrate sensors at your location.',
+  alternates: { canonical: 'https://onestoptyres247.co.uk/tpms-reset' },
 }
 
 const features = [

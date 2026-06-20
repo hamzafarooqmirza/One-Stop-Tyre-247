@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: 'Mobile Tyre Fitting | One Stop Tyres 24/7',
   description:
     "Professional, fast and reliable mobile tyre fitting available 24/7 across Greater Manchester. We bring the garage to you, whether you're at home, work, or stranded on the roadside.",
+  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting' },
 }
 
 const features = [

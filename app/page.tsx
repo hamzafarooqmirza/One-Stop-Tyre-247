@@ -1,3 +1,9 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  alternates: { canonical: 'https://onestoptyres247.co.uk/' },
+}
+
 import BrandCarousel from '@/components/BrandCarousel'
 import QuoteForm from '@/components/QuoteForm'
 import ReviewsCarousel from '@/components/ReviewsCarousel'

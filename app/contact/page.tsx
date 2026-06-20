@@ -1,3 +1,9 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  alternates: { canonical: 'https://onestoptyres247.co.uk/contact' },
+}
+
 'use client'
 
 import { useState } from 'react'

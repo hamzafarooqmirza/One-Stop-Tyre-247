@@ -3,6 +3,7 @@ export const metadata: Metadata = {
   title: 'Our Expert Mobile Services | One Stop Tyres 24/7',
   description:
     'Professional 24/7 roadside assistance across the UK. Mobile tyre fitting, jump starts, puncture repair, TPMS reset & more — we bring the garage to you.',
+  alternates: { canonical: 'https://onestoptyres247.co.uk/services' },
 }
 
 const services = [

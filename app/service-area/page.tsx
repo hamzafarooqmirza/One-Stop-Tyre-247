@@ -3,6 +3,7 @@ export const metadata: Metadata = {
   title: 'Service Area | One Stop Tyres 24/7 — Greater Manchester',
   description:
     'One Stop Tyres 24/7 covers all of Greater Manchester and key motorways including M60, M61, M62, M66, M67, M602, A627 and more. Find out if we cover your area.',
+  alternates: { canonical: 'https://onestoptyres247.co.uk/service-area' },
 }
 
 // ── Town / district cards ─────────────────────────────────────────────────────

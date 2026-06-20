@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: 'Locking Nut Removal | One Stop Tyres 24/7',
   description:
     'Specialist damage-free locking wheel nut removal available 24/7 across the UK. Lost your key or damaged nuts? We come to you and remove them without harming your alloys.',
+  alternates: { canonical: 'https://onestoptyres247.co.uk/locking-nut-removal' },
 }
 
 const features = [

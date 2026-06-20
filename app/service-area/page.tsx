@@ -149,13 +149,13 @@ export default function ServiceAreaPage() {
           <h1 className="font-h1 text-2xl sm:text-3xl lg:text-h1 text-white mb-4 sm:mb-5 text-balance leading-tight">
             Our Service Area
           </h1>
-          <p className="font-body-lg text-sm sm:text-base lg:text-body-lg text-white/90 max-w-2xl mx-auto mb-6 sm:mb-8 text-pretty leading-relaxed">
+          <p className="font-body-lg text-base lg:text-body-lg text-white/90 max-w-2xl mx-auto mb-6 sm:mb-8 text-pretty leading-relaxed">
             We cover all 9 Greater Manchester districts and 7 major motorways — wherever you
             are, we&apos;ll come to you, 24 hours a day, 7 days a week.
           </p>
           <a
             href="tel:07759708646"
-            className="inline-flex items-center gap-2 bg-primary text-white font-call-to-action text-sm sm:text-base lg:text-call-to-action px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-primary/90 transition-all shadow-lg uppercase"
+            className="inline-flex items-center gap-2 bg-primary text-white font-call-to-action text-base lg:text-call-to-action px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-primary/90 transition-all shadow-lg uppercase"
           >
             <span className="material-symbols-outlined text-lg sm:text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>
               phone_in_talk
@@ -218,7 +218,7 @@ export default function ServiceAreaPage() {
                   </span>
                 </div>
               </div>
-              <p className="font-body-md text-body-md text-on-surface-variant px-5 pb-5 flex-1 text-sm leading-relaxed">
+              <p className="font-body-md text-body-md text-on-surface-variant px-5 pb-5 flex-1 text-base leading-relaxed">
                 {area.desc}
               </p>
               <div className="border-t border-slate-50 px-5 py-3 flex items-center justify-between">
@@ -284,12 +284,12 @@ export default function ServiceAreaPage() {
                 help
               </span>
               <h3 className="font-h2 text-xl sm:text-2xl text-white mb-2 text-balance">Not sure if we cover your area?</h3>
-              <p className="text-white/70 text-xs sm:text-sm leading-relaxed">
+              <p className="text-white/70 text-xs sm:text-base leading-relaxed">
                 Simply give us a call and we&apos;ll let you know instantly. We&apos;re constantly expanding our coverage.
               </p>
             </div>
             <div className="p-6 sm:p-8 md:p-10 flex flex-col justify-center gap-4 sm:gap-5">
-              <p className="font-body-lg text-sm sm:text-base lg:text-body-lg text-on-surface-variant text-pretty">
+              <p className="font-body-lg text-base lg:text-body-lg text-on-surface-variant text-pretty">
                 Our dispatch team can confirm coverage for your exact postcode and give you an
                 estimated arrival time in under 60 seconds.
               </p>
@@ -331,7 +331,7 @@ export default function ServiceAreaPage() {
           <div className="p-6 sm:p-8 lg:px-14 lg:py-12 flex flex-col sm:flex-row justify-between items-center gap-5 sm:gap-6 relative z-10">
             <div className="text-white text-center sm:text-left">
               <h2 className="font-h1 text-2xl sm:text-3xl lg:text-h1 mb-2 text-balance">Broken Down Right Now?</h2>
-              <p className="font-body-lg text-sm sm:text-base lg:text-body-lg text-white/90">
+              <p className="font-body-lg text-base lg:text-body-lg text-white/90">
                 Call immediately — our team is standing by 24/7 across Greater Manchester.
               </p>
               <div className="mt-4 sm:mt-5 flex items-center justify-center sm:justify-start gap-3 sm:gap-4">

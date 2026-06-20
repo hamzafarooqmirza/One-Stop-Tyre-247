@@ -133,7 +133,7 @@ export default function Home() {
             >
               24/7 Mobile Tyre Fitting &amp; Emergency Tyre Repair
             </h2>
-            <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
+            <p className="text-slate-600 max-w-2xl mx-auto text-base">
               Mobile tyre fitting, puncture repair and emergency tyre replacement across Greater Manchester. We come to your home, workplace or roadside location 24/7.
             </p>
           </div>
@@ -212,7 +212,7 @@ export default function Home() {
                   >
                     {card.title}
                   </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
+                  <p className="text-slate-600 text-base leading-relaxed mb-3">{card.desc}</p>
                   <div className="flex items-center justify-end">
                     <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
                       arrow_forward
@@ -227,7 +227,7 @@ export default function Home() {
           <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
             <div>
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
-              <p className="text-slate-400 text-sm sm:text-base">
+              <p className="text-slate-400 text-base">
                 Speak directly to a technician for an instant quote and arrival time.
               </p>
             </div>
@@ -369,7 +369,7 @@ export default function Home() {
             >
               Get a Non-Urgent Quote
             </h2>
-            <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base">
+            <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base">
               For emergency call-outs, please phone us directly. For general queries or to book a
               fitting at home later this week, fill in the form.
             </p>
@@ -379,7 +379,7 @@ export default function Home() {
                   <span className="material-symbols-outlined text-[#b70011]">location_on</span>
                 </div>
                 <div>
-                  <p className="font-bold text-[#0f172a] text-sm sm:text-base">Service Area</p>
+                  <p className="font-bold text-[#0f172a] text-base">Service Area</p>
                   <p className="text-sm text-slate-500">
                     Coverage across Greater Manchester and surrounding areas.
                   </p>
@@ -390,7 +390,7 @@ export default function Home() {
                   <span className="material-symbols-outlined text-[#b70011]">schedule</span>
                 </div>
                 <div>
-                  <p className="font-bold text-[#0f172a] text-sm sm:text-base">Hours</p>
+                  <p className="font-bold text-[#0f172a] text-base">Hours</p>
                   <p className="text-sm text-slate-500">Open 24/7 for Emergencies</p>
                 </div>
               </div>

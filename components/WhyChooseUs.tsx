@@ -20,7 +20,7 @@ function FeatureItem({
       </div>
       <div>
         <h4 className="font-bold text-base sm:text-lg mb-1 sm:mb-2 text-[#0f172a]">{title}</h4>
-        <p className="text-[#5c403c] leading-relaxed text-sm sm:text-base">{desc}</p>
+        <p className="text-[#5c403c] leading-relaxed text-base">{desc}</p>
       </div>
     </div>
   )

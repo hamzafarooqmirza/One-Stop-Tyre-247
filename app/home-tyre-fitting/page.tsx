@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: 'Home Tyre Fitting | One Stop Tyres 24/7',
   description:
     'Professional, fast and reliable home tyre fitting available 24/7 across the UK. We bring the garage to your doorstep — no towing, no waiting rooms.',
+  alternates: { canonical: 'https://onestoptyres247.co.uk/home-tyre-fitting' },
 }
 
 const features = [

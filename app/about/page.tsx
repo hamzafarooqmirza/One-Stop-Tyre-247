@@ -2,6 +2,7 @@ export const metadata = {
   title: 'About Us | One Stop Tyres 24/7',
   description:
     'Learn about One Stop Tyres 24/7 — premier provider of emergency roadside services and 24/7 mobile tyre solutions across the UK.',
+  alternates: { canonical: 'https://onestoptyres247.co.uk/about' },
 }
 
 export default function AboutPage() {

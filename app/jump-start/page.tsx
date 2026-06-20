@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: 'Jump Start Service | One Stop Tyres 24/7',
   description:
     "Professional, fast and reliable jump start available 24/7 across the UK. Dead battery? We arrive within 30 minutes and get you moving safely.",
+  alternates: { canonical: 'https://onestoptyres247.co.uk/jump-start' },
 }
 
 const features = [

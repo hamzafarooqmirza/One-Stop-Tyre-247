@@ -5,6 +5,7 @@ import ReviewsCarousel from '@/components/ReviewsCarousel'
 
 export const metadata = {
   title: 'Mobile Tyre Fitting in Trafford | One Stop Tyres 24/7',
+  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-trafford' },
 }
 
 function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc: string }) {

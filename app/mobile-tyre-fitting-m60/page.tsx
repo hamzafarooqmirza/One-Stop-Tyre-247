@@ -5,6 +5,7 @@ import ReviewsCarousel from '@/components/ReviewsCarousel'
 
 export const metadata = {
   title: 'Mobile Tyre Fitting M60 | 24/7 Emergency Roadside Assistance | One Stop Tyres 24/7',
+  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-m60' },
 }
 
 function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc: string }) {

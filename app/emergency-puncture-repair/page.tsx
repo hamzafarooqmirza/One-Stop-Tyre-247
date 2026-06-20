@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: 'Emergency Puncture Repair | One Stop Tyres 24/7',
   description:
     'Professional, fast and reliable emergency puncture repair available 24/7 across the UK. We get you back on the road safely and swiftly.',
+  alternates: { canonical: 'https://onestoptyres247.co.uk/emergency-puncture-repair' },
 }
 
 const features = [

@@ -60,10 +60,111 @@ function FaqItem({ q, a }: { q: string; a: string }) {
   )
 }
 
+/* ─── Structured data ───────────────────────────────────── */
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': ['LocalBusiness', 'AutoRepair'],
+  '@id': 'https://onestoptyres247.co.uk/#business',
+  name: 'One Stop Mobile Tyres 24/7',
+  url: 'https://onestoptyres247.co.uk',
+  telephone: '+447759708646',
+  email: 'info@onestoptyres247.co.uk',
+  image: 'https://onestoptyres247.co.uk/og-image.webp',
+  logo: 'https://onestoptyres247.co.uk/icon.webp',
+  description:
+    '24/7 emergency mobile tyre fitting across Greater Manchester. Professional technicians reach you at home, work, or roadside within 20–30 minutes.',
+  priceRange: '££',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Manchester',
+    addressRegion: 'Greater Manchester',
+    addressCountry: 'GB',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 53.5454538598072,
+    longitude: -2.1049285233703974,
+  },
+  areaServed: { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    opens: '00:00',
+    closes: '23:59',
+  },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5.0',
+    bestRating: '5',
+    worstRating: '1',
+    reviewCount: '1161',
+  },
+  hasMap: 'https://maps.app.goo.gl/tqGMogzsNNn8EXjH8',
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How fast can you reach me?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Our average response time across the UK is between 20 to 30 minutes, depending on traffic conditions and your exact location.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Are you really available 24/7?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, we operate 24 hours a day, 365 days a year—including Christmas Day, New Year\'s Eve, and all Bank Holidays. We are always on call.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you stock my tyre size?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We carry a wide range of common tyre sizes in our mobile units. For specialist or less common sizes, we have access to local hubs with instant availability.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What payment methods do you accept?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We accept all major debit and credit cards (Visa, Mastercard, etc.), as well as contactless payments and cash.',
+      },
+    },
+  ],
+}
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': 'https://onestoptyres247.co.uk/#website',
+  url: 'https://onestoptyres247.co.uk',
+  name: 'One Stop Mobile Tyres 24/7',
+  description: '24/7 emergency mobile tyre fitting across Greater Manchester',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://onestoptyres247.co.uk/?q={search_term_string}',
+    },
+    'query-input': 'required name=search_term_string',
+  },
+}
+
 /* ─── Page ──────────────────────────────────────────────── */
 export default function Home() {
   return (
     <div className="text-[#1c1b1b]" style={{ fontFamily: 'var(--font-inter)' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       {/* ── 1. HERO ───────────────────────────────────────── */}
       <HeroSlider />
 

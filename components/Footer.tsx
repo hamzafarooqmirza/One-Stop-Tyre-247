@@ -19,7 +19,7 @@ export default function Footer() {
               className="h-16 sm:h-20 w-auto"
             />
           </a>
-          <p className="text-slate-400 text-sm leading-relaxed text-center sm:text-left">
+          <p className="text-slate-400 text-base leading-relaxed text-center sm:text-left">
             The premier 24/7 emergency roadside assistance partner across Greater Manchester.
             Rapid response, professional service, and transparent pricing.
           </p>

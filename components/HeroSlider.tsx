@@ -191,7 +191,7 @@ export default function HeroSlider() {
             </h1>
 
             {/* Body */}
-            <p className="hero-body text-white/75 text-sm sm:text-base lg:text-lg leading-relaxed mb-6 max-w-xl">
+            <p className="hero-body text-white/75 text-base lg:text-lg leading-relaxed mb-6 max-w-xl">
               {slide.body}
             </p>
 

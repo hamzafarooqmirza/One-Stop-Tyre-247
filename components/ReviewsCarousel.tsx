@@ -136,7 +136,7 @@ export default function ReviewsCarousel() {
             </div>
 
             {/* Review text */}
-            <p className="text-slate-600 text-sm leading-relaxed flex-1 whitespace-pre-line line-clamp-6">
+            <p className="text-slate-600 text-base leading-relaxed flex-1 whitespace-pre-line line-clamp-6">
               &ldquo;{r.review}&rdquo;
             </p>
 

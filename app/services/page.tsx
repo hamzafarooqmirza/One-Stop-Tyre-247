@@ -57,9 +57,19 @@ const services = [
   },
 ]
 
+
+const _breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://onestoptyres247.co.uk' },
+    { '@type': 'ListItem', position: 2, name: 'Our Services', item: 'https://onestoptyres247.co.uk/services' },
+  ],
+}
 export default function ServicesPage() {
   return (
     <div className="bg-surface font-body-md text-on-background antialiased">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_breadcrumbSchema) }} />
       {/* Hero Section */}
       <section className="relative min-h-[400px] sm:min-h-[500px] lg:min-h-[614px] flex items-center justify-center overflow-hidden py-16 sm:py-20">
         <div className="absolute inset-0 bg-secondary/80 mix-blend-multiply z-10" />
@@ -74,18 +84,18 @@ export default function ServicesPage() {
         />
         <div className="relative z-20 text-center px-4 sm:px-5 max-w-4xl mx-auto">
           <h1 className="font-h1 text-2xl sm:text-3xl lg:text-h1 text-white mb-4 sm:mb-6 leading-tight">Our Expert Mobile Services</h1>
-          <p className="font-body-lg text-sm sm:text-base lg:text-body-lg text-white/90 max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed">
+          <p className="font-body-lg text-base lg:text-body-lg text-white/90 max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed">
             Professional 24/7 roadside assistance across Manchester and Greater Manchester. We bring the garage to you, anywhere, anytime.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <a
-              className="bg-primary text-on-primary font-call-to-action text-sm sm:text-base lg:text-call-to-action px-4 sm:px-lg py-3 sm:py-sm rounded-lg hover:bg-primary/90 transition-all shadow-lg uppercase text-center"
+              className="bg-primary text-on-primary font-call-to-action text-base lg:text-call-to-action px-4 sm:px-lg py-3 sm:py-sm rounded-lg hover:bg-primary/90 transition-all shadow-lg uppercase text-center"
               href="tel:07759708646"
             >
               EMERGENCY ASSISTANCE
             </a>
             <a
-              className="bg-white/10 backdrop-blur-md border-2 border-white text-white font-call-to-action text-sm sm:text-base lg:text-call-to-action px-4 sm:px-lg py-3 sm:py-sm rounded-lg hover:bg-white hover:text-secondary transition-all uppercase text-center"
+              className="bg-white/10 backdrop-blur-md border-2 border-white text-white font-call-to-action text-base lg:text-call-to-action px-4 sm:px-lg py-3 sm:py-sm rounded-lg hover:bg-white hover:text-secondary transition-all uppercase text-center"
               href="#services"
             >
               VIEW ALL SERVICES
@@ -141,7 +151,7 @@ export default function ServicesPage() {
           <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-lg">
             <div className="w-full lg:w-1/2">
               <h2 className="font-h2 text-2xl sm:text-3xl lg:text-h2 text-secondary mb-4 sm:mb-6">Why Manchester Trusts One Stop Tyres 24/7</h2>
-              <p className="font-body-lg text-sm sm:text-base lg:text-body-lg text-on-surface-variant mb-6 sm:mb-8">
+              <p className="font-body-lg text-base lg:text-body-lg text-on-surface-variant mb-6 sm:mb-8">
                 We understand that a vehicle breakdown is more than just a mechanical issue—it&apos;s a stressful disruption to your day.
                 That&apos;s why we&apos;ve built our service on three pillars of excellence.
               </p>
@@ -200,7 +210,7 @@ export default function ServicesPage() {
           <div className="p-6 sm:p-lg lg:p-xl flex flex-col sm:flex-row justify-between items-center gap-6 sm:gap-md relative z-10">
             <div className="text-white text-center sm:text-left">
               <h2 className="font-h1 text-2xl sm:text-3xl lg:text-h1 mb-2">Need Help Immediately?</h2>
-              <p className="font-body-lg text-sm sm:text-base lg:text-body-lg text-white/90">Speak directly to a technician for an instant quote and arrival time.</p>
+              <p className="font-body-lg text-base lg:text-body-lg text-white/90">Speak directly to a technician for an instant quote and arrival time.</p>
               <div className="mt-4 sm:mt-6 flex items-center justify-center sm:justify-start gap-3 sm:gap-4">
                 <span className="material-symbols-outlined text-2xl sm:text-3xl lg:text-4xl">call</span>
                 <span className="text-xl sm:text-2xl lg:text-4xl font-black font-h1">07759 708 646</span>

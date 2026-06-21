@@ -89,9 +89,46 @@ const faqs = [
   },
 ]
 
+
+const _serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://onestoptyres247.co.uk/tpms-reset#service',
+  name: 'TPMS Reset',
+  description: 'Professional, fast and reliable TPMS reset available 24/7 across the UK. We clear your dashboard warning light and calibrate your tyre pressure sensors at your location.',
+  provider: {
+    '@type': 'LocalBusiness',
+    '@id': 'https://onestoptyres247.co.uk/#business',
+    name: 'One Stop Mobile Tyres 24/7',
+  },
+  areaServed: { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
+  url: 'https://onestoptyres247.co.uk/tpms-reset',
+}
+
+const _faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+}
+
+const _breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://onestoptyres247.co.uk' },
+    { '@type': 'ListItem', position: 2, name: 'TPMS Reset', item: 'https://onestoptyres247.co.uk/tpms-reset' },
+  ],
+}
 export default function TpmsResetPage() {
   return (
     <div className="bg-surface font-body-md text-on-surface">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_breadcrumbSchema) }} />
 
       {/* ── 1. HERO ──────────────────────────────────────────────── */}
       <section className="relative bg-white pt-12 pb-10 sm:pt-16 sm:pb-14 overflow-hidden">
@@ -162,10 +199,10 @@ export default function TpmsResetPage() {
               <h2 className="font-h2 text-xl sm:text-2xl lg:text-[32px] font-bold text-on-surface mb-4 leading-snug">
                 Reliable TPMS Reset Service
               </h2>
-              <p className="text-sm sm:text-base text-on-surface-variant mb-3 leading-relaxed">
+              <p className="text-base text-on-surface-variant mb-3 leading-relaxed">
                 The Tyre Pressure Monitoring System (TPMS) is a vital safety feature that alerts you when tyre pressure drops dangerously low. However, after fitting new tyres, inflating to correct levels, or rotating your set, the warning light often persists and needs a manual reset.
               </p>
-              <p className="text-sm sm:text-base text-on-surface-variant mb-6 leading-relaxed">
+              <p className="text-base text-on-surface-variant mb-6 leading-relaxed">
                 Our technicians use specialist diagnostic tools to assess sensor health, reset the onboard computer, and clear the warning correctly. We ensure your safety systems work exactly as the manufacturer intended.
               </p>
               <div className="grid grid-cols-2 gap-3">
@@ -192,7 +229,7 @@ export default function TpmsResetPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="font-h2 text-xl sm:text-2xl lg:text-[32px] font-bold text-on-surface mb-2">What&apos;s Included</h2>
-            <p className="text-sm sm:text-base text-on-surface-variant">
+            <p className="text-base text-on-surface-variant">
               Complete mobile TPMS diagnosis and reset as standard with every call-out.
             </p>
           </div>
@@ -227,7 +264,7 @@ export default function TpmsResetPage() {
                 <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white text-secondary flex items-center justify-center text-xl sm:text-2xl font-bold mb-3 sm:mb-4 shrink-0">
                   {step.n}
                 </div>
-                <h4 className="font-semibold text-sm sm:text-base mb-1 sm:mb-2">{step.title}</h4>
+                <h4 className="font-semibold text-base mb-1 sm:mb-2">{step.title}</h4>
                 <p className="text-xs sm:text-sm text-secondary-container leading-relaxed">{step.desc}</p>
               </div>
             ))}
@@ -252,7 +289,7 @@ export default function TpmsResetPage() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-base sm:text-lg mb-1">{item.title}</h4>
-                      <p className="text-sm sm:text-base text-on-surface-variant leading-relaxed">{item.desc}</p>
+                      <p className="text-base text-on-surface-variant leading-relaxed">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -295,7 +332,7 @@ export default function TpmsResetPage() {
             {scenarios.map((s) => (
               <div key={s.title} className="p-5 sm:p-6 border-l-4 border-primary bg-surface shadow-sm rounded-r-lg">
                 <h4 className="font-semibold text-base sm:text-lg mb-2">{s.title}</h4>
-                <p className="text-sm sm:text-base text-on-surface-variant leading-relaxed">{s.desc}</p>
+                <p className="text-base text-on-surface-variant leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -312,9 +349,9 @@ export default function TpmsResetPage() {
             {faqs.map((faq) => (
               <div key={faq.q} className="bg-white border border-outline-variant rounded-lg overflow-hidden">
                 <div className="px-5 py-4 border-b border-outline-variant">
-                  <h3 className="font-semibold text-sm sm:text-base text-on-surface">{faq.q}</h3>
+                  <h3 className="font-semibold text-base text-on-surface">{faq.q}</h3>
                 </div>
-                <div className="px-5 py-4 text-sm sm:text-base text-on-surface-variant leading-relaxed">
+                <div className="px-5 py-4 text-base text-on-surface-variant leading-relaxed">
                   {faq.a}
                 </div>
               </div>
@@ -331,7 +368,7 @@ export default function TpmsResetPage() {
               <h2 className="font-h1 text-xl sm:text-2xl md:text-3xl lg:text-[40px] font-bold text-white mb-3 sm:mb-4 leading-tight">
                 TPMS Warning Light Still On?
               </h2>
-              <p className="text-sm sm:text-base md:text-lg mb-6 sm:mb-8 opacity-90 max-w-xl mx-auto leading-relaxed">
+              <p className="text-base md:text-lg mb-6 sm:mb-8 opacity-90 max-w-xl mx-auto leading-relaxed">
                 Call us and we will send a specialist to you within the hour. Available 24 hours a day, every day of the year.
               </p>
               <a

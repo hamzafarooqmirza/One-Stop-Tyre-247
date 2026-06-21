@@ -45,7 +45,7 @@ export default function OldhamPage() {
               24/7 Mobile Tyre Fitting Oldham
             </h1>
 
-            <p className="text-white/80 text-sm sm:text-base leading-relaxed mb-6">
+            <p className="text-white/80 text-base leading-relaxed mb-6">
               Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance Across Oldham. We Come To Your Home, Workplace Or Roadside Location Within 20–30 Minutes.
             </p>
 
@@ -64,7 +64,7 @@ export default function OldhamPage() {
                     className="material-symbols-outlined text-green-400 shrink-0"
                     style={{ fontSize: '20px', fontVariationSettings: "'FILL' 1" }}
                   >check_circle</span>
-                  <span className="text-sm font-semibold leading-snug">{item}</span>
+                  <span className="text-base font-semibold leading-snug">{item}</span>
                 </div>
               ))}
             </div>
@@ -167,7 +167,7 @@ export default function OldhamPage() {
               >
                 24/7 Mobile Tyre Fitting &amp; Emergency Tyre Repair In Oldham
               </h2>
-              <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
+              <p className="text-slate-600 max-w-2xl mx-auto text-base">
                 Mobile tyre fitting, emergency tyre replacement and puncture repair across Oldham. We come to your home, workplace or roadside location 24/7 with fast response times and professional service.
               </p>
             </div>
@@ -244,7 +244,7 @@ export default function OldhamPage() {
                     >
                       {card.title}
                     </h3>
-                    <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
+                    <p className="text-slate-600 text-base leading-relaxed mb-3">{card.desc}</p>
                     <div className="flex items-center justify-end">
                       <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
                         arrow_forward
@@ -257,7 +257,7 @@ export default function OldhamPage() {
             <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
               <div>
                 <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
-                <p className="text-slate-400 text-sm sm:text-base">
+                <p className="text-slate-400 text-base">
                   Speak directly to a technician for an instant quote and arrival time.
                 </p>
               </div>
@@ -450,6 +450,7 @@ export default function OldhamPage() {
 
         {/* ── 8. FAQ ────────────────────────────────────────── */}
         <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-oldham"
           city="Oldham"
           faqs={[
             {
@@ -475,17 +476,17 @@ export default function OldhamPage() {
         <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Oldham Right Now?</h2>
-            <p className="font-body-lg text-sm sm:text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Oldham line and get a technician dispatched in minutes.</p>
+            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Oldham line and get a technician dispatched in minutes.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
               <a
-                className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-sm sm:text-base transition-all shadow-xl"
+                className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl"
                 href="tel:07759708646"
               >
                 <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>
                 07759 708 646
               </a>
               <a
-                className="flex items-center justify-center gap-2 sm:gap-3 bg-[#1c1b1b] hover:bg-slate-800 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-sm sm:text-base transition-all shadow-xl"
+                className="flex items-center justify-center gap-2 sm:gap-3 bg-[#1c1b1b] hover:bg-slate-800 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl"
                 href="https://wa.me/447759708646"
               >
                 <span className="material-symbols-outlined text-[#25D366] text-xl sm:text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>chat</span>

@@ -48,7 +48,7 @@ function BulletList({ items }: { items: string[] }) {
           >
             check_circle
           </span>
-          <span className="text-slate-600 text-sm sm:text-base leading-relaxed">{item}</span>
+          <span className="text-slate-600 text-base leading-relaxed">{item}</span>
         </li>
       ))}
     </ul>
@@ -191,7 +191,7 @@ export default function ServicePage({
             >
               Professional Roadside Assistance
             </h2>
-            <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
+            <p className="text-slate-600 max-w-2xl mx-auto text-base">
               Comprehensive mobile vehicle support available every day of the year across the UK.
             </p>
           </div>
@@ -261,7 +261,7 @@ export default function ServicePage({
                   >
                     {card.title}
                   </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
+                  <p className="text-slate-600 text-base leading-relaxed mb-3">{card.desc}</p>
                   <div className="flex items-center justify-end">
                     <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
                       arrow_forward
@@ -274,7 +274,7 @@ export default function ServicePage({
           <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
             <div>
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
-              <p className="text-slate-400 text-sm sm:text-base">
+              <p className="text-slate-400 text-base">
                 Speak directly to a technician for an instant quote and arrival time.
               </p>
             </div>
@@ -319,8 +319,8 @@ export default function ServicePage({
                     {step.n}
                   </div>
                   <div>
-                    <span className="font-bold text-[#0f172a] block text-sm sm:text-base">{step.title}</span>
-                    <p className="text-slate-500 text-sm leading-relaxed">{step.desc}</p>
+                    <span className="font-bold text-[#0f172a] block text-base">{step.title}</span>
+                    <p className="text-slate-500 text-base leading-relaxed">{step.desc}</p>
                   </div>
                 </li>
               ))}

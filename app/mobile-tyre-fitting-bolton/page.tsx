@@ -341,6 +341,7 @@ export default function BoltonPage() {
 
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-bolton"
           city="Bolton"
           faqs={[
             {

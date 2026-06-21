@@ -326,6 +326,7 @@ export default function M62Page() {
 
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-m62"
           city="M62"
           faqs={[
             { q: 'Do you cover the entire length of the M62?', a: 'Yes, we cover the full M62 from its western end near Liverpool all the way through Greater Manchester, across the Pennines, through West Yorkshire and East Yorkshire to the Humber Bridge area.' },

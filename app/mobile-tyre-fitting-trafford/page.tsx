@@ -341,6 +341,7 @@ export default function TraffordPage() {
 
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-trafford"
           city="Trafford"
           faqs={[
             {

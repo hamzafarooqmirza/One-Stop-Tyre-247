@@ -326,6 +326,7 @@ export default function M67Page() {
 
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-m67"
           city="M67"
           faqs={[
             { q: 'How quickly can you get to the M67?', a: 'Our units are based near Denton and Hyde, allowing us to typically reach any point on the M67 within 30 to 60 minutes, depending on traffic conditions.' },

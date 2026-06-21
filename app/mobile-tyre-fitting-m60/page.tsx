@@ -341,6 +341,7 @@ export default function M60Page() {
 
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-m60"
           city="M60"
           faqs={[
             {

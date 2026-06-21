@@ -219,7 +219,8 @@ export default function WiganPage() {
         <BrandCarousel />
 
         {/* ── 7. FAQ */}
-        <CityFaq city="Wigan" faqs={[
+        <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-wigan" city="Wigan" faqs={[
           { q: 'How fast can you get to Wigan Town Centre?', a: 'Typically, our nearest technician can be with you in Wigan town centre within 20-30 minutes, depending on traffic levels on the A49.' },
           { q: 'Do you stock tyres for commercial vans in Wigan?', a: 'Yes, we carry a full range of heavy-duty commercial van tyres for popular models like Ford Transit, Mercedes Sprinter, and Vauxhall Vivaro in our mobile service vans.' },
           { q: 'Can you fit tyres on the M6 near Wigan?', a: 'Absolutely. Our vehicles are equipped with high-intensity safety lighting to perform safe roadside changes on high-speed roads and motorways, including the M6 junctions 25-27.' },

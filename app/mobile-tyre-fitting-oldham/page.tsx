@@ -450,6 +450,7 @@ export default function OldhamPage() {
 
         {/* ── 8. FAQ ────────────────────────────────────────── */}
         <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-oldham"
           city="Oldham"
           faqs={[
             {

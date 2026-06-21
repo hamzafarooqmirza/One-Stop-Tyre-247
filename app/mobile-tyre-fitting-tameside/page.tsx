@@ -326,6 +326,7 @@ export default function TamesidePage() {
 
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-tameside"
           city="Tameside"
           faqs={[
             { q: 'How fast can you reach me in Tameside?', a: 'Our Tameside mobile units are strategically positioned to reach Ashton-under-Lyne, Hyde, Stalybridge, Denton, and Dukinfield within 20-30 minutes.' },

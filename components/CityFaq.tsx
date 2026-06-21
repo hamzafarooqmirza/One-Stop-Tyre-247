@@ -19,27 +19,79 @@ function FaqItem({ q, a }: FaqEntry) {
   )
 }
 
-export default function CityFaq({ city, faqs }: { city: string; faqs: FaqEntry[] }) {
+interface CityFaqProps {
+  city: string
+  faqs: FaqEntry[]
+  /** Canonical URL of the page — used to generate BreadcrumbList schema */
+  canonical?: string
+  /** Human-readable breadcrumb label; defaults to "Mobile Tyre Fitting {city}" */
+  breadcrumbName?: string
+}
+
+export default function CityFaq({ city, faqs, canonical, breadcrumbName }: CityFaqProps) {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  }
+
+  const breadcrumbSchema = canonical
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://onestoptyres247.co.uk',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: breadcrumbName ?? `Mobile Tyre Fitting ${city}`,
+            item: canonical,
+          },
+        ],
+      }
+    : null
+
   return (
-    <section className="py-12 sm:py-16 lg:py-24 px-4 sm:px-6 bg-slate-50">
-      <div className="max-w-3xl mx-auto">
-        <div className="text-center mb-8 sm:mb-10 lg:mb-16">
-          <span className="text-[#b70011] font-bold uppercase tracking-widest text-xs sm:text-sm mb-2 block">
-            Common Questions
-          </span>
-          <h2
-            className="text-xl sm:text-2xl lg:text-[32px] font-bold text-[#0f172a] leading-tight"
-            style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-          >
-            Frequently Asked Questions — {city}
-          </h2>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      {breadcrumbSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+      )}
+      <section className="py-12 sm:py-16 lg:py-24 px-4 sm:px-6 bg-slate-50">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-8 sm:mb-10 lg:mb-16">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-xs sm:text-sm mb-2 block">
+              Common Questions
+            </span>
+            <h2
+              className="text-xl sm:text-2xl lg:text-[32px] font-bold text-[#0f172a] leading-tight"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Frequently Asked Questions — {city}
+            </h2>
+          </div>
+          <div className="space-y-3 sm:space-y-4">
+            {faqs.map((faq) => (
+              <FaqItem key={faq.q} q={faq.q} a={faq.a} />
+            ))}
+          </div>
         </div>
-        <div className="space-y-3 sm:space-y-4">
-          {faqs.map((faq) => (
-            <FaqItem key={faq.q} q={faq.q} a={faq.a} />
-          ))}
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }

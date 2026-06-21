@@ -326,6 +326,7 @@ export default function M56Page() {
 
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-m56"
           city="M56"
           faqs={[
             { q: 'Do you cover the entire M56?', a: 'Yes, we provide 24/7 coverage from Junction 1 (M60 interchange at Sale) through Manchester Airport (J5/J6), Runcorn, and all the way to Junction 15 at the M53/Chester. We also attend service stations along the route.' },

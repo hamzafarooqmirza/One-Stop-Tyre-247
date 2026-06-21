@@ -341,6 +341,7 @@ export default function RochdalePage() {
 
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-rochdale"
           city="Rochdale"
           faqs={[
             {

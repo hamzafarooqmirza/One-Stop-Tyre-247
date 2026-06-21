@@ -326,6 +326,7 @@ export default function StockportPage() {
 
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-stockport"
           city="Stockport"
           faqs={[
             { q: 'How quickly can you reach me in Stockport?', a: 'Our rapid response teams are stationed across Stockport, enabling us to reach most of the borough including Bramhall, Cheadle, Heaton Moor, and Marple within 20-30 minutes.' },

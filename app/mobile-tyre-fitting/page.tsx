@@ -89,9 +89,46 @@ const faqs = [
   },
 ]
 
+
+const _serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://onestoptyres247.co.uk/mobile-tyre-fitting#service',
+  name: 'Mobile Tyre Fitting',
+  description: 'Professional, fast and reliable mobile tyre fitting available 24/7 across Greater Manchester. We bring the garage to you, whether you are at home, work, or stranded on the roadside.',
+  provider: {
+    '@type': 'LocalBusiness',
+    '@id': 'https://onestoptyres247.co.uk/#business',
+    name: 'One Stop Mobile Tyres 24/7',
+  },
+  areaServed: { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
+  url: 'https://onestoptyres247.co.uk/mobile-tyre-fitting',
+}
+
+const _faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+}
+
+const _breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://onestoptyres247.co.uk' },
+    { '@type': 'ListItem', position: 2, name: 'Mobile Tyre Fitting', item: 'https://onestoptyres247.co.uk/mobile-tyre-fitting' },
+  ],
+}
 export default function MobileTyreFittingPage() {
   return (
     <div className="bg-surface font-body-md text-on-surface">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_breadcrumbSchema) }} />
 
       {/* ── 1. HERO ──────────────────────────────────────────────── */}
       <section className="relative bg-white pt-12 pb-10 sm:pt-16 sm:pb-14 overflow-hidden">

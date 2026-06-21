@@ -326,6 +326,7 @@ export default function A627Page() {
 
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-a627"
           city="A627"
           faqs={[
             { q: 'How fast can you reach me on the A627?', a: 'Our average response time for the A627 corridor is 20-30 minutes, depending on traffic conditions and your exact mileage.' },

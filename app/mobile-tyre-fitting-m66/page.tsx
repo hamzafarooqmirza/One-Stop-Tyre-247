@@ -326,6 +326,7 @@ export default function M66Page() {
 
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-m66"
           city="M66"
           faqs={[
             { q: 'What is your average arrival time on the M66?', a: 'Our average arrival time is 35 minutes due to our Bury-based fleet, which is strategically positioned for fastest response across all M66 junctions.' },

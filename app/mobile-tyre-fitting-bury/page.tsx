@@ -341,6 +341,7 @@ export default function BuryPage() {
 
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-bury"
           city="Bury"
           faqs={[
             {

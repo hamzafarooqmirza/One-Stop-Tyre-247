@@ -326,6 +326,7 @@ export default function M602Page() {
 
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-m602"
           city="M602"
           faqs={[
             { q: 'Where on the M602 do you cover?', a: 'We cover the entire length of the M602, from Junction 1 (M60/M62 interchange) all the way to Junction 3 at Regent Road, Salford. We also cover surrounding areas like Eccles, Winton, and Pendleton.' },

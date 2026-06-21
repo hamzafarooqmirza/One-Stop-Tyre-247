@@ -326,6 +326,7 @@ export default function M61Page() {
 
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-m61"
           city="M61"
           faqs={[
             { q: 'Which junctions of the M61 do you cover?', a: 'We cover the entire length of the M61, from Junction 1 (M60 Interchange) right through to Junction 8 (Chorley/M6). This includes common hotspots like the Rivington Services.' },

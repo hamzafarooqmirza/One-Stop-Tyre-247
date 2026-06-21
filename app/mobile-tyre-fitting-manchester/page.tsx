@@ -341,6 +341,7 @@ export default function ManchesterPage() {
 
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-manchester"
           city="Manchester"
           faqs={[
             {

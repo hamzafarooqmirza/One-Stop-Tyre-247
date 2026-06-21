@@ -141,6 +141,34 @@ const faqSchema = {
   ],
 }
 
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': 'https://onestoptyres247.co.uk/#organization',
+  name: 'One Stop Mobile Tyres 24/7',
+  url: 'https://onestoptyres247.co.uk',
+  logo: {
+    '@type': 'ImageObject',
+    url: 'https://onestoptyres247.co.uk/icon.webp',
+    width: 512,
+    height: 512,
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+447759708646',
+    contactType: 'customer service',
+    areaServed: 'GB',
+    availableLanguage: 'English',
+    hoursAvailable: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      opens: '00:00',
+      closes: '23:59',
+    },
+  },
+  sameAs: ['https://maps.app.goo.gl/tqGMogzsNNn8EXjH8'],
+}
+
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
@@ -163,6 +191,7 @@ export default function Home() {
   return (
     <div className="text-[#1c1b1b]" style={{ fontFamily: 'var(--font-inter)' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       {/* ── 1. HERO ───────────────────────────────────────── */}

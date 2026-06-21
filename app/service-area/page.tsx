@@ -127,9 +127,19 @@ const trustBadges = [
   { icon: 'route', label: '7 Motorways', sub: 'Full roadside cover' },
 ]
 
+
+const _breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://onestoptyres247.co.uk' },
+    { '@type': 'ListItem', position: 2, name: 'Service Area', item: 'https://onestoptyres247.co.uk/service-area' },
+  ],
+}
 export default function ServiceAreaPage() {
   return (
     <div className="bg-surface font-body-md text-on-background antialiased">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_breadcrumbSchema) }} />
       {/* ── Hero ── */}
       <section className="relative min-h-[400px] sm:min-h-[450px] lg:h-[500px] flex items-center justify-center overflow-hidden py-16 sm:py-20">
         <div className="absolute inset-0 bg-secondary/85 z-10" />

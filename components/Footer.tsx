@@ -117,24 +117,42 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="max-w-7xl mx-auto pt-6 sm:pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6">
-        <p className="text-slate-500 text-[11px] sm:text-xs text-center sm:text-left">
-          © 2026 One Stop Tyres 24/7. High-Urgency Emergency Roadside Assistance UK. All Rights
-          Reserved.
-        </p>
-        {isContactPage && (
-          <p className="text-slate-600 text-[10px] sm:text-[11px] text-center sm:text-right">
-            Designed &amp; Developed By{' '}
+      <div className="max-w-7xl mx-auto pt-6 sm:pt-8 border-t border-white/5 flex flex-col gap-4">
+        {/* Legal links */}
+        <div className="flex flex-wrap justify-center sm:justify-start gap-x-5 gap-y-2">
+          {[
+            { label: 'Privacy Policy', href: '/privacy-policy' },
+            { label: 'Cookie Policy', href: '/cookie-policy' },
+            { label: 'Terms & Conditions', href: '/terms' },
+          ].map((link) => (
             <a
-              href="https://linkedo.co.uk"
-              rel="nofollow noopener noreferrer"
-              target="_blank"
-              className="text-slate-400 hover:text-[#FF4444] transition-colors font-semibold"
+              key={link.href}
+              href={link.href}
+              className="text-slate-500 hover:text-white text-xs transition-colors"
             >
-              Linkedo
+              {link.label}
             </a>
+          ))}
+        </div>
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
+          <p className="text-slate-500 text-[11px] sm:text-xs text-center sm:text-left">
+            © 2026 One Stop Tyres 24/7. High-Urgency Emergency Roadside Assistance UK. All Rights
+            Reserved.
           </p>
-        )}
+          {isContactPage && (
+            <p className="text-slate-600 text-[10px] sm:text-[11px] text-center sm:text-right">
+              Designed &amp; Developed By{' '}
+              <a
+                href="https://linkedo.co.uk"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+                className="text-slate-400 hover:text-[#FF4444] transition-colors font-semibold"
+              >
+                Linkedo
+              </a>
+            </p>
+          )}
+        </div>
       </div>
     </footer>
   )

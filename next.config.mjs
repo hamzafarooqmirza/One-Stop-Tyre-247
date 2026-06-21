@@ -68,6 +68,16 @@ const nextConfig = {
           },
         ],
       },
+      // HSTS — force HTTPS for 1 year, including subdomains; eligible for preload list
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=31536000; includeSubDomains; preload',
+          },
+        ],
+      },
       // HTML pages — revalidate in background; stale page served instantly
       {
         source: '/(.*)',

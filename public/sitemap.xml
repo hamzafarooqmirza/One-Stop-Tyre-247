@@ -9,6 +9,26 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- Legal pages -->
+  <url>
+    <loc>https://onestoptyres247.co.uk/privacy-policy</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://onestoptyres247.co.uk/cookie-policy</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://onestoptyres247.co.uk/terms</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
   <!-- Core pages -->
   <url>
     <loc>https://onestoptyres247.co.uk/about</loc>

@@ -40,7 +40,7 @@ export default function WiganPage() {
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}>
               24/7 Mobile Tyre Fitting Wigan
             </h1>
-            <p className="text-white/80 text-sm sm:text-base leading-relaxed mb-6">
+            <p className="text-white/80 text-base leading-relaxed mb-6">
               Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance Across Wigan. We Come To Your Home, Workplace Or Roadside Location Within 20–30 Minutes.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
@@ -54,7 +54,7 @@ export default function WiganPage() {
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2.5 text-white/90">
                   <span className="material-symbols-outlined text-green-400 shrink-0" style={{ fontSize: '20px', fontVariationSettings: "'FILL' 1" }}>check_circle</span>
-                  <span className="text-sm font-semibold leading-snug">{item}</span>
+                  <span className="text-base font-semibold leading-snug">{item}</span>
                 </div>
               ))}
             </div>
@@ -128,7 +128,7 @@ export default function WiganPage() {
               <h2 className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}>
                 24/7 Mobile Tyre Fitting &amp; Emergency Tyre Repair In Wigan
               </h2>
-              <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
+              <p className="text-slate-600 max-w-2xl mx-auto text-base">
                 Mobile tyre fitting, emergency tyre replacement and puncture repair across Wigan. We come to your home, workplace or roadside location 24/7 with fast response times and professional service.
               </p>
             </div>
@@ -156,7 +156,7 @@ export default function WiganPage() {
                   </div>
                   <div className="p-5 sm:p-6">
                     <h3 className="text-base sm:text-lg font-semibold mb-2 text-[#0f172a]" style={{ fontFamily: 'var(--font-work-sans)' }}>{card.title}</h3>
-                    <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
+                    <p className="text-slate-600 text-base leading-relaxed mb-3">{card.desc}</p>
                     <div className="flex items-center justify-end">
                       <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">arrow_forward</span>
                     </div>
@@ -167,7 +167,7 @@ export default function WiganPage() {
             <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
               <div>
                 <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
-                <p className="text-slate-400 text-sm sm:text-base">Speak directly to a technician for an instant quote and arrival time.</p>
+                <p className="text-slate-400 text-base">Speak directly to a technician for an instant quote and arrival time.</p>
               </div>
               <a href="tel:07759708646" className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap" style={{ fontFamily: 'var(--font-work-sans)' }}>
                 07759 708 646
@@ -219,7 +219,8 @@ export default function WiganPage() {
         <BrandCarousel />
 
         {/* ── 7. FAQ */}
-        <CityFaq city="Wigan" faqs={[
+        <CityFaq
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-wigan" city="Wigan" faqs={[
           { q: 'How fast can you get to Wigan Town Centre?', a: 'Typically, our nearest technician can be with you in Wigan town centre within 20-30 minutes, depending on traffic levels on the A49.' },
           { q: 'Do you stock tyres for commercial vans in Wigan?', a: 'Yes, we carry a full range of heavy-duty commercial van tyres for popular models like Ford Transit, Mercedes Sprinter, and Vauxhall Vivaro in our mobile service vans.' },
           { q: 'Can you fit tyres on the M6 near Wigan?', a: 'Absolutely. Our vehicles are equipped with high-intensity safety lighting to perform safe roadside changes on high-speed roads and motorways, including the M6 junctions 25-27.' },
@@ -230,13 +231,13 @@ export default function WiganPage() {
         <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Wigan Right Now?</h2>
-            <p className="font-body-lg text-sm sm:text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Wigan line and get a technician dispatched in minutes.</p>
+            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Wigan line and get a technician dispatched in minutes.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
-              <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-sm sm:text-base transition-all shadow-xl" href="tel:07759708646">
+              <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl" href="tel:07759708646">
                 <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>
                 07759 708 646
               </a>
-              <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#1c1b1b] hover:bg-slate-800 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-sm sm:text-base transition-all shadow-xl" href="https://wa.me/447759708646">
+              <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#1c1b1b] hover:bg-slate-800 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl" href="https://wa.me/447759708646">
                 <span className="material-symbols-outlined text-[#25D366] text-xl sm:text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>chat</span>
                 WhatsApp Us
               </a>

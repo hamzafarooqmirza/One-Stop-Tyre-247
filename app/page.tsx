@@ -60,10 +60,140 @@ function FaqItem({ q, a }: { q: string; a: string }) {
   )
 }
 
+/* ─── Structured data ───────────────────────────────────── */
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': ['LocalBusiness', 'AutoRepair'],
+  '@id': 'https://onestoptyres247.co.uk/#business',
+  name: 'One Stop Mobile Tyres 24/7',
+  url: 'https://onestoptyres247.co.uk',
+  telephone: '+447759708646',
+  email: 'info@onestoptyres247.co.uk',
+  image: 'https://onestoptyres247.co.uk/og-image.webp',
+  logo: 'https://onestoptyres247.co.uk/icon.webp',
+  description:
+    '24/7 emergency mobile tyre fitting across Greater Manchester. Professional technicians reach you at home, work, or roadside within 20–30 minutes.',
+  priceRange: '££',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Manchester',
+    addressRegion: 'Greater Manchester',
+    addressCountry: 'GB',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 53.5454538598072,
+    longitude: -2.1049285233703974,
+  },
+  areaServed: { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    opens: '00:00',
+    closes: '23:59',
+  },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5.0',
+    bestRating: '5',
+    worstRating: '1',
+    reviewCount: '1161',
+  },
+  hasMap: 'https://maps.app.goo.gl/tqGMogzsNNn8EXjH8',
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How fast can you reach me?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Our average response time across the UK is between 20 to 30 minutes, depending on traffic conditions and your exact location.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Are you really available 24/7?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, we operate 24 hours a day, 365 days a year—including Christmas Day, New Year\'s Eve, and all Bank Holidays. We are always on call.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you stock my tyre size?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We carry a wide range of common tyre sizes in our mobile units. For specialist or less common sizes, we have access to local hubs with instant availability.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What payment methods do you accept?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We accept all major debit and credit cards (Visa, Mastercard, etc.), as well as contactless payments and cash.',
+      },
+    },
+  ],
+}
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': 'https://onestoptyres247.co.uk/#organization',
+  name: 'One Stop Mobile Tyres 24/7',
+  url: 'https://onestoptyres247.co.uk',
+  logo: {
+    '@type': 'ImageObject',
+    url: 'https://onestoptyres247.co.uk/icon.webp',
+    width: 512,
+    height: 512,
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+447759708646',
+    contactType: 'customer service',
+    areaServed: 'GB',
+    availableLanguage: 'English',
+    hoursAvailable: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      opens: '00:00',
+      closes: '23:59',
+    },
+  },
+  sameAs: ['https://maps.app.goo.gl/tqGMogzsNNn8EXjH8'],
+}
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': 'https://onestoptyres247.co.uk/#website',
+  url: 'https://onestoptyres247.co.uk',
+  name: 'One Stop Mobile Tyres 24/7',
+  description: '24/7 emergency mobile tyre fitting across Greater Manchester',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://onestoptyres247.co.uk/?q={search_term_string}',
+    },
+    'query-input': 'required name=search_term_string',
+  },
+}
+
 /* ─── Page ──────────────────────────────────────────────── */
 export default function Home() {
   return (
     <div className="text-[#1c1b1b]" style={{ fontFamily: 'var(--font-inter)' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       {/* ── 1. HERO ───────────────────────────────────────── */}
       <HeroSlider />
 
@@ -133,7 +263,7 @@ export default function Home() {
             >
               24/7 Mobile Tyre Fitting &amp; Emergency Tyre Repair
             </h2>
-            <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
+            <p className="text-slate-600 max-w-2xl mx-auto text-base">
               Mobile tyre fitting, puncture repair and emergency tyre replacement across Greater Manchester. We come to your home, workplace or roadside location 24/7.
             </p>
           </div>
@@ -212,7 +342,7 @@ export default function Home() {
                   >
                     {card.title}
                   </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-3">{card.desc}</p>
+                  <p className="text-slate-600 text-base leading-relaxed mb-3">{card.desc}</p>
                   <div className="flex items-center justify-end">
                     <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all">
                       arrow_forward
@@ -227,7 +357,7 @@ export default function Home() {
           <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
             <div>
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
-              <p className="text-slate-400 text-sm sm:text-base">
+              <p className="text-slate-400 text-base">
                 Speak directly to a technician for an instant quote and arrival time.
               </p>
             </div>
@@ -369,7 +499,7 @@ export default function Home() {
             >
               Get a Non-Urgent Quote
             </h2>
-            <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base">
+            <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base">
               For emergency call-outs, please phone us directly. For general queries or to book a
               fitting at home later this week, fill in the form.
             </p>
@@ -379,7 +509,7 @@ export default function Home() {
                   <span className="material-symbols-outlined text-[#b70011]">location_on</span>
                 </div>
                 <div>
-                  <p className="font-bold text-[#0f172a] text-sm sm:text-base">Service Area</p>
+                  <p className="font-bold text-[#0f172a] text-base">Service Area</p>
                   <p className="text-sm text-slate-500">
                     Coverage across Greater Manchester and surrounding areas.
                   </p>
@@ -390,7 +520,7 @@ export default function Home() {
                   <span className="material-symbols-outlined text-[#b70011]">schedule</span>
                 </div>
                 <div>
-                  <p className="font-bold text-[#0f172a] text-sm sm:text-base">Hours</p>
+                  <p className="font-bold text-[#0f172a] text-base">Hours</p>
                   <p className="text-sm text-slate-500">Open 24/7 for Emergencies</p>
                 </div>
               </div>

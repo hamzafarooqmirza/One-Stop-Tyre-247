@@ -313,20 +313,6 @@ export default function Home() {
                 badge: 'DAMAGE FREE',
                 href: '/locking-nut-removal',
               },
-              {
-                img: '/images/tyre fitting in emergergency-airanko (1).webp',
-                title: '24 Hour Emergency Tyre Fitting',
-                desc: 'Round-the-clock emergency tyre fitting at your roadside, car park or home — day or night, 365 days a year.',
-                badge: '24/7 EMERGENCY',
-                href: '/24-hour-emergency-tyre-fitting',
-              },
-              {
-                img: '/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp',
-                title: 'Cheap Mobile Tyre Fitting',
-                desc: 'Quality tyres at affordable prices. Budget, mid-range and premium options fitted wherever you are.',
-                badge: 'BEST VALUE',
-                href: '/cheap-mobile-tyre-fitting',
-              },
             ].map((card) => (
               <a
                 key={card.title}

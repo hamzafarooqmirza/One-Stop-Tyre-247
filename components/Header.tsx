@@ -42,6 +42,12 @@ const serviceLinks = [
     icon: 'lock_open',
     desc: 'Damage-free removal with specialist tools',
   },
+  {
+    label: '24 Hour Emergency Tyre Fitting',
+    href: '/24-hour-emergency-tyre-fitting',
+    icon: 'emergency',
+    desc: 'Immediate tyre help day or night, 365 days',
+  },
 ]
 
 const cityLinks = [

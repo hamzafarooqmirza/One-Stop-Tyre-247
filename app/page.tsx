@@ -313,6 +313,13 @@ export default function Home() {
                 badge: 'DAMAGE FREE',
                 href: '/locking-nut-removal',
               },
+              {
+                img: '/images/tyre fitting in emergergency-airanko (1).webp',
+                title: '24 Hour Emergency Tyre Fitting',
+                desc: 'Round-the-clock emergency tyre fitting at your roadside, car park or home — day or night, 365 days a year.',
+                badge: '24/7 EMERGENCY',
+                href: '/24-hour-emergency-tyre-fitting',
+              },
             ].map((card) => (
               <a
                 key={card.title}

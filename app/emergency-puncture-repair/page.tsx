@@ -1,118 +1,10 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Emergency Puncture Repair | One Stop Tyres 24/7',
+  title: 'Emergency Mobile Puncture Repair | Fast Roadside & Home Tyre Repair | One Stop Tyres 24/7',
   description:
-    'Professional, fast and reliable emergency puncture repair available 24/7 across the UK. We get you back on the road safely and swiftly.',
+    'Emergency mobile puncture repair across Greater Manchester. We come to your home, workplace or roadside to repair or replace your tyre fast. Same day & 24 hour service available.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/emergency-puncture-repair' },
-}
-
-const features = [
-  {
-    icon: 'home_repair_service',
-    title: 'Roadside Service',
-    desc: 'We come to you — motorway, car park, driveway, or workplace. No towing required.',
-  },
-  {
-    icon: 'bolt',
-    title: 'Fast Response',
-    desc: 'Average arrival within 20–30 minutes with emergency priority dispatch.',
-  },
-  {
-    icon: 'verified',
-    title: 'BS Standard Repair',
-    desc: 'All repairs meet British Standard BS AU 159 — safe, permanent plug-patch method.',
-  },
-  {
-    icon: 'verified_user',
-    title: 'Safe Process',
-    desc: 'Your safety is our priority. We assess repairability before proceeding every time.',
-  },
-]
-
-const steps = [
-  { n: '1', title: 'Call Us', desc: 'Contact our 24/7 emergency line and describe your situation.' },
-  { n: '2', title: 'Share Location', desc: 'Give us your exact location or drop a pin via WhatsApp.' },
-  { n: '3', title: 'Tech Dispatched', desc: 'The nearest mobile unit is routed to you immediately.' },
-  { n: '4', title: 'Back on Road', desc: 'Tyre repaired or replaced on-site — pressure checked and safe to drive.' },
-]
-
-const whyUs = [
-  {
-    icon: 'schedule',
-    title: '24/7 Availability',
-    desc: 'Punctures do not keep office hours. Neither do we. We respond any time, day or night, weekends included.',
-  },
-  {
-    icon: 'payments',
-    title: 'No Hidden Charges',
-    desc: 'You get a clear, upfront price before we dispatch. No call-out surprises, no garage markups.',
-  },
-  {
-    icon: 'build',
-    title: 'Repair Over Replace',
-    desc: 'We always assess whether a safe repair is possible, saving you the cost of a full replacement wherever viable.',
-  },
-]
-
-const scenarios = [
-  {
-    title: 'Stranded on the Motorway',
-    desc: 'A blowout at high speed is dangerous. Pull over safely behind the barrier and call us — we prioritise motorway emergencies.',
-  },
-  {
-    title: 'Flat in a Car Park',
-    desc: "Returned to your car to find a flat? Don't risk driving on it and damaging the rim. We come to wherever you are parked.",
-  },
-  {
-    title: 'Slow Leak or Hissing Sound',
-    desc: 'Caught it early? Good. We can fix a slow puncture before it becomes a dangerous blowout on a busy road.',
-  },
-]
-
-const faqs = [
-  {
-    q: 'Can all punctures be repaired?',
-    a: "Repairs are only safe if the damage is within the central 75% of the tread area and has not affected the sidewall or inner lining. Our technician will assess this on arrival and advise honestly.",
-  },
-  {
-    q: 'How long does a repair take?',
-    a: 'A professional plug-patch repair typically takes 20 to 30 minutes once the technician arrives. If a replacement is needed, we carry a wide range of tyres on the van.',
-  },
-  {
-    q: 'Is the repair permanent?',
-    a: 'Yes — we use the plug-patch method which seals both the hole and the inner lining, making it a permanent repair for the remaining life of the tyre.',
-  },
-  {
-    q: 'What if my tyre cannot be repaired?',
-    a: 'If the damage is beyond a safe repair, our technician will recommend a replacement. We carry a wide range of tyres and can fit one on the spot.',
-  },
-]
-
-
-const _serviceSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  '@id': 'https://onestoptyres247.co.uk/emergency-puncture-repair#service',
-  name: 'Emergency Puncture Repair',
-  description: 'Professional, fast and reliable puncture repair available 24/7 across the UK. We reach you at the roadside, car park, or home and get you moving again safely.',
-  provider: {
-    '@type': 'LocalBusiness',
-    '@id': 'https://onestoptyres247.co.uk/#business',
-    name: 'One Stop Mobile Tyres 24/7',
-  },
-  areaServed: { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
-  url: 'https://onestoptyres247.co.uk/emergency-puncture-repair',
-}
-
-const _faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map((f) => ({
-    '@type': 'Question',
-    name: f.q,
-    acceptedAnswer: { '@type': 'Answer', text: f.a },
-  })),
 }
 
 const _breadcrumbSchema = {
@@ -123,273 +15,429 @@ const _breadcrumbSchema = {
     { '@type': 'ListItem', position: 2, name: 'Emergency Puncture Repair', item: 'https://onestoptyres247.co.uk/emergency-puncture-repair' },
   ],
 }
+
+const _serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://onestoptyres247.co.uk/emergency-puncture-repair#service',
+  name: 'Emergency Mobile Puncture Repair',
+  description:
+    'Fast emergency mobile puncture repair service across Greater Manchester. Professional tyre repairs and replacements at your home, workplace or roadside location. Same day and 24 hour assistance available.',
+  provider: {
+    '@type': 'LocalBusiness',
+    '@id': 'https://onestoptyres247.co.uk/#business',
+    name: 'One Stop Mobile Tyres 24/7',
+  },
+  areaServed: { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
+  url: 'https://onestoptyres247.co.uk/emergency-puncture-repair',
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    opens: '00:00',
+    closes: '23:59',
+  },
+}
+
+const _faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'What is emergency mobile puncture repair?', acceptedAnswer: { '@type': 'Answer', text: 'Emergency mobile puncture repair is a service where a professional tyre technician comes directly to your location to repair or replace a punctured tyre.' } },
+    { '@type': 'Question', name: 'Can you repair my puncture at home?', acceptedAnswer: { '@type': 'Answer', text: "Yes. We provide home puncture repair services so you don't need to drive on a damaged tyre or visit a garage." } },
+    { '@type': 'Question', name: 'Do you offer roadside puncture repair?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We attend roadside breakdowns and repair or replace tyres where it is safe to do so.' } },
+    { '@type': 'Question', name: 'Can every puncture be repaired?', acceptedAnswer: { '@type': 'Answer', text: 'No. Repairs are only carried out if the puncture meets British Standard safety guidelines and the tyre structure has not been compromised.' } },
+    { '@type': 'Question', name: 'What if my tyre cannot be repaired?', acceptedAnswer: { '@type': 'Answer', text: 'If the damage is too severe, we can supply and fit a new tyre on-site, allowing you to continue your journey immediately.' } },
+    { '@type': 'Question', name: 'Do you provide same day puncture repair?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We offer same day appointments and emergency call-outs whenever possible.' } },
+    { '@type': 'Question', name: 'Do you offer 24 hour puncture repair?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our emergency mobile puncture repair service is available for urgent situations day and night.' } },
+    { '@type': 'Question', name: 'How long does a puncture repair take?', acceptedAnswer: { '@type': 'Answer', text: 'Most puncture repairs are completed within 20 to 40 minutes, depending on the damage and vehicle type.' } },
+  ],
+}
+
+const faqs = [
+  { q: 'What is emergency mobile puncture repair?', a: 'Emergency mobile puncture repair is a service where a professional tyre technician comes directly to your location to repair or replace a punctured tyre.' },
+  { q: 'Can you repair my puncture at home?', a: "Yes. We provide home puncture repair services so you don't need to drive on a damaged tyre or visit a garage." },
+  { q: 'Do you offer roadside puncture repair?', a: 'Yes. We attend roadside breakdowns and repair or replace tyres where it is safe to do so.' },
+  { q: 'Can every puncture be repaired?', a: 'No. Repairs are only carried out if the puncture meets British Standard safety guidelines and the tyre structure has not been compromised.' },
+  { q: 'What if my tyre cannot be repaired?', a: 'If the damage is too severe, we can supply and fit a new tyre on-site, allowing you to continue your journey immediately.' },
+  { q: 'Do you provide same day puncture repair?', a: 'Yes. We offer same day appointments and emergency call-outs whenever possible.' },
+  { q: 'Do you offer 24 hour puncture repair?', a: 'Yes. Our emergency mobile puncture repair service is available for urgent situations day and night.' },
+  { q: 'Can you repair a tyre with a nail in it?', a: 'In many cases, yes. Our technician will inspect the tyre and carry out a professional repair if it is safe to do so.' },
+  { q: 'How long does a puncture repair take?', a: 'Most puncture repairs are completed within 20 to 40 minutes, depending on the damage and vehicle type.' },
+  { q: 'Is it cheaper to repair a puncture than replace the tyre?', a: 'Yes. Whenever a safe repair is possible, it is usually the most economical option.' },
+  { q: 'Can you repair a slow puncture?', a: 'Yes. We regularly repair slow punctures caused by nails, screws or minor tread damage.' },
+  { q: 'Do you repair tyres at the workplace?', a: 'Yes. Our mobile technicians can repair or replace tyres while your vehicle is parked at work.' },
+  { q: 'Do you provide mobile puncture repair near me?', a: 'Our mobile service comes directly to your location, making it unnecessary to search for a nearby tyre garage.' },
+  { q: 'What should I do if I have a flat tyre?', a: "Avoid driving on the flat tyre if possible. Contact our emergency mobile puncture repair team and we'll come to your location." },
+  { q: 'Can you repair run-flat tyres?', a: 'Some run-flat tyres can be repaired depending on the damage and manufacturer guidelines. Our technician will advise after inspection.' },
+  { q: 'Do you repair tyres on weekends?', a: 'Yes. Weekend and out-of-hours appointments are available subject to availability.' },
+  { q: 'Do you replace tyres as well?', a: 'Yes. If your tyre cannot be repaired safely, we can supply and fit a replacement tyre immediately.' },
+  { q: 'Can you repair van tyres?', a: 'Yes. We provide puncture repairs and tyre replacement for cars, SUVs and light commercial vehicles.' },
+  { q: 'Do you offer emergency puncture repair for roadside breakdowns?', a: 'Yes. Our emergency call-out service is designed for drivers who need immediate tyre assistance.' },
+  { q: 'Can I book through WhatsApp?', a: "Yes. Simply send us your location and vehicle details on WhatsApp, and we'll dispatch a mobile tyre technician." },
+  { q: 'Why choose mobile puncture repair instead of a garage?', a: 'Mobile puncture repair saves time, avoids recovery costs and allows your tyre to be repaired or replaced wherever your vehicle is located.' },
+  { q: 'How do I know if my tyre is beyond repair?', a: 'Our experienced technicians inspect the tyre according to British safety standards and will always recommend the safest solution.' },
+  { q: 'Do you cover emergency tyre puncture repairs near me?', a: 'Yes. Our goal is to provide fast, reliable and professional emergency puncture repairs wherever you need assistance.' },
+  { q: 'Can you repair my tyre today?', a: 'In most cases, yes. We offer same day emergency mobile puncture repair appointments to get you safely back on the road as quickly as possible.' },
+]
+
+const whyChooseUs = [
+  {
+    icon: '🚗',
+    title: 'Rapid Emergency Response',
+    desc: 'We understand that a puncture can happen anywhere and at any time, which is why we aim to reach you quickly and minimise your waiting time.',
+  },
+  {
+    icon: '🔧',
+    title: 'Repair Before Replacement',
+    desc: "If your tyre meets safety guidelines, we'll professionally repair it rather than selling you a replacement you don't need.",
+  },
+  {
+    icon: '📍',
+    title: 'We Come To Your Location',
+    desc: 'Whether you\'re at home, at work, or stranded at the roadside, our mobile tyre technicians bring the workshop directly to you.',
+  },
+  {
+    icon: '⭐',
+    title: 'Honest Pricing & Expert Service',
+    desc: 'No hidden costs, experienced technicians, quality workmanship and reliable advice every time you call.',
+  },
+]
+
+const steps = [
+  {
+    n: '1',
+    title: 'Call Us',
+    desc: 'Call our team and tell us your location, vehicle details and what has happened.',
+  },
+  {
+    n: '2',
+    title: 'Dispatch',
+    desc: 'We send the nearest available mobile puncture repair technician with the equipment and tyres required.',
+  },
+  {
+    n: '3',
+    title: 'Arrival',
+    desc: 'Our technician inspects the damaged tyre and determines whether it can be safely repaired or needs replacing.',
+  },
+  {
+    n: '4',
+    title: 'Back On The Road',
+    desc: 'Once the repair or replacement is complete and all safety checks have been carried out, you\'re ready to continue your journey with confidence.',
+  },
+]
+
 export default function EmergencyPunctureRepairPage() {
   return (
-    <div className="bg-surface font-body-md text-on-surface">
+    <div className="text-[#1c1b1b]" style={{ fontFamily: 'var(--font-inter)' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_breadcrumbSchema) }} />
 
-      {/* ── 1. HERO ──────────────────────────────────────────────── */}
-      <section className="relative bg-white pt-12 pb-10 sm:pt-16 sm:pb-14 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      {/* ── 1. HERO ──────────────────────────────────────────────────── */}
+      <section className="relative min-h-[580px] lg:min-h-[640px] flex items-center overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/Tyres fitting anywhere-airanko (1).webp"
+          alt="Emergency mobile puncture repair service"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          width={1600}
+          height={900}
+          decoding="async"
+        />
+        <div className="absolute inset-0 bg-[#0f172a]/80" />
 
-          <div className="z-10 order-2 lg:order-1">
-            <span className="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-semibold tracking-wide mb-4">
-              Emergency Assistance 24/7
-            </span>
-            <h1 className="font-h1 text-2xl sm:text-3xl lg:text-[40px] font-bold text-on-surface mb-4 leading-tight">
-              Emergency Puncture Repair
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-16 py-20 lg:py-28">
+          <div className="max-w-2xl">
+            <div className="inline-flex items-center gap-2 bg-red-600/20 text-red-400 font-bold px-3.5 py-1.5 rounded-full mb-6 text-[11px] uppercase tracking-widest border border-red-600/30">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
+              </span>
+              Emergency Puncture Repair — Greater Manchester
+            </div>
+
+            <h1
+              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white font-black mb-5 leading-[1.1]"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
+            >
+              Emergency Mobile Puncture Repair, Fast Roadside &amp; Home Tyre Repair
             </h1>
-            <p className="text-base sm:text-lg text-on-surface-variant mb-6 leading-relaxed">
-              Professional, fast and reliable puncture repair available 24/7 across the UK. We reach you at the roadside, car park, or home and get you moving again safely.
+
+            <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-4">
+              Got a flat tyre or sudden puncture? Our emergency mobile puncture repair service comes
+              directly to your location, providing fast, professional tyre repairs and replacements
+              without the need to visit a garage. Whether you&apos;re stranded at home, work, or on
+              the roadside, our experienced technicians will get you moving again as quickly and
+              safely as possible.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <p className="text-slate-400 text-base leading-relaxed mb-8">
+              If your tyre can be safely repaired, we&apos;ll carry out a professional puncture
+              repair to British Standards. If the damage is beyond repair, we can supply and fit a
+              replacement tyre on the spot, ensuring you get the safest and most cost-effective
+              solution.
+            </p>
+
+            <ul className="space-y-2 mb-8">
+              {[
+                'Fast Emergency Mobile Puncture Repair',
+                'Home, Workplace & Roadside Call Outs',
+                'Same Day & 24 Hour Assistance',
+                'Professional Tyre Repairs & Replacements',
+                'Affordable Prices & Rapid Response',
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-3 text-white/90 text-sm sm:text-base font-medium">
+                  <span className="text-green-400 text-lg">✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <div className="hidden sm:flex flex-row gap-3">
               <a
                 href="tel:07759708646"
-                className="bg-primary-container text-white font-semibold text-base py-3.5 px-6 rounded-lg flex items-center justify-center gap-2 hover:brightness-110 transition-all w-full sm:w-auto"
+                className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center gap-2.5 hover:bg-red-700 hover:text-white transition-all text-base sm:text-lg"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
               >
-                <span className="material-symbols-outlined text-[20px]">call</span>
-                07759 708 646
+                <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
+                Call Now
               </a>
               <a
                 href="https://wa.me/447759708646"
-                className="border-2 border-secondary text-secondary font-semibold text-base py-3.5 px-6 rounded-lg flex items-center justify-center gap-2 hover:bg-secondary hover:text-white transition-all w-full sm:w-auto"
+                className="bg-[#25D366] hover:bg-[#1ebe5d] text-white font-black px-8 py-4 rounded-xl flex items-center gap-2.5 transition-all text-base sm:text-lg shadow-lg"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
               >
-                <span className="material-symbols-outlined text-[20px]">chat</span>
+                <svg className="w-5 h-5 fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
                 WhatsApp Us
               </a>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="relative order-1 lg:order-2">
-            <div className="absolute -top-20 -right-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+      {/* ── 2. IMAGE + TEXT ──────────────────────────────────────────── */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+          <div className="w-full lg:w-1/2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfQqM7NgTUMbNljd91CfCszX2iLqY72iEpUmLbcBY0uU6XXQ4limf2ozhF6ddSlXmcTXXuUSgzgq92F7ueeRWrcq9SaPU2c8EQFB1vx9D_sS65EyZuAsURvUo03HKohRXLkgP6KxB9QJk163xlbPDfJC46Vx21pqFvJvv2WO5y1_BZP_YTKyhFI05nTlw5Ps2X9HNEPQPgEnRnUtlsgURwsWKrQAPd3QfAIALrL0IMOwT0-yMUuJtgS-kgcYFdRPGyR_T5j_AyQPs"
-              alt="Emergency puncture repair technician"
-              className="rounded-xl shadow-2xl relative z-10 w-full h-[240px] sm:h-[360px] lg:h-[420px] object-cover"
+              src="/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp"
+              alt="Fast mobile puncture repairs"
+              className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}
-              height={420}
-              loading="eager"
+              height={600}
+              loading="lazy"
+              decoding="async"
             />
           </div>
 
-        </div>
-      </section>
-
-      {/* ── 2. INTRODUCTION ──────────────────────────────────────── */}
-      <section className="py-12 sm:py-16 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-
-            <div className="w-full lg:w-1/2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE1Y5FoXPVWQM6sSru75ZeVtHX8a-OQBdHih-pBWwp6YaTo-gf8ayksm7WSLTPEsgY8KVuNReeTMSFsUOHRKWVn553th6flT0OJqAaTvBChfu2RcPTCEW7Mg4Yu24Bt1HuEuyt_gPcbOGw7EJpROflefma_xqiBobS2tq0xwVaPF4QIU26lSOAeAakhkfj5k57JHgcOxO8qzJ75G-a5U_7Ov4amGKw-FGJI510ULQDD9tFAXFxTvHiWCaTVFToU0xYIQFGO6fKek0"
-                alt="Puncture repair on the roadside"
-                className="rounded-xl shadow-lg w-full h-[260px] sm:h-[400px] lg:h-[480px] object-cover"
-                width={800}
-                height={480}
-                loading="lazy"
-              />
-            </div>
-
-            <div className="w-full lg:w-1/2">
-              <h2 className="font-h2 text-xl sm:text-2xl lg:text-[32px] font-bold text-on-surface mb-4 leading-snug">
-                Reliable Emergency Puncture Repair Service
-              </h2>
-              <p className="text-base text-on-surface-variant mb-3 leading-relaxed">
-                When a nail, shard of glass, or road debris interrupts your journey, One Stop Tyres 24/7 is here immediately. A flat tyre isn&apos;t just an inconvenience — on a motorway or dark country road, it can be a genuine safety hazard.
-              </p>
-              <p className="text-base text-on-surface-variant mb-6 leading-relaxed">
-                We specialise in roadside repairs meeting strict British Standard BS AU 159, prioritising repair over replacement wherever it is safe to do so. Our technicians carry the latest tools to deliver a permanent, high-quality fix on-site.
-              </p>
-              <div className="grid grid-cols-2 gap-3">
-                {['UK Wide Coverage', 'BS Standard Repairs', 'No Hidden Charges', 'All Tyre Types'].map((item) => (
-                  <div key={item} className="flex items-center gap-2">
-                    <span
-                      className="material-symbols-outlined text-primary text-[20px] shrink-0"
-                      style={{ fontVariationSettings: "'FILL' 1" }}
-                    >
-                      check_circle
-                    </span>
-                    <span className="text-sm font-semibold">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* ── 3. WHAT'S INCLUDED ───────────────────────────────────── */}
-      <section className="py-12 sm:py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-8 sm:mb-12">
-            <h2 className="font-h2 text-xl sm:text-2xl lg:text-[32px] font-bold text-on-surface mb-2">What&apos;s Included</h2>
-            <p className="text-base text-on-surface-variant">
-              Comprehensive roadside puncture repair as standard with every call-out.
+          <div className="w-full lg:w-1/2">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
+              Mobile Puncture Repair Specialists
+            </span>
+            <h2
+              className="text-2xl sm:text-4xl font-bold text-[#0f172a] mb-5 leading-tight"
+              style={{ fontFamily: 'var(--font-work-sans)' }}
+            >
+              Fast Mobile Puncture Repairs Wherever You Are
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              A puncture doesn&apos;t have to ruin your day. Our mobile puncture repair specialists
+              arrive fully equipped to inspect your tyre, repair it when possible, or replace it
+              immediately if necessary. We eliminate the inconvenience of waiting for recovery
+              services or driving on a damaged tyre.
             </p>
+            <p className="text-slate-600 text-base leading-relaxed mb-8">
+              Whether you&apos;ve picked up a nail, suffered a slow puncture, or experienced a
+              sudden flat tyre, our mobile technicians provide a convenient solution that gets you
+              back on the road safely with minimal disruption.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {whyChooseUs.map((item) => (
+                <div key={item.title} className="bg-slate-50 border border-slate-100 rounded-xl p-4">
+                  <div className="text-2xl mb-2">{item.icon}</div>
+                  <h3 className="font-bold text-[#0f172a] text-base mb-1">{item.title}</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {features.map((card) => (
-              <div
-                key={card.title}
-                className="bg-surface p-5 sm:p-6 rounded-xl border border-outline-variant flex flex-col items-center text-center hover:shadow-lg transition-shadow group"
-              >
-                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-colors">
-                  <span className="material-symbols-outlined text-primary group-hover:text-white text-2xl">
-                    {card.icon}
+        </div>
+      </section>
+
+      {/* ── 3. HOW IT WORKS ──────────────────────────────────────────── */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-[#0f172a] text-white relative overflow-hidden">
+        <div
+          className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none"
+          style={{
+            backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)',
+            backgroundSize: '40px 40px',
+          }}
+        />
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-12 sm:mb-16">
+            <span className="text-[#FF4444] font-bold uppercase tracking-widest text-sm mb-3 block">
+              Simple Process
+            </span>
+            <h2
+              className="text-2xl sm:text-[32px] font-bold"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              How It Works
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 relative">
+            {steps.map((step, idx) => (
+              <div key={step.n} className="relative text-center lg:text-left">
+                <div className="w-14 h-14 bg-[#FF4444] rounded-2xl flex items-center justify-center mx-auto lg:mx-0 mb-5 shadow-xl">
+                  <span
+                    className="text-white font-black text-xl"
+                    style={{ fontFamily: 'var(--font-work-sans)' }}
+                  >
+                    {step.n}
                   </span>
                 </div>
-                <h3 className="font-semibold text-base sm:text-lg mb-2 text-on-surface">{card.title}</h3>
-                <p className="text-sm text-on-surface-variant leading-relaxed">{card.desc}</p>
+                <h3
+                  className="text-lg sm:text-xl font-bold text-white mb-3"
+                  style={{ fontFamily: 'var(--font-work-sans)' }}
+                >
+                  {step.title}
+                </h3>
+                <p className="text-slate-400 text-base leading-relaxed">{step.desc}</p>
+                {idx < 3 && (
+                  <span className="hidden lg:block absolute top-7 -right-3 text-[#FF4444] material-symbols-outlined text-3xl">
+                    trending_flat
+                  </span>
+                )}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── 4. HOW IT WORKS ──────────────────────────────────────── */}
-      <section className="py-12 sm:py-16 bg-secondary text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="font-h2 text-xl sm:text-2xl lg:text-[32px] font-bold text-center mb-8 sm:mb-12">
-            How Our Service Works
-          </h2>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {steps.map((step) => (
-              <div key={step.n} className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white text-secondary flex items-center justify-center text-xl sm:text-2xl font-bold mb-3 sm:mb-4 shrink-0">
-                  {step.n}
-                </div>
-                <h4 className="font-semibold text-base mb-1 sm:mb-2">{step.title}</h4>
-                <p className="text-xs sm:text-sm text-secondary-container leading-relaxed">{step.desc}</p>
-              </div>
-            ))}
+      {/* ── 4. SECOND IMAGE STRIP ────────────────────────────────────── */}
+      <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center">
+          <div className="w-full lg:w-1/2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/tyre fitting in emergergency-airanko (1).webp"
+              alt="Emergency puncture repair at roadside"
+              className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
+              width={800}
+              height={600}
+              loading="lazy"
+              decoding="async"
+            />
           </div>
-        </div>
-      </section>
-
-      {/* ── 5. WHY CHOOSE US ─────────────────────────────────────── */}
-      <section className="py-12 sm:py-16 bg-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-
-            <div>
-              <h2 className="font-h2 text-xl sm:text-2xl lg:text-[32px] font-bold text-on-surface mb-6 leading-snug">
-                Why Choose One Stop Tyres 24/7?
-              </h2>
-              <div className="space-y-5 sm:space-y-6">
-                {whyUs.map((item) => (
-                  <div key={item.icon} className="flex gap-4">
-                    <div className="shrink-0 w-11 h-11 bg-primary-container rounded-lg flex items-center justify-center">
-                      <span className="material-symbols-outlined text-white text-xl">{item.icon}</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-base sm:text-lg mb-1">{item.title}</h4>
-                      <p className="text-base text-on-surface-variant leading-relaxed">{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="bg-surface-container-high rounded-2xl p-5 sm:p-6 border border-outline-variant">
-              <div className="grid grid-cols-2 gap-3 mb-4">
-                <div className="bg-white p-4 rounded-xl text-center shadow-sm">
-                  <div className="text-2xl sm:text-3xl font-bold text-primary">20m</div>
-                  <p className="text-xs font-semibold uppercase tracking-widest text-on-surface-variant mt-1">Avg Arrival</p>
-                </div>
-                <div className="bg-white p-4 rounded-xl text-center shadow-sm">
-                  <div className="text-2xl sm:text-3xl font-bold text-primary">15k+</div>
-                  <p className="text-xs font-semibold uppercase tracking-widest text-on-surface-variant mt-1">Jobs Done</p>
-                </div>
-              </div>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtbWRvdq_nEHmgLxgVsr9yrdbMm-jZJVzc0U33SRR5JWiAeKuOGR-EdzOR-Uu-GEKMybocqtCO4C046UclWXHBLkqFzIRTfn421-OnLRk1BfM0ZTPaJKtFy3dJRrPGtDxojY1UDOZbaCIsZGI_oEjdSzWA7Brlf1LsfFwb2MzthI2SeAvtknDlWbuB5Q9W9b9JnxUq_K6cfk_Xnolg3YOoCWBRyPb8ywdJBQdKkkigoNHt5l-_w3UDFf6IPtFbwOE16dLKvHy0i9c"
-                alt="Slow puncture being checked"
-                className="w-full h-[200px] sm:h-[240px] object-cover rounded-xl"
-                width={600}
-                height={240}
-                loading="lazy"
-              />
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* ── 6. SCENARIOS ─────────────────────────────────────────── */}
-      <section className="py-12 sm:py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="font-h2 text-xl sm:text-2xl lg:text-[32px] font-bold text-center mb-8 sm:mb-12">
-            When You Might Need Us
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
-            {scenarios.map((s) => (
-              <div key={s.title} className="p-5 sm:p-6 border-l-4 border-primary bg-surface shadow-sm rounded-r-lg">
-                <h4 className="font-semibold text-base sm:text-lg mb-2">{s.title}</h4>
-                <p className="text-base text-on-surface-variant leading-relaxed">{s.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── 7. FAQ ───────────────────────────────────────────────── */}
-      <section className="py-12 sm:py-16 bg-surface-container-low">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="font-h2 text-xl sm:text-2xl lg:text-[32px] font-bold text-center mb-8 sm:mb-12">
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-3 sm:space-y-4">
-            {faqs.map((faq) => (
-              <div key={faq.q} className="bg-white border border-outline-variant rounded-lg overflow-hidden">
-                <div className="px-5 py-4 border-b border-outline-variant">
-                  <h3 className="font-semibold text-base text-on-surface">{faq.q}</h3>
-                </div>
-                <div className="px-5 py-4 text-base text-on-surface-variant leading-relaxed">
-                  {faq.a}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── 8. FINAL CTA ─────────────────────────────────────────── */}
-      <section className="py-12 sm:py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="bg-primary-container rounded-2xl sm:rounded-3xl p-6 sm:p-10 md:p-14 text-center text-white relative overflow-hidden shadow-2xl">
-            <div className="relative z-10">
-              <h2 className="font-h1 text-xl sm:text-2xl md:text-3xl lg:text-[40px] font-bold text-white mb-3 sm:mb-4 leading-tight">
-                Got a Puncture Right Now?
-              </h2>
-              <p className="text-base md:text-lg mb-6 sm:mb-8 opacity-90 max-w-xl mx-auto leading-relaxed">
-                Stay safe, stay where you are, and call us. We dispatch immediately and aim to reach you within 30 minutes.
-              </p>
+          <div className="w-full lg:w-1/2">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
+              Always Ready
+            </span>
+            <h2
+              className="text-2xl sm:text-4xl font-bold text-[#0f172a] mb-5 leading-tight"
+              style={{ fontFamily: 'var(--font-work-sans)' }}
+            >
+              Puncture Repair or Replacement — We Decide What&apos;s Best For You
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-6">
+              Our technicians always assess your tyre honestly and recommend the most cost-effective
+              solution. If a professional repair is possible to British Standards, we&apos;ll repair
+              it. If it&apos;s beyond safe repair, we carry a wide range of replacement tyres to get
+              you back on the road immediately.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href="tel:07759708646"
-                className="inline-flex items-center gap-2 sm:gap-3 bg-white text-primary font-bold text-base sm:text-xl md:text-2xl py-3 sm:py-4 px-6 sm:px-10 rounded-full hover:opacity-90 transition-all shadow-xl"
+                className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 hover:text-white transition-all text-base sm:text-lg"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
               >
-                <span
-                  className="material-symbols-outlined text-xl sm:text-2xl md:text-3xl"
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                >
-                  phone_in_talk
-                </span>
+                <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
                 07759 708 646
               </a>
+              <a
+                href="https://wa.me/447759708646"
+                className="bg-[#25D366] hover:bg-[#1ebe5d] text-white font-black px-8 py-4 rounded-xl flex items-center justify-center gap-2.5 transition-all text-base sm:text-lg shadow-lg"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
+              >
+                <svg className="w-5 h-5 fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                WhatsApp Us
+              </a>
             </div>
-            <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-white/10 rounded-full blur-2xl pointer-events-none" />
-            <div className="absolute -top-20 -right-20 w-64 h-64 bg-black/10 rounded-full blur-2xl pointer-events-none" />
           </div>
         </div>
       </section>
 
+      {/* ── 5. FAQ ───────────────────────────────────────────────────── */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10 sm:mb-16">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+              Common Questions
+            </span>
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a]"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Frequently Asked Questions
+            </h2>
+          </div>
+          <div className="space-y-3 sm:space-y-4">
+            {faqs.map((faq) => (
+              <details
+                key={faq.q}
+                className="group bg-white p-4 sm:p-6 rounded-xl border border-slate-200 shadow-sm open:shadow-md transition-all"
+              >
+                <summary className="list-none flex justify-between items-center cursor-pointer font-bold text-base sm:text-lg text-[#0f172a] gap-3">
+                  {faq.q}
+                  <span className="material-symbols-outlined group-open:rotate-180 transition-transform text-[#b70011] flex-shrink-0 text-xl sm:text-2xl">
+                    expand_more
+                  </span>
+                </summary>
+                <p className="mt-3 sm:mt-4 text-slate-600 leading-relaxed text-base">{faq.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 6. FINAL CTA ─────────────────────────────────────────────── */}
+      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-[#0f172a] text-white text-center">
+        <h2
+          className="text-2xl sm:text-3xl font-bold mb-3"
+          style={{ fontFamily: 'var(--font-work-sans)' }}
+        >
+          Got a Puncture Right Now?
+        </h2>
+        <p className="text-slate-400 text-base mb-8 max-w-lg mx-auto">
+          Stay safe, stay where you are, and call us. We dispatch immediately and aim to reach you
+          as quickly as possible.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a
+            href="tel:07759708646"
+            className="bg-[#FF4444] text-[#121212] font-black px-10 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center gap-2.5 hover:bg-red-700 hover:text-white transition-all text-lg sm:text-xl"
+            style={{ fontFamily: 'var(--font-work-sans)' }}
+          >
+            <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
+            07759 708 646
+          </a>
+          <a
+            href="https://wa.me/447759708646"
+            className="bg-[#25D366] hover:bg-[#1ebe5d] text-white font-black px-10 py-4 rounded-xl flex items-center gap-2.5 transition-all text-lg sm:text-xl shadow-lg"
+            style={{ fontFamily: 'var(--font-work-sans)' }}
+          >
+            <svg className="w-6 h-6 fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            WhatsApp Us
+          </a>
+        </div>
+      </section>
     </div>
   )
 }

@@ -47,6 +47,7 @@ export default function Footer() {
           <ul className="space-y-2 sm:space-y-3 lg:space-y-4 text-slate-400 text-sm font-medium">
             {[
               { label: '24 Hour Emergency Tyre Fitting', href: '/24-hour-emergency-tyre-fitting' },
+              { label: 'Cheap Mobile Tyre Fitting', href: '/cheap-mobile-tyre-fitting' },
               { label: 'Mobile Tyre Fitting', href: '/mobile-tyre-fitting' },
               { label: 'Home Tyre Fitting', href: '/home-tyre-fitting' },
               { label: 'Emergency Puncture Repair', href: '/emergency-puncture-repair' },

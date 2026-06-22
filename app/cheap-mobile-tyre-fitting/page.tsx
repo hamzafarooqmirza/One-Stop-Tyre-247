@@ -1,0 +1,447 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Cheap Mobile Tyre Fitting | Quality Tyres at Affordable Prices | One Stop Tyres 24/7',
+  description:
+    'Cheap mobile tyre fitting across Greater Manchester. Budget, mid-range & premium tyres fitted at your home, workplace or roadside. Same day & emergency appointments available.',
+  alternates: { canonical: 'https://onestoptyres247.co.uk/cheap-mobile-tyre-fitting' },
+}
+
+const _breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://onestoptyres247.co.uk' },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Cheap Mobile Tyre Fitting',
+      item: 'https://onestoptyres247.co.uk/cheap-mobile-tyre-fitting',
+    },
+  ],
+}
+
+const _serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://onestoptyres247.co.uk/cheap-mobile-tyre-fitting#service',
+  name: 'Cheap Mobile Tyre Fitting',
+  description:
+    'Affordable mobile tyre fitting with budget, mid-range and premium tyres. Professional tyre replacement and puncture repair at your home, workplace or roadside location across Greater Manchester.',
+  provider: {
+    '@type': 'LocalBusiness',
+    '@id': 'https://onestoptyres247.co.uk/#business',
+    name: 'One Stop Mobile Tyres 24/7',
+  },
+  areaServed: { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
+  url: 'https://onestoptyres247.co.uk/cheap-mobile-tyre-fitting',
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    opens: '00:00',
+    closes: '23:59',
+  },
+}
+
+const _faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'Do you provide cheap mobile tyre fitting?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We specialise in affordable mobile tyre fitting with a range of budget, mid-range and premium tyres to suit every budget.' } },
+    { '@type': 'Question', name: 'Are cheap tyres safe?', acceptedAnswer: { '@type': 'Answer', text: 'Absolutely. We only supply tyres that meet UK safety standards from trusted manufacturers.' } },
+    { '@type': 'Question', name: 'Can you fit tyres at my home?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our home tyre-fitting service lets you have your tyres replaced without visiting a garage.' } },
+    { '@type': 'Question', name: 'Do you offer same-day tyre fitting?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We provide same-day mobile tyre fitting whenever stock and availability allow.' } },
+    { '@type': 'Question', name: 'Can you replace tyres at my workplace?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We regularly fit tyres at offices, industrial estates, and business premises.' } },
+    { '@type': 'Question', name: 'Do you provide emergency tyre replacement?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We offer emergency mobile tyre fitting for punctures, blowouts, and damaged tyres.' } },
+    { '@type': 'Question', name: 'Can you repair a puncture instead of replacing the tyre?', acceptedAnswer: { '@type': 'Answer', text: "If the puncture is within the legal repair area and safe to repair, we'll always recommend the most cost-effective solution." } },
+    { '@type': 'Question', name: 'Is mobile tyre fitting more expensive than a garage?', acceptedAnswer: { '@type': 'Answer', text: 'Not necessarily. When you consider travel costs, waiting time, and recovery charges, our mobile tyre fitting service offers excellent value and convenience.' } },
+  ],
+}
+
+const faqs = [
+  { q: 'Do you provide cheap mobile tyre fitting?', a: 'Yes. We specialise in affordable mobile tyre fitting with a range of budget, mid-range and premium tyres to suit every budget.' },
+  { q: 'Are cheap tyres safe?', a: 'Absolutely. We only supply tyres that meet UK safety standards from trusted manufacturers.' },
+  { q: 'Can you fit tyres at my home?', a: 'Yes. Our home tyre-fitting service lets you have your tyres replaced without visiting a garage.' },
+  { q: 'Do you offer same-day tyre fitting?', a: 'Yes. We provide same-day mobile tyre fitting whenever stock and availability allow.' },
+  { q: 'Can you replace tyres at my workplace?', a: 'Yes. We regularly fit tyres at offices, industrial estates, and business premises.' },
+  { q: 'Do you provide emergency tyre replacement?', a: 'Yes. We offer emergency mobile tyre fitting for punctures, blowouts, and damaged tyres.' },
+  { q: 'Can you repair a puncture instead of replacing the tyre?', a: "If the puncture is within the legal repair area and safe to repair, we'll always recommend the most cost-effective solution." },
+  { q: 'Do you carry budget tyres?', a: 'Yes. We stock a wide selection of affordable tyres while also offering mid-range and premium options.' },
+  { q: 'Can you fit tyres on my driveway?', a: 'Yes. Our mobile fitting vans are fully equipped to complete tyre replacement on your driveway or outside your home.' },
+  { q: 'Is mobile tyre fitting more expensive than a garage?', a: 'Not necessarily. When you consider travel costs, waiting time, and recovery charges, our mobile tyre fitting service offers excellent value and convenience.' },
+  { q: 'Do you provide roadside tyre fitting?', a: 'Yes. We can replace damaged tyres at the roadside where it is safe to do so.' },
+  { q: 'Can I book tyres fitted today?', a: 'Yes. We offer same day appointments for many locations and tyre sizes.' },
+  { q: 'Do you offer mobile puncture repair?', a: 'Yes. Our technicians can repair punctures when they meet safety guidelines or replace the tyre if necessary.' },
+  { q: 'Can you replace more than one tyre?', a: 'Yes. We can fit a single tyre, two tyres or a complete set during the same visit.' },
+  { q: 'Do you supply premium tyres as well?', a: 'Yes. We supply budget, mid-range and premium tyres from leading manufacturers.' },
+  { q: 'What areas do you cover?', a: 'Our mobile tyre fitting service covers homes, workplaces and roadside locations across our service area.' },
+  { q: 'Can you help if my tyre goes flat at night?', a: 'Yes. Our emergency tyre fitting service is available for urgent situations.' },
+  { q: 'Do you offer tyre fitting near me?', a: 'Our mobile service comes directly to your location, making tyre replacement fast and convenient.' },
+  { q: 'How long does tyre fitting take?', a: 'Most tyre replacements take between 20 and 45 minutes depending on the vehicle and the number of tyres being fitted.' },
+  { q: 'Do I need to visit a tyre shop?', a: 'No. We bring the tyre shop to you, saving you time and making tyre replacement completely hassle-free.' },
+  { q: 'Do you offer cheap mobile tyre repair near me?', a: 'Yes. We provide affordable mobile puncture repairs and tyre replacements for customers looking for fast and reliable service.' },
+  { q: 'Can you fit tyres while I\'m at work?', a: 'Yes. Many customers choose workplace tyre fitting so their vehicle is ready when they finish work.' },
+  { q: 'Why choose mobile tyre fitting?', a: 'Mobile tyre fitting offers convenience, saves valuable time, avoids unnecessary travel and allows professional tyre replacement wherever you need it.' },
+  { q: 'Can I book by phone or WhatsApp?', a: 'Yes. Simply call us or send a WhatsApp message and our team will arrange your mobile tyre fitting appointment as quickly as possible.' },
+]
+
+const whyChooseUs = [
+  {
+    icon: '💷',
+    title: 'Competitive Prices',
+    desc: 'We offer excellent value on budget, mid-range and premium tyres with transparent pricing and no hidden costs.',
+  },
+  {
+    icon: '🚐',
+    title: 'We Come To You',
+    desc: 'No need to drive on a damaged tyre or wait at a tyre garage. Our mobile technicians fit your tyres wherever you are.',
+  },
+  {
+    icon: '⚡',
+    title: 'Fast Same Day Service',
+    desc: 'Need tyres fitted today? We offer same day and emergency appointments whenever possible.',
+  },
+  {
+    icon: '⭐',
+    title: 'Quality You Can Trust',
+    desc: 'Every tyre is professionally fitted by experienced technicians using modern equipment and backed by outstanding customer service.',
+  },
+]
+
+const steps = [
+  {
+    n: '1',
+    title: 'Call Us',
+    desc: 'Tell us your tyre size, vehicle details and location, or let our team help identify the correct tyre for your vehicle.',
+  },
+  {
+    n: '2',
+    title: 'Dispatch',
+    desc: 'We find the nearest mobile tyre technician and prepare the required tyres for your appointment.',
+  },
+  {
+    n: '3',
+    title: 'Arrival',
+    desc: 'Our technician arrives fully equipped to remove the damaged tyre and professionally fit the replacement.',
+  },
+  {
+    n: '4',
+    title: 'Back On The Road',
+    desc: 'After completing safety checks and ensuring the tyre is correctly fitted, you\'re ready to drive away with confidence.',
+  },
+]
+
+export default function CheapMobileTyreFittingPage() {
+  return (
+    <div className="text-[#1c1b1b]" style={{ fontFamily: 'var(--font-inter)' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_faqSchema) }} />
+
+      {/* ── 1. HERO ──────────────────────────────────────────────────── */}
+      <section className="relative min-h-[580px] lg:min-h-[640px] flex items-center overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/tyre fitting in emergergency-airanko (1).webp"
+          alt="Cheap mobile tyre fitting service"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          width={1600}
+          height={900}
+          decoding="async"
+        />
+        <div className="absolute inset-0 bg-[#0f172a]/80" />
+
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-16 py-20 lg:py-28">
+          <div className="max-w-2xl">
+            <div className="inline-flex items-center gap-2 bg-red-600/20 text-red-400 font-bold px-3.5 py-1.5 rounded-full mb-6 text-[11px] uppercase tracking-widest border border-red-600/30">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
+              </span>
+              Affordable Mobile Tyre Service — Greater Manchester
+            </div>
+
+            <h1
+              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white font-black mb-5 leading-[1.1]"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
+            >
+              Cheap Mobile Tyre Fitting, Quality Tyres at Affordable Prices
+            </h1>
+
+            <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-4">
+              Looking for cheap mobile tyre fitting without compromising on quality or service? We
+              provide affordable mobile tyre replacement and puncture repair at your home, workplace,
+              or roadside location, saving you the hassle of visiting a garage. With competitive
+              prices and fast response times, getting new tyres has never been easier.
+            </p>
+            <p className="text-slate-400 text-base leading-relaxed mb-8">
+              Whether you need budget tyres, same day mobile tyre fitting, emergency tyre
+              replacement, or a mobile puncture repair, our experienced technicians bring everything
+              required to fit your tyres on-site. We stock a wide range of premium, mid-range, and
+              budget tyres to suit every vehicle and every budget.
+            </p>
+
+            <ul className="space-y-2 mb-8">
+              {[
+                'Cheap Mobile Tyre Fitting with No Hidden Fees',
+                'Budget, Mid-Range & Premium Tyres Available',
+                'Same Day Mobile Tyre Replacement',
+                'Home, Workplace & Roadside Fitting',
+                'Professional Mobile Technicians & Fast Response',
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-3 text-white/90 text-sm sm:text-base font-medium">
+                  <span className="text-green-400 text-lg">✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <div className="hidden sm:flex flex-row gap-3">
+              <a
+                href="tel:07759708646"
+                className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center gap-2.5 hover:bg-red-700 hover:text-white transition-all text-base sm:text-lg"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
+              >
+                <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
+                Call Now
+              </a>
+              <a
+                href="https://wa.me/447759708646"
+                className="bg-[#25D366] hover:bg-[#1ebe5d] text-white font-black px-8 py-4 rounded-xl flex items-center gap-2.5 transition-all text-base sm:text-lg shadow-lg"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
+              >
+                <svg className="w-5 h-5 fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 2. IMAGE + TEXT ──────────────────────────────────────────── */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+          <div className="w-full lg:w-1/2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp"
+              alt="Affordable mobile tyre fitting service"
+              className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
+              width={800}
+              height={600}
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          <div className="w-full lg:w-1/2">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
+              Affordable Mobile Tyre Service
+            </span>
+            <h2
+              className="text-2xl sm:text-4xl font-bold text-[#0f172a] mb-5 leading-tight"
+              style={{ fontFamily: 'var(--font-work-sans)' }}
+            >
+              Affordable Mobile Tyre Fitting That Comes To You
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              Buying new tyres shouldn&apos;t mean spending hours waiting at a tyre garage or paying
+              expensive recovery charges after a puncture. Our mobile tyre fitting service delivers
+              professional tyre replacement directly to your location at competitive prices.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed mb-8">
+              From emergency tyre call-outs to scheduled home tyre fitting appointments, we make
+              replacing your tyres simple, convenient and affordable. Our team can supply and fit
+              tyres for cars, SUVs, vans and light commercial vehicles while you relax at home or
+              continue working.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {whyChooseUs.map((item) => (
+                <div key={item.title} className="bg-slate-50 border border-slate-100 rounded-xl p-4">
+                  <div className="text-2xl mb-2">{item.icon}</div>
+                  <h3 className="font-bold text-[#0f172a] text-base mb-1">{item.title}</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 3. HOW IT WORKS ──────────────────────────────────────────── */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-[#0f172a] text-white relative overflow-hidden">
+        <div
+          className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none"
+          style={{
+            backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)',
+            backgroundSize: '40px 40px',
+          }}
+        />
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-12 sm:mb-16">
+            <span className="text-[#FF4444] font-bold uppercase tracking-widest text-sm mb-3 block">
+              Simple Process
+            </span>
+            <h2
+              className="text-2xl sm:text-[32px] font-bold"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              How It Works
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 relative">
+            {steps.map((step, idx) => (
+              <div key={step.n} className="relative text-center lg:text-left">
+                <div className="w-14 h-14 bg-[#FF4444] rounded-2xl flex items-center justify-center mx-auto lg:mx-0 mb-5 shadow-xl">
+                  <span
+                    className="text-white font-black text-xl"
+                    style={{ fontFamily: 'var(--font-work-sans)' }}
+                  >
+                    {step.n}
+                  </span>
+                </div>
+                <h3
+                  className="text-lg sm:text-xl font-bold text-white mb-3"
+                  style={{ fontFamily: 'var(--font-work-sans)' }}
+                >
+                  {step.title}
+                </h3>
+                <p className="text-slate-400 text-base leading-relaxed">{step.desc}</p>
+                {idx < 3 && (
+                  <span className="hidden lg:block absolute top-7 -right-3 text-[#FF4444] material-symbols-outlined text-3xl">
+                    trending_flat
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 4. SECOND IMAGE STRIP ────────────────────────────────────── */}
+      <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center">
+          <div className="w-full lg:w-1/2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/Tyre fitting at home-airanko (1).webp"
+              alt="Cheap mobile tyre fitting at home"
+              className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
+              width={800}
+              height={600}
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div className="w-full lg:w-1/2">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
+              Ready To Help
+            </span>
+            <h2
+              className="text-2xl sm:text-4xl font-bold text-[#0f172a] mb-5 leading-tight"
+              style={{ fontFamily: 'var(--font-work-sans)' }}
+            >
+              Affordable Tyre Fitting Without the Garage Wait
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-6">
+              Our mobile tyre fitting service brings professional technicians and competitively priced
+              tyres directly to you. No queuing, no wasted journeys, and no hidden costs. Whether you
+              need budget-friendly tyres or a premium brand, we supply and fit them at your
+              convenience.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href="tel:07759708646"
+                className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 hover:text-white transition-all text-base sm:text-lg"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
+              >
+                <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
+                07759 708 646
+              </a>
+              <a
+                href="https://wa.me/447759708646"
+                className="bg-[#25D366] hover:bg-[#1ebe5d] text-white font-black px-8 py-4 rounded-xl flex items-center justify-center gap-2.5 transition-all text-base sm:text-lg shadow-lg"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
+              >
+                <svg className="w-5 h-5 fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 5. FAQ ───────────────────────────────────────────────────── */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10 sm:mb-16">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+              Common Questions
+            </span>
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a]"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Frequently Asked Questions
+            </h2>
+          </div>
+          <div className="space-y-3 sm:space-y-4">
+            {faqs.map((faq) => (
+              <details
+                key={faq.q}
+                className="group bg-white p-4 sm:p-6 rounded-xl border border-slate-200 shadow-sm open:shadow-md transition-all"
+              >
+                <summary className="list-none flex justify-between items-center cursor-pointer font-bold text-base sm:text-lg text-[#0f172a] gap-3">
+                  {faq.q}
+                  <span className="material-symbols-outlined group-open:rotate-180 transition-transform text-[#b70011] flex-shrink-0 text-xl sm:text-2xl">
+                    expand_more
+                  </span>
+                </summary>
+                <p className="mt-3 sm:mt-4 text-slate-600 leading-relaxed text-base">{faq.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 6. FINAL CTA ─────────────────────────────────────────────── */}
+      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-[#0f172a] text-white text-center">
+        <h2
+          className="text-2xl sm:text-3xl font-bold mb-3"
+          style={{ fontFamily: 'var(--font-work-sans)' }}
+        >
+          Need Affordable Mobile Tyre Fitting Today?
+        </h2>
+        <p className="text-slate-400 text-base mb-8 max-w-lg mx-auto">
+          Call or WhatsApp us for a competitive quote and we&apos;ll send a technician directly to
+          your location.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a
+            href="tel:07759708646"
+            className="bg-[#FF4444] text-[#121212] font-black px-10 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center gap-2.5 hover:bg-red-700 hover:text-white transition-all text-lg sm:text-xl"
+            style={{ fontFamily: 'var(--font-work-sans)' }}
+          >
+            <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
+            07759 708 646
+          </a>
+          <a
+            href="https://wa.me/447759708646"
+            className="bg-[#25D366] hover:bg-[#1ebe5d] text-white font-black px-10 py-4 rounded-xl flex items-center gap-2.5 transition-all text-lg sm:text-xl shadow-lg"
+            style={{ fontFamily: 'var(--font-work-sans)' }}
+          >
+            <svg className="w-6 h-6 fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            WhatsApp Us
+          </a>
+        </div>
+      </section>
+    </div>
+  )
+}

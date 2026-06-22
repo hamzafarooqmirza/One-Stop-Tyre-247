@@ -48,6 +48,12 @@ const serviceLinks = [
     icon: 'emergency',
     desc: 'Immediate tyre help day or night, 365 days',
   },
+  {
+    label: 'Cheap Mobile Tyre Fitting',
+    href: '/cheap-mobile-tyre-fitting',
+    icon: 'savings',
+    desc: 'Budget, mid-range & premium tyres at great prices',
+  },
 ]
 
 const cityLinks = [

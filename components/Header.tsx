@@ -54,6 +54,12 @@ const serviceLinks = [
     icon: 'savings',
     desc: 'Budget, mid-range & premium tyres at great prices',
   },
+  {
+    label: 'Tyre Fitting Near Me',
+    href: '/tyre-fitting-near-me',
+    icon: 'location_on',
+    desc: 'We come to your home, work or roadside location',
+  },
 ]
 
 const cityLinks = [

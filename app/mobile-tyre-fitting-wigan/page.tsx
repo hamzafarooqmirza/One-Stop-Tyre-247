@@ -153,6 +153,13 @@ export default function WiganPage() {
                   badge: '24/7 EMERGENCY',
                   href: '/24-hour-emergency-tyre-fitting',
                 },
+                {
+                  img: '/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp',
+                  title: 'Cheap Mobile Tyre Fitting',
+                  desc: 'Quality tyres at affordable prices. Budget, mid-range and premium options fitted at your home, workplace or roadside.',
+                  badge: 'BEST VALUE',
+                  href: '/cheap-mobile-tyre-fitting',
+                },
               ].map((card) => (
                 <a key={card.title} href={card.href} className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]">
                   <div className="relative h-44 sm:h-52 overflow-hidden">

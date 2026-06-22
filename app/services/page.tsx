@@ -55,6 +55,22 @@ const services = [
     badge: 'Damage Free',
     btnLabel: 'Learn More',
   },
+  {
+    href: '/24-hour-emergency-tyre-fitting',
+    img: '/images/tyre fitting in emergergency-airanko (1).webp',
+    title: '24 Hour Emergency Tyre Fitting',
+    desc: 'Round-the-clock emergency tyre fitting wherever you are stranded — roadside, car park or driveway. We respond day and night.',
+    badge: '24/7',
+    btnLabel: 'Get Help Now',
+  },
+  {
+    href: '/cheap-mobile-tyre-fitting',
+    img: '/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp',
+    title: 'Cheap Mobile Tyre Fitting',
+    desc: 'Quality tyres at affordable prices. Budget, mid-range and premium options fitted at your home, workplace or roadside.',
+    badge: 'Best Value',
+    btnLabel: 'Get a Quote',
+  },
 ]
 
 

@@ -146,6 +146,20 @@ export default function WiganPage() {
                   href: '/tpms-reset' },
                 { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp', title: 'Locking Nut Removal', desc: 'Specialist locking wheel nut removal service for damaged, seized or missing locking wheel nuts.', badge: 'DAMAGE FREE',
                   href: '/locking-nut-removal' },
+                {
+                  img: '/images/tyre fitting in emergergency-airanko (1).webp',
+                  title: '24 Hour Emergency Tyre Fitting',
+                  desc: '24-hour emergency tyre fitting service available day and night across Greater Manchester. Call us any time for rapid roadside response.',
+                  badge: '24/7 EMERGENCY',
+                  href: '/24-hour-emergency-tyre-fitting',
+                },
+                {
+                  img: '/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp',
+                  title: 'Cheap Mobile Tyre Fitting',
+                  desc: 'Quality tyres at affordable prices. Budget, mid-range and premium options fitted at your home, workplace or roadside.',
+                  badge: 'BEST VALUE',
+                  href: '/cheap-mobile-tyre-fitting',
+                },
               ].map((card) => (
                 <a key={card.title} href={card.href} className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]">
                   <div className="relative h-44 sm:h-52 overflow-hidden">

@@ -48,6 +48,7 @@ export default function Footer() {
             {[
               { label: '24 Hour Emergency Tyre Fitting', href: '/24-hour-emergency-tyre-fitting' },
               { label: 'Cheap Mobile Tyre Fitting', href: '/cheap-mobile-tyre-fitting' },
+              { label: 'Tyre Fitting Near Me', href: '/tyre-fitting-near-me' },
               { label: 'Mobile Tyre Fitting', href: '/mobile-tyre-fitting' },
               { label: 'Home Tyre Fitting', href: '/home-tyre-fitting' },
               { label: 'Emergency Puncture Repair', href: '/emergency-puncture-repair' },

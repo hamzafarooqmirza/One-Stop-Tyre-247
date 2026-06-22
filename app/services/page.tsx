@@ -71,6 +71,14 @@ const services = [
     badge: 'Best Value',
     btnLabel: 'Get a Quote',
   },
+  {
+    href: '/tyre-fitting-near-me',
+    img: '/images/Tyre fitting at home-airanko (1).webp',
+    title: 'Tyre Fitting Near Me',
+    desc: 'We come to your home, workplace or roadside. Fast local tyre fitting without the garage wait.',
+    badge: 'Local Service',
+    btnLabel: 'Book Now',
+  },
 ]
 
 

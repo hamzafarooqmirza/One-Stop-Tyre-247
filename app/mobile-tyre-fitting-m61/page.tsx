@@ -215,6 +215,20 @@ export default function M61Page() {
                   badge: 'DAMAGE FREE',
                   href: '/locking-nut-removal',
                 },
+                {
+                  img: '/images/tyre fitting in emergergency-airanko (1).webp',
+                  title: '24 Hour Emergency Tyre Fitting',
+                  desc: '24-hour emergency tyre fitting service available day and night across Greater Manchester. Call us any time for rapid roadside response.',
+                  badge: '24/7 EMERGENCY',
+                  href: '/24-hour-emergency-tyre-fitting',
+                },
+                {
+                  img: '/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp',
+                  title: 'Cheap Mobile Tyre Fitting',
+                  desc: 'Quality tyres at affordable prices. Budget, mid-range and premium options fitted at your home, workplace or roadside.',
+                  badge: 'BEST VALUE',
+                  href: '/cheap-mobile-tyre-fitting',
+                },
               ].map((card) => (
                 <a
                   key={card.title}

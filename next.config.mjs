@@ -25,7 +25,7 @@ const CSP = [
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com",
   "img-src 'self' data: blob: https://hebbkx1anhila5yf.public.blob.vercel-storage.com https://www.googletagmanager.com https://www.google-analytics.com",
-  "frame-src https://www.googletagmanager.com",
+  "frame-src https://www.googletagmanager.com https://www.google.com",
   "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.googletagmanager.com",
   "object-src 'none'",
   "base-uri 'self'",

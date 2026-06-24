@@ -1,32 +1,22 @@
 /** @type {import('next').NextConfig} */
 
 // Content-Security-Policy directive breakdown:
-//   default-src 'self'                     — block everything not explicitly listed
-//   script-src  'self' 'unsafe-inline'     — inline GTM bootstrap + Material Symbols loader
-//               googletagmanager.com       — GTM JS bundle
-//   style-src   'self' 'unsafe-inline'     — Tailwind inline styles + React style attrs
-//               fonts.googleapis.com       — Google Fonts / Material Symbols CSS
-//   font-src    'self' fonts.gstatic.com   — actual woff2 font files
-//   img-src     'self' data: blob:         — local images + data URIs
-//               vercel-storage.com         — Vercel Blob images (logo, service photos)
-//               googletagmanager.com       — GTM tracking pixels
-//               google-analytics.com       — GA tracking pixels
-//   frame-src   googletagmanager.com       — GTM noscript <iframe>
-//   connect-src 'self' google-analytics.com analytics.google.com
-//               region1.google-analytics.com googletagmanager.com
-//                                          — GA4 beacon endpoints hit by GTM at runtime
-//   object-src  'none'                     — block Flash / plugins entirely
-//   base-uri    'self'                     — prevent <base> injection attacks
-//   form-action 'self'                     — form submissions stay on-site
-//   upgrade-insecure-requests             — auto-upgrade any http:// sub-resource to https://
+//   script-src  — GTM bootstrap (inline), GTM bundle, GA scripts, Microsoft Clarity
+//   style-src   — Tailwind inline styles, Google Fonts / Material Symbols CSS
+//   font-src    — woff2 files from gstatic
+//   img-src     — local images, Vercel Blob, GTM/GA pixels, DoubleClick signals, Clarity
+//   frame-src   — GTM noscript iframe, Google Maps embeds
+//   connect-src — GA4 beacon endpoints (including DoubleClick), Clarity data collection
+//   object-src  — blocked entirely (no Flash/plugins)
+//   base-uri / form-action — locked to self to prevent injection attacks
 const CSP = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com",
+  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com https://www.clarity.ms",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com",
-  "img-src 'self' data: blob: https://hebbkx1anhila5yf.public.blob.vercel-storage.com https://www.googletagmanager.com https://www.google-analytics.com",
+  "img-src 'self' data: blob: https://hebbkx1anhila5yf.public.blob.vercel-storage.com https://www.googletagmanager.com https://www.google-analytics.com https://stats.g.doubleclick.net https://www.clarity.ms",
   "frame-src https://www.googletagmanager.com https://www.google.com",
-  "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.googletagmanager.com",
+  "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.googletagmanager.com https://stats.g.doubleclick.net https://www.clarity.ms https://*.clarity.ms",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",

@@ -1,31 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-// Content-Security-Policy directive breakdown:
-//   script-src  — GTM bootstrap (inline), GTM bundle, GA scripts, Microsoft Clarity
-//   style-src   — Tailwind inline styles, Google Fonts / Material Symbols CSS
-//   font-src    — woff2 files from gstatic
-//   img-src     — local images, Vercel Blob, GTM/GA pixels, DoubleClick signals, Clarity
-//   frame-src   — GTM noscript iframe, Google Maps embeds
-//   connect-src — GA4 beacon endpoints (including DoubleClick), Clarity data collection
-//   object-src  — blocked entirely (no Flash/plugins)
-//   base-uri / form-action — locked to self to prevent injection attacks
-const CSP = [
-  "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com https://www.clarity.ms",
-  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-  "font-src 'self' https://fonts.gstatic.com",
-  "img-src 'self' data: blob: https://hebbkx1anhila5yf.public.blob.vercel-storage.com https://www.googletagmanager.com https://www.google-analytics.com https://stats.g.doubleclick.net https://www.clarity.ms",
-  "frame-src https://www.googletagmanager.com https://www.google.com",
-  "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.googletagmanager.com https://stats.g.doubleclick.net https://www.clarity.ms https://*.clarity.ms",
-  "object-src 'none'",
-  "base-uri 'self'",
-  "form-action 'self'",
-  "upgrade-insecure-requests",
-].join("; ")
-
 const SECURITY_HEADERS = [
-  // Prevents XSS, data injection, and other content injection attacks
-  { key: "Content-Security-Policy", value: CSP },
   // Blocks the page from being embedded in iframes on other origins (clickjacking protection)
   { key: "X-Frame-Options", value: "SAMEORIGIN" },
   // Stops browsers from MIME-sniffing a response away from the declared Content-Type

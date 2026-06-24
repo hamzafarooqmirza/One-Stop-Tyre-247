@@ -21,7 +21,7 @@
 //   upgrade-insecure-requests             — auto-upgrade any http:// sub-resource to https://
 const CSP = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
+  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com",
   "img-src 'self' data: blob: https://hebbkx1anhila5yf.public.blob.vercel-storage.com https://www.googletagmanager.com https://www.google-analytics.com",

@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 
 const SLIDES = [
   {
-    image: '/images/Mobile%20Tyre%20Fitting%20One%20Stop%20Tyres%2024%207.webp',
+    image: '/images/Mobile%20tyre%20fitting%20service.webp',
     badge: 'Mobile Tyre Fitting & Emergency Tyre Repair',
     heading: 'Mobile Tyre Fitting\nNear Me – 24/7 Service',
     body: 'Need a mobile tyre fitter fast? Our fully equipped mobile tyre fitting vans provide emergency tyre repair, mobile tyre replacement and same day tyre fitting at your home, workplace or roadside location.',

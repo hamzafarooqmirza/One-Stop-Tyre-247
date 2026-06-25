@@ -18,7 +18,7 @@ const SLIDES = [
     ],
   },
   {
-    image: '/images/tyre%20fitting%20in%20emergergency-airanko%20(1).webp',
+    image: '/images/professional%20mobile%20tyre%20fitting.webp',
     badge: 'Emergency Mobile Tyre Service',
     heading: 'Flat Tyre?\nWe Come To You',
     body: 'Whether you need mobile tyre repair, emergency tyre replacement, or roadside tyre assistance, our experienced technicians can get you safely back on the road — no waiting for recovery trucks.',
@@ -32,7 +32,7 @@ const SLIDES = [
     ],
   },
   {
-    image: '/images/Tyre%20fitting%20at%20home-airanko%20(1).webp',
+    image: '/images/home%20tyre%20fitting%20(1).webp',
     badge: 'Same Day Mobile Tyre Replacement',
     heading: 'Professional Mobile\nTyre Fitters Near You',
     body: 'Our mobile tyre fitting service covers emergency call-outs, puncture repairs, tyre replacements and tyre recovery assistance. We bring the tyre shop directly to your location.',

@@ -1,101 +1,27 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Jump Start Service | One Stop Tyres 24/7',
+  title: 'Jump Start Service | Mobile Battery Jump Start | One Stop Tyres 24/7',
   description:
-    "Professional, fast and reliable jump start available 24/7 across the UK. Dead battery? We arrive within 30 minutes and get you moving safely.",
+    "Professional mobile jump start service available 24/7 across Greater Manchester. ECU-safe equipment, fast response, battery health test included. Dead battery? We come to you.",
   alternates: { canonical: 'https://onestoptyres247.co.uk/jump-start' },
 }
 
-const features = [
-  {
-    icon: 'location_on',
-    title: 'On-site Service',
-    desc: 'We come directly to your location — home, work, car park, or the roadside.',
-  },
-  {
-    icon: 'bolt',
-    title: 'Fast Response',
-    desc: 'Average arrival within 20–30 minutes, with emergency priority dispatch.',
-  },
-  {
-    icon: 'electric_car',
-    title: 'ECU-Safe Equipment',
-    desc: 'Professional power packs with surge protection — safe for modern vehicle electronics.',
-  },
-  {
-    icon: 'battery_charging_full',
-    title: 'Battery Health Test',
-    desc: 'We test your battery health on-site and advise if a replacement is needed.',
-  },
-]
-
-const steps = [
-  { n: '1', title: 'Call Us', desc: 'Ring our 24/7 emergency line and tell us your location and vehicle.' },
-  { n: '2', title: 'Share Location', desc: 'Give your address or drop a WhatsApp pin for fast routing.' },
-  { n: '3', title: 'Tech Dispatched', desc: 'Our nearest mobile specialist is sent to you immediately.' },
-  { n: '4', title: 'Car Started', desc: 'Vehicle jump-started safely, battery tested, and you are on your way.' },
-]
-
-const whyUs = [
-  {
-    icon: 'schedule',
-    title: '24/7 Availability',
-    desc: "Dead batteries happen at the worst times. We are operational around the clock, every day of the year.",
-  },
-  {
-    icon: 'security',
-    title: 'ECU & Electronics Safe',
-    desc: 'Unlike domestic jump leads, our professional power packs protect your vehicle ECU and sensitive electronics from power surges.',
-  },
-  {
-    icon: 'payments',
-    title: 'No Hidden Charges',
-    desc: 'Transparent, upfront pricing before we dispatch. No nasty surprises when the technician arrives.',
-  },
-]
-
-const scenarios = [
-  {
-    title: 'Cold Morning Start Failure',
-    desc: "Cold weather drains batteries fast. Can't start your car on a winter morning? We are on our way.",
-  },
-  {
-    title: 'Left Lights On Overnight',
-    desc: "It happens to everyone. Left the headlights or interior light on and now you're flat? One call fixes it.",
-  },
-  {
-    title: 'Long-Term Parking Drain',
-    desc: 'A car parked for several weeks will often have a dead battery. We get you started without towing or waiting.',
-  },
-]
-
-const faqs = [
-  {
-    q: 'Is it safe for modern car electronics?',
-    a: "Yes. We use professional-grade power packs with anti-surge technology specifically designed to protect the ECUs and sensitive digital components of modern vehicles, unlike standard consumer jump leads.",
-  },
-  {
-    q: 'What if my battery needs replacing?',
-    a: "Our technicians carry diagnostic equipment to test battery health. If the battery is dead and won't hold a charge, we can often supply and fit a replacement on the spot.",
-  },
-  {
-    q: 'How long does it take to arrive?',
-    a: 'We aim to reach most urban UK locations within 20–30 minutes. Our dispatch system routes the closest available technician to your real-time location.',
-  },
-  {
-    q: 'Can you jump start any vehicle?',
-    a: 'Yes — we can jump start cars, vans, SUVs, and light commercial vehicles. Our equipment handles both standard 12V and heavier 24V systems.',
-  },
-]
-
+const _breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://onestoptyres247.co.uk' },
+    { '@type': 'ListItem', position: 2, name: 'Jump Start', item: 'https://onestoptyres247.co.uk/jump-start' },
+  ],
+}
 
 const _serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   '@id': 'https://onestoptyres247.co.uk/jump-start#service',
   name: 'Jump Start Service',
-  description: 'Professional, fast and reliable jump start available 24/7 across the UK. Dead battery? Our specialist technicians arrive within 30 minutes and get you moving safely.',
+  description: 'Professional, fast and reliable jump start available 24/7 across Greater Manchester. Dead battery? Our specialist technicians arrive fast and get you moving safely with ECU-safe equipment.',
   provider: {
     '@type': 'LocalBusiness',
     '@id': 'https://onestoptyres247.co.uk/#business',
@@ -103,7 +29,90 @@ const _serviceSchema = {
   },
   areaServed: { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
   url: 'https://onestoptyres247.co.uk/jump-start',
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    opens: '00:00',
+    closes: '23:59',
+  },
 }
+
+const faqs = [
+  {
+    q: 'Is it safe for modern car electronics?',
+    a: 'Yes. We use professional-grade power packs with anti-surge technology specifically designed to protect the ECUs and sensitive digital components of modern vehicles, unlike standard consumer jump leads.',
+  },
+  {
+    q: 'What if my battery needs replacing?',
+    a: "Our technicians carry diagnostic equipment to test battery health. If the battery is dead and won't hold a charge, we can often supply and fit a replacement on the spot.",
+  },
+  {
+    q: 'How long does it take to arrive?',
+    a: 'We aim to reach you as quickly as possible across Greater Manchester. We dispatch immediately on receiving your call.',
+  },
+  {
+    q: 'Can you jump start any vehicle?',
+    a: 'Yes — we can jump start cars, vans, SUVs and light commercial vehicles. Our equipment handles standard 12V systems.',
+  },
+  {
+    q: 'Why does my battery keep going flat?',
+    a: 'A repeatedly flat battery usually indicates a failing battery, a parasitic drain from an electrical fault, or a faulty alternator. Our technicians can carry out a battery health test on-site to identify the cause.',
+  },
+  {
+    q: 'Can you jump start my car at home?',
+    a: 'Yes. We come directly to your home, workplace, car park or roadside location so you do not need to wait for a recovery truck.',
+  },
+  {
+    q: 'What should I do while I wait for a jump start?',
+    a: 'Stay safe, remain with your vehicle if possible, and keep your hazard lights on if you are at the roadside. Call us and we will be with you as quickly as possible.',
+  },
+]
+
+const whyChooseUs = [
+  {
+    icon: '🚗',
+    title: 'On-Site Service',
+    desc: 'We come directly to your location — home, workplace, car park or roadside — so there is no need for a costly recovery truck.',
+  },
+  {
+    icon: '⚡',
+    title: 'Fast Response',
+    desc: 'We dispatch a technician immediately across Greater Manchester to minimise the time you are left stranded.',
+  },
+  {
+    icon: '🔋',
+    title: 'ECU-Safe Equipment',
+    desc: 'We use professional grade power packs with surge protection — safe for modern vehicle electronics and ECUs.',
+  },
+  {
+    icon: '✅',
+    title: 'Battery Health Test',
+    desc: 'After starting your vehicle we carry out a battery health check so you know whether the battery is likely to fail again.',
+  },
+]
+
+const steps = [
+  {
+    n: '1',
+    title: 'Call Us',
+    desc: 'Contact our team, tell us your location and vehicle details and we will dispatch a technician immediately.',
+  },
+  {
+    n: '2',
+    title: 'Share Location',
+    desc: 'Share your exact location so we can send the nearest available technician with the right equipment.',
+  },
+  {
+    n: '3',
+    title: 'Tech Dispatched',
+    desc: 'Our mobile technician arrives, connects the ECU-safe jump start equipment and starts your engine.',
+  },
+  {
+    n: '4',
+    title: 'Car Started',
+    desc: 'We start your vehicle, carry out a battery health check and advise if a replacement battery is needed.',
+  },
+]
 
 const _faqSchema = {
   '@context': 'https://schema.org',
@@ -115,281 +124,319 @@ const _faqSchema = {
   })),
 }
 
-const _breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://onestoptyres247.co.uk' },
-    { '@type': 'ListItem', position: 2, name: 'Jump Start', item: 'https://onestoptyres247.co.uk/jump-start' },
-  ],
-}
 export default function JumpStartPage() {
   return (
-    <div className="bg-surface font-body-md text-on-surface">
+    <div className="text-[#1c1b1b]" style={{ fontFamily: 'var(--font-inter)' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_breadcrumbSchema) }} />
 
-      {/* ── 1. HERO ──────────────────────────────────────────────── */}
-      <section className="relative bg-white pt-12 pb-10 sm:pt-16 sm:pb-14 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      {/* ── 1. HERO ──────────────────────────────────────────────────── */}
+      <section className="relative min-h-[580px] lg:min-h-[640px] flex items-center overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/professional mobile tyre fitting.webp"
+          alt="Mobile jump start service"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          width={1600}
+          height={900}
+          decoding="async"
+        />
+        <div className="absolute inset-0 bg-[#0f172a]/80" />
 
-          <div className="z-10 order-2 lg:order-1">
-            <span className="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-semibold tracking-wide mb-4">
-              Available UK Wide 24/7
-            </span>
-            <h1 className="font-h1 text-2xl sm:text-3xl lg:text-[40px] font-bold text-on-surface mb-4 leading-tight">
-              Jump Start Service
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-16 py-20 lg:py-28">
+          <div className="max-w-2xl">
+            <div className="inline-flex items-center gap-2 bg-red-600/20 text-red-400 font-bold px-3.5 py-1.5 rounded-full mb-6 text-[11px] uppercase tracking-widest border border-red-600/30">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
+              </span>
+              Available 24/7 Across Greater Manchester
+            </div>
+
+            <h1
+              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white font-black mb-5 leading-[1.1]"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
+            >
+              Mobile Jump Start Service — Fast, Safe & Available 24/7
             </h1>
-            <p className="text-base sm:text-lg text-on-surface-variant mb-6 leading-relaxed">
-              Professional, fast and reliable jump start available 24/7 across the UK. Dead battery? Our specialist technicians arrive within 30 minutes and get you moving safely.
+
+            <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-4">
+              Battery dead and car won&apos;t start? Our professional mobile jump start service
+              comes directly to your location across Greater Manchester, 24 hours a day, 7 days
+              a week. No recovery truck needed — our technicians arrive fast and get you moving
+              again with ECU-safe equipment.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <p className="text-slate-400 text-base leading-relaxed mb-8">
+              After jump-starting your vehicle, we carry out a battery health test to determine
+              whether your battery is likely to fail again. If you need a replacement battery,
+              we can supply and fit one on-site immediately, saving you time and future
+              breakdowns.
+            </p>
+
+            <ul className="space-y-2 mb-8">
+              {[
+                'Fast Mobile Jump Start Service',
+                'ECU & Electronics Safe Equipment',
+                'Battery Health Test Included',
+                'Battery Replacement Available On-Site',
+                'Available 24/7 Across Greater Manchester',
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-3 text-white/90 text-sm sm:text-base font-medium">
+                  <span className="text-green-400 text-lg">✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <div className="hidden sm:flex flex-row gap-3">
               <a
                 href="tel:07759708646"
-                className="bg-primary-container text-white font-semibold text-base py-3.5 px-6 rounded-lg flex items-center justify-center gap-2 hover:brightness-110 transition-all w-full sm:w-auto"
+                className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center gap-2.5 hover:bg-red-700 hover:text-white transition-all text-base sm:text-lg"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
               >
-                <span className="material-symbols-outlined text-[20px]">call</span>
-                07759 708 646
+                <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
+                Call Now
               </a>
               <a
                 href="https://wa.me/447759708646"
-                className="border-2 border-secondary text-secondary font-semibold text-base py-3.5 px-6 rounded-lg flex items-center justify-center gap-2 hover:bg-secondary hover:text-white transition-all w-full sm:w-auto"
+                className="bg-[#25D366] hover:bg-[#1ebe5d] text-white font-black px-8 py-4 rounded-xl flex items-center gap-2.5 transition-all text-base sm:text-lg shadow-lg"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
               >
-                <span className="material-symbols-outlined text-[20px]">chat</span>
+                <svg className="w-5 h-5 fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
                 WhatsApp Us
               </a>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="relative order-1 lg:order-2">
-            <div className="absolute -top-20 -right-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+      {/* ── 2. IMAGE + TEXT ──────────────────────────────────────────── */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+          <div className="w-full lg:w-1/2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa2c2K92nCe9G_NTaEBkP_ApvFcAKwsUYKu1mIZmPX38tBU7g_bb_jWcAC4K2AV0u_p8NS991tW4AohXQ5ig65fjIJflr6gEoPWGHqWoLFXuSYwU17-erVxrfFNedQKv5yVpP2KVuYXd7AO2NhWfUNnDOE90-fwKtJP7ca0ma5rRwhNVGvC4yea8Q_xGpQo4TCbGicSXXFCw4OGIB8Ph3ZdRT9Hu2yZp2ZIf-2gtEX5MCZ1R0zazfGy8a_ArdwSRcHtpkJbTr4JME"
-              alt="Professional jump start battery clamps"
-              className="rounded-xl shadow-2xl relative z-10 w-full h-[240px] sm:h-[360px] lg:h-[420px] object-cover"
+              src="/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp"
+              alt="Professional mobile jump start service"
+              className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}
-              height={420}
-              loading="eager"
+              height={600}
+              loading="lazy"
+              decoding="async"
             />
           </div>
 
-        </div>
-      </section>
-
-      {/* ── 2. INTRODUCTION ──────────────────────────────────────── */}
-      <section className="py-12 sm:py-16 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-
-            <div className="w-full lg:w-1/2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzMbcyExgFAgRYbmX3DACIudXBRMC0HW-2hzfb7Dr19K7-zylsUvN4xgxUWikDB_gHUAyL-xXKXFwZJxiHPEYi5D5Cd1i91CWKOOHRpGkOzjWz4gVbs1JShDyTVWhvxKYxQg38uh0eBaba3vkUKvgziK-RxlM16OaSLnh33LHSSpE8daSqZ3wYFJo46JP7WBS3SFVbkIZyudtNu9M0oHLTdZSME4Fqg2TYuOsr1RzA7sRAmOCGu-FMGlIb3uM9ZSQFodfVWWcM2mg"
-                alt="Technician jump starting a vehicle"
-                className="rounded-xl shadow-lg w-full h-[260px] sm:h-[400px] lg:h-[480px] object-cover"
-                width={800}
-                height={480}
-                loading="lazy"
-              />
-            </div>
-
-            <div className="w-full lg:w-1/2">
-              <h2 className="font-h2 text-xl sm:text-2xl lg:text-[32px] font-bold text-on-surface mb-4 leading-snug">
-                Reliable Jump Start Service
-              </h2>
-              <p className="text-base text-on-surface-variant mb-3 leading-relaxed">
-                Modern vehicle batteries are sensitive and prone to failure — particularly in cold weather, after extended parking, or when lights are accidentally left on. Long inactivity alone can drain a battery completely.
-              </p>
-              <p className="text-base text-on-surface-variant mb-6 leading-relaxed">
-                At One Stop Tyres 24/7 we use industrial-grade power packs to provide a clean, surge-protected boost. Unlike standard consumer jump leads, our equipment ensures your vehicle starts without risking damage to its ECU or sensitive electronics.
-              </p>
-              <div className="grid grid-cols-2 gap-3">
-                {['ECU-Safe Equipment', 'All Vehicle Types', 'Battery Health Test', 'No Hidden Charges'].map((item) => (
-                  <div key={item} className="flex items-center gap-2">
-                    <span
-                      className="material-symbols-outlined text-primary text-[20px] shrink-0"
-                      style={{ fontVariationSettings: "'FILL' 1" }}
-                    >
-                      check_circle
-                    </span>
-                    <span className="text-sm font-semibold">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* ── 3. WHAT'S INCLUDED ───────────────────────────────────── */}
-      <section className="py-12 sm:py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-8 sm:mb-12">
-            <h2 className="font-h2 text-xl sm:text-2xl lg:text-[32px] font-bold text-on-surface mb-2">What&apos;s Included</h2>
-            <p className="text-base text-on-surface-variant">
-              Everything needed to get your vehicle started safely, wherever you are.
+          <div className="w-full lg:w-1/2">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
+              Mobile Jump Start Specialists
+            </span>
+            <h2
+              className="text-2xl sm:text-4xl font-bold text-[#0f172a] mb-5 leading-tight"
+              style={{ fontFamily: 'var(--font-work-sans)' }}
+            >
+              Fast Mobile Jump Start Service Wherever You Are
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              A flat battery can leave you stranded at the worst possible moment — at home, at
+              work, in a car park or at the roadside. Our mobile jump start service brings a
+              qualified technician directly to your location so you do not have to wait for a
+              recovery truck or rely on a passing motorist.
             </p>
+            <p className="text-slate-600 text-base leading-relaxed mb-8">
+              We use professional grade ECU-safe jump start equipment, protecting the sensitive
+              electronics found in modern vehicles. Once your vehicle is running, we perform
+              a battery health test and advise on the best course of action to prevent it
+              happening again.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {whyChooseUs.map((item) => (
+                <div key={item.title} className="bg-slate-50 border border-slate-100 rounded-xl p-4">
+                  <div className="text-2xl mb-2">{item.icon}</div>
+                  <h3 className="font-bold text-[#0f172a] text-base mb-1">{item.title}</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {features.map((card) => (
-              <div
-                key={card.title}
-                className="bg-surface p-5 sm:p-6 rounded-xl border border-outline-variant flex flex-col items-center text-center hover:shadow-lg transition-shadow group"
-              >
-                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-colors">
-                  <span className="material-symbols-outlined text-primary group-hover:text-white text-2xl">
-                    {card.icon}
+        </div>
+      </section>
+
+      {/* ── 3. HOW IT WORKS ──────────────────────────────────────────── */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-[#0f172a] text-white relative overflow-hidden">
+        <div
+          className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none"
+          style={{
+            backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)',
+            backgroundSize: '40px 40px',
+          }}
+        />
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-12 sm:mb-16">
+            <span className="text-[#FF4444] font-bold uppercase tracking-widest text-sm mb-3 block">
+              Simple Process
+            </span>
+            <h2
+              className="text-2xl sm:text-[32px] font-bold"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              How It Works
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 relative">
+            {steps.map((step, idx) => (
+              <div key={step.n} className="relative text-center lg:text-left">
+                <div className="w-14 h-14 bg-[#FF4444] rounded-2xl flex items-center justify-center mx-auto lg:mx-0 mb-5 shadow-xl">
+                  <span
+                    className="text-white font-black text-xl"
+                    style={{ fontFamily: 'var(--font-work-sans)' }}
+                  >
+                    {step.n}
                   </span>
                 </div>
-                <h3 className="font-semibold text-base sm:text-lg mb-2 text-on-surface">{card.title}</h3>
-                <p className="text-sm text-on-surface-variant leading-relaxed">{card.desc}</p>
+                <h3
+                  className="text-lg sm:text-xl font-bold text-white mb-3"
+                  style={{ fontFamily: 'var(--font-work-sans)' }}
+                >
+                  {step.title}
+                </h3>
+                <p className="text-slate-400 text-base leading-relaxed">{step.desc}</p>
+                {idx < 3 && (
+                  <span className="hidden lg:block absolute top-7 -right-3 text-[#FF4444] material-symbols-outlined text-3xl">
+                    trending_flat
+                  </span>
+                )}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── 4. HOW IT WORKS ──────────────────────────────────────── */}
-      <section className="py-12 sm:py-16 bg-secondary text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="font-h2 text-xl sm:text-2xl lg:text-[32px] font-bold text-center mb-8 sm:mb-12">
-            How Our Service Works
-          </h2>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {steps.map((step) => (
-              <div key={step.n} className="flex flex-col items-center text-center">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white text-secondary flex items-center justify-center text-xl sm:text-2xl font-bold mb-3 sm:mb-4 shrink-0">
-                  {step.n}
-                </div>
-                <h4 className="font-semibold text-base mb-1 sm:mb-2">{step.title}</h4>
-                <p className="text-xs sm:text-sm text-secondary-container leading-relaxed">{step.desc}</p>
-              </div>
-            ))}
+      {/* ── 4. SECOND IMAGE STRIP ────────────────────────────────────── */}
+      <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center">
+          <div className="w-full lg:w-1/2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/Mobile tyre fitting service.webp"
+              alt="24/7 mobile jump start service across Greater Manchester"
+              className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
+              width={800}
+              height={600}
+              loading="lazy"
+              decoding="async"
+            />
           </div>
-        </div>
-      </section>
-
-      {/* ── 5. WHY CHOOSE US ─────────────────────────────────────── */}
-      <section className="py-12 sm:py-16 bg-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-
-            <div>
-              <h2 className="font-h2 text-xl sm:text-2xl lg:text-[32px] font-bold text-on-surface mb-6 leading-snug">
-                Why Choose One Stop Tyres 24/7?
-              </h2>
-              <div className="space-y-5 sm:space-y-6">
-                {whyUs.map((item) => (
-                  <div key={item.icon} className="flex gap-4">
-                    <div className="shrink-0 w-11 h-11 bg-primary-container rounded-lg flex items-center justify-center">
-                      <span className="material-symbols-outlined text-white text-xl">{item.icon}</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-base sm:text-lg mb-1">{item.title}</h4>
-                      <p className="text-base text-on-surface-variant leading-relaxed">{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="bg-surface-container-high rounded-2xl p-5 sm:p-6 border border-outline-variant">
-              <div className="grid grid-cols-2 gap-3 mb-4">
-                <div className="bg-white p-4 rounded-xl text-center shadow-sm">
-                  <div className="text-2xl sm:text-3xl font-bold text-primary">30m</div>
-                  <p className="text-xs font-semibold uppercase tracking-widest text-on-surface-variant mt-1">Avg Arrival</p>
-                </div>
-                <div className="bg-white p-4 rounded-xl text-center shadow-sm">
-                  <div className="text-2xl sm:text-3xl font-bold text-primary">24/7</div>
-                  <p className="text-xs font-semibold uppercase tracking-widest text-on-surface-variant mt-1">Always Open</p>
-                </div>
-              </div>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuiRV2dXXdLEKPH99wXq1YYxwYM08qzD109rXzT26oyQMtbaraqptatalq5Ytyd53RCm3I407q6X78sa4cPNp5zwPLyOCQy5_2amYgGF1js6GRoj7sc7IjceoXfTlweFiVzLLt6aghIwJm4rQZk6UZdIFeb9PTUSXnUu9y6QFcYpC0-TeW55bfgUuFOVPdFOFFuD2QthW5luwiOp8JPiWbjLtZK5xEdY2Cs9-0Q4c0LDJHVYQI1d7pXtTbnRyttr5Kjx7T2XAKE08"
-                alt="Mobile service van"
-                className="w-full h-[200px] sm:h-[240px] object-cover rounded-xl"
-                width={600}
-                height={240}
-                loading="lazy"
-              />
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* ── 6. SCENARIOS ─────────────────────────────────────────── */}
-      <section className="py-12 sm:py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="font-h2 text-xl sm:text-2xl lg:text-[32px] font-bold text-center mb-8 sm:mb-12">
-            When You Might Need a Jump Start
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
-            {scenarios.map((s) => (
-              <div key={s.title} className="p-5 sm:p-6 border-l-4 border-primary bg-surface shadow-sm rounded-r-lg">
-                <h4 className="font-semibold text-base sm:text-lg mb-2">{s.title}</h4>
-                <p className="text-base text-on-surface-variant leading-relaxed">{s.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── 7. FAQ ───────────────────────────────────────────────── */}
-      <section className="py-12 sm:py-16 bg-surface-container-low">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="font-h2 text-xl sm:text-2xl lg:text-[32px] font-bold text-center mb-8 sm:mb-12">
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-3 sm:space-y-4">
-            {faqs.map((faq) => (
-              <div key={faq.q} className="bg-white border border-outline-variant rounded-lg overflow-hidden">
-                <div className="px-5 py-4 border-b border-outline-variant">
-                  <h3 className="font-semibold text-base text-on-surface">{faq.q}</h3>
-                </div>
-                <div className="px-5 py-4 text-base text-on-surface-variant leading-relaxed">
-                  {faq.a}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── 8. FINAL CTA ─────────────────────────────────────────── */}
-      <section className="py-12 sm:py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="bg-primary-container rounded-2xl sm:rounded-3xl p-6 sm:p-10 md:p-14 text-center text-white relative overflow-hidden shadow-2xl">
-            <div className="relative z-10">
-              <h2 className="font-h1 text-xl sm:text-2xl md:text-3xl lg:text-[40px] font-bold text-white mb-3 sm:mb-4 leading-tight">
-                Battery Dead Right Now?
-              </h2>
-              <p className="text-base md:text-lg mb-6 sm:mb-8 opacity-90 max-w-xl mx-auto leading-relaxed">
-                Call us and we will dispatch a technician to your exact location within minutes. Available 24 hours, 7 days a week.
-              </p>
+          <div className="w-full lg:w-1/2">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
+              Available 24/7
+            </span>
+            <h2
+              className="text-2xl sm:text-4xl font-bold text-[#0f172a] mb-5 leading-tight"
+              style={{ fontFamily: 'var(--font-work-sans)' }}
+            >
+              Battery Dead Right Now? We&apos;ll Come To You
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-6">
+              A flat battery does not wait for a convenient time. Whether it is early morning,
+              late at night or the middle of the weekend, our mobile jump start team is available
+              24/7 across Greater Manchester. We dispatch immediately and aim to reach you as
+              quickly as possible. Call us now and we will have you back on the road without
+              the cost or wait of a full recovery service.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href="tel:07759708646"
-                className="inline-flex items-center gap-2 sm:gap-3 bg-white text-primary font-bold text-base sm:text-xl md:text-2xl py-3 sm:py-4 px-6 sm:px-10 rounded-full hover:opacity-90 transition-all shadow-xl"
+                className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 hover:text-white transition-all text-base sm:text-lg"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
               >
-                <span
-                  className="material-symbols-outlined text-xl sm:text-2xl md:text-3xl"
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                >
-                  phone_in_talk
-                </span>
+                <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
                 07759 708 646
               </a>
+              <a
+                href="https://wa.me/447759708646"
+                className="bg-[#25D366] hover:bg-[#1ebe5d] text-white font-black px-8 py-4 rounded-xl flex items-center justify-center gap-2.5 transition-all text-base sm:text-lg shadow-lg"
+                style={{ fontFamily: 'var(--font-work-sans)' }}
+              >
+                <svg className="w-5 h-5 fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                WhatsApp Us
+              </a>
             </div>
-            <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-white/10 rounded-full blur-2xl pointer-events-none" />
-            <div className="absolute -top-20 -right-20 w-64 h-64 bg-black/10 rounded-full blur-2xl pointer-events-none" />
           </div>
         </div>
       </section>
 
+      {/* ── 5. FAQ ───────────────────────────────────────────────────── */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10 sm:mb-16">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+              Common Questions
+            </span>
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a]"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Frequently Asked Questions
+            </h2>
+          </div>
+          <div className="space-y-3 sm:space-y-4">
+            {faqs.map((faq) => (
+              <details
+                key={faq.q}
+                className="group bg-white p-4 sm:p-6 rounded-xl border border-slate-200 shadow-sm open:shadow-md transition-all"
+              >
+                <summary className="list-none flex justify-between items-center cursor-pointer font-bold text-base sm:text-lg text-[#0f172a] gap-3">
+                  {faq.q}
+                  <span className="material-symbols-outlined group-open:rotate-180 transition-transform text-[#b70011] flex-shrink-0 text-xl sm:text-2xl">
+                    expand_more
+                  </span>
+                </summary>
+                <p className="mt-3 sm:mt-4 text-slate-600 leading-relaxed text-base">{faq.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 6. FINAL CTA ─────────────────────────────────────────────── */}
+      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-[#0f172a] text-white text-center">
+        <h2
+          className="text-2xl sm:text-3xl font-bold mb-3"
+          style={{ fontFamily: 'var(--font-work-sans)' }}
+        >
+          Battery Dead Right Now?
+        </h2>
+        <p className="text-slate-400 text-base mb-8 max-w-lg mx-auto">
+          Stay where you are and call us. Our mobile technician will come to you fast, start
+          your car with ECU-safe equipment and check your battery health on the spot.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a
+            href="tel:07759708646"
+            className="bg-[#FF4444] text-[#121212] font-black px-10 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center gap-2.5 hover:bg-red-700 hover:text-white transition-all text-lg sm:text-xl"
+            style={{ fontFamily: 'var(--font-work-sans)' }}
+          >
+            <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
+            07759 708 646
+          </a>
+          <a
+            href="https://wa.me/447759708646"
+            className="bg-[#25D366] hover:bg-[#1ebe5d] text-white font-black px-10 py-4 rounded-xl flex items-center gap-2.5 transition-all text-lg sm:text-xl shadow-lg"
+            style={{ fontFamily: 'var(--font-work-sans)' }}
+          >
+            <svg className="w-6 h-6 fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            WhatsApp Us
+          </a>
+        </div>
+      </section>
     </div>
   )
 }

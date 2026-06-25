@@ -280,7 +280,7 @@ export default function Home() {
               },
               {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp',
-                title: 'Emergency Tyre Replacement',
+                title: 'Home Tyre Fitting',
                 desc: 'Fast emergency tyre replacement service with 20-30 minute response times.',
                 badge: 'AT YOUR DOOR',
                 href: '/home-tyre-fitting',

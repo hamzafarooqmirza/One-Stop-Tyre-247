@@ -977,7 +977,7 @@ function normalizePath(pathname: string) {
   return decoded
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const url = request.nextUrl
   const pathname = normalizePath(url.pathname)
 

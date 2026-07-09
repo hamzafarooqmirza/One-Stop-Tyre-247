@@ -6,15 +6,15 @@ const SLIDES = [
   {
     image: '/images/Mobile%20tyre%20fitting%20service.webp',
     badge: 'Mobile Tyre Fitting & Emergency Tyre Repair',
-    heading: 'Mobile Tyre Fitting\nNear Me – 24/7 Service',
-    body: 'Need a mobile tyre fitter fast? Our fully equipped mobile tyre fitting vans provide emergency tyre repair, mobile tyre replacement and same day tyre fitting at your home, workplace or roadside location.',
+    heading: 'Mobile Tyre Fitting Manchester\n— Fast, 24 Hour Tyre Service',
+    body: 'Flat tyre? Blowout on the motorway? Our fully equipped mobile tyre fitting vans deliver emergency tyre replacement, mobile tyre service and same day tyre fitting at home, work or roadside — anywhere across Greater Manchester, any hour of the day or night.',
     listLabel: 'Why Drivers Choose Us',
     items: [
-      'Mobile tyre fitting at your location',
-      'Emergency tyre repair 24/7',
-      'Same day tyre fitting available',
-      'Home, work & roadside assistance',
-      'Competitive prices & fast response',
+      'Emergency mobile tyre fitting at your exact location',
+      '24 hour tyre service, 365 days a year',
+      'Same day tyre fitting at home or work — no need to visit a garage',
+      'Trusted by over 1,100 Greater Manchester drivers',
+      'Fast 20–30 minute response, day or night',
     ],
   },
   {

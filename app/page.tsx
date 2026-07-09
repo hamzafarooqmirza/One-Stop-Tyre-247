@@ -1,26 +1,34 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  title: 'Mobile Tyre Fitting Manchester | 24 Hour Tyre Service',
+  description:
+    'Need a mobile tyre replacement fast? Our trusted technicians offer emergency tyre fitting & same day tyre fitting at home across Greater Manchester, 24/7.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/' },
+  openGraph: {
+    title: 'One Stop Mobile Tyres 24/7 | Emergency Mobile Tyre Fitting Manchester',
+    description:
+      'Need a mobile tyre replacement fast? Our trusted technicians offer emergency tyre fitting & same day tyre fitting at home across Greater Manchester, 24/7.',
+    url: 'https://onestoptyres247.co.uk',
+    siteName: 'One Stop Mobile Tyres 24/7',
+    images: [
+      {
+        url: '/og-image.webp',
+        width: 1200,
+        height: 630,
+        alt: '24/7 Mobile Tyre Fitting across Manchester & Greater Manchester — One Stop Mobile Tyres',
+        type: 'image/webp',
+      },
+    ],
+    locale: 'en_GB',
+    type: 'website',
+  },
 }
 
 import BrandCarousel from '@/components/BrandCarousel'
 import QuoteForm from '@/components/QuoteForm'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import HeroSlider from '@/components/HeroSlider'
-
-/* ─── Reusable star row ─────────────────────────────────── */
-function Stars() {
-  return (
-    <div className="flex text-yellow-400 mb-4">
-      {Array.from({ length: 5 }).map((_, i) => (
-        <span key={i} className="material-symbols-outlined fill-1">
-          star
-        </span>
-      ))}
-    </div>
-  )
-}
 
 /* ─── Why-choose feature list item ─────────────────────── */
 function FeatureItem({
@@ -48,15 +56,15 @@ function FeatureItem({
 /* ─── FAQ Item ──────────────────────────────────────────── */
 function FaqItem({ q, a }: { q: string; a: string }) {
   return (
-    <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
-      <button className="w-full flex justify-between items-center text-left font-bold text-lg text-[#0f172a] group">
+    <details className="group bg-white p-6 rounded-2xl shadow-sm border border-slate-200 open:shadow-md transition-all">
+      <summary className="list-none flex justify-between items-center cursor-pointer font-bold text-lg text-[#0f172a] gap-3">
         {q}
-        <span className="material-symbols-outlined group-hover:text-[#b70011] transition-colors">
+        <span className="material-symbols-outlined group-open:rotate-180 transition-transform text-[#b70011] flex-shrink-0">
           expand_more
         </span>
-      </button>
+      </summary>
       <div className="mt-4 text-slate-600 leading-relaxed text-sm">{a}</div>
-    </div>
+    </details>
   )
 }
 
@@ -85,7 +93,17 @@ const localBusinessSchema = {
     latitude: 53.5454538598072,
     longitude: -2.1049285233703974,
   },
-  areaServed: { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
+  areaServed: [
+    { '@type': 'City', name: 'Manchester' },
+    { '@type': 'City', name: 'Bolton' },
+    { '@type': 'City', name: 'Bury' },
+    { '@type': 'City', name: 'Oldham' },
+    { '@type': 'City', name: 'Rochdale' },
+    { '@type': 'City', name: 'Stockport' },
+    { '@type': 'City', name: 'Tameside' },
+    { '@type': 'City', name: 'Trafford' },
+    { '@type': 'City', name: 'Wigan' },
+  ],
   openingHoursSpecification: {
     '@type': 'OpeningHoursSpecification',
     dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
@@ -108,18 +126,34 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'How fast can you reach me?',
+      name: 'How fast can you reach me for a mobile tyre fitting in Manchester?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Our average response time across the UK is between 20 to 30 minutes, depending on traffic conditions and your exact location.',
+        text: 'Our average response time across Greater Manchester is 20 to 30 minutes, depending on traffic and your exact location. For genuine roadside emergencies, we prioritise dispatch to get a technician to you as quickly as possible.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Are you really available 24/7?',
+      name: 'Are you really available 24 hours a day?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, we operate 24 hours a day, 365 days a year—including Christmas Day, New Year\'s Eve, and all Bank Holidays. We are always on call.',
+        text: "Yes. Our 24 hour tyre service operates every day of the year, including Christmas Day, New Year's Eve and all Bank Holidays. Whether it's 3pm or 3am, our phone line is answered and a technician is on call.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you offer same day tyre fitting at home?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Absolutely. Same day mobile tyre fitting is one of our most requested services — simply call or WhatsApp us your tyre size and postcode, and we'll fit your tyre at home the same day, often within the hour.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: "What's the difference between emergency tyre fitting and a booked appointment?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Emergency tyre fitting is for drivers who are stranded right now — a blowout, a flat on the roadside, or an unsafe tyre that cannot wait. A booked same day tyre fitting at home appointment is for less urgent needs, like a slow puncture, where we schedule a convenient time on the same or next day.',
       },
     },
     {
@@ -127,7 +161,23 @@ const faqSchema = {
       name: 'Do you stock my tyre size?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We carry a wide range of common tyre sizes in our mobile units. For specialist or less common sizes, we have access to local hubs with instant availability.',
+        text: 'Our mobile tyre fitting vans carry a wide range of common tyre sizes ready for immediate mobile tyre replacement. For specialist or less common sizes, we have access to local supplier hubs with instant availability, so there is rarely a long wait.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can you fit tyres on the motorway?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'For safety reasons we do not carry out tyre changes on live motorway carriageways or hard shoulders where it is not safe to do so. If you break down on the M60, M61, M62, M56, M602, M66 or M67, we will guide you to the nearest safe location — a service station, slip road or lay-by — and get a technician to you there.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How much does emergency mobile tyre fitting cost?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Pricing depends on your tyre size, brand choice and time of callout. We always confirm the full price by phone or WhatsApp before any work begins, so there are no surprises — just an honest quote for a professional, same day tyre fitting service.',
       },
     },
     {
@@ -135,7 +185,39 @@ const faqSchema = {
       name: 'What payment methods do you accept?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We accept all major debit and credit cards (Visa, Mastercard, etc.), as well as contactless payments and cash.',
+        text: 'We accept all major debit and credit cards, contactless payments, and cash on completion of the job.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you fit tyres at my workplace as well as at home?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Our mobile car tyre fitting service covers home, work and roadside locations across Greater Manchester, so you do not need to take time off or find your own way to a garage.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Will you reset my TPMS light after fitting a new tyre?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, every mobile tyre replacement and puncture repair includes a TPMS check and reset where required, so your dashboard warning light is cleared before our technician leaves.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Are your technicians qualified and insured?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Every technician is fully trained, insured, and carries out puncture repairs to BS AU 159 standard. We are a directly employed, vetted team — not a network of random subcontractors — so you always know the standard of work you are getting.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What areas do you cover for mobile tyre fitting?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We cover Manchester, Bolton, Bury, Oldham, Rochdale, Stockport, Tameside, Trafford and Wigan, along with the M60, M61, M62, M56, M602, M66, M67 and A627. If you are searching for a 24 hour tyre service near me anywhere in Greater Manchester, we are likely already covering your area.',
       },
     },
   ],
@@ -194,6 +276,7 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+
       {/* ── 1. HERO ───────────────────────────────────────── */}
       <HeroSlider />
 
@@ -249,22 +332,80 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 3. SERVICES ───────────────────────────────────── */}
+      {/* ── 3. WHAT WE DO (EEAT intro) ────────────────────── */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-10 sm:mb-14">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
+              What We Do
+            </span>
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-6 leading-tight"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              24/7 Mobile Tyre Fitting &amp; Emergency Tyre Replacement Across Greater Manchester
+            </h2>
+            <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-5">
+              One Stop Mobile Tyres 24/7 has been getting Greater Manchester drivers safely back on the
+              road since our first van hit the streets. Our technicians are fully trained in on-site tyre
+              change at home, at work and at the roadside, carrying premium and budget tyres from Michelin,
+              Continental, Bridgestone, Pirelli and more, ready to fit on arrival.
+            </p>
+            <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
+              Whether you need a same day mobile tyre fitting appointment for a slow puncture, or genuinely
+              emergency tyre fitting at 3am on the M60, our vans are stocked, our technicians are qualified,
+              and our dispatch team answers the phone around the clock. We don&apos;t outsource to random
+              contractors — every mobile car tyre fitting job is carried out by our own vetted, insured
+              technicians, so you know exactly who is turning up and what standard of work to expect.
+            </p>
+          </div>
+
+          {/* Trust strip */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {[
+              {
+                emoji: '⚡',
+                title: 'Experience',
+                desc: 'Over 1,100 completed callouts and a 5.0 Google rating from Greater Manchester drivers.',
+              },
+              {
+                emoji: '🛡️',
+                title: 'Trusted &amp; Insured',
+                desc: 'Fully insured technicians, BS AU 159 compliant repairs, transparent upfront pricing.',
+              },
+              {
+                emoji: '🕐',
+                title: 'Always On Call',
+                desc: 'Genuine 24 hour tyre service near me — including Christmas Day and Bank Holidays.',
+              },
+            ].map((item) => (
+              <div key={item.title} className="bg-slate-50 border border-slate-100 rounded-2xl p-6 text-center">
+                <div className="text-3xl mb-3">{item.emoji}</div>
+                <h3 className="font-bold text-[#0f172a] text-base mb-2" dangerouslySetInnerHTML={{ __html: item.title }} />
+                <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 4. SERVICES ───────────────────────────────────── */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-10 sm:mb-16">
             <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
-              What We Do
+              Our Services
             </span>
             <h2
               className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
             >
-              24/7 Mobile Tyre Fitting &amp; Emergency Tyre Repair
+              Mobile Tyre Service Manchester — Everything You Need, On-Site
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto text-base">
-              Mobile tyre fitting, puncture repair and emergency tyre replacement across Greater Manchester. We come to your home, workplace or roadside location 24/7.
+              From routine mobile tyre replacement to genuine roadside emergencies, our mobile tyre service
+              covers Manchester and the whole of Greater Manchester with one simple promise: we come to you.
             </p>
           </div>
 
@@ -274,42 +415,63 @@ export default function Home() {
               {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp',
                 title: 'Mobile Tyre Fitting',
-                desc: 'Emergency replacement at your location within 20-30 minutes.',
+                desc: 'Emergency mobile tyre fitting at your home, work or roadside location, typically within 20–30 minutes.',
                 badge: 'FAST RESPONSE',
                 href: '/mobile-tyre-fitting',
               },
               {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp',
                 title: 'Home Tyre Fitting',
-                desc: 'Fast emergency tyre replacement service with 20-30 minute response times.',
+                desc: 'Same day tyre fitting at home while you get on with your day — no garage visit required.',
                 badge: 'AT YOUR DOOR',
                 href: '/home-tyre-fitting',
               },
               {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp',
                 title: 'Emergency Puncture Repair',
-                desc: 'Professional mobile puncture repair to get you safely back on the road.',
+                desc: 'Certified, BS AU 159 compliant plug-and-patch puncture repair, fitted on-site.',
                 badge: 'CERTIFIED REPAIR',
                 href: '/emergency-puncture-repair',
               },
               {
+                img: '/images/tyre fitting in emergergency-airanko (1).webp',
+                title: '24 Hour Emergency Tyre Fitting',
+                desc: 'Genuine 24/7 emergency tyre replacement, day or night, 365 days a year.',
+                badge: 'DAY & NIGHT',
+                href: '/24-hour-emergency-tyre-fitting',
+              },
+              {
+                img: '/images/Tyres fitting anywhere-airanko (1).webp',
+                title: 'Cheap Mobile Tyre Fitting',
+                desc: 'Budget, mid-range and premium tyre options, all professionally fitted at competitive prices.',
+                badge: 'BEST PRICES',
+                href: '/cheap-mobile-tyre-fitting',
+              },
+              {
+                img: '/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp',
+                title: 'Tyre Fitting Near Me',
+                desc: 'Search no further — our mobile technicians reach almost anywhere in Greater Manchester fast.',
+                badge: 'NEAR YOU',
+                href: '/tyre-fitting-near-me',
+              },
+              {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp',
-                title: 'JumpStart',
-                desc: 'Fast battery jump-start service to get your vehicle running again without delay.',
+                title: 'Jump Start',
+                desc: "Flat battery as well as a flat tyre? We'll get your car started again in minutes.",
                 badge: '24/7 SERVICE',
                 href: '/jump-start',
               },
               {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp',
                 title: 'TPMS Reset',
-                desc: 'Tyre pressure monitoring system reset after every tyre change or repair.',
+                desc: 'Tyre pressure monitoring system reset and diagnostics after every fitting or repair.',
                 badge: 'ALL VEHICLES',
                 href: '/tpms-reset',
               },
               {
                 img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp',
                 title: 'Locking Nut Removal',
-                desc: 'Specialist damage-free removal of lost or broken locking wheel nuts.',
+                desc: 'Damage-free removal of lost or seized locking wheel nuts using specialist tools.',
                 badge: 'DAMAGE FREE',
                 href: '/locking-nut-removal',
               },
@@ -372,7 +534,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 3. WHY CHOOSE US ──────────────────────────────── */}
+      {/* ── 5. WHY CHOOSE US ──────────────────────────────── */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
           {/* Image col */}
@@ -408,11 +570,20 @@ export default function Home() {
               className="text-2xl sm:text-4xl lg:text-5xl text-[#0f172a] mb-5 sm:mb-8 leading-tight font-bold"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
-              Elite Mobile Tyre Fitting Service Across Greater Manchester
+              Professional Mobile Tyre Replacement Across Greater Manchester
             </h2>
+            <p className="text-slate-600 mb-4 leading-relaxed text-base sm:text-lg">
+              When you&apos;re stuck with a damaged tyre, you need two things: speed and a professional you
+              can trust. Our 24/7 mobile tyre fitting service was built around exactly that. We cover
+              Manchester, Bolton, Bury, Oldham, Rochdale, Stockport, Tameside, Trafford and Wigan, plus the
+              M60, M61, M62, M56, M602, M66, M67 and A627 — so wherever you&apos;re searching for a 24 hour
+              tyre service near me, chances are we&apos;re already close by.
+            </p>
             <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg">
-              Our 24/7 mobile tyre fitting service covers Greater Manchester, providing emergency tyre replacement, mobile puncture repair and roadside tyre assistance wherever you are. Whether you have a flat tyre at home, work or on the roadside, our mobile tyre technicians come directly to your location with a range of premium and budget tyres ready to fit.
-              If you&apos;re searching for mobile tyre fitting near me, emergency tyre repair or mobile puncture repair, we provide a fast response service to get you safely back on the road.
+              Every emergency tyre replacement is carried out by a qualified technician using calibrated
+              torque tools and genuine parts, and every job includes a TPMS check so your dashboard warning
+              lights are cleared before we leave. No hidden fees, no second visit needed — just a fast,
+              professional mobile car tyre fitting service that gets you home safely.
             </p>
             <ul className="space-y-4 sm:space-y-5">
               <FeatureItem
@@ -428,14 +599,14 @@ export default function Home() {
               <FeatureItem
                 icon="sell"
                 title="Mobile Puncture Repair"
-                desc="Professional puncture repairs where safe and suitable."
+                desc="Professional, certified repairs carried out where safe and suitable."
               />
             </ul>
           </div>
         </div>
       </section>
 
-      {/* ── 5. HOW IT WORKS ───────────────────────────────── */}
+      {/* ── 6. HOW IT WORKS ───────────────────────────────── */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 bg-[#0f172a] text-white relative overflow-hidden">
         <div
           className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none"
@@ -453,10 +624,10 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-12 relative">
             {[
-              { icon: 'tire_repair',    title: 'Confirm Your Tyre Size',            desc: 'Tell us your vehicle and tyre size for an instant match and quote.',  rot: 'rotate-3' },
-              { icon: 'pin_drop',       title: 'Send Us Your Location',             desc: 'Share your exact location via call or WhatsApp pin for fast routing.', rot: '-rotate-3' },
-              { icon: 'local_car_wash', title: 'Choose Branded or Economy Tyres',  desc: 'Pick from premium brands or budget options — all quality guaranteed.',  rot: 'rotate-3' },
-              { icon: 'directions_car', title: 'Get Back On The Road',              desc: 'Our tech fits your tyre on-site. Pay and drive away safely.',           rot: '-rotate-3' },
+              { icon: 'tire_repair',    title: 'Confirm Your Tyre Size',           desc: 'Tell us your vehicle and tyre size for an instant match and quote.',                                              rot: 'rotate-3' },
+              { icon: 'pin_drop',       title: 'Send Us Your Location',            desc: 'Share your exact location by call or WhatsApp pin for the fastest routing.',                                     rot: '-rotate-3' },
+              { icon: 'local_car_wash', title: 'Choose Branded or Economy Tyres', desc: 'Premium brands or budget options — every tyre is quality guaranteed.',                                           rot: 'rotate-3' },
+              { icon: 'directions_car', title: 'Get Back On The Road',             desc: 'Our technician completes the mobile tyre replacement on-site. Pay securely and drive away.',                    rot: '-rotate-3' },
             ].map((step, idx) => (
               <div key={step.icon} className="relative">
                 <div
@@ -485,10 +656,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 6. BRAND LOGOS ────────────────────────────────── */}
+      {/* ── 7. BRAND LOGOS ────────────────────────────────── */}
       <BrandCarousel />
 
-      {/* ── 7. CONTACT FORM ───────────────────────────────── */}
+      {/* ── 8. CONTACT FORM ───────────────────────────────── */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 bg-white">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 lg:gap-16">
           {/* Left */}
@@ -536,8 +707,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 8. MAP ────────────────────────────────��───────── */}
-      {/* ── 8. MAP + LOCATIONS ───────────────────────────── */}
+      {/* ── 9. MAP + LOCATIONS ────────────────────────────── */}
       <section className="border-t border-slate-200 flex flex-col lg:flex-row" style={{ minHeight: '520px' }}>
         {/* Left — map */}
         <div className="w-full lg:w-1/2 h-[300px] lg:h-auto">
@@ -561,10 +731,14 @@ export default function Home() {
             className="text-white text-2xl sm:text-3xl font-bold mb-2 leading-tight text-balance"
             style={{ fontFamily: 'var(--font-work-sans)' }}
           >
-            Mobile Tyre Fitting Across Greater Manchester
+            Mobile Tyre Fitting Manchester &amp; Greater Manchester — Full Coverage
           </h2>
           <p className="text-slate-400 text-sm mb-8 leading-relaxed">
-            24/7 Mobile Tyre Fitting, Emergency Tyre Replacement and Mobile Puncture Repair Across Greater Manchester. We cover Manchester, Oldham, Stockport, Bolton, Rochdale, Bury, Wigan, Trafford and surrounding areas.
+            Our 24/7 mobile tyre fitting, emergency tyre replacement and mobile puncture repair service
+            covers all of Greater Manchester, including Manchester city centre, Oldham, Stockport, Bolton,
+            Rochdale, Bury, Wigan, Trafford and Tameside — plus the M60, M61, M62, M56, M602, M66, M67
+            and A627. If you&apos;ve broken down on a motorway hard shoulder or you&apos;re stuck on your
+            driveway at home, our nearest available technician is dispatched straight to your GPS location.
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-1.5">
@@ -613,7 +787,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 9. FAQ ────────────────────────────────────────── */}
+      {/* ── 10. FAQ ───────────────────────────────────────── */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10 sm:mb-16">
@@ -627,22 +801,54 @@ export default function Home() {
               Frequently Asked Questions
             </h2>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-3 sm:space-y-4">
             <FaqItem
-              q="How fast can you reach me?"
-              a="Our average response time across the UK is between 20 to 30 minutes, depending on traffic conditions and your exact location."
+              q="How fast can you reach me for a mobile tyre fitting in Manchester?"
+              a="Our average response time across Greater Manchester is 20 to 30 minutes, depending on traffic and your exact location. For genuine roadside emergencies, we prioritise dispatch to get a technician to you as quickly as possible."
             />
             <FaqItem
-              q="Are you really available 24/7?"
-              a="Yes, we operate 24 hours a day, 365 days a year—including Christmas Day, New Year's Eve, and all Bank Holidays. We are always on call."
+              q="Are you really available 24 hours a day?"
+              a="Yes. Our 24 hour tyre service operates every day of the year, including Christmas Day, New Year's Eve and all Bank Holidays. Whether it's 3pm or 3am, our phone line is answered and a technician is on call."
+            />
+            <FaqItem
+              q="Do you offer same day tyre fitting at home?"
+              a="Absolutely. Same day mobile tyre fitting is one of our most requested services — simply call or WhatsApp us your tyre size and postcode, and we'll fit your tyre at home the same day, often within the hour."
+            />
+            <FaqItem
+              q="What's the difference between emergency tyre fitting and a booked appointment?"
+              a="Emergency tyre fitting is for drivers who are stranded right now — a blowout, a flat on the roadside, or an unsafe tyre that cannot wait. A booked same day tyre fitting at home appointment is for less urgent needs, like a slow puncture, where we schedule a convenient time on the same or next day."
             />
             <FaqItem
               q="Do you stock my tyre size?"
-              a="We carry a wide range of common tyre sizes in our mobile units. For specialist or less common sizes, we have access to local hubs with instant availability."
+              a="Our mobile tyre fitting vans carry a wide range of common tyre sizes ready for immediate mobile tyre replacement. For specialist or less common sizes, we have access to local supplier hubs with instant availability, so there is rarely a long wait."
+            />
+            <FaqItem
+              q="Can you fit tyres on the motorway?"
+              a="For safety reasons we do not carry out tyre changes on live motorway carriageways or hard shoulders where it is not safe to do so. If you break down on the M60, M61, M62, M56, M602, M66 or M67, we will guide you to the nearest safe location — a service station, slip road or lay-by — and get a technician to you there."
+            />
+            <FaqItem
+              q="How much does emergency mobile tyre fitting cost?"
+              a="Pricing depends on your tyre size, brand choice and time of callout. We always confirm the full price by phone or WhatsApp before any work begins, so there are no surprises — just an honest quote for a professional, same day tyre fitting service."
             />
             <FaqItem
               q="What payment methods do you accept?"
-              a="We accept all major debit and credit cards (Visa, Mastercard, etc.), as well as contactless payments and cash."
+              a="We accept all major debit and credit cards, contactless payments, and cash on completion of the job."
+            />
+            <FaqItem
+              q="Do you fit tyres at my workplace as well as at home?"
+              a="Yes. Our mobile car tyre fitting service covers home, work and roadside locations across Greater Manchester, so you do not need to take time off or find your own way to a garage."
+            />
+            <FaqItem
+              q="Will you reset my TPMS light after fitting a new tyre?"
+              a="Yes, every mobile tyre replacement and puncture repair includes a TPMS check and reset where required, so your dashboard warning light is cleared before our technician leaves."
+            />
+            <FaqItem
+              q="Are your technicians qualified and insured?"
+              a="Every technician is fully trained, insured, and carries out puncture repairs to BS AU 159 standard. We are a directly employed, vetted team — not a network of random subcontractors — so you always know the standard of work you are getting."
+            />
+            <FaqItem
+              q="What areas do you cover for mobile tyre fitting?"
+              a="We cover Manchester, Bolton, Bury, Oldham, Rochdale, Stockport, Tameside, Trafford and Wigan, along with the M60, M61, M62, M56, M602, M66, M67 and A627. If you are searching for a 24 hour tyre service near me anywhere in Greater Manchester, we are likely already covering your area."
             />
           </div>
         </div>

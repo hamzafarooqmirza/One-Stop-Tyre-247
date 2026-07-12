@@ -4,7 +4,9 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Stockport | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Stockport | 24/7 Tyre Fitting',
+  description:
+    '24/7 mobile tyre fitting in Stockport. Emergency tyre replacement and puncture repair at your home, workplace or roadside, with no hidden call-out fees.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-stockport' },
 }
 

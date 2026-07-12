@@ -4,7 +4,9 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Bolton | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Bolton | 24/7 Tyre Fitting',
+  description:
+    'Fast, reliable mobile tyre fitting in Bolton. Our technicians come to your home, work or roadside location 24/7 with upfront pricing and no hidden fees.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-bolton' },
 }
 

@@ -4,7 +4,9 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Wigan | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Wigan | 24/7 Emergency Tyre Fitting',
+  description:
+    'Emergency and same day mobile tyre fitting in Wigan. Our technicians come to your home, work or roadside 24/7, with transparent, upfront pricing.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-wigan' },
 }
 

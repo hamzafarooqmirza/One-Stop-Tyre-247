@@ -4,7 +4,9 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Rochdale | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Rochdale | 24/7 Tyre Fitting',
+  description:
+    'Fast mobile tyre fitting in Rochdale, day or night. Our fully insured technicians fit tyres at your home, work or roadside with transparent pricing.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-rochdale' },
 }
 

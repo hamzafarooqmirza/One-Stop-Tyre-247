@@ -4,7 +4,9 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Trafford | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Trafford | 24/7 Tyre Fitting',
+  description:
+    'Reliable mobile tyre fitting in Trafford, 24/7. Our certified technicians reach your home, work or roadside location fast, with upfront pricing.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-trafford' },
 }
 

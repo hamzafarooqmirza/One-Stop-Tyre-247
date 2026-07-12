@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Mobile Tyre Fitting | 24/7 Emergency Callout UK',
@@ -7,51 +9,18 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting' },
 }
 
-const _breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://onestoptyres247.co.uk' },
-    { '@type': 'ListItem', position: 2, name: 'Mobile Tyre Fitting', item: 'https://onestoptyres247.co.uk/mobile-tyre-fitting' },
-  ],
-}
+const _breadcrumbSchema = breadcrumbSchema([
+  { name: 'Home', item: SITE_URL },
+  { name: 'Mobile Tyre Fitting', item: `${SITE_URL}/mobile-tyre-fitting` },
+])
 
-const _serviceSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  '@id': 'https://onestoptyres247.co.uk/mobile-tyre-fitting#service',
+const _serviceSchema = serviceSchema({
+  slug: 'mobile-tyre-fitting',
   name: 'Mobile Tyre Fitting',
+  serviceType: 'Mobile Tyre Fitting',
   description:
     'Professional mobile tyre fitting service across Greater Manchester. We supply and fit premium, mid-range and budget tyres at your home, workplace or roadside location. Same day and emergency appointments available.',
-  provider: {
-    '@type': 'LocalBusiness',
-    '@id': 'https://onestoptyres247.co.uk/#business',
-    name: 'One Stop Mobile Tyres 24/7',
-  },
-  areaServed: { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
-  url: 'https://onestoptyres247.co.uk/mobile-tyre-fitting',
-  openingHoursSpecification: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-    opens: '00:00',
-    closes: '23:59',
-  },
-}
-
-const _faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    { '@type': 'Question', name: 'What is mobile tyre fitting?', acceptedAnswer: { '@type': 'Answer', text: 'Mobile tyre fitting is a convenient service where professional tyre technicians travel to your home, workplace or roadside location to supply and fit new tyres.' } },
-    { '@type': 'Question', name: 'Do you fit tyres at home?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Home tyre fitting is one of our most popular services and allows you to have tyres replaced without visiting a garage.' } },
-    { '@type': 'Question', name: 'Do you offer same day mobile tyre fitting?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We provide same day appointments whenever tyre stock and technician availability allow.' } },
-    { '@type': 'Question', name: 'Do you provide emergency mobile tyre fitting?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our emergency tyre fitting service is available for punctures, blowouts and unexpected tyre failures.' } },
-    { '@type': 'Question', name: 'Can you repair a puncture instead of replacing the tyre?', acceptedAnswer: { '@type': 'Answer', text: 'If the tyre is safe to repair and meets British Standards, we will always recommend a puncture repair before replacement.' } },
-    { '@type': 'Question', name: 'How long does mobile tyre fitting take?', acceptedAnswer: { '@type': 'Answer', text: 'Most tyre fitting appointments take between 20 and 45 minutes depending on the vehicle and number of tyres being replaced.' } },
-    { '@type': 'Question', name: 'What types of tyres do you supply?', acceptedAnswer: { '@type': 'Answer', text: 'We stock budget, mid-range and premium tyres from leading manufacturers for most cars and vans.' } },
-    { '@type': 'Question', name: 'Why choose mobile tyre fitting instead of a tyre shop?', acceptedAnswer: { '@type': 'Answer', text: 'Mobile tyre fitting saves time, avoids waiting rooms, eliminates recovery costs and allows your tyres to be professionally fitted wherever it\'s most convenient for you.' } },
-  ],
-}
+})
 
 const faqs = [
   { q: 'What is mobile tyre fitting?', a: 'Mobile tyre fitting is a convenient service where professional tyre technicians travel to your home, workplace or roadside location to supply and fit new tyres.' },
@@ -83,6 +52,8 @@ const faqs = [
   { q: 'Do you provide same day mobile tyre replacement?', a: 'Yes. Same day mobile tyre replacement is available for most popular tyre sizes and locations.' },
   { q: 'Why choose our mobile tyre fitting service?', a: 'We combine experienced technicians, fast response times, quality tyres, competitive prices and exceptional customer service to deliver a convenient mobile tyre fitting experience wherever you need us.' },
 ]
+
+const _faqSchema = faqSchema(faqs)
 
 const whyChooseUs = [
   {
@@ -133,9 +104,9 @@ const steps = [
 export default function MobileTyreFittingPage() {
   return (
     <div className="text-[#1c1b1b]" style={{ fontFamily: 'var(--font-inter)' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_serviceSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_faqSchema) }} />
+      <JsonLd data={_breadcrumbSchema} />
+      <JsonLd data={_serviceSchema} />
+      <JsonLd data={_faqSchema} />
 
       {/* ── 1. HERO ──────────────────────────────────────────────────── */}
       <section className="relative min-h-[580px] lg:min-h-[640px] flex items-center overflow-hidden">

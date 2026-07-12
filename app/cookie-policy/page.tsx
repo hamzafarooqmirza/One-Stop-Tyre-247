@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbSchema, SITE_URL } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Cookie Policy | One Stop Tyres 24/7',
@@ -6,6 +8,11 @@ export const metadata: Metadata = {
     'Read the One Stop Tyres 24/7 cookie policy to understand how we use cookies and similar technologies on our website.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/cookie-policy' },
 }
+
+const _breadcrumbSchema = breadcrumbSchema([
+  { name: 'Home', item: SITE_URL },
+  { name: 'Cookie Policy', item: `${SITE_URL}/cookie-policy` },
+])
 
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
   <section className="mb-10">
@@ -57,6 +64,7 @@ const cookieRows = [
 export default function CookiePolicyPage() {
   return (
     <main className="bg-white min-h-screen">
+      <JsonLd data={_breadcrumbSchema} />
       {/* Hero */}
       <div className="bg-[#0f172a] py-14 sm:py-20 px-4 sm:px-6 text-white text-center">
         <h1

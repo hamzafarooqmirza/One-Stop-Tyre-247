@@ -1,5 +1,8 @@
 /* ─── City-specific FAQ section ────────────────────────────── */
 
+import { breadcrumbSchema, faqSchema, SITE_URL } from '@/lib/schema'
+import JsonLd from '@/components/JsonLd'
+
 export interface FaqEntry {
   q: string
   a: string
@@ -29,49 +32,20 @@ interface CityFaqProps {
 }
 
 export default function CityFaq({ city, faqs, canonical, breadcrumbName }: CityFaqProps) {
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map((f) => ({
-      '@type': 'Question',
-      name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
-    })),
-  }
+  const _faqSchema = faqSchema(faqs)
 
-  const breadcrumbSchema = canonical
-    ? {
-        '@context': 'https://schema.org',
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Home',
-            item: 'https://onestoptyres247.co.uk',
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: breadcrumbName ?? `Mobile Tyre Fitting ${city}`,
-            item: canonical,
-          },
-        ],
-      }
+  const _breadcrumbSchema = canonical
+    ? breadcrumbSchema([
+        { name: 'Home', item: SITE_URL },
+        { name: 'Service Area', item: `${SITE_URL}/service-area` },
+        { name: breadcrumbName ?? `Mobile Tyre Fitting ${city}`, item: canonical },
+      ])
     : null
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      {breadcrumbSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-        />
-      )}
+      <JsonLd data={_faqSchema} />
+      {_breadcrumbSchema && <JsonLd data={_breadcrumbSchema} />}
       <section className="py-12 sm:py-16 lg:py-24 px-4 sm:px-6 bg-slate-50">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-8 sm:mb-10 lg:mb-16">

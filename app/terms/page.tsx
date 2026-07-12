@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbSchema, SITE_URL } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Terms & Conditions | One Stop Tyres 24/7',
@@ -6,6 +8,11 @@ export const metadata: Metadata = {
     'Read the terms and conditions for using One Stop Tyres 24/7 mobile tyre fitting, puncture repair and roadside assistance services.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/terms' },
 }
+
+const _breadcrumbSchema = breadcrumbSchema([
+  { name: 'Home', item: SITE_URL },
+  { name: 'Terms & Conditions', item: `${SITE_URL}/terms` },
+])
 
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
   <section className="mb-10">
@@ -19,6 +26,7 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
 export default function TermsPage() {
   return (
     <main className="bg-white min-h-screen">
+      <JsonLd data={_breadcrumbSchema} />
       {/* Hero */}
       <div className="bg-[#0f172a] py-14 sm:py-20 px-4 sm:px-6 text-white text-center">
         <h1

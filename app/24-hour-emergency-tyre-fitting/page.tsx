@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: '24 Hour Emergency Tyre Fitting | One Stop Tyres 24/7',
@@ -7,56 +9,18 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://onestoptyres247.co.uk/24-hour-emergency-tyre-fitting' },
 }
 
-const _breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://onestoptyres247.co.uk' },
-    {
-      '@type': 'ListItem',
-      position: 2,
-      name: '24 Hour Emergency Tyre Fitting',
-      item: 'https://onestoptyres247.co.uk/24-hour-emergency-tyre-fitting',
-    },
-  ],
-}
+const _breadcrumbSchema = breadcrumbSchema([
+  { name: 'Home', item: SITE_URL },
+  { name: '24 Hour Emergency Tyre Fitting', item: `${SITE_URL}/24-hour-emergency-tyre-fitting` },
+])
 
-const _serviceSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  '@id': 'https://onestoptyres247.co.uk/24-hour-emergency-tyre-fitting#service',
+const _serviceSchema = serviceSchema({
+  slug: '24-hour-emergency-tyre-fitting',
   name: '24 Hour Emergency Tyre Fitting',
+  serviceType: 'Emergency Roadside Tyre Assistance',
   description:
     'Fast 24 hour emergency mobile tyre fitting, roadside tyre replacement and puncture repair across Greater Manchester. Available day and night, 365 days a year.',
-  provider: {
-    '@type': 'LocalBusiness',
-    '@id': 'https://onestoptyres247.co.uk/#business',
-    name: 'One Stop Mobile Tyres 24/7',
-  },
-  areaServed: { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
-  url: 'https://onestoptyres247.co.uk/24-hour-emergency-tyre-fitting',
-  openingHoursSpecification: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-    opens: '00:00',
-    closes: '23:59',
-  },
-}
-
-const _faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    { '@type': 'Question', name: 'Do you provide 24 hour emergency tyre fitting?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We offer emergency mobile tyre fitting services day and night, including weekends and bank holidays.' } },
-    { '@type': 'Question', name: 'Can you replace a tyre at my home?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We provide home tyre fitting services, allowing you to have new tyres installed without visiting a garage.' } },
-    { '@type': 'Question', name: 'Can you repair a puncture?', acceptedAnswer: { '@type': 'Answer', text: 'If the puncture meets British safety guidelines and is repairable, we will carry out a professional puncture repair. Otherwise, we\'ll recommend a replacement tyre.' } },
-    { '@type': 'Question', name: 'Do you provide roadside tyre replacement?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our technicians can safely replace damaged tyres at the roadside, helping you continue your journey quickly.' } },
-    { '@type': 'Question', name: 'Do you offer same day tyre fitting?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We provide same day mobile tyre fitting whenever appointments and stock availability allow.' } },
-    { '@type': 'Question', name: 'What vehicles do you cover?', acceptedAnswer: { '@type': 'Answer', text: 'We fit tyres for most cars, SUVs, vans and light commercial vehicles.' } },
-    { '@type': 'Question', name: 'Do you supply tyres as well?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We carry a wide range of premium, mid-range and budget tyres and can source most common sizes quickly.' } },
-    { '@type': 'Question', name: 'What if my tyre blows out on the motorway?', acceptedAnswer: { '@type': 'Answer', text: 'For safety reasons, motorway repairs are not normally carried out on the live carriageway. We can attend once your vehicle is moved to a safe location.' } },
-  ],
-}
+})
 
 const faqs = [
   { q: 'Do you provide 24 hour emergency tyre fitting?', a: 'Yes. We offer emergency mobile tyre fitting services day and night, including weekends and bank holidays.' },
@@ -86,6 +50,8 @@ const faqs = [
   { q: 'How quickly can you arrive?', a: 'Response times depend on location and demand, but we always dispatch the nearest available technician to minimise waiting times.' },
   { q: 'Is mobile tyre fitting more expensive than visiting a garage?', a: 'Our pricing is competitive and includes the convenience of having a professional tyre fitter come directly to your location, saving both time and recovery costs.' },
 ]
+
+const _faqSchema = faqSchema(faqs)
 
 const whyChooseUs = [
   {
@@ -136,9 +102,9 @@ const steps = [
 export default function EmergencyTyreFitting24HourPage() {
   return (
     <div className="text-[#1c1b1b]" style={{ fontFamily: 'var(--font-inter)' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_serviceSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_faqSchema) }} />
+      <JsonLd data={_breadcrumbSchema} />
+      <JsonLd data={_serviceSchema} />
+      <JsonLd data={_faqSchema} />
 
       {/* ── 1. HERO ──────────────────────────────────────────────────── */}
       <section className="relative min-h-[580px] lg:min-h-[640px] flex items-center overflow-hidden">

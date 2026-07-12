@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Privacy Policy | One Stop Tyres 24/7',
   description:
-    'Privacy Policy for One Stop Mobile Tyres 24/7. Explains how we collect, use and protect your personal data in accordance with UK GDPR.',
+    'Read the One Stop Tyres 24/7 privacy policy to understand how we collect, use and protect your personal data when you use our services.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/privacy-policy' },
 }
 

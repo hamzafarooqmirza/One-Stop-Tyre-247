@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Jump Start Service | Mobile Battery Jump Start | One Stop Tyres 24/7',
+  title: 'Jump Start Service | Mobile Battery Jump Start 24/7',
   description:
-    "Professional mobile jump start service available 24/7 across Greater Manchester. ECU-safe equipment, fast response, battery health test included. Dead battery? We come to you.",
+    'Flat battery? Our mobile jump start service comes to you 24/7 with ECU-safe equipment and a free battery health test to get you back on the road fast.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/jump-start' },
 }
 

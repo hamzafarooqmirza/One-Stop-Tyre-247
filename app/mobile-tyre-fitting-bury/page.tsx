@@ -4,7 +4,9 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Bury | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Bury | 24/7 Emergency Tyre Fitting',
+  description:
+    'Need a mobile tyre fitter in Bury? We offer 24/7 emergency tyre replacement and puncture repair at your home, work or roadside, with fast response times.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-bury' },
 }
 

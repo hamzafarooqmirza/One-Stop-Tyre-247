@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Cookie Policy | One Stop Tyres 24/7',
   description:
-    'Cookie Policy for One Stop Mobile Tyres 24/7. Details all cookies used on our website including Google Tag Manager and Google Analytics.',
+    'Read the One Stop Tyres 24/7 cookie policy to understand how we use cookies and similar technologies on our website.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/cookie-policy' },
 }
 

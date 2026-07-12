@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Emergency Mobile Puncture Repair | Fast Roadside & Home Tyre Repair | One Stop Tyres 24/7',
+  title: 'Emergency Puncture Repair | 24/7 Mobile Repair',
   description:
-    'Emergency mobile puncture repair across Greater Manchester. We come to your home, workplace or roadside to repair or replace your tyre fast. Same day & 24 hour service available.',
+    "Certified, BS AU 159 compliant plug-and-patch puncture repair fitted on-site. Fast, professional puncture repair wherever you're stranded, 24/7.",
   alternates: { canonical: 'https://onestoptyres247.co.uk/emergency-puncture-repair' },
 }
 

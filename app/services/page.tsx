@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 export const metadata: Metadata = {
-  title: 'Our Expert Mobile Services | One Stop Tyres 24/7',
+  title: 'All Tyre Services | One Stop Tyres 24/7',
   description:
-    'Professional 24/7 roadside assistance across the UK. Mobile tyre fitting, jump starts, puncture repair, TPMS reset & more — we bring the garage to you.',
+    'Explore our full range of mobile tyre services: emergency tyre fitting, puncture repair, jump starts, TPMS reset and locking nut removal, available 24/7 UK-wide.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/services' },
 }
 

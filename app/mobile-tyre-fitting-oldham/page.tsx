@@ -4,7 +4,9 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Oldham | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Oldham | 24/7 Tyre Fitting',
+  description:
+    'Mobile tyre fitting across Oldham, available 24/7. Emergency tyre replacement, puncture repair and same day fitting at your home, work or roadside.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-oldham' },
 }
 

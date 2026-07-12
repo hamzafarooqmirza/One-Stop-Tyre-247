@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import ContactPageClient from '@/components/ContactPageClient'
 
 export const metadata: Metadata = {
+  title: 'Contact Us | One Stop Tyres 24/7',
+  description:
+    'Get in touch with One Stop Tyres 24/7. Call our 24/7 emergency hotline for immediate assistance, or fill in our form for a non-urgent quote.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/contact' },
 }
 

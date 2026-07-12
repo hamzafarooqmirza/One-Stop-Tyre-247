@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Home Tyre Fitting | Mobile Tyre Fitting At Your Door | One Stop Tyres 24/7',
+  title: 'Home Tyre Fitting | Same Day Mobile Service',
   description:
-    'Professional mobile home tyre fitting available 24/7 across Greater Manchester. We bring the garage to your doorstep — no tow trucks, no waiting rooms. Expert technicians, fast response.',
+    'Convenient same day tyre fitting at your driveway while you get on with your day. No garage visit needed - our mobile technicians come to you.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/home-tyre-fitting' },
 }
 

@@ -1,14 +1,14 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Mobile Tyre Fitting Manchester | 24 Hour Tyre Service',
+  title: 'Mobile Tyre Fitting UK | 24/7 Emergency Tyre Service',
   description:
-    'Need a mobile tyre replacement fast? Our trusted technicians offer emergency tyre fitting & same day tyre fitting at home across Greater Manchester, 24/7.',
+    'Need a mobile tyre fitter fast? Our technicians offer 24/7 emergency tyre fitting and same day tyre replacement at your home, work or roadside, UK-wide.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/' },
   openGraph: {
     title: 'One Stop Mobile Tyres 24/7 | Emergency Mobile Tyre Fitting Manchester',
     description:
-      'Need a mobile tyre replacement fast? Our trusted technicians offer emergency tyre fitting & same day tyre fitting at home across Greater Manchester, 24/7.',
+      'Need a mobile tyre fitter fast? Our technicians offer 24/7 emergency tyre fitting and same day tyre replacement at your home, work or roadside, UK-wide.',
     url: 'https://onestoptyres247.co.uk',
     siteName: 'One Stop Mobile Tyres 24/7',
     images: [

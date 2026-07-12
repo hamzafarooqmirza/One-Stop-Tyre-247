@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Emergency Puncture Repair | 24/7 Mobile Repair',
@@ -7,51 +9,18 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://onestoptyres247.co.uk/emergency-puncture-repair' },
 }
 
-const _breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://onestoptyres247.co.uk' },
-    { '@type': 'ListItem', position: 2, name: 'Emergency Puncture Repair', item: 'https://onestoptyres247.co.uk/emergency-puncture-repair' },
-  ],
-}
+const _breadcrumbSchema = breadcrumbSchema([
+  { name: 'Home', item: SITE_URL },
+  { name: 'Emergency Puncture Repair', item: `${SITE_URL}/emergency-puncture-repair` },
+])
 
-const _serviceSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  '@id': 'https://onestoptyres247.co.uk/emergency-puncture-repair#service',
+const _serviceSchema = serviceSchema({
+  slug: 'emergency-puncture-repair',
   name: 'Emergency Mobile Puncture Repair',
+  serviceType: 'Emergency Puncture Repair',
   description:
     'Fast emergency mobile puncture repair service across Greater Manchester. Professional tyre repairs and replacements at your home, workplace or roadside location. Same day and 24 hour assistance available.',
-  provider: {
-    '@type': 'LocalBusiness',
-    '@id': 'https://onestoptyres247.co.uk/#business',
-    name: 'One Stop Mobile Tyres 24/7',
-  },
-  areaServed: { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
-  url: 'https://onestoptyres247.co.uk/emergency-puncture-repair',
-  openingHoursSpecification: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-    opens: '00:00',
-    closes: '23:59',
-  },
-}
-
-const _faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    { '@type': 'Question', name: 'What is emergency mobile puncture repair?', acceptedAnswer: { '@type': 'Answer', text: 'Emergency mobile puncture repair is a service where a professional tyre technician comes directly to your location to repair or replace a punctured tyre.' } },
-    { '@type': 'Question', name: 'Can you repair my puncture at home?', acceptedAnswer: { '@type': 'Answer', text: "Yes. We provide home puncture repair services so you don't need to drive on a damaged tyre or visit a garage." } },
-    { '@type': 'Question', name: 'Do you offer roadside puncture repair?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We attend roadside breakdowns and repair or replace tyres where it is safe to do so.' } },
-    { '@type': 'Question', name: 'Can every puncture be repaired?', acceptedAnswer: { '@type': 'Answer', text: 'No. Repairs are only carried out if the puncture meets British Standard safety guidelines and the tyre structure has not been compromised.' } },
-    { '@type': 'Question', name: 'What if my tyre cannot be repaired?', acceptedAnswer: { '@type': 'Answer', text: 'If the damage is too severe, we can supply and fit a new tyre on-site, allowing you to continue your journey immediately.' } },
-    { '@type': 'Question', name: 'Do you provide same day puncture repair?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We offer same day appointments and emergency call-outs whenever possible.' } },
-    { '@type': 'Question', name: 'Do you offer 24 hour puncture repair?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our emergency mobile puncture repair service is available for urgent situations day and night.' } },
-    { '@type': 'Question', name: 'How long does a puncture repair take?', acceptedAnswer: { '@type': 'Answer', text: 'Most puncture repairs are completed within 20 to 40 minutes, depending on the damage and vehicle type.' } },
-  ],
-}
+})
 
 const faqs = [
   { q: 'What is emergency mobile puncture repair?', a: 'Emergency mobile puncture repair is a service where a professional tyre technician comes directly to your location to repair or replace a punctured tyre.' },
@@ -79,6 +48,8 @@ const faqs = [
   { q: 'Do you cover emergency tyre puncture repairs near me?', a: 'Yes. Our goal is to provide fast, reliable and professional emergency puncture repairs wherever you need assistance.' },
   { q: 'Can you repair my tyre today?', a: 'In most cases, yes. We offer same day emergency mobile puncture repair appointments to get you safely back on the road as quickly as possible.' },
 ]
+
+const _faqSchema = faqSchema(faqs)
 
 const whyChooseUs = [
   {
@@ -129,9 +100,9 @@ const steps = [
 export default function EmergencyPunctureRepairPage() {
   return (
     <div className="text-[#1c1b1b]" style={{ fontFamily: 'var(--font-inter)' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_serviceSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_faqSchema) }} />
+      <JsonLd data={_breadcrumbSchema} />
+      <JsonLd data={_serviceSchema} />
+      <JsonLd data={_faqSchema} />
 
       {/* ── 1. HERO ──────────────────────────────────────────────────── */}
       <section className="relative min-h-[580px] lg:min-h-[640px] flex items-center overflow-hidden">

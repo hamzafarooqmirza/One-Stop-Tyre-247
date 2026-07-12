@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Cheap Mobile Tyre Fitting | Best Prices, Fast Fit',
@@ -7,56 +9,18 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://onestoptyres247.co.uk/cheap-mobile-tyre-fitting' },
 }
 
-const _breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://onestoptyres247.co.uk' },
-    {
-      '@type': 'ListItem',
-      position: 2,
-      name: 'Cheap Mobile Tyre Fitting',
-      item: 'https://onestoptyres247.co.uk/cheap-mobile-tyre-fitting',
-    },
-  ],
-}
+const _breadcrumbSchema = breadcrumbSchema([
+  { name: 'Home', item: SITE_URL },
+  { name: 'Cheap Mobile Tyre Fitting', item: `${SITE_URL}/cheap-mobile-tyre-fitting` },
+])
 
-const _serviceSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  '@id': 'https://onestoptyres247.co.uk/cheap-mobile-tyre-fitting#service',
+const _serviceSchema = serviceSchema({
+  slug: 'cheap-mobile-tyre-fitting',
   name: 'Cheap Mobile Tyre Fitting',
+  serviceType: 'Mobile Tyre Fitting',
   description:
     'Affordable mobile tyre fitting with budget, mid-range and premium tyres. Professional tyre replacement and puncture repair at your home, workplace or roadside location across Greater Manchester.',
-  provider: {
-    '@type': 'LocalBusiness',
-    '@id': 'https://onestoptyres247.co.uk/#business',
-    name: 'One Stop Mobile Tyres 24/7',
-  },
-  areaServed: { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
-  url: 'https://onestoptyres247.co.uk/cheap-mobile-tyre-fitting',
-  openingHoursSpecification: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-    opens: '00:00',
-    closes: '23:59',
-  },
-}
-
-const _faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    { '@type': 'Question', name: 'Do you provide cheap mobile tyre fitting?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We specialise in affordable mobile tyre fitting with a range of budget, mid-range and premium tyres to suit every budget.' } },
-    { '@type': 'Question', name: 'Are cheap tyres safe?', acceptedAnswer: { '@type': 'Answer', text: 'Absolutely. We only supply tyres that meet UK safety standards from trusted manufacturers.' } },
-    { '@type': 'Question', name: 'Can you fit tyres at my home?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our home tyre-fitting service lets you have your tyres replaced without visiting a garage.' } },
-    { '@type': 'Question', name: 'Do you offer same-day tyre fitting?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We provide same-day mobile tyre fitting whenever stock and availability allow.' } },
-    { '@type': 'Question', name: 'Can you replace tyres at my workplace?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We regularly fit tyres at offices, industrial estates, and business premises.' } },
-    { '@type': 'Question', name: 'Do you provide emergency tyre replacement?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We offer emergency mobile tyre fitting for punctures, blowouts, and damaged tyres.' } },
-    { '@type': 'Question', name: 'Can you repair a puncture instead of replacing the tyre?', acceptedAnswer: { '@type': 'Answer', text: "If the puncture is within the legal repair area and safe to repair, we'll always recommend the most cost-effective solution." } },
-    { '@type': 'Question', name: 'Is mobile tyre fitting more expensive than a garage?', acceptedAnswer: { '@type': 'Answer', text: 'Not necessarily. When you consider travel costs, waiting time, and recovery charges, our mobile tyre fitting service offers excellent value and convenience.' } },
-  ],
-}
+})
 
 const faqs = [
   { q: 'Do you provide cheap mobile tyre fitting?', a: 'Yes. We specialise in affordable mobile tyre fitting with a range of budget, mid-range and premium tyres to suit every budget.' },
@@ -84,6 +48,8 @@ const faqs = [
   { q: 'Why choose mobile tyre fitting?', a: 'Mobile tyre fitting offers convenience, saves valuable time, avoids unnecessary travel and allows professional tyre replacement wherever you need it.' },
   { q: 'Can I book by phone or WhatsApp?', a: 'Yes. Simply call us or send a WhatsApp message and our team will arrange your mobile tyre fitting appointment as quickly as possible.' },
 ]
+
+const _faqSchema = faqSchema(faqs)
 
 const whyChooseUs = [
   {
@@ -134,9 +100,9 @@ const steps = [
 export default function CheapMobileTyreFittingPage() {
   return (
     <div className="text-[#1c1b1b]" style={{ fontFamily: 'var(--font-inter)' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_serviceSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_faqSchema) }} />
+      <JsonLd data={_breadcrumbSchema} />
+      <JsonLd data={_serviceSchema} />
+      <JsonLd data={_faqSchema} />
 
       {/* ── 1. HERO ──────────────────────────────────────────────────── */}
       <section className="relative min-h-[580px] lg:min-h-[640px] flex items-center overflow-hidden">

@@ -4,7 +4,9 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting A627 | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting A627 | 24/7 Roadside Tyre Assistance',
+  description:
+    'Broken down on the A627? Our mobile technicians provide fast, 24/7 emergency tyre replacement and puncture repair at the roadside or nearest safe stop.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-a627' },
 }
 

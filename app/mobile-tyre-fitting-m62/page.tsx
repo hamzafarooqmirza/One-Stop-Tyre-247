@@ -4,7 +4,9 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 
 export const metadata = {
-  title: 'M62 Mobile Tyre Fitting | 24/7 Emergency Roadside Assistance | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting M62 | 24/7 Motorway Tyre Assistance',
+  description:
+    'Tyre blowout on the M62? We provide 24/7 emergency roadside tyre assistance, guiding you to a safe stop before fitting your replacement tyre fast.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-m62' },
 }
 

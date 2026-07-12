@@ -4,7 +4,9 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Tameside | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Tameside | 24/7 Tyre Fitting',
+  description:
+    'Mobile tyre fitting across Tameside, available around the clock. We come to you for emergency tyre replacement, puncture repair and same day fitting.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-tameside' },
 }
 

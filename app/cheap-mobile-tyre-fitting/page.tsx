@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cheap Mobile Tyre Fitting | Quality Tyres at Affordable Prices | One Stop Tyres 24/7',
+  title: 'Cheap Mobile Tyre Fitting | Best Prices, Fast Fit',
   description:
-    'Cheap mobile tyre fitting across Greater Manchester. Budget, mid-range & premium tyres fitted at your home, workplace or roadside. Same day & emergency appointments available.',
+    'Budget, mid-range and premium tyre options, all professionally fitted at competitive prices with no hidden fees. Upfront quotes before we dispatch.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/cheap-mobile-tyre-fitting' },
 }
 

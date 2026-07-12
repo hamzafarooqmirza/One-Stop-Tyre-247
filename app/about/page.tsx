@@ -1,7 +1,7 @@
 export const metadata = {
-  title: 'About Us | One Stop Tyres 24/7',
+  title: 'About One Stop Tyres 24/7 | UK Mobile Tyre Fitting',
   description:
-    'Learn about One Stop Tyres 24/7 — premier provider of emergency roadside services and 24/7 mobile tyre solutions across the UK.',
+    'Learn about One Stop Tyres 24/7, a UK-wide provider of emergency roadside assistance and 24/7 mobile tyre fitting, repair and replacement services.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/about' },
 }
 

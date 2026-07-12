@@ -1,4 +1,7 @@
 import type { Metadata } from 'next'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbSchema, SITE_URL } from '@/lib/schema'
+
 export const metadata: Metadata = {
   title: 'Service Area Coverage Map | One Stop Tyres 24/7',
   description:
@@ -128,18 +131,15 @@ const trustBadges = [
 ]
 
 
-const _breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://onestoptyres247.co.uk' },
-    { '@type': 'ListItem', position: 2, name: 'Service Area', item: 'https://onestoptyres247.co.uk/service-area' },
-  ],
-}
+const _breadcrumbSchema = breadcrumbSchema([
+  { name: 'Home', item: SITE_URL },
+  { name: 'Service Area', item: `${SITE_URL}/service-area` },
+])
+
 export default function ServiceAreaPage() {
   return (
     <div className="bg-surface font-body-md text-on-background antialiased">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_breadcrumbSchema) }} />
+      <JsonLd data={_breadcrumbSchema} />
       {/* ── Hero ── */}
       <section className="relative min-h-[400px] sm:min-h-[450px] lg:h-[500px] flex items-center justify-center overflow-hidden py-16 sm:py-20">
         <div className="absolute inset-0 bg-secondary/85 z-10" />

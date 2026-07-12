@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import ContactPageClient from '@/components/ContactPageClient'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbSchema, SITE_URL } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Contact Us | One Stop Tyres 24/7',
@@ -8,19 +10,15 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://onestoptyres247.co.uk/contact' },
 }
 
-const _breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://onestoptyres247.co.uk' },
-    { '@type': 'ListItem', position: 2, name: 'Contact Us', item: 'https://onestoptyres247.co.uk/contact' },
-  ],
-}
+const _breadcrumbSchema = breadcrumbSchema([
+  { name: 'Home', item: SITE_URL },
+  { name: 'Contact Us', item: `${SITE_URL}/contact` },
+])
 
 export default function ContactPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_breadcrumbSchema) }} />
+      <JsonLd data={_breadcrumbSchema} />
       <ContactPageClient />
     </>
   )

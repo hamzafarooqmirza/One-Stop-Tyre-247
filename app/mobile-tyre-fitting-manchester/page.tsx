@@ -6,7 +6,7 @@ import ReviewsCarousel from '@/components/ReviewsCarousel'
 export const metadata = {
   title: 'Mobile Tyre Fitting in Manchester | One Stop Tyres 24/7',
   description:
-    'Stranded with a puncture in Manchester? Our technicians reach you fast at home, work or roadside, 24/7. Emergency mobile tyre fitting from £45.',
+    'Stranded with a puncture in Manchester? Our technicians reach you fast at home, work or roadside, 24/7. Emergency mobile tyre fitting available now.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-manchester' },
 }
 

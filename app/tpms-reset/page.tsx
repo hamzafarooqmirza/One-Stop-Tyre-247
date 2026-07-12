@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'TPMS Reset | Mobile Tyre Pressure Sensor Reset | One Stop Tyres 24/7',
+  title: 'TPMS Reset Service | Mobile Tyre Sensor Reset 24/7',
   description:
-    'Professional TPMS reset service available 24/7 across Greater Manchester. Fast mobile tyre pressure monitoring system reset for all makes and models. Dashboard warning cleared on-site.',
+    'Professional TPMS sensor diagnostics and reset for all vehicles, carried out on-site after every tyre change or repair so your dashboard warning clears.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/tpms-reset' },
 }
 

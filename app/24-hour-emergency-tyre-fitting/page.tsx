@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: '24 Hour Emergency Tyre Fitting | One Stop Tyres 24/7',
   description:
-    'Fast 24 hour emergency mobile tyre fitting across Greater Manchester. Flat tyre at home, work or roadside? Our technicians arrive fully equipped day & night. Call now.',
+    'Genuine 24 hour emergency tyre fitting, day or night, 365 days a year. Our technicians reach you fast for immediate tyre help wherever you are.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/24-hour-emergency-tyre-fitting' },
 }
 

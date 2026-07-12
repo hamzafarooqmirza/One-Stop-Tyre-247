@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 export const metadata: Metadata = {
-  title: 'Service Area | One Stop Tyres 24/7 — Greater Manchester',
+  title: 'Service Area Coverage Map | One Stop Tyres 24/7',
   description:
-    'One Stop Tyres 24/7 covers all of Greater Manchester and key motorways including M60, M61, M62, M66, M67, M602, A627 and more. Find out if we cover your area.',
+    'See the full coverage map for One Stop Tyres 24/7 - cities, towns and motorways we serve 24/7 across the UK for mobile tyre fitting and roadside assistance.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/service-area' },
 }
 

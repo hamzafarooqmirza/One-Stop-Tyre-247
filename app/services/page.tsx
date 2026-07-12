@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 export const metadata: Metadata = {
-  title: 'Our Expert Mobile Services | One Stop Tyres 24/7',
+  title: 'All Tyre Services | One Stop Tyres 24/7',
   description:
-    'Professional 24/7 roadside assistance across the UK. Mobile tyre fitting, jump starts, puncture repair, TPMS reset & more — we bring the garage to you.',
+    'Explore our full range of mobile tyre services: emergency tyre fitting, puncture repair, jump starts, TPMS reset and locking nut removal, available 24/7 UK-wide.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/services' },
 }
 
@@ -12,7 +12,7 @@ const services = [
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCElGeNknzc8tbZCtwXI6ShEouRpz5AJNdTuPAfhj3Iug5GwouWvmzE1C6aM66i4WdGax_dcTkOiaqi37yWVuhbfAI9W5tM6M6Rh5iV2Ri0JvwL4kKrd35wNxBNMiNpn1rbBVOMhm8SQ0QdpyxD2cUsmBxP3lW2ZpHTuhoZO8v3jKV6khvNCisX0gIB_EqS7GSHhDnUjjKyg0mvDRUVs3zrIdz32f6Nz-qq-FonAXxmLQLatjW4oE-lHHKz3KzelIzRJTMiMvIAyPw',
     title: 'Mobile Tyre Fitting',
     desc: 'Expert tyre fitting at your location, whether you\'re at work or stuck on the roadside. We handle all vehicle types and tyre brands.',
-    badge: 'From £45',
+    badge: 'Fast Response',
     btnLabel: 'Book Now',
   },
   {

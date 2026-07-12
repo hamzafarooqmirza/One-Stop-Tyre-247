@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Terms & Conditions | One Stop Tyres 24/7',
   description:
-    'Terms and Conditions for One Stop Mobile Tyres 24/7. Governs the use of our mobile tyre fitting and roadside assistance services across Greater Manchester.',
+    'Read the terms and conditions for using One Stop Tyres 24/7 mobile tyre fitting, puncture repair and roadside assistance services.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/terms' },
 }
 

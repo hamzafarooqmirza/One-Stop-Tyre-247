@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Locking Nut Removal | Specialist Mobile Service | One Stop Tyres 24/7',
+  title: 'Locking Wheel Nut Removal | Damage-Free Service',
   description:
-    'Specialist damage-free locking wheel nut removal available 24/7 across Greater Manchester. Lost your key or damaged nuts? We come to you and remove them without harming your alloys.',
+    'Lost your locking wheel nut key? Our specialist tools remove seized or lost locking nuts without damaging your alloys, available 24/7 at your location.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/locking-nut-removal' },
 }
 

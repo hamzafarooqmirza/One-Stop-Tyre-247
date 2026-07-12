@@ -4,7 +4,9 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting M61 | 24/7 Emergency Roadside Assistance | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting M61 | 24/7 Motorway Tyre Assistance',
+  description:
+    'Stranded on the M61? Our fully insured technicians provide 24/7 emergency tyre replacement and puncture repair at the nearest safe location.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-m61' },
 }
 

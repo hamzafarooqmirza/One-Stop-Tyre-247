@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Tyre Fitting Near Me | 24/7 Mobile Tyre Fitting',
@@ -7,56 +9,18 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://onestoptyres247.co.uk/tyre-fitting-near-me' },
 }
 
-const _breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://onestoptyres247.co.uk' },
-    {
-      '@type': 'ListItem',
-      position: 2,
-      name: 'Tyre Fitting Near Me',
-      item: 'https://onestoptyres247.co.uk/tyre-fitting-near-me',
-    },
-  ],
-}
+const _breadcrumbSchema = breadcrumbSchema([
+  { name: 'Home', item: SITE_URL },
+  { name: 'Tyre Fitting Near Me', item: `${SITE_URL}/tyre-fitting-near-me` },
+])
 
-const _serviceSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  '@id': 'https://onestoptyres247.co.uk/tyre-fitting-near-me#service',
+const _serviceSchema = serviceSchema({
+  slug: 'tyre-fitting-near-me',
   name: 'Tyre Fitting Near Me',
+  serviceType: 'Mobile Tyre Fitting',
   description:
     'Mobile tyre fitting service that comes directly to your home, workplace or roadside location across Greater Manchester. Same day, emergency and 24 hour appointments available.',
-  provider: {
-    '@type': 'LocalBusiness',
-    '@id': 'https://onestoptyres247.co.uk/#business',
-    name: 'One Stop Mobile Tyres 24/7',
-  },
-  areaServed: { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
-  url: 'https://onestoptyres247.co.uk/tyre-fitting-near-me',
-  openingHoursSpecification: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-    opens: '00:00',
-    closes: '23:59',
-  },
-}
-
-const _faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    { '@type': 'Question', name: 'Do you provide tyre fitting near me?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our mobile tyre fitting service comes directly to your home, workplace or roadside location, making tyre replacement simple and convenient.' } },
-    { '@type': 'Question', name: 'Can you fit tyres at my home?', acceptedAnswer: { '@type': 'Answer', text: 'Absolutely. Our home tyre fitting service allows you to have new tyres professionally installed without visiting a garage.' } },
-    { '@type': 'Question', name: 'Do you offer same day tyre fitting?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We provide same day tyre fitting appointments whenever availability and tyre stock allow.' } },
-    { '@type': 'Question', name: 'Do you provide roadside tyre fitting?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. If your vehicle has suffered a puncture or damaged tyre, we can replace it safely at the roadside where conditions allow.' } },
-    { '@type': 'Question', name: 'Do you offer emergency tyre fitting?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our emergency mobile tyre fitting service is available for urgent tyre replacements and puncture repairs.' } },
-    { '@type': 'Question', name: 'Can you repair a puncture instead of replacing the tyre?', acceptedAnswer: { '@type': 'Answer', text: "If the puncture meets British safety standards and can be repaired safely, we'll always recommend a repair before replacement." } },
-    { '@type': 'Question', name: 'Why choose mobile tyre fitting instead of a garage?', acceptedAnswer: { '@type': 'Answer', text: "Mobile tyre fitting saves time, avoids unnecessary travel, eliminates waiting rooms and provides a professional service at a location that's convenient for you." } },
-    { '@type': 'Question', name: 'How long does mobile tyre fitting take?', acceptedAnswer: { '@type': 'Answer', text: 'Most tyre fitting appointments take between 20 and 45 minutes depending on the vehicle and number of tyres being replaced.' } },
-  ],
-}
+})
 
 const faqs = [
   { q: 'Do you provide tyre fitting near me?', a: 'Yes. Our mobile tyre fitting service comes directly to your home, workplace or roadside location, making tyre replacement simple and convenient.' },
@@ -84,6 +48,8 @@ const faqs = [
   { q: 'What tyre brands do you supply?', a: 'We supply a wide range of trusted tyre brands, including budget, mid-range and premium options to suit every driving style and budget.' },
   { q: "Can you help if I'm searching for \"nearest tyre fitting\"?", a: "Yes. Our mobile tyre fitting service comes directly to your location, so you don't need to find the nearest tyre garage; we bring the service to you." },
 ]
+
+const _faqSchema = faqSchema(faqs)
 
 const whyChooseUs = [
   {
@@ -134,9 +100,9 @@ const steps = [
 export default function TyreFittingNearMePage() {
   return (
     <div className="text-[#1c1b1b]" style={{ fontFamily: 'var(--font-inter)' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_serviceSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_faqSchema) }} />
+      <JsonLd data={_breadcrumbSchema} />
+      <JsonLd data={_serviceSchema} />
+      <JsonLd data={_faqSchema} />
 
       {/* ── 1. HERO ──────────────────────────────────────────────────── */}
       <section className="relative min-h-[580px] lg:min-h-[640px] flex items-center overflow-hidden">

@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Jump Start Service | Mobile Battery Jump Start 24/7',
@@ -7,35 +9,18 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://onestoptyres247.co.uk/jump-start' },
 }
 
-const _breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://onestoptyres247.co.uk' },
-    { '@type': 'ListItem', position: 2, name: 'Jump Start', item: 'https://onestoptyres247.co.uk/jump-start' },
-  ],
-}
+const _breadcrumbSchema = breadcrumbSchema([
+  { name: 'Home', item: SITE_URL },
+  { name: 'Jump Start', item: `${SITE_URL}/jump-start` },
+])
 
-const _serviceSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  '@id': 'https://onestoptyres247.co.uk/jump-start#service',
+const _serviceSchema = serviceSchema({
+  slug: 'jump-start',
   name: 'Jump Start Service',
-  description: 'Professional, fast and reliable jump start available 24/7 across Greater Manchester. Dead battery? Our specialist technicians arrive fast and get you moving safely with ECU-safe equipment.',
-  provider: {
-    '@type': 'LocalBusiness',
-    '@id': 'https://onestoptyres247.co.uk/#business',
-    name: 'One Stop Mobile Tyres 24/7',
-  },
-  areaServed: { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
-  url: 'https://onestoptyres247.co.uk/jump-start',
-  openingHoursSpecification: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-    opens: '00:00',
-    closes: '23:59',
-  },
-}
+  serviceType: 'Battery Jump Start',
+  description:
+    'Professional, fast and reliable jump start available 24/7 across Greater Manchester. Dead battery? Our specialist technicians arrive fast and get you moving safely with ECU-safe equipment.',
+})
 
 const faqs = [
   {
@@ -114,22 +99,14 @@ const steps = [
   },
 ]
 
-const _faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map((f) => ({
-    '@type': 'Question',
-    name: f.q,
-    acceptedAnswer: { '@type': 'Answer', text: f.a },
-  })),
-}
+const _faqSchema = faqSchema(faqs)
 
 export default function JumpStartPage() {
   return (
     <div className="text-[#1c1b1b]" style={{ fontFamily: 'var(--font-inter)' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_serviceSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_faqSchema) }} />
+      <JsonLd data={_breadcrumbSchema} />
+      <JsonLd data={_serviceSchema} />
+      <JsonLd data={_faqSchema} />
 
       {/* ── 1. HERO ──────────────────────────────────────────────────── */}
       <section className="relative min-h-[580px] lg:min-h-[640px] flex items-center overflow-hidden">

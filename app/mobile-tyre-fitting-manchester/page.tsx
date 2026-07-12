@@ -2,6 +2,15 @@ import BrandCarousel from '@/components/BrandCarousel'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
+import JsonLd from '@/components/JsonLd'
+import { serviceSchema } from '@/lib/schema'
+
+const _serviceSchema = serviceSchema({
+  slug: 'mobile-tyre-fitting-manchester',
+  name: 'Mobile Tyre Fitting in Manchester',
+  serviceType: 'Mobile Tyre Fitting',
+  areaServed: { '@type': 'City', name: 'Manchester' },
+})
 
 export const metadata = {
   title: 'Mobile Tyre Fitting in Manchester | One Stop Tyres 24/7',
@@ -27,6 +36,7 @@ function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc:
 export default function ManchesterPage() {
   return (
     <div className="bg-[#fcf9f8] text-[#1c1b1b] font-body-md">
+      <JsonLd data={_serviceSchema} />
       <main>
 
         {/* ── 1. HERO ───────────────────────────────────────── */}

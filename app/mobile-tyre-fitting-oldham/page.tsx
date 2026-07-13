@@ -194,7 +194,7 @@ export default function OldhamPage() {
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp',
-                  title: 'Emergency Tyre Replacement',
+                  title: 'Home Tyre Fitting',
                   desc: 'Emergency tyre replacement service across Oldham for damaged, worn or blown tyres. We get you safely back on the road quickly.',
                   badge: 'AT YOUR DOOR',
                   href: '/home-tyre-fitting',

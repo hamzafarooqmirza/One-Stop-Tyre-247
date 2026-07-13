@@ -33,6 +33,20 @@ const townAreas = [
     desc: 'Dedicated coverage of Farnworth town centre, Kearsley, Little Lever and Highfield.',
   },
   {
+    name: 'Horwich',
+    href: '/mobile-tyre-fitting-horwich',
+    icon: 'location_on',
+    postcodes: 'BL6',
+    desc: 'Dedicated coverage of Horwich town centre, Blackrod, Rivington and Montserrat.',
+  },
+  {
+    name: 'Westhoughton',
+    href: '/mobile-tyre-fitting-westhoughton',
+    icon: 'location_on',
+    postcodes: 'BL5',
+    desc: 'Dedicated coverage of Westhoughton town centre, Chequerbent, Wingates and Daisy Hill.',
+  },
+  {
     name: 'Bury',
     href: '/mobile-tyre-fitting-bury',
     icon: 'location_on',
@@ -171,6 +185,20 @@ const townAreas = [
     icon: 'location_on',
     postcodes: 'WN1 – WN6',
     desc: 'Rapid call-out across Wigan, Leigh, Atherton, Hindley and Skelmersdale.',
+  },
+  {
+    name: 'Atherton',
+    href: '/mobile-tyre-fitting-atherton',
+    icon: 'location_on',
+    postcodes: 'M46',
+    desc: 'Dedicated coverage of Atherton town centre, Hindsford, Howe Bridge and Hag Fold.',
+  },
+  {
+    name: 'Leigh',
+    href: '/mobile-tyre-fitting-leigh',
+    icon: 'location_on',
+    postcodes: 'WN7',
+    desc: 'Dedicated coverage of Leigh town centre, Tyldesley, Astley and Lowton.',
   },
 ]
 

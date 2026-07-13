@@ -61,6 +61,20 @@ const townAreas = [
     desc: 'Full coverage of Ashton-under-Lyne, Denton, Droylsden, Hyde, Mossley and Stalybridge.',
   },
   {
+    name: 'Ashton-under-Lyne',
+    href: '/mobile-tyre-fitting-ashton-under-lyne',
+    icon: 'location_on',
+    postcodes: 'OL6, OL7',
+    desc: 'Dedicated coverage of Ashton-under-Lyne town centre, Stalybridge, Dukinfield and Audenshaw.',
+  },
+  {
+    name: 'Hyde',
+    href: '/mobile-tyre-fitting-hyde',
+    icon: 'location_on',
+    postcodes: 'SK14',
+    desc: 'Dedicated coverage of Hyde town centre, Gee Cross, Godley, Newton and Werneth Low.',
+  },
+  {
     name: 'Trafford',
     href: '/mobile-tyre-fitting-trafford',
     icon: 'location_on',

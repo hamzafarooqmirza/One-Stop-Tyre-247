@@ -148,7 +148,7 @@ export default function HorwichPage() {
               {[
                 { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp', title: 'Mobile Tyre Fitting Horwich', desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Horwich. Fast response with premium and budget tyre options available.', badge: 'FAST RESPONSE',
                   href: '/mobile-tyre-fitting' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp', title: 'Emergency Tyre Replacement', desc: 'Emergency tyre replacement service across Horwich for damaged, worn or blown tyres. We get you safely back on the road quickly.', badge: 'AT YOUR DOOR',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp', title: 'Home Tyre Fitting', desc: 'Emergency tyre replacement service across Horwich for damaged, worn or blown tyres. We get you safely back on the road quickly.', badge: 'AT YOUR DOOR',
                   href: '/home-tyre-fitting' },
                 { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp', title: 'Mobile Puncture Repair', desc: 'Professional puncture repair service where safe and suitable. Quick roadside repairs to save you time and money.', badge: 'CERTIFIED REPAIR',
                   href: '/emergency-puncture-repair' },

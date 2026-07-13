@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://onestoptyres247.co.uk/service-area' },
 }
 
-// ── Town / district cards ─────────────────────────────────────────────────────
-const townAreas = [
+// ── Borough / city hub cards ───────────────────────────────────────────────────
+const boroughAreas = [
   {
     name: 'Manchester City',
     href: '/mobile-tyre-fitting-manchester',
@@ -25,6 +25,59 @@ const townAreas = [
     postcodes: 'BL1 – BL7',
     desc: 'Full coverage across Bolton, Horwich, Farnworth, Westhoughton and surrounding villages.',
   },
+  {
+    name: 'Bury',
+    href: '/mobile-tyre-fitting-bury',
+    icon: 'location_on',
+    postcodes: 'BL8, BL9, M26',
+    desc: 'Rapid response throughout Bury, Radcliffe, Ramsbottom, Tottington and Whitefield.',
+  },
+  {
+    name: 'Oldham',
+    href: '/mobile-tyre-fitting-oldham',
+    icon: 'location_on',
+    postcodes: 'OL1 – OL9',
+    desc: 'Covering Oldham, Chadderton, Failsworth, Lees, Royton and Saddleworth.',
+  },
+  {
+    name: 'Rochdale',
+    href: '/mobile-tyre-fitting-rochdale',
+    icon: 'location_on',
+    postcodes: 'OL10 – OL16',
+    desc: 'Serving Rochdale, Heywood, Middleton, Milnrow and the surrounding Pennine areas.',
+  },
+  {
+    name: 'Stockport',
+    href: '/mobile-tyre-fitting-stockport',
+    icon: 'location_on',
+    postcodes: 'SK1 – SK8, SK12',
+    desc: 'Mobile tyre fitting in Stockport, Hazel Grove, Cheadle, Bramhall and Marple.',
+  },
+  {
+    name: 'Tameside',
+    href: '/mobile-tyre-fitting-tameside',
+    icon: 'location_on',
+    postcodes: 'OL5 – OL7, SK14 – SK16',
+    desc: 'Full coverage of Ashton-under-Lyne, Denton, Droylsden, Hyde, Mossley and Stalybridge.',
+  },
+  {
+    name: 'Trafford',
+    href: '/mobile-tyre-fitting-trafford',
+    icon: 'location_on',
+    postcodes: 'M16, M17, M32, M33, WA14 – WA15',
+    desc: 'Serving Altrincham, Sale, Stretford, Urmston, Partington and all of Trafford borough.',
+  },
+  {
+    name: 'Wigan',
+    href: '/mobile-tyre-fitting-wigan',
+    icon: 'location_on',
+    postcodes: 'WN1 – WN6',
+    desc: 'Rapid call-out across Wigan, Leigh, Atherton, Hindley and Skelmersdale.',
+  },
+]
+
+// ── Individual town / district cards ───────────────────────────────────────────
+const townAreas = [
   {
     name: 'Farnworth',
     href: '/mobile-tyre-fitting-farnworth',
@@ -47,32 +100,11 @@ const townAreas = [
     desc: 'Dedicated coverage of Westhoughton town centre, Chequerbent, Wingates and Daisy Hill.',
   },
   {
-    name: 'Bury',
-    href: '/mobile-tyre-fitting-bury',
-    icon: 'location_on',
-    postcodes: 'BL8, BL9, M26',
-    desc: 'Rapid response throughout Bury, Radcliffe, Ramsbottom, Tottington and Whitefield.',
-  },
-  {
     name: 'Radcliffe',
     href: '/mobile-tyre-fitting-radcliffe',
     icon: 'location_on',
     postcodes: 'M26',
     desc: 'Dedicated coverage of Radcliffe town centre, Close, Ainsworth and Outwood.',
-  },
-  {
-    name: 'Oldham',
-    href: '/mobile-tyre-fitting-oldham',
-    icon: 'location_on',
-    postcodes: 'OL1 – OL9',
-    desc: 'Covering Oldham, Chadderton, Failsworth, Lees, Royton and Saddleworth.',
-  },
-  {
-    name: 'Rochdale',
-    href: '/mobile-tyre-fitting-rochdale',
-    icon: 'location_on',
-    postcodes: 'OL10 – OL16',
-    desc: 'Serving Rochdale, Heywood, Middleton, Milnrow and the surrounding Pennine areas.',
   },
   {
     name: 'Middleton',
@@ -87,20 +119,6 @@ const townAreas = [
     icon: 'location_on',
     postcodes: 'OL10',
     desc: 'Dedicated coverage of Heywood town centre, Bamford, Hopwood and Birch.',
-  },
-  {
-    name: 'Stockport',
-    href: '/mobile-tyre-fitting-stockport',
-    icon: 'location_on',
-    postcodes: 'SK1 – SK8, SK12',
-    desc: 'Mobile tyre fitting in Stockport, Hazel Grove, Cheadle, Bramhall and Marple.',
-  },
-  {
-    name: 'Tameside',
-    href: '/mobile-tyre-fitting-tameside',
-    icon: 'location_on',
-    postcodes: 'OL5 – OL7, SK14 – SK16',
-    desc: 'Full coverage of Ashton-under-Lyne, Denton, Droylsden, Hyde, Mossley and Stalybridge.',
   },
   {
     name: 'Ashton-under-Lyne',
@@ -129,13 +147,6 @@ const townAreas = [
     icon: 'location_on',
     postcodes: 'SK6',
     desc: 'Dedicated coverage of Marple town centre, Marple Bridge, Compstall, Mellor and Rose Hill.',
-  },
-  {
-    name: 'Trafford',
-    href: '/mobile-tyre-fitting-trafford',
-    icon: 'location_on',
-    postcodes: 'M16, M17, M32, M33, WA14 – WA15',
-    desc: 'Serving Altrincham, Sale, Stretford, Urmston, Partington and all of Trafford borough.',
   },
   {
     name: 'Altrincham',
@@ -178,13 +189,6 @@ const townAreas = [
     icon: 'location_on',
     postcodes: 'M22, M23',
     desc: 'Dedicated coverage of Wythenshawe, Baguley, Northenden, Sharston and Manchester Airport.',
-  },
-  {
-    name: 'Wigan',
-    href: '/mobile-tyre-fitting-wigan',
-    icon: 'location_on',
-    postcodes: 'WN1 – WN6',
-    desc: 'Rapid call-out across Wigan, Leigh, Atherton, Hindley and Skelmersdale.',
   },
   {
     name: 'Atherton',
@@ -321,7 +325,54 @@ export default function ServiceAreaPage() {
         </div>
       </section>
 
-      {/* ── Town & District areas ── */}
+      {/* ── Borough / city hub areas ── */}
+      <section className="py-12 sm:py-16 lg:py-xl px-4 sm:px-5 max-w-7xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 text-secondary mb-3 text-balance leading-tight">
+            Boroughs We Cover
+          </h2>
+          <div className="w-16 sm:w-20 h-1 bg-primary mx-auto rounded-full mb-3 sm:mb-4" />
+          <p className="font-body-md text-sm sm:text-body-md text-on-surface-variant max-w-xl mx-auto text-pretty">
+            Our 9 Greater Manchester boroughs, each with full coverage of the borough and every
+            surrounding town and village.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+          {boroughAreas.map((area) => (
+            <a
+              key={area.name}
+              href={area.href}
+              className="group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-primary/30 transition-all overflow-hidden"
+            >
+              <div className="flex items-center gap-4 px-5 pt-5 pb-3">
+                <div className="bg-primary/10 p-3 rounded-xl shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
+                  <span className="material-symbols-outlined text-primary group-hover:text-white text-2xl transition-colors">
+                    {area.icon}
+                  </span>
+                </div>
+                <div className="min-w-0">
+                  <h3 className="font-h3 text-secondary text-lg leading-snug">{area.name}</h3>
+                  <span className="text-xs font-semibold text-primary/80 bg-primary/5 px-2 py-0.5 rounded-full">
+                    {area.postcodes}
+                  </span>
+                </div>
+              </div>
+              <p className="font-body-md text-body-md text-on-surface-variant px-5 pb-5 flex-1 text-base leading-relaxed">
+                {area.desc}
+              </p>
+              <div className="border-t border-slate-50 px-5 py-3 flex items-center justify-between">
+                <span className="text-xs font-bold text-primary uppercase tracking-wide">View area</span>
+                <span className="material-symbols-outlined text-primary text-sm group-hover:translate-x-1 transition-transform">
+                  arrow_forward
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Individual town / district areas ── */}
       <section className="py-12 sm:py-16 lg:py-xl px-4 sm:px-5 max-w-7xl mx-auto">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 text-secondary mb-3 text-balance leading-tight">
@@ -329,8 +380,8 @@ export default function ServiceAreaPage() {
           </h2>
           <div className="w-16 sm:w-20 h-1 bg-primary mx-auto rounded-full mb-3 sm:mb-4" />
           <p className="font-body-md text-sm sm:text-body-md text-on-surface-variant max-w-xl mx-auto text-pretty">
-            Click on any area below to see our dedicated coverage page, including local junction
-            details, postcodes and service information.
+            Prefer a page dedicated to your exact town? Click below for local junction details,
+            postcodes and service information for that specific area.
           </p>
         </div>
 

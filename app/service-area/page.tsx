@@ -26,11 +26,25 @@ const townAreas = [
     desc: 'Full coverage across Bolton, Horwich, Farnworth, Westhoughton and surrounding villages.',
   },
   {
+    name: 'Farnworth',
+    href: '/mobile-tyre-fitting-farnworth',
+    icon: 'location_on',
+    postcodes: 'BL4',
+    desc: 'Dedicated coverage of Farnworth town centre, Kearsley, Little Lever and Highfield.',
+  },
+  {
     name: 'Bury',
     href: '/mobile-tyre-fitting-bury',
     icon: 'location_on',
     postcodes: 'BL8, BL9, M26',
     desc: 'Rapid response throughout Bury, Radcliffe, Ramsbottom, Tottington and Whitefield.',
+  },
+  {
+    name: 'Radcliffe',
+    href: '/mobile-tyre-fitting-radcliffe',
+    icon: 'location_on',
+    postcodes: 'M26',
+    desc: 'Dedicated coverage of Radcliffe town centre, Close, Ainsworth and Outwood.',
   },
   {
     name: 'Oldham',
@@ -45,6 +59,20 @@ const townAreas = [
     icon: 'location_on',
     postcodes: 'OL10 – OL16',
     desc: 'Serving Rochdale, Heywood, Middleton, Milnrow and the surrounding Pennine areas.',
+  },
+  {
+    name: 'Middleton',
+    href: '/mobile-tyre-fitting-middleton',
+    icon: 'location_on',
+    postcodes: 'M24',
+    desc: 'Dedicated coverage of Middleton town centre, Alkrington, Hopwood and Rhodes.',
+  },
+  {
+    name: 'Heywood',
+    href: '/mobile-tyre-fitting-heywood',
+    icon: 'location_on',
+    postcodes: 'OL10',
+    desc: 'Dedicated coverage of Heywood town centre, Bamford, Hopwood and Birch.',
   },
   {
     name: 'Stockport',

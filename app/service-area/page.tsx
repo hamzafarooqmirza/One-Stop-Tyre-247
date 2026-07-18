@@ -163,11 +163,18 @@ const townAreas = [
     desc: 'Dedicated coverage of Sale town centre, Sale Moor, Ashton upon Mersey and Brooklands.',
   },
   {
-    name: 'Urmston & Stretford',
-    href: '/mobile-tyre-fitting-urmston-stretford',
+    name: 'Urmston',
+    href: '/mobile-tyre-fitting-urmston',
     icon: 'location_on',
-    postcodes: 'M32, M41',
-    desc: 'Dedicated coverage of Urmston, Stretford, Old Trafford, Flixton and Davyhulme.',
+    postcodes: 'M41',
+    desc: 'Dedicated coverage of Urmston town centre, Davyhulme, Flixton and Lostock.',
+  },
+  {
+    name: 'Stretford',
+    href: '/mobile-tyre-fitting-stretford',
+    icon: 'location_on',
+    postcodes: 'M32, M16',
+    desc: 'Dedicated coverage of Stretford, Old Trafford, Gorse Hill and the Trafford Centre area.',
   },
   {
     name: 'Eccles',

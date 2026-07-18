@@ -195,14 +195,14 @@ export default function ManchesterPage() {
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp',
                   title: 'Home Tyre Fitting',
-                  desc: 'Emergency tyre replacement service across Manchester for damaged, worn or blown tyres. We get you safely back on the road quickly.',
+                  desc: 'Same day tyre fitting at your home across Manchester, without the hassle of visiting a garage.',
                   badge: 'AT YOUR DOOR',
                   href: '/home-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp',
                   title: 'Mobile Puncture Repair',
-                  desc: 'Professional puncture repair service where safe and suitable. Quick roadside repairs to save you time and money.',
+                  desc: 'Professional mobile puncture repair across Manchester, carried out on-site where safe and suitable.',
                   badge: 'CERTIFIED REPAIR',
                   href: '/emergency-puncture-repair',
                 },
@@ -216,14 +216,14 @@ export default function ManchesterPage() {
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp',
                   title: 'TPMS Reset',
-                  desc: 'Tyre pressure monitoring system reset and sensor checks after tyre replacement or puncture repairs.',
+                  desc: 'Tyre pressure monitoring system reset and sensor checks across Manchester after every fitting or repair.',
                   badge: 'ALL VEHICLES',
                   href: '/tpms-reset',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp',
                   title: 'Locking Nut Removal',
-                  desc: 'Specialist locking wheel nut removal service for damaged, seized or missing locking wheel nuts.',
+                  desc: 'Specialist, damage-free locking wheel nut removal across Manchester using professional tools.',
                   badge: 'DAMAGE FREE',
                   href: '/locking-nut-removal',
                 },
@@ -305,7 +305,7 @@ export default function ManchesterPage() {
                   ))}
                 </div>
                 <div className="text-[#0f172a] font-black text-2xl sm:text-3xl leading-none mb-1">5.0 / 5.0</div>
-                <div className="text-slate-500 text-[11px] font-semibold uppercase tracking-wide">1,161 Customer Reviews</div>
+                <div className="text-slate-500 text-[11px] font-semibold uppercase tracking-wide">1,200+ Customer Reviews</div>
               </div>
             </div>
             <div className="w-full lg:w-1/2">

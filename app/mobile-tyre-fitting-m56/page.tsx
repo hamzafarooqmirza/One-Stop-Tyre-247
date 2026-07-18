@@ -195,14 +195,14 @@ export default function M56Page() {
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp',
                   title: 'Home Tyre Fitting',
-                  desc: 'Emergency tyre replacement service on the M56 for damaged, worn or blown tyres. We get you safely back on the road quickly.',
+                  desc: 'Same day tyre fitting on the M56, without the hassle of visiting a garage.',
                   badge: 'AT YOUR DOOR',
                   href: '/home-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp',
                   title: 'Mobile Puncture Repair',
-                  desc: 'Professional puncture repair service where safe and suitable. Quick roadside repairs to save you time and money.',
+                  desc: 'Professional mobile puncture repair on the M56, carried out on-site where safe and suitable.',
                   badge: 'CERTIFIED REPAIR',
                   href: '/emergency-puncture-repair',
                 },
@@ -216,14 +216,14 @@ export default function M56Page() {
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp',
                   title: 'TPMS Reset',
-                  desc: 'Tyre pressure monitoring system reset and sensor checks after tyre replacement or puncture repairs.',
+                  desc: 'Tyre pressure monitoring system reset and sensor checks on the M56 after every fitting or repair.',
                   badge: 'ALL VEHICLES',
                   href: '/tpms-reset',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp',
                   title: 'Locking Nut Removal',
-                  desc: 'Specialist locking wheel nut removal service for damaged, seized or missing locking wheel nuts.',
+                  desc: 'Specialist, damage-free locking wheel nut removal on the M56 using professional tools.',
                   badge: 'DAMAGE FREE',
                   href: '/locking-nut-removal',
                 },

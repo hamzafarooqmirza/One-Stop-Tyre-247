@@ -6,17 +6,17 @@ import JsonLd from '@/components/JsonLd'
 import { serviceSchema } from '@/lib/schema'
 
 const _serviceSchema = serviceSchema({
-  slug: 'mobile-tyre-fitting-eccles',
-  name: 'Mobile Tyre Fitting in Eccles',
+  slug: 'mobile-tyre-fitting-urmston',
+  name: 'Mobile Tyre Fitting in Urmston',
   serviceType: 'Mobile Tyre Fitting',
-  areaServed: { '@type': 'City', name: 'Eccles' },
+  areaServed: { '@type': 'City', name: 'Urmston' },
 })
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Eccles | 24/7 Tyre Fitting',
+  title: 'Mobile Tyre Fitting in Urmston | 24/7 Tyre Fitting',
   description:
-    'Fast mobile tyre fitting in Eccles. Our technicians come to your home, work or roadside location 24/7, with transparent, upfront pricing and no hidden fees.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-eccles' },
+    'Fast mobile tyre fitting in Urmston. Our technicians come to your home, work or roadside location 24/7, with transparent, upfront pricing and no hidden fees.',
+  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-urmston' },
 }
 
 function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc: string }) {
@@ -33,7 +33,7 @@ function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc:
   )
 }
 
-export default function EcclesPage() {
+export default function UrmstonPage() {
   return (
     <div className="bg-[#fcf9f8] text-[#1c1b1b] font-body-md">
       <JsonLd data={_serviceSchema} />
@@ -50,17 +50,17 @@ export default function EcclesPage() {
         >
           <div className="max-w-2xl py-20">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}>
-              24/7 Mobile Tyre Fitting Eccles
+              24/7 Mobile Tyre Fitting Urmston
             </h1>
             <p className="text-white/80 text-base leading-relaxed mb-6">
-              Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance Across Eccles. We Come To Your Home, Workplace Or Roadside Location Within 20–30 Minutes.
+              Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance Across Urmston. We Come To Your Home, Workplace Or Roadside Location Within 20–30 Minutes.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
               {[
                 '20 Minute Emergency Response',
                 'Mobile Tyre Fitting At Home, Work Or Roadside',
                 'Emergency Tyre Replacement & Puncture Repair',
-                'Covering Eccles & Surrounding Areas 24/7',
+                'Covering Urmston, Stretford & Surrounding Areas 24/7',
                 'Card, Cash & Contactless Payments Accepted',
                 'Fully Insured Professional Tyre Technicians',
               ].map((item) => (
@@ -83,7 +83,7 @@ export default function EcclesPage() {
                 ))}
               </div>
               <span className="font-bold text-sm">5.0</span>
-              <span className="text-white/60 text-xs font-medium">Rated By Drivers Across Eccles &amp; Greater Manchester</span>
+              <span className="text-white/60 text-xs font-medium">Rated By Drivers Across Urmston, Stretford &amp; Greater Manchester</span>
             </a>
             <div className="flex flex-col sm:flex-row gap-3">
               <a href="tel:07759708646" className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 hover:text-white transition-all text-base sm:text-lg" style={{ fontFamily: 'var(--font-work-sans)' }}>
@@ -138,25 +138,25 @@ export default function EcclesPage() {
             <div className="text-center mb-10 sm:mb-16">
               <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">What We Do</span>
               <h2 className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}>
-                24/7 Mobile Tyre Fitting &amp; Emergency Tyre Repair In Eccles
+                24/7 Mobile Tyre Fitting &amp; Emergency Tyre Repair In Urmston
               </h2>
               <p className="text-slate-600 max-w-2xl mx-auto text-base">
-                Mobile tyre fitting, emergency tyre replacement and puncture repair across Eccles. We come to your home, workplace or roadside location 24/7 with fast response times and professional service.
+                Mobile tyre fitting, emergency tyre replacement and puncture repair across Urmston. We come to your home, workplace or roadside location 24/7 with fast response times and professional service.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {[
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp', title: 'Mobile Tyre Fitting Eccles', desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Eccles. Fast response with premium and budget tyre options available.', badge: 'FAST RESPONSE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp', title: 'Mobile Tyre Fitting Urmston', desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Urmston. Fast response with premium and budget tyre options available.', badge: 'FAST RESPONSE',
                   href: '/mobile-tyre-fitting' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp', title: 'Home Tyre Fitting', desc: 'Same day tyre fitting at your home across Eccles, without the hassle of visiting a garage.', badge: 'AT YOUR DOOR',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp', title: 'Home Tyre Fitting', desc: 'Same day tyre fitting at your home across Urmston, without the hassle of visiting a garage.', badge: 'AT YOUR DOOR',
                   href: '/home-tyre-fitting' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp', title: 'Mobile Puncture Repair', desc: 'Professional mobile puncture repair across Eccles, carried out on-site where safe and suitable.', badge: 'CERTIFIED REPAIR',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp', title: 'Mobile Puncture Repair', desc: 'Professional mobile puncture repair across Urmston, carried out on-site where safe and suitable.', badge: 'CERTIFIED REPAIR',
                   href: '/emergency-puncture-repair' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp', title: 'Jump Start', desc: 'Flat battery as well as a flat tyre? Our mobile jump start service gets you back on the road in minutes, available 24/7 across Eccles.', badge: '24/7 SERVICE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp', title: 'Jump Start', desc: 'Flat battery as well as a flat tyre? Our mobile jump start service gets you back on the road in minutes, available 24/7 across Urmston.', badge: '24/7 SERVICE',
                   href: '/jump-start' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp', title: 'TPMS Reset', desc: 'Tyre pressure monitoring system reset and sensor checks across Eccles after every fitting or repair.', badge: 'ALL VEHICLES',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp', title: 'TPMS Reset', desc: 'Tyre pressure monitoring system reset and sensor checks across Urmston after every fitting or repair.', badge: 'ALL VEHICLES',
                   href: '/tpms-reset' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp', title: 'Locking Nut Removal', desc: 'Specialist, damage-free locking wheel nut removal across Eccles using professional tools.', badge: 'DAMAGE FREE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp', title: 'Locking Nut Removal', desc: 'Specialist, damage-free locking wheel nut removal across Urmston using professional tools.', badge: 'DAMAGE FREE',
                   href: '/locking-nut-removal' },
               ].map((card) => (
                 <a key={card.title} href={card.href} className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]">
@@ -207,13 +207,13 @@ export default function EcclesPage() {
             <div className="w-full lg:w-1/2">
               <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">The Best Choice</span>
               <h2 className="text-2xl sm:text-4xl lg:text-5xl text-[#0f172a] mb-5 sm:mb-8 leading-tight font-bold" style={{ fontFamily: 'var(--font-work-sans)' }}>
-                Expert Mobile Tyre Fitting Service Across Eccles
+                Expert Mobile Tyre Fitting Service Across Urmston
               </h2>
               <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg">
-                One Stop Tyres provides 24/7 mobile tyre fitting in Eccles, helping drivers get back on the road quickly when they experience a puncture, tyre blowout or damaged tyre.
-                Our mobile tyre experts come directly to your home, workplace or roadside location anywhere in Eccles and surrounding areas.
-                We supply and fit premium and budget tyres, carry out mobile puncture repairs where safe and suitable, and provide emergency tyre replacement services throughout Eccles.
-                If you&apos;re searching for mobile tyre fitting near me in Eccles, our fast response team is available day and night.
+                One Stop Tyres provides 24/7 mobile tyre fitting in Urmston, helping drivers get back on the road quickly when they experience a puncture, tyre blowout or damaged tyre.
+                Our mobile tyre experts come directly to your home, workplace or roadside location anywhere in Urmston and surrounding areas.
+                We supply and fit premium and budget tyres, carry out mobile puncture repairs where safe and suitable, and provide emergency tyre replacement services throughout Urmston.
+                If you&apos;re searching for mobile tyre fitting near me in Urmston, our fast response team is available day and night.
               </p>
               <ul className="space-y-4 sm:space-y-5">
                 <FeatureItem icon="bolt" title="24/7 Mobile Tyre Fitting" desc="Tyres fitted at your home, workplace or roadside location." />
@@ -225,25 +225,25 @@ export default function EcclesPage() {
         </section>
 
         {/* ── 5. WHY CHOOSE US */}
-        <WhyChooseUs city="Eccles" image="/images/tyre fitting in emergergency-airanko (1).webp" />
+        <WhyChooseUs city="Urmston" image="/images/tyre fitting in emergergency-airanko (1).webp" />
 
         {/* ── 6. BRAND CAROUSEL */}
         <BrandCarousel />
 
         {/* ── 7. FAQ */}
         <CityFaq
-          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-eccles" city="Eccles" faqs={[
-          { q: 'How fast can you reach Eccles town centre?', a: 'Typically, our nearest technician can be with you in Eccles town centre within 20-30 minutes, depending on traffic on Church Street and Liverpool Road.' },
-          { q: 'Do you cover the M60 near Eccles (Junctions 11-12)?', a: 'Yes. Our vehicles carry high-intensity safety lighting to carry out safe roadside tyre changes near the M60 Junctions 11 and 12 around Eccles.' },
-          { q: 'Do you cover Barton, Winton and Patricroft as well?', a: 'Yes, we cover the whole of Eccles and the surrounding areas including Barton, Winton and Patricroft, with 24/7 availability.' },
-          { q: 'Can you fit tyres near Eccles Market or the town centre?', a: 'Absolutely. We regularly attend Eccles town centre, including car parks near Eccles Market and the Metrolink interchange, fitting tyres wherever it is safe to park.' },
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-urmston" city="Urmston" faqs={[
+          { q: 'How fast can you reach Urmston town centre?', a: 'Typically, our nearest technician can be with you in Urmston town centre within 20-30 minutes, depending on traffic on Flixton Road and Higher Road.' },
+          { q: 'Do you cover the M60 near Urmston (Junction 9)?', a: 'Yes. Our vehicles carry high-intensity safety lighting to carry out safe roadside tyre changes near the M60 Junction 9 around Urmston.' },
+          { q: 'Do you cover Davyhulme, Flixton and Lostock as well?', a: 'Yes, we cover the whole of Urmston and the surrounding areas including Davyhulme, Flixton and Lostock, with 24/7 availability.' },
+          { q: 'Can you fit tyres near Urmston town centre or Cross Street?', a: 'Absolutely. We regularly attend Urmston town centre, including car parks near Cross Street and the Devonshire Road shops, fitting tyres wherever it is safe to park.' },
         ]} />
 
         {/* ── 8. FINAL CTA */}
         <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Eccles Right Now?</h2>
-            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Eccles line and get a technician dispatched in minutes.</p>
+            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Urmston Right Now?</h2>
+            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Urmston line and get a technician dispatched in minutes.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
               <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl" href="tel:07759708646">
                 <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>

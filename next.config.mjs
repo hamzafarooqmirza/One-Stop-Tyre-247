@@ -27,6 +27,12 @@ const nextConfig = {
         destination: 'https://onestoptyres247.co.uk/:path*',
         permanent: true,
       },
+      // Urmston & Stretford split into two dedicated town pages
+      {
+        source: '/mobile-tyre-fitting-urmston-stretford',
+        destination: '/mobile-tyre-fitting-urmston',
+        permanent: true,
+      },
     ]
   },
   async headers() {

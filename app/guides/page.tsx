@@ -15,6 +15,12 @@ const _breadcrumbSchema = breadcrumbSchema([
 
 const guides = [
   {
+    title: 'What to Do If You Get a Flat Tyre on the M60 (or Any Manchester Motorway)',
+    desc: 'A step-by-step safety guide for motorway punctures and blowouts — where to stop, who to call, and how to get moving again without a tow truck.',
+    href: '/guides/what-to-do-flat-tyre-m60-manchester-motorway',
+    readTime: '9 min read',
+  },
+  {
     title: 'How to Tell If Your Tyre Can Be Repaired or Needs Replacing',
     desc: 'A practical, safety-first checklist covering puncture location, size, tread depth and the warning signs that mean a tyre must be replaced.',
     href: '/guides/how-to-tell-if-your-tyre-can-be-repaired-or-needs-replacing',

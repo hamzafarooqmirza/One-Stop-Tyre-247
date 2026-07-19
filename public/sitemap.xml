@@ -9,6 +9,20 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- Guides -->
+  <url>
+    <loc>https://onestoptyres247.co.uk/guides</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://onestoptyres247.co.uk/guides/how-to-tell-if-your-tyre-can-be-repaired-or-needs-replacing</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Legal pages -->
   <url>
     <loc>https://onestoptyres247.co.uk/privacy-policy</loc>

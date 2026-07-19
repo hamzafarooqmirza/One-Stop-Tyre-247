@@ -347,6 +347,23 @@ export default function MobileTyreFittingPage() {
         </div>
       </section>
 
+      {/* ── HELPFUL GUIDE ────────────────────────────────────────────── */}
+      <section className="px-4 sm:px-6 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <a
+            href="/guides/how-to-tell-if-your-tyre-can-be-repaired-or-needs-replacing"
+            className="group flex items-center justify-between gap-4 bg-slate-50 border border-slate-100 rounded-2xl p-5 sm:p-6 mb-2 hover:border-[#b70011]/30 hover:shadow-md transition-all"
+          >
+            <div>
+              <span className="text-xs font-bold text-[#b70011] uppercase tracking-widest mb-1 block">Not sure yet?</span>
+              <p className="font-bold text-[#0f172a]">How to Tell If Your Tyre Can Be Repaired or Needs Replacing</p>
+              <p className="text-sm text-slate-500">Our quick, expert checklist for puncture location, size and tread depth.</p>
+            </div>
+            <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all shrink-0">arrow_forward</span>
+          </a>
+        </div>
+      </section>
+
       {/* ── 5. FAQ ───────────────────────────────────────────────────── */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
         <div className="max-w-3xl mx-auto">

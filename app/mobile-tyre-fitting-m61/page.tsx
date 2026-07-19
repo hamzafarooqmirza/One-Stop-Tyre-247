@@ -336,6 +336,23 @@ export default function M61Page() {
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />
 
+        {/* ── HELPFUL GUIDE ─────────────────────────────────── */}
+        <section className="py-8 px-4 sm:px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <a
+              href="/guides/what-to-do-flat-tyre-m60-manchester-motorway"
+              className="group flex items-center justify-between gap-4 bg-slate-50 border border-slate-100 rounded-2xl p-5 sm:p-6 hover:border-[#b70011]/30 hover:shadow-md transition-all"
+            >
+              <div>
+                <span className="text-xs font-bold text-[#b70011] uppercase tracking-widest mb-1 block">Safety Guide</span>
+                <p className="font-bold text-[#0f172a]">What to Do If You Get a Flat Tyre on the Motorway</p>
+                <p className="text-sm text-slate-500">Step by step: where to stop, who to call and how to get moving again.</p>
+              </div>
+              <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all shrink-0">arrow_forward</span>
+            </a>
+          </div>
+        </section>
+
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq
           canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-m61"

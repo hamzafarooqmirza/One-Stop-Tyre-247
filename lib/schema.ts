@@ -97,3 +97,46 @@ export function serviceSchema({ slug, name, description, serviceType, areaServed
     openingHoursSpecification: OPENING_HOURS_SPEC,
   }
 }
+
+export interface ArticleSchemaOptions {
+  /** URL slug including any parent path, e.g. "guides/how-to-tell-if-your-tyre-can-be-repaired-or-needs-replacing" */
+  slug: string
+  headline: string
+  description: string
+  image: string
+  datePublished: string
+  dateModified?: string
+}
+
+export function articleSchema({ slug, headline, description, image, datePublished, dateModified }: ArticleSchemaOptions) {
+  const url = `${SITE_URL}/${slug}`
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': `${url}#article`,
+    headline,
+    description,
+    image,
+    datePublished,
+    dateModified: dateModified ?? datePublished,
+    author: {
+      '@type': 'Organization',
+      name: 'One Stop Tyres 24/7',
+      '@id': BUSINESS_ID,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'One Stop Tyres 24/7',
+      '@id': BUSINESS_ID,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/icon.webp`,
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': url,
+    },
+    url,
+  }
+}

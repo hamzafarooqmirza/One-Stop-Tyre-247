@@ -112,7 +112,7 @@ export default function LockingNutRemovalPage() {
       <section className="relative min-h-[580px] lg:min-h-[640px] flex items-center overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/professional mobile tyre fitting.webp"
+          src="/images/professional-mobile-tyre-fitting.webp"
           alt="Locking wheel nut removal service"
           className="absolute inset-0 w-full h-full object-cover object-center"
           width={1600}
@@ -194,7 +194,7 @@ export default function LockingNutRemovalPage() {
           <div className="w-full lg:w-1/2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp"
+              src="/images/mobile-tyre-fitting-one-stop-tyres-24-7.webp"
               alt="Specialist locking nut removal technician"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}
@@ -295,7 +295,7 @@ export default function LockingNutRemovalPage() {
           <div className="w-full lg:w-1/2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/Mobile tyre fitting service.webp"
+              src="/images/mobile-tyre-fitting-service.webp"
               alt="Mobile locking nut removal across Greater Manchester"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}

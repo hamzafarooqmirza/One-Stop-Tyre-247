@@ -43,7 +43,7 @@ export default function M61Page() {
         <section
           className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-start text-left px-4 sm:px-8 lg:px-16"
           style={{
-            backgroundImage: "linear-gradient(to right, rgba(15, 23, 42, 0.96) 0%, rgba(15, 23, 42, 0.75) 100%), url('/images/Mobile%20Tyre%20Fitting%20One%20Stop%20Tyres%2024%207.webp')",
+            backgroundImage: "linear-gradient(to right, rgba(15, 23, 42, 0.96) 0%, rgba(15, 23, 42, 0.75) 100%), url('/images/mobile-tyre-fitting-one-stop-tyres-24-7.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}
@@ -291,7 +291,7 @@ export default function M61Page() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 className="relative z-10 rounded-2xl sm:rounded-3xl shadow-2xl border-4 sm:border-8 border-slate-50 w-full object-cover"
-                src="/images/tyre fitting in emergergency-airanko (1).webp"
+                src="/images/tyre-fitting-in-emergency.webp"
                 alt="Mobile tyre fitting technician"
                 width={800}
                 height={600}
@@ -331,10 +331,27 @@ export default function M61Page() {
         </section>
 
         {/* ── 5. WHY CHOOSE US ──────────────────────────────── */}
-        <WhyChooseUs city="M61" image="/images/Tyre fitting at home-airanko (1).webp" />
+        <WhyChooseUs city="M61" image="/images/tyre-fitting-at-home.webp" />
 
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />
+
+        {/* ── HELPFUL GUIDE ─────────────────────────────────── */}
+        <section className="py-8 px-4 sm:px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <a
+              href="/guides/what-to-do-flat-tyre-m60-manchester-motorway"
+              className="group flex items-center justify-between gap-4 bg-slate-50 border border-slate-100 rounded-2xl p-5 sm:p-6 hover:border-[#b70011]/30 hover:shadow-md transition-all"
+            >
+              <div>
+                <span className="text-xs font-bold text-[#b70011] uppercase tracking-widest mb-1 block">Safety Guide</span>
+                <p className="font-bold text-[#0f172a]">What to Do If You Get a Flat Tyre on the Motorway</p>
+                <p className="text-sm text-slate-500">Step by step: where to stop, who to call and how to get moving again.</p>
+              </div>
+              <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all shrink-0">arrow_forward</span>
+            </a>
+          </div>
+        </section>
 
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq

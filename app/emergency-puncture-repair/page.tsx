@@ -108,7 +108,7 @@ export default function EmergencyPunctureRepairPage() {
       <section className="relative min-h-[580px] lg:min-h-[640px] flex items-center overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/Tyres fitting anywhere-airanko (1).webp"
+          src="/images/tyres-fitting-anywhere.webp"
           alt="Emergency mobile puncture repair service"
           className="absolute inset-0 w-full h-full object-cover object-center"
           width={1600}
@@ -193,7 +193,7 @@ export default function EmergencyPunctureRepairPage() {
           <div className="w-full lg:w-1/2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp"
+              src="/images/mobile-tyre-fitting-one-stop-tyres-24-7.webp"
               alt="Fast mobile puncture repairs"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}
@@ -294,7 +294,7 @@ export default function EmergencyPunctureRepairPage() {
           <div className="w-full lg:w-1/2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/tyre fitting in emergergency-airanko (1).webp"
+              src="/images/tyre-fitting-in-emergency.webp"
               alt="Emergency puncture repair at roadside"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}

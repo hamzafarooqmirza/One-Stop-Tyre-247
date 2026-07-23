@@ -4,6 +4,8 @@ import Script from 'next/script'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import JsonLd from '@/components/JsonLd'
+import { localBusinessSchema } from '@/lib/schema'
 
 const workSans = Work_Sans({
   subsets: ['latin'],
@@ -67,7 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link
           rel="preload"
           as="image"
-          href="/images/Mobile tyre fitting service.webp"
+          href="/images/mobile-tyre-fitting-service.webp"
           type="image/webp"
         />
         {/* Preconnect to third-party origins to eliminate DNS + TLS latency */}
@@ -101,6 +103,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
       </head>
       <body className="antialiased overflow-x-hidden pb-[60px] sm:pb-0">
+        <JsonLd data={localBusinessSchema()} />
         {/* Google Tag Manager noscript — container 1 */}
         <noscript>
           <iframe

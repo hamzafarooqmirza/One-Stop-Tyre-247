@@ -1,12 +1,14 @@
 import JsonLd from '@/components/JsonLd'
-import { breadcrumbSchema, SITE_URL } from '@/lib/schema'
+import { aboutPageSchema, breadcrumbSchema, SITE_URL } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
+import { ADDRESS } from '@/lib/constants'
 
-export const metadata = {
-  title: 'About One Stop Tyres 24/7 | UK Mobile Tyre Fitting',
+export const metadata = buildMetadata({
+  title: 'About One Stop Tyres 24/7 | Mobile Tyre Fitters Manchester',
   description:
-    'Learn about One Stop Tyres 24/7, a UK-wide provider of emergency roadside assistance and 24/7 mobile tyre fitting, repair and replacement services.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/about' },
-}
+    'Meet One Stop Tyres 24/7 — Oldham-based mobile tyre fitters serving all of Greater Manchester 24/7. Insured, IMI-trained technicians and a 5.0 Google rating.',
+  path: '/about',
+})
 
 const _breadcrumbSchema = breadcrumbSchema([
   { name: 'Home', item: SITE_URL },
@@ -17,6 +19,7 @@ export default function AboutPage() {
   return (
     <>
       <JsonLd data={_breadcrumbSchema} />
+      <JsonLd data={aboutPageSchema()} />
       <main className="bg-[#fcf9f8] text-[#1c1b1b]" style={{ fontFamily: 'Inter, sans-serif' }}>
 
         {/* 1. HERO */}
@@ -24,7 +27,7 @@ export default function AboutPage() {
           className="py-16 sm:py-24 px-4 sm:px-6 text-center text-white"
           style={{
             backgroundImage:
-              'linear-gradient(rgba(28,27,27,0.85),rgba(28,27,27,0.85)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuCNQCIh-xxokj_RB-YXzldYeRzn_41TRF_Wdx-kI3GlGP3ot_CXVHcdRrFUAyr14sZ88ODm1sWCxsa7u2-1eoKBOGSgDfpFgALs2ZmGsxWRG0mGXojnJ3M6KSajYND4AUF_6kHsVWuUeXUmybo3iha0DXabGOVGQcJDmag9OwLr3PqwxfoVoFV0n37JUj9mO6vaV8WDdjBHVfXzF3cEkDAvvuD4DJNzBRx47NadnkRU4z7NRPtooMKSDAFLCEChN57HjvGY2THjX_A)',
+              'linear-gradient(rgba(28,27,27,0.85),rgba(28,27,27,0.85)), url(/images/mobile-tyre-fitting-manchester.webp)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -43,7 +46,7 @@ export default function AboutPage() {
               className="mb-8 sm:mb-10 text-white/90 text-base sm:text-lg leading-relaxed"
               style={{ fontFamily: 'Inter, sans-serif' }}
             >
-              Reliable 24/7 mobile tyre fitting and roadside assistance service across the UK.
+              Reliable 24/7 mobile tyre fitting and roadside assistance service across Greater Manchester.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
               <a
@@ -90,13 +93,14 @@ export default function AboutPage() {
                 </h2>
                 <p className="text-[#5c403c] text-base sm:text-lg leading-relaxed">
                   One Stop Tyres 24/7 is a premier provider of emergency roadside services, specialized
-                  in high-urgency mobile tyre solutions. Our fleet operates round-the-clock across the
-                  United Kingdom, ensuring that no driver is ever left stranded for long.
+                  in high-urgency mobile tyre solutions. Our fleet operates round-the-clock across
+                  Greater Manchester, ensuring that no driver is ever left stranded for long.
                 </p>
                 <p className="text-[#5c403c] text-base sm:text-lg leading-relaxed">
                   With a focus on speed, reliability, and technical excellence, we have built a reputation
                   as the Greater Manchester authority in mobile tyre fitting. Our technicians are distributed
-                  strategically to reach you within 30 to 60 minutes, regardless of your location.
+                  strategically to reach you within 20–30 minutes, regardless of your location. We&apos;re
+                  based at {ADDRESS}.
                 </p>
               </div>
               {/* Mission box */}
@@ -123,14 +127,18 @@ export default function AboutPage() {
             <div className="relative pb-6 lg:pb-0">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_NmVjBqj8FvBFnOAK-O_Ly3LE0tRyMy7jCyosszgjTJASD371IbmAnqzN1mytLWdo71xhYWVbO2F9OhzPXfL_dUgpvHaiQMaTeudByXKqXuzQNXwWjfH7uKkyDpggtcU6goxbqh2rlyIic5cL3iA0R7ebbTXSiy-AOMzsgBUZF3Qk6Im0aDX6aYvA7QE-t23eI6yo68mSb8GIWENmn5BoE56_ttuu9dA6gXjkbJYmf9VoWoJt7NGbht7J8v1XYcrT6zlt5NlLq-M"
+                src="/images/professional-mobile-tyre-fitting.webp"
                 alt="Mobile service technician"
                 className="rounded-xl shadow-xl w-full object-cover h-[300px] sm:h-[400px] lg:h-[500px]"
+                width={800}
+                height={600}
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute bottom-0 left-2 sm:-bottom-6 sm:-left-6 bg-[#b70011] text-white p-4 sm:p-6 rounded-lg shadow-lg">
                 <span className="block text-3xl sm:text-4xl font-black">24/7</span>
                 <span className="block uppercase text-xs sm:text-sm font-semibold">
-                  UK Coverage
+                  Greater Manchester Coverage
                 </span>
               </div>
             </div>
@@ -151,7 +159,7 @@ export default function AboutPage() {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {[
-                { icon: 'tire_repair', title: 'Mobile tyre fitting', desc: 'We bring the tyre shop to you, anywhere in the UK, at any time of day.' },
+                { icon: 'tire_repair', title: 'Mobile tyre fitting', desc: 'We bring the tyre shop to you, anywhere in Greater Manchester, at any time of day.' },
                 { icon: 'build', title: 'Emergency puncture repair', desc: 'Swift repairs to get you moving without needing a full tyre replacement.' },
                 { icon: 'bolt', title: 'Jump start services', desc: 'Flat battery? Our technicians carry professional grade boosters for all vehicles.' },
                 { icon: 'settings_input_component', title: 'TPMS reset', desc: 'Electronic sensor calibration to ensure your safety monitoring is accurate.' },
@@ -197,7 +205,7 @@ export default function AboutPage() {
               <ul className="space-y-5 sm:space-y-6">
                 {[
                   { title: '24/7 Availability', desc: 'Day or night, rain or shine, we are always on call.' },
-                  { title: 'Fast Response Across Greater Manchester', desc: 'Average arrival time of 20-30 minutes across most UK postcodes.' },
+                  { title: 'Fast Response Across Greater Manchester', desc: 'Average arrival time of 20-30 minutes across Greater Manchester.' },
                   { title: 'Transparent Pricing', desc: 'No hidden fees. Upfront quotes provided before we dispatch.' },
                   { title: 'Experienced Technicians', desc: 'Fully certified experts with years of roadside experience.' },
                 ].map((item) => (
@@ -246,13 +254,13 @@ export default function AboutPage() {
                   <span className="text-[10px] sm:text-xs uppercase font-bold tracking-widest block mb-1 sm:mb-2 opacity-60">
                     Avg. Response
                   </span>
-                  <span className="text-xl sm:text-2xl font-black">45 MIN</span>
+                  <span className="text-xl sm:text-2xl font-black">20–30 MIN</span>
                 </div>
                 <div className="flex-1 bg-white/10 p-3 sm:p-4 rounded-lg backdrop-blur-sm">
                   <span className="text-[10px] sm:text-xs uppercase font-bold tracking-widest block mb-1 sm:mb-2 opacity-60">
                     Rating
                   </span>
-                  <span className="text-xl sm:text-2xl font-black">4.9/5.0</span>
+                  <span className="text-xl sm:text-2xl font-black">5.0/5.0</span>
                 </div>
               </div>
             </div>
@@ -272,7 +280,7 @@ export default function AboutPage() {
               Need Immediate Help?
             </h2>
             <p className="mb-6 sm:mb-10 opacity-90 text-base sm:text-lg leading-relaxed">
-              Our team is available 24/7 to assist you anywhere across the UK. Professional help is just
+              Our team is available 24/7 to assist you anywhere across Greater Manchester. Professional help is just
               a phone call away.
             </p>
             <a
@@ -289,8 +297,7 @@ export default function AboutPage() {
               >
                 phone_enabled
               </span>
-              <span className="hidden sm:inline">07759 708 646: 07759 708 646</span>
-              <span className="sm:hidden">07759 708 646</span>
+              07759 708 646
             </a>
           </div>
         </section>

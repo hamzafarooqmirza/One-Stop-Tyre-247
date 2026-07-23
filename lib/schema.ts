@@ -108,6 +108,81 @@ export interface ArticleSchemaOptions {
   dateModified?: string
 }
 
+const AREA_SERVED = [
+  { '@type': 'City', name: 'Manchester' },
+  { '@type': 'City', name: 'Bolton' },
+  { '@type': 'City', name: 'Bury' },
+  { '@type': 'City', name: 'Oldham' },
+  { '@type': 'City', name: 'Rochdale' },
+  { '@type': 'City', name: 'Stockport' },
+  { '@type': 'City', name: 'Tameside' },
+  { '@type': 'City', name: 'Trafford' },
+  { '@type': 'City', name: 'Wigan' },
+] as const
+
+/** Full LocalBusiness entity — injected once, site-wide, via the root layout. */
+export function localBusinessSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': ['LocalBusiness', 'AutoRepair'],
+    '@id': BUSINESS_ID,
+    name: 'One Stop Tyres 24/7',
+    url: SITE_URL,
+    telephone: BUSINESS_PHONE,
+    email: 'info@onestoptyres247.co.uk',
+    image: `${SITE_URL}/og-image.webp`,
+    logo: `${SITE_URL}/icon.webp`,
+    description:
+      '24/7 emergency mobile tyre fitting across Greater Manchester. Professional technicians reach you at home, work, or roadside within 20–30 minutes.',
+    priceRange: '££',
+    address: BUSINESS_PROVIDER.address,
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 53.5454538598072,
+      longitude: -2.1049285233703974,
+    },
+    areaServed: AREA_SERVED,
+    openingHoursSpecification: OPENING_HOURS_SPEC,
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5.0',
+      bestRating: '5',
+      worstRating: '1',
+      reviewCount: '1200',
+    },
+    hasMap: 'https://maps.app.goo.gl/tqGMogzsNNn8EXjH8',
+  }
+}
+
+export interface ItemListEntry {
+  name: string
+  url: string
+}
+
+export function itemListSchema(items: ItemListEntry[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: items.map((it, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: it.name,
+      url: it.url,
+    })),
+  }
+}
+
+export function aboutPageSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    '@id': `${SITE_URL}/about#aboutpage`,
+    url: `${SITE_URL}/about`,
+    name: 'About One Stop Tyres 24/7',
+    mainEntity: { '@id': BUSINESS_ID },
+  }
+}
+
 export function articleSchema({ slug, headline, description, image, datePublished, dateModified }: ArticleSchemaOptions) {
   const url = `${SITE_URL}/${slug}`
   return {

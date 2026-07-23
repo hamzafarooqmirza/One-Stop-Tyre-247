@@ -111,7 +111,7 @@ export default function EmergencyTyreFitting24HourPage() {
         {/* Background image */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/tyre fitting in emergergency-airanko (1).webp"
+          src="/images/tyre-fitting-in-emergency.webp"
           alt="24 hour emergency tyre fitting"
           className="absolute inset-0 w-full h-full object-cover object-center"
           width={1600}
@@ -202,7 +202,7 @@ export default function EmergencyTyreFitting24HourPage() {
           <div className="w-full lg:w-1/2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp"
+              src="/images/mobile-tyre-fitting-one-stop-tyres-24-7.webp"
               alt="24 hour mobile tyre experts"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}
@@ -305,7 +305,7 @@ export default function EmergencyTyreFitting24HourPage() {
           <div className="w-full lg:w-1/2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/Tyre fitting at home-airanko (1).webp"
+              src="/images/tyre-fitting-at-home.webp"
               alt="Mobile tyre fitting at home"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}

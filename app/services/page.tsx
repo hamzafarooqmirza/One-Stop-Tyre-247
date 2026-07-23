@@ -1,18 +1,18 @@
-import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
-import { breadcrumbSchema, SITE_URL } from '@/lib/schema'
+import { breadcrumbSchema, itemListSchema, SITE_URL } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'All Tyre Services | One Stop Tyres 24/7',
+export const metadata = buildMetadata({
+  title: 'Mobile Tyre & Roadside Services Manchester | One Stop Tyres 24/7',
   description:
-    'Explore our full range of mobile tyre services: emergency tyre fitting, puncture repair, jump starts, TPMS reset and locking nut removal, available 24/7 UK-wide.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/services' },
-}
+    'All our 24/7 mobile services in Greater Manchester: tyre fitting, puncture repair, jump starts, TPMS reset & locking nut removal — fitted at your location.',
+  path: '/services',
+})
 
 const services = [
   {
     href: '/mobile-tyre-fitting',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCElGeNknzc8tbZCtwXI6ShEouRpz5AJNdTuPAfhj3Iug5GwouWvmzE1C6aM66i4WdGax_dcTkOiaqi37yWVuhbfAI9W5tM6M6Rh5iV2Ri0JvwL4kKrd35wNxBNMiNpn1rbBVOMhm8SQ0QdpyxD2cUsmBxP3lW2ZpHTuhoZO8v3jKV6khvNCisX0gIB_EqS7GSHhDnUjjKyg0mvDRUVs3zrIdz32f6Nz-qq-FonAXxmLQLatjW4oE-lHHKz3KzelIzRJTMiMvIAyPw',
+    img: '/images/mobile-tyre-fitting-one-stop-tyres-24-7.webp',
     title: 'Mobile Tyre Fitting',
     desc: 'Expert tyre fitting at your location, whether you\'re at work or stuck on the roadside. We handle all vehicle types and tyre brands.',
     badge: 'Fast Response',
@@ -20,7 +20,7 @@ const services = [
   },
   {
     href: '/home-tyre-fitting',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAs_JAhbnO42-k3pwlSz0TGgdO10Dzogn6t53OaAT0Eo397zbr0KI6XdDg0R1mwsTTqzKpTRcxH3GMVUPPe2zFX2Z6UfBxTZBfN6iEyF7vWjsJlpELJ4YEjmQ6W2h6txonOOduvoZbLX6UPFlyeWfSQTDK6WPDTFE9lB5pd_ZFOUzZl3GiJZoEB8KCeRjLLR5p1h0hV4eyaYE-DHIjThjlJipQixTz1MzZRZxx8JAWoiz3s0FgpJHmqSGQUL-XNHYSoXCZ7wXlZucM',
+    img: '/images/home-tyre-fitting.webp',
     title: 'Home Tyre Fitting',
     desc: "Don't waste time at a garage. We come to your home to fit new tyres while you relax or work, ensuring maximum convenience.",
     badge: 'All Sizes',
@@ -28,7 +28,7 @@ const services = [
   },
   {
     href: '/emergency-puncture-repair',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDUzM2QMgRm1dhyIUbenteAsjgXGyXk3h4MdE5UIae1hRYywv3d0VrN4nVZZV9w4Mz-XTNev_wlAp7mVq6LRGtGi5R8SSqpleEVVvfjat1VR6uaaIwv2qDdJM8bK21QUruJfGp-3bJdCqBOiLFpZjOzvyQqnodctvoUtkfDPyQQ6AiXgN-IErK_4OQZVS-JHIDXA1I0W_HfixD-Oq6BdNj1yavFfx-I1AI45fbHNlknn6IhypQ5-BUm64Qi0ONoSpcJrRkFNtF7OyY',
+    img: '/images/tyres-fitting-anywhere.webp',
     title: 'Emergency Puncture Repair',
     desc: 'Stuck with a flat? Our rapid response team will arrive quickly to repair your puncture and get you back on the road safely.',
     badge: '24/7 Support',
@@ -36,7 +36,7 @@ const services = [
   },
   {
     href: '/jump-start',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC2gQqnD5XtI8I7EbQmVR-hR7HtTKVZDZ8GdCUvmvrSSUTxRVocGc5SSWZqBp9khgwjgpLgirzqVJgdDmjIt-BOhfhj-HiBF0-sZu8-1O20Aufjm4mq9TxvBWsn5gMbgkh0z4OZIiI1AHWTuLX661biMF4GgZpMozotzQ_zblrEFqg4dRJzfESK0Q4jv9LnqJei-DG55VHN1DHWTGbZT2PJ1xFEq2VVZ6OCEeF7y_Wmt9nGgIsDIui60Ju9uQpFL0WVPwKdjku4v6E',
+    img: '/images/professional-mobile-tyre-fitting.webp',
     title: 'Jump Start',
     desc: 'Flat battery? Our technicians carry professional jumpstart equipment to revive your vehicle quickly and diagnose any issues.',
     badge: 'Fast Response',
@@ -44,7 +44,7 @@ const services = [
   },
   {
     href: '/tpms-reset',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCArJmMKP_sxgl4YpBFhjCqARE72y0R4JBpKlA8UvTRZx792pgiRNwX1EAhUU45c9rMvoCPaBh28FXZo7sFC9wTNkLW2bpzfiRpuk7d2MZFx3vHp0IqjtLGB9wahW3NYv5fEZt31dCqq0dDbcrI6tzzMX1b1C1Qr8fXgLaBGk398Pnr5EALBbd5-5eeDxwH2_QULRtSxiEZrlWH-E-eRbM8ncM4BHz2fL4OxcCEQylnxjEAaFwoebcmSd3TrML71jwCav9EhC-wtdE',
+    img: '/images/mobile-tyre-fitting-service.webp',
     title: 'TPMS Reset',
     desc: "Tyre pressure sensors acting up? We provide full TPMS diagnostics and resets to ensure your vehicle's safety systems are correct.",
     badge: 'Expert Reset',
@@ -52,7 +52,7 @@ const services = [
   },
   {
     href: '/locking-nut-removal',
-    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCWHgmjyky0L8OZK0amuT9Uzmu6wA1GsrabMiD_r-YRIk6R_x2eT7kp04pUPuY8BAM_PxI68UE9A7skfD71wPCTNep2GXLcH3cO1w9z6EhJ3RObeKbU4UyxbV0P9IXDcznooLBPMQMZf3veg7xe5hp2EUUtVDfZe2wl1WqLfG1G8RrflYEFPs9ARDIpMHx-tVdWEY23P0fuJHRxmonlEZS9jcSLYt7PX7udyIWgOiKkYNKcZy9gT_TeZDBn7HkRArShIyTfnzwX_ao',
+    img: '/images/mobile-tyre-fitting-manchester.webp',
     title: 'Locking Nut Removal',
     desc: "Lost your key? We use specialized equipment to safely remove locking wheel nuts without damaging your precious alloy wheels.",
     badge: 'Damage Free',
@@ -60,7 +60,7 @@ const services = [
   },
   {
     href: '/24-hour-emergency-tyre-fitting',
-    img: '/images/tyre fitting in emergergency-airanko (1).webp',
+    img: '/images/tyre-fitting-in-emergency.webp',
     title: '24 Hour Emergency Tyre Fitting',
     desc: 'Round-the-clock emergency tyre fitting wherever you are stranded — roadside, car park or driveway. We respond day and night.',
     badge: '24/7',
@@ -68,7 +68,7 @@ const services = [
   },
   {
     href: '/cheap-mobile-tyre-fitting',
-    img: '/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp',
+    img: '/images/mobile-tyre-fitting-one-stop-tyres-24-7.webp',
     title: 'Cheap Mobile Tyre Fitting',
     desc: 'Quality tyres at affordable prices. Budget, mid-range and premium options fitted at your home, workplace or roadside.',
     badge: 'Best Value',
@@ -76,7 +76,7 @@ const services = [
   },
   {
     href: '/tyre-fitting-near-me',
-    img: '/images/Tyre fitting at home-airanko (1).webp',
+    img: '/images/tyre-fitting-at-home.webp',
     title: 'Tyre Fitting Near Me',
     desc: 'We come to your home, workplace or roadside. Fast local tyre fitting without the garage wait.',
     badge: 'Local Service',
@@ -90,17 +90,22 @@ const _breadcrumbSchema = breadcrumbSchema([
   { name: 'Our Services', item: `${SITE_URL}/services` },
 ])
 
+const _itemListSchema = itemListSchema(
+  services.map((s) => ({ name: s.title, url: `${SITE_URL}${s.href}` }))
+)
+
 export default function ServicesPage() {
   return (
     <div className="bg-surface font-body-md text-on-background antialiased">
       <JsonLd data={_breadcrumbSchema} />
+      <JsonLd data={_itemListSchema} />
       {/* Hero Section */}
       <section className="relative min-h-[400px] sm:min-h-[500px] lg:min-h-[614px] flex items-center justify-center overflow-hidden py-16 sm:py-20">
         <div className="absolute inset-0 bg-secondary/80 mix-blend-multiply z-10" />
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className="absolute inset-0 w-full h-full object-cover"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSq0GYlxYlG6b5vlVNaXGT7ME_FD2gUyedBR-WE7hfWoO2kPlta2iR9qxSRFur7398_kjvVEPAyRLcNCGXUzcgJmM1n_MJs_8BYHZAudP1FHDADUJ9zJqof6MixfWmONNIWfLIIquw-g12805_q_NHWNaUNJJzEmWMwubhI-v1ilMOvHwfzJJsIFRM8bwlEn3fPQnQLc5pGb304YcqPXiEHLyFydx8hO54qoGbXfMBXUipKw9LDEHLD0Rl-TRu4jsuoZW2OQOxV0Y"
+          src="/images/mobile-tyre-fitting-manchester.webp"
           alt="One Stop Tyres 24/7 mobile services van"
           width={1920}
           height={614}
@@ -186,7 +191,7 @@ export default function ServicesPage() {
                   </div>
                   <div>
                     <h4 className="font-label-bold text-sm sm:text-label-bold text-secondary sm:text-lg mb-1">Ultra-Fast Response</h4>
-                    <p className="font-body-md text-sm sm:text-body-md text-on-surface-variant">We aim for 20-30 minute arrival times across all UK districts.</p>
+                    <p className="font-body-md text-sm sm:text-body-md text-on-surface-variant">We aim for 20-30 minute arrival times across Greater Manchester.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3 sm:gap-4">
@@ -214,7 +219,7 @@ export default function ServicesPage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 className="relative rounded-2xl shadow-xl w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMLGLpZ4ZKUqHAkVGDqkL2f86zQgkGJjC8sfPRHpFev14mtEUsv40HTeNCi92ur14aJr5DZv4x-u83YoV6RZhcB_VbHhvJ4pFWTJbNK-Bm0hNprLSrVFnNJcBT7W0ExEnHca7UeL_Lbz1AttPkgXLUJ79_VF6nLpGhttpQDmi9ISlUjVpfAmATerQXI4vm_NjJ07phU4zYgML5mu879Aeq2Bu9rhcc3JerikOxUwIrluK5bab_Y6S2xK9IqVtFpHn7rEtsKoaR0yE"
+                src="/images/professional-mobile-tyre-fitting.webp"
                 alt="Professional tyre technician from One Stop Tyres 24/7"
                 width={800}
                 height={500}
@@ -264,7 +269,7 @@ export default function ServicesPage() {
           <span className="material-symbols-outlined text-xl">emergency</span>
           <span className="text-[9px] sm:text-[10px] font-semibold font-h3">Emergency</span>
         </a>
-        <a className="flex flex-col items-center justify-center text-gray-500 py-1 px-2" href="#">
+        <a className="flex flex-col items-center justify-center text-gray-500 py-1 px-2" href="/contact">
           <span className="material-symbols-outlined text-xl">person</span>
           <span className="text-[9px] sm:text-[10px] font-semibold font-h3">Account</span>
         </a>

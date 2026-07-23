@@ -108,7 +108,7 @@ export default function CheapMobileTyreFittingPage() {
       <section className="relative min-h-[580px] lg:min-h-[640px] flex items-center overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/tyre fitting in emergergency-airanko (1).webp"
+          src="/images/tyre-fitting-in-emergency.webp"
           alt="Cheap mobile tyre fitting service"
           className="absolute inset-0 w-full h-full object-cover object-center"
           width={1600}
@@ -192,7 +192,7 @@ export default function CheapMobileTyreFittingPage() {
           <div className="w-full lg:w-1/2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp"
+              src="/images/mobile-tyre-fitting-one-stop-tyres-24-7.webp"
               alt="Affordable mobile tyre fitting service"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}
@@ -293,7 +293,7 @@ export default function CheapMobileTyreFittingPage() {
           <div className="w-full lg:w-1/2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/Tyre fitting at home-airanko (1).webp"
+              src="/images/tyre-fitting-at-home.webp"
               alt="Cheap mobile tyre fitting at home"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}

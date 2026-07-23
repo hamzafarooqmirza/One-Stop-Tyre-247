@@ -43,7 +43,7 @@ export default function M60Page() {
         <section
           className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-start text-left px-4 sm:px-8 lg:px-16"
           style={{
-            backgroundImage: "linear-gradient(to right, rgba(15, 23, 42, 0.96) 0%, rgba(15, 23, 42, 0.75) 100%), url('/images/Mobile%20Tyre%20Fitting%20One%20Stop%20Tyres%2024%207.webp')",
+            backgroundImage: "linear-gradient(to right, rgba(15, 23, 42, 0.96) 0%, rgba(15, 23, 42, 0.75) 100%), url('/images/mobile-tyre-fitting-one-stop-tyres-24-7.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}
@@ -291,7 +291,7 @@ export default function M60Page() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 className="relative z-10 rounded-2xl sm:rounded-3xl shadow-2xl border-4 sm:border-8 border-slate-50 w-full object-cover"
-                src="/images/Tyre fitting at home-airanko (1).webp"
+                src="/images/tyre-fitting-at-home.webp"
                 alt="Mobile tyre fitting technician on the M60"
                 width={800}
                 height={600}
@@ -346,7 +346,7 @@ export default function M60Page() {
         </section>
 
         {/* ── 5. WHY M60 DRIVERS CHOOSE US ──────────────────── */}
-        <WhyChooseUs city="M60" image="/images/Mobile Tyre Fitting Manchester-airanko (1).webp" />
+        <WhyChooseUs city="M60" image="/images/mobile-tyre-fitting-manchester.webp" />
 
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />

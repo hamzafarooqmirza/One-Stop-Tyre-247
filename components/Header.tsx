@@ -437,6 +437,14 @@ export default function Header() {
               </div>
             </div>
 
+            {/* Guides */}
+            <a
+              href="/guides"
+              className={isActive('/guides') ? 'text-[#b70011] border-b-2 border-[#b70011] pb-0.5' : 'text-slate-700 hover:text-[#b70011] transition-colors'}
+            >
+              Guides
+            </a>
+
             {/* Contact */}
             <a
               href="/contact"
@@ -674,6 +682,19 @@ export default function Header() {
                 </div>
               </div>
             </div>
+
+            {/* Guides */}
+            <a
+              href="/guides"
+              onClick={() => setMobileOpen(false)}
+              className={`group flex items-center gap-4 px-5 py-3.5 mx-2 rounded-xl mb-0.5 transition-all ${isActive('/guides') ? 'bg-red-50 text-[#b70011]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#b70011]'}`}
+            >
+              <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isActive('/guides') ? 'bg-[#b70011]/10' : 'bg-slate-100 group-hover:bg-[#b70011]/10'}`}>
+                <span className={`material-symbols-outlined text-[18px] transition-colors ${isActive('/guides') ? 'text-[#b70011]' : 'text-slate-500 group-hover:text-[#b70011]'}`}>menu_book</span>
+              </div>
+              <span className="font-semibold text-sm flex-1">Guides</span>
+              {isActive('/guides') ? <span className="w-1.5 h-1.5 rounded-full bg-[#b70011] shrink-0" /> : <span className="material-symbols-outlined text-[16px] text-slate-300 group-hover:text-[#b70011]/40 transition-colors">chevron_right</span>}
+            </a>
 
             {/* Contact */}
             <a

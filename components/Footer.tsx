@@ -129,6 +129,7 @@ export default function Footer() {
         {/* Legal links */}
         <div className="flex flex-wrap justify-center sm:justify-start gap-x-5 gap-y-2">
           {[
+            { label: 'Guides', href: '/guides' },
             { label: 'Privacy Policy', href: '/privacy-policy' },
             { label: 'Cookie Policy', href: '/cookie-policy' },
             { label: 'Terms & Conditions', href: '/terms' },

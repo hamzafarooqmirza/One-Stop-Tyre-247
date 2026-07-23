@@ -19,18 +19,21 @@ const guides = [
     desc: 'The real difference between run-flat and normal tyres, whether you can mix them, and what it costs to switch — explained without the jargon.',
     href: '/guides/run-flat-vs-normal-tyres-manchester',
     readTime: '7 min read',
+    published: '23 July 2026',
   },
   {
     title: 'What to Do If You Get a Flat Tyre on the M60 (or Any Manchester Motorway)',
     desc: 'A step-by-step safety guide for motorway punctures and blowouts — where to stop, who to call, and how to get moving again without a tow truck.',
     href: '/guides/what-to-do-flat-tyre-m60-manchester-motorway',
     readTime: '9 min read',
+    published: '19 July 2026',
   },
   {
     title: 'How to Tell If Your Tyre Can Be Repaired or Needs Replacing',
     desc: 'A practical, safety-first checklist covering puncture location, size, tread depth and the warning signs that mean a tyre must be replaced.',
     href: '/guides/how-to-tell-if-your-tyre-can-be-repaired-or-needs-replacing',
     readTime: '8 min read',
+    published: '19 July 2026',
   },
 ]
 
@@ -63,7 +66,9 @@ export default function GuidesIndexPage() {
               href={g.href}
               className="group flex flex-col bg-slate-50 border border-slate-100 rounded-2xl p-5 sm:p-6 hover:border-[#b70011]/30 hover:shadow-md transition-all"
             >
-              <span className="text-xs font-semibold text-slate-400 mb-2">{g.readTime}</span>
+              <span className="text-xs font-semibold text-slate-400 mb-2">
+                Published {g.published} · {g.readTime}
+              </span>
               <h2
                 className="text-lg sm:text-xl font-bold text-[#0f172a] mb-2 group-hover:text-[#b70011] transition-colors"
                 style={{ fontFamily: 'var(--font-work-sans)' }}

@@ -118,7 +118,7 @@ export default function FlatTyreMotorwayGuide() {
             The exact steps to take, in order — where to stop, who to call, and how to get
             back on the road without a tow truck.
           </p>
-          <p className="text-slate-400 text-sm mt-4">Updated 19 July 2026 · 9 min read</p>
+          <p className="text-slate-400 text-sm mt-4">Published 19 July 2026 · 9 min read</p>
         </div>
       </section>
 

@@ -1,29 +1,11 @@
-import type { Metadata } from 'next'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Mobile Tyre Fitting UK | 24/7 Emergency Tyre Service',
+export const metadata = buildMetadata({
+  title: 'Mobile Tyre Fitting Manchester | 24/7 Emergency | One Stop Tyres',
   description:
-    'Need a mobile tyre fitter fast? Our technicians offer 24/7 emergency tyre fitting and same day tyre replacement at your home, work or roadside, UK-wide.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/' },
-  openGraph: {
-    title: 'One Stop Mobile Tyres 24/7 | Emergency Mobile Tyre Fitting Manchester',
-    description:
-      'Need a mobile tyre fitter fast? Our technicians offer 24/7 emergency tyre fitting and same day tyre replacement at your home, work or roadside, UK-wide.',
-    url: 'https://onestoptyres247.co.uk',
-    siteName: 'One Stop Mobile Tyres 24/7',
-    images: [
-      {
-        url: '/og-image.webp',
-        width: 1200,
-        height: 630,
-        alt: '24/7 Mobile Tyre Fitting across Manchester & Greater Manchester — One Stop Mobile Tyres',
-        type: 'image/webp',
-      },
-    ],
-    locale: 'en_GB',
-    type: 'website',
-  },
-}
+    '24/7 emergency mobile tyre fitting across Manchester & Greater Manchester. 20–30 min response at home, work or roadside. Rated 5.0 by 1,200+ drivers. Call now.',
+  path: '/',
+})
 
 import BrandCarousel from '@/components/BrandCarousel'
 import QuoteForm from '@/components/QuoteForm'
@@ -69,57 +51,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 }
 
 /* ─── Structured data ───────────────────────────────────── */
-const localBusinessSchema = {
-  '@context': 'https://schema.org',
-  '@type': ['LocalBusiness', 'AutoRepair'],
-  '@id': 'https://onestoptyres247.co.uk/#business',
-  name: 'One Stop Mobile Tyres 24/7',
-  url: 'https://onestoptyres247.co.uk',
-  telephone: '+447759708646',
-  email: 'info@onestoptyres247.co.uk',
-  image: 'https://onestoptyres247.co.uk/og-image.webp',
-  logo: 'https://onestoptyres247.co.uk/icon.webp',
-  description:
-    '24/7 emergency mobile tyre fitting across Greater Manchester. Professional technicians reach you at home, work, or roadside within 20–30 minutes.',
-  priceRange: '££',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Manchester',
-    addressRegion: 'Greater Manchester',
-    addressCountry: 'GB',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 53.5454538598072,
-    longitude: -2.1049285233703974,
-  },
-  areaServed: [
-    { '@type': 'City', name: 'Manchester' },
-    { '@type': 'City', name: 'Bolton' },
-    { '@type': 'City', name: 'Bury' },
-    { '@type': 'City', name: 'Oldham' },
-    { '@type': 'City', name: 'Rochdale' },
-    { '@type': 'City', name: 'Stockport' },
-    { '@type': 'City', name: 'Tameside' },
-    { '@type': 'City', name: 'Trafford' },
-    { '@type': 'City', name: 'Wigan' },
-  ],
-  openingHoursSpecification: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-    opens: '00:00',
-    closes: '23:59',
-  },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '5.0',
-    bestRating: '5',
-    worstRating: '1',
-    reviewCount: '1200',
-  },
-  hasMap: 'https://maps.app.goo.gl/tqGMogzsNNn8EXjH8',
-}
-
+/* Full LocalBusiness entity is injected site-wide via the root layout. */
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -272,7 +204,6 @@ const websiteSchema = {
 export default function Home() {
   return (
     <div className="text-[#1c1b1b]" style={{ fontFamily: 'var(--font-inter)' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
@@ -434,21 +365,21 @@ export default function Home() {
                 href: '/emergency-puncture-repair',
               },
               {
-                img: '/images/tyre fitting in emergergency-airanko (1).webp',
+                img: '/images/tyre-fitting-in-emergency.webp',
                 title: '24 Hour Emergency Tyre Fitting',
                 desc: 'Genuine 24/7 emergency tyre replacement, day or night, 365 days a year.',
                 badge: 'DAY & NIGHT',
                 href: '/24-hour-emergency-tyre-fitting',
               },
               {
-                img: '/images/Tyres fitting anywhere-airanko (1).webp',
+                img: '/images/tyres-fitting-anywhere.webp',
                 title: 'Cheap Mobile Tyre Fitting',
                 desc: 'Budget, mid-range and premium tyre options, all professionally fitted at competitive prices.',
                 badge: 'BEST PRICES',
                 href: '/cheap-mobile-tyre-fitting',
               },
               {
-                img: '/images/Mobile Tyre Fitting One Stop Tyres 24 7.webp',
+                img: '/images/mobile-tyre-fitting-one-stop-tyres-24-7.webp',
                 title: 'Tyre Fitting Near Me',
                 desc: 'Search no further — our mobile technicians reach almost anywhere in Greater Manchester fast.',
                 badge: 'NEAR YOU',
@@ -542,7 +473,7 @@ export default function Home() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               className="relative z-10 rounded-2xl sm:rounded-3xl shadow-2xl border-4 sm:border-8 border-slate-50 w-full object-cover"
-              src="/images/Mobile Tyre Fitting Manchester-airanko (1).webp"
+              src="/images/mobile-tyre-fitting-manchester.webp"
               alt="Mobile tyre fitting technician in Manchester"
               width={800}
               height={600}

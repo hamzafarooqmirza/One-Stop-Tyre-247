@@ -21,7 +21,7 @@ const _articleSchema = articleSchema({
   headline: 'How to Tell If Your Tyre Can Be Repaired or Needs Replacing',
   description:
     'A practical, safety-first guide to checking puncture location, size, tread depth and damage so you know whether your tyre can be repaired or needs replacing.',
-  image: `${SITE_URL}/images/tyre%20fitting%20in%20emergergency-airanko%20(1).webp`,
+  image: `${SITE_URL}/images/tyre-fitting-in-emergency.webp`,
   datePublished: '2026-07-19',
 })
 
@@ -77,7 +77,7 @@ export default function TyreRepairOrReplaceGuide() {
       <section className="relative min-h-[360px] sm:min-h-[420px] flex items-end overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/tyre fitting in emergergency-airanko (1).webp"
+          src="/images/tyre-fitting-in-emergency.webp"
           alt="Technician inspecting a punctured tyre to decide between repair and replacement"
           className="absolute inset-0 w-full h-full object-cover object-center"
           width={1600}

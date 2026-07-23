@@ -112,7 +112,7 @@ export default function TpmsResetPage() {
       <section className="relative min-h-[580px] lg:min-h-[640px] flex items-center overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/Mobile tyre fitting service.webp"
+          src="/images/mobile-tyre-fitting-service.webp"
           alt="TPMS reset service"
           className="absolute inset-0 w-full h-full object-cover object-center"
           width={1600}
@@ -195,7 +195,7 @@ export default function TpmsResetPage() {
           <div className="w-full lg:w-1/2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/professional mobile tyre fitting.webp"
+              src="/images/professional-mobile-tyre-fitting.webp"
               alt="TPMS sensor reset and diagnostic service"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}
@@ -297,7 +297,7 @@ export default function TpmsResetPage() {
           <div className="w-full lg:w-1/2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/home tyre fitting (1).webp"
+              src="/images/home-tyre-fitting.webp"
               alt="Mobile TPMS reset across Greater Manchester"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}

@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 
 const SLIDES = [
   {
-    image: '/images/Mobile%20tyre%20fitting%20service.webp',
+    image: '/images/mobile-tyre-fitting-service.webp',
     badge: 'Mobile Tyre Fitting & Emergency Tyre Repair',
     heading: 'Mobile Tyre Fitting\nNear Me – 24/7 Service',
     body: 'Need a mobile tyre fitter fast? Our fully equipped mobile tyre fitting vans provide emergency tyre repair, mobile tyre replacement and same day tyre fitting at your home, workplace or roadside location.',
@@ -18,7 +18,7 @@ const SLIDES = [
     ],
   },
   {
-    image: '/images/professional%20mobile%20tyre%20fitting.webp',
+    image: '/images/professional-mobile-tyre-fitting.webp',
     badge: 'Emergency Mobile Tyre Service',
     heading: 'Flat Tyre?\nWe Come To You',
     body: 'Whether you need mobile tyre repair, emergency tyre replacement, or roadside tyre assistance, our experienced technicians can get you safely back on the road — no waiting for recovery trucks.',
@@ -32,7 +32,7 @@ const SLIDES = [
     ],
   },
   {
-    image: '/images/home%20tyre%20fitting%20(1).webp',
+    image: '/images/home-tyre-fitting.webp',
     badge: 'Same Day Mobile Tyre Replacement',
     heading: 'Professional Mobile\nTyre Fitters Near You',
     body: 'Our mobile tyre fitting service covers emergency call-outs, puncture repairs, tyre replacements and tyre recovery assistance. We bring the tyre shop directly to your location.',

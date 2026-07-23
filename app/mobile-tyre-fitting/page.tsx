@@ -361,6 +361,17 @@ export default function MobileTyreFittingPage() {
             </div>
             <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all shrink-0">arrow_forward</span>
           </a>
+          <a
+            href="/guides/run-flat-vs-normal-tyres-manchester"
+            className="group flex items-center justify-between gap-4 bg-slate-50 border border-slate-100 rounded-2xl p-5 sm:p-6 mb-2 hover:border-[#b70011]/30 hover:shadow-md transition-all"
+          >
+            <div>
+              <span className="text-xs font-bold text-[#b70011] uppercase tracking-widest mb-1 block">Replacing run-flats?</span>
+              <p className="font-bold text-[#0f172a]">Run-Flat vs Normal Tyres: What You Need to Know</p>
+              <p className="text-sm text-slate-500">The real difference, whether you can mix them, and what it costs to switch.</p>
+            </div>
+            <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all shrink-0">arrow_forward</span>
+          </a>
         </div>
       </section>
 

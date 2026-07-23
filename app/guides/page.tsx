@@ -15,6 +15,12 @@ const _breadcrumbSchema = breadcrumbSchema([
 
 const guides = [
   {
+    title: 'Run-Flat vs Normal Tyres: What Manchester Drivers Need to Know Before Replacing Theirs',
+    desc: 'The real difference between run-flat and normal tyres, whether you can mix them, and what it costs to switch — explained without the jargon.',
+    href: '/guides/run-flat-vs-normal-tyres-manchester',
+    readTime: '7 min read',
+  },
+  {
     title: 'What to Do If You Get a Flat Tyre on the M60 (or Any Manchester Motorway)',
     desc: 'A step-by-step safety guide for motorway punctures and blowouts — where to stop, who to call, and how to get moving again without a tow truck.',
     href: '/guides/what-to-do-flat-tyre-m60-manchester-motorway',

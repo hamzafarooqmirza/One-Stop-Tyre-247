@@ -107,7 +107,7 @@ export default function RunFlatVsNormalGuide() {
             The real difference, whether you can mix them, and what it costs to switch —
             explained without the jargon.
           </p>
-          <p className="text-slate-400 text-sm mt-4">Updated 23 July 2026 · 7 min read</p>
+          <p className="text-slate-400 text-sm mt-4">Published 23 July 2026 · 7 min read</p>
         </div>
       </section>
 

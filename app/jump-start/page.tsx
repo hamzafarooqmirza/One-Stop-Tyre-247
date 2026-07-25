@@ -1,13 +1,13 @@
-import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Jump Start Service | Mobile Battery Jump Start 24/7',
+export const metadata = buildMetadata({
+  title: 'Jump Start Service Manchester | 24/7 Mobile Battery Help',
   description:
-    'Flat battery? Our mobile jump start service comes to you 24/7 with ECU-safe equipment and a free battery health test to get you back on the road fast.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/jump-start' },
-}
+    'Flat battery? 24/7 mobile jump starts across Greater Manchester with ECU-safe kit, free battery health test and on-site replacement batteries. Call now.',
+  path: '/jump-start',
+})
 
 const _breadcrumbSchema = breadcrumbSchema([
   { name: 'Home', item: SITE_URL },
@@ -113,11 +113,12 @@ export default function JumpStartPage() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/images/professional-mobile-tyre-fitting.webp"
-          alt="Mobile jump start service"
+          alt="One Stop Tyres 24/7 mobile technician assisting a vehicle in Greater Manchester"
           className="absolute inset-0 w-full h-full object-cover object-center"
           width={1600}
           height={900}
           decoding="async"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-[#0f172a]/80" />
 
@@ -197,7 +198,7 @@ export default function JumpStartPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/mobile-tyre-fitting-one-stop-tyres-24-7.webp"
-              alt="Professional mobile jump start service"
+              alt="Mobile technician attending a vehicle callout in Greater Manchester"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}
               height={600}
@@ -299,7 +300,7 @@ export default function JumpStartPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/mobile-tyre-fitting-service.webp"
-              alt="24/7 mobile jump start service across Greater Manchester"
+              alt="One Stop Tyres 24/7 mobile technician on a callout across Greater Manchester"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}
               height={600}

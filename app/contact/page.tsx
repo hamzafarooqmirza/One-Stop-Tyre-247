@@ -1,14 +1,14 @@
-import type { Metadata } from 'next'
 import ContactPageClient from '@/components/ContactPageClient'
 import JsonLd from '@/components/JsonLd'
-import { breadcrumbSchema, SITE_URL } from '@/lib/schema'
+import { breadcrumbSchema, contactPageSchema, SITE_URL } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Contact Us | One Stop Tyres 24/7',
+export const metadata = buildMetadata({
+  title: 'Contact Us | One Stop Tyres 24/7 — Call or WhatsApp Anytime',
   description:
-    'Get in touch with One Stop Tyres 24/7. Call our 24/7 emergency hotline for immediate assistance, or fill in our form for a non-urgent quote.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/contact' },
-}
+    'Contact One Stop Tyres 24/7 — 24/7 phone & WhatsApp for emergencies, plus a form for quotes and bookings across Greater Manchester. Avg response 20–30 min.',
+  path: '/contact',
+})
 
 const _breadcrumbSchema = breadcrumbSchema([
   { name: 'Home', item: SITE_URL },
@@ -19,6 +19,7 @@ export default function ContactPage() {
   return (
     <>
       <JsonLd data={_breadcrumbSchema} />
+      <JsonLd data={contactPageSchema()} />
       <ContactPageClient />
     </>
   )

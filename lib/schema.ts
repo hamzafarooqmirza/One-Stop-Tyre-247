@@ -183,6 +183,17 @@ export function aboutPageSchema() {
   }
 }
 
+export function contactPageSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    '@id': `${SITE_URL}/contact#contactpage`,
+    url: `${SITE_URL}/contact`,
+    name: 'Contact One Stop Tyres 24/7',
+    mainEntity: { '@id': BUSINESS_ID },
+  }
+}
+
 export function articleSchema({ slug, headline, description, image, datePublished, dateModified }: ArticleSchemaOptions) {
   const url = `${SITE_URL}/${slug}`
   return {

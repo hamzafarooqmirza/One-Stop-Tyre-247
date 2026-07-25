@@ -1,13 +1,13 @@
-import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'TPMS Reset Service | Mobile Tyre Sensor Reset 24/7',
+export const metadata = buildMetadata({
+  title: 'TPMS Reset & Sensor Diagnostics Manchester | Mobile Service',
   description:
-    'Professional TPMS sensor diagnostics and reset for all vehicles, carried out on-site after every tyre change or repair so your dashboard warning clears.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/tpms-reset' },
-}
+    'Mobile TPMS reset across Greater Manchester — warning light cleared, sensors diagnosed or replaced at your location, all makes & models, 24/7.',
+  path: '/tpms-reset',
+})
 
 const _breadcrumbSchema = breadcrumbSchema([
   { name: 'Home', item: SITE_URL },
@@ -135,7 +135,7 @@ export default function TpmsResetPage() {
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white font-black mb-5 leading-[1.1]"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              TPMS Reset — Clear Your Tyre Pressure Warning Light Fast
+              TPMS Reset Manchester — Mobile Sensor Service
             </h1>
 
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-4">

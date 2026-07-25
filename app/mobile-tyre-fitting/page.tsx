@@ -1,13 +1,13 @@
-import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Mobile Tyre Fitting | 24/7 Emergency Callout UK',
+export const metadata = buildMetadata({
+  title: 'Mobile Tyre Fitting Manchester | Fitted At Your Location 24/7',
   description:
-    'Fully equipped mobile tyre fitting vans provide emergency tyre repair, replacement and same day fitting at your home, workplace or roadside location, 24/7.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting' },
-}
+    'Mobile tyre fitting across Greater Manchester, 24/7. Premium & budget tyres fitted at home, work or roadside in 20–30 min. Upfront prices — call for a quote.',
+  path: '/mobile-tyre-fitting',
+})
 
 const _breadcrumbSchema = breadcrumbSchema([
   { name: 'Home', item: SITE_URL },
@@ -135,7 +135,7 @@ export default function MobileTyreFittingPage() {
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white font-black mb-5 leading-[1.1]"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              Mobile Tyre Fitting, Professional Tyre Replacement at Your Home, Work or Roadside
+              Mobile Tyre Fitting Manchester
             </h1>
 
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-4">

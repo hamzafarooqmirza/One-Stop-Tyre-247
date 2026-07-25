@@ -4,6 +4,7 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import JsonLd from '@/components/JsonLd'
 import { serviceSchema } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
 const _serviceSchema = serviceSchema({
   slug: 'mobile-tyre-fitting-bury',
@@ -12,12 +13,12 @@ const _serviceSchema = serviceSchema({
   areaServed: { '@type': 'City', name: 'Bury' },
 })
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Bury | 24/7 Emergency Tyre Fitting',
   description:
-    'Need a mobile tyre fitter in Bury? We offer 24/7 emergency tyre replacement and puncture repair at your home, work or roadside, with fast response times.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-bury' },
-}
+    '24/7 mobile tyre fitting in Bury, Radcliffe, Ramsbottom & Whitefield (BL8–BL9, M26). Emergency tyre replacement in 20–30 min at home, work or roadside.',
+  path: '/mobile-tyre-fitting-bury',
+})
 
 function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc: string }) {
   return (
@@ -122,6 +123,39 @@ export default function BuryPage() {
           </div>
         </section>
 
+        {/* ── LOCAL INTRO ────────────────────────────────────── */}
+        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Mobile Tyre Fitting Across Bury
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              Bury&apos;s town centre around Bury Market and The Rock shopping centre gets busy fast,
+              and a flat tyre in a packed car park is never convenient. Rather than asking you to
+              arrange a tow into town, our mobile tyre fitting service comes directly to you — at
+              home, at work, or wherever you&apos;ve broken down across Bury, Radcliffe, Ramsbottom,
+              Tottington and Whitefield.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              We cover the BL8, BL9 and M26 postcode areas and are regularly called out along the M66
+              between junctions 1 and 4, where a puncture or blowout on the fast-moving stretch north
+              of Manchester needs a quick, safe response. Whether you&apos;re stuck outside The Rock,
+              on a residential street in Whitefield, or pulled over near a Ramsbottom junction, our
+              technicians carry premium, mid-range and budget tyres ready to fit on arrival.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed">
+              Emergency tyre replacement is available across Bury 24/7, alongside same-day bookings
+              for less urgent punctures and slow leaks. Every mobile tyre fitting job includes wheel
+              balancing and a TPMS check, so you leave with the dashboard warning light cleared as
+              well as a new tyre. We aim to reach any Bury postcode within 20–30 minutes, whether you
+              call from a shop doorway in the town centre or a driveway out towards Tottington.
+            </p>
+          </div>
+        </section>
+
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">
@@ -151,7 +185,7 @@ export default function BuryPage() {
                 <span className="text-xs text-slate-400 font-medium hidden sm:inline">Based on Google Reviews</span>
               </a>
             </div>
-            <ReviewsCarousel />
+            <ReviewsCarousel offset={4} />
             <div className="text-center mt-8">
               <a
                 href="https://share.google/bejdYHzU10lFRVv4E"
@@ -187,7 +221,7 @@ export default function BuryPage() {
               {[
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp',
-                  title: 'Mobile Tyre Fitting Bury',
+                  title: 'Mobile Tyre Fitting',
                   desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Bury. Fast response with premium and budget tyre options available.',
                   badge: 'FAST RESPONSE',
                   href: '/mobile-tyre-fitting',

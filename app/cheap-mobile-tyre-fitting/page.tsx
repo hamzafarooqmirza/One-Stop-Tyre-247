@@ -1,13 +1,13 @@
-import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Cheap Mobile Tyre Fitting | Best Prices, Fast Fit',
+export const metadata = buildMetadata({
+  title: 'Cheap Mobile Tyre Fitting Manchester | Budget Tyres Fitted',
   description:
-    'Budget, mid-range and premium tyre options, all professionally fitted at competitive prices with no hidden fees. Upfront quotes before we dispatch.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/cheap-mobile-tyre-fitting' },
-}
+    'Cheap mobile tyre fitting across Greater Manchester. Budget to premium tyres fitted at home, work or roadside — same-day slots, no hidden fees, free quote.',
+  path: '/cheap-mobile-tyre-fitting',
+})
 
 const _breadcrumbSchema = breadcrumbSchema([
   { name: 'Home', item: SITE_URL },
@@ -40,10 +40,10 @@ const faqs = [
   { q: 'Do you supply premium tyres as well?', a: 'Yes. We supply budget, mid-range and premium tyres from leading manufacturers.' },
   { q: 'What areas do you cover?', a: 'Our mobile tyre fitting service covers homes, workplaces and roadside locations across our service area.' },
   { q: 'Can you help if my tyre goes flat at night?', a: 'Yes. Our emergency tyre fitting service is available for urgent situations.' },
-  { q: 'Do you offer tyre fitting near me?', a: 'Our mobile service comes directly to your location, making tyre replacement fast and convenient.' },
+  { q: 'What is the cheapest tyre option you offer?', a: 'Our budget tyre range gives you a safe, legal tyre at the lowest available price point. We always confirm the exact quote by phone or WhatsApp before dispatch, so you know the cost upfront.' },
   { q: 'How long does tyre fitting take?', a: 'Most tyre replacements take between 20 and 45 minutes depending on the vehicle and the number of tyres being fitted.' },
   { q: 'Do I need to visit a tyre shop?', a: 'No. We bring the tyre shop to you, saving you time and making tyre replacement completely hassle-free.' },
-  { q: 'Do you offer cheap mobile tyre repair near me?', a: 'Yes. We provide affordable mobile puncture repairs and tyre replacements for customers looking for fast and reliable service.' },
+  { q: 'Is a puncture repair cheaper than a new tyre?', a: 'Yes, whenever a safe repair is possible. A puncture repair is usually the most affordable option compared with a full tyre replacement — call or WhatsApp us for a free quote.' },
   { q: 'Can you fit tyres while I\'m at work?', a: 'Yes. Many customers choose workplace tyre fitting so their vehicle is ready when they finish work.' },
   { q: 'Why choose mobile tyre fitting?', a: 'Mobile tyre fitting offers convenience, saves valuable time, avoids unnecessary travel and allows professional tyre replacement wherever you need it.' },
   { q: 'Can I book by phone or WhatsApp?', a: 'Yes. Simply call us or send a WhatsApp message and our team will arrange your mobile tyre fitting appointment as quickly as possible.' },
@@ -356,6 +356,45 @@ export default function CheapMobileTyreFittingPage() {
             </div>
             <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all shrink-0">arrow_forward</span>
           </a>
+        </div>
+      </section>
+
+      {/* ── FREE QUOTE CTA ───────────────────────────────────────────── */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+            Free Quote
+          </span>
+          <h2
+            className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-4"
+            style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+          >
+            Budget, Mid-Range &amp; Premium Tyres — Every Job Quoted Upfront
+          </h2>
+          <p className="text-slate-600 max-w-2xl mx-auto text-base mb-8">
+            Tell us your tyre size and location and we&apos;ll confirm your exact price by phone
+            or WhatsApp before we dispatch — no hidden fees, no surprises on arrival.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href="tel:07759708646"
+              className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 hover:text-white transition-all text-base sm:text-lg"
+              style={{ fontFamily: 'var(--font-work-sans)' }}
+            >
+              <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
+              Call for a Free Quote
+            </a>
+            <a
+              href="https://wa.me/447759708646"
+              className="bg-[#25D366] hover:bg-[#1ebe5d] text-white font-black px-8 py-4 rounded-xl flex items-center justify-center gap-2.5 transition-all text-base sm:text-lg shadow-lg"
+              style={{ fontFamily: 'var(--font-work-sans)' }}
+            >
+              <svg className="w-5 h-5 fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              WhatsApp for a Quote
+            </a>
+          </div>
         </div>
       </section>
 

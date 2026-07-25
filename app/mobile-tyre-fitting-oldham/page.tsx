@@ -4,6 +4,8 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import JsonLd from '@/components/JsonLd'
 import { serviceSchema } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
+import { ADDRESS } from '@/lib/constants'
 
 const _serviceSchema = serviceSchema({
   slug: 'mobile-tyre-fitting-oldham',
@@ -12,12 +14,12 @@ const _serviceSchema = serviceSchema({
   areaServed: { '@type': 'City', name: 'Oldham' },
 })
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Oldham | 24/7 Tyre Fitting',
   description:
-    'Mobile tyre fitting across Oldham, available 24/7. Emergency tyre replacement, puncture repair and same day fitting at your home, work or roadside.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-oldham' },
-}
+    '24/7 mobile tyre fitting in Oldham (OL1–OL9) — our home base. Emergency tyre replacement & puncture repair in 20–30 min, incl. Saddleworth & Chadderton.',
+  path: '/mobile-tyre-fitting-oldham',
+})
 
 function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc: string }) {
   return (
@@ -122,6 +124,40 @@ export default function OldhamPage() {
           </div>
         </section>
 
+        {/* ── LOCAL INTRO ────────────────────────────────────── */}
+        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Mobile Tyre Fitting Across Oldham
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              Oldham is where One Stop Tyres 24/7 is based, at {ADDRESS}, so it&apos;s the town we
+              know best and can usually reach fastest. From the town centre out to Chadderton,
+              Failsworth, Royton and Lees, and up into the Saddleworth villages of Greenfield,
+              Uppermill and Delph, our mobile tyre fitting service covers the full OL1–OL9 postcode
+              area.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              Being based locally means we&apos;re well placed for the A627(M) link road up to the
+              M60, one of the routes we attend most often for breakdowns heading in or out of Oldham.
+              The Saddleworth villages bring their own challenge — narrower moorland roads and steeper
+              routes than the rest of Greater Manchester — which is why our 4x4-capable mobile units
+              are equipped to reach Greenfield, Uppermill and Delph even in poor weather, not just the
+              flatter parts of town.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed">
+              Whether it&apos;s a puncture outside the shops in Oldham town centre or a tyre
+              that&apos;s picked up damage on the moor roads above Delph, we carry premium, mid-range
+              and budget tyres and can usually be with you inside 20–30 minutes. Every job includes a
+              proper safety check and TPMS reset where needed, so mobile tyre fitting in Oldham means
+              a complete, professional repair wherever in the borough you&apos;re calling from.
+            </p>
+          </div>
+        </section>
+
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">
@@ -151,7 +187,7 @@ export default function OldhamPage() {
                 <span className="text-xs text-slate-400 font-medium hidden sm:inline">Based on Google Reviews</span>
               </a>
             </div>
-            <ReviewsCarousel />
+            <ReviewsCarousel offset={6} />
             <div className="text-center mt-8">
               <a
                 href="https://share.google/bejdYHzU10lFRVv4E"
@@ -187,7 +223,7 @@ export default function OldhamPage() {
               {[
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp',
-                  title: 'Mobile Tyre Fitting Oldham',
+                  title: 'Mobile Tyre Fitting',
                   desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Oldham. Fast response with premium and budget tyre options available.',
                   badge: 'FAST RESPONSE',
                   href: '/mobile-tyre-fitting',

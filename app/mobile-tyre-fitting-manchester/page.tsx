@@ -4,6 +4,7 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import JsonLd from '@/components/JsonLd'
 import { serviceSchema } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
 const _serviceSchema = serviceSchema({
   slug: 'mobile-tyre-fitting-manchester',
@@ -12,12 +13,12 @@ const _serviceSchema = serviceSchema({
   areaServed: { '@type': 'City', name: 'Manchester' },
 })
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Manchester | One Stop Tyres 24/7',
   description:
-    'Stranded with a puncture in Manchester? Our technicians reach you fast at home, work or roadside, 24/7. Emergency mobile tyre fitting available now.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-manchester' },
-}
+    '24/7 mobile tyre fitting in Manchester — emergency tyre replacement & puncture repair at your home, work or roadside in 20–30 min. Rated 5.0. Call or WhatsApp.',
+  path: '/mobile-tyre-fitting-manchester',
+})
 
 function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc: string }) {
   return (
@@ -122,6 +123,41 @@ export default function ManchesterPage() {
           </div>
         </section>
 
+        {/* ── LOCAL INTRO ────────────────────────────────────── */}
+        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Mobile Tyre Fitting Across Manchester
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              Manchester&apos;s mix of dense city-centre traffic, tram lines and multi-storey car parks
+              means a flat tyre rarely happens somewhere convenient. Whether you&apos;re parked near
+              Deansgate, caught out on the cobbles around the Northern Quarter, or dealing with a
+              puncture outside a flat in Ancoats or Spinningfields, our mobile tyre fitting service
+              reaches you at home, work or roadside — no need to find parking near a garage or queue
+              for a slot. We cover the full M1–M16, M40 and M60 postcode areas, including Salford and
+              the tighter residential streets that surround the city centre.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              Manchester Airport runs are one of our most common call-outs in the city — a damaged tyre
+              discovered in a drop-off zone or long-stay car park before a flight is exactly the kind of
+              time-pressured job our technicians are built for. We also regularly attend breakdowns on
+              the M60 ring road itself, guiding drivers to the nearest safe junction or service area
+              before completing the tyre change.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed">
+              Every mobile tyre fitting job in Manchester is carried out by one of our directly
+              employed technicians, not a subcontracted network, so you get consistent quality whether
+              you&apos;re calling from a city-centre office or a driveway in south Manchester. We stock
+              premium, mid-range and budget tyres and aim to reach any Manchester postcode within
+              20–30 minutes, day or night.
+            </p>
+          </div>
+        </section>
+
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">
@@ -151,7 +187,7 @@ export default function ManchesterPage() {
                 <span className="text-xs text-slate-400 font-medium hidden sm:inline">Based on Google Reviews</span>
               </a>
             </div>
-            <ReviewsCarousel />
+            <ReviewsCarousel offset={0} />
             <div className="text-center mt-8">
               <a
                 href="https://share.google/bejdYHzU10lFRVv4E"
@@ -187,7 +223,7 @@ export default function ManchesterPage() {
               {[
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp',
-                  title: 'Mobile Tyre Fitting Manchester',
+                  title: 'Mobile Tyre Fitting',
                   desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Manchester. Fast response with premium and budget tyre options available.',
                   badge: 'FAST RESPONSE',
                   href: '/mobile-tyre-fitting',

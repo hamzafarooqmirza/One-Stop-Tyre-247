@@ -18,6 +18,10 @@ export default function Footer() {
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One-Stop%20Loog-airanko-Qpv1QvladNLpRhg8X3Hs6SzyydzFMq.webp"
               alt="One Stop Mobile Tyres 24/7"
               className="h-16 sm:h-20 w-auto"
+              width={200}
+              height={80}
+              loading="lazy"
+              decoding="async"
             />
           </a>
           <p className="text-slate-400 text-base leading-relaxed text-center sm:text-left">
@@ -112,6 +116,7 @@ export default function Footer() {
               { label: 'Mobile Tyre Fitting M602', href: '/mobile-tyre-fitting-m602' },
               { label: 'Mobile Tyre Fitting M66', href: '/mobile-tyre-fitting-m66' },
               { label: 'Mobile Tyre Fitting M67', href: '/mobile-tyre-fitting-m67' },
+              { label: 'Mobile Tyre Fitting A627', href: '/mobile-tyre-fitting-a627' },
             ].map((road) => (
               <li key={road.href}>
                 <a href={road.href} className="hover:text-[#FF4444] transition-colors flex items-center justify-center sm:justify-start gap-2 py-0.5">

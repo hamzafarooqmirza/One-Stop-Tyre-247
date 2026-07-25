@@ -4,20 +4,21 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import JsonLd from '@/components/JsonLd'
 import { serviceSchema } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
 const _serviceSchema = serviceSchema({
   slug: 'mobile-tyre-fitting-m62',
   name: 'Mobile Tyre Fitting on the M62',
-  serviceType: 'Emergency Roadside Tyre Assistance',
+  serviceType: 'Emergency Roadside Tyre Fitting',
   areaServed: { '@type': 'Place', name: 'M62' },
 })
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting M62 | 24/7 Motorway Tyre Assistance',
   description:
-    'Tyre blowout on the M62? We provide 24/7 emergency roadside tyre assistance, guiding you to a safe stop before fitting your replacement tyre fast.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-m62' },
-}
+    'Tyre blowout on the M62? 24/7 emergency mobile tyre fitting on the Greater Manchester stretch (J12–J21), including Eccles and Birch services. Call now.',
+  path: '/mobile-tyre-fitting-m62',
+})
 
 function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc: string }) {
   return (
@@ -58,7 +59,7 @@ export default function M62Page() {
             </h1>
 
             <p className="text-white/80 text-base leading-relaxed mb-6">
-              Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance On the M62. We Come To Your Location Within 20–30 Minutes.
+              Emergency Tyre Replacement &amp; Mobile Puncture Repair for the M62. Get to a safe place — a services, slip road or lay-by — and we&apos;ll reach you within 20–30 minutes.
             </p>
 
             {/* Trust bullets */}
@@ -122,6 +123,50 @@ export default function M62Page() {
           </div>
         </section>
 
+        {/* ── LOCAL INTRO ────────────────────────────────────── */}
+        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Emergency Tyre Fitting on the M62
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              The M62 is the main trans-Pennine route through Greater Manchester, and the section we
+              cover runs from junction 12 through to junction 21, taking in the Eccles interchange
+              and the exposed run up towards the Pennines. This stretch carries heavy HGV traffic day
+              and night, and weather on the higher sections — rain, wind and winter ice — is a common
+              trigger for the tyre failures we attend.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              Birch services, between junctions 18 and 19, is the obvious safe meeting point on the
+              Greater Manchester stretch, and we attend it regularly. The Eccles interchange, where
+              the M62 meets the M60, is another frequent call-out spot, though a busier one, so
+              getting to the nearest slip road or emergency area matters even more there than further
+              out along the route.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed">
+              Whether you&apos;ve blown a tyre on the Pennine climb in bad weather or picked up a
+              puncture nearer Eccles, call or WhatsApp your location and junction number and
+              we&apos;ll dispatch the nearest technician to meet you at a safe stopping point. We aim
+              to reach anywhere on the Greater Manchester stretch of the M62 within 20–30 minutes.
+            </p>
+
+            <div className="mt-8 bg-slate-50 border-l-4 border-[#b70011] rounded-r-xl p-5 sm:p-6">
+              <h3 className="font-bold text-[#0f172a] mb-2" style={{ fontFamily: 'var(--font-work-sans)' }}>
+                Staying Safe on the M62
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                For safety reasons we do not carry out tyre changes on a live carriageway or hard
+                shoulder. If you break down on the M62, get to the nearest services, slip road or
+                lay-by if you safely can, put your hazards on, and call or WhatsApp us your location
+                — we&apos;ll dispatch a technician to meet you there.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">
@@ -151,7 +196,7 @@ export default function M62Page() {
                 <span className="text-xs text-slate-400 font-medium hidden sm:inline">Based on Google Reviews</span>
               </a>
             </div>
-            <ReviewsCarousel />
+            <ReviewsCarousel offset={4} />
             <div className="text-center mt-8">
               <a
                 href="https://share.google/bejdYHzU10lFRVv4E"
@@ -187,17 +232,17 @@ export default function M62Page() {
               {[
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp',
-                  title: 'Mobile Tyre Fitting M62',
+                  title: 'Mobile Tyre Fitting',
                   desc: 'Mobile tyre fitting at your location on the M62. Fast response with premium and budget tyre options available.',
                   badge: 'FAST RESPONSE',
                   href: '/mobile-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp',
-                  title: 'Home Tyre Fitting',
-                  desc: 'Same day tyre fitting on the M62, without the hassle of visiting a garage.',
-                  badge: 'AT YOUR DOOR',
-                  href: '/home-tyre-fitting',
+                  title: 'Emergency Tyre Replacement',
+                  desc: 'Genuine 24 hour emergency tyre replacement for breakdowns on the M62, day or night.',
+                  badge: '24/7 DISPATCH',
+                  href: '/24-hour-emergency-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp',
@@ -331,7 +376,7 @@ export default function M62Page() {
         </section>
 
         {/* ── 5. WHY CHOOSE US ──────────────────────────────── */}
-        <WhyChooseUs city="M62" image="/images/tyre-fitting-in-emergency.webp" />
+        <WhyChooseUs city="M62" image="/images/tyre-fitting-in-emergency.webp" locationType="road" />
 
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />

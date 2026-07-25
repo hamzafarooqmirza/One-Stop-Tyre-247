@@ -26,8 +26,17 @@ function FeatureItem({
   )
 }
 
-export default function WhyChooseUs({ city, image }: { city: string; image?: string }) {
+interface WhyChooseUsProps {
+  city: string
+  image?: string
+  /** 'road' fixes the grammar for motorway/road pages ("on the M60" instead of "in M60"). Defaults to 'city'. */
+  locationType?: 'city' | 'road'
+}
+
+export default function WhyChooseUs({ city, image, locationType = 'city' }: WhyChooseUsProps) {
   const imgSrc = image ?? "/images/mobile-tyre-fitting-service.webp"
+  const heading = locationType === 'road' ? `Why Drivers Choose Us on the ${city}` : `Why ${city} Drivers Choose Us`
+  const responseTitle = locationType === 'road' ? `Fastest Response on the ${city}` : `Fastest Response in ${city}`
   return (
     <section className="bg-white py-12 sm:py-16 lg:py-20 border-y border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
@@ -54,12 +63,12 @@ export default function WhyChooseUs({ city, image }: { city: string; image?: str
             className="text-xl sm:text-2xl lg:text-4xl font-bold text-[#0f172a] mb-4 sm:mb-6 leading-tight"
             style={{ fontFamily: 'var(--font-work-sans)' }}
           >
-            Why {city} Drivers Choose Us?
+            {heading}?
           </h2>
           <div className="space-y-5 sm:space-y-6 lg:space-y-8">
             <FeatureItem
               icon="speed"
-              title={`Fastest Response in ${city}`}
+              title={responseTitle}
               desc="Strategically based to reach you within 20-30 minutes — at home, work, or roadside."
               bg="bg-[#ffdad6]"
               iconColor="text-[#410002]"

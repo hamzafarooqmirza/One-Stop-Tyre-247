@@ -107,7 +107,7 @@ export default function TyreRepairOrReplaceGuide() {
             A practical, safety-first checklist you can run through in under five minutes —
             no jargon, just what actually matters.
           </p>
-          <p className="text-slate-400 text-sm mt-4">Updated 19 July 2026 · 8 min read</p>
+          <p className="text-slate-400 text-sm mt-4">Published 19 July 2026 · 8 min read</p>
         </div>
       </section>
 

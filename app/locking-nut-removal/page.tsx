@@ -1,13 +1,13 @@
-import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Locking Wheel Nut Removal | Damage-Free Service',
+export const metadata = buildMetadata({
+  title: 'Locking Wheel Nut Removal Manchester | Damage-Free, 24/7',
   description:
-    'Lost your locking wheel nut key? Our specialist tools remove seized or lost locking nuts without damaging your alloys, available 24/7 at your location.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/locking-nut-removal' },
-}
+    'Lost or damaged locking nut key? Damage-free removal at your location across Greater Manchester, 24/7. Specialist tools, no harm to alloys — call us now.',
+  path: '/locking-nut-removal',
+})
 
 const _breadcrumbSchema = breadcrumbSchema([
   { name: 'Home', item: SITE_URL },
@@ -113,11 +113,12 @@ export default function LockingNutRemovalPage() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/images/professional-mobile-tyre-fitting.webp"
-          alt="Locking wheel nut removal service"
+          alt="One Stop Tyres 24/7 mobile technician assisting a vehicle in Greater Manchester"
           className="absolute inset-0 w-full h-full object-cover object-center"
           width={1600}
           height={900}
           decoding="async"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-[#0f172a]/80" />
 
@@ -195,7 +196,7 @@ export default function LockingNutRemovalPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/mobile-tyre-fitting-one-stop-tyres-24-7.webp"
-              alt="Specialist locking nut removal technician"
+              alt="Mobile technician attending a vehicle callout in Greater Manchester"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}
               height={600}
@@ -296,7 +297,7 @@ export default function LockingNutRemovalPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/mobile-tyre-fitting-service.webp"
-              alt="Mobile locking nut removal across Greater Manchester"
+              alt="One Stop Tyres 24/7 mobile technician on a callout across Greater Manchester"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}
               height={600}

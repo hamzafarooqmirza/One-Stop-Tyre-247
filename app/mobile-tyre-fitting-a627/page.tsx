@@ -4,20 +4,21 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import JsonLd from '@/components/JsonLd'
 import { serviceSchema } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
 const _serviceSchema = serviceSchema({
   slug: 'mobile-tyre-fitting-a627',
   name: 'Mobile Tyre Fitting on the A627',
-  serviceType: 'Emergency Roadside Tyre Assistance',
+  serviceType: 'Emergency Roadside Tyre Fitting',
   areaServed: { '@type': 'Place', name: 'A627' },
 })
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting A627 | 24/7 Roadside Tyre Assistance',
   description:
-    'Broken down on the A627? Our mobile technicians provide fast, 24/7 emergency tyre replacement and puncture repair at the roadside or nearest safe stop.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-a627' },
-}
+    "Emergency mobile tyre fitting on the A627(M) between Oldham and the M60 at Chadderton. 24/7 response in 20–30 minutes — we're based minutes away in Oldham.",
+  path: '/mobile-tyre-fitting-a627',
+})
 
 function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc: string }) {
   return (
@@ -58,7 +59,7 @@ export default function A627Page() {
             </h1>
 
             <p className="text-white/80 text-base leading-relaxed mb-6">
-              Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance On the A627. We Come To Your Location Within 20–30 Minutes.
+              Emergency Tyre Replacement &amp; Mobile Puncture Repair for the A627. Get to a safe place — a services, slip road or lay-by — and we&apos;ll reach you within 20–30 minutes.
             </p>
 
             {/* Trust bullets */}
@@ -122,6 +123,48 @@ export default function A627Page() {
           </div>
         </section>
 
+        {/* ── LOCAL INTRO ────────────────────────────────────── */}
+        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Emergency Tyre Fitting on the A627(M)
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              The A627(M) is the short spur road connecting Oldham town centre to the M60 at
+              junction 20, near Chadderton, and it&apos;s one of the routes we know best since
+              we&apos;re based just minutes away in Oldham. A tyre failure on this stretch usually
+              means a quick response, whichever end of the spur you&apos;re nearest to.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              Because it&apos;s such a short link road, most breakdowns here happen either right at
+              the Oldham end, near the town centre and Chadderton, or at the M60 interchange itself,
+              where traffic can be heavier. Being local means we can usually be on our way to you
+              within minutes of your call, rather than dispatching from further afield.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed">
+              Whether you&apos;ve broken down near Chadderton or at the M60 end towards Rochdale,
+              call or WhatsApp us your location and we&apos;ll send the nearest technician — likely
+              one already close by. We aim to reach any safe stopping point on the A627(M) within
+              20–30 minutes, making it our fastest-response road.
+            </p>
+
+            <div className="mt-8 bg-slate-50 border-l-4 border-[#b70011] rounded-r-xl p-5 sm:p-6">
+              <h3 className="font-bold text-[#0f172a] mb-2" style={{ fontFamily: 'var(--font-work-sans)' }}>
+                Staying Safe on the A627(M)
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                For safety reasons we do not carry out tyre changes on a live carriageway or hard
+                shoulder. If you break down on the A627(M), get to the nearest services, slip road or
+                lay-by if you safely can, put your hazards on, and call or WhatsApp us your location
+                — we&apos;ll dispatch a technician to meet you there.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">
@@ -151,7 +194,7 @@ export default function A627Page() {
                 <span className="text-xs text-slate-400 font-medium hidden sm:inline">Based on Google Reviews</span>
               </a>
             </div>
-            <ReviewsCarousel />
+            <ReviewsCarousel offset={0} />
             <div className="text-center mt-8">
               <a
                 href="https://share.google/bejdYHzU10lFRVv4E"
@@ -187,17 +230,17 @@ export default function A627Page() {
               {[
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp',
-                  title: 'Mobile Tyre Fitting A627',
+                  title: 'Mobile Tyre Fitting',
                   desc: 'Mobile tyre fitting at your location on the A627. Fast response with premium and budget tyre options available.',
                   badge: 'FAST RESPONSE',
                   href: '/mobile-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp',
-                  title: 'Home Tyre Fitting',
-                  desc: 'Same day tyre fitting on the A627, without the hassle of visiting a garage.',
-                  badge: 'AT YOUR DOOR',
-                  href: '/home-tyre-fitting',
+                  title: 'Emergency Tyre Replacement',
+                  desc: 'Genuine 24 hour emergency tyre replacement for breakdowns on the A627, day or night.',
+                  badge: '24/7 DISPATCH',
+                  href: '/24-hour-emergency-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp',
@@ -331,7 +374,7 @@ export default function A627Page() {
         </section>
 
         {/* ── 5. WHY CHOOSE US ──────────────────────────────── */}
-        <WhyChooseUs city="A627" image="/images/mobile-tyre-fitting-manchester.webp" />
+        <WhyChooseUs city="A627" image="/images/mobile-tyre-fitting-manchester.webp" locationType="road" />
 
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />

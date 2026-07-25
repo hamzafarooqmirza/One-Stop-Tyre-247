@@ -4,20 +4,21 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import JsonLd from '@/components/JsonLd'
 import { serviceSchema } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
 const _serviceSchema = serviceSchema({
   slug: 'mobile-tyre-fitting-m56',
   name: 'Mobile Tyre Fitting on the M56',
-  serviceType: 'Emergency Roadside Tyre Assistance',
+  serviceType: 'Emergency Roadside Tyre Fitting',
   areaServed: { '@type': 'Place', name: 'M56' },
 })
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting M56 | 24/7 Motorway Tyre Assistance',
   description:
-    'Broken down on the M56? Emergency mobile tyre fitting, puncture repair and roadside assistance from Junction 1 to Junction 15, available 24/7.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-m56' },
-}
+    'Emergency mobile tyre fitting on the M56 — Manchester Airport corridor. 24/7 response to safe stopping points in 20–30 minutes. Call or WhatsApp your pin.',
+  path: '/mobile-tyre-fitting-m56',
+})
 
 function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc: string }) {
   return (
@@ -58,7 +59,7 @@ export default function M56Page() {
             </h1>
 
             <p className="text-white/80 text-base leading-relaxed mb-6">
-              Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance On the M56. We Come To Your Location Within 20–30 Minutes.
+              Emergency Tyre Replacement &amp; Mobile Puncture Repair for the M56. Get to a safe place — a services, slip road or lay-by — and we&apos;ll reach you within 20–30 minutes.
             </p>
 
             {/* Trust bullets */}
@@ -122,6 +123,51 @@ export default function M56Page() {
           </div>
         </section>
 
+        {/* ── LOCAL INTRO ────────────────────────────────────── */}
+        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Emergency Tyre Fitting on the M56
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              The M56 is Greater Manchester&apos;s airport corridor, and a large share of the
+              breakdowns we attend here involve drivers rushing to catch a flight or just landed and
+              heading home — which makes a fast, reliable response even more important than usual.
+              We cover the Greater Manchester section from junction 1 through to junction 6,
+              including the airport approach roads and the link out towards the M60.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              Business travellers and taxi and private-hire drivers make up a large part of our M56
+              call-outs, often needing a same-day tyre sorted quickly so they can get back on
+              schedule. Manchester Airport&apos;s drop-off zones, terminal approach roads and
+              long-stay car parks are some of the most common places we&apos;re called to, alongside
+              breakdowns on the motorway itself between the airport and the M60 interchange.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed">
+              Wherever you&apos;ve broken down — worried about a flight on the hard shoulder or
+              parked up at the terminal with a damaged tyre — call or WhatsApp us your pin and
+              we&apos;ll dispatch the nearest technician. We aim to reach any safe stopping point on
+              the M56 within 20–30 minutes, so a tyre problem doesn&apos;t have to mean a missed
+              flight.
+            </p>
+
+            <div className="mt-8 bg-slate-50 border-l-4 border-[#b70011] rounded-r-xl p-5 sm:p-6">
+              <h3 className="font-bold text-[#0f172a] mb-2" style={{ fontFamily: 'var(--font-work-sans)' }}>
+                Staying Safe on the M56
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                For safety reasons we do not carry out tyre changes on a live carriageway or hard
+                shoulder. If you break down on the M56, get to the nearest services, slip road or
+                lay-by if you safely can, put your hazards on, and call or WhatsApp us your location
+                — we&apos;ll dispatch a technician to meet you there.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">
@@ -151,7 +197,7 @@ export default function M56Page() {
                 <span className="text-xs text-slate-400 font-medium hidden sm:inline">Based on Google Reviews</span>
               </a>
             </div>
-            <ReviewsCarousel />
+            <ReviewsCarousel offset={6} />
             <div className="text-center mt-8">
               <a
                 href="https://share.google/bejdYHzU10lFRVv4E"
@@ -187,17 +233,17 @@ export default function M56Page() {
               {[
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp',
-                  title: 'Mobile Tyre Fitting M56',
+                  title: 'Mobile Tyre Fitting',
                   desc: 'Mobile tyre fitting at your location on the M56. Fast response with premium and budget tyre options available.',
                   badge: 'FAST RESPONSE',
                   href: '/mobile-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp',
-                  title: 'Home Tyre Fitting',
-                  desc: 'Same day tyre fitting on the M56, without the hassle of visiting a garage.',
-                  badge: 'AT YOUR DOOR',
-                  href: '/home-tyre-fitting',
+                  title: 'Emergency Tyre Replacement',
+                  desc: 'Genuine 24 hour emergency tyre replacement for breakdowns on the M56, day or night.',
+                  badge: '24/7 DISPATCH',
+                  href: '/24-hour-emergency-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp',
@@ -331,7 +377,7 @@ export default function M56Page() {
         </section>
 
         {/* ── 5. WHY CHOOSE US ──────────────────────────────── */}
-        <WhyChooseUs city="M56" image="/images/tyre-fitting-in-emergency.webp" />
+        <WhyChooseUs city="M56" image="/images/tyre-fitting-in-emergency.webp" locationType="road" />
 
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />

@@ -4,6 +4,7 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import JsonLd from '@/components/JsonLd'
 import { serviceSchema } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
 const _serviceSchema = serviceSchema({
   slug: 'mobile-tyre-fitting-bolton',
@@ -12,12 +13,12 @@ const _serviceSchema = serviceSchema({
   areaServed: { '@type': 'City', name: 'Bolton' },
 })
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Bolton | 24/7 Tyre Fitting',
   description:
-    'Fast, reliable mobile tyre fitting in Bolton. Our technicians come to your home, work or roadside location 24/7 with upfront pricing and no hidden fees.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-bolton' },
-}
+    '24/7 mobile tyre fitting in Bolton — fast tyre replacement & puncture repair at home, work or roadside across BL1–BL7. 20–30 min response. Call or WhatsApp.',
+  path: '/mobile-tyre-fitting-bolton',
+})
 
 function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc: string }) {
   return (
@@ -122,6 +123,39 @@ export default function BoltonPage() {
           </div>
         </section>
 
+        {/* ── LOCAL INTRO ────────────────────────────────────── */}
+        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Mobile Tyre Fitting Across Bolton
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              Bolton&apos;s spread-out geography — from the town centre out to Horwich, Farnworth and
+              Westhoughton — means a breakdown can happen a long way from the nearest tyre shop. Our
+              mobile tyre fitting service is built around exactly that problem: instead of arranging
+              recovery into town, we bring a fully equipped van directly to your home, workplace or
+              the roadside, wherever in Bolton you are.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              We&apos;re a regular presence around Middlebrook Retail Park, where a damaged tyre in a
+              busy car park is one of the most common calls we get, and along the M61, A666 and A58
+              corridors that carry most of Bolton&apos;s commuter traffic. Whether you&apos;ve picked
+              up a puncture on the A58 heading into town or a sidewall cut in a Horwich side street,
+              our technicians carry the tools and stock to sort it on-site.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed">
+              Mobile tyre fitting in Bolton covers everything from a same-day puncture repair to a
+              full emergency tyre replacement after a blowout, with premium, mid-range and budget tyre
+              options fitted to the same standard regardless of price. We aim to reach any Bolton
+              postcode within 20–30 minutes, and every job includes a TPMS check so your dashboard
+              warning light is cleared before we leave.
+            </p>
+          </div>
+        </section>
+
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">
@@ -151,7 +185,7 @@ export default function BoltonPage() {
                 <span className="text-xs text-slate-400 font-medium hidden sm:inline">Based on Google Reviews</span>
               </a>
             </div>
-            <ReviewsCarousel />
+            <ReviewsCarousel offset={2} />
             <div className="text-center mt-8">
               <a
                 href="https://share.google/bejdYHzU10lFRVv4E"
@@ -187,7 +221,7 @@ export default function BoltonPage() {
               {[
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp',
-                  title: 'Mobile Tyre Fitting Bolton',
+                  title: 'Mobile Tyre Fitting',
                   desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Bolton. Fast response with premium and budget tyre options available.',
                   badge: 'FAST RESPONSE',
                   href: '/mobile-tyre-fitting',

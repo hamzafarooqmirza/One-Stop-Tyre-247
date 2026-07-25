@@ -1,13 +1,13 @@
-import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, SITE_URL } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: 'Privacy Policy | One Stop Tyres 24/7',
   description:
     'Read the One Stop Tyres 24/7 privacy policy to understand how we collect, use and protect your personal data when you use our services.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/privacy-policy' },
-}
+  path: '/privacy-policy',
+})
 
 const _breadcrumbSchema = breadcrumbSchema([
   { name: 'Home', item: SITE_URL },

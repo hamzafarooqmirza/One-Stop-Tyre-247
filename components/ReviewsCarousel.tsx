@@ -60,10 +60,6 @@ const REVIEWS: Review[] = [
   },
 ]
 
-// Duplicate the list once. Combined with translateX(-50%) in the keyframes,
-// this produces a seamless infinite loop.
-const LOOP = [...REVIEWS, ...REVIEWS]
-
 function GoogleG({ className = 'w-4 h-4' }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" aria-hidden="true">
@@ -87,11 +83,19 @@ function GoogleG({ className = 'w-4 h-4' }: { className?: string }) {
   )
 }
 
-export default function ReviewsCarousel() {
+/** Optional starting offset so different pages (e.g. per-city landing pages) don't render byte-identical review order. */
+export default function ReviewsCarousel({ offset = 0 }: { offset?: number }) {
   // Pause is tracked in state so it works identically for mouse hover and
   // touch press-and-hold across all browsers (some Tailwind arbitrary variants
   // don't reliably toggle `animation-play-state` on every engine).
   const [paused, setPaused] = useState(false)
+
+  const rotated = offset % REVIEWS.length === 0
+    ? REVIEWS
+    : [...REVIEWS.slice(offset % REVIEWS.length), ...REVIEWS.slice(0, offset % REVIEWS.length)]
+  // Duplicate the list once. Combined with translateX(-50%) in the keyframes,
+  // this produces a seamless infinite loop.
+  const LOOP = [...rotated, ...rotated]
 
   return (
     <div

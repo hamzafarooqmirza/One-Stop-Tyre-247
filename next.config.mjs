@@ -15,9 +15,20 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  compress: true,
   images: {
+    // TODO(owner): migrate these into /public and drop unoptimized once done —
+    // until then this keeps next/image usable against the hosts still referenced.
     unoptimized: true,
+    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
+      { protocol: 'https', hostname: 'hebbkx1anhila5yf.public.blob.vercel-storage.com' },
+      { protocol: 'https', hostname: 'ss5vlswhqmiddtca.public.blob.vercel-storage.com' },
+      { protocol: 'https', hostname: 'lh3.googleusercontent.com' },
+    ],
   },
+  // Consistent URL shape: /page/ 301s to /page instead of both being servable.
+  trailingSlash: false,
   async redirects() {
     return [
       // www → non-www (permanent 301)
@@ -33,6 +44,16 @@ const nextConfig = {
         destination: '/mobile-tyre-fitting-urmston',
         permanent: true,
       },
+      // Legacy WordPress URLs — the site migrated from WordPress and these
+      // old paths are still indexed/linked externally.
+      // TODO(owner): check Google Search Console's "Pages" report for any
+      // further legacy URLs still receiving hits/impressions and add them
+      // below as they're found.
+      { source: '/book-now', destination: '/contact', permanent: true },
+      { source: '/book-now/', destination: '/contact', permanent: true },
+      { source: '/about-us', destination: '/about', permanent: true },
+      { source: '/contact-us', destination: '/contact', permanent: true },
+      { source: '/our-services', destination: '/services', permanent: true },
     ]
   },
   async headers() {

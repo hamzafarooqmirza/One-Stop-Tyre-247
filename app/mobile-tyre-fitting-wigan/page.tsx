@@ -4,6 +4,7 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import JsonLd from '@/components/JsonLd'
 import { serviceSchema } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
 const _serviceSchema = serviceSchema({
   slug: 'mobile-tyre-fitting-wigan',
@@ -12,12 +13,12 @@ const _serviceSchema = serviceSchema({
   areaServed: { '@type': 'City', name: 'Wigan' },
 })
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Wigan | 24/7 Emergency Tyre Fitting',
   description:
-    'Emergency and same day mobile tyre fitting in Wigan. Our technicians come to your home, work or roadside 24/7, with transparent, upfront pricing.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-wigan' },
-}
+    '24/7 mobile tyre fitting in Wigan, Leigh, Atherton, Hindley & Skelmersdale (WN1–WN6). Fast mobile tyre replacement at home, work or roadside.',
+  path: '/mobile-tyre-fitting-wigan',
+})
 
 function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc: string }) {
   return (
@@ -100,6 +101,37 @@ export default function WiganPage() {
           </div>
         </section>
 
+        {/* ── LOCAL INTRO ────────────────────────────────────── */}
+        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Mobile Tyre Fitting Across Wigan
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              Wigan town centre and Robin Park see heavy footfall and tight parking most days of the
+              week, which is exactly when a slow puncture tends to finally give out. Our mobile tyre
+              fitting service comes to you instead of the other way round, covering Wigan, Leigh,
+              Atherton and Hindley across the full WN1–WN6 postcode area.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              We also cover the western edge of our operating area out towards Skelmersdale, and
+              regularly attend breakdowns along the boundary of the M6 and M61, two of the main
+              commuter routes in and out of Wigan. Whether it&apos;s a work van picking up a puncture
+              on the way to a job or a car parked up near Robin Park retail area, we come straight to
+              you.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed">
+              Whether you&apos;re stuck in Leigh town centre, need a same-day fitting in Atherton, or
+              have broken down on the commuter routes towards Hindley, our technicians carry premium,
+              mid-range and budget tyres and aim to reach any Wigan postcode within 20–30 minutes.
+              Every mobile tyre fitting job includes wheel balancing and a TPMS check before we leave.
+            </p>
+          </div>
+        </section>
+
         {/* ── 2. REVIEWS */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">
@@ -122,7 +154,7 @@ export default function WiganPage() {
                 <span className="text-xs text-slate-400 font-medium hidden sm:inline">Based on Google Reviews</span>
               </a>
             </div>
-            <ReviewsCarousel />
+            <ReviewsCarousel offset={4} />
             <div className="text-center mt-8">
               <a href="https://share.google/bejdYHzU10lFRVv4E" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-[#b70011] font-bold text-sm hover:underline">
                 View all Google reviews
@@ -146,7 +178,7 @@ export default function WiganPage() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {[
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp', title: 'Mobile Tyre Fitting Wigan', desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Wigan. Fast response with premium and budget tyre options available.', badge: 'FAST RESPONSE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp', title: 'Mobile Tyre Fitting', desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Wigan. Fast response with premium and budget tyre options available.', badge: 'FAST RESPONSE',
                   href: '/mobile-tyre-fitting' },
                 { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp', title: 'Home Tyre Fitting', desc: 'Same day tyre fitting at your home across Wigan, without the hassle of visiting a garage.', badge: 'AT YOUR DOOR',
                   href: '/home-tyre-fitting' },

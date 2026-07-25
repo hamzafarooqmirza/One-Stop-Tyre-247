@@ -1,13 +1,13 @@
-import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Cheap Mobile Tyre Fitting | Best Prices, Fast Fit',
+export const metadata = buildMetadata({
+  title: 'Cheap Mobile Tyre Fitting Manchester | Budget Tyres Fitted',
   description:
-    'Budget, mid-range and premium tyre options, all professionally fitted at competitive prices with no hidden fees. Upfront quotes before we dispatch.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/cheap-mobile-tyre-fitting' },
-}
+    'Cheap mobile tyre fitting in Greater Manchester from £45. Budget to premium tyres fitted at home, work or roadside — same-day slots, no hidden fees.',
+  path: '/cheap-mobile-tyre-fitting',
+})
 
 const _breadcrumbSchema = breadcrumbSchema([
   { name: 'Home', item: SITE_URL },
@@ -20,7 +20,20 @@ const _serviceSchema = serviceSchema({
   serviceType: 'Mobile Tyre Fitting',
   description:
     'Affordable mobile tyre fitting with budget, mid-range and premium tyres. Professional tyre replacement and puncture repair at your home, workplace or roadside location across Greater Manchester.',
+  priceRange: '££',
 })
+
+/**
+ * PLACEHOLDER VALUES — guide prices only, for the site owner to confirm.
+ * £45 is the only figure already used elsewhere on the site; the rest are
+ * estimates and must be reviewed before being treated as final pricing.
+ */
+const priceGuide = [
+  { item: 'Budget tyres', price: 'From £45 fitted' },
+  { item: 'Mid-range tyres', price: 'From £65 fitted' },
+  { item: 'Premium tyres', price: 'From £85 fitted' },
+  { item: 'Puncture repair', price: 'From £30' },
+]
 
 const faqs = [
   { q: 'Do you provide cheap mobile tyre fitting?', a: 'Yes. We specialise in affordable mobile tyre fitting with a range of budget, mid-range and premium tyres to suit every budget.' },
@@ -40,10 +53,10 @@ const faqs = [
   { q: 'Do you supply premium tyres as well?', a: 'Yes. We supply budget, mid-range and premium tyres from leading manufacturers.' },
   { q: 'What areas do you cover?', a: 'Our mobile tyre fitting service covers homes, workplaces and roadside locations across our service area.' },
   { q: 'Can you help if my tyre goes flat at night?', a: 'Yes. Our emergency tyre fitting service is available for urgent situations.' },
-  { q: 'Do you offer tyre fitting near me?', a: 'Our mobile service comes directly to your location, making tyre replacement fast and convenient.' },
+  { q: 'What is the cheapest tyre option you offer?', a: 'Our budget tyre range starts from £45 fitted, giving you a safe, legal tyre at the lowest available price. We always confirm the exact quote by phone or WhatsApp before dispatch.' },
   { q: 'How long does tyre fitting take?', a: 'Most tyre replacements take between 20 and 45 minutes depending on the vehicle and the number of tyres being fitted.' },
   { q: 'Do I need to visit a tyre shop?', a: 'No. We bring the tyre shop to you, saving you time and making tyre replacement completely hassle-free.' },
-  { q: 'Do you offer cheap mobile tyre repair near me?', a: 'Yes. We provide affordable mobile puncture repairs and tyre replacements for customers looking for fast and reliable service.' },
+  { q: 'Is a puncture repair cheaper than a new tyre?', a: 'Yes, whenever a safe repair is possible. Our puncture repairs start from £30, which is usually the most affordable option compared with a full tyre replacement.' },
   { q: 'Can you fit tyres while I\'m at work?', a: 'Yes. Many customers choose workplace tyre fitting so their vehicle is ready when they finish work.' },
   { q: 'Why choose mobile tyre fitting?', a: 'Mobile tyre fitting offers convenience, saves valuable time, avoids unnecessary travel and allows professional tyre replacement wherever you need it.' },
   { q: 'Can I book by phone or WhatsApp?', a: 'Yes. Simply call us or send a WhatsApp message and our team will arrange your mobile tyre fitting appointment as quickly as possible.' },
@@ -356,6 +369,37 @@ export default function CheapMobileTyreFittingPage() {
             </div>
             <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all shrink-0">arrow_forward</span>
           </a>
+        </div>
+      </section>
+
+      {/* ── PRICE GUIDE ──────────────────────────────────────────────── */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-8 sm:mb-10">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+              Price Guide
+            </span>
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a]"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Cheap Mobile Tyre Fitting — Guide Prices
+            </h2>
+          </div>
+          <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden">
+            {priceGuide.map((row, i) => (
+              <div
+                key={row.item}
+                className={`flex items-center justify-between px-5 sm:px-8 py-4 sm:py-5 ${i !== priceGuide.length - 1 ? 'border-b border-slate-200' : ''}`}
+              >
+                <span className="font-semibold text-[#0f172a] text-base">{row.item}</span>
+                <span className="font-bold text-[#b70011] text-base sm:text-lg">{row.price}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-slate-500 text-sm mt-4 text-center">
+            Guide prices — exact quote confirmed by phone/WhatsApp before dispatch.
+          </p>
         </div>
       </section>
 

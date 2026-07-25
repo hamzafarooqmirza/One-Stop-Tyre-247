@@ -1,13 +1,13 @@
-import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: '24 Hour Emergency Tyre Fitting | One Stop Tyres 24/7',
+export const metadata = buildMetadata({
+  title: '24 Hour Emergency Tyre Fitting Manchester | 365 Days',
   description:
-    'Genuine 24 hour emergency tyre fitting, day or night, 365 days a year. Our technicians reach you fast for immediate tyre help wherever you are.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/24-hour-emergency-tyre-fitting' },
-}
+    'Genuine 24hr emergency tyre fitting across Greater Manchester — day, night, weekends & bank holidays. Roadside, home or work. Fast dispatch: call or WhatsApp.',
+  path: '/24-hour-emergency-tyre-fitting',
+})
 
 const _breadcrumbSchema = breadcrumbSchema([
   { name: 'Home', item: SITE_URL },
@@ -17,38 +17,38 @@ const _breadcrumbSchema = breadcrumbSchema([
 const _serviceSchema = serviceSchema({
   slug: '24-hour-emergency-tyre-fitting',
   name: '24 Hour Emergency Tyre Fitting',
-  serviceType: 'Emergency Roadside Tyre Assistance',
+  serviceType: 'Emergency Tyre Fitting',
   description:
     'Fast 24 hour emergency mobile tyre fitting, roadside tyre replacement and puncture repair across Greater Manchester. Available day and night, 365 days a year.',
 })
 
 const faqs = [
-  { q: 'Do you provide 24 hour emergency tyre fitting?', a: 'Yes. We offer emergency mobile tyre fitting services day and night, including weekends and bank holidays.' },
-  { q: 'Can you replace a tyre at my home?', a: 'Yes. We provide home tyre fitting services, allowing you to have new tyres installed without visiting a garage.' },
-  { q: 'Can you repair a puncture?', a: "If the puncture meets British safety guidelines and is repairable, we will carry out a professional puncture repair. Otherwise, we'll recommend a replacement tyre." },
-  { q: 'Do you provide roadside tyre replacement?', a: 'Yes. Our technicians can safely replace damaged tyres at the roadside, helping you continue your journey quickly.' },
-  { q: 'Do you offer same day tyre fitting?', a: 'Yes. We provide same day mobile tyre fitting whenever appointments and stock availability allow.' },
-  { q: 'Can I book a late night tyre repair?', a: 'Absolutely. Our emergency tyre service operates 24 hours a day for urgent situations.' },
-  { q: 'What vehicles do you cover?', a: 'We fit tyres for most cars, SUVs, vans and light commercial vehicles.' },
-  { q: 'Do you supply tyres as well?', a: 'Yes. We carry a wide range of premium, mid-range and budget tyres and can source most common sizes quickly.' },
-  { q: 'Can you change my tyre at work?', a: 'Yes. We regularly fit tyres at workplaces, offices, business parks, and commercial premises.' },
-  { q: 'Do you offer mobile tyre fitting near me?', a: 'Our mobile service covers a wide operating area and comes directly to your location.' },
-  { q: 'Can you replace a completely flat tyre?', a: 'Yes. Whether your tyre has burst, suffered sidewall damage, or cannot be repaired, we can replace it on-site.' },
-  { q: 'What if my tyre blows out on the motorway?', a: 'For safety reasons, motorway repairs are not normally carried out on the live carriageway. We can attend once your vehicle is moved to a safe location.' },
-  { q: 'Do you provide emergency tyre replacement?', a: 'Yes. Emergency tyre replacement is one of our most requested services and is available 24/7.' },
-  { q: 'Can you fit tyres at the roadside?', a: 'Yes. Our mobile technicians regularly complete roadside tyre changes and puncture repairs safely.' },
-  { q: 'Do you provide mobile tyre repair?', a: 'Yes. We offer mobile tyre repair wherever a safe repair is possible.' },
-  { q: 'Do you offer tyre fitting at home?', a: 'Yes. Home tyre fitting is available for customers who want maximum convenience.' },
-  { q: 'Can you help with a tyre call out?', a: "Yes. If you've experienced a flat tyre, puncture, or blowout, simply call us, and we'll dispatch a mobile technician." },
-  { q: 'Do you provide emergency puncture repair?', a: 'Yes. We inspect the tyre and carry out a safe puncture repair whenever possible.' },
-  { q: 'Do you fit tyres on the driveway?', a: 'Yes. Our fully equipped vans can perform tyre fitting on your driveway or outside your property.' },
-  { q: 'Can I get tyres fitted today?', a: 'In most cases, yes. We offer same-day appointments and emergency call-outs throughout the day and night.' },
-  { q: 'Why choose a mobile tyre fitting service?', a: 'A mobile tyre service saves time, avoids recovery costs, and allows you to stay at home or continue your day while a professional technician comes directly to you.' },
-  { q: 'Do you offer emergency tyre fitting for work vehicles?', a: 'Yes. We regularly assist business vehicles, company cars, and light commercial vans requiring urgent tyre replacement.' },
-  { q: 'Are your tyres covered by warranty?', a: "All new tyres supplied are sourced from reputable manufacturers and include the applicable manufacturer's warranty." },
-  { q: 'Can you replace more than one tyre?', a: 'Yes. We can replace a single tyre, a pair or a complete set depending on your requirements.' },
-  { q: 'How quickly can you arrive?', a: 'Response times depend on location and demand, but we always dispatch the nearest available technician to minimise waiting times.' },
-  { q: 'Is mobile tyre fitting more expensive than visiting a garage?', a: 'Our pricing is competitive and includes the convenience of having a professional tyre fitter come directly to your location, saving both time and recovery costs.' },
+  { q: 'Do you provide 24 hour emergency tyre fitting?', a: 'Yes. We offer genuine emergency mobile tyre fitting day and night, including weekends and bank holidays. Our average response time is 20–30 minutes anywhere in Greater Manchester.' },
+  { q: 'Can you replace a tyre at my home?', a: 'Yes. We provide home tyre fitting so you can have new tyres installed without visiting a garage, day or night. Our technicians arrive fully equipped to complete the job on your driveway.' },
+  { q: 'Can you repair a puncture?', a: "If the puncture meets British Standard BS AU 159 and is safely repairable, we will carry out a professional puncture repair rather than replace the tyre unnecessarily. If it isn't safe to repair, we'll recommend and fit a replacement on the spot." },
+  { q: 'Do you provide roadside tyre replacement?', a: 'Yes. Our technicians can safely replace damaged tyres at the roadside 24/7, helping you continue your journey quickly. For motorway breakdowns we guide you to the nearest safe stopping point first.' },
+  { q: 'Do you offer same day tyre fitting?', a: 'Yes. We provide same day mobile tyre fitting whenever appointments and stock availability allow, with emergency call-outs prioritised. Just call or WhatsApp your tyre size and location.' },
+  { q: 'Can I book a late night tyre repair?', a: 'Absolutely. Our emergency tyre service genuinely operates 24 hours a day, 365 days a year, for urgent situations. Whether it is 3pm or 3am, a technician is on call across Greater Manchester.' },
+  { q: 'What vehicles do you cover?', a: 'We fit tyres for most cars, SUVs, vans and light commercial vehicles, day or night. Our vans carry a range of sizes to cover the majority of makes and models on the road.' },
+  { q: 'Do you supply tyres as well?', a: 'Yes. We carry a wide range of premium, mid-range and budget tyres and can source most common sizes quickly, even for an emergency call-out. Pricing is always confirmed upfront before we dispatch.' },
+  { q: 'Can you change my tyre at work?', a: 'Yes. We regularly fit tyres at workplaces, offices, business parks and commercial premises, including outside normal working hours. There is no need to take time off to deal with a tyre emergency.' },
+  { q: 'What areas do you dispatch to for emergency call-outs?', a: 'We dispatch 24/7 across all of Greater Manchester, plus the M60, M61, M62, M56, M602, M66, M67 and A627 motorways. Wherever you are stranded day or night, the nearest available technician is sent straight to you.' },
+  { q: 'Can you replace a completely flat tyre?', a: 'Yes. Whether your tyre has burst, suffered sidewall damage, or cannot be repaired, we can replace it on-site at any hour. We carry the tools and stock needed to handle a full blowout, not just a slow puncture.' },
+  { q: 'What if my tyre blows out on the motorway?', a: 'For safety reasons, motorway repairs are not carried out on a live carriageway or hard shoulder. We will talk you through reaching the nearest safe stopping point — a service station, slip road or emergency area — and meet you there any time, day or night.' },
+  { q: 'Do you provide emergency tyre replacement?', a: 'Yes. Emergency tyre replacement is one of our most requested services and is available 24/7, including bank holidays. We prioritise dispatch for genuine roadside emergencies.' },
+  { q: 'Can you fit tyres at the roadside?', a: 'Yes. Our mobile technicians regularly complete roadside tyre changes and puncture repairs safely, day or night. We carry hazard lighting and safety equipment for after-dark call-outs.' },
+  { q: 'Do you provide mobile tyre repair?', a: 'Yes. We offer mobile tyre repair wherever a safe BS AU 159 compliant repair is possible, at any hour. If the damage is too severe to repair safely, we fit a replacement instead.' },
+  { q: 'Do you offer tyre fitting at home?', a: 'Yes. Home tyre fitting is available around the clock for customers who want maximum convenience. You do not need to be up early or wait until daytime — we cover genuine emergencies overnight too.' },
+  { q: 'Can you help with a tyre call out?', a: "Yes. If you've experienced a flat tyre, puncture or blowout at any hour, simply call or WhatsApp us and we'll dispatch a mobile technician straight away. We prioritise genuine emergencies over routine bookings." },
+  { q: 'Do you provide emergency puncture repair?', a: 'Yes. We inspect the tyre and carry out a safe, BS AU 159 compliant puncture repair whenever possible, 24/7. Where a repair is not safe, we replace the tyre on-site instead.' },
+  { q: 'Do you fit tyres on the driveway?', a: 'Yes. Our fully equipped vans can perform tyre fitting on your driveway or outside your property at any hour of the day or night. All we need is safe space to park and work around the wheel.' },
+  { q: 'Can I get tyres fitted today?', a: 'In most cases, yes. We offer same-day appointments and genuine emergency call-outs throughout the day and night, subject to stock and technician availability. Call or WhatsApp us to check availability for your tyre size.' },
+  { q: 'Why choose a 24 hour mobile tyre fitting service?', a: 'A 24 hour mobile service means a flat tyre at 3am is treated with the same urgency as one at 3pm — you are never stuck waiting for a garage to open. It also saves recovery costs and lets you stay safe at home, work or the roadside while a technician comes to you.' },
+  { q: 'Do you offer emergency tyre fitting for work vehicles?', a: 'Yes. We regularly assist business vehicles, company cars and light commercial vans requiring urgent tyre replacement, any time of day or night. This keeps company vehicles off the road for the shortest possible time.' },
+  { q: 'Are your tyres covered by warranty?', a: "All new tyres supplied are sourced from reputable manufacturers and include the applicable manufacturer's warranty, regardless of what time of day they are fitted. We'll confirm warranty details for your specific tyre before fitting." },
+  { q: 'Can you replace more than one tyre?', a: 'Yes. We can replace a single tyre, a pair or a complete set during the same emergency call-out, depending on your requirements. Let us know when you call so we bring the right stock.' },
+  { q: 'How quickly can you arrive for an emergency call-out?', a: 'Our average response time is 20–30 minutes anywhere in Greater Manchester, though this can vary with traffic and demand. We always dispatch the nearest available technician to minimise waiting time, day or night.' },
+  { q: 'Is emergency mobile tyre fitting more expensive than visiting a garage?', a: 'Our emergency call-out pricing is competitive and confirmed upfront before we dispatch, with no hidden fees. It also includes the convenience of a professional technician reaching you directly, saving both time and recovery costs.' },
 ]
 
 const _faqSchema = faqSchema(faqs)

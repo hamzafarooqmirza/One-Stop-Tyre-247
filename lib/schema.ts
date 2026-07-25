@@ -67,6 +67,8 @@ export function faqSchema(faqs: FaqEntry[]) {
   }
 }
 
+type AreaServedEntry = { '@type': string; name: string }
+
 export interface ServiceSchemaOptions {
   /** URL slug, e.g. "mobile-tyre-fitting-manchester" (no leading slash) */
   slug: string
@@ -74,10 +76,12 @@ export interface ServiceSchemaOptions {
   description?: string
   serviceType?: string
   /** Defaults to AdministrativeArea "Greater Manchester" for region-wide service pages. */
-  areaServed?: { '@type': string; name: string }
+  areaServed?: AreaServedEntry | readonly AreaServedEntry[]
+  /** e.g. '££' — omitted by default. */
+  priceRange?: string
 }
 
-export function serviceSchema({ slug, name, description, serviceType, areaServed }: ServiceSchemaOptions) {
+export function serviceSchema({ slug, name, description, serviceType, areaServed, priceRange }: ServiceSchemaOptions) {
   const url = `${SITE_URL}/${slug}`
   return {
     '@context': 'https://schema.org',
@@ -86,6 +90,7 @@ export function serviceSchema({ slug, name, description, serviceType, areaServed
     name,
     ...(serviceType ? { serviceType } : {}),
     ...(description ? { description } : {}),
+    ...(priceRange ? { priceRange } : {}),
     provider: BUSINESS_PROVIDER,
     areaServed: areaServed ?? { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
     availableChannel: {
@@ -108,7 +113,7 @@ export interface ArticleSchemaOptions {
   dateModified?: string
 }
 
-const AREA_SERVED = [
+export const AREA_SERVED = [
   { '@type': 'City', name: 'Manchester' },
   { '@type': 'City', name: 'Bolton' },
   { '@type': 'City', name: 'Bury' },

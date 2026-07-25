@@ -1,13 +1,13 @@
-import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
-import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/schema'
+import { AREA_SERVED, breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Tyre Fitting Near Me | 24/7 Mobile Tyre Fitting',
+export const metadata = buildMetadata({
+  title: 'Tyre Fitting Near Me | Mobile Fitters — Greater Manchester',
   description:
-    'Searching for tyre fitting near you? Our mobile technicians reach almost anywhere, fitting tyres at your home, work or roadside location, 24/7.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/tyre-fitting-near-me' },
-}
+    'Tyre fitting near you in Greater Manchester — we come to your home, work or roadside 24/7. Same-day fitting, all tyre brands, upfront prices. Call now.',
+  path: '/tyre-fitting-near-me',
+})
 
 const _breadcrumbSchema = breadcrumbSchema([
   { name: 'Home', item: SITE_URL },
@@ -20,7 +20,20 @@ const _serviceSchema = serviceSchema({
   serviceType: 'Mobile Tyre Fitting',
   description:
     'Mobile tyre fitting service that comes directly to your home, workplace or roadside location across Greater Manchester. Same day, emergency and 24 hour appointments available.',
+  areaServed: AREA_SERVED,
 })
+
+const districts = [
+  { name: 'Manchester', href: '/mobile-tyre-fitting-manchester', postcodes: 'M1 – M16, M40, M60' },
+  { name: 'Bolton', href: '/mobile-tyre-fitting-bolton', postcodes: 'BL1 – BL7' },
+  { name: 'Bury', href: '/mobile-tyre-fitting-bury', postcodes: 'BL8, BL9, M26' },
+  { name: 'Oldham', href: '/mobile-tyre-fitting-oldham', postcodes: 'OL1 – OL9' },
+  { name: 'Rochdale', href: '/mobile-tyre-fitting-rochdale', postcodes: 'OL10 – OL16' },
+  { name: 'Stockport', href: '/mobile-tyre-fitting-stockport', postcodes: 'SK1 – SK8, SK12' },
+  { name: 'Tameside', href: '/mobile-tyre-fitting-tameside', postcodes: 'OL5 – OL7, SK14 – SK16' },
+  { name: 'Trafford', href: '/mobile-tyre-fitting-trafford', postcodes: 'M16, M17, M32, M33, WA14 – WA15' },
+  { name: 'Wigan', href: '/mobile-tyre-fitting-wigan', postcodes: 'WN1 – WN6' },
+]
 
 const faqs = [
   { q: 'Do you provide tyre fitting near me?', a: 'Yes. Our mobile tyre fitting service comes directly to your home, workplace or roadside location, making tyre replacement simple and convenient.' },
@@ -338,6 +351,54 @@ export default function TyreFittingNearMePage() {
                 WhatsApp Us
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── AREAS WE COVER ───────────────────────────────────────────── */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10 sm:mb-14">
+            <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">
+              Areas We Cover
+            </span>
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-4"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Tyre Fitting Near You in Every Greater Manchester District
+            </h2>
+            <p className="text-slate-600 max-w-2xl mx-auto text-base">
+              Whichever of our 9 districts you&apos;re in, our mobile technicians are never far away.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+            {districts.map((d) => (
+              <a
+                key={d.href}
+                href={d.href}
+                className="group flex items-center justify-between gap-3 bg-slate-50 border border-slate-100 rounded-xl p-4 sm:p-5 hover:border-[#b70011]/30 hover:shadow-md transition-all"
+              >
+                <div>
+                  <p className="font-bold text-[#0f172a]">{d.name}</p>
+                  <p className="text-xs text-slate-500">{d.postcodes}</p>
+                </div>
+                <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all shrink-0">arrow_forward</span>
+              </a>
+            ))}
+          </div>
+
+          <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm h-[300px] sm:h-[380px]">
+            <iframe
+              className="w-full h-full"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4741.379474172151!2d-2.1049285233703974!3d53.5454538598072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb920bfb7fecd%3A0x4edbef2355697975!2sOne%20Stop%20Mobile%20Tyres%2024%2F7!5e0!3m2!1sen!2s!4v1781464116347!5m2!1sen!2s"
+              frameBorder="0"
+              scrolling="no"
+              title="One Stop Tyres 24/7 service area map"
+              aria-label="Google map showing One Stop Tyres 24/7 service area across Greater Manchester"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>

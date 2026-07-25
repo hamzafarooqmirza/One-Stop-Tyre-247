@@ -164,7 +164,7 @@ export default function HeroSlider() {
         className={`slide-panel ${transitioning ? slideInClass : ''}`}
         key={`bg-${current}`}
       >
-        <SlideBg image={slide.image} />
+        <SlideBg image={slide.image} priority={current === 0} />
       </div>
 
       {/* ── CONTENT (normal document flow — section grows to fit this) ── */}
@@ -297,7 +297,7 @@ export default function HeroSlider() {
   )
 }
 
-function SlideBg({ image }: { image: string }) {
+function SlideBg({ image, priority }: { image: string; priority?: boolean }) {
   return (
     <div className="absolute inset-0 bg-[#0f172a]">
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -309,6 +309,7 @@ function SlideBg({ image }: { image: string }) {
         width={1600}
         height={1067}
         decoding="async"
+        {...(priority ? { fetchPriority: 'high' as const } : { loading: 'lazy' as const })}
       />
       {/* Gradient: strong left for text, fades right */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/80 to-[#0f172a]/30" />

@@ -18,6 +18,10 @@ export default function Footer() {
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One-Stop%20Loog-airanko-Qpv1QvladNLpRhg8X3Hs6SzyydzFMq.webp"
               alt="One Stop Mobile Tyres 24/7"
               className="h-16 sm:h-20 w-auto"
+              width={200}
+              height={80}
+              loading="lazy"
+              decoding="async"
             />
           </a>
           <p className="text-slate-400 text-base leading-relaxed text-center sm:text-left">

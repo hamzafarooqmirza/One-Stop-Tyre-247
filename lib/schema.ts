@@ -139,7 +139,6 @@ export function localBusinessSchema() {
     logo: `${SITE_URL}/icon.webp`,
     description:
       '24/7 emergency mobile tyre fitting across Greater Manchester. Professional technicians reach you at home, work, or roadside within 20–30 minutes.',
-    priceRange: '££',
     address: BUSINESS_PROVIDER.address,
     geo: {
       '@type': 'GeoCoordinates',

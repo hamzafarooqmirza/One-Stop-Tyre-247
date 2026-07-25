@@ -4,6 +4,7 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import JsonLd from '@/components/JsonLd'
 import { serviceSchema } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
 const _serviceSchema = serviceSchema({
   slug: 'mobile-tyre-fitting-trafford',
@@ -12,12 +13,12 @@ const _serviceSchema = serviceSchema({
   areaServed: { '@type': 'City', name: 'Trafford' },
 })
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Trafford | 24/7 Tyre Fitting',
   description:
-    'Reliable mobile tyre fitting in Trafford, 24/7. Our certified technicians reach your home, work or roadside location fast, with upfront pricing.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-trafford' },
-}
+    '24/7 mobile tyre fitting in Trafford — Altrincham, Sale, Stretford, Urmston & Partington (M16–M33, WA14–WA15). Emergency tyres fitted in 20–30 min.',
+  path: '/mobile-tyre-fitting-trafford',
+})
 
 function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc: string }) {
   return (
@@ -122,6 +123,38 @@ export default function TraffordPage() {
           </div>
         </section>
 
+        {/* ── LOCAL INTRO ────────────────────────────────────── */}
+        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Mobile Tyre Fitting Across Trafford
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              Trafford covers a lot of ground — from Altrincham and Sale in the south up through
+              Stretford, Urmston and Partington — so a breakdown can happen a long way from wherever
+              you&apos;d normally get tyres done. Our mobile tyre fitting service comes to your home,
+              workplace or the roadside anywhere across the M16–M33 and WA14–WA15 postcode areas
+              instead.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              We regularly fit tyres at workplaces around Trafford Park&apos;s industrial estate,
+              where a damaged tyre on a work vehicle needs sorting without taking it off-site, and
+              we&apos;re a familiar call-out near the Trafford Centre and Old Trafford on match days
+              and busy shopping weekends. The MediaCityUK border and the M60&apos;s western section
+              and M602 also see frequent breakdowns we attend.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed">
+              Whether you&apos;re parked up in Sale, need a workplace fitting in Stretford, or
+              you&apos;ve broken down heading towards Partington, our technicians carry premium,
+              mid-range and budget tyres and aim to reach any Trafford postcode within 20–30 minutes.
+              Every mobile tyre fitting job includes a full safety check before we leave.
+            </p>
+          </div>
+        </section>
+
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">
@@ -151,7 +184,7 @@ export default function TraffordPage() {
                 <span className="text-xs text-slate-400 font-medium hidden sm:inline">Based on Google Reviews</span>
               </a>
             </div>
-            <ReviewsCarousel />
+            <ReviewsCarousel offset={2} />
             <div className="text-center mt-8">
               <a
                 href="https://share.google/bejdYHzU10lFRVv4E"
@@ -187,7 +220,7 @@ export default function TraffordPage() {
               {[
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp',
-                  title: 'Mobile Tyre Fitting Trafford',
+                  title: 'Mobile Tyre Fitting',
                   desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Trafford. Fast response with premium and budget tyre options available.',
                   badge: 'FAST RESPONSE',
                   href: '/mobile-tyre-fitting',

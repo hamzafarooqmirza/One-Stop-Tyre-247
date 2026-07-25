@@ -4,6 +4,7 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import JsonLd from '@/components/JsonLd'
 import { serviceSchema } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
 const _serviceSchema = serviceSchema({
   slug: 'mobile-tyre-fitting-rochdale',
@@ -12,12 +13,12 @@ const _serviceSchema = serviceSchema({
   areaServed: { '@type': 'City', name: 'Rochdale' },
 })
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Rochdale | 24/7 Tyre Fitting',
   description:
-    'Fast mobile tyre fitting in Rochdale, day or night. Our fully insured technicians fit tyres at your home, work or roadside with transparent pricing.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-rochdale' },
-}
+    '24/7 mobile tyre fitting in Rochdale, Heywood, Middleton & Milnrow (OL10–OL16). Emergency tyre replacement at home, work or roadside in 20–30 min.',
+  path: '/mobile-tyre-fitting-rochdale',
+})
 
 function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc: string }) {
   return (
@@ -122,6 +123,38 @@ export default function RochdalePage() {
           </div>
         </section>
 
+        {/* ── LOCAL INTRO ────────────────────────────────────── */}
+        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Mobile Tyre Fitting Across Rochdale
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              Rochdale town centre and the Riverside area see plenty of tight parking and cobbled
+              side streets, exactly where a slow puncture tends to turn into a flat overnight. Our
+              mobile tyre fitting service covers Rochdale, Heywood, Middleton and Milnrow, coming
+              directly to your home, workplace or the roadside instead of asking you to find a garage
+              slot across the OL10–OL16 postcode area.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              We&apos;re a familiar sight around the Hollingworth Lake area, where weekend visitors
+              and dog walkers park up on the surrounding lanes, and along the M62 between junctions 18
+              and 21, one of the main routes in and out of Rochdale. The Pennine roads above the town
+              get exposed to ice and standing water in winter, which is when we see the most call-outs
+              for sidewall damage and sudden blowouts.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed">
+              Whether you&apos;re stuck in Middleton, need a same-day fitting in Milnrow, or have
+              picked up a puncture on the way into Heywood, our technicians carry premium, mid-range
+              and budget tyres and aim to reach you within 20–30 minutes. Every mobile tyre fitting job
+              includes wheel balancing and a TPMS check before we leave.
+            </p>
+          </div>
+        </section>
+
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">
@@ -151,7 +184,7 @@ export default function RochdalePage() {
                 <span className="text-xs text-slate-400 font-medium hidden sm:inline">Based on Google Reviews</span>
               </a>
             </div>
-            <ReviewsCarousel />
+            <ReviewsCarousel offset={1} />
             <div className="text-center mt-8">
               <a
                 href="https://share.google/bejdYHzU10lFRVv4E"
@@ -187,7 +220,7 @@ export default function RochdalePage() {
               {[
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp',
-                  title: 'Mobile Tyre Fitting Rochdale',
+                  title: 'Mobile Tyre Fitting',
                   desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Rochdale. Fast response with premium and budget tyre options available.',
                   badge: 'FAST RESPONSE',
                   href: '/mobile-tyre-fitting',

@@ -4,6 +4,7 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import JsonLd from '@/components/JsonLd'
 import { serviceSchema } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
 const _serviceSchema = serviceSchema({
   slug: 'mobile-tyre-fitting-stockport',
@@ -12,12 +13,12 @@ const _serviceSchema = serviceSchema({
   areaServed: { '@type': 'City', name: 'Stockport' },
 })
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Stockport | 24/7 Tyre Fitting',
   description:
-    '24/7 mobile tyre fitting in Stockport. Emergency tyre replacement and puncture repair at your home, workplace or roadside, with no hidden call-out fees.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-stockport' },
-}
+    '24/7 mobile tyre fitting in Stockport, Cheadle, Bramhall, Hazel Grove & Marple (SK1–SK8, SK12). Fast emergency tyre replacement — 20–30 min response.',
+  path: '/mobile-tyre-fitting-stockport',
+})
 
 function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc: string }) {
   return (
@@ -122,6 +123,38 @@ export default function StockportPage() {
           </div>
         </section>
 
+        {/* ── LOCAL INTRO ────────────────────────────────────── */}
+        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Mobile Tyre Fitting Across Stockport
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              Stockport centre sits down in the Mersey valley, with the Viaduct area and the narrow
+              streets around Merseyway making a quick garage visit more hassle than it&apos;s worth
+              when a tyre gives way. Our mobile tyre fitting service comes to your home, workplace or
+              the roadside instead, covering Stockport, Cheadle, Bramhall, Hazel Grove and Marple
+              across the SK1–SK8 and SK12 postcode areas.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              We regularly attend the A6 corridor that runs straight through Stockport towards
+              Cheadle and Hazel Grove, as well as the M60 around junctions 1 and 2 and the M56 link
+              that carries traffic out towards Manchester Airport. Marple&apos;s hillier, more spread
+              out streets are covered just as quickly as the town centre.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed">
+              Whether you&apos;ve broken down near the Viaduct, need a tyre changing on your
+              Bramhall driveway, or are stuck on the A6 heading towards the airport, our technicians
+              carry premium, mid-range and budget tyres and aim to reach any Stockport postcode within
+              20–30 minutes. Every mobile tyre fitting job includes a full safety check before we
+              leave.
+            </p>
+          </div>
+        </section>
+
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">
@@ -151,7 +184,7 @@ export default function StockportPage() {
                 <span className="text-xs text-slate-400 font-medium hidden sm:inline">Based on Google Reviews</span>
               </a>
             </div>
-            <ReviewsCarousel />
+            <ReviewsCarousel offset={3} />
             <div className="text-center mt-8">
               <a
                 href="https://share.google/bejdYHzU10lFRVv4E"
@@ -187,7 +220,7 @@ export default function StockportPage() {
               {[
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp',
-                  title: 'Mobile Tyre Fitting Stockport',
+                  title: 'Mobile Tyre Fitting',
                   desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Stockport. Fast response with premium and budget tyre options available.',
                   badge: 'FAST RESPONSE',
                   href: '/mobile-tyre-fitting',

@@ -21,7 +21,7 @@ const _articleSchema = articleSchema({
   headline: 'What to Do If You Get a Flat Tyre on the M60 (or Any Manchester Motorway)',
   description:
     'A step-by-step safety guide for drivers who get a flat tyre or blowout on the M60, M62, M56, M61, M602, M66 or M67 — where to stop, who to call, and how mobile tyre fitting gets you moving again.',
-  image: `${SITE_URL}/images/tyre%20fitting%20in%20emergergency-airanko%20(1).webp`,
+  image: `${SITE_URL}/images/tyre-fitting-in-emergency.webp`,
   datePublished: '2026-07-19',
 })
 
@@ -88,7 +88,7 @@ export default function FlatTyreMotorwayGuide() {
       <section className="relative min-h-[360px] sm:min-h-[420px] flex items-end overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/tyre fitting in emergergency-airanko (1).webp"
+          src="/images/tyre-fitting-in-emergency.webp"
           alt="Emergency mobile tyre fitting attending a flat tyre near a Manchester motorway"
           className="absolute inset-0 w-full h-full object-cover object-center"
           width={1600}

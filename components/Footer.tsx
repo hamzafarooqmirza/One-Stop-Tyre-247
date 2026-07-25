@@ -112,6 +112,7 @@ export default function Footer() {
               { label: 'Mobile Tyre Fitting M602', href: '/mobile-tyre-fitting-m602' },
               { label: 'Mobile Tyre Fitting M66', href: '/mobile-tyre-fitting-m66' },
               { label: 'Mobile Tyre Fitting M67', href: '/mobile-tyre-fitting-m67' },
+              { label: 'Mobile Tyre Fitting A627', href: '/mobile-tyre-fitting-a627' },
             ].map((road) => (
               <li key={road.href}>
                 <a href={road.href} className="hover:text-[#FF4444] transition-colors flex items-center justify-center sm:justify-start gap-2 py-0.5">

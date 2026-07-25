@@ -1,13 +1,13 @@
-import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
-import { breadcrumbSchema, SITE_URL } from '@/lib/schema'
+import { breadcrumbSchema, serviceSchema, SITE_URL } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Service Area Coverage Map | One Stop Tyres 24/7',
+export const metadata = buildMetadata({
+  title: 'Service Area | Mobile Tyre Fitting Coverage — Greater Manchester',
   description:
-    'See the full coverage map for One Stop Tyres 24/7 - cities, towns and motorways we serve 24/7 across the UK for mobile tyre fitting and roadside assistance.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/service-area' },
-}
+    'Full coverage map: 9 Greater Manchester districts plus the M60, M61, M62, M56, M66, M67, M602 & A627 — 24/7 mobile tyre fitting wherever you are.',
+  path: '/service-area',
+})
 
 // ── Borough / city hub cards ───────────────────────────────────────────────────
 const boroughAreas = [
@@ -234,6 +234,12 @@ const motorwayAreas = [
     desc: 'Trans-Pennine motorway serviced across the Greater Manchester section including Eccles and Birch.',
   },
   {
+    name: 'M56 Motorway',
+    href: '/mobile-tyre-fitting-m56',
+    junctions: 'J1 – J6 (GM stretch)',
+    desc: 'Manchester Airport corridor covered on the Greater Manchester stretch of the M56, from the Cheshire border to the A34 interchange.',
+  },
+  {
     name: 'M66 Motorway',
     href: '/mobile-tyre-fitting-m66',
     junctions: 'J1 – J5',
@@ -264,7 +270,7 @@ const trustBadges = [
   { icon: 'schedule', label: '24/7 Emergency', sub: 'Always on call' },
   { icon: 'bolt', label: '20–30 Min', sub: 'Average arrival' },
   { icon: 'public', label: '9 Districts', sub: 'Greater Manchester' },
-  { icon: 'route', label: '7 Motorways', sub: 'Full roadside cover' },
+  { icon: 'route', label: '8 Motorways', sub: 'Full roadside cover' },
 ]
 
 
@@ -273,10 +279,20 @@ const _breadcrumbSchema = breadcrumbSchema([
   { name: 'Service Area', item: `${SITE_URL}/service-area` },
 ])
 
+const _serviceSchema = serviceSchema({
+  slug: 'service-area',
+  name: 'Mobile Tyre Fitting Coverage — Greater Manchester',
+  serviceType: 'Mobile Tyre Fitting',
+  description:
+    'Mobile tyre fitting and roadside assistance across all 9 Greater Manchester districts and the M60, M61, M62, M56, M66, M67, M602 and A627 motorways.',
+  areaServed: { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
+})
+
 export default function ServiceAreaPage() {
   return (
     <div className="bg-surface font-body-md text-on-background antialiased">
       <JsonLd data={_breadcrumbSchema} />
+      <JsonLd data={_serviceSchema} />
       {/* ── Hero ── */}
       <section className="relative min-h-[400px] sm:min-h-[450px] lg:h-[500px] flex items-center justify-center overflow-hidden py-16 sm:py-20">
         <div className="absolute inset-0 bg-secondary/85 z-10" />
@@ -297,7 +313,7 @@ export default function ServiceAreaPage() {
             Our Service Area
           </h1>
           <p className="font-body-lg text-base lg:text-body-lg text-white/90 max-w-2xl mx-auto mb-6 sm:mb-8 text-pretty leading-relaxed">
-            We cover all 9 Greater Manchester districts and 7 major motorways — wherever you
+            We cover all 9 Greater Manchester districts and 8 major motorways — wherever you
             are, we&apos;ll come to you, 24 hours a day, 7 days a week.
           </p>
           <a

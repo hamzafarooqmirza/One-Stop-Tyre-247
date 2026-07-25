@@ -1,13 +1,13 @@
-import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Home Tyre Fitting | Same Day Mobile Service',
+export const metadata = buildMetadata({
+  title: 'Home Tyre Fitting Manchester | Tyres Fitted At Your Door',
   description:
-    'Convenient same day tyre fitting at your driveway while you get on with your day. No garage visit needed - our mobile technicians come to you.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/home-tyre-fitting' },
-}
+    'Home tyre fitting across Greater Manchester — tyres supplied, fitted & balanced on your driveway, 24/7. No garage visit, no hidden fees — call or WhatsApp.',
+  path: '/home-tyre-fitting',
+})
 
 const _breadcrumbSchema = breadcrumbSchema([
   { name: 'Home', item: SITE_URL },
@@ -118,6 +118,7 @@ export default function HomeTyreFittingPage() {
           width={1600}
           height={900}
           decoding="async"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-[#0f172a]/80" />
 

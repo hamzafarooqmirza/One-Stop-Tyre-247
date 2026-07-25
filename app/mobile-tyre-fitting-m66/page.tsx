@@ -4,20 +4,21 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import JsonLd from '@/components/JsonLd'
 import { serviceSchema } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
 const _serviceSchema = serviceSchema({
   slug: 'mobile-tyre-fitting-m66',
   name: 'Mobile Tyre Fitting on the M66',
-  serviceType: 'Emergency Roadside Tyre Assistance',
+  serviceType: 'Emergency Roadside Tyre Fitting',
   areaServed: { '@type': 'Place', name: 'M66' },
 })
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting M66 | 24/7 Motorway Tyre Assistance',
   description:
-    '24/7 emergency mobile tyre fitting on the M66. Our technicians reach you fast, fitting your replacement tyre at the nearest safe location.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-m66' },
-}
+    'Emergency mobile tyre fitting on the M66 (J1–J5), Manchester–Ramsbottom corridor. 24/7 dispatch to safe stopping points in 20–30 minutes. Call now.',
+  path: '/mobile-tyre-fitting-m66',
+})
 
 function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc: string }) {
   return (
@@ -58,7 +59,7 @@ export default function M66Page() {
             </h1>
 
             <p className="text-white/80 text-base leading-relaxed mb-6">
-              Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance On the M66. We Come To Your Location Within 20–30 Minutes.
+              Emergency Tyre Replacement &amp; Mobile Puncture Repair for the M66. Get to a safe place — a services, slip road or lay-by — and we&apos;ll reach you within 20–30 minutes.
             </p>
 
             {/* Trust bullets */}
@@ -122,6 +123,48 @@ export default function M66Page() {
           </div>
         </section>
 
+        {/* ── LOCAL INTRO ────────────────────────────────────── */}
+        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Emergency Tyre Fitting on the M66
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              The M66 is a short but busy north–south link through the Bury corridor, running from
+              junction 1 at Simister Island — where it meets the M60 — up to junction 5. It&apos;s
+              one of the main routes commuters use heading towards Ramsbottom and Rawtenstall, so
+              traffic can back up quickly if a breakdown blocks a lane at peak times.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              Because the M66 links directly onto the A56 towards Ramsbottom and Rawtenstall, a
+              tyre failure here often happens to drivers partway through a longer commute rather
+              than right at the start or end of their journey. Our mobile tyre fitting service
+              dispatches straight to wherever you&apos;ve managed to stop safely along the route.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed">
+              Whether you&apos;re stuck near Simister Island or further up towards junction 5, call
+              or WhatsApp us your location and we&apos;ll send the nearest technician. We aim to
+              reach any safe stopping point on the M66 within 20–30 minutes, with premium, mid-range
+              and budget tyres ready to fit on arrival.
+            </p>
+
+            <div className="mt-8 bg-slate-50 border-l-4 border-[#b70011] rounded-r-xl p-5 sm:p-6">
+              <h3 className="font-bold text-[#0f172a] mb-2" style={{ fontFamily: 'var(--font-work-sans)' }}>
+                Staying Safe on the M66
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                For safety reasons we do not carry out tyre changes on a live carriageway or hard
+                shoulder. If you break down on the M66, get to the nearest services, slip road or
+                lay-by if you safely can, put your hazards on, and call or WhatsApp us your location
+                — we&apos;ll dispatch a technician to meet you there.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">
@@ -151,7 +194,7 @@ export default function M66Page() {
                 <span className="text-xs text-slate-400 font-medium hidden sm:inline">Based on Google Reviews</span>
               </a>
             </div>
-            <ReviewsCarousel />
+            <ReviewsCarousel offset={1} />
             <div className="text-center mt-8">
               <a
                 href="https://share.google/bejdYHzU10lFRVv4E"
@@ -187,17 +230,17 @@ export default function M66Page() {
               {[
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp',
-                  title: 'Mobile Tyre Fitting M66',
+                  title: 'Mobile Tyre Fitting',
                   desc: 'Mobile tyre fitting at your location on the M66. Fast response with premium and budget tyre options available.',
                   badge: 'FAST RESPONSE',
                   href: '/mobile-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp',
-                  title: 'Home Tyre Fitting',
-                  desc: 'Same day tyre fitting on the M66, without the hassle of visiting a garage.',
-                  badge: 'AT YOUR DOOR',
-                  href: '/home-tyre-fitting',
+                  title: 'Emergency Tyre Replacement',
+                  desc: 'Genuine 24 hour emergency tyre replacement for breakdowns on the M66, day or night.',
+                  badge: '24/7 DISPATCH',
+                  href: '/24-hour-emergency-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp',
@@ -331,7 +374,7 @@ export default function M66Page() {
         </section>
 
         {/* ── 5. WHY CHOOSE US ──────────────────────────────── */}
-        <WhyChooseUs city="M66" image="/images/tyre-fitting-at-home.webp" />
+        <WhyChooseUs city="M66" image="/images/tyre-fitting-at-home.webp" locationType="road" />
 
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />

@@ -6,6 +6,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import JsonLd from '@/components/JsonLd'
 import { localBusinessSchema } from '@/lib/schema'
+import CookieConsentBanner from '@/components/CookieConsentBanner'
 
 const workSans = Work_Sans({
   subsets: ['latin'],
@@ -77,6 +78,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://maps.google.com" />
+        {/* Google Consent Mode v2 — must run before GTM loads so all signals default to denied */}
+        <Script
+          id="consent-default"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{
+  ad_storage:'denied',
+  ad_user_data:'denied',
+  ad_personalization:'denied',
+  analytics_storage:'denied',
+  wait_for_update:500
+});`,
+          }}
+        />
         {/* Google Tag Manager — container 1 */}
         <Script
           id="gtm-head"
@@ -127,6 +144,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {children}
         </main>
         <Footer />
+        <CookieConsentBanner />
 
         {/* Floating action buttons — desktop only (sm and above) */}
         <div className="hidden sm:flex fixed bottom-6 right-5 z-[60] flex-col gap-4">

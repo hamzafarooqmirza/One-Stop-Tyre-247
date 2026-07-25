@@ -4,20 +4,21 @@ import CityFaq from '@/components/CityFaq'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import JsonLd from '@/components/JsonLd'
 import { serviceSchema } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
 const _serviceSchema = serviceSchema({
   slug: 'mobile-tyre-fitting-m602',
   name: 'Mobile Tyre Fitting on the M602',
-  serviceType: 'Emergency Roadside Tyre Assistance',
+  serviceType: 'Emergency Roadside Tyre Fitting',
   areaServed: { '@type': 'Place', name: 'M602' },
 })
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting M602 | 24/7 Motorway Tyre Assistance',
   description:
-    'Emergency mobile tyre fitting and roadside assistance on the M602, available 24/7. We get you safely to a nearby stop and fit your tyre fast.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-m602' },
-}
+    'Emergency mobile tyre fitting on the M602 (J1–J3), the Salford inner relief route between Eccles and Regent Road. 24/7 — 20–30 minute dispatch.',
+  path: '/mobile-tyre-fitting-m602',
+})
 
 function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc: string }) {
   return (
@@ -58,7 +59,7 @@ export default function M602Page() {
             </h1>
 
             <p className="text-white/80 text-base leading-relaxed mb-6">
-              Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance On the M602. We Come To Your Location Within 20–30 Minutes.
+              Emergency Tyre Replacement &amp; Mobile Puncture Repair for the M602. Get to a safe place — a services, slip road or lay-by — and we&apos;ll reach you within 20–30 minutes.
             </p>
 
             {/* Trust bullets */}
@@ -122,6 +123,47 @@ export default function M602Page() {
           </div>
         </section>
 
+        {/* ── LOCAL INTRO ────────────────────────────────────── */}
+        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <h2
+              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
+              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
+            >
+              Emergency Tyre Fitting on the M602
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              The M602 is Salford&apos;s inner relief route, a short but heavily used stretch
+              running from junction 1 at Eccles towards Regent Road on the approach to Manchester
+              city centre. It carries a lot of rush-hour commuter traffic in and out of the city, so
+              breakdowns here tend to happen at the busiest times of day.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed mb-4">
+              The motorway runs close to MediaCityUK and Salford Quays, so a good number of our
+              call-outs here involve drivers commuting to or from that area. Whatever junction
+              you&apos;re nearest to between Eccles and Regent Road, our mobile tyre fitting service
+              dispatches straight to your safe stopping point.
+            </p>
+            <p className="text-slate-600 text-base leading-relaxed">
+              Whether you&apos;ve broken down heading into the city centre or out towards Eccles,
+              call or WhatsApp us your location and we&apos;ll send the nearest technician. We aim to
+              reach any safe stopping point on the M602 within 20–30 minutes, even during rush hour.
+            </p>
+
+            <div className="mt-8 bg-slate-50 border-l-4 border-[#b70011] rounded-r-xl p-5 sm:p-6">
+              <h3 className="font-bold text-[#0f172a] mb-2" style={{ fontFamily: 'var(--font-work-sans)' }}>
+                Staying Safe on the M602
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                For safety reasons we do not carry out tyre changes on a live carriageway or hard
+                shoulder. If you break down on the M602, get to the nearest services, slip road or
+                lay-by if you safely can, put your hazards on, and call or WhatsApp us your location
+                — we&apos;ll dispatch a technician to meet you there.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">
@@ -151,7 +193,7 @@ export default function M602Page() {
                 <span className="text-xs text-slate-400 font-medium hidden sm:inline">Based on Google Reviews</span>
               </a>
             </div>
-            <ReviewsCarousel />
+            <ReviewsCarousel offset={5} />
             <div className="text-center mt-8">
               <a
                 href="https://share.google/bejdYHzU10lFRVv4E"
@@ -187,17 +229,17 @@ export default function M602Page() {
               {[
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp',
-                  title: 'Mobile Tyre Fitting M602',
+                  title: 'Mobile Tyre Fitting',
                   desc: 'Mobile tyre fitting at your location on the M602. Fast response with premium and budget tyre options available.',
                   badge: 'FAST RESPONSE',
                   href: '/mobile-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp',
-                  title: 'Home Tyre Fitting',
-                  desc: 'Same day tyre fitting on the M602, without the hassle of visiting a garage.',
-                  badge: 'AT YOUR DOOR',
-                  href: '/home-tyre-fitting',
+                  title: 'Emergency Tyre Replacement',
+                  desc: 'Genuine 24 hour emergency tyre replacement for breakdowns on the M602, day or night.',
+                  badge: '24/7 DISPATCH',
+                  href: '/24-hour-emergency-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp',
@@ -331,7 +373,7 @@ export default function M602Page() {
         </section>
 
         {/* ── 5. WHY CHOOSE US ──────────────────────────────── */}
-        <WhyChooseUs city="M602" image="/images/tyre-fitting-in-emergency.webp" />
+        <WhyChooseUs city="M602" image="/images/tyre-fitting-in-emergency.webp" locationType="road" />
 
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />

@@ -1,13 +1,13 @@
-import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Mobile Tyre Fitting | 24/7 Emergency Callout UK',
+export const metadata = buildMetadata({
+  title: 'Mobile Tyre Fitting Manchester | Fitted At Your Location 24/7',
   description:
-    'Fully equipped mobile tyre fitting vans provide emergency tyre repair, replacement and same day fitting at your home, workplace or roadside location, 24/7.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting' },
-}
+    'Mobile tyre fitting across Greater Manchester, 24/7. Premium & budget tyres fitted at home, work or roadside in 20–30 min. Upfront prices — call for a quote.',
+  path: '/mobile-tyre-fitting',
+})
 
 const _breadcrumbSchema = breadcrumbSchema([
   { name: 'Home', item: SITE_URL },
@@ -135,7 +135,7 @@ export default function MobileTyreFittingPage() {
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white font-black mb-5 leading-[1.1]"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              Mobile Tyre Fitting, Professional Tyre Replacement at Your Home, Work or Roadside
+              Mobile Tyre Fitting Manchester
             </h1>
 
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-4">
@@ -358,6 +358,17 @@ export default function MobileTyreFittingPage() {
               <span className="text-xs font-bold text-[#b70011] uppercase tracking-widest mb-1 block">Not sure yet?</span>
               <p className="font-bold text-[#0f172a]">How to Tell If Your Tyre Can Be Repaired or Needs Replacing</p>
               <p className="text-sm text-slate-500">Our quick, expert checklist for puncture location, size and tread depth.</p>
+            </div>
+            <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all shrink-0">arrow_forward</span>
+          </a>
+          <a
+            href="/guides/run-flat-vs-normal-tyres-manchester"
+            className="group flex items-center justify-between gap-4 bg-slate-50 border border-slate-100 rounded-2xl p-5 sm:p-6 mb-2 hover:border-[#b70011]/30 hover:shadow-md transition-all"
+          >
+            <div>
+              <span className="text-xs font-bold text-[#b70011] uppercase tracking-widest mb-1 block">Replacing run-flats?</span>
+              <p className="font-bold text-[#0f172a]">Run-Flat vs Normal Tyres: What You Need to Know</p>
+              <p className="text-sm text-slate-500">The real difference, whether you can mix them, and what it costs to switch.</p>
             </div>
             <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all shrink-0">arrow_forward</span>
           </a>

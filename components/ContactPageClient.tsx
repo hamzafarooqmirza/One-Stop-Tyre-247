@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { ADDRESS } from '@/lib/constants'
 
 export default function ContactPageClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(0)
@@ -25,7 +26,7 @@ export default function ContactPageClient() {
   const faqs = [
     {
       q: 'What is your average response time?',
-      a: 'We aim to reach most locations across the UK within 30 to 60 minutes. Our dispatch system identifies the nearest technician to your location to ensure the fastest possible arrival.',
+      a: 'We aim to reach most locations across Greater Manchester within 20 to 30 minutes. Our dispatch system identifies the nearest technician to your location to ensure the fastest possible arrival.',
     },
     {
       q: 'Do you really operate 24 hours a day?',
@@ -51,8 +52,12 @@ export default function ContactPageClient() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE6E8ZSe8sAyHmlhWi5LEjdJXHUJ0VkiT0-ha65SLRuF248HpKZtM0qXH7uIPuyZqfIl0ZkJlMBNAyvp0-dCmxuhbDEDSecKcGt1C3IVejRr8B-VQCE4XDxgjjZLregKEOOvA_qAkWk8CWlz8heNogWtjsCQEHp5uXM_VBK1IP7F68OymsVri34Xske2_PEQmjQiY9ML20r3g7SR8Va4mZQmd9DRg3YgjL4HJ4L6NyeccIOJjM6jQY-x6saRocoCbxMVABTmPpBqc"
-              alt="Emergency tyre service van on UK motorway"
+              src="/images/mobile-tyre-fitting-manchester.webp"
+              alt="One Stop Tyres 24/7 mobile tyre fitting technician in Greater Manchester"
+              width={1920}
+              height={600}
+              loading="eager"
+              decoding="async"
             />
           </div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 text-center">
@@ -66,8 +71,8 @@ export default function ContactPageClient() {
               className="text-white/90 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed"
               style={{ fontFamily: 'Inter, sans-serif' }}
             >
-              Get in touch with our team for fast and reliable roadside assistance across the UK. We
-              operate round the clock to keep you moving.
+              Get in touch with our team for fast and reliable roadside assistance across Greater
+              Manchester. We operate round the clock to keep you moving.
             </p>
           </div>
         </section>
@@ -159,6 +164,28 @@ export default function ContactPageClient() {
                         Greater Manchester
                       </p>
                       <p className="text-xs sm:text-sm text-[#5c403c]">Strategic locations for 20-30m response</p>
+                    </div>
+                  </div>
+                  {/* Address */}
+                  <div className="flex items-start gap-3 sm:gap-4">
+                    <div className="bg-[#ffdad6] p-2.5 sm:p-3 rounded-lg text-[#b70011] shrink-0">
+                      <span
+                        className="material-symbols-outlined text-xl sm:text-2xl"
+                        style={{ fontVariationSettings: "'FILL' 1" }}
+                      >
+                        home_pin
+                      </span>
+                    </div>
+                    <div className="min-w-0">
+                      <p className="text-[#5c403c] mb-1 text-sm font-semibold">
+                        Our Address
+                      </p>
+                      <p
+                        className="text-[#1c1b1b] text-base lg:text-lg font-semibold"
+                        style={{ fontFamily: 'Work Sans, sans-serif' }}
+                      >
+                        {ADDRESS}
+                      </p>
                     </div>
                   </div>
                 </div>

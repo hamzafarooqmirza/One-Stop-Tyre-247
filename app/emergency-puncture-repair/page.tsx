@@ -1,13 +1,13 @@
-import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/schema'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Emergency Puncture Repair | 24/7 Mobile Repair',
+export const metadata = buildMetadata({
+  title: 'Emergency Puncture Repair Manchester | 24/7 Mobile Service',
   description:
-    "Certified, BS AU 159 compliant plug-and-patch puncture repair fitted on-site. Fast, professional puncture repair wherever you're stranded, 24/7.",
-  alternates: { canonical: 'https://onestoptyres247.co.uk/emergency-puncture-repair' },
-}
+    'BS AU 159 puncture repairs at your roadside, home or workplace across Greater Manchester. 20–30 min emergency response, 24/7 — repair over replace where safe.',
+  path: '/emergency-puncture-repair',
+})
 
 const _breadcrumbSchema = breadcrumbSchema([
   { name: 'Home', item: SITE_URL },
@@ -131,7 +131,7 @@ export default function EmergencyPunctureRepairPage() {
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white font-black mb-5 leading-[1.1]"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              Emergency Mobile Puncture Repair, Fast Roadside &amp; Home Tyre Repair
+              Emergency Puncture Repair Manchester
             </h1>
 
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-4">

@@ -192,7 +192,7 @@ export default function ServicePage({
               Professional Roadside Assistance
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto text-base">
-              Comprehensive mobile vehicle support available every day of the year across the UK.
+              Comprehensive mobile vehicle support available every day of the year across Greater Manchester.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -407,7 +407,7 @@ export default function ServicePage({
             Need Immediate Assistance?
           </h2>
           <p className="text-slate-400 mb-8 leading-relaxed">
-            Call now and our team will reach you quickly anywhere across the UK.
+            Call now and our team will reach you quickly anywhere across Greater Manchester.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

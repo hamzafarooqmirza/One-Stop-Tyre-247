@@ -31,12 +31,15 @@ interface WhyChooseUsProps {
   image?: string
   /** 'road' fixes the grammar for motorway/road pages ("on the M60" instead of "in M60"). Defaults to 'city'. */
   locationType?: 'city' | 'road'
+  /** Overrides the response-time feature title/description — for pages outside the 20-30 min Greater Manchester radius. */
+  responseTitle?: string
+  responseDesc?: string
 }
 
-export default function WhyChooseUs({ city, image, locationType = 'city' }: WhyChooseUsProps) {
+export default function WhyChooseUs({ city, image, locationType = 'city', responseTitle: responseTitleOverride, responseDesc }: WhyChooseUsProps) {
   const imgSrc = image ?? "/images/mobile-tyre-fitting-service.webp"
   const heading = locationType === 'road' ? `Why Drivers Choose Us on the ${city}` : `Why ${city} Drivers Choose Us`
-  const responseTitle = locationType === 'road' ? `Fastest Response on the ${city}` : `Fastest Response in ${city}`
+  const responseTitle = responseTitleOverride ?? (locationType === 'road' ? `Fastest Response on the ${city}` : `Fastest Response in ${city}`)
   return (
     <section className="bg-white py-12 sm:py-16 lg:py-20 border-y border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
@@ -69,7 +72,7 @@ export default function WhyChooseUs({ city, image, locationType = 'city' }: WhyC
             <FeatureItem
               icon="speed"
               title={responseTitle}
-              desc="Strategically based to reach you within 20-30 minutes — at home, work, or roadside."
+              desc={responseDesc ?? "Strategically based to reach you within 20-30 minutes — at home, work, or roadside."}
               bg="bg-[#ffdad6]"
               iconColor="text-[#410002]"
             />

@@ -75,79 +75,58 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Service Areas */}
+        {/* Quick Links */}
         <div>
           <h4 className="font-bold mb-4 sm:mb-6 lg:mb-8 text-base sm:text-lg uppercase tracking-wider text-slate-200 text-center sm:text-left">
-            Service Areas
+            Quick Links
           </h4>
           <ul className="space-y-2 sm:space-y-3 lg:space-y-4 text-slate-400 text-sm font-medium">
             {[
-              { label: 'Manchester', href: '/mobile-tyre-fitting-manchester' },
-              { label: 'Bolton', href: '/mobile-tyre-fitting-bolton' },
-              { label: 'Bury', href: '/mobile-tyre-fitting-bury' },
-              { label: 'Oldham', href: '/mobile-tyre-fitting-oldham' },
-              { label: 'Rochdale', href: '/mobile-tyre-fitting-rochdale' },
-              { label: 'Stockport', href: '/mobile-tyre-fitting-stockport' },
-              { label: 'Tameside', href: '/mobile-tyre-fitting-tameside' },
-              { label: 'Trafford', href: '/mobile-tyre-fitting-trafford' },
-              { label: 'Wigan', href: '/mobile-tyre-fitting-wigan' },
-            ].map((area) => (
-              <li key={area.href}>
-                <a href={area.href} className="hover:text-[#FF4444] transition-colors flex items-center justify-center sm:justify-start gap-2 py-0.5">
-                  <span className="w-1 h-1 bg-slate-600 rounded-full shrink-0" />
-                  {area.label}
+              { label: 'Home', href: '/' },
+              { label: 'About Us', href: '/about' },
+              { label: 'All Services', href: '/services' },
+              { label: 'Service Area', href: '/service-area' },
+              { label: 'Guides', href: '/guides' },
+              { label: 'Contact Us', href: '/contact' },
+            ].map((link) => (
+              <li key={link.href}>
+                <a href={link.href} className="hover:text-[#FF4444] transition-colors flex items-center justify-center sm:justify-start gap-2 py-0.5">
+                  <span className="w-1 h-1 bg-[#FF4444] rounded-full shrink-0" />
+                  {link.label}
                 </a>
               </li>
             ))}
           </ul>
         </div>
 
-        {/* Motorways */}
+        {/* Company */}
         <div>
           <h4 className="font-bold mb-4 sm:mb-6 lg:mb-8 text-base sm:text-lg uppercase tracking-wider text-slate-200 text-center sm:text-left">
-            Motorway Coverage
+            Company
           </h4>
-          <ul className="space-y-2 sm:space-y-3 lg:space-y-4 text-slate-400 text-sm font-medium">
+          <ul className="space-y-2 sm:space-y-3 lg:space-y-4 text-slate-400 text-sm font-medium mb-6 sm:mb-8">
             {[
-              { label: 'Mobile Tyre Fitting M60', href: '/mobile-tyre-fitting-m60' },
-              { label: 'Mobile Tyre Fitting M61', href: '/mobile-tyre-fitting-m61' },
-              { label: 'Mobile Tyre Fitting M62', href: '/mobile-tyre-fitting-m62' },
-              { label: 'Mobile Tyre Fitting M56', href: '/mobile-tyre-fitting-m56' },
-              { label: 'Mobile Tyre Fitting M602', href: '/mobile-tyre-fitting-m602' },
-              { label: 'Mobile Tyre Fitting M66', href: '/mobile-tyre-fitting-m66' },
-              { label: 'Mobile Tyre Fitting M67', href: '/mobile-tyre-fitting-m67' },
-              { label: 'Mobile Tyre Fitting A627', href: '/mobile-tyre-fitting-a627' },
-            ].map((road) => (
-              <li key={road.href}>
-                <a href={road.href} className="hover:text-[#FF4444] transition-colors flex items-center justify-center sm:justify-start gap-2 py-0.5">
+              { label: 'Privacy Policy', href: '/privacy-policy' },
+              { label: 'Cookie Policy', href: '/cookie-policy' },
+              { label: 'Terms & Conditions', href: '/terms' },
+            ].map((link) => (
+              <li key={link.href}>
+                <a href={link.href} className="hover:text-[#FF4444] transition-colors flex items-center justify-center sm:justify-start gap-2 py-0.5">
                   <span className="w-1 h-1 bg-slate-600 rounded-full shrink-0" />
-                  {road.label}
+                  {link.label}
                 </a>
               </li>
             ))}
           </ul>
+          <div className="flex items-start justify-center sm:justify-start gap-3 text-slate-400 text-sm">
+            <span className="material-symbols-outlined text-[#FF4444] text-lg shrink-0">schedule</span>
+            <span>Open 24/7 — Emergency Callouts Every Day of the Year</span>
+          </div>
         </div>
       </div>
 
       {/* Bottom bar */}
       <div className="max-w-7xl mx-auto pt-6 sm:pt-8 border-t border-white/5 flex flex-col gap-4">
-        {/* Legal links */}
-        <div className="flex flex-wrap justify-center sm:justify-start gap-x-5 gap-y-2">
-          {[
-            { label: 'Guides', href: '/guides' },
-            { label: 'Privacy Policy', href: '/privacy-policy' },
-            { label: 'Cookie Policy', href: '/cookie-policy' },
-            { label: 'Terms & Conditions', href: '/terms' },
-          ].map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-slate-500 hover:text-white text-xs transition-colors"
-            >
-              {link.label}
-            </a>
-          ))}
-        </div>
         <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-slate-500 text-[11px] sm:text-xs text-center sm:text-left">
             © 2026 One Stop Tyres 24/7. High-Urgency Emergency Roadside Assistance UK. All Rights

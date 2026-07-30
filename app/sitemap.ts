@@ -28,6 +28,11 @@ const TOWN_PAGES = [
 
 const ROAD_PAGES = ['m60', 'm61', 'm62', 'm56', 'm66', 'm67', 'm602', 'a627']
 
+// National coverage — outside Greater Manchester, served on a same-day dispatch basis.
+const NATIONAL_CITY_PAGES = [
+  'leeds', 'leicester', 'bristol', 'milton-keynes', 'coventry', 'edinburgh', 'cardiff', 'solihull', 'basingstoke',
+]
+
 const LEGAL_PAGES = ['/privacy-policy', '/cookie-policy', '/terms']
 
 const GUIDE_PAGES = [
@@ -74,6 +79,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_MODIFIED,
       changeFrequency: 'monthly' as const,
       priority: 0.7,
+    })),
+    ...NATIONAL_CITY_PAGES.map((slug) => ({
+      url: `${SITE_URL}/mobile-tyre-fitting-${slug}`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
     })),
     ...GUIDE_PAGES.map((path) => ({
       url: `${SITE_URL}${path}`,

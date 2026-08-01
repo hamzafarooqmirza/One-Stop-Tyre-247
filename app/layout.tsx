@@ -94,9 +94,7 @@ gtag('consent','default',{
 });`,
           }}
         />
-        {/* Google Tag Manager — single container. TODO(owner): if any tags
-            only exist in the old GTM-NXMX7FVM container, duplicate them
-            into GTM-MP4JFM2K via the GTM UI before this deploys. */}
+        {/* Google Tag Manager — container 1 */}
         <Script
           id="gtm-head"
           strategy="afterInteractive"
@@ -108,13 +106,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-MP4JFM2K');`,
           }}
         />
+        {/* Google Tag Manager — container 2 */}
+        <Script
+          id="gtm-head-2"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NXMX7FVM');`,
+          }}
+        />
       </head>
       <body className="antialiased overflow-x-hidden pb-[60px] sm:pb-0">
         <JsonLd data={localBusinessSchema()} />
-        {/* Google Tag Manager noscript */}
+        {/* Google Tag Manager noscript — container 1 */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-MP4JFM2K"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+        {/* Google Tag Manager noscript — container 2 */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NXMX7FVM"
             height="0"
             width="0"
             style={{ display: 'none', visibility: 'hidden' }}

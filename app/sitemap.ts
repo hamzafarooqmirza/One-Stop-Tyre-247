@@ -24,6 +24,7 @@ const TOWN_PAGES = [
   'ashton-under-lyne', 'hyde', 'glossop', 'marple', 'wythenshawe', 'altrincham', 'sale',
   'urmston', 'stretford', 'eccles', 'prestwich', 'middleton', 'farnworth', 'radcliffe',
   'heywood', 'horwich', 'westhoughton', 'atherton', 'leigh',
+  'blackley', 'cheetham-hill', 'chorlton-cum-hardy', 'didsbury', 'beswick', 'fallowfield',
 ]
 
 const ROAD_PAGES = ['m60', 'm61', 'm62', 'm56', 'm66', 'm67', 'm602', 'a627']

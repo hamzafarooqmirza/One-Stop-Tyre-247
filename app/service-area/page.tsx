@@ -211,6 +211,48 @@ const townAreas = [
     postcodes: 'WN7',
     desc: 'Dedicated coverage of Leigh town centre, Tyldesley, Astley and Lowton.',
   },
+  {
+    name: 'Blackley',
+    href: '/mobile-tyre-fitting-blackley',
+    icon: 'location_on',
+    postcodes: 'M9',
+    desc: 'Dedicated coverage of Blackley, Charlestown and the Boggart Hole Clough area.',
+  },
+  {
+    name: 'Cheetham Hill',
+    href: '/mobile-tyre-fitting-cheetham-hill',
+    icon: 'location_on',
+    postcodes: 'M8',
+    desc: 'Dedicated coverage of Cheetham Hill, Queens Road and the Manchester Fort area.',
+  },
+  {
+    name: 'Chorlton-cum-Hardy',
+    href: '/mobile-tyre-fitting-chorlton-cum-hardy',
+    icon: 'location_on',
+    postcodes: 'M21',
+    desc: 'Dedicated coverage of Chorlton Green, Beech Road and Barlow Moor Road.',
+  },
+  {
+    name: 'Didsbury',
+    href: '/mobile-tyre-fitting-didsbury',
+    icon: 'location_on',
+    postcodes: 'M20',
+    desc: 'Dedicated coverage of Didsbury village, East Didsbury and Fog Lane Park.',
+  },
+  {
+    name: 'Beswick',
+    href: '/mobile-tyre-fitting-beswick',
+    icon: 'location_on',
+    postcodes: 'M11',
+    desc: 'Dedicated coverage of Beswick, the Etihad Campus and Alan Turing Way.',
+  },
+  {
+    name: 'Fallowfield',
+    href: '/mobile-tyre-fitting-fallowfield',
+    icon: 'location_on',
+    postcodes: 'M14',
+    desc: 'Dedicated coverage of Fallowfield, Wilmslow Road and Platt Fields Park.',
+  },
 ]
 
 // ── Motorway / road cards ─────────────────────────────────────────────────────

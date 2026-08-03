@@ -25,6 +25,7 @@ const TOWN_PAGES = [
   'urmston', 'stretford', 'eccles', 'prestwich', 'middleton', 'farnworth', 'radcliffe',
   'heywood', 'horwich', 'westhoughton', 'atherton', 'leigh',
   'blackley', 'cheetham-hill', 'chorlton-cum-hardy', 'didsbury', 'beswick', 'fallowfield',
+  'hulme', 'moss-side', 'newton-heath',
 ]
 
 const ROAD_PAGES = ['m60', 'm61', 'm62', 'm56', 'm66', 'm67', 'm602', 'a627']

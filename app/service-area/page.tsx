@@ -253,6 +253,27 @@ const townAreas = [
     postcodes: 'M14',
     desc: 'Dedicated coverage of Fallowfield, Wilmslow Road and Platt Fields Park.',
   },
+  {
+    name: 'Hulme',
+    href: '/mobile-tyre-fitting-hulme',
+    icon: 'location_on',
+    postcodes: 'M15',
+    desc: 'Dedicated coverage of Hulme, Hulme Park and Stretford Road.',
+  },
+  {
+    name: 'Moss Side',
+    href: '/mobile-tyre-fitting-moss-side',
+    icon: 'location_on',
+    postcodes: 'M14 / M16',
+    desc: 'Dedicated coverage of Moss Side, Alexandra Park and Princess Road.',
+  },
+  {
+    name: 'Newton Heath',
+    href: '/mobile-tyre-fitting-newton-heath',
+    icon: 'location_on',
+    postcodes: 'M40',
+    desc: 'Dedicated coverage of Newton Heath, Errwood Park and Ten Acres Lane.',
+  },
 ]
 
 // ── Motorway / road cards ─────────────────────────────────────────────────────

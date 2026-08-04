@@ -15,6 +15,13 @@ const _breadcrumbSchema = breadcrumbSchema([
 
 const guides = [
   {
+    title: 'Met Office Forecast: Mixed August Weather Means Greater Manchester Drivers Should Check Their Tyres Now',
+    desc: 'Sunshine, showers and rising temperatures all in the same month — why changeable weather makes this the right time for a tyre check.',
+    href: '/guides/met-office-august-weather-check-your-tyres',
+    readTime: '6 min read',
+    published: '4 August 2026',
+  },
+  {
     title: 'Run-Flat vs Normal Tyres: What Manchester Drivers Need to Know Before Replacing Theirs',
     desc: 'The real difference between run-flat and normal tyres, whether you can mix them, and what it costs to switch — explained without the jargon.',
     href: '/guides/run-flat-vs-normal-tyres-manchester',

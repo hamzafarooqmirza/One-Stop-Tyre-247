@@ -42,6 +42,7 @@ const GUIDE_PAGES = [
   '/guides/how-to-tell-if-your-tyre-can-be-repaired-or-needs-replacing',
   '/guides/what-to-do-flat-tyre-m60-manchester-motorway',
   '/guides/run-flat-vs-normal-tyres-manchester',
+  '/guides/met-office-august-weather-check-your-tyres',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

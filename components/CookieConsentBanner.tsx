@@ -52,8 +52,9 @@ export default function CookieConsentBanner() {
     >
       <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
         <p className="text-sm text-slate-300 leading-relaxed flex-1 text-center sm:text-left">
-          We use cookies for analytics to help us understand how visitors use our site. You can
-          accept or reject non-essential cookies at any time — see our{' '}
+          We use cookies for analytics and advertising measurement to understand how visitors use
+          our website and measure the effectiveness of our advertising. You can accept or reject
+          non-essential cookies at any time — see our{' '}
           <a href="/cookie-policy" className="underline hover:text-white transition-colors">
             Cookie Policy
           </a>{' '}

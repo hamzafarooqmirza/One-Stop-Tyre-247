@@ -109,21 +109,9 @@ gtag('consent','default',{
 })();`,
           }}
         />
-        {/* Google Tag Manager — container 1 */}
+        {/* Google Tag Manager */}
         <Script
           id="gtm-head"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MP4JFM2K');`,
-          }}
-        />
-        {/* Google Tag Manager — container 2 */}
-        <Script
-          id="gtm-head-2"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -136,16 +124,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </head>
       <body className="antialiased overflow-x-hidden pb-[60px] sm:pb-0">
         <JsonLd data={localBusinessSchema()} />
-        {/* Google Tag Manager noscript — container 1 */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-MP4JFM2K"
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-          />
-        </noscript>
-        {/* Google Tag Manager noscript — container 2 */}
+        {/* Google Tag Manager noscript */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-NXMX7FVM"

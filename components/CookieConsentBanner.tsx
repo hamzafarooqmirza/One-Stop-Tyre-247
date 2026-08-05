@@ -7,30 +7,32 @@ const STORAGE_KEY = 'cookie-consent'
 type Consent = 'granted' | 'denied'
 
 function pushConsentUpdate(consent: Consent) {
-  const w = window as unknown as { dataLayer?: unknown[] }
+  const w = window as unknown as { gtag?: (...args: unknown[]) => void; dataLayer?: unknown[] }
+  const signals = {
+    ad_storage: consent,
+    ad_user_data: consent,
+    ad_personalization: consent,
+    analytics_storage: consent,
+  }
+  if (typeof w.gtag === 'function') {
+    w.gtag('consent', 'update', signals)
+    return
+  }
   w.dataLayer = w.dataLayer || []
-  w.dataLayer.push([
-    'consent',
-    'update',
-    {
-      ad_storage: consent,
-      ad_user_data: consent,
-      ad_personalization: consent,
-      analytics_storage: consent,
-    },
-  ])
+  w.dataLayer.push(['consent', 'update', signals])
 }
 
 export default function CookieConsentBanner() {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
+    // Stored consent from a prior visit is already re-applied synchronously by the
+    // inline script in <head> (before GTM loads), so we only need to show the
+    // banner when there is no stored choice yet.
     const stored = window.localStorage.getItem(STORAGE_KEY)
-    if (stored === 'granted' || stored === 'denied') {
-      pushConsentUpdate(stored)
-      return
+    if (stored !== 'granted' && stored !== 'denied') {
+      setVisible(true)
     }
-    setVisible(true)
   }, [])
 
   function choose(consent: Consent) {

@@ -78,7 +78,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://maps.google.com" />
-        {/* Google Consent Mode v2 — must run before GTM loads so all signals default to denied */}
+        {/* Google Consent Mode v2 — must run before GTM loads so all signals default to denied.
+            Returning visitors' stored choice is re-applied synchronously here (not in a React
+            effect) so it lands before GTM's wait_for_update window expires. */}
         <Script
           id="consent-default"
           strategy="beforeInteractive"
@@ -91,24 +93,25 @@ gtag('consent','default',{
   ad_personalization:'denied',
   analytics_storage:'denied',
   wait_for_update:500
-});`,
+});
+(function(){
+  try {
+    var stored = window.localStorage.getItem('cookie-consent');
+    if (stored === 'granted' || stored === 'denied') {
+      gtag('consent','update',{
+        ad_storage:stored,
+        ad_user_data:stored,
+        ad_personalization:stored,
+        analytics_storage:stored
+      });
+    }
+  } catch (e) {}
+})();`,
           }}
         />
-        {/* Google Tag Manager — container 1 */}
+        {/* Google Tag Manager */}
         <Script
           id="gtm-head"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MP4JFM2K');`,
-          }}
-        />
-        {/* Google Tag Manager — container 2 */}
-        <Script
-          id="gtm-head-2"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -121,16 +124,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </head>
       <body className="antialiased overflow-x-hidden pb-[60px] sm:pb-0">
         <JsonLd data={localBusinessSchema()} />
-        {/* Google Tag Manager noscript — container 1 */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-MP4JFM2K"
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-          />
-        </noscript>
-        {/* Google Tag Manager noscript — container 2 */}
+        {/* Google Tag Manager noscript */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-NXMX7FVM"

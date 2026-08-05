@@ -14,7 +14,7 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = buildMetadata({
-  title: 'Mobile Tyre Fitting in Rochdale | 24/7 Tyre Fitting',
+  title: 'Mobile Tyre Fitting in Rochdale | 24/7 Callout | One Stop Tyres',
   description:
     '24/7 mobile tyre fitting in Rochdale, Heywood, Middleton & Milnrow (OL10–OL16). Emergency tyre replacement at home, work or roadside in 20–30 min.',
   path: '/mobile-tyre-fitting-rochdale',

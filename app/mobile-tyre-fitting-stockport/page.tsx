@@ -14,7 +14,7 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = buildMetadata({
-  title: 'Mobile Tyre Fitting in Stockport | 24/7 Tyre Fitting',
+  title: 'Mobile Tyre Fitting in Stockport | 24/7 Callout | One Stop Tyres',
   description:
     '24/7 mobile tyre fitting in Stockport, Cheadle, Bramhall, Hazel Grove & Marple (SK1–SK8, SK12). Fast emergency tyre replacement — 20–30 min response.',
   path: '/mobile-tyre-fitting-stockport',

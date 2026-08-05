@@ -14,7 +14,7 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = buildMetadata({
-  title: 'Mobile Tyre Fitting in Bristol | 24/7 Tyre Fitting',
+  title: 'Mobile Tyre Fitting in Bristol | 24/7 Callout | One Stop Tyres',
   description:
     'Same-day mobile tyre fitting in Bristol — fast tyre replacement & puncture repair at home, work or roadside across BS1 – BS16. Call or WhatsApp.',
   path: '/mobile-tyre-fitting-bristol',

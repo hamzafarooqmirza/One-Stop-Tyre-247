@@ -15,6 +15,13 @@ const _breadcrumbSchema = breadcrumbSchema([
 
 const guides = [
   {
+    title: 'Tyre Safety Tips for Greater Manchester Drivers: August Weather Guide',
+    desc: "Changeable August weather is on the way — how to check your tyres before travelling and avoid a breakdown on wet or dry roads.",
+    href: '/guides/tyre-safety-tips-greater-manchester-august-weather-guide',
+    readTime: '5 min read',
+    published: '5 August 2026',
+  },
+  {
     title: 'Met Office Forecast: Mixed August Weather Means Greater Manchester Drivers Should Check Their Tyres Now',
     desc: 'Sunshine, showers and rising temperatures all in the same month — why changeable weather makes this the right time for a tyre check.',
     href: '/guides/met-office-august-weather-check-your-tyres',

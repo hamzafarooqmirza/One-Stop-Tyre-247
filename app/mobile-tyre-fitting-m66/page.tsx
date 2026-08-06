@@ -16,7 +16,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting M66 | 24/7 Motorway Tyre Assistance',
   description:
-    'Mobile tyre fitting on the M66, 24/7 — fast, trusted technicians dispatched to your location.',
+    'Professional mobile tyre fitting on the M66 — trusted roadside tyre assistance, 24/7 ready.',
   path: '/mobile-tyre-fitting-m66',
 })
 

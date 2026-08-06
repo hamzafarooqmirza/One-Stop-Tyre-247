@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting Newton Heath | One Stop Tyres 24/7',
   description:
-    'Mobile tyre fitting in Newton Heath, 24/7 — fast, trusted technicians at your location today.',
+    'Book mobile tyre fitting in Newton Heath — trusted technicians, reliable roadside support.',
   path: '/mobile-tyre-fitting-newton-heath',
 })
 

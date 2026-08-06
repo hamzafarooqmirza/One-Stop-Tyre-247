@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Radcliffe | One Stop Tyres 24/7',
   description:
-    'Mobile tyre fitting in Radcliffe, 24/7 — fast, trusted technicians at your location today.',
+    'Mobile tyre fitting in Radcliffe — same day fitting and trusted local tyre technicians.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-radcliffe' },
 }
 

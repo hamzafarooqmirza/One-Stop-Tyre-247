@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Wigan | 24/7 Callout | One Stop Tyres',
   description:
-    'One Stop Tyres 24/7 offers expert mobile tyre fitting in Wigan with emergency tyre replacement, same day tyre fitting and dependable mobile tyre services.',
+    'Need mobile tyre fitting in Wigan? Our expert team provides same day tyre fitting, emergency tyre replacement and roadside assistance.',
   path: '/mobile-tyre-fitting-wigan',
 })
 

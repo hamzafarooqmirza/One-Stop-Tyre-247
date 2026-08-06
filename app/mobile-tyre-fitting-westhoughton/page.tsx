@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Westhoughton | 24/7 Callout | One Stop Tyres',
   description:
-    'Choose trusted mobile tyre fitting in Westhoughton for emergency tyre replacement, same day tyre fitting and professional mobile tyre services delivered to your door.',
+    'Mobile tyre fitting in Westhoughton with emergency tyre replacement, same day tyre fitting and trusted mobile tyre fitters.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-westhoughton' },
 }
 

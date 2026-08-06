@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Eccles | 24/7 Callout | One Stop Tyres',
   description:
-    'Fast mobile tyre fitting in Eccles with professional tyre replacement and emergency tyre services. We come directly to your home, workplace or roadside location.',
+    'Mobile tyre fitting in Eccles with quick response, emergency tyre replacement and reliable same day tyre fitting for every journey.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-eccles' },
 }
 

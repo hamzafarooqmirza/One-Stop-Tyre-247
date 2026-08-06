@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Rochdale | 24/7 Callout | One Stop Tyres',
   description:
-    'Need mobile tyre fitting in Rochdale? We provide emergency tyre replacement, same day tyre fitting and trusted mobile tyre services at your home or roadside.',
+    'Get mobile tyre fitting in Rochdale with fast response, emergency tyre replacement and trusted same day service wherever you are.',
   path: '/mobile-tyre-fitting-rochdale',
 })
 

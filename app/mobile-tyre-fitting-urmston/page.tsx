@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Urmston | 24/7 Callout | One Stop Tyres',
   description:
-    'Fast mobile tyre fitting in Urmston with emergency tyre replacement and same day service. Experienced mobile tyre fitters come directly to your location.',
+    'Get mobile tyre fitting in Urmston with same day tyre fitting, emergency tyre replacement and trusted mobile tyre experts near you.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-urmston' },
 }
 

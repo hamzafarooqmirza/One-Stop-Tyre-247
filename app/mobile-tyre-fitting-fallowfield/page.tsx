@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting Fallowfield | One Stop Tyres 24/7',
   description:
-    'Mobile tyre fitting in Fallowfield, 24/7 — fast, trusted technicians at your location today.',
+    'Need mobile tyre fitting in Fallowfield? Fast replacement and reliable roadside service.',
   path: '/mobile-tyre-fitting-fallowfield',
 })
 

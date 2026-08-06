@@ -16,7 +16,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Cardiff | One Stop Tyres 24/7',
   description:
-    'Same-day mobile tyre fitting in Cardiff — fast, reliable service at your exact location today.',
+    'Same-day mobile tyre fitting in Cardiff — fast replacement & puncture repair, CF10–CF24.',
   path: '/mobile-tyre-fitting-cardiff',
 })
 

@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Trafford | One Stop Tyres 24/7',
   description:
-    'Mobile tyre fitting in Trafford, 24/7 — fast, trusted technicians at your exact location.',
+    'Choose mobile tyre fitting in Trafford — same day fitting, dependable roadside assistance.',
   path: '/mobile-tyre-fitting-trafford',
 })
 

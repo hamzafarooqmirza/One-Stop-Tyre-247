@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Tameside | One Stop Tyres 24/7',
   description:
-    'Mobile tyre fitting in Tameside, 24/7 — fast, trusted technicians at your exact location.',
+    'Need mobile tyre fitting in Tameside? Same day fitting and trusted roadside assistance.',
   path: '/mobile-tyre-fitting-tameside',
 })
 

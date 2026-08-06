@@ -86,206 +86,6 @@ const boroughAreas = [
   },
 ]
 
-// ── Individual town / district cards ───────────────────────────────────────────
-const townAreas = [
-  {
-    name: 'Farnworth',
-    href: '/mobile-tyre-fitting-farnworth',
-    icon: 'location_on',
-    postcodes: 'BL4',
-    desc: 'Dedicated coverage of Farnworth town centre, Kearsley, Little Lever and Highfield.',
-  },
-  {
-    name: 'Horwich',
-    href: '/mobile-tyre-fitting-horwich',
-    icon: 'location_on',
-    postcodes: 'BL6',
-    desc: 'Dedicated coverage of Horwich town centre, Blackrod, Rivington and Montserrat.',
-  },
-  {
-    name: 'Westhoughton',
-    href: '/mobile-tyre-fitting-westhoughton',
-    icon: 'location_on',
-    postcodes: 'BL5',
-    desc: 'Dedicated coverage of Westhoughton town centre, Chequerbent, Wingates and Daisy Hill.',
-  },
-  {
-    name: 'Radcliffe',
-    href: '/mobile-tyre-fitting-radcliffe',
-    icon: 'location_on',
-    postcodes: 'M26',
-    desc: 'Dedicated coverage of Radcliffe town centre, Close, Ainsworth and Outwood.',
-  },
-  {
-    name: 'Middleton',
-    href: '/mobile-tyre-fitting-middleton',
-    icon: 'location_on',
-    postcodes: 'M24',
-    desc: 'Dedicated coverage of Middleton town centre, Alkrington, Hopwood and Rhodes.',
-  },
-  {
-    name: 'Heywood',
-    href: '/mobile-tyre-fitting-heywood',
-    icon: 'location_on',
-    postcodes: 'OL10',
-    desc: 'Dedicated coverage of Heywood town centre, Bamford, Hopwood and Birch.',
-  },
-  {
-    name: 'Ashton-under-Lyne',
-    href: '/mobile-tyre-fitting-ashton-under-lyne',
-    icon: 'location_on',
-    postcodes: 'OL6, OL7',
-    desc: 'Dedicated coverage of Ashton-under-Lyne town centre, Stalybridge, Dukinfield and Audenshaw.',
-  },
-  {
-    name: 'Hyde',
-    href: '/mobile-tyre-fitting-hyde',
-    icon: 'location_on',
-    postcodes: 'SK14',
-    desc: 'Dedicated coverage of Hyde town centre, Gee Cross, Godley, Newton and Werneth Low.',
-  },
-  {
-    name: 'Glossop',
-    href: '/mobile-tyre-fitting-glossop',
-    icon: 'location_on',
-    postcodes: 'SK13',
-    desc: 'Dedicated coverage of Glossop town centre, Hadfield, Padfield, Tintwistle and the Longdendale villages.',
-  },
-  {
-    name: 'Marple',
-    href: '/mobile-tyre-fitting-marple',
-    icon: 'location_on',
-    postcodes: 'SK6',
-    desc: 'Dedicated coverage of Marple town centre, Marple Bridge, Compstall, Mellor and Rose Hill.',
-  },
-  {
-    name: 'Altrincham',
-    href: '/mobile-tyre-fitting-altrincham',
-    icon: 'location_on',
-    postcodes: 'WA14, WA15',
-    desc: 'Dedicated coverage of Altrincham town centre, Hale, Bowdon, Timperley and Broadheath.',
-  },
-  {
-    name: 'Sale',
-    href: '/mobile-tyre-fitting-sale',
-    icon: 'location_on',
-    postcodes: 'M33',
-    desc: 'Dedicated coverage of Sale town centre, Sale Moor, Ashton upon Mersey and Brooklands.',
-  },
-  {
-    name: 'Urmston',
-    href: '/mobile-tyre-fitting-urmston',
-    icon: 'location_on',
-    postcodes: 'M41',
-    desc: 'Dedicated coverage of Urmston town centre, Davyhulme, Flixton and Lostock.',
-  },
-  {
-    name: 'Stretford',
-    href: '/mobile-tyre-fitting-stretford',
-    icon: 'location_on',
-    postcodes: 'M32, M16',
-    desc: 'Dedicated coverage of Stretford, Old Trafford, Gorse Hill and the Trafford Centre area.',
-  },
-  {
-    name: 'Eccles',
-    href: '/mobile-tyre-fitting-eccles',
-    icon: 'location_on',
-    postcodes: 'M30',
-    desc: 'Dedicated coverage of Eccles town centre, Barton, Winton and Patricroft.',
-  },
-  {
-    name: 'Prestwich',
-    href: '/mobile-tyre-fitting-prestwich',
-    icon: 'location_on',
-    postcodes: 'M25',
-    desc: 'Dedicated coverage of Prestwich village, Sedgley Park, Whitefield and Heaton Park.',
-  },
-  {
-    name: 'Wythenshawe',
-    href: '/mobile-tyre-fitting-wythenshawe',
-    icon: 'location_on',
-    postcodes: 'M22, M23',
-    desc: 'Dedicated coverage of Wythenshawe, Baguley, Northenden, Sharston and Manchester Airport.',
-  },
-  {
-    name: 'Atherton',
-    href: '/mobile-tyre-fitting-atherton',
-    icon: 'location_on',
-    postcodes: 'M46',
-    desc: 'Dedicated coverage of Atherton town centre, Hindsford, Howe Bridge and Hag Fold.',
-  },
-  {
-    name: 'Leigh',
-    href: '/mobile-tyre-fitting-leigh',
-    icon: 'location_on',
-    postcodes: 'WN7',
-    desc: 'Dedicated coverage of Leigh town centre, Tyldesley, Astley and Lowton.',
-  },
-  {
-    name: 'Blackley',
-    href: '/mobile-tyre-fitting-blackley',
-    icon: 'location_on',
-    postcodes: 'M9',
-    desc: 'Dedicated coverage of Blackley, Charlestown and the Boggart Hole Clough area.',
-  },
-  {
-    name: 'Cheetham Hill',
-    href: '/mobile-tyre-fitting-cheetham-hill',
-    icon: 'location_on',
-    postcodes: 'M8',
-    desc: 'Dedicated coverage of Cheetham Hill, Queens Road and the Manchester Fort area.',
-  },
-  {
-    name: 'Chorlton-cum-Hardy',
-    href: '/mobile-tyre-fitting-chorlton-cum-hardy',
-    icon: 'location_on',
-    postcodes: 'M21',
-    desc: 'Dedicated coverage of Chorlton Green, Beech Road and Barlow Moor Road.',
-  },
-  {
-    name: 'Didsbury',
-    href: '/mobile-tyre-fitting-didsbury',
-    icon: 'location_on',
-    postcodes: 'M20',
-    desc: 'Dedicated coverage of Didsbury village, East Didsbury and Fog Lane Park.',
-  },
-  {
-    name: 'Beswick',
-    href: '/mobile-tyre-fitting-beswick',
-    icon: 'location_on',
-    postcodes: 'M11',
-    desc: 'Dedicated coverage of Beswick, the Etihad Campus and Alan Turing Way.',
-  },
-  {
-    name: 'Fallowfield',
-    href: '/mobile-tyre-fitting-fallowfield',
-    icon: 'location_on',
-    postcodes: 'M14',
-    desc: 'Dedicated coverage of Fallowfield, Wilmslow Road and Platt Fields Park.',
-  },
-  {
-    name: 'Hulme',
-    href: '/mobile-tyre-fitting-hulme',
-    icon: 'location_on',
-    postcodes: 'M15',
-    desc: 'Dedicated coverage of Hulme, Hulme Park and Stretford Road.',
-  },
-  {
-    name: 'Moss Side',
-    href: '/mobile-tyre-fitting-moss-side',
-    icon: 'location_on',
-    postcodes: 'M14 / M16',
-    desc: 'Dedicated coverage of Moss Side, Alexandra Park and Princess Road.',
-  },
-  {
-    name: 'Newton Heath',
-    href: '/mobile-tyre-fitting-newton-heath',
-    icon: 'location_on',
-    postcodes: 'M40',
-    desc: 'Dedicated coverage of Newton Heath, Errwood Park and Ten Acres Lane.',
-  },
-]
-
 // ── Motorway / road cards ─────────────────────────────────────────────────────
 const motorwayAreas = [
   {
@@ -434,23 +234,26 @@ export default function ServiceAreaPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {boroughAreas.map((area) => {
             const towns = BOROUGHS.find((b) => b.name === area.boroughKey)?.towns ?? []
             return (
               <div
                 key={area.name}
-                className="group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-primary/30 transition-all overflow-hidden"
+                className="group flex flex-col bg-white rounded-2xl border-2 border-slate-100 shadow-md hover:shadow-2xl hover:border-primary hover:-translate-y-1 transition-all duration-300 overflow-hidden"
               >
+                <div className="h-1.5 bg-primary" />
                 <a href={area.href} className="flex items-center gap-4 px-5 pt-5 pb-3">
-                  <div className="bg-primary/10 p-3 rounded-xl shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
-                    <span className="material-symbols-outlined text-primary group-hover:text-white text-2xl transition-colors">
+                  <div className="bg-primary p-3.5 rounded-2xl shrink-0 shadow-md shadow-primary/30">
+                    <span className="material-symbols-outlined text-white text-[28px]">
                       {area.icon}
                     </span>
                   </div>
                   <div className="min-w-0">
-                    <h3 className="font-h3 text-secondary text-lg leading-snug">{area.name}</h3>
-                    <span className="text-xs font-semibold text-primary/80 bg-primary/5 px-2 py-0.5 rounded-full">
+                    <h3 className="text-xl sm:text-2xl font-extrabold text-[#0f172a] leading-snug" style={{ fontFamily: 'var(--font-work-sans)' }}>
+                      {area.name}
+                    </h3>
+                    <span className="text-xs font-bold text-primary bg-primary/10 px-2 py-0.5 rounded-full">
                       {area.postcodes}
                     </span>
                   </div>
@@ -461,77 +264,35 @@ export default function ServiceAreaPage() {
                   </p>
                 </a>
                 {towns.length > 0 && (
-                  <div className="px-5 pb-4 flex flex-wrap gap-1.5">
-                    {towns.map((town) => (
-                      <a
-                        key={town.slug}
-                        href={`/mobile-tyre-fitting-${town.slug}`}
-                        className="text-xs font-semibold text-primary bg-primary/5 hover:bg-primary hover:text-white px-2.5 py-1 rounded-full transition-colors"
-                      >
-                        {town.name}
-                      </a>
-                    ))}
+                  <div className="px-5 pb-5">
+                    <span className="text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-2 block">
+                      Also Covering
+                    </span>
+                    <div className="flex flex-wrap gap-2">
+                      {towns.map((town) => (
+                        <a
+                          key={town.slug}
+                          href={`/mobile-tyre-fitting-${town.slug}`}
+                          className="text-xs font-bold text-primary bg-primary/5 hover:bg-primary hover:text-white border-2 border-primary/20 hover:border-primary px-3 py-1.5 rounded-full transition-colors"
+                        >
+                          {town.name}
+                        </a>
+                      ))}
+                    </div>
                   </div>
                 )}
                 <a
                   href={area.href}
-                  className="border-t border-slate-50 px-5 py-3 flex items-center justify-between mt-auto"
+                  className="mt-auto bg-primary hover:bg-[#dc2626] text-white px-5 py-3.5 flex items-center justify-between font-bold text-sm uppercase tracking-wide transition-colors"
                 >
-                  <span className="text-xs font-bold text-primary uppercase tracking-wide">View area</span>
-                  <span className="material-symbols-outlined text-primary text-sm group-hover:translate-x-1 transition-transform">
+                  View {area.name} Coverage
+                  <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">
                     arrow_forward
                   </span>
                 </a>
               </div>
             )
           })}
-        </div>
-      </section>
-
-      {/* ── Individual town / district areas ── */}
-      <section className="py-12 sm:py-16 lg:py-xl px-4 sm:px-5 max-w-7xl mx-auto">
-        <div className="text-center mb-8 sm:mb-12">
-          <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 text-secondary mb-3 text-balance leading-tight">
-            Towns &amp; Districts We Cover
-          </h2>
-          <div className="w-16 sm:w-20 h-1 bg-primary mx-auto rounded-full mb-3 sm:mb-4" />
-          <p className="font-body-md text-sm sm:text-body-md text-on-surface-variant max-w-xl mx-auto text-pretty">
-            Prefer a page dedicated to your exact town? Click below for local junction details,
-            postcodes and service information for that specific area.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-          {townAreas.map((area) => (
-            <a
-              key={area.name}
-              href={area.href}
-              className="group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-primary/30 transition-all overflow-hidden"
-            >
-              <div className="flex items-center gap-4 px-5 pt-5 pb-3">
-                <div className="bg-primary/10 p-3 rounded-xl shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
-                  <span className="material-symbols-outlined text-primary group-hover:text-white text-2xl transition-colors">
-                    {area.icon}
-                  </span>
-                </div>
-                <div className="min-w-0">
-                  <h3 className="font-h3 text-secondary text-lg leading-snug">{area.name}</h3>
-                  <span className="text-xs font-semibold text-primary/80 bg-primary/5 px-2 py-0.5 rounded-full">
-                    {area.postcodes}
-                  </span>
-                </div>
-              </div>
-              <p className="font-body-md text-body-md text-on-surface-variant px-5 pb-5 flex-1 text-base leading-relaxed">
-                {area.desc}
-              </p>
-              <div className="border-t border-slate-50 px-5 py-3 flex items-center justify-between">
-                <span className="text-xs font-bold text-primary uppercase tracking-wide">View area</span>
-                <span className="material-symbols-outlined text-primary text-sm group-hover:translate-x-1 transition-transform">
-                  arrow_forward
-                </span>
-              </div>
-            </a>
-          ))}
         </div>
       </section>
 

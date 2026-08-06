@@ -2,6 +2,7 @@ import BrandCarousel from '@/components/BrandCarousel'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import CityFaq from '@/components/CityFaq'
 import NearbyAreas from '@/components/NearbyAreas'
+import ServiceAreasMap from '@/components/ServiceAreasMap'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import JsonLd from '@/components/JsonLd'
 import { serviceSchema } from '@/lib/schema'
@@ -390,6 +391,9 @@ export default function OldhamPage() {
 
         {/* ── NEARBY AREAS ───────────────────────────────────── */}
         <NearbyAreas currentSlug="oldham" />
+
+        {/* ── SERVICE AREAS MAP ──────────────────────────────── */}
+        <ServiceAreasMap />
 
         {/* ── 7. MAP + SERVICE AREAS ────────────────────────── */}
         <section className="border-t border-slate-200 flex flex-col lg:flex-row" style={{ minHeight: '520px' }}>

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { usePathname } from 'next/navigation'
+import { BOROUGHS } from '@/lib/locations'
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
@@ -62,18 +63,6 @@ const serviceLinks = [
   },
 ]
 
-const cityLinks = [
-  { label: 'Manchester', href: '/mobile-tyre-fitting-manchester', icon: 'location_city' },
-  { label: 'Bolton', href: '/mobile-tyre-fitting-bolton', icon: 'location_city' },
-  { label: 'Bury', href: '/mobile-tyre-fitting-bury', icon: 'location_city' },
-  { label: 'Oldham', href: '/mobile-tyre-fitting-oldham', icon: 'location_city' },
-  { label: 'Rochdale', href: '/mobile-tyre-fitting-rochdale', icon: 'location_city' },
-  { label: 'Stockport', href: '/mobile-tyre-fitting-stockport', icon: 'location_city' },
-  { label: 'Tameside', href: '/mobile-tyre-fitting-tameside', icon: 'location_city' },
-  { label: 'Trafford', href: '/mobile-tyre-fitting-trafford', icon: 'location_city' },
-  { label: 'Wigan', href: '/mobile-tyre-fitting-wigan', icon: 'location_city' },
-]
-
 const motorwayLinks = [
   { label: 'M60', href: '/mobile-tyre-fitting-m60', icon: 'route' },
   { label: 'M602', href: '/mobile-tyre-fitting-m602', icon: 'route' },
@@ -92,6 +81,7 @@ export default function Header() {
   const [servicesOpen, setServicesOpen] = useState(false)
   const [areasOpen, setAreasOpen] = useState(false)
   const [openMenu, setOpenMenu] = useState<'services' | 'areas' | null>(null)
+  const [expandedBoroughs, setExpandedBoroughs] = useState<Set<string>>(new Set())
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
   const pathname = usePathname()
 
@@ -102,11 +92,22 @@ export default function Header() {
     return pathname === href || pathname.startsWith(href + '/')
   }
 
+  function toggleBorough(name: string) {
+    setExpandedBoroughs((prev) => {
+      const next = new Set(prev)
+      if (next.has(name)) next.delete(name)
+      else next.add(name)
+      return next
+    })
+  }
+
   const isServicesActive =
     isActive('/services') || serviceLinks.some((l) => isActive(l.href))
   const isAreasActive =
     isActive('/service-area') ||
-    cityLinks.some((l) => isActive(l.href)) ||
+    BOROUGHS.some(
+      (b) => (b.slug && isActive(`/mobile-tyre-fitting-${b.slug}`)) || b.towns.some((t) => isActive(`/mobile-tyre-fitting-${t.slug}`))
+    ) ||
     motorwayLinks.some((l) => isActive(l.href))
 
   // Hover handlers with a small delay to prevent flicker when moving the
@@ -363,27 +364,73 @@ export default function Header() {
                   <div className="p-5">
                     {/* Cities */}
                     <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3 px-1">
-                      City Areas
+                      City Areas — click to see towns
                     </p>
-                    <div className="grid grid-cols-3 gap-1 mb-4">
-                      {cityLinks.map((link) => (
-                        <a
-                          key={link.href}
-                          href={link.href}
-                          className={`group flex items-center gap-2.5 px-3 py-2.5 rounded-xl transition-all ${
-                            isActive(link.href)
-                              ? 'bg-red-50 text-[#b70011]'
-                              : 'hover:bg-slate-50 text-slate-700 hover:text-[#b70011]'
-                          }`}
-                        >
-                          <span className={`material-symbols-outlined text-[15px] shrink-0 transition-colors ${
-                            isActive(link.href) ? 'text-[#b70011]' : 'text-slate-400 group-hover:text-[#b70011]'
-                          }`} style={{ fontVariationSettings: "'FILL' 1" }}>
-                            location_on
-                          </span>
-                          <span className="font-semibold text-sm">{link.label}</span>
-                        </a>
-                      ))}
+                    <div className="max-h-[320px] overflow-y-auto pr-1 mb-4">
+                      {BOROUGHS.map((borough) => {
+                        const href = borough.slug ? `/mobile-tyre-fitting-${borough.slug}` : undefined
+                        const active = (href && isActive(href)) || borough.towns.some((t) => isActive(`/mobile-tyre-fitting-${t.slug}`))
+                        const expanded = expandedBoroughs.has(borough.name)
+                        return (
+                          <div key={borough.name} className="mb-0.5">
+                            <div
+                              className={`group flex items-center gap-1 rounded-xl transition-all ${
+                                active ? 'bg-red-50 text-[#b70011]' : 'hover:bg-slate-50 text-slate-700 hover:text-[#b70011]'
+                              }`}
+                            >
+                              {href ? (
+                                <a href={href} className="flex items-center gap-2.5 px-3 py-2.5 flex-1 min-w-0">
+                                  <span className={`material-symbols-outlined text-[15px] shrink-0 transition-colors ${
+                                    active ? 'text-[#b70011]' : 'text-slate-400 group-hover:text-[#b70011]'
+                                  }`} style={{ fontVariationSettings: "'FILL' 1" }}>
+                                    location_on
+                                  </span>
+                                  <span className="font-semibold text-sm">{borough.name}</span>
+                                </a>
+                              ) : (
+                                <span className="flex items-center gap-2.5 px-3 py-2.5 flex-1 min-w-0">
+                                  <span className="material-symbols-outlined text-[15px] shrink-0 text-slate-400" style={{ fontVariationSettings: "'FILL' 1" }}>
+                                    location_on
+                                  </span>
+                                  <span className="font-semibold text-sm">{borough.name}</span>
+                                </span>
+                              )}
+                              {borough.towns.length > 0 && (
+                                <button
+                                  type="button"
+                                  onClick={() => toggleBorough(borough.name)}
+                                  aria-label={`${expanded ? 'Hide' : 'Show'} towns in ${borough.name}`}
+                                  aria-expanded={expanded}
+                                  className="p-2 mr-1.5 rounded-lg hover:bg-slate-200/60 shrink-0 transition-colors"
+                                >
+                                  <span className={`material-symbols-outlined text-[16px] transition-transform duration-200 ${expanded ? 'rotate-180' : ''}`}>
+                                    expand_more
+                                  </span>
+                                </button>
+                              )}
+                            </div>
+                            {borough.towns.length > 0 && (
+                              <div className={`overflow-hidden transition-all duration-300 ${expanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className="flex flex-wrap gap-1.5 pl-8 pr-2 pb-2 pt-1">
+                                  {borough.towns.map((town) => (
+                                    <a
+                                      key={town.slug}
+                                      href={`/mobile-tyre-fitting-${town.slug}`}
+                                      className={`text-xs font-bold px-2.5 py-1.5 rounded-full border transition-colors ${
+                                        isActive(`/mobile-tyre-fitting-${town.slug}`)
+                                          ? 'bg-[#b70011] border-[#b70011] text-white'
+                                          : 'border-slate-200 text-slate-600 hover:border-[#b70011] hover:text-[#b70011] hover:bg-red-50'
+                                      }`}
+                                    >
+                                      {town.name}
+                                    </a>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        )
+                      })}
                     </div>
 
                     {/* Divider */}
@@ -420,7 +467,7 @@ export default function Header() {
                         location_on
                       </span>
                       <p className="text-[12px] text-slate-600 leading-tight">
-                        <span className="font-bold text-slate-800">9 cities &amp; 7 motorways</span> covered 24/7
+                        <span className="font-bold text-slate-800">9 boroughs, 27 towns &amp; 8 motorways</span> covered 24/7
                       </p>
                     </div>
                     <a
@@ -640,24 +687,75 @@ export default function Header() {
                   </a>
 
                   <p className="px-3 pt-1 pb-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-400">
-                    City Areas
+                    City Areas — tap to see towns
                   </p>
-                  {cityLinks.map((link) => (
-                    <a
-                      key={link.href}
-                      href={link.href}
-                      onClick={() => setMobileOpen(false)}
-                      className={`group flex items-center gap-3 px-3 py-2.5 rounded-xl mb-0.5 transition-all ${
-                        isActive(link.href) ? 'bg-red-50 text-[#b70011]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#b70011]'
-                      }`}
-                    >
-                      <span className={`material-symbols-outlined text-[15px] shrink-0 transition-colors ${isActive(link.href) ? 'text-[#b70011]' : 'text-slate-400 group-hover:text-[#b70011]'}`} style={{ fontVariationSettings: "'FILL' 1" }}>
-                        location_on
-                      </span>
-                      <span className="font-semibold text-sm">{link.label}</span>
-                      {isActive(link.href) && <span className="ml-auto w-1.5 h-1.5 rounded-full bg-[#b70011] shrink-0" />}
-                    </a>
-                  ))}
+                  {BOROUGHS.map((borough) => {
+                    const href = borough.slug ? `/mobile-tyre-fitting-${borough.slug}` : undefined
+                    const active = (href && isActive(href)) || borough.towns.some((t) => isActive(`/mobile-tyre-fitting-${t.slug}`))
+                    const expanded = expandedBoroughs.has(borough.name)
+                    return (
+                      <div key={borough.name} className="mb-0.5">
+                        <div
+                          className={`group flex items-center gap-1 rounded-xl transition-all ${
+                            active ? 'bg-red-50 text-[#b70011]' : 'text-slate-700 hover:bg-slate-50 hover:text-[#b70011]'
+                          }`}
+                        >
+                          {href ? (
+                            <a
+                              href={href}
+                              onClick={() => setMobileOpen(false)}
+                              className="flex items-center gap-3 px-3 py-2.5 flex-1 min-w-0"
+                            >
+                              <span className={`material-symbols-outlined text-[15px] shrink-0 transition-colors ${active ? 'text-[#b70011]' : 'text-slate-400 group-hover:text-[#b70011]'}`} style={{ fontVariationSettings: "'FILL' 1" }}>
+                                location_on
+                              </span>
+                              <span className="font-semibold text-sm">{borough.name}</span>
+                            </a>
+                          ) : (
+                            <span className="flex items-center gap-3 px-3 py-2.5 flex-1 min-w-0">
+                              <span className="material-symbols-outlined text-[15px] shrink-0 text-slate-400" style={{ fontVariationSettings: "'FILL' 1" }}>
+                                location_on
+                              </span>
+                              <span className="font-semibold text-sm">{borough.name}</span>
+                            </span>
+                          )}
+                          {borough.towns.length > 0 && (
+                            <button
+                              type="button"
+                              onClick={() => toggleBorough(borough.name)}
+                              aria-label={`${expanded ? 'Hide' : 'Show'} towns in ${borough.name}`}
+                              aria-expanded={expanded}
+                              className="p-2 mr-1 rounded-lg hover:bg-slate-200/60 shrink-0 transition-colors"
+                            >
+                              <span className={`material-symbols-outlined text-[16px] transition-transform duration-200 ${expanded ? 'rotate-180' : ''}`}>
+                                expand_more
+                              </span>
+                            </button>
+                          )}
+                        </div>
+                        {borough.towns.length > 0 && (
+                          <div className={`overflow-hidden transition-all duration-300 ${expanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+                            <div className="flex flex-wrap gap-1.5 pl-8 pr-2 pb-2 pt-1">
+                              {borough.towns.map((town) => (
+                                <a
+                                  key={town.slug}
+                                  href={`/mobile-tyre-fitting-${town.slug}`}
+                                  onClick={() => setMobileOpen(false)}
+                                  className={`text-xs font-bold px-2.5 py-1.5 rounded-full border transition-colors ${
+                                    isActive(`/mobile-tyre-fitting-${town.slug}`)
+                                      ? 'bg-[#b70011] border-[#b70011] text-white'
+                                      : 'border-slate-200 text-slate-600 hover:border-[#b70011] hover:text-[#b70011]'
+                                  }`}
+                                >
+                                  {town.name}
+                                </a>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    )
+                  })}
 
                   <p className="px-3 pt-3 pb-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-400">
                     Motorways &amp; Roads

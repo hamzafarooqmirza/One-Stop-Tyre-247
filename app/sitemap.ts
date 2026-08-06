@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { SITE_URL } from '@/lib/schema'
 
-const LAST_MODIFIED = '2026-07-25'
+const LAST_MODIFIED = '2026-08-05'
 
 const SERVICE_PAGES = [
   '/mobile-tyre-fitting',
@@ -43,6 +43,7 @@ const GUIDE_PAGES = [
   '/guides/what-to-do-flat-tyre-m60-manchester-motorway',
   '/guides/run-flat-vs-normal-tyres-manchester',
   '/guides/met-office-august-weather-check-your-tyres',
+  '/guides/tyre-safety-tips-greater-manchester-august-weather-guide',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

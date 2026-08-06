@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Manchester | One Stop Tyres 24/7',
   description:
-    'Need mobile tyre fitting in Manchester? Fast, reliable service, 24/7.',
+    'Mobile tyre fitting in Manchester, 24/7 — fast, trusted technicians at your location today.',
   path: '/mobile-tyre-fitting-manchester',
 })
 

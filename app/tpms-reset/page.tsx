@@ -5,7 +5,7 @@ import { buildMetadata } from '@/lib/seo'
 export const metadata = buildMetadata({
   title: 'TPMS Reset & Sensor Diagnostics | Mobile Service',
   description:
-    'Mobile TPMS reset across Greater Manchester — warning light cleared, 24/7.',
+    'Mobile TPMS reset across Greater Manchester — warning light cleared at your location, 24/7.',
   path: '/tpms-reset',
 })
 

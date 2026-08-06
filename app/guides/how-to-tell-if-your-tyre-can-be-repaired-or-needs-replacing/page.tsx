@@ -4,7 +4,7 @@ import { breadcrumbSchema, faqSchema, articleSchema, SITE_URL } from '@/lib/sche
 export const metadata = {
   title: 'Tyre Repair or Replace? How to Tell the Difference',
   description:
-    'Not sure if your tyre needs repair or replacing? Our quick safety guide explains.',
+    'Not sure if your tyre needs repair or replacing? Our quick safety guide explains how to tell.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/guides/how-to-tell-if-your-tyre-can-be-repaired-or-needs-replacing' },
 }
 

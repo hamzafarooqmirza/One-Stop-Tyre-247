@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Ashton-under-Lyne Mobile Tyre Fitting | One Stop Tyres 24/7',
   description:
-    'Mobile tyre fitting in Ashton-under-Lyne, 24/7 — fast, trusted technicians nearby today.',
+    'Book mobile tyre fitting in Ashton-under-Lyne — fast, reliable roadside assistance today.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-ashton-under-lyne' },
 }
 

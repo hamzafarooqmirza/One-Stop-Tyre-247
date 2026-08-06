@@ -5,7 +5,7 @@ import { buildMetadata } from '@/lib/seo'
 export const metadata = buildMetadata({
   title: 'Locking Wheel Nut Removal Manchester | Damage-Free, 24/7',
   description:
-    'Lost or damaged locking nut key? Damage-free removal at your location across Greater Manchester, 24/7. Specialist tools, no harm to alloys — call us now.',
+    'Lost or damaged locking nut key? Damage-free removal at your location across Greater Manchester, 24/7. No harm to alloys.',
   path: '/locking-nut-removal',
 })
 

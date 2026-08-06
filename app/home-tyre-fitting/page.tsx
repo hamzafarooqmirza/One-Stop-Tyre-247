@@ -5,7 +5,7 @@ import { buildMetadata } from '@/lib/seo'
 export const metadata = buildMetadata({
   title: 'Home Tyre Fitting Manchester | Tyres Fitted At Your Door',
   description:
-    'Home tyre fitting across Greater Manchester — tyres supplied, fitted & balanced on your driveway, 24/7. No garage visit, no hidden fees — call or WhatsApp.',
+    'Home tyre fitting across Greater Manchester — tyres supplied and fitted on your driveway, 24/7. No garage visit, no hidden fees.',
   path: '/home-tyre-fitting',
 })
 

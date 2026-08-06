@@ -5,7 +5,7 @@ import { buildMetadata } from '@/lib/seo'
 export const metadata = buildMetadata({
   title: 'Emergency Puncture Repair Manchester | 24/7 Mobile Service',
   description:
-    'BS AU 159 puncture repairs at your roadside, home or workplace, 24/7.',
+    'BS AU 159 puncture repairs at your roadside, home or workplace, 24/7 across Manchester.',
   path: '/emergency-puncture-repair',
 })
 

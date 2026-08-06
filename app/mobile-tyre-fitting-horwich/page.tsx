@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Horwich | One Stop Tyres 24/7',
   description:
-    'Need mobile tyre fitting in Horwich? Fast, reliable service, 24/7.',
+    'Mobile tyre fitting in Horwich, 24/7 — fast, trusted technicians at your exact location today.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-horwich' },
 }
 

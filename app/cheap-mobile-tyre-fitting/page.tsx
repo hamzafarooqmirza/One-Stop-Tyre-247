@@ -5,7 +5,7 @@ import { buildMetadata } from '@/lib/seo'
 export const metadata = buildMetadata({
   title: 'Cheap Mobile Tyre Fitting Manchester | Budget Tyres Fitted',
   description:
-    'Cheap mobile tyre fitting across Greater Manchester. Budget to premium, same-day.',
+    'Cheap mobile tyre fitting across Greater Manchester — budget to premium, same-day slots.',
   path: '/cheap-mobile-tyre-fitting',
 })
 

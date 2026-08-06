@@ -5,7 +5,7 @@ import { buildMetadata } from '@/lib/seo'
 export const metadata = buildMetadata({
   title: 'Met Office Weather Update: Check Your Tyres in Manchester',
   description:
-    'Changing August weather — why you should check your tyres now.',
+    'Changing August weather across Greater Manchester — why you should check your tyres now.',
   path: '/guides/met-office-august-weather-check-your-tyres',
 })
 

@@ -19,7 +19,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Oldham | One Stop Tyres 24/7',
   description:
-    'Need mobile tyre fitting in Oldham? Fast, reliable service, 24/7.',
+    'Mobile tyre fitting in Oldham, 24/7 — fast, trusted technicians at your home, work or road.',
   path: '/mobile-tyre-fitting-oldham',
 })
 

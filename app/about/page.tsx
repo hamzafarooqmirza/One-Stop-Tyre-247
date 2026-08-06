@@ -6,7 +6,7 @@ import { ADDRESS } from '@/lib/constants'
 export const metadata = buildMetadata({
   title: 'About One Stop Tyres 24/7 | Mobile Tyre Fitters Manchester',
   description:
-    'Meet One Stop Tyres 24/7 — insured mobile tyre fitters across Greater Manchester.',
+    'Meet One Stop Tyres 24/7 — insured, IMI-trained mobile tyre fitters across Manchester.',
   path: '/about',
 })
 

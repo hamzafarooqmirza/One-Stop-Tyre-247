@@ -6,7 +6,7 @@ import { buildMetadata } from '@/lib/seo'
 export const metadata = buildMetadata({
   title: 'Contact Us | One Stop Tyres 24/7',
   description:
-    'Contact One Stop Tyres 24/7 — phone or WhatsApp for emergencies, or fill in a form for quotes and bookings.',
+    'Contact One Stop Tyres 24/7 — call, WhatsApp or send a quote request.',
   path: '/contact',
 })
 

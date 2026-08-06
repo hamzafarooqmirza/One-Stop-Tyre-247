@@ -5,7 +5,7 @@ import { buildMetadata } from '@/lib/seo'
 export const metadata = buildMetadata({
   title: 'Privacy Policy | One Stop Tyres 24/7',
   description:
-    'Read the One Stop Tyres 24/7 privacy policy to understand how we collect, use and protect your personal data when you use our services.',
+    'How One Stop Tyres 24/7 collects, uses and protects your personal data.',
   path: '/privacy-policy',
 })
 

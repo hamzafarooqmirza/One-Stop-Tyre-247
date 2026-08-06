@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Chorlton-cum-Hardy Mobile Tyre Fitting | One Stop Tyres 24/7',
   description:
-    'Need mobile tyre fitting in Chorlton-cum-Hardy? Get fast tyre replacement, same day service and reliable roadside assistance.',
+    'Need mobile tyre fitting in Chorlton-cum-Hardy? Fast, reliable service, 24/7.',
   path: '/mobile-tyre-fitting-chorlton-cum-hardy',
 })
 

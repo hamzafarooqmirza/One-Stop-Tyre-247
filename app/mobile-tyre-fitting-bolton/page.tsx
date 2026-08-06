@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Bolton | 24/7 Callout | One Stop Tyres',
   description:
-    'One Stop Tyres 24/7 delivers fast mobile tyre fitting in Bolton. Book same day tyre fitting, emergency tyre replacement and professional mobile tyre services at your location.',
+    'Professional mobile tyre fitting in Bolton offering same day tyre fitting, emergency tyre replacement and quick call-out service.',
   path: '/mobile-tyre-fitting-bolton',
 })
 

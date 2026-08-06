@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Stretford | 24/7 Callout | One Stop Tyres',
   description:
-    'Need mobile tyre fitting in Stretford? We provide professional tyre replacement, emergency tyre services and fast same day mobile tyre fitting at your location.',
+    'Need mobile tyre fitting in Stretford? We provide fast tyre replacement, same day fitting and reliable roadside assistance across the area.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-stretford' },
 }
 

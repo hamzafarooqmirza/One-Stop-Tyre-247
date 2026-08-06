@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Bury | 24/7 Callout | One Stop Tyres',
   description:
-    'Need mobile tyre fitting in Bury? One Stop Tyres 24/7 provides same day, emergency and 24-hour mobile tyre fitting, tyre replacement and roadside assistance at your home or workplace.',
+    'Choose One Stop Tyres 24/7 for mobile tyre fitting in Bury, offering fast tyre replacement, same day service and roadside assistance.',
   path: '/mobile-tyre-fitting-bury',
 })
 

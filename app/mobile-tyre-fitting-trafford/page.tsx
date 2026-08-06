@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Trafford | 24/7 Callout | One Stop Tyres',
   description:
-    'Expert mobile tyre fitting in Trafford offering same day tyre fitting, emergency tyre replacement and trusted mobile tyre services wherever you need us.',
+    'Choose mobile tyre fitting in Trafford for same day tyre fitting, emergency tyre replacement and dependable roadside assistance when you need it.',
   path: '/mobile-tyre-fitting-trafford',
 })
 

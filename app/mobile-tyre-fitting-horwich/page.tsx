@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Horwich | 24/7 Callout | One Stop Tyres',
   description:
-    'Fast and reliable mobile tyre fitting in Horwich. We provide emergency tyre services, tyre replacement and same day mobile tyre fitting wherever you need us.',
+    'Choose mobile tyre fitting in Horwich for fast emergency tyre replacement and reliable mobile tyre service wherever you are.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-horwich' },
 }
 

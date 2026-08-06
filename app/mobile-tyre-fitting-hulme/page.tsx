@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Hulme | 24/7 Callout | One Stop Tyres',
   description:
-    'One Stop Tyres 24/7 offers reliable mobile tyre fitting in Hulme. Get emergency tyre replacement, fast tyre fitting at home and trusted roadside tyre assistance.',
+    'Mobile tyre fitting in Hulme with same day tyre fitting, emergency tyre replacement and trusted mobile tyre fitters.',
   path: '/mobile-tyre-fitting-hulme',
 })
 

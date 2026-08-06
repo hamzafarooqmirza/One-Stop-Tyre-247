@@ -5,7 +5,7 @@ import { buildMetadata } from '@/lib/seo'
 export const metadata = buildMetadata({
   title: 'Jump Start Service Manchester | 24/7 Mobile Battery Help',
   description:
-    'Flat battery? 24/7 mobile jump starts across Greater Manchester with ECU-safe kit and free battery health test.',
+    'Flat battery? 24/7 mobile jump starts across Greater Manchester with ECU-safe kit.',
   path: '/jump-start',
 })
 

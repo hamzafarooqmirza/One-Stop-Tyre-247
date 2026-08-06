@@ -13,9 +13,9 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Glossop | 24/7 Callout | One Stop Tyres',
+  title: 'Mobile Tyre Fitting in Glossop | One Stop Tyres 24/7',
   description:
-    'Fast mobile tyre fitting in Glossop. Technicians come to your home, work or roadside, 24/7, with transparent, upfront pricing.',
+    'Get mobile tyre fitting in Glossop — 24/7 emergency response.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-glossop' },
 }
 

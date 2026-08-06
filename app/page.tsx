@@ -3,7 +3,7 @@ import { buildMetadata } from '@/lib/seo'
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting Manchester | One Stop Tyres 24/7',
   description:
-    '24/7 mobile tyre fitting across Greater Manchester. Fast response at home, work or roadside. Rated 5.0 by 1,200+ drivers.',
+    '24/7 mobile tyre fitting across Greater Manchester. Fast, reliable, at your location.',
   path: '/',
 })
 

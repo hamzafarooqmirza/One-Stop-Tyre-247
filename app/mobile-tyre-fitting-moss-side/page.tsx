@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Moss Side | One Stop Tyres 24/7',
   description:
-    'Need mobile tyre fitting in Moss Side? Same day tyre fitting, emergency tyre replacement and fast roadside assistance.',
+    'Get mobile tyre fitting in Moss Side — 24/7 emergency response.',
   path: '/mobile-tyre-fitting-moss-side',
 })
 

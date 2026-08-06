@@ -14,9 +14,9 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = buildMetadata({
-  title: 'Mobile Tyre Fitting in Cardiff | 24/7 Callout | One Stop Tyres',
+  title: 'Mobile Tyre Fitting in Cardiff | One Stop Tyres 24/7',
   description:
-    'Same-day mobile tyre fitting in Cardiff — fast tyre replacement & puncture repair at home, work or roadside across CF10 – CF24. Call or WhatsApp.',
+    'Same-day mobile tyre fitting in Cardiff — fast, reliable service.',
   path: '/mobile-tyre-fitting-cardiff',
 })
 

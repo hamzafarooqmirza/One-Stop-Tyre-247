@@ -15,9 +15,9 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Marple | 24/7 Callout | One Stop Tyres',
+  title: 'Mobile Tyre Fitting in Marple | One Stop Tyres 24/7',
   description:
-    'Need mobile tyre fitting in Marple? Get fast tyre replacement, same day service and professional roadside assistance from One Stop Tyres 24/7.',
+    'Need mobile tyre fitting in Marple? Fast, reliable service, 24/7.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-marple' },
 }
 

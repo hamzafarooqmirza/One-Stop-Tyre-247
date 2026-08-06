@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Farnworth | One Stop Tyres 24/7',
   description:
-    'Need mobile tyre fitting in Farnworth? We deliver fast tyre replacement, same day service and reliable roadside assistance.',
+    'Need mobile tyre fitting in Farnworth? Fast, reliable service, 24/7.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-farnworth' },
 }
 

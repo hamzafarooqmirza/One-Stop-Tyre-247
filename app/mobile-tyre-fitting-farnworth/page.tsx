@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Farnworth | 24/7 Callout | One Stop Tyres',
   description:
-    'Reliable mobile tyre fitting in Farnworth. Our technicians come to your home, work or roadside location 24/7, with transparent, upfront pricing and no hidden fees.',
+    'Looking for mobile tyre fitting in Farnworth? Our experienced mobile tyre fitters provide same day tyre replacement, emergency call-outs and reliable tyre fitting at home.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-farnworth' },
 }
 

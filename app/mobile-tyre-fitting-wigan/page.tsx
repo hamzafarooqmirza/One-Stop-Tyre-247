@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Wigan | 24/7 Callout | One Stop Tyres',
   description:
-    '24/7 mobile tyre fitting in Wigan, Leigh, Atherton, Hindley & Skelmersdale (WN1–WN6). Fast mobile tyre replacement at home, work or roadside.',
+    'One Stop Tyres 24/7 offers expert mobile tyre fitting in Wigan with emergency tyre replacement, same day tyre fitting and dependable mobile tyre services.',
   path: '/mobile-tyre-fitting-wigan',
 })
 

@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Wythenshawe | 24/7 Callout | One Stop Tyres',
   description:
-    'Fast mobile tyre fitting in Wythenshawe. Our technicians come to your home, work or roadside location 24/7, with transparent, upfront pricing and no hidden fees.',
+    'Choose trusted mobile tyre fitting in Wythenshawe for emergency tyre replacement, same day tyre fitting and reliable mobile tyre services delivered to you.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-wythenshawe' },
 }
 

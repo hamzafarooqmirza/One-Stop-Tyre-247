@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Marple | 24/7 Callout | One Stop Tyres',
   description:
-    'Reliable mobile tyre fitting in Marple. Our technicians come to your home, work or roadside location 24/7, with transparent, upfront pricing and no hidden fees.',
+    'Need mobile tyre fitting in Marple? Our trusted mobile tyre fitters provide emergency tyre replacement, tyre fitting at home and same day mobile tyre services.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-marple' },
 }
 

@@ -16,7 +16,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting M61 | 24/7 Motorway Tyre Assistance',
   description:
-    'Emergency mobile tyre fitting on the M61 (J1–J9), Manchester–Preston corridor. 24/7 dispatch to services, slip roads & lay-bys in 20–30 minutes.',
+    'Stranded on the M61? Our mobile tyre fitting service offers emergency tyre replacement, fast roadside assistance and trusted mobile tyre fitters when you need them.',
   path: '/mobile-tyre-fitting-m61',
 })
 

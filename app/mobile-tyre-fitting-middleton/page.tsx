@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Middleton | 24/7 Callout | One Stop Tyres',
   description:
-    'Fast mobile tyre fitting in Middleton. Our technicians come to your home, work or roadside location 24/7, with transparent, upfront pricing and no hidden fees.',
+    'Professional mobile tyre fitting in Middleton with same day tyre fitting and emergency tyre replacement. Fast, reliable service delivered wherever you are.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-middleton' },
 }
 

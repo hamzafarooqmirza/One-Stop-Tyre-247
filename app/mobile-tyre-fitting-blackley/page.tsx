@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Blackley | 24/7 Callout | One Stop Tyres',
   description:
-    '24/7 mobile tyre fitting in Blackley, Manchester — fast tyre replacement & puncture repair at home, work or roadside across M9. 20–30 min response.',
+    'Reliable mobile tyre fitting in Blackley with same day appointments and 24-hour emergency tyre replacement. Professional mobile tyre fitters come directly to you.',
   path: '/mobile-tyre-fitting-blackley',
 })
 

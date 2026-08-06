@@ -16,7 +16,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting M67 | 24/7 Motorway Tyre Assistance',
   description:
-    'Tyre trouble on the M67? 24/7 emergency mobile tyre fitting from Denton interchange to Mottram (J1–J4), covering the Hyde bypass. 20–30 min response.',
+    'Reliable mobile tyre fitting on the M67 with emergency tyre replacement and same day roadside assistance from trusted mobile tyre fitters.',
   path: '/mobile-tyre-fitting-m67',
 })
 

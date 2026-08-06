@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Cheetham Hill | 24/7 Callout | One Stop Tyres',
   description:
-    '24/7 mobile tyre fitting in Cheetham Hill, Manchester — fast tyre replacement & puncture repair at home, work or roadside across M8. 20–30 min response.',
+    'Professional mobile tyre fitting in Cheetham Hill. We provide emergency tyre services, tyre replacement and fast mobile tyre fitting at home, work or roadside.',
   path: '/mobile-tyre-fitting-cheetham-hill',
 })
 

@@ -16,7 +16,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting M66 | 24/7 Motorway Tyre Assistance',
   description:
-    'Emergency mobile tyre fitting on the M66 (J1–J5), Manchester–Ramsbottom corridor. 24/7 dispatch to safe stopping points in 20–30 minutes. Call now.',
+    'Need emergency mobile tyre fitting on the M66? Our team delivers fast tyre replacement, roadside assistance and professional mobile tyre services.',
   path: '/mobile-tyre-fitting-m66',
 })
 

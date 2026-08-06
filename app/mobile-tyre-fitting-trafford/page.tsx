@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Trafford | 24/7 Callout | One Stop Tyres',
   description:
-    '24/7 mobile tyre fitting in Trafford — Altrincham, Sale, Stretford, Urmston & Partington (M16–M33, WA14–WA15). Emergency tyres fitted in 20–30 min.',
+    'Expert mobile tyre fitting in Trafford offering same day tyre fitting, emergency tyre replacement and trusted mobile tyre services wherever you need us.',
   path: '/mobile-tyre-fitting-trafford',
 })
 

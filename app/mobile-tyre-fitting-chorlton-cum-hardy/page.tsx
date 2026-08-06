@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Chorlton-cum-Hardy | 24/7 Callout | One Stop Tyres',
   description:
-    '24/7 mobile tyre fitting in Chorlton-cum-Hardy, Manchester — fast tyre replacement & puncture repair at home, work or roadside across M21. 20–30 min response.',
+    'Book trusted mobile tyre fitting in Chorlton-cum-Hardy for same day tyre fitting, emergency tyre replacement and reliable mobile tyre services across the area.',
   path: '/mobile-tyre-fitting-chorlton-cum-hardy',
 })
 

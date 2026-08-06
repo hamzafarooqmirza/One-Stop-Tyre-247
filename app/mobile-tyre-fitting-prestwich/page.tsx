@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Prestwich | One Stop Tyres 24/7',
   description:
-    'Mobile tyre fitting in Prestwich — trusted technicians, 24/7.',
+    'Mobile tyre fitting in Prestwich, 24/7 — fast, trusted technicians at your location today.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-prestwich' },
 }
 

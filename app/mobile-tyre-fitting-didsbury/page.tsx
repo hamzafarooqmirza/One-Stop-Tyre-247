@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Didsbury | One Stop Tyres 24/7',
   description:
-    'Mobile tyre fitting in Didsbury — trusted technicians, 24/7.',
+    'Mobile tyre fitting in Didsbury, 24/7 — fast, trusted technicians at your exact location today.',
   path: '/mobile-tyre-fitting-didsbury',
 })
 

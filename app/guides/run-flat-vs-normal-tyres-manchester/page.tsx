@@ -4,7 +4,7 @@ import { breadcrumbSchema, faqSchema, articleSchema, SITE_URL } from '@/lib/sche
 export const metadata = {
   title: 'Run-Flat vs Normal Tyres: What Drivers Should Know',
   description:
-    'The real difference between run-flat and normal tyres, explained simply.',
+    'The real difference between run-flat and normal tyres, and what it costs to switch, explained.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/guides/run-flat-vs-normal-tyres-manchester' },
 }
 

@@ -6,7 +6,7 @@ import { BOROUGHS } from '@/lib/locations'
 export const metadata = buildMetadata({
   title: 'Service Area | Mobile Tyre Fitting Coverage',
   description:
-    'Full coverage map: 9 Greater Manchester boroughs plus 8 motorways, 24/7.',
+    'Full coverage map: 9 Greater Manchester boroughs plus 8 motorways, covered 24/7 always.',
   path: '/service-area',
 })
 

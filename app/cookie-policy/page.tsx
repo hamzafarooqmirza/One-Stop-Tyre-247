@@ -5,7 +5,7 @@ import { buildMetadata } from '@/lib/seo'
 export const metadata = buildMetadata({
   title: 'Cookie Policy | One Stop Tyres 24/7',
   description:
-    'How One Stop Tyres 24/7 uses cookies, and how to manage your preferences.',
+    'How One Stop Tyres 24/7 uses cookies and analytics, and how to manage your preferences here.',
   path: '/cookie-policy',
 })
 

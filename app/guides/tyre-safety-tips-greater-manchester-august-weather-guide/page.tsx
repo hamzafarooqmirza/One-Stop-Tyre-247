@@ -3,9 +3,9 @@ import { breadcrumbSchema, faqSchema, articleSchema, SITE_URL } from '@/lib/sche
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'Tyre Safety Tips for Greater Manchester Drivers: August Weather Guide',
+  title: 'Tyre Safety Tips for Greater Manchester Drivers',
   description:
-    "Changeable August weather is on the way. Here's how Greater Manchester drivers can check their tyres before travelling and avoid breakdowns on wet or dry roads.",
+    "Changeable August weather is on the way — how to check your tyres before travelling and avoid a breakdown.",
   path: '/guides/tyre-safety-tips-greater-manchester-august-weather-guide',
 })
 

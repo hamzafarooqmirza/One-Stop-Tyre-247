@@ -14,9 +14,9 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = buildMetadata({
-  title: 'Mobile Tyre Fitting in Milton Keynes | 24/7 Callout | One Stop Tyres',
+  title: 'Mobile Tyre Fitting Milton Keynes | One Stop Tyres 24/7',
   description:
-    'Same-day mobile tyre fitting in Milton Keynes — fast tyre replacement & puncture repair at home, work or roadside across MK1 – MK19. Call or WhatsApp.',
+    'Same-day mobile tyre fitting in Milton Keynes — fast tyre replacement and puncture repair at home, work or roadside.',
   path: '/mobile-tyre-fitting-milton-keynes',
 })
 

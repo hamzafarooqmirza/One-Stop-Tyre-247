@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Radcliffe | 24/7 Callout | One Stop Tyres',
   description:
-    'Get expert mobile tyre fitting in Radcliffe from trusted mobile tyre fitters. We provide emergency tyre replacement, tyre fitting at home and 24/7 roadside tyre assistance.',
+    'Mobile tyre fitting in Radcliffe with same day tyre fitting, emergency tyre replacement and trusted mobile tyre fitters near you.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-radcliffe' },
 }
 

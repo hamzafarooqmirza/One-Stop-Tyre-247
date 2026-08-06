@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Moss Side | 24/7 Callout | One Stop Tyres',
   description:
-    'Fast mobile tyre fitting in Moss Side with emergency tyre replacement and same day service. Our experienced mobile tyre fitters come to your home, work or roadside.',
+    'Need mobile tyre fitting in Moss Side? One Stop Tyres 24/7 provides same day tyre fitting, emergency tyre replacement and fast roadside assistance.',
   path: '/mobile-tyre-fitting-moss-side',
 })
 

@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Stockport | 24/7 Callout | One Stop Tyres',
   description:
-    'Professional mobile tyre fitting in Stockport offering same day tyre fitting, emergency tyre replacement and reliable mobile tyre services wherever you need us.',
+    'Choose mobile tyre fitting in Stockport for emergency tyre replacement, same day service and trusted mobile tyre fitters near your location.',
   path: '/mobile-tyre-fitting-stockport',
 })
 

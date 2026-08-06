@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Sale | 24/7 Callout | One Stop Tyres',
   description:
-    'Professional mobile tyre fitting in Sale. Book same day tyre fitting, emergency tyre replacement and reliable mobile tyre services delivered to your home or workplace.',
+    'Book mobile tyre fitting in Sale for emergency tyre replacement, same day tyre fitting and reliable roadside assistance today.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-sale' },
 }
 

@@ -14,9 +14,9 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = buildMetadata({
-  title: 'Mobile Tyre Fitting in Basingstoke | 24/7 Callout | One Stop Tyres',
+  title: 'Mobile Tyre Fitting Basingstoke | One Stop Tyres 24/7',
   description:
-    'Same-day mobile tyre fitting in Basingstoke — fast tyre replacement & puncture repair at home, work or roadside across RG21 – RG24. Call or WhatsApp.',
+    'Same-day mobile tyre fitting in Basingstoke — fast tyre replacement and puncture repair at home, work or roadside.',
   path: '/mobile-tyre-fitting-basingstoke',
 })
 

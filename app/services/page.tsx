@@ -3,9 +3,9 @@ import { breadcrumbSchema, itemListSchema, SITE_URL } from '@/lib/schema'
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'Mobile Tyre & Roadside Services Manchester | One Stop Tyres 24/7',
+  title: 'Mobile Tyre & Roadside Services | One Stop Tyres 24/7',
   description:
-    'All our 24/7 mobile services in Greater Manchester: tyre fitting, puncture repair, jump starts, TPMS reset & locking nut removal — fitted at your location.',
+    '24/7 mobile tyre fitting, puncture repair, jump starts, TPMS reset and locking nut removal across Greater Manchester — fitted at your location.',
   path: '/services',
 })
 

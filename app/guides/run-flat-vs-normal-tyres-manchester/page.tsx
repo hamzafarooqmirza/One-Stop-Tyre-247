@@ -2,9 +2,9 @@ import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, faqSchema, articleSchema, SITE_URL } from '@/lib/schema'
 
 export const metadata = {
-  title: 'Run-Flat vs Normal Tyres: What Manchester Drivers Should Know',
+  title: 'Run-Flat vs Normal Tyres: What Drivers Should Know',
   description:
-    'Replacing a run-flat tyre? Here is the real difference between run-flat and normal tyres, whether you can mix them, and what it costs to switch — explained simply.',
+    'Replacing a run-flat tyre? The real difference between run-flat and normal tyres, and what it costs to switch.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/guides/run-flat-vs-normal-tyres-manchester' },
 }
 

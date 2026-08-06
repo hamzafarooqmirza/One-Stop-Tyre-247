@@ -1,6 +1,7 @@
 import BrandCarousel from '@/components/BrandCarousel'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import CityFaq from '@/components/CityFaq'
+import NearbyAreas from '@/components/NearbyAreas'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import JsonLd from '@/components/JsonLd'
 import { serviceSchema } from '@/lib/schema'
@@ -373,6 +374,9 @@ export default function NewtonHeathPage() {
 
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />
+
+        {/* ── NEARBY AREAS ───────────────────────────────────── */}
+        <NearbyAreas currentSlug="newton-heath" />
 
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq

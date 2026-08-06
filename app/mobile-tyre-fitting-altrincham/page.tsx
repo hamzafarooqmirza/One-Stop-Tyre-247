@@ -15,7 +15,7 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Altrincham | 24/7 Callout | One Stop Tyres',
+  title: 'Mobile Tyre Fitting in Altrincham | One Stop Tyres 24/7',
   description:
     'Professional mobile tyre fitting in Altrincham with emergency tyre replacement, same day service and trusted mobile tyre fitters near you.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-altrincham' },

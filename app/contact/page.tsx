@@ -4,9 +4,9 @@ import { breadcrumbSchema, contactPageSchema, SITE_URL } from '@/lib/schema'
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'Contact Us | One Stop Tyres 24/7 — Call or WhatsApp Anytime',
+  title: 'Contact Us | One Stop Tyres 24/7',
   description:
-    'Contact One Stop Tyres 24/7 — 24/7 phone & WhatsApp for emergencies, plus a form for quotes and bookings across Greater Manchester. Avg response 20–30 min.',
+    'Contact One Stop Tyres 24/7 — phone or WhatsApp for emergencies, or fill in a form for quotes and bookings.',
   path: '/contact',
 })
 

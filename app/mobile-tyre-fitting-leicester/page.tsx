@@ -16,7 +16,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Leicester | 24/7 Callout | One Stop Tyres',
   description:
-    'Same-day mobile tyre fitting in Leicester — fast tyre replacement & puncture repair at home, work or roadside across LE1 – LE19. Call or WhatsApp.',
+    'Same-day mobile tyre fitting in Leicester — fast tyre replacement and puncture repair at home, work or roadside.',
   path: '/mobile-tyre-fitting-leicester',
 })
 

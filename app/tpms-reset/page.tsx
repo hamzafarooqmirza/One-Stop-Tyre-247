@@ -3,7 +3,7 @@ import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/sche
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'TPMS Reset & Sensor Diagnostics Manchester | Mobile Service',
+  title: 'TPMS Reset & Sensor Diagnostics | Mobile Service',
   description:
     'Mobile TPMS reset across Greater Manchester — warning light cleared, sensors diagnosed or replaced at your location, all makes & models, 24/7.',
   path: '/tpms-reset',

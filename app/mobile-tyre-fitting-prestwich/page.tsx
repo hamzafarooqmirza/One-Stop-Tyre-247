@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Prestwich | 24/7 Callout | One Stop Tyres',
   description:
-    'Reliable mobile tyre fitting in Prestwich. Our technicians come to your home, work or roadside location 24/7, with transparent, upfront pricing and no hidden fees.',
+    'Professional mobile tyre fitting in Prestwich with fast response times. We offer same day tyre fitting, emergency tyre replacement and reliable mobile tyre services wherever you are.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-prestwich' },
 }
 

@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Bolton | 24/7 Callout | One Stop Tyres',
   description:
-    '24/7 mobile tyre fitting in Bolton — fast tyre replacement & puncture repair at home, work or roadside across BL1–BL7. 20–30 min response. Call or WhatsApp.',
+    'One Stop Tyres 24/7 delivers fast mobile tyre fitting in Bolton. Book same day tyre fitting, emergency tyre replacement and professional mobile tyre services at your location.',
   path: '/mobile-tyre-fitting-bolton',
 })
 

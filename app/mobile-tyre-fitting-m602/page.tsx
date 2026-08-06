@@ -16,7 +16,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting M602 | 24/7 Motorway Tyre Assistance',
   description:
-    'Emergency mobile tyre fitting on the M602 (J1–J3), the Salford inner relief route between Eccles and Regent Road. 24/7 — 20–30 minute dispatch.',
+    'Professional mobile tyre fitting on the M602. We offer emergency tyre replacement, roadside tyre assistance and fast mobile tyre services to get you moving.',
   path: '/mobile-tyre-fitting-m602',
 })
 

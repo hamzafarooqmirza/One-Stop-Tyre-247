@@ -19,7 +19,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Oldham | 24/7 Callout | One Stop Tyres',
   description:
-    '24/7 mobile tyre fitting in Oldham (OL1–OL9) — our home base. Emergency tyre replacement & puncture repair in 20–30 min, incl. Saddleworth & Chadderton.',
+    'Expert mobile tyre fitting in Oldham with same day tyre fitting, emergency tyre replacement and professional mobile tyre services available throughout the area.',
   path: '/mobile-tyre-fitting-oldham',
 })
 

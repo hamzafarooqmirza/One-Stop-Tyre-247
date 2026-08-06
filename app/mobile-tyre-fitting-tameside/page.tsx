@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Tameside | 24/7 Callout | One Stop Tyres',
   description:
-    '24/7 mobile tyre fitting across Tameside — Ashton-under-Lyne, Denton, Hyde, Droylsden, Stalybridge & Mossley (OL5–OL7, SK14–SK16). 20–30 min response.',
+    'Reliable mobile tyre fitting in Tameside with same day tyre fitting, emergency tyre replacement and professional mobile tyre services available across the borough.',
   path: '/mobile-tyre-fitting-tameside',
 })
 

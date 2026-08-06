@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Beswick | 24/7 Callout | One Stop Tyres',
   description:
-    '24/7 mobile tyre fitting in Beswick, Manchester — fast tyre replacement & puncture repair at home, work or roadside across M11. 20–30 min response.',
+    'Expert mobile tyre fitting in Beswick with same day tyre fitting and emergency tyre replacement. Count on our trusted mobile tyre fitters for quick assistance.',
   path: '/mobile-tyre-fitting-beswick',
 })
 

@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Bury | 24/7 Callout | One Stop Tyres',
   description:
-    '24/7 mobile tyre fitting in Bury, Radcliffe, Ramsbottom & Whitefield (BL8–BL9, M26). Emergency tyre replacement in 20–30 min at home, work or roadside.',
+    'Need mobile tyre fitting in Bury? One Stop Tyres 24/7 provides same day, emergency and 24-hour mobile tyre fitting, tyre replacement and roadside assistance at your home or workplace.',
   path: '/mobile-tyre-fitting-bury',
 })
 

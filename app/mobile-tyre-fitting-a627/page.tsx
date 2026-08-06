@@ -16,7 +16,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting A627 | 24/7 Roadside Tyre Assistance',
   description:
-    "Emergency mobile tyre fitting on the A627(M) between Oldham and the M60 at Chadderton. 24/7 response in 20–30 minutes — we're based minutes away in Oldham.",
+    'Mobile tyre fitting on the A627 with rapid emergency tyre replacement and reliable roadside tyre assistance from experienced mobile tyre fitters.',
   path: '/mobile-tyre-fitting-a627',
 })
 

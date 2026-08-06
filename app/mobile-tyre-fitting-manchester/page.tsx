@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Manchester | 24/7 Callout | One Stop Tyres',
   description:
-    '24/7 mobile tyre fitting in Manchester — emergency tyre replacement & puncture repair at your home, work or roadside in 20–30 min. Rated 5.0. Call or WhatsApp.',
+    'Need mobile tyre fitting in Manchester? One Stop Tyres 24/7 offers same day tyre fitting, emergency tyre replacement and professional mobile tyre services across the city.',
   path: '/mobile-tyre-fitting-manchester',
 })
 

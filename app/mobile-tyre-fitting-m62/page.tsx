@@ -16,7 +16,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting M62 | 24/7 Motorway Tyre Assistance',
   description:
-    'Tyre blowout on the M62? 24/7 emergency mobile tyre fitting on the Greater Manchester stretch (J12–J21), including Eccles and Birch services. Call now.',
+    'Emergency mobile tyre fitting on the M62 with quick response times. We deliver professional tyre replacement and reliable roadside tyre assistance.',
   path: '/mobile-tyre-fitting-m62',
 })
 

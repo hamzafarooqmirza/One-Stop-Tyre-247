@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Didsbury | 24/7 Callout | One Stop Tyres',
   description:
-    '24/7 mobile tyre fitting in Didsbury, Manchester — fast tyre replacement & puncture repair at home, work or roadside across M20. 20–30 min response.',
+    'Need fast mobile tyre fitting in Didsbury? We offer emergency tyre replacement, tyre fitting at home and dependable mobile tyre services when you need them most.',
   path: '/mobile-tyre-fitting-didsbury',
 })
 

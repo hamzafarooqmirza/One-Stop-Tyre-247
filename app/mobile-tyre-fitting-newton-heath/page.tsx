@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Newton Heath | 24/7 Callout | One Stop Tyres',
   description:
-    '24/7 mobile tyre fitting in Newton Heath, Manchester — fast tyre replacement & puncture repair at home, work or roadside across M40. 20–30 min response.',
+    'Professional mobile tyre fitting in Newton Heath. We provide reliable tyre replacement, emergency tyre services and same day mobile tyre fitting across the area.',
   path: '/mobile-tyre-fitting-newton-heath',
 })
 

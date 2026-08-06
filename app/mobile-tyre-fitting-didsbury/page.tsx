@@ -16,9 +16,9 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = buildMetadata({
-  title: 'Mobile Tyre Fitting in Didsbury | 24/7 Callout | One Stop Tyres',
+  title: 'Mobile Tyre Fitting in Didsbury | One Stop Tyres 24/7',
   description:
-    'Professional mobile tyre fitting in Didsbury with emergency tyre replacement and dependable mobile tyre services.',
+    'Mobile tyre fitting in Didsbury — trusted technicians, 24/7.',
   path: '/mobile-tyre-fitting-didsbury',
 })
 

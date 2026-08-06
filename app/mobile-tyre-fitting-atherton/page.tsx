@@ -15,9 +15,9 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Atherton | 24/7 Callout | One Stop Tyres',
+  title: 'Mobile Tyre Fitting in Atherton | One Stop Tyres 24/7',
   description:
-    'Choose mobile tyre fitting in Atherton for fast tyre replacement, same day service and dependable roadside assistance from trusted technicians.',
+    'Get mobile tyre fitting in Atherton — 24/7 emergency response.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-atherton' },
 }
 

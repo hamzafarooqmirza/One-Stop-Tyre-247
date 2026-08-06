@@ -15,9 +15,9 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Leigh | 24/7 Callout | One Stop Tyres',
+  title: 'Mobile Tyre Fitting in Leigh | One Stop Tyres 24/7',
   description:
-    'Mobile tyre fitting in Leigh with emergency tyre replacement, same day service and trusted roadside assistance at your home, work or roadside.',
+    'Need mobile tyre fitting in Leigh? Fast, reliable service, 24/7.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-leigh' },
 }
 

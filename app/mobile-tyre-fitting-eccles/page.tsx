@@ -15,9 +15,9 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Eccles | 24/7 Callout | One Stop Tyres',
+  title: 'Mobile Tyre Fitting in Eccles | One Stop Tyres 24/7',
   description:
-    'Mobile tyre fitting in Eccles with quick response, emergency tyre replacement and reliable same day tyre fitting for every journey.',
+    'Need mobile tyre fitting in Eccles? Fast, reliable service, 24/7.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-eccles' },
 }
 

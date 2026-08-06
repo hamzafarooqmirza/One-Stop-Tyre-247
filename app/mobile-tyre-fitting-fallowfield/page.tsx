@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Fallowfield | 24/7 Callout | One Stop Tyres',
   description:
-    'Mobile tyre fitting in Fallowfield made simple. We provide same day tyre fitting, emergency tyre services and professional tyre replacement at your chosen location.',
+    'Need mobile tyre fitting in Fallowfield? Book fast tyre replacement, same day service and reliable roadside assistance.',
   path: '/mobile-tyre-fitting-fallowfield',
 })
 

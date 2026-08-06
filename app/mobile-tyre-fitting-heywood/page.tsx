@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Heywood | 24/7 Callout | One Stop Tyres',
   description:
-    'Reliable mobile tyre fitting in Heywood from experienced mobile tyre fitters. Book same day tyre replacement, emergency tyre services and fast roadside assistance.',
+    'Need mobile tyre fitting in Heywood? We deliver emergency tyre replacement, same day fitting and reliable roadside assistance when you need it.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-heywood' },
 }
 

@@ -4,7 +4,7 @@ import { breadcrumbSchema, faqSchema, articleSchema, SITE_URL } from '@/lib/sche
 export const metadata = {
   title: 'Flat Tyre on the M60? What to Do Step by Step',
   description:
-    'Flat tyre on the M60? A step-by-step safety guide for Manchester drivers.',
+    'Flat tyre on the M60? A step-by-step safety guide for Greater Manchester motorway drivers.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/guides/what-to-do-flat-tyre-m60-manchester-motorway' },
 }
 

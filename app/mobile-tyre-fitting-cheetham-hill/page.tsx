@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting Cheetham Hill | One Stop Tyres 24/7',
   description:
-    'Get mobile tyre fitting in Cheetham Hill — 24/7 emergency response.',
+    'Mobile tyre fitting in Cheetham Hill, 24/7 — fast, trusted technicians at your location.',
   path: '/mobile-tyre-fitting-cheetham-hill',
 })
 

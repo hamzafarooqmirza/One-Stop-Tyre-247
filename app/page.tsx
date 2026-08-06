@@ -11,6 +11,7 @@ import BrandCarousel from '@/components/BrandCarousel'
 import QuoteForm from '@/components/QuoteForm'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import HeroSlider from '@/components/HeroSlider'
+import ServiceAreasMap from '@/components/ServiceAreasMap'
 
 /* ─── Why-choose feature list item ─────────────────────── */
 function FeatureItem({
@@ -639,84 +640,7 @@ export default function Home() {
       </section>
 
       {/* ── 9. MAP + LOCATIONS ────────────────────────────── */}
-      <section className="border-t border-slate-200 flex flex-col lg:flex-row" style={{ minHeight: '520px' }}>
-        {/* Left — map */}
-        <div className="w-full lg:w-1/2 h-[300px] lg:h-auto">
-          <iframe
-            className="w-full h-full"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4741.379474172151!2d-2.1049285233703974!3d53.5454538598072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb920bfb7fecd%3A0x4edbef2355697975!2sOne%20Stop%20Mobile%20Tyres%2024%2F7!5e0!3m2!1sen!2s!4v1781464116347!5m2!1sen!2s"
-            frameBorder="0"
-            scrolling="no"
-            title="Service area map"
-            aria-label="Google map showing Greater Manchester service area"
-            loading="lazy"
-          />
-        </div>
-
-        {/* Right — locations */}
-        <div className="w-full lg:w-1/2 bg-[#0f172a] px-6 sm:px-10 py-10 sm:py-14 flex flex-col justify-center">
-          <span className="text-[#FF4444] font-bold uppercase tracking-widest text-xs mb-3 block">
-            Our Service Areas
-          </span>
-          <h2
-            className="text-white text-2xl sm:text-3xl font-bold mb-2 leading-tight text-balance"
-            style={{ fontFamily: 'var(--font-work-sans)' }}
-          >
-            Mobile Tyre Fitting Manchester &amp; Greater Manchester — Full Coverage
-          </h2>
-          <p className="text-slate-400 text-sm mb-8 leading-relaxed">
-            Our 24/7 mobile tyre fitting, emergency tyre replacement and mobile puncture repair service
-            covers all of Greater Manchester, including Manchester city centre, Oldham, Stockport, Bolton,
-            Rochdale, Bury, Wigan, Trafford and Tameside — plus the M60, M61, M62, M56, M602, M66, M67
-            and A627. If you&apos;ve broken down on a motorway hard shoulder or you&apos;re stuck on your
-            driveway at home, our nearest available technician is dispatched straight to your GPS location.
-          </p>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-1.5">
-            {[
-              { name: 'Manchester',    href: '/mobile-tyre-fitting-manchester' },
-              { name: 'Bolton',        href: '/mobile-tyre-fitting-bolton' },
-              { name: 'Bury',          href: '/mobile-tyre-fitting-bury' },
-              { name: 'Oldham',        href: '/mobile-tyre-fitting-oldham' },
-              { name: 'Rochdale',      href: '/mobile-tyre-fitting-rochdale' },
-              { name: 'Stockport',     href: '/mobile-tyre-fitting-stockport' },
-              { name: 'Tameside',      href: '/mobile-tyre-fitting-tameside' },
-              { name: 'Trafford',      href: '/mobile-tyre-fitting-trafford' },
-              { name: 'Wigan',         href: '/mobile-tyre-fitting-wigan' },
-              { name: 'M60 Motorway',  href: '/mobile-tyre-fitting-m60' },
-              { name: 'M602 Motorway', href: '/mobile-tyre-fitting-m602' },
-              { name: 'M61 Motorway',  href: '/mobile-tyre-fitting-m61' },
-              { name: 'M62 Motorway',  href: '/mobile-tyre-fitting-m62' },
-              { name: 'M56 Motorway',  href: '/mobile-tyre-fitting-m56' },
-              { name: 'M66 Motorway',  href: '/mobile-tyre-fitting-m66' },
-              { name: 'M67 Motorway',  href: '/mobile-tyre-fitting-m67' },
-              { name: 'A627 Road',     href: '/mobile-tyre-fitting-a627' },
-            ].map((loc) => (
-              <a
-                key={loc.href}
-                href={loc.href}
-                className="flex items-center gap-2 text-slate-300 hover:text-white text-sm font-medium py-1.5 group transition-colors"
-              >
-                <span
-                  className="material-symbols-outlined text-[#FF4444] shrink-0 group-hover:scale-110 transition-transform"
-                  style={{ fontSize: '14px' }}
-                >
-                  location_on
-                </span>
-                {loc.name}
-              </a>
-            ))}
-          </div>
-
-          <a
-            href="/service-area"
-            className="mt-8 self-start inline-flex items-center gap-2 bg-[#FF4444] text-[#121212] text-sm font-bold px-5 py-3 rounded-xl hover:bg-red-700 hover:text-white transition-colors"
-          >
-            <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>map</span>
-            View Full Service Area
-          </a>
-        </div>
-      </section>
+      <ServiceAreasMap />
 
       {/* ── 10. FAQ ───────────────────────────────────────── */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">

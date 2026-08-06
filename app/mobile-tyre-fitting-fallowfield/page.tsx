@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Fallowfield | 24/7 Callout | One Stop Tyres',
   description:
-    '24/7 mobile tyre fitting in Fallowfield, Manchester — fast tyre replacement & puncture repair at home, work or roadside across M14. 20–30 min response.',
+    'Mobile tyre fitting in Fallowfield made simple. We provide same day tyre fitting, emergency tyre services and professional tyre replacement at your chosen location.',
   path: '/mobile-tyre-fitting-fallowfield',
 })
 

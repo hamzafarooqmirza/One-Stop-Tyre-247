@@ -16,7 +16,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting M56 | 24/7 Motorway Tyre Assistance',
   description:
-    'Emergency mobile tyre fitting on the M56 — Manchester Airport corridor. 24/7 response to safe stopping points in 20–30 minutes. Call or WhatsApp your pin.',
+    'Get fast mobile tyre fitting on the M56 from experienced mobile tyre fitters. We provide emergency tyre replacement and dependable roadside tyre services.',
   path: '/mobile-tyre-fitting-m56',
 })
 

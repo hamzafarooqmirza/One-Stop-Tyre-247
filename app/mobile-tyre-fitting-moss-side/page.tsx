@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Moss Side | 24/7 Callout | One Stop Tyres',
   description:
-    '24/7 mobile tyre fitting in Moss Side, Manchester — fast tyre replacement & puncture repair at home, work or roadside across M14 / M16. 20–30 min response.',
+    'Fast mobile tyre fitting in Moss Side with emergency tyre replacement and same day service. Our experienced mobile tyre fitters come to your home, work or roadside.',
   path: '/mobile-tyre-fitting-moss-side',
 })
 

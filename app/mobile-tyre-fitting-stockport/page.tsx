@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Stockport | 24/7 Callout | One Stop Tyres',
   description:
-    '24/7 mobile tyre fitting in Stockport, Cheadle, Bramhall, Hazel Grove & Marple (SK1–SK8, SK12). Fast emergency tyre replacement — 20–30 min response.',
+    'Professional mobile tyre fitting in Stockport offering same day tyre fitting, emergency tyre replacement and reliable mobile tyre services wherever you need us.',
   path: '/mobile-tyre-fitting-stockport',
 })
 

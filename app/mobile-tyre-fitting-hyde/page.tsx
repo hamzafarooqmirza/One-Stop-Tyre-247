@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Hyde | 24/7 Callout | One Stop Tyres',
   description:
-    'Need a mobile tyre fitter in Hyde? We offer 24/7 emergency tyre replacement and puncture repair at your home, work or roadside, with fast response times.',
+    'Professional mobile tyre fitting in Hyde with emergency tyre replacement and same day service. Our mobile tyre fitters deliver fast, reliable assistance.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-hyde' },
 }
 

@@ -14,9 +14,9 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = buildMetadata({
-  title: 'Mobile Tyre Fitting in Leeds | 24/7 Callout | One Stop Tyres',
+  title: 'Mobile Tyre Fitting in Leeds | One Stop Tyres 24/7',
   description:
-    'Same-day mobile tyre fitting in Leeds — fast tyre replacement & puncture repair at home, work or roadside across LS1 – LS29. Call or WhatsApp.',
+    'Same-day mobile tyre fitting in Leeds — fast, reliable service.',
   path: '/mobile-tyre-fitting-leeds',
 })
 

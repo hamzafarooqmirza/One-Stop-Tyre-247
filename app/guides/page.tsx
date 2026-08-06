@@ -4,7 +4,7 @@ import { breadcrumbSchema, SITE_URL } from '@/lib/schema'
 export const metadata = {
   title: 'Tyre Guides & Advice | One Stop Tyres 24/7',
   description:
-    'Practical tyre advice from One Stop Tyres 24/7 — spot problems early, know what to do in an emergency, stay safe and legal.',
+    'Practical tyre advice from One Stop Tyres 24/7 — safety tips in plain English.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/guides' },
 }
 

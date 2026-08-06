@@ -16,9 +16,9 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = buildMetadata({
-  title: 'Mobile Tyre Fitting in Blackley | 24/7 Callout | One Stop Tyres',
+  title: 'Mobile Tyre Fitting in Blackley | One Stop Tyres 24/7',
   description:
-    'Need mobile tyre fitting in Blackley? Book fast tyre replacement, same day service and reliable roadside assistance.',
+    'Mobile tyre fitting in Blackley — trusted technicians, 24/7.',
   path: '/mobile-tyre-fitting-blackley',
 })
 

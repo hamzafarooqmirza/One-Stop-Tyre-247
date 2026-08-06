@@ -14,9 +14,9 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = buildMetadata({
-  title: 'Mobile Tyre Fitting in Solihull | 24/7 Callout | One Stop Tyres',
+  title: 'Mobile Tyre Fitting in Solihull | One Stop Tyres 24/7',
   description:
-    'Same-day mobile tyre fitting in Solihull — fast tyre replacement & puncture repair at home, work or roadside across B90 – B94. Call or WhatsApp.',
+    'Same-day mobile tyre fitting in Solihull — fast, reliable service.',
   path: '/mobile-tyre-fitting-solihull',
 })
 

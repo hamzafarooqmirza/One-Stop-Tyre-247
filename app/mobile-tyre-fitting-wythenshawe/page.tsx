@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting Wythenshawe | One Stop Tyres 24/7',
   description:
-    'Choose mobile tyre fitting in Wythenshawe for quick tyre replacement, same day service and dependable roadside assistance from local experts.',
+    'Mobile tyre fitting in Wythenshawe — trusted technicians, 24/7.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-wythenshawe' },
 }
 

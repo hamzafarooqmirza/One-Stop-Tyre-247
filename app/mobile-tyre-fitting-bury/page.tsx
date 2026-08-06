@@ -2,6 +2,7 @@ import BrandCarousel from '@/components/BrandCarousel'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import CityFaq from '@/components/CityFaq'
 import NearbyAreas from '@/components/NearbyAreas'
+import ServiceAreasMap from '@/components/ServiceAreasMap'
 import ReviewsCarousel from '@/components/ReviewsCarousel'
 import JsonLd from '@/components/JsonLd'
 import { serviceSchema } from '@/lib/schema'
@@ -388,6 +389,9 @@ export default function BuryPage() {
 
         {/* ── NEARBY AREAS ───────────────────────────────────── */}
         <NearbyAreas currentSlug="bury" />
+
+        {/* ── SERVICE AREAS MAP ──────────────────────────────── */}
+        <ServiceAreasMap />
 
         {/* ── 7. FAQ ────────────────────────────────────────── */}
         <CityFaq

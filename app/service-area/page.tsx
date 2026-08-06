@@ -1,6 +1,7 @@
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, serviceSchema, SITE_URL } from '@/lib/schema'
 import { buildMetadata } from '@/lib/seo'
+import { BOROUGHS } from '@/lib/locations'
 
 export const metadata = buildMetadata({
   title: 'Service Area | Mobile Tyre Fitting Coverage — Greater Manchester',
@@ -13,6 +14,7 @@ export const metadata = buildMetadata({
 const boroughAreas = [
   {
     name: 'Manchester City',
+    boroughKey: 'Manchester',
     href: '/mobile-tyre-fitting-manchester',
     icon: 'location_city',
     postcodes: 'M1 – M16, M40, M60',
@@ -20,6 +22,7 @@ const boroughAreas = [
   },
   {
     name: 'Bolton',
+    boroughKey: 'Bolton',
     href: '/mobile-tyre-fitting-bolton',
     icon: 'location_on',
     postcodes: 'BL1 – BL7',
@@ -27,6 +30,7 @@ const boroughAreas = [
   },
   {
     name: 'Bury',
+    boroughKey: 'Bury',
     href: '/mobile-tyre-fitting-bury',
     icon: 'location_on',
     postcodes: 'BL8, BL9, M26',
@@ -34,6 +38,7 @@ const boroughAreas = [
   },
   {
     name: 'Oldham',
+    boroughKey: 'Oldham',
     href: '/mobile-tyre-fitting-oldham',
     icon: 'location_on',
     postcodes: 'OL1 – OL9',
@@ -41,6 +46,7 @@ const boroughAreas = [
   },
   {
     name: 'Rochdale',
+    boroughKey: 'Rochdale',
     href: '/mobile-tyre-fitting-rochdale',
     icon: 'location_on',
     postcodes: 'OL10 – OL16',
@@ -48,6 +54,7 @@ const boroughAreas = [
   },
   {
     name: 'Stockport',
+    boroughKey: 'Stockport',
     href: '/mobile-tyre-fitting-stockport',
     icon: 'location_on',
     postcodes: 'SK1 – SK8, SK12',
@@ -55,6 +62,7 @@ const boroughAreas = [
   },
   {
     name: 'Tameside',
+    boroughKey: 'Tameside',
     href: '/mobile-tyre-fitting-tameside',
     icon: 'location_on',
     postcodes: 'OL5 – OL7, SK14 – SK16',
@@ -62,6 +70,7 @@ const boroughAreas = [
   },
   {
     name: 'Trafford',
+    boroughKey: 'Trafford',
     href: '/mobile-tyre-fitting-trafford',
     icon: 'location_on',
     postcodes: 'M16, M17, M32, M33, WA14 – WA15',
@@ -69,6 +78,7 @@ const boroughAreas = [
   },
   {
     name: 'Wigan',
+    boroughKey: 'Wigan',
     href: '/mobile-tyre-fitting-wigan',
     icon: 'location_on',
     postcodes: 'WN1 – WN6',
@@ -425,36 +435,56 @@ export default function ServiceAreaPage() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-          {boroughAreas.map((area) => (
-            <a
-              key={area.name}
-              href={area.href}
-              className="group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-primary/30 transition-all overflow-hidden"
-            >
-              <div className="flex items-center gap-4 px-5 pt-5 pb-3">
-                <div className="bg-primary/10 p-3 rounded-xl shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
-                  <span className="material-symbols-outlined text-primary group-hover:text-white text-2xl transition-colors">
-                    {area.icon}
+          {boroughAreas.map((area) => {
+            const towns = BOROUGHS.find((b) => b.name === area.boroughKey)?.towns ?? []
+            return (
+              <div
+                key={area.name}
+                className="group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-primary/30 transition-all overflow-hidden"
+              >
+                <a href={area.href} className="flex items-center gap-4 px-5 pt-5 pb-3">
+                  <div className="bg-primary/10 p-3 rounded-xl shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
+                    <span className="material-symbols-outlined text-primary group-hover:text-white text-2xl transition-colors">
+                      {area.icon}
+                    </span>
+                  </div>
+                  <div className="min-w-0">
+                    <h3 className="font-h3 text-secondary text-lg leading-snug">{area.name}</h3>
+                    <span className="text-xs font-semibold text-primary/80 bg-primary/5 px-2 py-0.5 rounded-full">
+                      {area.postcodes}
+                    </span>
+                  </div>
+                </a>
+                <a href={area.href} className="px-5 pb-4 block">
+                  <p className="font-body-md text-body-md text-on-surface-variant text-base leading-relaxed">
+                    {area.desc}
+                  </p>
+                </a>
+                {towns.length > 0 && (
+                  <div className="px-5 pb-4 flex flex-wrap gap-1.5">
+                    {towns.map((town) => (
+                      <a
+                        key={town.slug}
+                        href={`/mobile-tyre-fitting-${town.slug}`}
+                        className="text-xs font-semibold text-primary bg-primary/5 hover:bg-primary hover:text-white px-2.5 py-1 rounded-full transition-colors"
+                      >
+                        {town.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
+                <a
+                  href={area.href}
+                  className="border-t border-slate-50 px-5 py-3 flex items-center justify-between mt-auto"
+                >
+                  <span className="text-xs font-bold text-primary uppercase tracking-wide">View area</span>
+                  <span className="material-symbols-outlined text-primary text-sm group-hover:translate-x-1 transition-transform">
+                    arrow_forward
                   </span>
-                </div>
-                <div className="min-w-0">
-                  <h3 className="font-h3 text-secondary text-lg leading-snug">{area.name}</h3>
-                  <span className="text-xs font-semibold text-primary/80 bg-primary/5 px-2 py-0.5 rounded-full">
-                    {area.postcodes}
-                  </span>
-                </div>
+                </a>
               </div>
-              <p className="font-body-md text-body-md text-on-surface-variant px-5 pb-5 flex-1 text-base leading-relaxed">
-                {area.desc}
-              </p>
-              <div className="border-t border-slate-50 px-5 py-3 flex items-center justify-between">
-                <span className="text-xs font-bold text-primary uppercase tracking-wide">View area</span>
-                <span className="material-symbols-outlined text-primary text-sm group-hover:translate-x-1 transition-transform">
-                  arrow_forward
-                </span>
-              </div>
-            </a>
-          ))}
+            )
+          })}
         </div>
       </section>
 

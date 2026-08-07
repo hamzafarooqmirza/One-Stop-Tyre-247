@@ -179,6 +179,7 @@ export default function Header() {
                 height={64}
                 loading="eager"
                 decoding="async"
+                fetchPriority="low"
               />
             </a>
           </div>
@@ -198,6 +199,7 @@ export default function Header() {
               height={56}
               loading="eager"
               decoding="async"
+              fetchPriority="low"
             />
           </a>
 

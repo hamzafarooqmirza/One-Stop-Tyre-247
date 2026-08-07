@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, itemListSchema, SITE_URL } from '@/lib/schema'
 import { buildMetadata } from '@/lib/seo'
@@ -146,14 +147,13 @@ export default function ServicesPage() {
               href={card.href}
               className="group bg-white rounded-xl shadow-[0_4px_20px_rgba(0,45,98,0.05)] overflow-hidden border border-gray-100 hover:border-secondary transition-all"
             >
-              <div className="aspect-video overflow-hidden">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              <div className="relative aspect-video overflow-hidden">
+                <Image
                   src={card.img}
                   alt={card.title}
-                  width={600}
-                  height={338}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
               </div>

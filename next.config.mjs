@@ -17,9 +17,9 @@ const nextConfig = {
   },
   compress: true,
   images: {
-    // TODO(owner): migrate these into /public and drop unoptimized once done —
-    // until then this keeps next/image usable against the hosts still referenced.
-    unoptimized: true,
+    // Optimization pipeline is live: next/image resizes and recompresses images
+    // from the remote hosts below on the fly, matching each usage's actual
+    // display size instead of shipping the original full-resolution file.
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       { protocol: 'https', hostname: 'hebbkx1anhila5yf.public.blob.vercel-storage.com' },

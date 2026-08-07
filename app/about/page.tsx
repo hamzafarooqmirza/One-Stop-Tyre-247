@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import JsonLd from '@/components/JsonLd'
 import { aboutPageSchema, breadcrumbSchema, SITE_URL } from '@/lib/schema'
 import { buildMetadata } from '@/lib/seo'
@@ -24,15 +25,13 @@ export default function AboutPage() {
 
         {/* 1. HERO */}
         <section className="relative overflow-hidden py-16 sm:py-24 px-4 sm:px-6 text-center text-white">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src="/images/mobile-tyre-fitting-manchester.webp"
             alt="Mobile tyre fitting technician at work in Greater Manchester"
-            className="absolute inset-0 w-full h-full object-cover object-center"
-            width={1600}
-            height={900}
-            fetchPriority="high"
-            decoding="async"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
           />
           <div
             className="absolute inset-0"

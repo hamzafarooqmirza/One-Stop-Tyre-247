@@ -163,10 +163,17 @@
     overflow-x: hidden;
   }
 
-  /* Material Symbols helper — hidden until icon font is loaded to prevent text flash */
+  /* Material Symbols helper — hidden until icon font is loaded to prevent text flash.
+     Fixed 1em square box (matching the icon's own font-size) so the swap from fallback
+     text metrics to the loaded icon glyph never changes the element's size — this is
+     what was causing layout shift (CLS) across every icon on the page. */
   .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     visibility: hidden;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
   }
   .icons-ready .material-symbols-outlined {
     visibility: visible;

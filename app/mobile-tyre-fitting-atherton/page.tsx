@@ -42,15 +42,24 @@ export default function AthertonPage() {
       <main>
 
         {/* ── 1. HERO */}
-        <section
-          className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-start text-left px-4 sm:px-8 lg:px-16"
-          style={{
-            backgroundImage: "linear-gradient(to right, rgba(15, 23, 42, 0.96) 0%, rgba(15, 23, 42, 0.75) 100%), url('/images/mobile-tyre-fitting-one-stop-tyres-24-7.webp')",
-            backgroundSize: "cover",
-            backgroundPosition: "center"
-          }}
-        >
-          <div className="max-w-2xl py-20">
+        <section className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-start text-left px-4 sm:px-8 lg:px-16 overflow-hidden">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/mobile-tyre-fitting-one-stop-tyres-24-7.webp"
+            alt="Mobile tyre fitting technician at work in Greater Manchester"
+            className="absolute inset-0 w-full h-full object-cover object-center"
+            width={1600}
+            height={900}
+            fetchPriority="high"
+            decoding="async"
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: "linear-gradient(to right, rgba(15, 23, 42, 0.96) 0%, rgba(15, 23, 42, 0.75) 100%)",
+            }}
+          />
+          <div className="relative z-10 max-w-2xl py-20">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}>
               24/7 Mobile Tyre Fitting Atherton
             </h1>

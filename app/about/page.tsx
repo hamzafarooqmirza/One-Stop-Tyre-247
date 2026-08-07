@@ -23,16 +23,22 @@ export default function AboutPage() {
       <main className="bg-[#fcf9f8] text-[#1c1b1b]" style={{ fontFamily: 'Inter, sans-serif' }}>
 
         {/* 1. HERO */}
-        <section
-          className="py-16 sm:py-24 px-4 sm:px-6 text-center text-white"
-          style={{
-            backgroundImage:
-              'linear-gradient(rgba(28,27,27,0.85),rgba(28,27,27,0.85)), url(/images/mobile-tyre-fitting-manchester.webp)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        >
-          <div className="max-w-4xl mx-auto">
+        <section className="relative overflow-hidden py-16 sm:py-24 px-4 sm:px-6 text-center text-white">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/mobile-tyre-fitting-manchester.webp"
+            alt="Mobile tyre fitting technician at work in Greater Manchester"
+            className="absolute inset-0 w-full h-full object-cover object-center"
+            width={1600}
+            height={900}
+            fetchPriority="high"
+            decoding="async"
+          />
+          <div
+            className="absolute inset-0"
+            style={{ backgroundImage: 'linear-gradient(rgba(28,27,27,0.85),rgba(28,27,27,0.85))' }}
+          />
+          <div className="relative z-10 max-w-4xl mx-auto">
             <h1
               className="mb-4 sm:mb-6 text-white text-3xl sm:text-4xl lg:text-[40px] leading-[1.1] font-bold"
               style={{

@@ -45,7 +45,7 @@ export default function RadcliffePage() {
         {/* ── 1. HERO */}
         <section className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-start text-left px-4 sm:px-8 lg:px-16 overflow-hidden">
           <Image
-            src="/images/mobile-tyre-fitting-one-stop-tyres-24-7.webp"
+            src="/images/hero-test-tiny.webp"
             alt="Mobile tyre fitting technician at work in Greater Manchester"
             fill
             priority

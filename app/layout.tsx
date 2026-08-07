@@ -66,13 +66,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Site icon */}
         <link rel="icon" href="/icon.webp" type="image/webp" />
         <link rel="apple-touch-icon" href="/icon.webp" />
-        {/* Preload the hero image — tells the browser to fetch it as early as possible */}
-        <link
-          rel="preload"
-          as="image"
-          href="/images/mobile-tyre-fitting-service.webp"
-          type="image/webp"
-        />
+        {/* Hero images are preloaded per-page via fetchPriority="high" on each page's own
+            <img> tag — a single blanket preload here would compete with (and often be wrong
+            for) whichever hero image the current page actually needs. */}
         {/* Preconnect to third-party origins to eliminate DNS + TLS latency */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

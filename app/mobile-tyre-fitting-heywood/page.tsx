@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import BrandCarousel from '@/components/BrandCarousel'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import CityFaq from '@/components/CityFaq'
@@ -43,15 +44,13 @@ export default function HeywoodPage() {
 
         {/* ── 1. HERO */}
         <section className="relative min-h-[100svh] lg:min-h-[600px] flex items-center justify-start text-left px-4 sm:px-8 lg:px-16 overflow-hidden">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src="/images/mobile-tyre-fitting-one-stop-tyres-24-7.webp"
             alt="Mobile tyre fitting technician at work in Greater Manchester"
-            className="absolute inset-0 w-full h-full object-cover object-center"
-            width={1600}
-            height={900}
-            fetchPriority="high"
-            decoding="async"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
           />
           <div
             className="absolute inset-0"
@@ -172,8 +171,14 @@ export default function HeywoodPage() {
               ].map((card) => (
                 <a key={card.title} href={card.href} className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]">
                   <div className="relative h-44 sm:h-52 overflow-hidden">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={card.img} alt={card.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={600} height={400} loading="lazy" decoding="async" />
+                    <Image
+                      src={card.img}
+                      alt={card.title}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                     <span className="absolute top-3 left-3 text-xs font-bold text-white bg-[#b70011] px-3 py-1 rounded-full">{card.badge}</span>
                   </div>

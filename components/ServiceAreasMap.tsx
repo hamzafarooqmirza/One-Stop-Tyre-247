@@ -45,7 +45,7 @@ export default function ServiceAreasMap() {
         </p>
 
         <div className="rounded-xl border border-white/10 bg-white/[0.02] overflow-hidden">
-          <div className="max-h-[320px] overflow-y-auto divide-y divide-white/[0.06]">
+          <div className="divide-y divide-white/[0.06]">
             {BOROUGHS.map((borough) => (
               <div key={borough.name} className="px-4 py-3">
                 <div className="flex items-center gap-2 mb-1">

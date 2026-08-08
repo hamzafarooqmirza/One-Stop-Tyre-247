@@ -28,8 +28,8 @@ export default function ServiceAreasMap() {
       </div>
 
       {/* Right — locations, grouped by borough */}
-      <div className="w-full lg:w-1/2 bg-[#0f172a] px-6 sm:px-10 py-10 sm:py-14">
-        <span className="inline-block bg-[#FF4444]/15 text-[#FF4444] font-bold uppercase tracking-widest text-xs mb-3 px-3 py-1 rounded-full border border-[#FF4444]/30">
+      <div className="w-full lg:w-1/2 bg-[#0f172a] px-6 sm:px-10 py-10 sm:py-14 flex flex-col">
+        <span className="inline-block bg-[#FF4444]/15 text-[#FF4444] font-bold uppercase tracking-widest text-xs mb-3 px-3 py-1 rounded-full border border-[#FF4444]/30 self-start">
           Our Service Areas
         </span>
         <h2
@@ -38,69 +38,70 @@ export default function ServiceAreasMap() {
         >
           Mobile Tyre Fitting Manchester &amp; Greater Manchester — Full Coverage
         </h2>
-        <p className="text-slate-400 text-sm mb-5 leading-relaxed">
+        <p className="text-slate-400 text-sm mb-6 leading-relaxed">
           Every Greater Manchester borough, town and motorway we cover, 24/7. Broken down on a
           motorway hard shoulder or stuck on your driveway at home — our nearest available
           technician is dispatched straight to your GPS location.
         </p>
 
-        <div className="space-y-2.5">
-          {BOROUGHS.map((borough) => (
-            <div key={borough.name} className="flex flex-wrap items-center gap-1.5">
-              {borough.slug ? (
-                <a
-                  href={`/mobile-tyre-fitting-${borough.slug}`}
-                  className="inline-flex items-center gap-1 text-white font-extrabold text-sm hover:text-[#FF4444] transition-colors shrink-0"
-                >
-                  <span className="material-symbols-outlined text-[#FF4444]" style={{ fontSize: '15px' }}>
+        <div className="rounded-xl border border-white/10 bg-white/[0.02] overflow-hidden">
+          <div className="max-h-[320px] overflow-y-auto divide-y divide-white/[0.06]">
+            {BOROUGHS.map((borough) => (
+              <div key={borough.name} className="px-4 py-3">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="material-symbols-outlined text-[#FF4444] shrink-0" style={{ fontSize: '15px' }}>
                     location_on
                   </span>
-                  {borough.name}
-                </a>
-              ) : (
-                <span className="inline-flex items-center gap-1 text-white font-extrabold text-sm shrink-0">
-                  <span className="material-symbols-outlined text-[#FF4444]" style={{ fontSize: '15px' }}>
-                    location_on
-                  </span>
-                  {borough.name}
-                </span>
-              )}
-              {borough.towns.map((town) => (
-                <a
-                  key={town.slug}
-                  href={`/mobile-tyre-fitting-${town.slug}`}
-                  className="text-xs font-bold text-slate-300 bg-white/5 hover:bg-[#FF4444] hover:text-white border border-white/10 hover:border-[#FF4444] px-2.5 py-1 rounded-full transition-colors"
-                >
-                  {town.name}
-                </a>
-              ))}
-            </div>
-          ))}
-        </div>
+                  {borough.slug ? (
+                    <a
+                      href={`/mobile-tyre-fitting-${borough.slug}`}
+                      className="text-white font-bold text-sm hover:text-[#FF4444] transition-colors"
+                    >
+                      {borough.name}
+                    </a>
+                  ) : (
+                    <span className="text-white font-bold text-sm">{borough.name}</span>
+                  )}
+                </div>
+                {borough.towns.length > 0 && (
+                  <p className="text-xs text-slate-400 leading-relaxed pl-[23px]">
+                    {borough.towns.map((town, i) => (
+                      <span key={town.slug}>
+                        <a href={`/mobile-tyre-fitting-${town.slug}`} className="hover:text-[#FF4444] transition-colors">
+                          {town.name}
+                        </a>
+                        {i < borough.towns.length - 1 && <span className="text-slate-600"> · </span>}
+                      </span>
+                    ))}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
 
-        <div className="mt-4 pt-4 border-t border-white/10">
-          <div className="flex flex-wrap items-center gap-1.5">
-            <span className="inline-flex items-center gap-1 text-white font-extrabold text-sm shrink-0">
-              <span className="material-symbols-outlined text-[#FF4444]" style={{ fontSize: '15px' }}>
+          <div className="px-4 py-3 border-t border-white/[0.06] bg-white/[0.02]">
+            <div className="flex items-center gap-2 mb-1">
+              <span className="material-symbols-outlined text-[#FF4444] shrink-0" style={{ fontSize: '15px' }}>
                 directions
               </span>
-              Motorways
-            </span>
-            {ROAD_PAGES.map((road) => (
-              <a
-                key={road.slug}
-                href={`/mobile-tyre-fitting-${road.slug}`}
-                className="text-xs font-bold text-slate-300 bg-white/5 hover:bg-[#FF4444] hover:text-white border border-white/10 hover:border-[#FF4444] px-2.5 py-1 rounded-full transition-colors"
-              >
-                {road.name}
-              </a>
-            ))}
+              <span className="text-white font-bold text-sm">Motorways</span>
+            </div>
+            <p className="text-xs text-slate-400 leading-relaxed pl-[23px]">
+              {ROAD_PAGES.map((road, i) => (
+                <span key={road.slug}>
+                  <a href={`/mobile-tyre-fitting-${road.slug}`} className="hover:text-[#FF4444] transition-colors">
+                    {road.name}
+                  </a>
+                  {i < ROAD_PAGES.length - 1 && <span className="text-slate-600"> · </span>}
+                </span>
+              ))}
+            </p>
           </div>
         </div>
 
         <a
           href="/service-area"
-          className="mt-6 inline-flex items-center gap-2 bg-[#FF4444] text-[#121212] text-sm font-bold px-5 py-3 rounded-xl hover:bg-red-700 hover:text-white transition-colors"
+          className="mt-6 inline-flex items-center gap-2 bg-[#FF4444] text-[#121212] text-sm font-bold px-5 py-3 rounded-xl hover:bg-red-700 hover:text-white transition-colors self-start"
         >
           <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>map</span>
           View Full Service Area

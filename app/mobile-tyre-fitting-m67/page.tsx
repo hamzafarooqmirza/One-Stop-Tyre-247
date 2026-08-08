@@ -131,48 +131,6 @@ export default function M67Page() {
           </div>
         </section>
 
-        {/* ── LOCAL INTRO ────────────────────────────────────── */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Emergency Tyre Fitting on the M67
-            </h2>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              The M67 is a short connector road serving Tameside, running from the Denton
-              interchange with the M60 out to Mottram at junction 4, taking in the Hyde bypass along
-              the way. It&apos;s a route we know well, since it&apos;s one of the quickest links
-              between the M60 and the Glossop-bound traffic heading out towards the Peak District.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Being such a short stretch, breakdowns on the M67 are usually never far from an exit —
-              whether that&apos;s back onto the M60 at Denton or off towards Hyde or Mottram at the
-              far end. Our mobile tyre fitting service dispatches straight to whichever safe stopping
-              point you&apos;ve reached.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed">
-              Whether you&apos;ve broken down near the Denton interchange, on the Hyde bypass, or
-              heading towards Mottram and Glossop, call or WhatsApp us your location and we&apos;ll
-              send the nearest technician. We aim to reach any safe stopping point on the M67 within
-              20–30 minutes.
-            </p>
-
-            <div className="mt-8 bg-slate-50 border-l-4 border-[#b70011] rounded-r-xl p-5 sm:p-6">
-              <h3 className="font-bold text-[#0f172a] mb-2" style={{ fontFamily: 'var(--font-work-sans)' }}>
-                Staying Safe on the M67
-              </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                For safety reasons we do not carry out tyre changes on a live carriageway or hard
-                shoulder. If you break down on the M67, get to the nearest services, slip road or
-                lay-by if you safely can, put your hazards on, and call or WhatsApp us your location
-                — we&apos;ll dispatch a technician to meet you there.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">

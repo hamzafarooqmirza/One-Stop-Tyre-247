@@ -133,28 +133,6 @@ export default function BlackleyPage() {
           </div>
         </section>
 
-        {/* ── LOCAL INTRO ────────────────────────────────────── */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Mobile Tyre Fitting Across Blackley
-            </h2>
-            
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Blackley sits in north Manchester, with Charlestown and Victoria Avenue forming its main residential streets and Boggart Hole Clough as the local green space. Our mobile tyre fitting service covers Blackley and the surrounding M9 postcode area, bringing a fully equipped van directly to your home, workplace or the roadside rather than asking you to find a garage slot.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              We're a regular presence around Charlestown and the routes into central Manchester, and along the M60 between junctions 19 and 20, which most Blackley traffic uses to reach the motorway network. Whether you've picked up a puncture on the A6010 outer ring road or a sidewall cut on a residential street, our technicians carry the tools and stock to sort it on-site.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed">
-              Mobile tyre fitting in Blackley covers everything from a same-day puncture repair to a full emergency tyre replacement after a blowout, with premium, mid-range and budget tyre options fitted to the same standard regardless of price. We aim to reach any Blackley postcode within 20–30 minutes, and every job includes a TPMS check so your dashboard warning light is cleared before we leave.
-            </p>
-          </div>
-        </section>
-
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">

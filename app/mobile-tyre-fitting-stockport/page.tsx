@@ -133,38 +133,6 @@ export default function StockportPage() {
           </div>
         </section>
 
-        {/* ── LOCAL INTRO ────────────────────────────────────── */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Mobile Tyre Fitting Across Stockport
-            </h2>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Stockport centre sits down in the Mersey valley, with the Viaduct area and the narrow
-              streets around Merseyway making a quick garage visit more hassle than it&apos;s worth
-              when a tyre gives way. Our mobile tyre fitting service comes to your home, workplace or
-              the roadside instead, covering Stockport, Cheadle, Bramhall, Hazel Grove and Marple
-              across the SK1–SK8 and SK12 postcode areas.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              We regularly attend the A6 corridor that runs straight through Stockport towards
-              Cheadle and Hazel Grove, as well as the M60 around junctions 1 and 2 and the M56 link
-              that carries traffic out towards Manchester Airport. Marple&apos;s hillier, more spread
-              out streets are covered just as quickly as the town centre.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed">
-              Whether you&apos;ve broken down near the Viaduct, need a tyre changing on your
-              Bramhall driveway, or are stuck on the A6 heading towards the airport, our technicians
-              carry premium, mid-range and budget tyres and aim to reach any Stockport postcode within
-              20–30 minutes. Every mobile tyre fitting job includes a full safety check before we
-              leave.
-            </p>
-          </div>
-        </section>
-
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">

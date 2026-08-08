@@ -133,39 +133,6 @@ export default function BuryPage() {
           </div>
         </section>
 
-        {/* ── LOCAL INTRO ────────────────────────────────────── */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Mobile Tyre Fitting Across Bury
-            </h2>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Bury&apos;s town centre around Bury Market and The Rock shopping centre gets busy fast,
-              and a flat tyre in a packed car park is never convenient. Rather than asking you to
-              arrange a tow into town, our mobile tyre fitting service comes directly to you — at
-              home, at work, or wherever you&apos;ve broken down across Bury, Radcliffe, Ramsbottom,
-              Tottington and Whitefield.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              We cover the BL8, BL9 and M26 postcode areas and are regularly called out along the M66
-              between junctions 1 and 4, where a puncture or blowout on the fast-moving stretch north
-              of Manchester needs a quick, safe response. Whether you&apos;re stuck outside The Rock,
-              on a residential street in Whitefield, or pulled over near a Ramsbottom junction, our
-              technicians carry premium, mid-range and budget tyres ready to fit on arrival.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed">
-              Emergency tyre replacement is available across Bury 24/7, alongside same-day bookings
-              for less urgent punctures and slow leaks. Every mobile tyre fitting job includes wheel
-              balancing and a TPMS check, so you leave with the dashboard warning light cleared as
-              well as a new tyre. We aim to reach any Bury postcode within 20–30 minutes, whether you
-              call from a shop doorway in the town centre or a driveway out towards Tottington.
-            </p>
-          </div>
-        </section>
-
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">

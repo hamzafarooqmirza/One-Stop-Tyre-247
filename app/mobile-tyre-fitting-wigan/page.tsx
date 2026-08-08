@@ -111,37 +111,6 @@ export default function WiganPage() {
           </div>
         </section>
 
-        {/* ── LOCAL INTRO ────────────────────────────────────── */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Mobile Tyre Fitting Across Wigan
-            </h2>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Wigan town centre and Robin Park see heavy footfall and tight parking most days of the
-              week, which is exactly when a slow puncture tends to finally give out. Our mobile tyre
-              fitting service comes to you instead of the other way round, covering Wigan, Leigh,
-              Atherton and Hindley across the full WN1–WN6 postcode area.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              We also cover the western edge of our operating area out towards Skelmersdale, and
-              regularly attend breakdowns along the boundary of the M6 and M61, two of the main
-              commuter routes in and out of Wigan. Whether it&apos;s a work van picking up a puncture
-              on the way to a job or a car parked up near Robin Park retail area, we come straight to
-              you.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed">
-              Whether you&apos;re stuck in Leigh town centre, need a same-day fitting in Atherton, or
-              have broken down on the commuter routes towards Hindley, our technicians carry premium,
-              mid-range and budget tyres and aim to reach any Wigan postcode within 20–30 minutes.
-              Every mobile tyre fitting job includes wheel balancing and a TPMS check before we leave.
-            </p>
-          </div>
-        </section>
-
         {/* ── 2. REVIEWS */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">

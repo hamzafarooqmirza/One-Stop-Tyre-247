@@ -133,28 +133,6 @@ export default function DidsburyPage() {
           </div>
         </section>
 
-        {/* ── LOCAL INTRO ────────────────────────────────────── */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Mobile Tyre Fitting Across Didsbury
-            </h2>
-            
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Didsbury's village-style centre and leafy streets around Fog Lane Park see plenty of school-run and commuter traffic, and a punctured tyre is never convenient in either. Our mobile tyre fitting service covers Didsbury, East Didsbury and the surrounding M20 postcode area, bringing a fully equipped van directly to your home, workplace or the roadside.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              We're a regular presence around Didsbury village and the A34 Kingsway corridor, and along the M60 that carries most of Didsbury's commuter traffic towards the city centre and Stockport. Whether you've picked up a puncture on the Kingsway or a sidewall cut on a residential street near Fog Lane Park, our technicians carry the tools and stock to sort it on-site.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed">
-              Mobile tyre fitting in Didsbury covers everything from a same-day puncture repair to a full emergency tyre replacement after a blowout, with premium, mid-range and budget tyre options fitted to the same standard regardless of price. We aim to reach any Didsbury postcode within 20–30 minutes, and every job includes a TPMS check so your dashboard warning light is cleared before we leave.
-            </p>
-          </div>
-        </section>
-
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">

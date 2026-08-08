@@ -131,50 +131,6 @@ export default function M62Page() {
           </div>
         </section>
 
-        {/* ── LOCAL INTRO ────────────────────────────────────── */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Emergency Tyre Fitting on the M62
-            </h2>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              The M62 is the main trans-Pennine route through Greater Manchester, and the section we
-              cover runs from junction 12 through to junction 21, taking in the Eccles interchange
-              and the exposed run up towards the Pennines. This stretch carries heavy HGV traffic day
-              and night, and weather on the higher sections — rain, wind and winter ice — is a common
-              trigger for the tyre failures we attend.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Birch services, between junctions 18 and 19, is the obvious safe meeting point on the
-              Greater Manchester stretch, and we attend it regularly. The Eccles interchange, where
-              the M62 meets the M60, is another frequent call-out spot, though a busier one, so
-              getting to the nearest slip road or emergency area matters even more there than further
-              out along the route.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed">
-              Whether you&apos;ve blown a tyre on the Pennine climb in bad weather or picked up a
-              puncture nearer Eccles, call or WhatsApp your location and junction number and
-              we&apos;ll dispatch the nearest technician to meet you at a safe stopping point. We aim
-              to reach anywhere on the Greater Manchester stretch of the M62 within 20–30 minutes.
-            </p>
-
-            <div className="mt-8 bg-slate-50 border-l-4 border-[#b70011] rounded-r-xl p-5 sm:p-6">
-              <h3 className="font-bold text-[#0f172a] mb-2" style={{ fontFamily: 'var(--font-work-sans)' }}>
-                Staying Safe on the M62
-              </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                For safety reasons we do not carry out tyre changes on a live carriageway or hard
-                shoulder. If you break down on the M62, get to the nearest services, slip road or
-                lay-by if you safely can, put your hazards on, and call or WhatsApp us your location
-                — we&apos;ll dispatch a technician to meet you there.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">

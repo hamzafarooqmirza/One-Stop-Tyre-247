@@ -131,52 +131,6 @@ export default function M60Page() {
           </div>
         </section>
 
-        {/* ── LOCAL INTRO ────────────────────────────────────── */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Emergency Tyre Fitting on the M60
-            </h2>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              The M60 is Greater Manchester&apos;s orbital motorway, a full ring running from
-              junction 1 all the way round to junction 27, so a breakdown could put you anywhere
-              from Stockport to Trafford to Denton to Prestwich. Whatever section you&apos;re on,
-              our mobile tyre fitting service dispatches the nearest available technician to a safe
-              stopping point along the ring.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Three sections see the busiest traffic and the most call-outs: the Trafford stretch
-              near the Trafford Centre and Stretford, the Stockport side around junctions 1 and 2,
-              and the Denton interchange where the M67 feeds in. The M60 also interchanges directly
-              with the M62 and M56, so a breakdown near one of these junctions can mean unusually
-              heavy traffic while you wait.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed">
-              If you&apos;re not sure exactly where you are, use the driver location signs posted
-              along the hard shoulder and emergency areas, or share your What3Words location with
-              our dispatch team over the phone — it&apos;s the fastest way for us to find you
-              precisely on a ring road with no fixed postcode. Once you&apos;re safely off the live
-              carriageway, we can usually reach any point on the M60 within 20–30 minutes with a
-              fully stocked van.
-            </p>
-
-            <div className="mt-8 bg-slate-50 border-l-4 border-[#b70011] rounded-r-xl p-5 sm:p-6">
-              <h3 className="font-bold text-[#0f172a] mb-2" style={{ fontFamily: 'var(--font-work-sans)' }}>
-                Staying Safe on the M60
-              </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                For safety reasons we do not carry out tyre changes on a live carriageway or hard
-                shoulder. If you break down on the M60, get to the nearest services, slip road or
-                lay-by if you safely can, put your hazards on, and call or WhatsApp us your location
-                — we&apos;ll dispatch a technician to meet you there.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">

@@ -134,40 +134,6 @@ export default function OldhamPage() {
           </div>
         </section>
 
-        {/* ── LOCAL INTRO ────────────────────────────────────── */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Mobile Tyre Fitting Across Oldham
-            </h2>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Oldham is where One Stop Tyres 24/7 is based, at {ADDRESS}, so it&apos;s the town we
-              know best and can usually reach fastest. From the town centre out to Chadderton,
-              Failsworth, Royton and Lees, and up into the Saddleworth villages of Greenfield,
-              Uppermill and Delph, our mobile tyre fitting service covers the full OL1–OL9 postcode
-              area.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Being based locally means we&apos;re well placed for the A627(M) link road up to the
-              M60, one of the routes we attend most often for breakdowns heading in or out of Oldham.
-              The Saddleworth villages bring their own challenge — narrower moorland roads and steeper
-              routes than the rest of Greater Manchester — which is why our 4x4-capable mobile units
-              are equipped to reach Greenfield, Uppermill and Delph even in poor weather, not just the
-              flatter parts of town.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed">
-              Whether it&apos;s a puncture outside the shops in Oldham town centre or a tyre
-              that&apos;s picked up damage on the moor roads above Delph, we carry premium, mid-range
-              and budget tyres and can usually be with you inside 20–30 minutes. Every job includes a
-              proper safety check and TPMS reset where needed, so mobile tyre fitting in Oldham means
-              a complete, professional repair wherever in the borough you&apos;re calling from.
-            </p>
-          </div>
-        </section>
-
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">

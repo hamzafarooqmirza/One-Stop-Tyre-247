@@ -133,28 +133,6 @@ export default function FallowfieldPage() {
           </div>
         </section>
 
-        {/* ── LOCAL INTRO ────────────────────────────────────── */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Mobile Tyre Fitting Across Fallowfield
-            </h2>
-            
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Fallowfield's large student population and busy Wilmslow Road corridor mean a lot of on-street parking and plenty of short journeys, both common places for a slow puncture to finally give out. Our mobile tyre fitting service covers Fallowfield and the surrounding M14 postcode area, bringing a fully equipped van directly to your home, workplace or the roadside.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              We're a regular presence around Wilmslow Road and Platt Fields Park, and along the A34 that carries most of Fallowfield's traffic towards the city centre and Withington. Whether you've picked up a puncture on Wilmslow Road or a sidewall cut on a residential street near Platt Fields, our technicians carry the tools and stock to sort it on-site.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed">
-              Mobile tyre fitting in Fallowfield covers everything from a same-day puncture repair to a full emergency tyre replacement after a blowout, with premium, mid-range and budget tyre options fitted to the same standard regardless of price. We aim to reach any Fallowfield postcode within 20–30 minutes, and every job includes a TPMS check so your dashboard warning light is cleared before we leave.
-            </p>
-          </div>
-        </section>
-
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">

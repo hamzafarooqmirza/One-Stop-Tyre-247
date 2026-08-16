@@ -65,20 +65,20 @@ export default function ManchesterPage() {
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              24/7 Mobile Tyre Fitting Manchester
+              24/7 Mobile Tyre Replacement Manchester
             </h1>
 
             <p className="text-white/80 text-base leading-relaxed mb-6">
-              Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance Across Manchester. We Come To Your Home, Workplace Or Roadside Location Within 20–30 Minutes.
+              Need a tyre replaced in Manchester? One Stop Tyres 24/7 brings professional tyre replacement directly to your location. Whether you are at home, at work or safely parked roadside, our mobile team can supply and fit the right replacement tyre without the need to visit a garage.
             </p>
 
             {/* Trust bullets */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
               {[
-                '20 Minute Emergency Response',
-                'Mobile Tyre Fitting At Home, Work Or Roadside',
-                'Emergency Tyre Replacement & Puncture Repair',
-                'Covering Manchester & Surrounding Areas 24/7',
+                'Same-Day Mobile Tyre Replacement',
+                'Tyre Replacement At Home, Work Or Roadside',
+                'Premium, Mid-Range & Budget Tyre Options',
+                'Manchester & Surrounding Areas Covered',
                 'Card, Cash & Contactless Payments Accepted',
                 'Fully Insured Professional Tyre Technicians',
               ].map((item) => (
@@ -188,10 +188,10 @@ export default function ManchesterPage() {
                 className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight"
                 style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
               >
-                24/7 Mobile Tyre Fitting &amp; Emergency Tyre Repair In Manchester
+                Mobile Tyre Replacement &amp; Fitting In Manchester
               </h2>
               <p className="text-slate-600 max-w-2xl mx-auto text-base">
-                Mobile tyre fitting, emergency tyre replacement and puncture repair across Manchester. We come to your home, workplace or roadside location 24/7 with fast response times and professional service.
+                When a tyre is worn, damaged or no longer safe to drive on, getting a replacement should be simple. One Stop Tyres 24/7 provides mobile tyre replacement across Manchester, bringing suitable tyres directly to you and fitting them on-site. Our technicians can replace tyres at your home, workplace or a suitable roadside location, with a choice of premium, mid-range and budget tyres to suit both your vehicle and budget.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -199,14 +199,14 @@ export default function ManchesterPage() {
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp',
                   title: 'Mobile Tyre Fitting',
-                  desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Manchester. Fast response with premium and budget tyre options available.',
+                  desc: 'Professional tyre replacement at your location across Manchester. We supply suitable tyres and fit them on-site, saving you a trip to a garage.',
                   badge: 'FAST RESPONSE',
                   href: '/mobile-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp',
                   title: 'Home Tyre Fitting',
-                  desc: 'Same day tyre fitting at your home across Manchester, without the hassle of visiting a garage.',
+                  desc: 'Have your tyres replaced at home while you get on with your day. Our mobile service makes tyre replacement convenient without rearranging your schedule.',
                   badge: 'AT YOUR DOOR',
                   href: '/home-tyre-fitting',
                 },
@@ -325,29 +325,30 @@ export default function ManchesterPage() {
                 className="text-2xl sm:text-4xl lg:text-5xl text-[#0f172a] mb-5 sm:mb-8 leading-tight font-bold"
                 style={{ fontFamily: 'var(--font-work-sans)' }}
               >
-                Expert Mobile Tyre Fitting Service Across Manchester
+                Expert Mobile Tyre Replacement Across Manchester
               </h2>
               <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg">
-                One Stop Tyres provides 24/7 mobile tyre fitting in Manchester, helping drivers get back on the road quickly when they experience a puncture, tyre blowout or damaged tyre.
-                Our mobile tyre experts come directly to your home, workplace or roadside location anywhere in Manchester and surrounding areas.
-                We supply and fit premium and budget tyres, carry out mobile puncture repairs where safe and suitable, and provide emergency tyre replacement services throughout Manchester.
-                If you&apos;re searching for mobile tyre fitting near me in Manchester, our fast response team is available day and night.
+                Replacing a tyre is not simply about putting a new tyre on the wheel. The replacement needs to be suitable for your vehicle, correctly fitted and checked before you drive away.
+                <br /><br />
+                One Stop Tyres 24/7 provides mobile tyre replacement throughout Manchester and surrounding areas. Our technicians come to your location with the equipment needed to remove the damaged tyre, fit the replacement and check the wheel before completing the job.
+                <br /><br />
+                Whether you need one replacement tyre or several tyres replaced, we can discuss the available options with you before the work starts.
               </p>
               <ul className="space-y-4 sm:space-y-5">
                 <FeatureItem
                   icon="bolt"
-                  title="24/7 Mobile Tyre Fitting"
-                  desc="Tyres fitted at your home, workplace or roadside location."
+                  title="Mobile Tyre Replacement"
+                  desc="Get replacement tyres fitted at your home, workplace or a suitable roadside location."
                 />
                 <FeatureItem
                   icon="engineering"
-                  title="Emergency Tyre Replacement"
-                  desc="Fast replacement of damaged or unsafe tyres across Greater Manchester."
+                  title="Same-Day Tyre Replacement"
+                  desc="A practical option when you need a replacement tyre without making a separate trip to a tyre centre."
                 />
                 <FeatureItem
                   icon="sell"
-                  title="Mobile Puncture Repair"
-                  desc="Professional puncture repairs where safe and suitable."
+                  title="Emergency Tyre Replacement"
+                  desc="For damaged or unsafe tyres, our mobile team can provide replacement assistance when you are unable to continue safely."
                 />
               </ul>
             </div>
@@ -355,7 +356,16 @@ export default function ManchesterPage() {
         </section>
 
         {/* ── 5. WHY MANCHESTER DRIVERS CHOOSE US ──────────────── */}
-        <WhyChooseUs city="Manchester" image="/images/tyre-fitting-at-home.webp" />
+        <WhyChooseUs
+          city="Manchester"
+          image="/images/tyre-fitting-at-home.webp"
+          responseTitle="Convenient Mobile Service"
+          responseDesc="There is no need to drive to a garage with a damaged or worn tyre. We bring the replacement tyre and fitting service to you."
+          callOutTitle="Upfront Pricing"
+          callOutDesc="We discuss the tyre option and price before work begins, helping you understand what you are paying for without unexpected call-out charges."
+          certifiedTitle="Professional Technicians"
+          certifiedDesc="Our fitters are IMI certified and insured, with experience working on a wide range of vehicles, including family cars and prestige electric vehicles."
+        />
 
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />
@@ -372,24 +382,28 @@ export default function ManchesterPage() {
           city="Manchester"
           faqs={[
             {
-              q: 'Do you cover all areas of Greater Manchester?',
-              a: 'Yes, we cover the entire Greater Manchester region including Salford, Trafford, Oldham, Stockport, Bury, Bolton, Rochdale, and Tameside, as well as the city centre and Manchester Airport.',
+              q: 'Do you provide mobile tyre replacement in Manchester?',
+              a: 'Yes. We supply and fit replacement tyres at suitable locations across Manchester, including homes, workplaces and safe roadside locations.',
             },
             {
-              q: 'How long does a mobile tyre fitting take in Manchester?',
-              a: 'A single tyre replacement typically takes 20-30 minutes once our technician arrives. A full set of four tyres usually takes 45-60 minutes.',
+              q: 'Can you replace just one tyre?',
+              a: 'Yes, where a suitable replacement is available and it is appropriate for the vehicle. Our technician can assess the tyre and discuss the available replacement option with you.',
             },
             {
-              q: 'Do you offer 24-hour emergency service in Manchester?',
-              a: 'Yes, we operate 24 hours a day, 7 days a week, 365 days a year. Our emergency dispatch line is always staffed and ready to send a technician to your location.',
+              q: 'How long does mobile tyre replacement take?',
+              a: 'The fitting time depends on the vehicle, tyre and number of tyres being replaced. A single tyre replacement typically takes around 20–30 minutes once the technician arrives.',
             },
             {
-              q: 'What tyre brands do you carry for Manchester drivers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, and Pirelli, as well as mid-range and budget options to suit all price points.',
+              q: 'Can I have my tyres replaced at home?',
+              a: 'Yes. Home tyre replacement is one of the main benefits of our mobile service. You can arrange for your replacement tyres to be fitted while your vehicle is parked at home.',
             },
             {
-              q: 'Can you assist with tyre emergencies on the M60 ring road?',
-              a: 'Absolutely. Our emergency units are priority-dispatched for motorway breakdowns on the M60, M62, and M56, equipped with safety lighting and barriers for your protection.',
+              q: 'What tyre brands are available?',
+              a: 'We offer major brands including Michelin, Continental, Bridgestone and Pirelli, along with mid-range and budget options. Availability can depend on your tyre size and current stock.',
+            },
+            {
+              q: 'Can you replace a tyre at the roadside?',
+              a: 'Yes, provided the vehicle is in a suitable and safe location for our technician to work. If you are on a motorway or another unsafe location, our team can advise you on the safest next step.',
             },
           ]}
         />
@@ -397,8 +411,8 @@ export default function ManchesterPage() {
         {/* ── 8. FINAL CTA ──────────────────────────────────── */}
         <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Manchester Right Now?</h2>
-            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Manchester line and get a technician dispatched in minutes.</p>
+            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need Mobile Tyre Replacement in Manchester?</h2>
+            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t let a damaged or worn tyre disrupt your day. Call One Stop Tyres 24/7 for mobile tyre replacement across Manchester and get a quote for a suitable replacement tyre.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
               <a
                 className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl"

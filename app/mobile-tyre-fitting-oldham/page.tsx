@@ -66,22 +66,22 @@ export default function OldhamPage() {
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              24/7 Mobile Tyre Fitting Oldham
+              Mobile Tyre Fitting in Oldham — 24/7 Emergency Service
             </h1>
 
             <p className="text-white/80 text-base leading-relaxed mb-6">
-              Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance Across Oldham. We Come To Your Home, Workplace Or Roadside Location Within 20–30 Minutes.
+              Stuck with a flat tyre in Oldham? Our IMI-certified mobile tyre fitters reach you at home, work or roadside across OL1–OL9 in 20–30 minutes — any time, day or night.
             </p>
 
             {/* Trust bullets */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
               {[
-                '20 Minute Emergency Response',
-                'Mobile Tyre Fitting At Home, Work Or Roadside',
+                '20–30 Minute Response Across Oldham',
+                'Mobile Tyre Fitting at Home, Work or Roadside',
                 'Emergency Tyre Replacement & Puncture Repair',
-                'Covering Oldham & Surrounding Areas 24/7',
+                'Covering OL1–OL9 & Surrounding Areas 24/7',
                 'Card, Cash & Contactless Payments Accepted',
-                'Fully Insured Professional Tyre Technicians',
+                'IMI Certified & Fully Insured Technicians',
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2.5 text-white/90">
                   <span
@@ -200,42 +200,42 @@ export default function OldhamPage() {
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp',
                   title: 'Mobile Tyre Fitting',
-                  desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Oldham. Fast response with premium and budget tyre options available.',
+                  desc: "Mobile tyre fitting at your home, workplace or roadside anywhere in Oldham. We carry a full range of budget and premium tyres on every van — no garage visit needed.",
                   badge: 'FAST RESPONSE',
                   href: '/mobile-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp',
                   title: 'Home Tyre Fitting',
-                  desc: 'Same day tyre fitting at your home across Oldham, without the hassle of visiting a garage.',
+                  desc: "Need new tyres but can't get to a garage? We come to your Oldham address at a time that suits you and have the job done on your driveway in under an hour.",
                   badge: 'AT YOUR DOOR',
                   href: '/home-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp',
                   title: 'Mobile Puncture Repair',
-                  desc: 'Professional mobile puncture repair across Oldham, carried out on-site where safe and suitable.',
+                  desc: 'Where the damage qualifies under British Standard BS AU 159, we carry out a professional plug-and-patch repair on-site — saving you the cost of a full replacement.',
                   badge: 'CERTIFIED REPAIR',
                   href: '/emergency-puncture-repair',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp',
                   title: 'Jump Start',
-                  desc: 'Flat battery as well as a flat tyre? Our mobile jump start service gets you back on the road in minutes, available 24/7 across Oldham.',
+                  desc: 'Dead battery on top of a flat tyre? We handle both. Our technicians carry jump-start equipment on every callout across Oldham, available around the clock.',
                   badge: '24/7 SERVICE',
                   href: '/jump-start',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp',
                   title: 'TPMS Reset',
-                  desc: 'Tyre pressure monitoring system reset and sensor checks across Oldham after every fitting or repair.',
+                  desc: 'After every fitting or repair, we reset your Tyre Pressure Monitoring System as standard. We also carry replacement sensors for most makes and models.',
                   badge: 'ALL VEHICLES',
                   href: '/tpms-reset',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp',
                   title: 'Locking Nut Removal',
-                  desc: 'Specialist, damage-free locking wheel nut removal across Oldham using professional tools.',
+                  desc: 'Lost your locking wheel nut key? Our specialists use professional-grade tools to remove locking nuts without causing any damage to your alloys or wheel studs.',
                   badge: 'DAMAGE FREE',
                   href: '/locking-nut-removal',
                 },
@@ -329,26 +329,27 @@ export default function OldhamPage() {
                 Expert Mobile Tyre Fitting Service Across Oldham
               </h2>
               <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg">
-                One Stop Tyres provides 24/7 mobile tyre fitting in Oldham, helping drivers get back on the road quickly when they experience a puncture, tyre blowout or damaged tyre.
-                Our mobile tyre experts come directly to your home, workplace or roadside location anywhere in Oldham and surrounding areas.
-                We supply and fit premium and budget tyres, carry out mobile puncture repairs where safe and suitable, and provide emergency tyre replacement services throughout Oldham.
-                If you&apos;re searching for mobile tyre fitting near me in Oldham, our fast response team is available day and night.
+                When you get a flat tyre in Oldham — whether it&apos;s a blowout on the A627, a slow puncture discovered on your driveway in Chadderton, or a damaged tyre spotted in a car park in Shaw — the last thing you want is to wait hours for a recovery truck or drag yourself to an industrial estate. That&apos;s where we come in.
+                <br /><br />
+                One Stop Tyres 24/7 is Oldham&apos;s dedicated mobile tyre fitting service, covering every part of the borough from OL1 town centre out to Royton, Lees, Chadderton, and even the rural roads of Saddleworth, Uppermill and Greenfield. We dispatch a qualified technician directly to your location, typically within 20 to 30 minutes, with a fully stocked van carrying everything needed to get you back on the road on the spot.
+                <br /><br />
+                We stock all major tyre brands — Michelin, Continental, Bridgestone, Pirelli, Dunlop and Goodyear at the premium end, plus trusted mid-range and budget options — so whatever your vehicle and price point, we&apos;ll have the right tyre on board. You&apos;ll receive a fixed, upfront quote before we dispatch, and that&apos;s exactly what you pay. No call-out fees, no hidden extras.
               </p>
               <ul className="space-y-4 sm:space-y-5">
                 <FeatureItem
                   icon="bolt"
                   title="24/7 Mobile Tyre Fitting"
-                  desc="Tyres fitted at your home, workplace or roadside location."
+                  desc="Tyres fitted at your home, workplace or roadside across Oldham."
                 />
                 <FeatureItem
                   icon="engineering"
                   title="Emergency Tyre Replacement"
-                  desc="Fast replacement of damaged or unsafe tyres across Greater Manchester."
+                  desc="Fast response to blowouts and damaged tyres across OL1–OL9."
                 />
                 <FeatureItem
                   icon="sell"
                   title="Mobile Puncture Repair"
-                  desc="Professional puncture repairs where safe and suitable."
+                  desc="BS AU 159 compliant repairs carried out safely on-site."
                 />
               </ul>
             </div>
@@ -356,7 +357,17 @@ export default function OldhamPage() {
         </section>
 
         {/* ── 5. WHY OLDHAM DRIVERS CHOOSE US ──────────────── */}
-        <WhyChooseUs city="Oldham" image="/images/tyres-fitting-anywhere.webp" />
+        <WhyChooseUs
+          city="Oldham"
+          image="/images/tyres-fitting-anywhere.webp"
+          heading="Why Oldham Drivers Choose One Stop Tyres 24/7"
+          responseTitle="Fastest Response in Oldham"
+          responseDesc="We're locally based at Alliance Mill, Willow Street, OL1 3QH — which means our technicians know Oldham's roads and can reach you faster than any out-of-area service. Most callouts across OL1–OL9 are covered in 20 to 30 minutes."
+          callOutTitle="No Hidden Call-Out Fees"
+          callOutDesc="The price we quote over the phone is the price you pay on-site. There are no added call-out charges, no surprise labour fees, and no upselling when we arrive. Transparent pricing is something every customer deserves."
+          certifiedTitle="Fully Certified Technicians"
+          certifiedDesc="Every fitter on our team holds IMI (Institute of the Motor Industry) certification and is fully insured. From standard hatchbacks to prestige electric vehicles and Saddleworth's rural routes, our technicians have the training and equipment to handle it properly."
+        />
 
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />
@@ -374,19 +385,27 @@ export default function OldhamPage() {
           faqs={[
             {
               q: 'How quickly can you reach me in Oldham?',
-              a: 'Our average response time for Oldham (OL1–OL9) is 20-30 minutes. We have local technicians stationed near the town centre for immediate dispatch.',
+              a: "Our average response time across OL1–OL9 is 20 to 30 minutes. We're based in Oldham town centre and have technicians covering Shaw, Royton, Chadderton and surrounding areas. In quieter hours — particularly late nights — response times are often faster.",
             },
             {
-              q: 'Do you cover Saddleworth and upland areas of Oldham?',
-              a: 'Yes, our 4x4-capable mobile units regularly service Greenfield, Uppermill, and Delph, even in challenging weather conditions.',
+              q: 'Do you cover Saddleworth and the upland areas of Oldham?',
+              a: "Yes. We regularly service Uppermill, Greenfield, Delph, Dobcross and Denshaw. Our vehicles are equipped for rural and hillside routes in all weather. Response times to Saddleworth are typically 30 to 45 minutes, and we'll always give you an honest ETA on the call.",
             },
             {
-              q: 'Can you fit tyres for electric vehicles (EVs) in Oldham?',
-              a: 'Absolutely. We carry specialist EV-rated tyres and use the correct jacking equipment for Tesla and other electric car brands.',
+              q: 'Can you repair my puncture instead of replacing the tyre?',
+              a: "Often, yes. If the damage is in the central tread area and the tyre is otherwise in good condition, we carry out a professional repair to British Standard BS AU 159 — which is considerably cheaper than a full replacement. If the tyre can't safely be repaired, we'll explain why and replace it from our stock on the van.",
+            },
+            {
+              q: 'Can you fit tyres for electric vehicles in Oldham?',
+              a: 'Absolutely. Our technicians are trained in EV tyre fitting and carry the correct jacking equipment for Tesla, and other electric and hybrid platforms. Many EVs require reinforced XL-rated or run-flat tyres — we carry both and will always fit the correct specification.',
             },
             {
               q: 'What tyre brands do you carry for Oldham drivers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, and Pirelli, as well as mid-range and budget options to suit every price point.',
+              a: "We stock Michelin, Continental, Bridgestone, Pirelli, Goodyear and Dunlop at the premium end, plus Yokohama, Hankook, Firestone and Uniroyal in the mid-range, and quality budget options. Call us with your vehicle details and we'll confirm what we have on board before we set off.",
+            },
+            {
+              q: 'Do you charge extra for out-of-hours callouts in Oldham?',
+              a: 'No. Our pricing is the same whether you call us at noon or 3am. We operate 24 hours a day, 365 days a year — including Bank Holidays and Christmas — and there are no premium surcharges for night or weekend callouts.',
             },
           ]}
         />
@@ -395,7 +414,7 @@ export default function OldhamPage() {
         <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Oldham Right Now?</h2>
-            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Oldham line and get a technician dispatched in minutes.</p>
+            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Call us or send a WhatsApp message and we&apos;ll dispatch a technician to your location in Oldham straight away — with a fixed price confirmed before we leave.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
               <a
                 className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl"

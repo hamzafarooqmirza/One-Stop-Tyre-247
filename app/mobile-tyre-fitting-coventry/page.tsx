@@ -131,28 +131,6 @@ export default function CoventryPage() {
           </div>
         </section>
 
-        {/* ── LOCAL INTRO ────────────────────────────────────── */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Mobile Tyre Fitting Across Coventry
-            </h2>
-            
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Coventry's compact city centre and busy ring road mean a breakdown can leave you stuck close to town but with nowhere obvious to go. Our mobile tyre fitting service covers the city centre, the Cathedral Quarter and West Orchards, along with the wider CV postcode area, bringing a fully equipped van directly to your home, workplace or the roadside.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              We're a regular presence around the city centre and ring road, and along the M6, A45 and A46 corridors that carry most of Coventry's commuter and business traffic. Whether you've picked up a puncture on the ring road or a sidewall cut in a suburban street, our technicians carry the tools and stock to sort it on-site.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed">
-              Mobile tyre fitting in Coventry covers everything from a same-day puncture repair to a full emergency tyre replacement after a blowout, with premium, mid-range and budget tyre options fitted to the same standard regardless of price. As a directly employed team, we dispatch to any Coventry postcode the same day, and every job includes a TPMS check so your dashboard warning light is cleared before we leave.
-            </p>
-          </div>
-        </section>
-
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">

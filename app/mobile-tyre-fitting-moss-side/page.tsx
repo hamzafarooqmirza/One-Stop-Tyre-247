@@ -133,28 +133,6 @@ export default function MossSidePage() {
           </div>
         </section>
 
-        {/* ── LOCAL INTRO ────────────────────────────────────── */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Mobile Tyre Fitting Across Moss Side
-            </h2>
-            
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Moss Side's busy streets around Alexandra Park and Princess Road see a steady mix of residential and through traffic, and a punctured tyre is never convenient in either. Our mobile tyre fitting service covers Moss Side and the surrounding M14/M16 postcode area, bringing a fully equipped van directly to your home, workplace or the roadside.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              We're a regular presence around Alexandra Park and Princess Road, and along the A5103 and A6010 that carry most of Moss Side's traffic towards the city centre and south Manchester. Whether you've picked up a puncture on Princess Road or a sidewall cut on a residential street near Alexandra Park, our technicians carry the tools and stock to sort it on-site.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed">
-              Mobile tyre fitting in Moss Side covers everything from a same-day puncture repair to a full emergency tyre replacement after a blowout, with premium, mid-range and budget tyre options fitted to the same standard regardless of price. We aim to reach any Moss Side postcode within 20–30 minutes, and every job includes a TPMS check so your dashboard warning light is cleared before we leave.
-            </p>
-          </div>
-        </section>
-
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">

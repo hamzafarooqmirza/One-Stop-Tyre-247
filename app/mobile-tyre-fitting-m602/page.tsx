@@ -131,47 +131,6 @@ export default function M602Page() {
           </div>
         </section>
 
-        {/* ── LOCAL INTRO ────────────────────────────────────── */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Emergency Tyre Fitting on the M602
-            </h2>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              The M602 is Salford&apos;s inner relief route, a short but heavily used stretch
-              running from junction 1 at Eccles towards Regent Road on the approach to Manchester
-              city centre. It carries a lot of rush-hour commuter traffic in and out of the city, so
-              breakdowns here tend to happen at the busiest times of day.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              The motorway runs close to MediaCityUK and Salford Quays, so a good number of our
-              call-outs here involve drivers commuting to or from that area. Whatever junction
-              you&apos;re nearest to between Eccles and Regent Road, our mobile tyre fitting service
-              dispatches straight to your safe stopping point.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed">
-              Whether you&apos;ve broken down heading into the city centre or out towards Eccles,
-              call or WhatsApp us your location and we&apos;ll send the nearest technician. We aim to
-              reach any safe stopping point on the M602 within 20–30 minutes, even during rush hour.
-            </p>
-
-            <div className="mt-8 bg-slate-50 border-l-4 border-[#b70011] rounded-r-xl p-5 sm:p-6">
-              <h3 className="font-bold text-[#0f172a] mb-2" style={{ fontFamily: 'var(--font-work-sans)' }}>
-                Staying Safe on the M602
-              </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                For safety reasons we do not carry out tyre changes on a live carriageway or hard
-                shoulder. If you break down on the M602, get to the nearest services, slip road or
-                lay-by if you safely can, put your hazards on, and call or WhatsApp us your location
-                — we&apos;ll dispatch a technician to meet you there.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">

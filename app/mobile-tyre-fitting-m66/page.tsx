@@ -131,48 +131,6 @@ export default function M66Page() {
           </div>
         </section>
 
-        {/* ── LOCAL INTRO ────────────────────────────────────── */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Emergency Tyre Fitting on the M66
-            </h2>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              The M66 is a short but busy north–south link through the Bury corridor, running from
-              junction 1 at Simister Island — where it meets the M60 — up to junction 5. It&apos;s
-              one of the main routes commuters use heading towards Ramsbottom and Rawtenstall, so
-              traffic can back up quickly if a breakdown blocks a lane at peak times.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Because the M66 links directly onto the A56 towards Ramsbottom and Rawtenstall, a
-              tyre failure here often happens to drivers partway through a longer commute rather
-              than right at the start or end of their journey. Our mobile tyre fitting service
-              dispatches straight to wherever you&apos;ve managed to stop safely along the route.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed">
-              Whether you&apos;re stuck near Simister Island or further up towards junction 5, call
-              or WhatsApp us your location and we&apos;ll send the nearest technician. We aim to
-              reach any safe stopping point on the M66 within 20–30 minutes, with premium, mid-range
-              and budget tyres ready to fit on arrival.
-            </p>
-
-            <div className="mt-8 bg-slate-50 border-l-4 border-[#b70011] rounded-r-xl p-5 sm:p-6">
-              <h3 className="font-bold text-[#0f172a] mb-2" style={{ fontFamily: 'var(--font-work-sans)' }}>
-                Staying Safe on the M66
-              </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                For safety reasons we do not carry out tyre changes on a live carriageway or hard
-                shoulder. If you break down on the M66, get to the nearest services, slip road or
-                lay-by if you safely can, put your hazards on, and call or WhatsApp us your location
-                — we&apos;ll dispatch a technician to meet you there.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">

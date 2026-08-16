@@ -131,28 +131,6 @@ export default function SolihullPage() {
           </div>
         </section>
 
-        {/* ── LOCAL INTRO ────────────────────────────────────── */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Mobile Tyre Fitting Across Solihull
-            </h2>
-            
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Solihull's town centre and Touchwood shopping district sit alongside busy commuter routes into Birmingham, and a punctured tyre can happen in either. Our mobile tyre fitting service covers Solihull town centre, Touchwood and Shirley, along with the surrounding B90-B94 postcode area, bringing a fully equipped van directly to your home, workplace or the roadside.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              We're a regular presence around Touchwood and the town centre, and along the M42 and M6 corridors that carry most of Solihull's commuter traffic. Whether you've picked up a puncture heading into town or a sidewall cut in a suburban street in Shirley, our technicians carry the tools and stock to sort it on-site.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed">
-              Mobile tyre fitting in Solihull covers everything from a same-day puncture repair to a full emergency tyre replacement after a blowout, with premium, mid-range and budget tyre options fitted to the same standard regardless of price. As a directly employed team, we dispatch to any Solihull postcode the same day, and every job includes a TPMS check so your dashboard warning light is cleared before we leave.
-            </p>
-          </div>
-        </section>
-
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">

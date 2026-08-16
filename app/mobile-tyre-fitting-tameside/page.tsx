@@ -133,38 +133,6 @@ export default function TamesidePage() {
           </div>
         </section>
 
-        {/* ── LOCAL INTRO ────────────────────────────────────── */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Mobile Tyre Fitting Across Tameside
-            </h2>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Tameside is really a string of separate town centres — Ashton-under-Lyne, Denton,
-              Droylsden, Hyde, Mossley and Stalybridge — each with its own tight streets and busy
-              retail parking. Rather than sending you to a single fixed garage, our mobile tyre
-              fitting service comes to whichever of these you&apos;re in, across the OL5–OL7 and
-              SK14–SK16 postcode areas.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              We&apos;re regularly called out along the M67 between junctions 1 and 4, the short
-              motorway spur that carries most of Tameside&apos;s traffic towards Manchester, and to
-              the M60 Denton interchange where several of the borough&apos;s routes meet. A puncture
-              picked up on the interchange itself usually means guiding you to the nearest safe slip
-              road before we get to work.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed">
-              Whether you&apos;re stuck in Hyde town centre, need a same-day fitting in Stalybridge,
-              or have a slow puncture from the cobbles around Ashton market, our technicians carry
-              premium, mid-range and budget tyres and aim to reach any Tameside postcode within
-              20–30 minutes. Every mobile tyre fitting job includes a TPMS check before we leave.
-            </p>
-          </div>
-        </section>
-
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">

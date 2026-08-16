@@ -34,11 +34,28 @@ interface WhyChooseUsProps {
   /** Overrides the response-time feature title/description — for pages outside the 20-30 min Greater Manchester radius. */
   responseTitle?: string
   responseDesc?: string
+  /** Full heading override, e.g. "Why Oldham Drivers Choose One Stop Tyres 24/7" — bypasses the "?" auto-append. */
+  heading?: string
+  callOutTitle?: string
+  callOutDesc?: string
+  certifiedTitle?: string
+  certifiedDesc?: string
 }
 
-export default function WhyChooseUs({ city, image, locationType = 'city', responseTitle: responseTitleOverride, responseDesc }: WhyChooseUsProps) {
+export default function WhyChooseUs({
+  city,
+  image,
+  locationType = 'city',
+  responseTitle: responseTitleOverride,
+  responseDesc,
+  heading: headingOverride,
+  callOutTitle,
+  callOutDesc,
+  certifiedTitle,
+  certifiedDesc,
+}: WhyChooseUsProps) {
   const imgSrc = image ?? "/images/mobile-tyre-fitting-service.webp"
-  const heading = locationType === 'road' ? `Why Drivers Choose Us on the ${city}` : `Why ${city} Drivers Choose Us`
+  const heading = headingOverride ?? (locationType === 'road' ? `Why Drivers Choose Us on the ${city}?` : `Why ${city} Drivers Choose Us?`)
   const responseTitle = responseTitleOverride ?? (locationType === 'road' ? `Fastest Response on the ${city}` : `Fastest Response in ${city}`)
   return (
     <section className="bg-white py-12 sm:py-16 lg:py-20 border-y border-slate-100">
@@ -66,7 +83,7 @@ export default function WhyChooseUs({ city, image, locationType = 'city', respon
             className="text-xl sm:text-2xl lg:text-4xl font-bold text-[#0f172a] mb-4 sm:mb-6 leading-tight"
             style={{ fontFamily: 'var(--font-work-sans)' }}
           >
-            {heading}?
+            {heading}
           </h2>
           <div className="space-y-5 sm:space-y-6 lg:space-y-8">
             <FeatureItem
@@ -78,15 +95,15 @@ export default function WhyChooseUs({ city, image, locationType = 'city', respon
             />
             <FeatureItem
               icon="sell"
-              title="No Hidden Call-out Fees"
-              desc="Transparent pricing given upfront. The price we quote over the phone is the price you pay on-site."
+              title={callOutTitle ?? "No Hidden Call-out Fees"}
+              desc={callOutDesc ?? "Transparent pricing given upfront. The price we quote over the phone is the price you pay on-site."}
               bg="bg-[#c8e6ff]"
               iconColor="text-[#001e2e]"
             />
             <FeatureItem
               icon="verified_user"
-              title="Fully Certified Technicians"
-              desc="All our fitters are IMI certified and insured to work on everything from family hatchbacks to prestige electric vehicles."
+              title={certifiedTitle ?? "Fully Certified Technicians"}
+              desc={certifiedDesc ?? "All our fitters are IMI certified and insured to work on everything from family hatchbacks to prestige electric vehicles."}
               bg="bg-[#d7e2ff]"
               iconColor="text-[#001b3f]"
             />

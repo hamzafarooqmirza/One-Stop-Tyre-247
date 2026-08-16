@@ -133,38 +133,6 @@ export default function TraffordPage() {
           </div>
         </section>
 
-        {/* ── LOCAL INTRO ────────────────────────────────────── */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Mobile Tyre Fitting Across Trafford
-            </h2>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Trafford covers a lot of ground — from Altrincham and Sale in the south up through
-              Stretford, Urmston and Partington — so a breakdown can happen a long way from wherever
-              you&apos;d normally get tyres done. Our mobile tyre fitting service comes to your home,
-              workplace or the roadside anywhere across the M16–M33 and WA14–WA15 postcode areas
-              instead.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              We regularly fit tyres at workplaces around Trafford Park&apos;s industrial estate,
-              where a damaged tyre on a work vehicle needs sorting without taking it off-site, and
-              we&apos;re a familiar call-out near the Trafford Centre and Old Trafford on match days
-              and busy shopping weekends. The MediaCityUK border and the M60&apos;s western section
-              and M602 also see frequent breakdowns we attend.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed">
-              Whether you&apos;re parked up in Sale, need a workplace fitting in Stretford, or
-              you&apos;ve broken down heading towards Partington, our technicians carry premium,
-              mid-range and budget tyres and aim to reach any Trafford postcode within 20–30 minutes.
-              Every mobile tyre fitting job includes a full safety check before we leave.
-            </p>
-          </div>
-        </section>
-
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">

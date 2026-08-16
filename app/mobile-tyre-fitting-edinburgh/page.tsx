@@ -131,28 +131,6 @@ export default function EdinburghPage() {
           </div>
         </section>
 
-        {/* ── LOCAL INTRO ────────────────────────────────────── */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-5"
-              style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
-            >
-              Mobile Tyre Fitting Across Edinburgh
-            </h2>
-            
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Edinburgh's Old and New Town cobbles, plus the busy Leith docks area, mean a punctured tyre can happen almost anywhere in the city. Our mobile tyre fitting service covers the city centre around Princes Street, Leith and the surrounding suburbs, along with the wider EH postcode area, bringing a fully equipped van directly to your home, workplace or the roadside.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              We're a regular presence around the city centre and Leith, and along the A1, M8 and the Edinburgh City Bypass (A720) that carry most of the city's commuter traffic. Whether you've picked up a puncture heading into the centre or a sidewall cut in a suburban street, our technicians carry the tools and stock to sort it on-site.
-            </p>
-            <p className="text-slate-600 text-base leading-relaxed">
-              Mobile tyre fitting in Edinburgh covers everything from a same-day puncture repair to a full emergency tyre replacement after a blowout, with premium, mid-range and budget tyre options fitted to the same standard regardless of price. As a directly employed team, we dispatch to any Edinburgh postcode the same day, and every job includes a TPMS check so your dashboard warning light is cleared before we leave.
-            </p>
-          </div>
-        </section>
-
         {/* ── 2. REVIEWS ────────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-50">
           <div className="max-w-7xl mx-auto">

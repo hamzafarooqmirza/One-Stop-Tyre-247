@@ -6,7 +6,7 @@ import { buildMetadata } from '@/lib/seo'
 export const metadata = buildMetadata({
   title: 'Mobile Tyre & Roadside Services | One Stop Tyres 24/7',
   description:
-    '24/7 mobile tyre fitting, puncture repair, jump starts & TPMS reset across Manchester.',
+    '24/7 mobile tyre fitting, puncture repair, jump starts & TPMS reset at your location.',
   path: '/services',
 })
 
@@ -115,7 +115,7 @@ export default function ServicesPage() {
         <div className="relative z-20 text-center px-4 sm:px-5 max-w-4xl mx-auto">
           <h1 className="font-h1 text-2xl sm:text-3xl lg:text-h1 text-white mb-4 sm:mb-6 leading-tight">Our Expert Mobile Services</h1>
           <p className="font-body-lg text-base lg:text-body-lg text-white/90 max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed">
-            Professional 24/7 roadside assistance across Manchester and Greater Manchester. We bring the garage to you, anywhere, anytime.
+            Professional 24/7 roadside assistance, wherever you are. We bring the garage to you, anywhere, anytime.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <a
@@ -179,7 +179,7 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-5">
           <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-lg">
             <div className="w-full lg:w-1/2">
-              <h2 className="font-h2 text-2xl sm:text-3xl lg:text-h2 text-secondary mb-4 sm:mb-6">Why Manchester Trusts One Stop Tyres 24/7</h2>
+              <h2 className="font-h2 text-2xl sm:text-3xl lg:text-h2 text-secondary mb-4 sm:mb-6">Why Drivers Trust One Stop Tyres 24/7</h2>
               <p className="font-body-lg text-base lg:text-body-lg text-on-surface-variant mb-6 sm:mb-8">
                 We understand that a vehicle breakdown is more than just a mechanical issue—it&apos;s a stressful disruption to your day.
                 That&apos;s why we&apos;ve built our service on three pillars of excellence.
@@ -191,7 +191,7 @@ export default function ServicesPage() {
                   </div>
                   <div>
                     <h4 className="font-label-bold text-sm sm:text-label-bold text-secondary sm:text-lg mb-1">Ultra-Fast Response</h4>
-                    <p className="font-body-md text-sm sm:text-body-md text-on-surface-variant">We aim for 20-30 minute arrival times across Greater Manchester.</p>
+                    <p className="font-body-md text-sm sm:text-body-md text-on-surface-variant">We aim for 20-30 minute arrival times across our service area.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3 sm:gap-4">

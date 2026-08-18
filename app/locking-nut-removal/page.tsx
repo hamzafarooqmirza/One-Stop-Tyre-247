@@ -3,9 +3,9 @@ import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/sche
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'Locking Wheel Nut Removal Manchester | Damage-Free, 24/7',
+  title: 'Locking Wheel Nut Removal | Damage-Free, 24/7',
   description:
-    'Damage-free locking nut removal at your location across Greater Manchester, 24/7 service.',
+    'Damage-free locking nut removal at your location, 24/7 service.',
   path: '/locking-nut-removal',
 })
 
@@ -19,7 +19,7 @@ const _serviceSchema = serviceSchema({
   name: 'Locking Nut Removal',
   serviceType: 'Locking Wheel Nut Removal',
   description:
-    'Specialist, damage-free locking wheel nut removal available 24/7 across Greater Manchester. Lost your key or dealing with damaged nuts? We come to you and sort it without harming your alloys.',
+    'Specialist, damage-free locking wheel nut removal available 24/7, wherever you are. Lost your key or dealing with damaged nuts? We come to you and sort it without harming your alloys.',
 })
 
 const faqs = [
@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: 'How long does it take to arrive?',
-    a: 'We aim to reach you as quickly as possible across Greater Manchester. Response times vary by location and current demand.',
+    a: 'We aim to reach you as quickly as possible. Response times vary by location and current demand.',
   },
   {
     q: 'Do you replace the locking nut after removal?',
@@ -67,7 +67,7 @@ const whyChooseUs = [
   {
     icon: '⚡',
     title: 'Fast Response',
-    desc: 'We dispatch a specialist across Greater Manchester immediately so you are not left waiting unnecessarily.',
+    desc: 'We dispatch a specialist immediately so you are not left waiting unnecessarily.',
   },
   {
     icon: '💷',
@@ -113,7 +113,7 @@ export default function LockingNutRemovalPage() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/images/professional-mobile-tyre-fitting.webp"
-          alt="One Stop Tyres 24/7 mobile technician assisting a vehicle in Greater Manchester"
+          alt="One Stop Tyres 24/7 mobile technician assisting a vehicle"
           className="absolute inset-0 w-full h-full object-cover object-center"
           width={1600}
           height={900}
@@ -129,7 +129,7 @@ export default function LockingNutRemovalPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
               </span>
-              24/7 Greater Manchester Assistance
+              24/7 Rapid Assistance
             </div>
 
             <h1
@@ -141,7 +141,7 @@ export default function LockingNutRemovalPage() {
 
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-4">
               Lost your locking nut key or damaged beyond use? Our specialist mobile technicians
-              provide damage-free locking wheel nut removal across Greater Manchester, available
+              provide damage-free locking wheel nut removal wherever you are, available
               24/7. No need for recovery trucks or waiting at a garage.
             </p>
             <p className="text-slate-400 text-base leading-relaxed mb-8">
@@ -152,7 +152,7 @@ export default function LockingNutRemovalPage() {
 
             <ul className="space-y-2 mb-8">
               {[
-                '24/7 Availability Across Greater Manchester',
+                '24/7 Availability, Wherever You Are',
                 'Specialist Non-Destructive Removal Method',
                 'No Alloy Wheel Damage Guaranteed',
                 'Lost Key or Damaged Key — No Problem',
@@ -196,7 +196,7 @@ export default function LockingNutRemovalPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/mobile-tyre-fitting-one-stop-tyres-24-7.webp"
-              alt="Mobile technician attending a vehicle callout in Greater Manchester"
+              alt="Mobile technician attending a vehicle callout"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}
               height={600}
@@ -297,7 +297,7 @@ export default function LockingNutRemovalPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/mobile-tyre-fitting-service.webp"
-              alt="One Stop Tyres 24/7 mobile technician on a callout across Greater Manchester"
+              alt="One Stop Tyres 24/7 mobile technician on a callout"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}
               height={600}

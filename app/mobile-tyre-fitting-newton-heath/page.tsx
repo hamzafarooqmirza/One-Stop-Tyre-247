@@ -373,19 +373,19 @@ export default function NewtonHeathPage() {
           faqs={[
             {
               q: 'How quickly can you reach me in Newton Heath?',
-              a: 'Our mobile units are strategically positioned across Greater Manchester, meaning we can typically reach Newton Heath and the surrounding M40 postcode area within 20-30 minutes.',
+              a: 'Our mobile units are strategically positioned across north Manchester, meaning we can typically reach Newton Heath and the surrounding M40 postcode area, including Oldham Road and Dean Lane, within 20-30 minutes.',
             },
             {
               q: 'What areas around Newton Heath do you cover?',
-              a: 'Yes. We cover Newton Heath and the surrounding M40 postcode area, along with the main routes connecting it to the rest of Manchester and the M60.',
+              a: 'Yes. We cover Newton Heath and the surrounding M40 postcode area, along with Oldham Road, Dean Lane and the routes connecting to Moston and Failsworth.',
             },
             {
-              q: 'What tyre brands do you carry for Newton Heath customers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, as well as mid-range and budget options to suit every price point.',
+              q: 'Do you fit tyres for electric vehicles in Newton Heath?',
+              a: 'Yes. We carry reinforced XL-rated and run-flat tyre stock and use the correct jacking points for electric and hybrid vehicles, so Newton Heath EV owners are fully covered.',
             },
             {
-              q: 'Are you available on Bank Holidays in Newton Heath?',
-              a: 'Absolutely. We operate 24 hours a day, 365 days a year — including all Bank Holidays. A tyre emergency does not keep office hours, and neither do we.',
+              q: 'Can you fit tyres at my workplace near Oldham Road?',
+              a: 'Yes. We regularly attend business premises along Oldham Road and the surrounding industrial estates, fitting your tyres on-site.',
             },
           ]}
         />

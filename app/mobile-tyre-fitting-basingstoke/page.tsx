@@ -372,12 +372,12 @@ export default function BasingstokePage() {
               a: 'We cover Basingstoke city/town centre and the surrounding RG21 – RG24 postcode area, including the main commuter routes in and out of Basingstoke.',
             },
             {
-              q: 'What tyre brands do you carry for Basingstoke customers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, as well as mid-range and budget options to suit every price point.',
+              q: 'Do you fit tyres for electric vehicles in Basingstoke?',
+              a: 'Yes. Our technicians carry the correct jacking points and reinforced XL-rated tyre stock needed for EVs and hybrids, so Basingstoke drivers of electric vehicles are fully covered.',
             },
             {
-              q: 'Are you available on Bank Holidays in Basingstoke?',
-              a: 'Absolutely. We operate 24 hours a day, 365 days a year — including all Bank Holidays. A tyre emergency does not keep office hours, and neither do we.',
+              q: 'Can I book a mobile tyre fitting in Basingstoke online or by WhatsApp?',
+              a: "Yes. Send us your vehicle details, tyre size and Basingstoke postcode over WhatsApp and we'll confirm your arrival window and price before dispatching a technician.",
             },
           ]}
         />

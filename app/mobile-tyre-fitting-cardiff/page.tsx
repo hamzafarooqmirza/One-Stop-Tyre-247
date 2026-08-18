@@ -372,12 +372,12 @@ export default function CardiffPage() {
               a: 'We cover Cardiff city/town centre and the surrounding CF10 – CF24 postcode area, including the main commuter routes in and out of Cardiff.',
             },
             {
-              q: 'What tyre brands do you carry for Cardiff customers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, as well as mid-range and budget options to suit every price point.',
+              q: 'Can I get same-day tyre fitting booked in Cardiff?',
+              a: "In most cases, yes. Tell us your vehicle and tyre size when you call and we'll confirm whether a same-day Cardiff appointment is available before you commit.",
             },
             {
-              q: 'Are you available on Bank Holidays in Cardiff?',
-              a: 'Absolutely. We operate 24 hours a day, 365 days a year — including all Bank Holidays. A tyre emergency does not keep office hours, and neither do we.',
+              q: 'Do you fit tyres for electric vehicles in Cardiff?',
+              a: "Yes. Our vans carry reinforced XL-rated and run-flat tyre stock plus the correct jacking equipment for EVs, so Cardiff's electric and hybrid drivers are covered too.",
             },
           ]}
         />

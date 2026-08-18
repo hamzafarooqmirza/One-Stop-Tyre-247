@@ -372,12 +372,12 @@ export default function SolihullPage() {
               a: 'We cover Solihull city/town centre and the surrounding B90 – B94 postcode area, including the main commuter routes in and out of Solihull.',
             },
             {
-              q: 'What tyre brands do you carry for Solihull customers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, as well as mid-range and budget options to suit every price point.',
+              q: 'Can you repair a puncture in Solihull instead of replacing the tyre?',
+              a: "Yes, where it's safe to do so. If the damage falls inside the legal repair zone, we'll carry out a compliant puncture repair rather than push an unnecessary tyre replacement.",
             },
             {
-              q: 'Are you available on Bank Holidays in Solihull?',
-              a: 'Absolutely. We operate 24 hours a day, 365 days a year — including all Bank Holidays. A tyre emergency does not keep office hours, and neither do we.',
+              q: 'Can you fit tyres at my workplace in Solihull?',
+              a: 'Yes. We regularly visit offices, business parks and commercial premises across Solihull, fitting your tyres on-site while you carry on with your day.',
             },
           ]}
         />

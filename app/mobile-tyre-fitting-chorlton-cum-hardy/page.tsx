@@ -373,19 +373,19 @@ export default function ChorltoncumHardyPage() {
           faqs={[
             {
               q: 'How quickly can you reach me in Chorlton-cum-Hardy?',
-              a: 'Our mobile units are strategically positioned across Greater Manchester, meaning we can typically reach Chorlton-cum-Hardy and the surrounding M21 postcode area within 20-30 minutes.',
+              a: 'Our mobile units are strategically positioned across south Manchester, meaning we can typically reach Chorlton-cum-Hardy and the surrounding M21 postcode area, including Barlow Moor Road and Chorlton Green, within 20-30 minutes.',
             },
             {
               q: 'What areas around Chorlton-cum-Hardy do you cover?',
-              a: 'Yes. We cover Chorlton-cum-Hardy and the surrounding M21 postcode area, along with the main routes connecting it to the rest of Manchester and the M60.',
+              a: 'Yes. We cover Chorlton-cum-Hardy and the surrounding M21 postcode area, along with Barlow Moor Road, Wilbraham Road and the routes connecting to Whalley Range and Sale.',
             },
             {
-              q: 'What tyre brands do you carry for Chorlton-cum-Hardy customers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, as well as mid-range and budget options to suit every price point.',
+              q: 'Do you fit tyres for electric vehicles in Chorlton?',
+              a: 'Yes. We stock reinforced XL-rated and run-flat tyres and use the correct jacking points for electric and hybrid vehicles, so Chorlton EV owners are fully covered.',
             },
             {
-              q: 'Are you available on Bank Holidays in Chorlton-cum-Hardy?',
-              a: 'Absolutely. We operate 24 hours a day, 365 days a year — including all Bank Holidays. A tyre emergency does not keep office hours, and neither do we.',
+              q: 'Can you fit tyres at my home near Chorlton Green or Beech Road?',
+              a: 'Yes. Home tyre fitting is one of our most popular services in Chorlton — we can fit your tyres on your driveway near Chorlton Green or Beech Road at a time that suits you.',
             },
           ]}
         />

@@ -372,12 +372,12 @@ export default function EdinburghPage() {
               a: 'We cover Edinburgh city/town centre and the surrounding EH1 – EH17 postcode area, including the main commuter routes in and out of Edinburgh.',
             },
             {
-              q: 'What tyre brands do you carry for Edinburgh customers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, as well as mid-range and budget options to suit every price point.',
+              q: 'Can you repair a puncture in Edinburgh instead of replacing the tyre?',
+              a: 'Where possible, yes. If the puncture is in the tread area and meets British safety standards for repair, we will fix it on-site rather than replace a tyre that is still safe to use.',
             },
             {
-              q: 'Are you available on Bank Holidays in Edinburgh?',
-              a: 'Absolutely. We operate 24 hours a day, 365 days a year — including all Bank Holidays. A tyre emergency does not keep office hours, and neither do we.',
+              q: 'Do you fit tyres for electric vehicles in Edinburgh?',
+              a: "Yes. Our vans carry reinforced XL-rated and run-flat tyre stock plus the correct jacking equipment for EVs, so Edinburgh's electric and hybrid drivers are covered too.",
             },
           ]}
         />

@@ -373,19 +373,19 @@ export default function CheethamHillPage() {
           faqs={[
             {
               q: 'How quickly can you reach me in Cheetham Hill?',
-              a: 'Our mobile units are strategically positioned across Greater Manchester, meaning we can typically reach Cheetham Hill and the surrounding M8 postcode area within 20-30 minutes.',
+              a: 'Our mobile units are strategically positioned across north Manchester, meaning we can typically reach Cheetham Hill and the surrounding M8 postcode area, including Cheetham Hill Road, within 20-30 minutes.',
             },
             {
               q: 'What areas around Cheetham Hill do you cover?',
-              a: 'Yes. We cover Cheetham Hill and the surrounding M8 postcode area, along with the main routes connecting it to the rest of Manchester and the M60.',
+              a: 'Yes. We cover Cheetham Hill and the surrounding M8 postcode area, along with Cheetham Hill Road (A665) and the routes connecting to Crumpsall and Broughton.',
             },
             {
-              q: 'What tyre brands do you carry for Cheetham Hill customers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, as well as mid-range and budget options to suit every price point.',
+              q: 'Can you repair a puncture instead of replacing my tyre in Cheetham Hill?',
+              a: "In many cases, yes. Provided the puncture falls within the legal repair zone, we'll carry out a BS AU 159-compliant repair rather than sell you a tyre you don't need.",
             },
             {
-              q: 'Are you available on Bank Holidays in Cheetham Hill?',
-              a: 'Absolutely. We operate 24 hours a day, 365 days a year — including all Bank Holidays. A tyre emergency does not keep office hours, and neither do we.',
+              q: 'Can you fit tyres at my workplace near Cheetham Hill Road?',
+              a: "Yes. We regularly attend businesses along Cheetham Hill Road and the surrounding industrial units, fitting your tyres on-site so you don't need to leave work.",
             },
           ]}
         />

@@ -373,19 +373,19 @@ export default function DidsburyPage() {
           faqs={[
             {
               q: 'How quickly can you reach me in Didsbury?',
-              a: 'Our mobile units are strategically positioned across Greater Manchester, meaning we can typically reach Didsbury and the surrounding M20 postcode area within 20-30 minutes.',
+              a: 'Our mobile units are strategically positioned across south Manchester, meaning we can typically reach Didsbury and the surrounding M20 postcode area, including Wilmslow Road and Parrs Wood, within 20-30 minutes.',
             },
             {
               q: 'What areas around Didsbury do you cover?',
-              a: 'Yes. We cover Didsbury and the surrounding M20 postcode area, along with the main routes connecting it to the rest of Manchester and the M60.',
+              a: 'Yes. We cover Didsbury and the surrounding M20 postcode area, along with Wilmslow Road, School Lane and the routes connecting to East Didsbury and Withington.',
             },
             {
-              q: 'What tyre brands do you carry for Didsbury customers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, as well as mid-range and budget options to suit every price point.',
+              q: 'Can you repair a puncture instead of replacing my tyre in Didsbury?',
+              a: "Usually, yes. As long as the damage is in a repairable zone and meets British Standard BS AU 159, we'll fix it on-site rather than replace a tyre that's still perfectly safe.",
             },
             {
-              q: 'Are you available on Bank Holidays in Didsbury?',
-              a: 'Absolutely. We operate 24 hours a day, 365 days a year — including all Bank Holidays. A tyre emergency does not keep office hours, and neither do we.',
+              q: 'Can you fit tyres at my workplace near Parrs Wood or East Didsbury?',
+              a: 'Yes. We regularly attend offices and business premises around Parrs Wood and East Didsbury, fitting your tyres while you work.',
             },
           ]}
         />

@@ -373,19 +373,19 @@ export default function MossSidePage() {
           faqs={[
             {
               q: 'How quickly can you reach me in Moss Side?',
-              a: 'Our mobile units are strategically positioned across Greater Manchester, meaning we can typically reach Moss Side and the surrounding M14 / M16 postcode area within 20-30 minutes.',
+              a: 'Our mobile units are strategically positioned across south Manchester, meaning we can typically reach Moss Side and the surrounding M14 / M16 postcode area, including Princess Road and Alexandra Park, within 20-30 minutes.',
             },
             {
               q: 'What areas around Moss Side do you cover?',
-              a: 'Yes. We cover Moss Side and the surrounding M14 / M16 postcode area, along with the main routes connecting it to the rest of Manchester and the M60.',
+              a: 'Yes. We cover Moss Side and the surrounding M14 / M16 postcode area, along with Princess Road, Claremont Road and the routes connecting to Whalley Range and Rusholme.',
             },
             {
-              q: 'What tyre brands do you carry for Moss Side customers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, as well as mid-range and budget options to suit every price point.',
+              q: 'Can you repair a puncture instead of replacing my tyre in Moss Side?',
+              a: "Often, yes. Our technician inspects the tyre first, and if it can be safely repaired to British Standard BS AU 159 we'll do that instead of a full replacement.",
             },
             {
-              q: 'Are you available on Bank Holidays in Moss Side?',
-              a: 'Absolutely. We operate 24 hours a day, 365 days a year — including all Bank Holidays. A tyre emergency does not keep office hours, and neither do we.',
+              q: 'Can you fit tyres at my home near Alexandra Park?',
+              a: 'Yes. We regularly fit tyres on driveways and residential streets around Alexandra Park and Claremont Road, at a time that suits you.',
             },
           ]}
         />

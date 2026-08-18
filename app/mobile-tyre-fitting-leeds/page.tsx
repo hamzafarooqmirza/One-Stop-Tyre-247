@@ -372,12 +372,12 @@ export default function LeedsPage() {
               a: 'We cover Leeds city/town centre and the surrounding LS1 – LS29 postcode area, including the main commuter routes in and out of Leeds.',
             },
             {
-              q: 'What tyre brands do you carry for Leeds customers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, as well as mid-range and budget options to suit every price point.',
+              q: 'Can I get same-day tyre fitting booked in Leeds?',
+              a: "In most cases, yes. Tell us your vehicle and tyre size when you call and we'll confirm whether a same-day Leeds appointment is available before you commit.",
             },
             {
-              q: 'Are you available on Bank Holidays in Leeds?',
-              a: 'Absolutely. We operate 24 hours a day, 365 days a year — including all Bank Holidays. A tyre emergency does not keep office hours, and neither do we.',
+              q: 'Can you repair a puncture in Leeds instead of replacing the tyre?',
+              a: "Often, yes. Our technician inspects the tyre first, and if it can be safely repaired to British Standard BS AU 159 we'll do that instead of selling you a full replacement.",
             },
           ]}
         />

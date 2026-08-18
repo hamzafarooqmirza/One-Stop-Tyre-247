@@ -373,19 +373,19 @@ export default function HulmePage() {
           faqs={[
             {
               q: 'How quickly can you reach me in Hulme?',
-              a: 'Our mobile units are strategically positioned across Greater Manchester, meaning we can typically reach Hulme and the surrounding M15 postcode area within 20-30 minutes.',
+              a: 'Our mobile units are strategically positioned across central Manchester, meaning we can typically reach Hulme and the surrounding M15 postcode area, including Stretford Road and Hulme Park, within 20-30 minutes.',
             },
             {
               q: 'What areas around Hulme do you cover?',
-              a: 'Yes. We cover Hulme and the surrounding M15 postcode area, along with the main routes connecting it to the rest of Manchester and the M60.',
+              a: 'Yes. We cover Hulme and the surrounding M15 postcode area, along with Stretford Road, Royce Road and the routes connecting to Manchester city centre and Old Trafford.',
             },
             {
-              q: 'What tyre brands do you carry for Hulme customers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, as well as mid-range and budget options to suit every price point.',
+              q: 'Do you fit tyres for electric vehicles in Hulme?',
+              a: 'Yes. Our vans are equipped with the correct jacking points and reinforced tyre stock for electric and hybrid vehicles, and every technician is trained in EV-specific fitting.',
             },
             {
-              q: 'Are you available on Bank Holidays in Hulme?',
-              a: 'Absolutely. We operate 24 hours a day, 365 days a year — including all Bank Holidays. A tyre emergency does not keep office hours, and neither do we.',
+              q: 'Can you fit tyres at my workplace near Hulme Park or Stretford Road?',
+              a: 'Yes. We regularly attend offices and business premises around Hulme Park and Stretford Road, fitting your tyres on-site.',
             },
           ]}
         />

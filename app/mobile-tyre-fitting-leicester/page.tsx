@@ -372,12 +372,12 @@ export default function LeicesterPage() {
               a: 'We cover Leicester city/town centre and the surrounding LE1 – LE19 postcode area, including the main commuter routes in and out of Leicester.',
             },
             {
-              q: 'What tyre brands do you carry for Leicester customers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, as well as mid-range and budget options to suit every price point.',
+              q: 'Can you fit tyres at my workplace in Leicester?',
+              a: 'Yes. We regularly visit offices, business parks and commercial premises across Leicester, fitting your tyres on-site while you carry on with your day.',
             },
             {
-              q: 'Are you available on Bank Holidays in Leicester?',
-              a: 'Absolutely. We operate 24 hours a day, 365 days a year — including all Bank Holidays. A tyre emergency does not keep office hours, and neither do we.',
+              q: 'Do you fit tyres for electric vehicles in Leicester?',
+              a: 'Yes. Our technicians carry the correct jacking points and reinforced XL-rated tyre stock needed for EVs and hybrids, so Leicester drivers of electric vehicles are fully covered.',
             },
           ]}
         />

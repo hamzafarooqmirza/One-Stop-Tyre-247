@@ -372,12 +372,12 @@ export default function CoventryPage() {
               a: 'We cover Coventry city/town centre and the surrounding CV1 – CV6 postcode area, including the main commuter routes in and out of Coventry.',
             },
             {
-              q: 'What tyre brands do you carry for Coventry customers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, as well as mid-range and budget options to suit every price point.',
+              q: 'Do you fit tyres for electric vehicles in Coventry?',
+              a: "Yes. Our vans carry reinforced XL-rated and run-flat tyre stock plus the correct jacking equipment for EVs, so Coventry's electric and hybrid drivers are covered too.",
             },
             {
-              q: 'Are you available on Bank Holidays in Coventry?',
-              a: 'Absolutely. We operate 24 hours a day, 365 days a year — including all Bank Holidays. A tyre emergency does not keep office hours, and neither do we.',
+              q: 'Can you fit tyres at my workplace in Coventry?',
+              a: 'Yes. We regularly visit offices, business parks and commercial premises across Coventry, fitting your tyres on-site while you carry on with your day.',
             },
           ]}
         />

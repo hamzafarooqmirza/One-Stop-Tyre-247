@@ -373,19 +373,19 @@ export default function BeswickPage() {
           faqs={[
             {
               q: 'How quickly can you reach me in Beswick?',
-              a: 'Our mobile units are strategically positioned across Greater Manchester, meaning we can typically reach Beswick and the surrounding M11 postcode area within 20-30 minutes.',
+              a: 'Our mobile units are strategically positioned across east Manchester, meaning we can typically reach Beswick and the surrounding M11 postcode area, including around the Etihad Campus, within 20-30 minutes.',
             },
             {
               q: 'What areas around Beswick do you cover?',
-              a: 'Yes. We cover Beswick and the surrounding M11 postcode area, along with the main routes connecting it to the rest of Manchester and the M60.',
+              a: 'Yes. We cover Beswick and the surrounding M11 postcode area, along with Ashton New Road, Alan Turing Way and the connecting routes into Ancoats and east Manchester.',
             },
             {
-              q: 'What tyre brands do you carry for Beswick customers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, as well as mid-range and budget options to suit every price point.',
+              q: 'Can you repair a puncture instead of replacing my tyre in Beswick?',
+              a: 'Where the damage is within the legal repair area and the tyre is otherwise sound, we will always carry out a British Standard-compliant puncture repair rather than sell you an unnecessary replacement.',
             },
             {
-              q: 'Are you available on Bank Holidays in Beswick?',
-              a: 'Absolutely. We operate 24 hours a day, 365 days a year — including all Bank Holidays. A tyre emergency does not keep office hours, and neither do we.',
+              q: 'Can you fit tyres at my workplace near the Etihad Campus?',
+              a: 'Yes. We regularly attend business premises and event-day parking around the Etihad Campus and Alan Turing Way, fitting your tyres while you carry on with your day.',
             },
           ]}
         />

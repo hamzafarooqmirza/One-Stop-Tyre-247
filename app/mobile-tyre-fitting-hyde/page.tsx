@@ -67,7 +67,7 @@ export default function HydePage() {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
               {[
-                '20 Minute Emergency Response',
+                '20–30 Minute Emergency Response',
                 'Mobile Tyre Fitting At Home, Work Or Roadside',
                 'Emergency Tyre Replacement & Puncture Repair',
                 'Covering Hyde & Surrounding Areas 24/7',

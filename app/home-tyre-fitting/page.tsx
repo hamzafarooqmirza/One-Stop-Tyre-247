@@ -3,9 +3,9 @@ import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/sche
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'Home Tyre Fitting Manchester | Tyres Fitted At Your Door',
+  title: 'Home Tyre Fitting | Tyres Fitted At Your Door',
   description:
-    'Home tyre fitting across Greater Manchester — fitted on your driveway, 24/7, no hassle.',
+    'Home tyre fitting at your door — fitted on your driveway, 24/7, no hassle.',
   path: '/home-tyre-fitting',
 })
 
@@ -19,7 +19,7 @@ const _serviceSchema = serviceSchema({
   name: 'Home Tyre Fitting',
   serviceType: 'Home Tyre Fitting',
   description:
-    'Professional, fast and reliable tyre fitting at your front door, available 24/7 across Greater Manchester. No tow truck, no waiting rooms — we bring the garage to you.',
+    'Professional, fast and reliable tyre fitting at your front door, available 24/7 wherever you are. No tow truck, no waiting rooms — we bring the garage to you.',
 })
 
 const faqs = [
@@ -33,11 +33,11 @@ const faqs = [
   },
   {
     q: 'What areas do you cover?',
-    a: 'We provide 24/7 coverage across Greater Manchester. Our network of mobile technicians means we are never far from you.',
+    a: 'We provide 24/7 coverage across our service area. Our network of mobile technicians means we are never far from you.',
   },
   {
     q: 'How quickly can you arrive?',
-    a: 'We aim to reach you as quickly as possible. Response times vary by your location and current demand across Greater Manchester.',
+    a: 'We aim to reach you as quickly as possible. Response times vary by your location and current demand.',
   },
   {
     q: 'Do you supply the tyres?',
@@ -62,7 +62,7 @@ const whyChooseUs = [
   {
     icon: '⚡',
     title: 'Fast Response',
-    desc: 'We dispatch quickly across Greater Manchester so you are not left waiting with an unsafe tyre any longer than necessary.',
+    desc: 'We dispatch quickly across our coverage area so you are not left waiting with an unsafe tyre any longer than necessary.',
   },
   {
     icon: '🔧',
@@ -129,7 +129,7 @@ export default function HomeTyreFittingPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
               </span>
-              Available 24/7 Across Greater Manchester
+              Available 24/7, Wherever You Are
             </div>
 
             <h1
@@ -142,7 +142,7 @@ export default function HomeTyreFittingPage() {
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-4">
               Need new tyres but don&apos;t want the hassle of visiting a garage? Our mobile home
               tyre fitting service brings a fully equipped technician directly to your driveway
-              or street, available 24/7 across Greater Manchester. No tow trucks, no waiting
+              or street, available 24/7 wherever you are. No tow trucks, no waiting
               rooms, no wasted time.
             </p>
             <p className="text-slate-400 text-base leading-relaxed mb-8">
@@ -156,7 +156,7 @@ export default function HomeTyreFittingPage() {
                 'Professional Tyre Fitting At Your Front Door',
                 'Wheel Balancing Included As Standard',
                 'Wide Range Of Tyres For All Makes & Models',
-                'Available 24/7 Across Greater Manchester',
+                'Available 24/7, Wherever You Are',
                 'No Hidden Charges — Upfront Pricing',
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-white/90 text-sm sm:text-base font-medium">
@@ -299,7 +299,7 @@ export default function HomeTyreFittingPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/mobile-tyre-fitting-service.webp"
-              alt="Home tyre fitting service across Greater Manchester"
+              alt="Home tyre fitting service at your driveway"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}
               height={600}
@@ -320,7 +320,7 @@ export default function HomeTyreFittingPage() {
             <p className="text-slate-600 text-base leading-relaxed mb-6">
               Whether it is a morning flat before work, a routine tyre change you have been
               putting off, or an emergency call-out at midnight, our mobile tyre fitting team
-              is available 24/7 across Greater Manchester. Skip the tow truck and the garage
+              is available 24/7, wherever you are. Skip the tow truck and the garage
               waiting room — stay comfortable at home while our technician takes care of
               everything on your driveway. Call us now and we will confirm availability and
               get someone to you fast.

@@ -3,9 +3,9 @@ import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/sche
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'Cheap Mobile Tyre Fitting Manchester | Budget Tyres Fitted',
+  title: 'Cheap Mobile Tyre Fitting | Budget Tyres Fitted',
   description:
-    'Cheap mobile tyre fitting across Greater Manchester — budget to premium, same-day slots.',
+    'Cheap mobile tyre fitting at your location — budget to premium, same-day slots.',
   path: '/cheap-mobile-tyre-fitting',
 })
 
@@ -19,7 +19,7 @@ const _serviceSchema = serviceSchema({
   name: 'Cheap Mobile Tyre Fitting',
   serviceType: 'Mobile Tyre Fitting',
   description:
-    'Affordable mobile tyre fitting with budget, mid-range and premium tyres. Professional tyre replacement and puncture repair at your home, workplace or roadside location across Greater Manchester.',
+    'Affordable mobile tyre fitting with budget, mid-range and premium tyres. Professional tyre replacement and puncture repair at your home, workplace or roadside location.',
 })
 
 const faqs = [
@@ -124,7 +124,7 @@ export default function CheapMobileTyreFittingPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
               </span>
-              Affordable Mobile Tyre Service — Greater Manchester
+              Affordable Mobile Tyre Service — Wherever You Are
             </div>
 
             <h1

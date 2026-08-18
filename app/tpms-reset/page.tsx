@@ -5,7 +5,7 @@ import { buildMetadata } from '@/lib/seo'
 export const metadata = buildMetadata({
   title: 'TPMS Reset & Sensor Diagnostics | Mobile Service',
   description:
-    'Mobile TPMS reset across Greater Manchester — warning light cleared at your location, 24/7.',
+    'Mobile TPMS reset wherever you are — warning light cleared at your location, 24/7.',
   path: '/tpms-reset',
 })
 
@@ -19,7 +19,7 @@ const _serviceSchema = serviceSchema({
   name: 'TPMS Reset',
   serviceType: 'TPMS Reset',
   description:
-    'Professional, fast and reliable TPMS reset available 24/7 across Greater Manchester. We clear your dashboard warning light and calibrate your tyre pressure sensors at your location.',
+    'Professional, fast and reliable TPMS reset available 24/7, wherever you are. We clear your dashboard warning light and calibrate your tyre pressure sensors at your location.',
 })
 
 const faqs = [
@@ -67,7 +67,7 @@ const whyChooseUs = [
   {
     icon: '⚡',
     title: 'Fast Response',
-    desc: 'We dispatch quickly across Greater Manchester so you are not left with a dashboard warning any longer than necessary.',
+    desc: 'We dispatch quickly so you are not left with a dashboard warning any longer than necessary.',
   },
   {
     icon: '✅',
@@ -128,19 +128,19 @@ export default function TpmsResetPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
               </span>
-              24/7 Greater Manchester Response
+              24/7 Rapid Response
             </div>
 
             <h1
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white font-black mb-5 leading-[1.1]"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              TPMS Reset Manchester — Mobile Sensor Service
+              TPMS Reset — Mobile Sensor Service
             </h1>
 
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-4">
               TPMS warning light on your dashboard? Our professional mobile technicians provide
-              fast, reliable TPMS reset and sensor services across Greater Manchester, available
+              fast, reliable TPMS reset and sensor services wherever you are, available
               24/7. We come to your home, workplace or roadside with professional diagnostic
               equipment.
             </p>
@@ -156,7 +156,7 @@ export default function TpmsResetPage() {
                 'All Vehicle Makes & Models Covered',
                 'Sensor Replacement & Programming Available',
                 'Dashboard Warning Light Cleared On-Site',
-                'Available 24/7 Across Greater Manchester',
+                'Available 24/7, Wherever You Are',
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-white/90 text-sm sm:text-base font-medium">
                   <span className="text-green-400 text-lg">✓</span>
@@ -298,7 +298,7 @@ export default function TpmsResetPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/home-tyre-fitting.webp"
-              alt="Mobile TPMS reset across Greater Manchester"
+              alt="Mobile TPMS reset at a customer's location"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}
               height={600}

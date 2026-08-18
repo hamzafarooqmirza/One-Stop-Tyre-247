@@ -3,9 +3,9 @@ import { AREA_SERVED, breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } fro
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'Tyre Fitting Near Me | Mobile Fitters — Greater Manchester',
+  title: 'Tyre Fitting Near Me | Mobile Fitters At Your Location',
   description:
-    'Tyre fitting near you in Greater Manchester — home, work or roadside, 24/7, call today.',
+    'Tyre fitting near you — home, work or roadside, 24/7, call today.',
   path: '/tyre-fitting-near-me',
 })
 
@@ -19,7 +19,7 @@ const _serviceSchema = serviceSchema({
   name: 'Tyre Fitting Near Me',
   serviceType: 'Mobile Tyre Fitting',
   description:
-    'Mobile tyre fitting service that comes directly to your home, workplace or roadside location across Greater Manchester. Same day, emergency and 24 hour appointments available.',
+    'Mobile tyre fitting service that comes directly to your home, workplace or roadside location. Same day, emergency and 24 hour appointments available.',
   areaServed: AREA_SERVED,
 })
 
@@ -137,7 +137,7 @@ export default function TyreFittingNearMePage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
               </span>
-              Mobile Tyre Service — Greater Manchester
+              Mobile Tyre Service — Wherever You Are
             </div>
 
             <h1
@@ -366,7 +366,7 @@ export default function TyreFittingNearMePage() {
               className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-4"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
             >
-              Tyre Fitting Near You in Every Greater Manchester District
+              Tyre Fitting Near You in Every District We Cover
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto text-base">
               Whichever of our 9 districts you&apos;re in, our mobile technicians are never far away.
@@ -396,7 +396,7 @@ export default function TyreFittingNearMePage() {
               frameBorder="0"
               scrolling="no"
               title="One Stop Tyres 24/7 service area map"
-              aria-label="Google map showing One Stop Tyres 24/7 service area across Greater Manchester"
+              aria-label="Google map showing One Stop Tyres 24/7 service area"
               loading="lazy"
             />
           </div>

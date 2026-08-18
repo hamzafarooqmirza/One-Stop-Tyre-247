@@ -3,9 +3,9 @@ import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/sche
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'Jump Start Service Manchester | 24/7 Mobile Battery Help',
+  title: 'Jump Start Service | 24/7 Mobile Battery Help',
   description:
-    'Flat battery? 24/7 mobile jump starts across Greater Manchester with ECU-safe kit ready.',
+    'Flat battery? 24/7 mobile jump starts wherever you are, with ECU-safe kit ready.',
   path: '/jump-start',
 })
 
@@ -19,7 +19,7 @@ const _serviceSchema = serviceSchema({
   name: 'Jump Start Service',
   serviceType: 'Battery Jump Start',
   description:
-    'Professional, fast and reliable jump start available 24/7 across Greater Manchester. Dead battery? Our specialist technicians arrive fast and get you moving safely with ECU-safe equipment.',
+    'Professional, fast and reliable jump start available 24/7, wherever you are. Dead battery? Our specialist technicians arrive fast and get you moving safely with ECU-safe equipment.',
 })
 
 const faqs = [
@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: 'How long does it take to arrive?',
-    a: 'We aim to reach you as quickly as possible across Greater Manchester. We dispatch immediately on receiving your call.',
+    a: 'We aim to reach you as quickly as possible. We dispatch immediately on receiving your call.',
   },
   {
     q: 'Can you jump start any vehicle?',
@@ -62,7 +62,7 @@ const whyChooseUs = [
   {
     icon: '⚡',
     title: 'Fast Response',
-    desc: 'We dispatch a technician immediately across Greater Manchester to minimise the time you are left stranded.',
+    desc: 'We dispatch a technician immediately to minimise the time you are left stranded.',
   },
   {
     icon: '🔋',
@@ -113,7 +113,7 @@ export default function JumpStartPage() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/images/professional-mobile-tyre-fitting.webp"
-          alt="One Stop Tyres 24/7 mobile technician assisting a vehicle in Greater Manchester"
+          alt="One Stop Tyres 24/7 mobile technician assisting a vehicle"
           className="absolute inset-0 w-full h-full object-cover object-center"
           width={1600}
           height={900}
@@ -129,7 +129,7 @@ export default function JumpStartPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
               </span>
-              Available 24/7 Across Greater Manchester
+              Available 24/7, Wherever You Are
             </div>
 
             <h1
@@ -141,7 +141,7 @@ export default function JumpStartPage() {
 
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-4">
               Battery dead and car won&apos;t start? Our professional mobile jump start service
-              comes directly to your location across Greater Manchester, 24 hours a day, 7 days
+              comes directly to your location, 24 hours a day, 7 days
               a week. No recovery truck needed — our technicians arrive fast and get you moving
               again with ECU-safe equipment.
             </p>
@@ -158,7 +158,7 @@ export default function JumpStartPage() {
                 'ECU & Electronics Safe Equipment',
                 'Battery Health Test Included',
                 'Battery Replacement Available On-Site',
-                'Available 24/7 Across Greater Manchester',
+                'Available 24/7, Wherever You Are',
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-white/90 text-sm sm:text-base font-medium">
                   <span className="text-green-400 text-lg">✓</span>
@@ -198,7 +198,7 @@ export default function JumpStartPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/mobile-tyre-fitting-one-stop-tyres-24-7.webp"
-              alt="Mobile technician attending a vehicle callout in Greater Manchester"
+              alt="Mobile technician attending a vehicle callout"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}
               height={600}
@@ -300,7 +300,7 @@ export default function JumpStartPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/mobile-tyre-fitting-service.webp"
-              alt="One Stop Tyres 24/7 mobile technician on a callout across Greater Manchester"
+              alt="One Stop Tyres 24/7 mobile technician on a callout"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}
               height={600}
@@ -321,7 +321,7 @@ export default function JumpStartPage() {
             <p className="text-slate-600 text-base leading-relaxed mb-6">
               A flat battery does not wait for a convenient time. Whether it is early morning,
               late at night or the middle of the weekend, our mobile jump start team is available
-              24/7 across Greater Manchester. We dispatch immediately and aim to reach you as
+              24/7, wherever you are. We dispatch immediately and aim to reach you as
               quickly as possible. Call us now and we will have you back on the road without
               the cost or wait of a full recovery service.
             </p>

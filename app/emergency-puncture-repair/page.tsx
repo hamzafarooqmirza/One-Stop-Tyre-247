@@ -3,9 +3,9 @@ import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/sche
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'Emergency Puncture Repair Manchester | 24/7 Mobile Service',
+  title: 'Emergency Puncture Repair | 24/7 Mobile Service',
   description:
-    'BS AU 159 puncture repairs at your roadside, home or workplace, 24/7 across Manchester.',
+    'BS AU 159 puncture repairs at your roadside, home or workplace, 24/7.',
   path: '/emergency-puncture-repair',
 })
 
@@ -19,7 +19,7 @@ const _serviceSchema = serviceSchema({
   name: 'Emergency Mobile Puncture Repair',
   serviceType: 'Emergency Puncture Repair',
   description:
-    'Fast emergency mobile puncture repair service across Greater Manchester. Professional tyre repairs and replacements at your home, workplace or roadside location. Same day and 24 hour assistance available.',
+    'Fast emergency mobile puncture repair service, wherever you are. Professional tyre repairs and replacements at your home, workplace or roadside location. Same day and 24 hour assistance available.',
 })
 
 const faqs = [
@@ -124,14 +124,14 @@ export default function EmergencyPunctureRepairPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
               </span>
-              Emergency Puncture Repair — Greater Manchester
+              Emergency Puncture Repair — Wherever You Are
             </div>
 
             <h1
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white font-black mb-5 leading-[1.1]"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              Emergency Puncture Repair Manchester
+              Emergency Puncture Repair At Your Location
             </h1>
 
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-4">

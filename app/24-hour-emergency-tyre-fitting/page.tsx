@@ -3,9 +3,9 @@ import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/sche
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: '24 Hour Emergency Tyre Fitting Manchester | 365 Days',
+  title: '24 Hour Emergency Tyre Fitting | 365 Days',
   description:
-    'Genuine 24hr emergency tyre fitting across Greater Manchester, every day of the year.',
+    'Genuine 24hr emergency tyre fitting wherever you are, every day of the year.',
   path: '/24-hour-emergency-tyre-fitting',
 })
 
@@ -19,20 +19,20 @@ const _serviceSchema = serviceSchema({
   name: '24 Hour Emergency Tyre Fitting',
   serviceType: 'Emergency Tyre Fitting',
   description:
-    'Fast 24 hour emergency mobile tyre fitting, roadside tyre replacement and puncture repair across Greater Manchester. Available day and night, 365 days a year.',
+    'Fast 24 hour emergency mobile tyre fitting, roadside tyre replacement and puncture repair, wherever you are. Available day and night, 365 days a year.',
 })
 
 const faqs = [
-  { q: 'Do you provide 24 hour emergency tyre fitting?', a: 'Yes. We offer genuine emergency mobile tyre fitting day and night, including weekends and bank holidays. Our average response time is 20–30 minutes anywhere in Greater Manchester.' },
+  { q: 'Do you provide 24 hour emergency tyre fitting?', a: 'Yes. We offer genuine emergency mobile tyre fitting day and night, including weekends and bank holidays. Our average response time is 20–30 minutes across our service area.' },
   { q: 'Can you replace a tyre at my home?', a: 'Yes. We provide home tyre fitting so you can have new tyres installed without visiting a garage, day or night. Our technicians arrive fully equipped to complete the job on your driveway.' },
   { q: 'Can you repair a puncture?', a: "If the puncture meets British Standard BS AU 159 and is safely repairable, we will carry out a professional puncture repair rather than replace the tyre unnecessarily. If it isn't safe to repair, we'll recommend and fit a replacement on the spot." },
   { q: 'Do you provide roadside tyre replacement?', a: 'Yes. Our technicians can safely replace damaged tyres at the roadside 24/7, helping you continue your journey quickly. For motorway breakdowns we guide you to the nearest safe stopping point first.' },
   { q: 'Do you offer same day tyre fitting?', a: 'Yes. We provide same day mobile tyre fitting whenever appointments and stock availability allow, with emergency call-outs prioritised. Just call or WhatsApp your tyre size and location.' },
-  { q: 'Can I book a late night tyre repair?', a: 'Absolutely. Our emergency tyre service genuinely operates 24 hours a day, 365 days a year, for urgent situations. Whether it is 3pm or 3am, a technician is on call across Greater Manchester.' },
+  { q: 'Can I book a late night tyre repair?', a: 'Absolutely. Our emergency tyre service genuinely operates 24 hours a day, 365 days a year, for urgent situations. Whether it is 3pm or 3am, a technician is on call and ready to be dispatched.' },
   { q: 'What vehicles do you cover?', a: 'We fit tyres for most cars, SUVs, vans and light commercial vehicles, day or night. Our vans carry a range of sizes to cover the majority of makes and models on the road.' },
   { q: 'Do you supply tyres as well?', a: 'Yes. We carry a wide range of premium, mid-range and budget tyres and can source most common sizes quickly, even for an emergency call-out. Pricing is always confirmed upfront before we dispatch.' },
   { q: 'Can you change my tyre at work?', a: 'Yes. We regularly fit tyres at workplaces, offices, business parks and commercial premises, including outside normal working hours. There is no need to take time off to deal with a tyre emergency.' },
-  { q: 'What areas do you dispatch to for emergency call-outs?', a: 'We dispatch 24/7 across all of Greater Manchester, plus the M60, M61, M62, M56, M602, M66, M67 and A627 motorways. Wherever you are stranded day or night, the nearest available technician is sent straight to you.' },
+  { q: 'What areas do you dispatch to for emergency call-outs?', a: 'We dispatch 24/7 across our full coverage area, plus the M60, M61, M62, M56, M602, M66, M67 and A627 motorways. Wherever you are stranded day or night, the nearest available technician is sent straight to you.' },
   { q: 'Can you replace a completely flat tyre?', a: 'Yes. Whether your tyre has burst, suffered sidewall damage, or cannot be repaired, we can replace it on-site at any hour. We carry the tools and stock needed to handle a full blowout, not just a slow puncture.' },
   { q: 'What if my tyre blows out on the motorway?', a: 'For safety reasons, motorway repairs are not carried out on a live carriageway or hard shoulder. We will talk you through reaching the nearest safe stopping point — a service station, slip road or emergency area — and meet you there any time, day or night.' },
   { q: 'Do you provide emergency tyre replacement?', a: 'Yes. Emergency tyre replacement is one of our most requested services and is available 24/7, including bank holidays. We prioritise dispatch for genuine roadside emergencies.' },
@@ -47,7 +47,7 @@ const faqs = [
   { q: 'Do you offer emergency tyre fitting for work vehicles?', a: 'Yes. We regularly assist business vehicles, company cars and light commercial vans requiring urgent tyre replacement, any time of day or night. This keeps company vehicles off the road for the shortest possible time.' },
   { q: 'Are your tyres covered by warranty?', a: "All new tyres supplied are sourced from reputable manufacturers and include the applicable manufacturer's warranty, regardless of what time of day they are fitted. We'll confirm warranty details for your specific tyre before fitting." },
   { q: 'Can you replace more than one tyre?', a: 'Yes. We can replace a single tyre, a pair or a complete set during the same emergency call-out, depending on your requirements. Let us know when you call so we bring the right stock.' },
-  { q: 'How quickly can you arrive for an emergency call-out?', a: 'Our average response time is 20–30 minutes anywhere in Greater Manchester, though this can vary with traffic and demand. We always dispatch the nearest available technician to minimise waiting time, day or night.' },
+  { q: 'How quickly can you arrive for an emergency call-out?', a: 'Our average response time is 20–30 minutes across our service area, though this can vary with traffic and demand. We always dispatch the nearest available technician to minimise waiting time, day or night.' },
   { q: 'Is emergency mobile tyre fitting more expensive than visiting a garage?', a: 'Our emergency call-out pricing is competitive and confirmed upfront before we dispatch, with no hidden fees. It also includes the convenience of a professional technician reaching you directly, saving both time and recovery costs.' },
 ]
 
@@ -130,7 +130,7 @@ export default function EmergencyTyreFitting24HourPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
               </span>
-              Available 24/7 — Greater Manchester
+              Available 24/7 — Wherever You Are
             </div>
 
             <h1

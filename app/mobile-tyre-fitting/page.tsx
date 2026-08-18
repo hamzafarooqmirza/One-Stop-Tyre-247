@@ -3,9 +3,9 @@ import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/sche
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'Mobile Tyre Fitting Manchester | Fitted At Your Location 24/7',
+  title: 'Mobile Tyre Fitting | Fitted At Your Location 24/7',
   description:
-    'Mobile tyre fitting across Greater Manchester, 24/7 — fitted at home, work or roadside.',
+    'Mobile tyre fitting at your home, work or roadside, 24/7 — fitted wherever you are.',
   path: '/mobile-tyre-fitting',
 })
 
@@ -19,7 +19,7 @@ const _serviceSchema = serviceSchema({
   name: 'Mobile Tyre Fitting',
   serviceType: 'Mobile Tyre Fitting',
   description:
-    'Professional mobile tyre fitting service across Greater Manchester. We supply and fit premium, mid-range and budget tyres at your home, workplace or roadside location. Same day and emergency appointments available.',
+    'Professional mobile tyre fitting service, wherever you are based. We supply and fit premium, mid-range and budget tyres at your home, workplace or roadside location. Same day and emergency appointments available.',
 })
 
 const faqs = [
@@ -128,14 +128,14 @@ export default function MobileTyreFittingPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
               </span>
-              Mobile Tyre Fitting — Greater Manchester
+              Mobile Tyre Fitting — Wherever You Are
             </div>
 
             <h1
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white font-black mb-5 leading-[1.1]"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              Mobile Tyre Fitting Manchester
+              Mobile Tyre Fitting At Your Location
             </h1>
 
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-4">

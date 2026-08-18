@@ -373,19 +373,19 @@ export default function FallowfieldPage() {
           faqs={[
             {
               q: 'How quickly can you reach me in Fallowfield?',
-              a: 'Our mobile units are strategically positioned across Greater Manchester, meaning we can typically reach Fallowfield and the surrounding M14 postcode area within 20-30 minutes.',
+              a: 'Our mobile units are strategically positioned across south Manchester, meaning we can typically reach Fallowfield and the surrounding M14 postcode area, including Wilmslow Road and the university halls, within 20-30 minutes.',
             },
             {
               q: 'What areas around Fallowfield do you cover?',
-              a: 'Yes. We cover Fallowfield and the surrounding M14 postcode area, along with the main routes connecting it to the rest of Manchester and the M60.',
+              a: 'Yes. We cover Fallowfield and the surrounding M14 postcode area, along with Wilmslow Road, Moseley Road and the routes connecting to Withington and Rusholme.',
             },
             {
-              q: 'What tyre brands do you carry for Fallowfield customers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, as well as mid-range and budget options to suit every price point.',
+              q: 'Do you offer cheap mobile tyre fitting for students in Fallowfield?',
+              a: 'Yes. We carry budget, mid-range and premium tyre options and always confirm pricing upfront, so Fallowfield residents can choose a tyre that suits their budget.',
             },
             {
-              q: 'Are you available on Bank Holidays in Fallowfield?',
-              a: 'Absolutely. We operate 24 hours a day, 365 days a year — including all Bank Holidays. A tyre emergency does not keep office hours, and neither do we.',
+              q: 'Can you fit tyres at my home near Owens Park or Wilmslow Road?',
+              a: 'Yes. We regularly fit tyres at student accommodation and residential streets around Owens Park and Wilmslow Road, at a time that suits you.',
             },
           ]}
         />

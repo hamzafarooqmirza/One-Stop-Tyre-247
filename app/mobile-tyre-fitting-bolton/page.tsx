@@ -381,11 +381,11 @@ export default function BoltonPage() {
             },
             {
               q: 'What tyre brands do you carry for Bolton customers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, as well as mid-range and budget options to suit every price point.',
+              a: 'Our vans carry premium brands such as Michelin, Continental and Bridgestone alongside quality mid-range and budget tyres, so we can match the right option to your Bolton fitting on the day.',
             },
             {
-              q: 'Are you available on Bank Holidays in Bolton?',
-              a: 'Absolutely. We operate 24 hours a day, 365 days a year — including all Bank Holidays. A tyre emergency does not keep office hours, and neither do we.',
+              q: 'Can you fit tyres at my workplace in Farnworth or Horwich?',
+              a: 'Yes. We regularly attend business parks and workplaces across Farnworth, Horwich and Westhoughton, fitting your tyres while you carry on with your day.',
             },
           ]}
         />

@@ -372,12 +372,12 @@ export default function BristolPage() {
               a: 'We cover Bristol city/town centre and the surrounding BS1 – BS16 postcode area, including the main commuter routes in and out of Bristol.',
             },
             {
-              q: 'What tyre brands do you carry for Bristol customers?',
-              a: 'We stock all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, as well as mid-range and budget options to suit every price point.',
+              q: 'Can you repair a puncture in Bristol instead of replacing the tyre?',
+              a: "In many cases, yes. Provided the puncture falls within the legal repair zone, our technician will carry out a BS AU 159-compliant repair rather than sell you a tyre you don't need.",
             },
             {
-              q: 'Are you available on Bank Holidays in Bristol?',
-              a: 'Absolutely. We operate 24 hours a day, 365 days a year — including all Bank Holidays. A tyre emergency does not keep office hours, and neither do we.',
+              q: 'Is your Bristol call-out available over Christmas and Bank Holidays?',
+              a: 'Yes. We operate every day of the year, including Christmas Day and all Bank Holidays, with no premium surcharge for out-of-hours dispatch.',
             },
           ]}
         />

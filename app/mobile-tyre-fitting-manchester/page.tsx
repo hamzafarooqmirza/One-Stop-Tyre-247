@@ -69,7 +69,7 @@ export default function ManchesterPage() {
             </h1>
 
             <p className="text-white/80 text-base leading-relaxed mb-6">
-              Need a tyre replaced in Manchester? One Stop Tyres 24/7 brings professional tyre replacement directly to your location. Whether you are at home, at work or safely parked roadside, our mobile team can supply and fit the right replacement tyre without the need to visit a garage.
+              Need a tyre replaced in Manchester? One Stop Mobile Tyres 24/7 brings professional tyre replacement directly to your location. Whether you are at home, at work or safely parked roadside, our mobile team can supply and fit the right replacement tyre without the need to visit a garage.
             </p>
 
             {/* Trust bullets */}
@@ -191,7 +191,7 @@ export default function ManchesterPage() {
                 Mobile Tyre Replacement &amp; Fitting In Manchester
               </h2>
               <p className="text-slate-600 max-w-2xl mx-auto text-base">
-                When a tyre is worn, damaged or no longer safe to drive on, getting a replacement should be simple. One Stop Tyres 24/7 provides mobile tyre replacement across Manchester, bringing suitable tyres directly to you and fitting them on-site. Our technicians can replace tyres at your home, workplace or a suitable roadside location, with a choice of premium, mid-range and budget tyres to suit both your vehicle and budget.
+                When a tyre is worn, damaged or no longer safe to drive on, getting a replacement should be simple. One Stop Mobile Tyres 24/7 provides mobile tyre replacement across Manchester, bringing suitable tyres directly to you and fitting them on-site. Our technicians can replace tyres at your home, workplace or a suitable roadside location, with a choice of premium, mid-range and budget tyres to suit both your vehicle and budget.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -330,7 +330,7 @@ export default function ManchesterPage() {
               <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg">
                 Replacing a tyre is not simply about putting a new tyre on the wheel. The replacement needs to be suitable for your vehicle, correctly fitted and checked before you drive away.
                 <br /><br />
-                One Stop Tyres 24/7 provides mobile tyre replacement throughout Manchester and surrounding areas. Our technicians come to your location with the equipment needed to remove the damaged tyre, fit the replacement and check the wheel before completing the job.
+                One Stop Mobile Tyres 24/7 provides mobile tyre replacement throughout Manchester and surrounding areas. Our technicians come to your location with the equipment needed to remove the damaged tyre, fit the replacement and check the wheel before completing the job.
                 <br /><br />
                 Whether you need one replacement tyre or several tyres replaced, we can discuss the available options with you before the work starts.
               </p>
@@ -412,7 +412,7 @@ export default function ManchesterPage() {
         <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need Mobile Tyre Replacement in Manchester?</h2>
-            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t let a damaged or worn tyre disrupt your day. Call One Stop Tyres 24/7 for mobile tyre replacement across Manchester and get a quote for a suitable replacement tyre.</p>
+            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t let a damaged or worn tyre disrupt your day. Call One Stop Mobile Tyres 24/7 for mobile tyre replacement across Manchester and get a quote for a suitable replacement tyre.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
               <a
                 className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl"

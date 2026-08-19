@@ -102,7 +102,7 @@ export default function ServicePage({
           <img
             className="w-full h-full object-cover object-center"
             src="https://ss5vlswhqmiddtca.public.blob.vercel-storage.com/Hero%20section%20image%20for%20one%20stop-airanko-GThUaVjbwZmY4iQO0czB2NrcyiFDuj.webp"
-            alt={`One Stop Tyres 24/7 — ${title}`}
+            alt={`One Stop Mobile Tyres 24/7 — ${title}`}
             width={1600}
             height={1067}
             decoding="async"
@@ -334,7 +334,7 @@ export default function ServicePage({
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Why Choose Us */}
           <div>
-            <SectionHeading label="The Best Choice" title="Why Choose One Stop Tyres 24/7" />
+            <SectionHeading label="The Best Choice" title="Why Choose One Stop Mobile Tyres 24/7" />
             <BulletList items={defaultWhyChooseUs} />
           </div>
 

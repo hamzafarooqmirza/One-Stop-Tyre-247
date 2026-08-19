@@ -332,7 +332,7 @@ export default function MetOfficeAugustWeatherGuide() {
             </h3>
             <p className="text-slate-400 mb-5 leading-relaxed">
               Tyre problems don&apos;t always happen at home. Whether you&apos;re at work, parked
-              outside your house or stranded at the roadside, One Stop Tyres 24/7 provides
+              outside your house or stranded at the roadside, One Stop Mobile Tyres 24/7 provides
               professional mobile tyre fitting across Greater Manchester. Instead of arranging
               recovery to a garage, our experienced technicians come directly to your location,
               helping you get back on the road quickly and safely.

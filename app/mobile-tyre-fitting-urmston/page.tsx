@@ -16,7 +16,7 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Urmston | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Urmston | One Stop Mobile Tyres 24/7',
   description:
     'Get mobile tyre fitting in Urmston — same day fitting, trusted mobile tyre experts nearby.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-urmston' },

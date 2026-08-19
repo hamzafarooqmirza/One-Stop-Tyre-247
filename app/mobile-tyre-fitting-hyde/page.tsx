@@ -16,7 +16,7 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Hyde | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Hyde | One Stop Mobile Tyres 24/7',
   description:
     'Mobile tyre fitting in Hyde — emergency replacement and trusted mobile tyre fitters ready.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-hyde' },

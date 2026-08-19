@@ -5,9 +5,9 @@ import { buildMetadata } from '@/lib/seo'
 import { ADDRESS } from '@/lib/constants'
 
 export const metadata = buildMetadata({
-  title: 'About One Stop Tyres 24/7 | Mobile Tyre Fitters Manchester',
+  title: 'About One Stop Mobile Tyres 24/7 | Mobile Tyre Fitters Manchester',
   description:
-    'Meet One Stop Tyres 24/7 — insured, IMI-trained mobile tyre fitters across Manchester.',
+    'Meet One Stop Mobile Tyres 24/7 — insured, IMI-trained mobile tyre fitters across Manchester.',
   path: '/about',
 })
 
@@ -45,7 +45,7 @@ export default function AboutPage() {
                 letterSpacing: '-0.02em',
               }}
             >
-              About One Stop Tyres 24/7
+              About One Stop Mobile Tyres 24/7
             </h1>
             <p
               className="mb-8 sm:mb-10 text-white/90 text-base sm:text-lg leading-relaxed"
@@ -97,7 +97,7 @@ export default function AboutPage() {
                   Who We Are
                 </h2>
                 <p className="text-[#5c403c] text-base sm:text-lg leading-relaxed">
-                  One Stop Tyres 24/7 is a premier provider of emergency roadside services, specialized
+                  One Stop Mobile Tyres 24/7 is a premier provider of emergency roadside services, specialized
                   in high-urgency mobile tyre solutions. Our fleet operates round-the-clock across
                   Greater Manchester, ensuring that no driver is ever left stranded for long.
                 </p>

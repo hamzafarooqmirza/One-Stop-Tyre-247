@@ -113,7 +113,7 @@ export default function LockingNutRemovalPage() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/images/professional-mobile-tyre-fitting.webp"
-          alt="One Stop Tyres 24/7 mobile technician assisting a vehicle"
+          alt="One Stop Mobile Tyres 24/7 mobile technician assisting a vehicle"
           className="absolute inset-0 w-full h-full object-cover object-center"
           width={1600}
           height={900}
@@ -297,7 +297,7 @@ export default function LockingNutRemovalPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/mobile-tyre-fitting-service.webp"
-              alt="One Stop Tyres 24/7 mobile technician on a callout"
+              alt="One Stop Mobile Tyres 24/7 mobile technician on a callout"
               className="w-full rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
               width={800}
               height={600}

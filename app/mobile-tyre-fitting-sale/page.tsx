@@ -16,7 +16,7 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Sale | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Sale | One Stop Mobile Tyres 24/7',
   description:
     'Book mobile tyre fitting in Sale — emergency replacement and reliable roadside help today.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-sale' },

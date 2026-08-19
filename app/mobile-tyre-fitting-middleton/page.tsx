@@ -16,7 +16,7 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Middleton | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Middleton | One Stop Mobile Tyres 24/7',
   description:
     'Professional mobile tyre fitting in Middleton — same day, trusted roadside support.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-middleton' },

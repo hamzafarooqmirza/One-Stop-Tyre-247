@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = buildMetadata({
-  title: 'Mobile Tyre Fitting in Beswick | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Beswick | One Stop Mobile Tyres 24/7',
   description:
     'Need mobile tyre fitting in Beswick? Fast replacement and reliable roadside help today.',
   path: '/mobile-tyre-fitting-beswick',

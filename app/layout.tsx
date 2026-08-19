@@ -23,7 +23,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'One Stop Tyres 24/7 | Emergency Mobile Tyre Fitting Manchester',
+  title: 'One Stop Mobile Tyres 24/7 | Emergency Mobile Tyre Fitting Manchester',
   description:
     'Stranded with a puncture? Our professional technicians reach you fast at home, work, or roadside across Greater Manchester. 24/7 emergency mobile tyre fitting available now.',
   keywords: 'mobile tyre fitting, emergency tyre Manchester, puncture repair, 24/7 tyres',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     shortcut: '/icon.webp',
   },
   openGraph: {
-    title: 'One Stop Tyres 24/7 | Emergency Mobile Tyre Fitting Manchester',
+    title: 'One Stop Mobile Tyres 24/7 | Emergency Mobile Tyre Fitting Manchester',
     description:
       'Stranded with a puncture? Our professional technicians reach you fast at home, work, or roadside across Greater Manchester. 24/7 emergency mobile tyre fitting available now.',
     url: 'https://onestoptyres247.co.uk',
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'One Stop Tyres 24/7 | Emergency Mobile Tyre Fitting Manchester',
+    title: 'One Stop Mobile Tyres 24/7 | Emergency Mobile Tyre Fitting Manchester',
     description:
       'Stranded with a puncture? Our professional technicians reach you fast at home, work, or roadside across Greater Manchester. 24/7 emergency mobile tyre fitting available now.',
     images: ['/og-image.webp'],

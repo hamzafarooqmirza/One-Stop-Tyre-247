@@ -173,7 +173,7 @@ export default function ServiceAreaPage() {
         <img
           className="absolute inset-0 w-full h-full object-cover"
           src="https://ss5vlswhqmiddtca.public.blob.vercel-storage.com/Hero%20section%20image%20for%20one%20stop-airanko-GThUaVjbwZmY4iQO0czB2NrcyiFDuj.webp"
-          alt="One Stop Tyres 24/7 mobile tyre fitting van on the road"
+          alt="One Stop Mobile Tyres 24/7 mobile tyre fitting van on the road"
           width={1920}
           height={500}
           loading="eager"

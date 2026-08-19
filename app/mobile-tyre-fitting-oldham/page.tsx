@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = buildMetadata({
-  title: 'Mobile Tyre Fitting in Oldham | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Oldham | One Stop Mobile Tyres 24/7',
   description:
     'Get fast mobile tyre fitting in Oldham, ensuring convenience and safety on the road. Book your service today!',
   path: '/mobile-tyre-fitting-oldham',
@@ -331,7 +331,7 @@ export default function OldhamPage() {
               <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg">
                 When you get a flat tyre in Oldham — whether it&apos;s a blowout on the A627, a slow puncture discovered on your driveway in Chadderton, or a damaged tyre spotted in a car park in Shaw — the last thing you want is to wait hours for a recovery truck or drag yourself to an industrial estate. That&apos;s where we come in.
                 <br /><br />
-                One Stop Tyres 24/7 is Oldham&apos;s dedicated mobile tyre fitting service, covering every part of the borough from OL1 town centre out to Royton, Lees, Chadderton, and even the rural roads of Saddleworth, Uppermill and Greenfield. We dispatch a qualified technician directly to your location, typically within 20 to 30 minutes, with a fully stocked van carrying everything needed to get you back on the road on the spot.
+                One Stop Mobile Tyres 24/7 is Oldham&apos;s dedicated mobile tyre fitting service, covering every part of the borough from OL1 town centre out to Royton, Lees, Chadderton, and even the rural roads of Saddleworth, Uppermill and Greenfield. We dispatch a qualified technician directly to your location, typically within 20 to 30 minutes, with a fully stocked van carrying everything needed to get you back on the road on the spot.
                 <br /><br />
                 We stock all major tyre brands — Michelin, Continental, Bridgestone, Pirelli, Dunlop and Goodyear at the premium end, plus trusted mid-range and budget options — so whatever your vehicle and price point, we&apos;ll have the right tyre on board. You&apos;ll receive a fixed, upfront quote before we dispatch, and that&apos;s exactly what you pay. No call-out fees, no hidden extras.
               </p>
@@ -360,7 +360,7 @@ export default function OldhamPage() {
         <WhyChooseUs
           city="Oldham"
           image="/images/tyres-fitting-anywhere.webp"
-          heading="Why Oldham Drivers Choose One Stop Tyres 24/7"
+          heading="Why Oldham Drivers Choose One Stop Mobile Tyres 24/7"
           responseTitle="Fastest Response in Oldham"
           responseDesc="We're locally based at Alliance Mill, Willow Street, OL1 3QH — which means our technicians know Oldham's roads and can reach you faster than any out-of-area service. Most callouts across OL1–OL9 are covered in 20 to 30 minutes."
           callOutTitle="No Hidden Call-Out Fees"

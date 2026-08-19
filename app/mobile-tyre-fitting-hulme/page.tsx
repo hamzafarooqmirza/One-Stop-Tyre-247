@@ -17,7 +17,7 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = buildMetadata({
-  title: 'Mobile Tyre Fitting in Hulme | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Hulme | One Stop Mobile Tyres 24/7',
   description:
     'Mobile tyre fitting in Hulme — same day fitting and trusted local tyre technicians ready.',
   path: '/mobile-tyre-fitting-hulme',

@@ -362,7 +362,7 @@ export default function OldhamPage() {
           image="/images/tyres-fitting-anywhere.webp"
           heading="Why Oldham Drivers Choose One Stop Mobile Tyres 24/7"
           responseTitle="Fastest Response in Oldham"
-          responseDesc="We're locally based at Alliance Mill, Willow Street, OL1 3QH — which means our technicians know Oldham's roads and can reach you faster than any out-of-area service. Most callouts across OL1–OL9 are covered in 20 to 30 minutes."
+          responseDesc={`We're locally based at ${ADDRESS} — which means our technicians know Oldham's roads and can reach you faster than any out-of-area service. Most callouts across OL1–OL9 are covered in 20 to 30 minutes.`}
           callOutTitle="No Hidden Call-Out Fees"
           callOutDesc="The price we quote over the phone is the price you pay on-site. There are no added call-out charges, no surprise labour fees, and no upselling when we arrive. Transparent pricing is something every customer deserves."
           certifiedTitle="Fully Certified Technicians"

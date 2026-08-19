@@ -3,9 +3,9 @@ import { breadcrumbSchema, SITE_URL } from '@/lib/schema'
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'Terms & Conditions | One Stop Tyres 24/7',
+  title: 'Terms & Conditions | One Stop Mobile Tyres 24/7',
   description:
-    'Terms and conditions for One Stop Tyres 24/7 mobile tyre fitting services across Manchester.',
+    'Terms and conditions for One Stop Mobile Tyres 24/7 mobile tyre fitting services across Manchester.',
   path: '/terms',
 })
 

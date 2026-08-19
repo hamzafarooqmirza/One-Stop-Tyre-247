@@ -15,7 +15,7 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = buildMetadata({
-  title: 'Mobile Tyre Fitting in Coventry | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Coventry | One Stop Mobile Tyres 24/7',
   description:
     'Same-day mobile tyre fitting in Coventry — fast replacement & puncture repair, CV1–CV6.',
   path: '/mobile-tyre-fitting-coventry',

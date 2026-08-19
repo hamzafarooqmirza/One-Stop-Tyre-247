@@ -5,6 +5,8 @@
  * everywhere else references it by @id plus a lightweight NAP block.
  */
 
+import { BUSINESS_NAME } from '@/lib/constants'
+
 export const SITE_URL = 'https://onestoptyres247.co.uk'
 export const BUSINESS_ID = `${SITE_URL}/#business`
 export const BUSINESS_PHONE = '+447759708646'
@@ -21,7 +23,7 @@ const OPENING_HOURS_SPEC = {
 const BUSINESS_PROVIDER = {
   '@type': 'LocalBusiness',
   '@id': BUSINESS_ID,
-  name: 'One Stop Tyres 24/7',
+  name: BUSINESS_NAME,
   telephone: BUSINESS_PHONE,
   address: {
     '@type': 'PostalAddress',
@@ -131,7 +133,7 @@ export function localBusinessSchema() {
     '@context': 'https://schema.org',
     '@type': ['LocalBusiness', 'AutoRepair'],
     '@id': BUSINESS_ID,
-    name: 'One Stop Tyres 24/7',
+    name: BUSINESS_NAME,
     url: SITE_URL,
     telephone: BUSINESS_PHONE,
     email: 'info@onestoptyres247.co.uk',
@@ -182,7 +184,7 @@ export function aboutPageSchema() {
     '@type': 'AboutPage',
     '@id': `${SITE_URL}/about#aboutpage`,
     url: `${SITE_URL}/about`,
-    name: 'About One Stop Tyres 24/7',
+    name: `About ${BUSINESS_NAME}`,
     mainEntity: { '@id': BUSINESS_ID },
   }
 }
@@ -193,7 +195,7 @@ export function contactPageSchema() {
     '@type': 'ContactPage',
     '@id': `${SITE_URL}/contact#contactpage`,
     url: `${SITE_URL}/contact`,
-    name: 'Contact One Stop Tyres 24/7',
+    name: `Contact ${BUSINESS_NAME}`,
     mainEntity: { '@id': BUSINESS_ID },
   }
 }
@@ -211,12 +213,12 @@ export function articleSchema({ slug, headline, description, image, datePublishe
     dateModified: dateModified ?? datePublished,
     author: {
       '@type': 'Organization',
-      name: 'One Stop Tyres 24/7',
+      name: BUSINESS_NAME,
       '@id': BUSINESS_ID,
     },
     publisher: {
       '@type': 'Organization',
-      name: 'One Stop Tyres 24/7',
+      name: BUSINESS_NAME,
       '@id': BUSINESS_ID,
       logo: {
         '@type': 'ImageObject',

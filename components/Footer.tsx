@@ -129,7 +129,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto pt-6 sm:pt-8 border-t border-white/5 flex flex-col gap-4">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-slate-500 text-[11px] sm:text-xs text-center sm:text-left">
-            © 2026 One Stop Tyres 24/7. High-Urgency Emergency Roadside Assistance UK. All Rights
+            © 2026 One Stop Mobile Tyres 24/7. High-Urgency Emergency Roadside Assistance UK. All Rights
             Reserved.
           </p>
           {isContactPage && (

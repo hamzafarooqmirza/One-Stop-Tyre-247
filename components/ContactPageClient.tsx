@@ -14,7 +14,7 @@ export default function ContactPageClient() {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     const text =
-      `*New Enquiry – One Stop Tyres 24/7*\n\n` +
+      `*New Enquiry – One Stop Mobile Tyres 24/7*\n\n` +
       `*Name:* ${name}\n` +
       `*Phone:* ${phone}\n` +
       `*Email:* ${email}\n` +
@@ -30,7 +30,7 @@ export default function ContactPageClient() {
     },
     {
       q: 'Do you really operate 24 hours a day?',
-      a: 'Yes, One Stop Tyres 24/7 provides true round-the-clock emergency assistance. This includes weekends, public holidays, and late-night call-outs.',
+      a: 'Yes, One Stop Mobile Tyres 24/7 provides true round-the-clock emergency assistance. This includes weekends, public holidays, and late-night call-outs.',
     },
     {
       q: 'Which areas do you cover?',
@@ -53,7 +53,7 @@ export default function ContactPageClient() {
             <img
               className="w-full h-full object-cover"
               src="/images/mobile-tyre-fitting-manchester.webp"
-              alt="One Stop Tyres 24/7 mobile tyre fitting technician in Greater Manchester"
+              alt="One Stop Mobile Tyres 24/7 mobile tyre fitting technician in Greater Manchester"
               width={1920}
               height={600}
               loading="eager"
@@ -213,8 +213,8 @@ export default function ContactPageClient() {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4741.379474172151!2d-2.1049285233703974!3d53.5454538598072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb920bfb7fecd%3A0x4edbef2355697975!2sOne%20Stop%20Mobile%20Tyres%2024%2F7!5e0!3m2!1sen!2s!4v1781464116347!5m2!1sen!2s"
                   frameBorder="0"
                   scrolling="no"
-                  title="One Stop Tyres 24/7 service area map"
-                  aria-label="Google map showing One Stop Tyres 24/7 service area across Greater Manchester"
+                  title="One Stop Mobile Tyres 24/7 service area map"
+                  aria-label="Google map showing One Stop Mobile Tyres 24/7 service area across Greater Manchester"
                   loading="lazy"
                 />
               </div>
@@ -373,7 +373,7 @@ export default function ContactPageClient() {
                 letterSpacing: '-0.01em',
               }}
             >
-              Why Contact One Stop Tyres 24/7
+              Why Contact One Stop Mobile Tyres 24/7
             </h2>
             <div className="h-1 w-24 bg-[#b70011] mx-auto rounded-full" />
           </div>

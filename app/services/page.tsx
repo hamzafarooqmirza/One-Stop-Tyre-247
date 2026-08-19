@@ -4,7 +4,7 @@ import { breadcrumbSchema, itemListSchema, SITE_URL } from '@/lib/schema'
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'Mobile Tyre & Roadside Services | One Stop Tyres 24/7',
+  title: 'Mobile Tyre & Roadside Services | One Stop Mobile Tyres 24/7',
   description:
     '24/7 mobile tyre fitting, puncture repair, jump starts & TPMS reset at your location.',
   path: '/services',
@@ -107,7 +107,7 @@ export default function ServicesPage() {
         <img
           className="absolute inset-0 w-full h-full object-cover"
           src="/images/mobile-tyre-fitting-manchester.webp"
-          alt="One Stop Tyres 24/7 mobile services van"
+          alt="One Stop Mobile Tyres 24/7 mobile services van"
           width={1920}
           height={614}
           loading="eager"
@@ -179,7 +179,7 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-5">
           <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-lg">
             <div className="w-full lg:w-1/2">
-              <h2 className="font-h2 text-2xl sm:text-3xl lg:text-h2 text-secondary mb-4 sm:mb-6">Why Drivers Trust One Stop Tyres 24/7</h2>
+              <h2 className="font-h2 text-2xl sm:text-3xl lg:text-h2 text-secondary mb-4 sm:mb-6">Why Drivers Trust One Stop Mobile Tyres 24/7</h2>
               <p className="font-body-lg text-base lg:text-body-lg text-on-surface-variant mb-6 sm:mb-8">
                 We understand that a vehicle breakdown is more than just a mechanical issue—it&apos;s a stressful disruption to your day.
                 That&apos;s why we&apos;ve built our service on three pillars of excellence.
@@ -220,7 +220,7 @@ export default function ServicesPage() {
               <img
                 className="relative rounded-2xl shadow-xl w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
                 src="/images/professional-mobile-tyre-fitting.webp"
-                alt="Professional tyre technician from One Stop Tyres 24/7"
+                alt="Professional tyre technician from One Stop Mobile Tyres 24/7"
                 width={800}
                 height={500}
                 loading="lazy"

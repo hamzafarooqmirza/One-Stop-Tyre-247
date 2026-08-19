@@ -2,9 +2,9 @@ import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, SITE_URL } from '@/lib/schema'
 
 export const metadata = {
-  title: 'Tyre Guides & Advice | One Stop Tyres 24/7',
+  title: 'Tyre Guides & Advice | One Stop Mobile Tyres 24/7',
   description:
-    'Practical tyre advice from One Stop Tyres 24/7 — safety tips explained in plain English.',
+    'Practical tyre advice from One Stop Mobile Tyres 24/7 — safety tips explained in plain English.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/guides' },
 }
 

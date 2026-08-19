@@ -17,9 +17,9 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = buildMetadata({
-  title: 'Mobile Tyre Fitting in Bury | One Stop Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Bury | One Stop Mobile Tyres 24/7',
   description:
-    'Choose One Stop Tyres 24/7 for mobile tyre fitting in Bury — fast, reliable roadside help.',
+    'Choose One Stop Mobile Tyres 24/7 for mobile tyre fitting in Bury — fast, reliable roadside help.',
   path: '/mobile-tyre-fitting-bury',
 })
 

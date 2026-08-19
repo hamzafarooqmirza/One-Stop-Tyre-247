@@ -34,7 +34,7 @@ interface WhyChooseUsProps {
   /** Overrides the response-time feature title/description — for pages outside the 20-30 min Greater Manchester radius. */
   responseTitle?: string
   responseDesc?: string
-  /** Full heading override, e.g. "Why Oldham Drivers Choose One Stop Tyres 24/7" — bypasses the "?" auto-append. */
+  /** Full heading override, e.g. "Why Oldham Drivers Choose One Stop Mobile Tyres 24/7" — bypasses the "?" auto-append. */
   heading?: string
   callOutTitle?: string
   callOutDesc?: string

@@ -13,7 +13,7 @@ export default function QuoteForm() {
     e.preventDefault()
 
     const text =
-      `*New Quote Request — One Stop Tyres 24/7*%0A` +
+      `*New Quote Request — One Stop Mobile Tyres 24/7*%0A` +
       `%0A*Name:* ${encodeURIComponent(name)}` +
       `%0A*Phone:* ${encodeURIComponent(phone)}` +
       `%0A*Vehicle Reg:* ${encodeURIComponent(reg)}` +

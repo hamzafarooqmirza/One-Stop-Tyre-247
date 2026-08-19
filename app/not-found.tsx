@@ -1,7 +1,7 @@
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'Page Not Found | One Stop Tyres 24/7',
+  title: 'Page Not Found | One Stop Mobile Tyres 24/7',
   description: 'Sorry, we could not find that page. Find our mobile tyre fitting services or check our Greater Manchester coverage area.',
   path: '/404',
 })

@@ -16,9 +16,9 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Prestwich | One Stop Mobile Tyres 24/7',
+  title: 'Mobile Tyre Fitting Prestwich – 24/7 Help Where You Are',
   description:
-    'Looking for mobile tyre fitting in Prestwich? Same day fitting and trusted roadside help.',
+    'Tyre trouble in Prestwich? One Stop Mobile Tyres 24/7 sends a mobile tyre technician directly to your location, day or night.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-prestwich' },
 }
 
@@ -60,19 +60,19 @@ export default function PrestwichPage() {
           />
           <div className="relative z-10 max-w-2xl py-20">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}>
-              24/7 Mobile Tyre Fitting Prestwich
+              Mobile Tyre Fitting Prestwich – 24/7 Help Where You Are
             </h1>
             <p className="text-white/80 text-base leading-relaxed mb-6">
-              Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance Across Prestwich. We Come To Your Home, Workplace Or Roadside Location Within 20–30 Minutes.
+              Tyre trouble in Prestwich does not need to mean finding a garage or arranging vehicle recovery. One Stop Mobile Tyres 24/7 sends a mobile tyre technician directly to your location, with same day and emergency support available around the clock.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
               {[
-                '20–30 Minute Emergency Response',
-                'Mobile Tyre Fitting At Home, Work Or Roadside',
-                'Emergency Tyre Replacement & Puncture Repair',
-                'Covering Prestwich & Surrounding Areas 24/7',
+                '20–30 Minute Response Across Prestwich',
+                'Same Day Mobile Tyre Fitting Available',
+                'Emergency Mobile Tyre Fitting Day & Night',
+                'Premium, Mid-Range & Budget Tyres Available',
                 'Card, Cash & Contactless Payments Accepted',
-                'Fully Insured Professional Tyre Technicians',
+                'Fully Insured Professional Mobile Tyre Fitters',
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2.5 text-white/90">
                   <span className="material-symbols-outlined text-green-400 shrink-0" style={{ fontSize: '20px', fontVariationSettings: "'FILL' 1" }}>check_circle</span>
@@ -148,25 +148,25 @@ export default function PrestwichPage() {
             <div className="text-center mb-10 sm:mb-16">
               <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">What We Do</span>
               <h2 className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}>
-                24/7 Mobile Tyre Fitting &amp; Emergency Tyre Repair In Prestwich
+                Mobile Tyre Services for Prestwich Drivers
               </h2>
               <p className="text-slate-600 max-w-2xl mx-auto text-base">
-                Mobile tyre fitting, emergency tyre replacement and puncture repair across Prestwich. We come to your home, workplace or roadside location 24/7 with fast response times and professional service.
+                From daily journeys along Bury New Road to trips around Prestwich Village and the M60, tyre damage can happen at an awkward time and in an awkward place. Our mobile tyre service removes the need to take an unsafe vehicle to a tyre centre. Our technicians travel throughout Prestwich with mobile fitting equipment and a choice of replacement tyres. Whether the problem is a worn tyre, sudden blowout, puncture or another wheel-related issue, we can assess the situation at your location and provide the appropriate service.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {[
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp', title: 'Mobile Tyre Fitting Prestwich', desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Prestwich. Fast response with premium and budget tyre options available.', badge: 'FAST RESPONSE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp', title: 'Mobile Tyre Fitting', desc: 'Our mobile tyre fitting service brings the equipment and replacement tyre directly to your vehicle. We assist drivers across Prestwich with worn, damaged and unusable tyres without requiring a separate garage appointment.', badge: 'TYRES FITTED WHERE YOU ARE',
                   href: '/mobile-tyre-fitting' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp', title: 'Home Tyre Fitting', desc: 'Same day tyre fitting at your home across Prestwich, without the hassle of visiting a garage.', badge: 'AT YOUR DOOR',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp', title: 'Mobile Tyre Replacement', desc: 'When a tyre is no longer suitable for continued use, our mobile tyre replacement service allows you to have a suitable replacement supplied and fitted on-site. We offer tyre choices for different vehicles and budgets.', badge: 'REPLACEMENT WITHOUT THE GARAGE TRIP',
                   href: '/home-tyre-fitting' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp', title: 'Mobile Puncture Repair', desc: 'Professional mobile puncture repair across Prestwich, carried out on-site where safe and suitable.', badge: 'CERTIFIED REPAIR',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp', title: 'Mobile Puncture Repair', desc: 'Some punctures can be repaired safely rather than requiring a new tyre. Our technicians inspect the damaged area first and carry out an appropriate repair where the tyre meets the required safety conditions.', badge: 'SAVE THE TYRE WHERE POSSIBLE',
                   href: '/emergency-puncture-repair' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp', title: 'Jump Start', desc: 'Flat battery as well as a flat tyre? Our mobile jump start service gets you back on the road in minutes, available 24/7 across Prestwich.', badge: '24/7 SERVICE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp', title: 'Jump Start', desc: 'A flat battery can stop your journey just as quickly as damaged tyres. Our mobile team can provide jump-start assistance across Prestwich when your vehicle has enough battery-related trouble to leave you unable to continue.', badge: 'BATTERY SUPPORT ON THE ROAD',
                   href: '/jump-start' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp', title: 'TPMS Reset', desc: 'Tyre pressure monitoring system reset and sensor checks across Prestwich after every fitting or repair.', badge: 'ALL VEHICLES',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp', title: 'TPMS Reset', desc: 'If your tyre pressure warning remains active after tyre work, our technicians can check and reset the TPMS where required, helping the vehicle continue monitoring tyre pressures correctly.', badge: 'PRESSURE SYSTEM SUPPORT',
                   href: '/tpms-reset' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp', title: 'Locking Nut Removal', desc: 'Specialist, damage-free locking wheel nut removal across Prestwich using professional tools.', badge: 'DAMAGE FREE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp', title: 'Locking Nut Removal', desc: 'Lost the locking wheel nut key or dealing with a damaged locking nut? Specialist tools allow our technicians to remove difficult wheel nuts and gain access to the tyre for fitting or repair.', badge: 'HELP WITH STUBBORN LOCKING NUTS',
                   href: '/locking-nut-removal' },
               ].map((card) => (
                 <a key={card.title} href={card.href} className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]">
@@ -194,8 +194,8 @@ export default function PrestwichPage() {
             </div>
             <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
-                <p className="text-slate-400 text-base">Speak directly to a technician for an instant quote and arrival time.</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Tyre Problem in Prestwich?</h3>
+                <p className="text-slate-400 text-base">Send us your vehicle registration, tyre size and exact location. We can check suitable tyre options and give you an expected arrival time before dispatch.</p>
               </div>
               <a href="tel:07759708646" className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap" style={{ fontFamily: 'var(--font-work-sans)' }}>
                 07759 708 646
@@ -221,27 +221,43 @@ export default function PrestwichPage() {
               </div>
             </div>
             <div className="w-full lg:w-1/2">
-              <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">The Best Choice</span>
+              <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">Mobile Tyre Fitting Designed Around Prestwich Journeys</span>
               <h2 className="text-2xl sm:text-4xl lg:text-5xl text-[#0f172a] mb-5 sm:mb-8 leading-tight font-bold" style={{ fontFamily: 'var(--font-work-sans)' }}>
-                Expert Mobile Tyre Fitting Service Across Prestwich
+                Mobile Tyre Fitting Designed Around Prestwich Journeys
               </h2>
               <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg">
-                One Stop Tyres provides 24/7 mobile tyre fitting in Prestwich, helping drivers get back on the road quickly when they experience a puncture, tyre blowout or damaged tyre.
-                Our mobile tyre experts come directly to your home, workplace or roadside location anywhere in Prestwich and surrounding areas.
-                We supply and fit premium and budget tyres, carry out mobile puncture repairs where safe and suitable, and provide emergency tyre replacement services throughout Prestwich.
-                If you&apos;re searching for mobile tyre fitting near me in Prestwich, our fast response team is available day and night.
+                Prestwich sits on one of the main routes between Bury and Manchester, with local traffic moving through residential streets, shopping areas and busy routes such as Bury New Road and the M60. A tyre problem here can affect everything from a short local journey to a longer commute into Manchester.
+                Our service is built around bringing the tyre solution to the vehicle. A mobile car tyre fitting technician arrives with professional equipment, removes the damaged or worn tyre and fits the suitable replacement without you needing to drive the vehicle elsewhere.
+                We cover Prestwich Village, Sedgley Park, areas around Heaton Park, Simister and surrounding neighbourhoods. We also attend suitable locations close to the main routes running through and around Prestwich.
+                Drivers can choose from premium, mid-range and budget tyre options depending on availability, vehicle requirements and price preference. Before the technician travels, we can discuss the tyre required so you know what options are available.
               </p>
               <ul className="space-y-4 sm:space-y-5">
-                <FeatureItem icon="bolt" title="24/7 Mobile Tyre Fitting" desc="Tyres fitted at your home, workplace or roadside location." />
-                <FeatureItem icon="engineering" title="Emergency Tyre Replacement" desc="Fast replacement of damaged or unsafe tyres across Greater Manchester." />
-                <FeatureItem icon="sell" title="Mobile Puncture Repair" desc="Professional puncture repairs where safe and suitable." />
+                <FeatureItem icon="bolt" title="Same Day Mobile Tyre Fitting" desc="If you notice excessive wear, sidewall damage or another tyre problem and want it dealt with today, our same day mobile tyre fitting service gives you a practical alternative to waiting for a garage appointment." />
+                <FeatureItem icon="engineering" title="Emergency Mobile Tyre Fitting" desc="A blowout or badly damaged tyre can make the vehicle unsafe to move. Our emergency mobile tyre fitting team is available around the clock to assist drivers who need urgent tyre support in Prestwich." />
+                <FeatureItem icon="sell" title="Mobile Tyre Replacement" desc="For tyres that cannot be safely repaired or continued on, we provide mobile tyre replacement at your location. The technician can supply and professionally fit a suitable tyre before completing the necessary checks." />
+              </ul>
+              <h3 className="text-xl sm:text-2xl text-[#0f172a] mt-8 mb-5 font-bold" style={{ fontFamily: 'var(--font-work-sans)' }}>Practical Tyre Support, Day or Night</h3>
+              <ul className="space-y-4 sm:space-y-5">
+                <FeatureItem icon="schedule" title="24/7 Mobile Tyre Fitting" desc="Tyre problems do not follow normal opening hours. Our 24/7 mobile tyre fitting service operates through evenings, overnight, weekends and bank holidays, subject to tyre and technician availability." />
+                <FeatureItem icon="emergency" title="Emergency Tyre Replacement" desc="If impact damage, a blowout or severe tyre failure leaves the vehicle unable to continue safely, we can arrange an emergency tyre replacement rather than leaving you to find an open tyre centre." />
+                <FeatureItem icon="road" title="Roadside Tyre Call-Outs" desc="Our roadside tyre call-outs cover suitable locations around Prestwich. If you are stopped near a busy road, tell us exactly where the vehicle is so the technician can plan the safest way to attend." />
               </ul>
             </div>
           </div>
         </section>
 
         {/* ── 5. WHY CHOOSE US */}
-        <WhyChooseUs city="Prestwich" image="/images/tyre-fitting-in-emergency.webp" />
+        <WhyChooseUs
+          city="Prestwich"
+          image="/images/tyre-fitting-in-emergency.webp"
+          heading="Why Prestwich Drivers Choose One Stop Mobile Tyres 24/7"
+          responseTitle="A Mobile Service That Fits Around the Problem"
+          responseDesc="You should not have to drive on a damaged tyre simply to reach a garage. Our technicians travel to the vehicle, bringing the fitting equipment and tyre needed to deal with the problem where it has happened."
+          callOutTitle="Choice Before We Fit"
+          callOutDesc="Different drivers have different priorities. Some want a premium tyre that matches an existing set, while others need a dependable mid-range or budget option. We discuss available choices before dispatch so you can make an informed decision."
+          certifiedTitle="Professional Fitting from Experienced Technicians"
+          certifiedDesc="Our professional mobile tyre fitters are equipped to work with a wide range of cars and tyre sizes. The focus is on correct fitting, safe working practices and getting the vehicle ready to return to the road."
+        />
 
         {/* ── 6. BRAND CAROUSEL */}
         <BrandCarousel />
@@ -255,17 +271,29 @@ export default function PrestwichPage() {
         {/* ── 7. FAQ */}
         <CityFaq
           canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-prestwich" city="Prestwich" faqs={[
-          { q: 'How fast can you reach Prestwich village?', a: 'Typically, our nearest technician can be with you in Prestwich within 20-30 minutes, depending on traffic on Bury New Road.' },
-          { q: 'Do you cover the M60 near Prestwich (Junction 17)?', a: 'Yes. Our vehicles carry high-intensity safety lighting to carry out safe roadside tyre changes near the M60 Junction 17 Prestwich interchange.' },
-          { q: 'Do you cover Sedgley Park, Whitefield and Heaton Park as well?', a: 'Yes, we cover the whole of Prestwich and the surrounding areas including Sedgley Park, Whitefield and Heaton Park, with 24/7 availability.' },
-          { q: 'Can you fit tyres near Prestwich village or the shopping precinct?', a: 'Absolutely. We regularly attend Prestwich village, including car parks near the shopping precinct and Longfield Centre, fitting tyres wherever it is safe to park.' },
+          { q: 'How quickly can you provide mobile tyre fitting in Prestwich?', a: 'Our usual response target across Greater Manchester is around 20–30 minutes, although the exact arrival time depends on traffic, technician location and tyre availability. We will give you an expected arrival time when you book.' },
+          { q: 'Do you provide 24 hour mobile tyre fitting in Prestwich?', a: 'Yes. Our 24 hour mobile tyre fitting service operates day and night across Prestwich. This includes evenings, weekends and overnight emergency call-outs when a suitable technician and tyre are available.' },
+          { q: 'Can I book same day tyre fitting in Prestwich?', a: 'Yes. Same day tyre fitting is available for many common tyre sizes. Send us your registration or tyre size and we can check availability before arranging the technician.' },
+          { q: 'What does your mobile tyre service include?', a: 'Our mobile tyre service can include inspecting the tyre, removing the worn or damaged tyre, fitting a suitable replacement and carrying out the relevant checks before you continue your journey.' },
+          { q: 'Can you help if I suddenly get a flat tyre?', a: "Yes. We provide flat tyre assistance across Prestwich. Depending on the tyre's condition, the technician can determine whether repair is suitable or whether replacement is the safer option." },
+          { q: 'Do you offer an emergency tyre service in Prestwich?', a: 'Yes. Our emergency tyre service is intended for situations where tyre damage has left you unable to continue safely. Tell us your location and tyre details so we can arrange the appropriate response.' },
+          { q: 'Can you provide mobile car tyre fitting for different vehicles?', a: 'Yes. Our mobile car tyre fitting service covers many common makes and models. Providing the vehicle registration or full tyre size helps us identify the correct specification before dispatch.' },
+          { q: 'Can you fit a tyre if mine is badly damaged?', a: 'Yes. Where the existing tyre is unsafe or beyond repair, our technicians can carry out a mobile tyre replacement using an appropriate tyre for the vehicle.' },
+          { q: 'What is included in a mobile tyre replacement service?', a: 'A mobile tyre replacement service means we bring the required tyre and fitting equipment to your vehicle, remove the unusable tyre and install the replacement at the location where the vehicle is safely parked.' },
+          { q: 'Can you attend near the M60 around Prestwich?', a: 'Yes. Prestwich has direct access to the M60 around Junction 17. If you have a tyre problem near the motorway, give us your exact location. For motorway incidents, always move to a safe place where possible and follow motorway safety guidance before arranging assistance.' },
+          { q: 'Do you cover Bury New Road and Prestwich Village?', a: 'Yes. We provide mobile tyre support across Prestwich, including areas around Bury New Road, Prestwich Village, Sedgley Park and nearby residential neighbourhoods.' },
+          { q: 'Are professional tyre fitters better for replacement tyres?', a: 'Using professional tyre fitting means the tyre is removed and fitted with the appropriate equipment rather than relying on a temporary roadside solution. It also allows the fitter to check for obvious wheel or tyre issues during the job.' },
+          { q: 'How do I arrange fast mobile tyre fitting?', a: 'For fast mobile tyre fitting, have your exact location, vehicle registration and tyre size ready when you call or message us. This helps us identify a suitable tyre before sending the technician.' },
+          { q: 'Are you a reliable mobile tyre service for Prestwich?', a: 'Our reliable mobile tyre service combines 24/7 availability, clear communication and professional on-site fitting. We aim to confirm the tyre, price and expected arrival information before dispatch.' },
+          { q: 'Do you have trusted mobile tyre fitters covering Prestwich?', a: 'Yes. Our trusted mobile tyre fitters serve Prestwich as part of our Greater Manchester coverage, assisting with scheduled fitting, same-day requirements and emergency tyre problems.' },
+          { q: 'Can I have a tyre fitted on my drive in Prestwich?', a: 'Where there is enough safe working space around the vehicle, having a tyre fitted on your drive can be possible. Tell us about the parking position when booking so we can confirm whether the technician can work there safely.' },
         ]} />
 
         {/* ── 8. FINAL CTA */}
         <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Prestwich Right Now?</h2>
-            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Prestwich line and get a technician dispatched in minutes.</p>
+            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need Mobile Tyre Fitting in Prestwich Today?</h2>
+            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">A damaged tyre does not have to interrupt the rest of your day. Tell One Stop Mobile Tyres 24/7 where you are, what vehicle you drive and which tyre needs attention. We will check the required tyre, explain the available options and arrange a technician to come to your location in Prestwich.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
               <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl" href="tel:07759708646">
                 <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>

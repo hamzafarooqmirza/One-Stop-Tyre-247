@@ -6,7 +6,7 @@ import { BOROUGHS } from '@/lib/locations'
 export const metadata = buildMetadata({
   title: 'Service Area | Mobile Tyre Fitting Coverage',
   description:
-    'Full coverage map: 9 Greater Manchester boroughs plus 8 motorways, covered 24/7 always.',
+    'Full coverage map: all 10 Greater Manchester boroughs plus 8 motorways, covered 24/7 always.',
   path: '/service-area',
 })
 
@@ -51,6 +51,14 @@ const boroughAreas = [
     icon: 'location_on',
     postcodes: 'OL10 – OL16',
     desc: 'Serving Rochdale, Heywood, Middleton, Milnrow and the surrounding Pennine areas.',
+  },
+  {
+    name: 'Salford',
+    boroughKey: 'Salford',
+    href: '/mobile-tyre-fitting-salford',
+    icon: 'location_on',
+    postcodes: 'M3, M5 – M7, M27, M28, M30, M44, M50',
+    desc: 'Fast mobile tyre fitting across Salford, Eccles, Swinton, Pendlebury, Worsley and nearby districts.',
   },
   {
     name: 'Stockport',
@@ -142,7 +150,7 @@ const motorwayAreas = [
 const trustBadges = [
   { icon: 'schedule', label: '24/7 Emergency', sub: 'Always on call' },
   { icon: 'bolt', label: '20–30 Min', sub: 'Average arrival' },
-  { icon: 'public', label: '9 Districts', sub: 'Greater Manchester' },
+  { icon: 'public', label: '10 Boroughs', sub: 'Greater Manchester' },
   { icon: 'route', label: '8 Motorways', sub: 'Full roadside cover' },
 ]
 
@@ -157,7 +165,7 @@ const _serviceSchema = serviceSchema({
   name: 'Mobile Tyre Fitting Coverage — Greater Manchester',
   serviceType: 'Mobile Tyre Fitting',
   description:
-    'Mobile tyre fitting and roadside assistance across all 9 Greater Manchester districts and the M60, M61, M62, M56, M66, M67, M602 and A627 motorways.',
+    'Mobile tyre fitting and roadside assistance across all 10 Greater Manchester boroughs and the M60, M61, M62, M56, M66, M67, M602 and A627 motorways.',
   areaServed: { '@type': 'AdministrativeArea', name: 'Greater Manchester' },
 })
 
@@ -186,7 +194,7 @@ export default function ServiceAreaPage() {
             Our Service Area
           </h1>
           <p className="font-body-lg text-base lg:text-body-lg text-white/90 max-w-2xl mx-auto mb-6 sm:mb-8 text-pretty leading-relaxed">
-            We cover all 9 Greater Manchester districts and 8 major motorways — wherever you
+            We cover all 10 Greater Manchester boroughs and 8 major motorways — wherever you
             are, we&apos;ll come to you, 24 hours a day, 7 days a week.
           </p>
           <a
@@ -229,7 +237,7 @@ export default function ServiceAreaPage() {
           </h2>
           <div className="w-16 sm:w-20 h-1 bg-primary mx-auto rounded-full mb-3 sm:mb-4" />
           <p className="font-body-md text-sm sm:text-body-md text-on-surface-variant max-w-xl mx-auto text-pretty">
-            Our 9 Greater Manchester boroughs, each with full coverage of the borough and every
+            All 10 Greater Manchester boroughs, each with full coverage of the borough and every
             surrounding town and village.
           </p>
         </div>

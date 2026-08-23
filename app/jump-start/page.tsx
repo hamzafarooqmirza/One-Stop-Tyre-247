@@ -3,9 +3,9 @@ import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/sche
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'Jump Start Service | 24/7 Mobile Battery Help',
+  title: 'Mobile Jump Start Service | 24/7 Battery Assistance',
   description:
-    'Flat battery? 24/7 mobile jump starts wherever you are, with ECU-safe kit ready.',
+    'Professional mobile jump start service across Greater Manchester for cars, SUVs, vans and light commercial vehicles, available 24/7.',
   path: '/jump-start',
 })
 
@@ -19,83 +19,95 @@ const _serviceSchema = serviceSchema({
   name: 'Jump Start Service',
   serviceType: 'Battery Jump Start',
   description:
-    'Professional, fast and reliable jump start available 24/7, wherever you are. Dead battery? Our specialist technicians arrive fast and get you moving safely with ECU-safe equipment.',
+    'Professional mobile jump start service across Greater Manchester, bringing suitable jump-start equipment directly to cars, SUVs, vans and light commercial vehicles.',
 })
 
 const faqs = [
   {
-    q: 'Is it safe for modern car electronics?',
-    a: 'Yes. We use professional-grade power packs with anti-surge technology specifically designed to protect the ECUs and sensitive digital components of modern vehicles, unlike standard consumer jump leads.',
+    q: 'Can you jump start a modern car safely?',
+    a: 'Yes, in many cases. Modern vehicles can contain sensitive electronic systems, so correct equipment and connection procedures are important. Our technicians use professional jump-start equipment and follow appropriate procedures for the vehicle.',
   },
   {
-    q: 'What if my battery needs replacing?',
-    a: "Our technicians carry diagnostic equipment to test battery health. If the battery is dead and won't hold a charge, we can often supply and fit a replacement on the spot.",
+    q: 'What causes a car battery to go flat?',
+    a: 'Common causes include leaving electrical equipment switched on, cold weather, repeated short journeys, an ageing battery or leaving a vehicle unused for a long period. Repeated battery failure can also indicate a charging or electrical problem that needs further investigation.',
   },
   {
-    q: 'How long does it take to arrive?',
-    a: 'We aim to reach you as quickly as possible. We dispatch immediately on receiving your call.',
+    q: 'Do you provide emergency jump start assistance?',
+    a: 'Yes. Our emergency jump start service is available when a flat or dead battery prevents your vehicle from starting, subject to technician availability.',
   },
   {
-    q: 'Can you jump start any vehicle?',
-    a: 'Yes — we can jump start cars, vans, SUVs and light commercial vehicles. Our equipment handles standard 12V systems.',
+    q: 'Is your jump start service available 24 hours?',
+    a: 'Yes. We provide 24 hour jump start service assistance across Greater Manchester, including nights, weekends and bank holidays.',
+  },
+  {
+    q: 'Can you jump start cars and vans?',
+    a: 'We provide car battery jump start assistance for many cars, SUVs, vans and light commercial vehicles. Tell us your vehicle registration when calling so we can check the appropriate assistance.',
+  },
+  {
+    q: "What happens if my car still won't start after a jump start?",
+    a: 'A flat battery is not always the only reason an engine fails to start. If a professional jump-start attempt does not work, the vehicle may have another battery, starter, charging, electrical or mechanical issue that requires further diagnosis.',
   },
   {
     q: 'Why does my battery keep going flat?',
-    a: 'A repeatedly flat battery usually indicates a failing battery, a parasitic drain from an electrical fault, or a faulty alternator. Our technicians can carry out a battery health test on-site to identify the cause.',
+    a: 'A battery that repeatedly loses charge could be ageing or unable to retain sufficient charge. Other possibilities include a charging-system problem or an electrical drain. A jump start may get the engine running but will not repair the underlying fault.',
   },
   {
-    q: 'Can you jump start my car at home?',
-    a: 'Yes. We come directly to your home, workplace, car park or roadside location so you do not need to wait for a recovery truck.',
+    q: 'Can you check my battery after starting the vehicle?',
+    a: 'Yes. We can perform a basic battery condition check after the vehicle starts. If there are signs of a weak battery or another problem, further testing or replacement may be recommended.',
   },
   {
-    q: 'What should I do while I wait for a jump start?',
-    a: 'Stay safe, remain with your vehicle if possible, and keep your hazard lights on if you are at the roadside. Call us and we will be with you as quickly as possible.',
+    q: 'Can you replace the battery if it has failed?',
+    a: 'Battery replacement may be available depending on your vehicle and battery availability. Tell us your registration so the appropriate battery specification can be checked.',
+  },
+  {
+    q: 'What information should I provide when calling?',
+    a: 'Send your exact location and vehicle registration and explain what happens when you try to start the car. For example, tell us whether the engine turns slowly, you hear clicking, or there appears to be no electrical power.',
   },
 ]
 
 const whyChooseUs = [
   {
     icon: '🚗',
-    title: 'On-Site Service',
-    desc: 'We come directly to your location — home, workplace, car park or roadside — so there is no need for a costly recovery truck.',
+    title: 'Assistance at Your Location',
+    desc: 'Our mobile car jump start service can attend suitable locations across Greater Manchester, including residential areas, workplaces, car parks and roadside locations.',
   },
   {
     icon: '⚡',
     title: 'Fast Response',
-    desc: 'We dispatch a technician immediately to minimise the time you are left stranded.',
+    desc: 'When a dead battery leaves you unable to start your vehicle, we aim to arrange the nearest suitable technician as quickly as possible.',
   },
   {
     icon: '🔋',
-    title: 'ECU-Safe Equipment',
-    desc: 'We use professional grade power packs with surge protection — safe for modern vehicle electronics and ECUs.',
+    title: 'Professional Jump-Start Equipment',
+    desc: 'Our technicians use professional equipment designed for vehicle jump-start assistance, with correct connection procedures particularly important on modern vehicles with sensitive electrical systems.',
   },
   {
     icon: '✅',
-    title: 'Battery Health Test',
-    desc: 'After starting your vehicle we carry out a battery health check so you know whether the battery is likely to fail again.',
+    title: 'Battery Condition Check',
+    desc: 'After the vehicle starts, we can check the battery condition for signs of weakness. A battery that repeatedly loses charge may need replacement or further investigation.',
   },
 ]
 
 const steps = [
   {
     n: '1',
-    title: 'Call Us',
-    desc: 'Contact our team, tell us your location and vehicle details and we will dispatch a technician immediately.',
+    title: 'Call or WhatsApp Us',
+    desc: 'Tell us your location, vehicle registration and what happens when you try to start the vehicle.',
   },
   {
     n: '2',
-    title: 'Share Location',
-    desc: 'Share your exact location so we can send the nearest available technician with the right equipment.',
+    title: 'Share Your Location',
+    desc: 'Send your exact address or WhatsApp location pin so we can identify where assistance is required.',
   },
   {
     n: '3',
-    title: 'Tech Dispatched',
-    desc: 'Our mobile technician arrives, connects the ECU-safe jump start equipment and starts your engine.',
+    title: 'Technician Attends',
+    desc: 'A technician arrives with professional jump-start equipment, checks the situation and connects the equipment correctly to your vehicle.',
   },
   {
     n: '4',
-    title: 'Car Started',
-    desc: 'We start your vehicle, carry out a battery health check and advise if a replacement battery is needed.',
+    title: 'Vehicle Started & Battery Checked',
+    desc: 'Once the engine starts, we can check the battery condition and advise whether there are signs that the battery may need further attention or replacement.',
   },
 ]
 
@@ -129,36 +141,31 @@ export default function JumpStartPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
               </span>
-              Available 24/7, Wherever You Are
+              24/7 Battery Assistance
             </div>
 
             <h1
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white font-black mb-5 leading-[1.1]"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              Mobile Jump Start Service — Fast, Safe & Available 24/7
+              Mobile Jump Start Service – Fast Help for a Flat Battery
             </h1>
 
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-4">
-              Battery dead and car won&apos;t start? Our professional mobile jump start service
-              comes directly to your location, 24 hours a day, 7 days
-              a week. No recovery truck needed — our technicians arrive fast and get you moving
-              again with ECU-safe equipment.
+              Car won&apos;t start because of a flat battery? <strong>One Stop Mobile Tyres 24/7</strong> provides a professional <strong>mobile jump start service</strong> across Greater Manchester, bringing suitable jump-start equipment directly to your vehicle.
             </p>
             <p className="text-slate-400 text-base leading-relaxed mb-8">
-              After jump-starting your vehicle, we carry out a battery health test to determine
-              whether your battery is likely to fail again. If you need a replacement battery,
-              we can supply and fit one on-site immediately, saving you time and future
-              breakdowns.
+              Our technicians can assist with cars, SUVs, vans and many light commercial vehicles. Once the engine is running, we can check the battery condition and advise you if there are signs that further battery or charging-system attention may be needed.
             </p>
 
             <ul className="space-y-2 mb-8">
               {[
-                'Fast Mobile Jump Start Service',
-                'ECU & Electronics Safe Equipment',
-                'Battery Health Test Included',
-                'Battery Replacement Available On-Site',
-                'Available 24/7, Wherever You Are',
+                'Fast Mobile Car Jump Start',
+                '24/7 Flat Battery Assistance',
+                'Professional Jump-Start Equipment',
+                'Cars, SUVs & Vans Covered',
+                'Battery Condition Check',
+                'Greater Manchester Coverage',
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-white/90 text-sm sm:text-base font-medium">
                   <span className="text-green-400 text-lg">✓</span>
@@ -215,19 +222,13 @@ export default function JumpStartPage() {
               className="text-2xl sm:text-4xl font-bold text-[#0f172a] mb-5 leading-tight"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
-              Fast Mobile Jump Start Service Wherever You Are
+              Professional Car Jump Start Service at Your Location
             </h2>
             <p className="text-slate-600 text-base leading-relaxed mb-4">
-              A flat battery can leave you stranded at the worst possible moment — at home, at
-              work, in a car park or at the roadside. Our mobile jump start service brings a
-              qualified technician directly to your location so you do not have to wait for a
-              recovery truck or rely on a passing motorist.
+              A battery can lose enough charge to prevent your engine from starting after cold weather, short journeys, lights being left on, long periods without driving or simply because the battery is reaching the end of its useful life. Our <strong>car jump start service</strong> brings professional equipment to your vehicle so you don&apos;t have to rely on another motorist or attempt the job yourself. The technician assesses the situation, connects the equipment correctly and attempts to start the vehicle safely.
             </p>
             <p className="text-slate-600 text-base leading-relaxed mb-8">
-              We use professional grade ECU-safe jump start equipment, protecting the sensitive
-              electronics found in modern vehicles. Once your vehicle is running, we perform
-              a battery health test and advise on the best course of action to prevent it
-              happening again.
+              Once the engine starts, we can check the battery condition and let you know if the problem appears likely to return.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -261,7 +262,7 @@ export default function JumpStartPage() {
               className="text-2xl sm:text-[32px] font-bold"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
             >
-              How It Works
+              How Our Mobile Jump Start Service Works
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 relative">
@@ -316,14 +317,10 @@ export default function JumpStartPage() {
               className="text-2xl sm:text-4xl font-bold text-[#0f172a] mb-5 leading-tight"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
-              Battery Dead Right Now? We&apos;ll Come To You
+              Dead Battery? Get 24-Hour Jump Start Assistance
             </h2>
             <p className="text-slate-600 text-base leading-relaxed mb-6">
-              A flat battery does not wait for a convenient time. Whether it is early morning,
-              late at night or the middle of the weekend, our mobile jump start team is available
-              24/7, wherever you are. We dispatch immediately and aim to reach you as
-              quickly as possible. Call us now and we will have you back on the road without
-              the cost or wait of a full recovery service.
+              Battery problems do not always happen during normal garage hours. Your car might refuse to start before work, after an evening journey or when you return to a vehicle that has been parked for several days. Our <strong>24 hour jump start service</strong> is available across Greater Manchester for drivers who need help getting their vehicle started. Whether you need <strong>roadside jump start</strong> assistance or your vehicle simply will not start where it is parked, send us your location and vehicle details so we can arrange help. A successful jump start gets the engine running, but it does not necessarily fix the reason the battery went flat. If the problem happens repeatedly, the battery, charging system or vehicle electrics may require further diagnosis.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
@@ -332,7 +329,7 @@ export default function JumpStartPage() {
                 style={{ fontFamily: 'var(--font-work-sans)' }}
               >
                 <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
-                07759 708 646
+                Call: 07759 708 646
               </a>
               <a
                 href="https://wa.me/447759708646"
@@ -388,11 +385,10 @@ export default function JumpStartPage() {
           className="text-2xl sm:text-3xl font-bold mb-3"
           style={{ fontFamily: 'var(--font-work-sans)' }}
         >
-          Battery Dead Right Now?
+          Need a Jump Start Right Now?
         </h2>
         <p className="text-slate-400 text-base mb-8 max-w-lg mx-auto">
-          Stay where you are and call us. Our mobile technician will come to you fast, start
-          your car with ECU-safe equipment and check your battery health on the spot.
+          If a flat battery has left your vehicle unable to start, call or WhatsApp <strong>One Stop Mobile Tyres 24/7</strong> with your location and vehicle registration. We&apos;ll arrange <strong>flat battery assistance</strong> and send a technician with professional jump-start equipment to help get your vehicle running again. <strong>One Stop Mobile Tyres 24/7</strong> — Alliance Mill, Willow St, Oldham OL1 3QH, United Kingdom
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
@@ -401,7 +397,7 @@ export default function JumpStartPage() {
             style={{ fontFamily: 'var(--font-work-sans)' }}
           >
             <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
-            07759 708 646
+            Call: 07759 708 646
           </a>
           <a
             href="https://wa.me/447759708646"

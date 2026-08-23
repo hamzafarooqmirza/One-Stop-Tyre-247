@@ -3,9 +3,9 @@ import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/sche
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'TPMS Reset & Sensor Diagnostics | Mobile Service',
+  title: 'TPMS Reset & Sensor Diagnostics',
   description:
-    'Mobile TPMS reset wherever you are — warning light cleared at your location, 24/7.',
+    'Professional mobile TPMS reset, diagnostics, sensor programming and replacement services across Greater Manchester.',
   path: '/tpms-reset',
 })
 
@@ -19,83 +19,83 @@ const _serviceSchema = serviceSchema({
   name: 'TPMS Reset',
   serviceType: 'TPMS Reset',
   description:
-    'Professional, fast and reliable TPMS reset available 24/7, wherever you are. We clear your dashboard warning light and calibrate your tyre pressure sensors at your location.',
+    'Professional TPMS reset, diagnostics and sensor services across Greater Manchester, including sensor relearn, programming and faulty pressure sensor replacement.',
 })
 
 const faqs = [
   {
-    q: 'What is TPMS?',
-    a: 'TPMS stands for Tyre Pressure Monitoring System. It is an electronic safety system that monitors tyre pressure and alerts you when a tyre drops below the safe threshold. It is legally required on all new cars sold in the UK since 2014.',
+    q: 'What does TPMS mean?',
+    a: 'TPMS stands for Tyre Pressure Monitoring System. It monitors tyre-pressure information and warns the driver when the system detects a pressure issue or, on some vehicles, a fault with the monitoring system.',
   },
   {
-    q: 'Why is my TPMS light on even though my tyres are fine?',
-    a: 'After inflating tyres, fitting new ones, or rotating your set, the system often needs a manual reset to recognise the correct baseline pressures. A faulty or low-battery sensor can also trigger the warning.',
+    q: 'Why is my TPMS warning light still on after inflating my tyres?',
+    a: 'The system may need time or a specific relearn procedure to recognise the corrected pressures. If the warning remains, there may also be a sensor, communication or TPMS system fault that requires diagnosis.',
   },
   {
-    q: 'Can you replace faulty TPMS sensors on-site?',
-    a: 'Yes — our mobile vans carry a stock of universal TPMS sensors that can be programmed to match your vehicle\'s specific requirements right there on the spot.',
+    q: 'What is a TPMS reset?',
+    a: 'A TPMS reset allows the monitoring system to recognise the correct tyre-pressure state after certain tyre or pressure changes. The exact procedure varies between vehicle manufacturers and TPMS types.',
   },
   {
-    q: 'How long does a TPMS reset take?',
-    a: 'In most cases, the diagnosis and reset process takes between 15 and 30 minutes once the technician arrives at your vehicle.',
+    q: 'What is a TPMS relearn?',
+    a: 'A TPMS relearn is the process of allowing the vehicle to recognise its tyre-pressure sensors or updated sensor information. Some vehicles perform this automatically, while others require diagnostic equipment or a specific procedure.',
   },
   {
-    q: 'Does TPMS work on all vehicles?',
-    a: 'TPMS has been mandatory on all new passenger vehicles in the UK since 2014. Older vehicles may not have it fitted as standard.',
+    q: 'Can you replace a faulty TPMS sensor?',
+    a: 'Where diagnosis shows that a sensor has failed, TPMS sensor replacement may be required. We can check the appropriate sensor option for your vehicle and advise on fitting and programming.',
   },
   {
-    q: 'Can I drive with the TPMS warning light on?',
-    a: 'You should check your tyre pressures immediately if the light comes on. Driving on underinflated tyres is dangerous and can cause blowouts or reduced fuel efficiency.',
+    q: 'Do replacement TPMS sensors need programming?',
+    a: 'Some replacement sensors require TPMS sensor programming or relearning so the vehicle can recognise them correctly. This depends on the vehicle and the type of sensor being fitted.',
   },
   {
-    q: 'Do you reset TPMS after a tyre change?',
-    a: 'Yes. After fitting new tyres or replacement TPMS sensors, we carry out a full reset and calibration so the system works correctly.',
+    q: 'How do I know if a TPMS sensor is faulty?',
+    a: 'Possible signs include a warning that remains after tyre pressures have been corrected, missing pressure readings or a TPMS fault indication. Proper TPMS diagnostics are the best way to identify whether a sensor or another part of the system is causing the problem.',
   },
 ]
 
 const whyChooseUs = [
   {
     icon: '📡',
-    title: 'Mobile Diagnostic',
-    desc: 'Full TPMS diagnosis and reset performed at your location using professional equipment — no garage visit needed.',
+    title: 'TPMS Diagnostics',
+    desc: 'We use diagnostic equipment to investigate why the TPMS warning is showing and determine whether the issue relates to tyre pressure, a sensor or the system requiring a relearn.',
   },
   {
     icon: '🚗',
-    title: 'All Makes & Models',
-    desc: 'Our equipment covers all major manufacturers — from standard sensors to bespoke OEM systems.',
+    title: 'Sensor Programming & Relearn',
+    desc: 'Replacement or newly fitted sensors may need to be programmed or relearned by the vehicle. We can carry out the appropriate TPMS sensor programming where supported.',
   },
   {
     icon: '⚡',
-    title: 'Fast Response',
-    desc: 'We dispatch quickly so you are not left with a dashboard warning any longer than necessary.',
+    title: 'TPMS Sensor Replacement',
+    desc: 'If diagnosis identifies a faulty pressure sensor, we can advise whether TPMS sensor replacement is required and check a suitable replacement for your vehicle.',
   },
   {
     icon: '✅',
-    title: 'Dashboard Cleared',
-    desc: 'Warning light cleared correctly and system calibrated to manufacturer specification before we leave.',
+    title: 'Warning Light Reset',
+    desc: 'Once the underlying issue has been addressed, we can carry out the relevant TPMS warning light reset or relearn procedure and recheck the system.',
   },
 ]
 
 const steps = [
   {
     n: '1',
-    title: 'Call Us',
-    desc: 'Tell us your location, vehicle make, model and describe the TPMS warning you are seeing.',
+    title: 'Tell Us About the Warning',
+    desc: 'Call or WhatsApp with your location, vehicle registration and details of the TPMS warning. Let us know if it appeared after a tyre change, pressure adjustment or other tyre work.',
   },
   {
     n: '2',
-    title: 'Share Location',
-    desc: 'Share your exact location so we can send the nearest available technician with the correct diagnostic equipment.',
+    title: 'We Check the Vehicle Details',
+    desc: 'We use your vehicle information to prepare the appropriate diagnostic equipment and determine which TPMS system or sensor type may be fitted.',
   },
   {
     n: '3',
-    title: 'Tech Dispatched',
-    desc: 'Our TPMS specialist arrives, connects the diagnostic tool and reads the system to identify the issue.',
+    title: 'TPMS Diagnostics',
+    desc: 'The technician attends your location and checks the TPMS system to identify whether the problem is related to tyre pressure, sensor communication, programming or another system fault.',
   },
   {
     n: '4',
-    title: 'Warning Cleared',
-    desc: 'We reset the TPMS system, confirm all sensors are functioning and ensure the dashboard warning is fully cleared.',
+    title: 'Reset, Relearn or Sensor Solution',
+    desc: "Where appropriate, we carry out the TPMS reset or relearn. If a faulty sensor is identified, we'll explain the replacement or programming option before proceeding.",
   },
 ]
 
@@ -128,35 +128,31 @@ export default function TpmsResetPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
               </span>
-              24/7 Rapid Response
+              Professional TPMS Support
             </div>
 
             <h1
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white font-black mb-5 leading-[1.1]"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              TPMS Reset — Mobile Sensor Service
+              TPMS Reset &amp; Sensor Diagnostics
             </h1>
 
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-4">
-              TPMS warning light on your dashboard? Our professional mobile technicians provide
-              fast, reliable TPMS reset and sensor services wherever you are, available
-              24/7. We come to your home, workplace or roadside with professional diagnostic
-              equipment.
+              TPMS warning light staying on after checking your tyre pressures or having tyre work completed? <strong>One Stop Mobile Tyres 24/7</strong> provides professional <strong>TPMS reset, diagnostics and sensor services</strong> across Greater Manchester, bringing diagnostic equipment directly to your vehicle.
             </p>
             <p className="text-slate-400 text-base leading-relaxed mb-8">
-              Whether you need a routine TPMS reset after a tyre change, a sensor reprogrammed
-              or a faulty sensor replaced, our experienced technicians resolve the issue on-site
-              without the need for a garage visit.
+              Whether your system needs a <strong>TPMS reset</strong>, sensor relearn, sensor programming or replacement of a faulty pressure sensor, our technicians can diagnose the issue and recommend the correct solution before any parts are replaced.
             </p>
 
             <ul className="space-y-2 mb-8">
               {[
-                'Professional Mobile TPMS Diagnostic Reset',
-                'All Vehicle Makes & Models Covered',
-                'Sensor Replacement & Programming Available',
-                'Dashboard Warning Light Cleared On-Site',
-                'Available 24/7, Wherever You Are',
+                'Professional Mobile TPMS Diagnostics',
+                'TPMS Reset & Relearn Service',
+                'TPMS Sensor Programming',
+                'Faulty Sensor Replacement Available',
+                'TPMS Warning Light Diagnosis',
+                '24/7 Greater Manchester Coverage',
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-white/90 text-sm sm:text-base font-medium">
                   <span className="text-green-400 text-lg">✓</span>
@@ -213,19 +209,13 @@ export default function TpmsResetPage() {
               className="text-2xl sm:text-4xl font-bold text-[#0f172a] mb-5 leading-tight"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
-              Professional TPMS Reset & Sensor Services At Your Location
+              Professional TPMS Reset &amp; Sensor Services at Your Location
             </h2>
             <p className="text-slate-600 text-base leading-relaxed mb-4">
-              The Tyre Pressure Monitoring System (TPMS) is a vital safety feature that alerts
-              you when tyre pressure drops dangerously low. However, after fitting new tyres,
-              inflating to correct levels, or rotating your set, the warning light often persists
-              and needs a professional reset. Our mobile technicians carry TPMS diagnostic
-              equipment compatible with all major vehicle makes and models.
+              Your <strong>Tyre Pressure Monitoring System (TPMS)</strong> helps alert you when tyre pressure falls below the expected level. If the warning remains after pressures have been corrected, tyres have been changed or wheels have been worked on, the system may need a reset, relearn or further diagnosis.
             </p>
             <p className="text-slate-600 text-base leading-relaxed mb-8">
-              If a sensor is faulty or has been damaged during a tyre change, we can supply and
-              fit a replacement and programme it to your vehicle on-site, saving you a
-              time-consuming and costly dealership visit.
+              Our <strong>mobile TPMS service</strong> can check sensor communication, investigate warning-light problems and carry out the appropriate <strong>TPMS reset or sensor programming</strong> where supported. If a sensor is faulty or no longer communicating correctly, a suitable replacement may be required.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -259,7 +249,7 @@ export default function TpmsResetPage() {
               className="text-2xl sm:text-[32px] font-bold"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
             >
-              How It Works
+              How Our TPMS Service Works
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 relative">
@@ -314,14 +304,10 @@ export default function TpmsResetPage() {
               className="text-2xl sm:text-4xl font-bold text-[#0f172a] mb-5 leading-tight"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
-              TPMS Warning Light Still On? We&apos;ll Sort It For You
+              TPMS Warning Light Still On?
             </h2>
             <p className="text-slate-600 text-base leading-relaxed mb-6">
-              Ignoring a TPMS warning is not something you should do. It exists to keep you safe
-              on the road by alerting you to dangerous tyre pressures. Our mobile technicians
-              can come to you at any time of day or night, reset the system, replace faulty
-              sensors and ensure your vehicle meets current safety standards. Call us now and
-              we will dispatch a technician to your location.
+              A TPMS warning should not simply be cleared without understanding why it appeared. Start by checking your tyre pressures. If the warning remains, a sensor fault, failed relearn or another TPMS issue may need professional attention. <strong>One Stop Mobile Tyres 24/7</strong> provides <strong>mobile TPMS diagnostics and reset services</strong> across Greater Manchester. Send us your vehicle registration and location and we&apos;ll arrange the appropriate assistance.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
@@ -330,7 +316,7 @@ export default function TpmsResetPage() {
                 style={{ fontFamily: 'var(--font-work-sans)' }}
               >
                 <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
-                07759 708 646
+                Call: 07759 708 646
               </a>
               <a
                 href="https://wa.me/447759708646"
@@ -386,11 +372,10 @@ export default function TpmsResetPage() {
           className="text-2xl sm:text-3xl font-bold mb-3"
           style={{ fontFamily: 'var(--font-work-sans)' }}
         >
-          TPMS Warning Light Still On?
+          Need a TPMS Reset or Sensor Check?
         </h2>
         <p className="text-slate-400 text-base mb-8 max-w-lg mx-auto">
-          Don&apos;t ignore your TPMS warning. Call us now and our mobile technician will come
-          to your location, reset the system and clear the dashboard warning on-site.
+          If your TPMS warning light will not clear, don&apos;t simply ignore it. Call or WhatsApp <strong>One Stop Mobile Tyres 24/7</strong> with your vehicle registration and location so we can arrange a <strong>mobile TPMS diagnostic, reset or sensor service</strong>. <strong>One Stop Mobile Tyres 24/7</strong> — Alliance Mill, Willow St, Oldham OL1 3QH, United Kingdom — 07759 708 646
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
@@ -399,7 +384,7 @@ export default function TpmsResetPage() {
             style={{ fontFamily: 'var(--font-work-sans)' }}
           >
             <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
-            07759 708 646
+            Call: 07759 708 646
           </a>
           <a
             href="https://wa.me/447759708646"

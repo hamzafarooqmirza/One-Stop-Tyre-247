@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Heywood | One Stop Mobile Tyres 24/7',
   description:
-    'Need mobile tyre fitting in Heywood? Emergency replacement and reliable roadside help.',
+    'Professional mobile tyre fitting across Heywood, with same day fitting and 24/7 emergency tyre support delivered directly to your location.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-heywood' },
 }
 
@@ -60,19 +60,19 @@ export default function HeywoodPage() {
           />
           <div className="relative z-10 max-w-2xl py-20">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}>
-              24/7 Mobile Tyre Fitting Heywood
+              Mobile Tyre Fitting Heywood – Fast 24/7 Tyre Support
             </h1>
             <p className="text-white/80 text-base leading-relaxed mb-6">
-              Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance Across Heywood. We Come To Your Home, Workplace Or Roadside Location Within 20–30 Minutes.
+              A tyre problem in Heywood can interrupt a short local trip or a journey towards Rochdale, Bury or Middleton. One Stop Mobile Tyres 24/7 provides professional mobile tyre fitting across Heywood, bringing suitable tyres and specialist equipment directly to your vehicle.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
               {[
-                '20–30 Minute Emergency Response',
-                'Mobile Tyre Fitting At Home, Work Or Roadside',
-                'Emergency Tyre Replacement & Puncture Repair',
-                'Covering Heywood & Surrounding Areas 24/7',
+                '20–30 Minute Response Across Heywood',
+                'Same Day Mobile Tyre Fitting Available',
+                'Emergency Mobile Tyre Fitting 24/7',
+                'Premium, Mid-Range & Budget Tyres',
                 'Card, Cash & Contactless Payments Accepted',
-                'Fully Insured Professional Tyre Technicians',
+                'Professional Mobile Tyre Fitters',
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2.5 text-white/90">
                   <span className="material-symbols-outlined text-green-400 shrink-0" style={{ fontSize: '20px', fontVariationSettings: "'FILL' 1" }}>check_circle</span>
@@ -148,25 +148,25 @@ export default function HeywoodPage() {
             <div className="text-center mb-10 sm:mb-16">
               <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">What We Do</span>
               <h2 className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}>
-                24/7 Mobile Tyre Fitting &amp; Emergency Tyre Repair In Heywood
+                Mobile Tyre Services Across Heywood
               </h2>
               <p className="text-slate-600 max-w-2xl mx-auto text-base">
-                Mobile tyre fitting, emergency tyre replacement and puncture repair across Heywood. We come to your home, workplace or roadside location 24/7 with fast response times and professional service.
+                From York Street and Market Street to Manchester Road, Church Street and routes towards the A58 and A6046, tyre trouble can stop your journey without warning. Our mobile tyre service brings professional equipment and suitable tyre options to your location, so you do not need to drive further on an unsafe tyre.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {[
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp', title: 'Mobile Tyre Fitting Heywood', desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Heywood. Fast response with premium and budget tyre options available.', badge: 'FAST RESPONSE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp', title: 'Mobile Tyre Fitting', desc: 'Our mobile tyre fitting service brings the full fitting process to your vehicle. A technician arrives with specialist equipment, removes the worn or damaged tyre and installs a suitable replacement on-site.', badge: 'MOBILE FITTING WHERE THE CAR IS',
                   href: '/mobile-tyre-fitting' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp', title: 'Home Tyre Fitting', desc: 'Same day tyre fitting at your home across Heywood, without the hassle of visiting a garage.', badge: 'AT YOUR DOOR',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp', title: 'Mobile Tyre Replacement', desc: 'If the tyre has suffered a blowout, serious sidewall damage or excessive wear, our mobile tyre replacement service allows an appropriate tyre to be supplied and fitted without another journey.', badge: "REPLACEMENT FOR TYRES THAT CAN'T CONTINUE",
                   href: '/home-tyre-fitting' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp', title: 'Mobile Puncture Repair', desc: 'Professional mobile puncture repair across Heywood, carried out on-site where safe and suitable.', badge: 'CERTIFIED REPAIR',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp', title: 'Mobile Puncture Repair', desc: 'A puncture can sometimes be repaired rather than replaced. Our technician assesses the location and extent of the damage first and carries out a professional repair where the tyre meets the required safety standards.', badge: "REPAIR WHEN IT'S SAFE TO DO SO",
                   href: '/emergency-puncture-repair' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp', title: 'Jump Start', desc: 'Flat battery as well as a flat tyre? Our mobile jump start service gets you back on the road in minutes, available 24/7 across Heywood.', badge: '24/7 SERVICE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp', title: 'Jump Start', desc: 'If the battery has failed rather than the tyre, our mobile technicians can also provide jump-start assistance across Heywood and surrounding areas.', badge: 'SUPPORT FOR A FLAT BATTERY',
                   href: '/jump-start' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp', title: 'TPMS Reset', desc: 'Tyre pressure monitoring system reset and sensor checks across Heywood after every fitting or repair.', badge: 'ALL VEHICLES',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp', title: 'TPMS Reset', desc: 'If your tyre pressure warning remains active after fitting or repair work, we can check and reset the TPMS where required so the system can continue monitoring pressure correctly.', badge: 'TYRE PRESSURE SYSTEM SUPPORT',
                   href: '/tpms-reset' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp', title: 'Locking Nut Removal', desc: 'Specialist, damage-free locking wheel nut removal across Heywood using professional tools.', badge: 'DAMAGE FREE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp', title: 'Locking Nut Removal', desc: 'A lost key or damaged locking wheel nut can stop normal tyre work. Our technicians use specialist removal tools to gain access to the wheel while taking care around the fitting.', badge: "WHEN A LOCKING NUT WON'T COME OFF",
                   href: '/locking-nut-removal' },
               ].map((card) => (
                 <a key={card.title} href={card.href} className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]">
@@ -194,8 +194,8 @@ export default function HeywoodPage() {
             </div>
             <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
-                <p className="text-slate-400 text-base">Speak directly to a technician for an instant quote and arrival time.</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Tyre Help in Heywood?</h3>
+                <p className="text-slate-400 text-base">Call or WhatsApp with your vehicle registration, tyre size and exact location. We can check suitable tyre options, confirm pricing and give you an expected arrival time.</p>
               </div>
               <a href="tel:07759708646" className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap" style={{ fontFamily: 'var(--font-work-sans)' }}>
                 07759 708 646
@@ -223,25 +223,32 @@ export default function HeywoodPage() {
             <div className="w-full lg:w-1/2">
               <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">The Best Choice</span>
               <h2 className="text-2xl sm:text-4xl lg:text-5xl text-[#0f172a] mb-5 sm:mb-8 leading-tight font-bold" style={{ fontFamily: 'var(--font-work-sans)' }}>
-                Expert Mobile Tyre Fitting Service Across Heywood
+                Mobile Tyre Fitting for Heywood&apos;s Local and Connecting Routes
               </h2>
               <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg">
-                One Stop Tyres provides 24/7 mobile tyre fitting in Heywood, helping drivers get back on the road quickly when they experience a puncture, tyre blowout or damaged tyre.
-                Our mobile tyre experts come directly to your home, workplace or roadside location anywhere in Heywood and surrounding areas.
-                We supply and fit premium and budget tyres, carry out mobile puncture repairs where safe and suitable, and provide emergency tyre replacement services throughout Heywood.
-                If you&apos;re searching for mobile tyre fitting near me in Heywood, our fast response team is available day and night.
+                Heywood sits between Rochdale, Bury and Middleton, with local traffic moving through the town centre and along routes such as the A58, A6046 and A6047. A tyre problem here can disrupt both everyday local journeys and longer trips across north Greater Manchester. Our mobile car tyre fitting service is designed to deal with the problem where the vehicle is safely positioned. We bring professional mobile equipment and can supply premium, mid-range and budget tyre options for many common cars. Coverage includes Heywood town centre, Bamford, Hopwood, Birch and nearby residential areas, together with suitable locations around York Street, Manchester Street, Church Street and Middleton Road. Whether the tyre has become worn over time or failed suddenly during a journey, we can arrange the most suitable support based on the condition of the tyre.
               </p>
               <ul className="space-y-4 sm:space-y-5">
-                <FeatureItem icon="bolt" title="24/7 Mobile Tyre Fitting" desc="Tyres fitted at your home, workplace or roadside location." />
-                <FeatureItem icon="engineering" title="Emergency Tyre Replacement" desc="Fast replacement of damaged or unsafe tyres across Greater Manchester." />
-                <FeatureItem icon="sell" title="Mobile Puncture Repair" desc="Professional puncture repairs where safe and suitable." />
+                <FeatureItem icon="bolt" title="Same Day Mobile Tyre Fitting" desc="If you need the tyre sorted before the day is over, our same day mobile tyre fitting service is available for many common tyre sizes." />
+                <FeatureItem icon="engineering" title="Emergency Mobile Tyre Fitting" desc="A blowout or serious loss of pressure can leave the vehicle unsafe to continue. Our emergency mobile tyre fitting service operates day and night throughout Heywood." />
+                <FeatureItem icon="sell" title="Mobile Tyre Replacement Service" desc="When repair is not suitable, our mobile tyre replacement service brings the required replacement and fitting equipment directly to your vehicle." />
               </ul>
             </div>
           </div>
         </section>
 
         {/* ── 5. WHY CHOOSE US */}
-        <WhyChooseUs city="Heywood" image="/images/tyre-fitting-in-emergency.webp" />
+        <WhyChooseUs
+          city="Heywood"
+          image="/images/tyre-fitting-in-emergency.webp"
+          heading="Why Heywood Drivers Choose One Stop Mobile Tyres 24/7"
+          responseTitle="Useful Across Town and Connecting Roads"
+          responseDesc="Heywood drivers regularly travel between Rochdale, Bury, Middleton and surrounding areas. Our mobile service gives you a practical option when tyre trouble interrupts any of those journeys."
+          callOutTitle="Tyre Choices That Suit Different Needs"
+          callOutDesc="We can discuss premium, mid-range and budget tyre options before dispatch. This helps you choose a tyre that suits your vehicle, driving needs and budget."
+          certifiedTitle="Professional Fitting at Your Location"
+          certifiedDesc="Our professional mobile tyre fitters use dedicated mobile equipment to remove and install tyres correctly, helping you avoid relying on a temporary solution simply to reach a garage."
+        />
 
         {/* ── 6. BRAND CAROUSEL */}
         <BrandCarousel />
@@ -255,21 +262,38 @@ export default function HeywoodPage() {
         {/* ── 7. FAQ */}
         <CityFaq
           canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-heywood" city="Heywood" faqs={[
-          { q: 'How fast can you reach Heywood town centre?', a: 'Typically, our nearest technician can be with you in Heywood town centre within 20-30 minutes, depending on traffic on York Street and Market Street.' },
-          { q: 'Do you cover the M66 near Heywood?', a: 'Yes. Our vehicles carry high-intensity safety lighting to carry out safe roadside tyre changes near the M66 junctions around Heywood and Bamford.' },
-          { q: 'Do you cover Bamford, Hopwood and Birch as well?', a: 'Yes, we cover the whole of Heywood and the surrounding areas including Bamford, Hopwood and Birch, with 24/7 availability.' },
-          { q: 'Can you fit tyres near Heywood Market or the town centre?', a: 'Absolutely. We regularly attend Heywood town centre, including car parks near Heywood Market and the Market Street precinct, fitting tyres wherever it is safe to park.' },
+          { q: 'How quickly can you provide mobile tyre fitting in Heywood?', a: 'Our usual response target across Greater Manchester is around 20–30 minutes. The exact ETA depends on traffic, tyre availability and the location of the nearest technician.' },
+          { q: 'Do you provide 24/7 mobile tyre fitting in Heywood?', a: 'Yes. Our 24/7 mobile tyre fitting service operates day and night, including weekends and bank holidays, subject to technician and tyre availability.' },
+          { q: 'Can I arrange same day tyre fitting in Heywood?', a: 'Yes. Same day tyre fitting is available for many common tyre sizes. Send us your registration or full tyre size so we can check stock before dispatch.' },
+          { q: 'What does your mobile tyre service include?', a: 'Our mobile tyre service can include assessing the tyre problem, removing a worn or damaged tyre, supplying a suitable replacement and completing professional fitting at your location.' },
+          { q: 'Can you provide mobile tyre replacement in Heywood?', a: 'Yes. If the tyre is unsafe, excessively worn or unsuitable for repair, we can arrange mobile tyre replacement and fit an appropriate replacement at your vehicle.' },
+          { q: 'What is included in a mobile tyre replacement service?', a: 'A mobile tyre replacement service means we bring the required tyre and fitting equipment to you, remove the unusable tyre and fit the replacement on-site.' },
+          { q: 'Do you offer an emergency tyre service at night?', a: 'Yes. Our emergency tyre service operates throughout the night for tyre failures that leave the vehicle unsafe to continue.' },
+          { q: 'Can you carry out mobile car tyre fitting for different vehicles?', a: 'Yes. Our mobile car tyre fitting service covers many common makes and models. Providing your registration helps us identify the correct tyre specification before dispatch.' },
+          { q: 'Can you help with a flat tyre in Heywood?', a: "Yes. We provide flat tyre assistance across Heywood. Depending on the tyre's condition, the technician can determine whether repair or replacement is the safer option." },
+          { q: 'Do you cover Heywood town centre and Market Street?', a: 'Yes. We attend suitable locations around Heywood town centre, Market Street and nearby streets where there is enough safe working space.' },
+          { q: 'Do you cover York Street and Manchester Road?', a: 'Yes. Our technicians provide tyre assistance around York Street, Manchester Road, Manchester Street and surrounding routes across Heywood.' },
+          { q: 'Do you cover Bamford, Hopwood and Birch?', a: 'Yes. Our Heywood coverage includes Bamford, Hopwood and Birch, subject to technician and tyre availability.' },
+          { q: 'Do you provide roadside tyre call-outs around Heywood?', a: 'Yes. Our roadside tyre call-outs cover suitable roads across the area. Share your exact location so we can assess the safest and most efficient way to attend.' },
+          { q: 'Can you help near the M62 and M66 connections?', a: 'Yes. We cover Heywood and nearby connecting routes towards the motorway network. If the tyre problem occurs on a motorway itself, follow motorway safety guidance first and move to a safe place wherever possible.' },
+          { q: 'Can I have a tyre fitted on my drive?', a: 'Where there is enough safe working space around the vehicle, having a tyre fitted on your drive may be possible. Tell us how the vehicle is parked when booking.' },
+          { q: 'How do I arrange fast mobile tyre fitting in Heywood?', a: 'For fast mobile tyre fitting, send us your exact location, vehicle registration and tyre size. These details help us identify the required tyre and arrange dispatch more efficiently.' },
+          { q: 'Why should I use professional tyre fitting?', a: 'Professional tyre fitting uses suitable equipment to remove and install tyres correctly and allows the technician to inspect the visible tyre and wheel condition while completing the work.' },
+          { q: 'Are your technicians professional mobile tyre fitters?', a: 'Yes. Our professional mobile tyre fitters work with many common vehicles and tyre sizes using equipment designed specifically for mobile fitting.' },
+          { q: 'Do you provide a reliable mobile tyre service across Heywood?', a: 'Our reliable mobile tyre service focuses on clear communication, suitable tyre choices and professional fitting at your location.' },
+          { q: 'Are trusted mobile tyre fitters available overnight?', a: 'Yes. Our trusted mobile tyre fitters provide emergency support across Heywood overnight as well as during the day, subject to availability.' },
+          { q: 'Can you arrange emergency tyre replacement if I am stranded?', a: 'Yes. Send us your exact location, registration and tyre size. We can check stock and arrange the most appropriate emergency tyre replacement response.' },
         ]} />
 
         {/* ── 8. FINAL CTA */}
         <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Heywood Right Now?</h2>
-            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Heywood line and get a technician dispatched in minutes.</p>
+            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need Mobile Tyre Fitting in Heywood Today?</h2>
+            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Whether your tyre has become unsafe before a local trip or failed while travelling towards Rochdale, Bury or Middleton, you do not need to continue driving on it. Call or WhatsApp One Stop Mobile Tyres 24/7 with your location, vehicle registration and tyre size. We will check suitable tyre options and arrange a technician to come to you in Heywood.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
               <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl" href="tel:07759708646">
                 <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>
-                07759 708 646
+                Call: 07759 708 646
               </a>
               <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#1c1b1b] hover:bg-slate-800 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl" href="https://wa.me/447759708646">
                 <span className="material-symbols-outlined text-[#25D366] text-xl sm:text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>chat</span>

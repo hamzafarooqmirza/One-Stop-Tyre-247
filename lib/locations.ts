@@ -64,7 +64,7 @@ export const BOROUGHS: Borough[] = [
   },
   {
     name: 'Salford',
-    slug: null,
+    slug: 'salford',
     towns: [{ name: 'Eccles', slug: 'eccles' }],
   },
   {

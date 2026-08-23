@@ -19,7 +19,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Bury | One Stop Mobile Tyres 24/7',
   description:
-    'Choose One Stop Mobile Tyres 24/7 for mobile tyre fitting in Bury — fast, reliable roadside help.',
+    'Flat tyre in Bury? Professional mobile tyre fitting comes directly to your location 24/7, with same day and emergency assistance available.',
   path: '/mobile-tyre-fitting-bury',
 })
 
@@ -65,22 +65,22 @@ export default function BuryPage() {
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              24/7 Mobile Tyre Fitting Bury
+              Mobile Tyre Fitting in Bury – We Come to You 24/7
             </h1>
 
             <p className="text-white/80 text-base leading-relaxed mb-6">
-              Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance Across Bury. We Come To Your Home, Workplace Or Roadside Location Within 20–30 Minutes.
+              Flat tyre in Bury? One Stop Mobile Tyres 24/7 brings professional mobile tyre fitting directly to your location, whether you are parked at work, safely stopped roadside or unable to drive because of a damaged tyre.
             </p>
 
             {/* Trust bullets */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
               {[
-                '20–30 Minute Emergency Response',
-                'Mobile Tyre Fitting At Home, Work Or Roadside',
-                'Emergency Tyre Replacement & Puncture Repair',
-                'Covering Bury & Surrounding Areas 24/7',
+                '20–30 Minute Response Across Bury',
+                'Same Day Mobile Tyre Fitting Available',
+                'Emergency Mobile Tyre Fitting 24/7',
+                'Premium, Mid-Range & Budget Tyre Options',
                 'Card, Cash & Contactless Payments Accepted',
-                'Fully Insured Professional Tyre Technicians',
+                'Professional, Fully Insured Mobile Tyre Fitters',
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2.5 text-white/90">
                   <span
@@ -188,10 +188,10 @@ export default function BuryPage() {
                 className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight"
                 style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
               >
-                24/7 Mobile Tyre Fitting &amp; Emergency Tyre Repair In Bury
+                Mobile Tyre Services for Drivers Across Bury
               </h2>
               <p className="text-slate-600 max-w-2xl mx-auto text-base">
-                Mobile tyre fitting, emergency tyre replacement and puncture repair across Bury. We come to your home, workplace or roadside location 24/7 with fast response times and professional service.
+                A damaged tyre can disrupt your journey without warning. Our mobile tyre service is designed to solve the problem where your vehicle is, rather than making you arrange recovery or travel to a tyre centre. From Bury town centre and Fairfield to Unsworth, Tottington and surrounding communities, our mobile tyre fitters provide same day and emergency support with the equipment needed to fit, replace and inspect tyres on-site.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -199,43 +199,43 @@ export default function BuryPage() {
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp',
                   title: 'Mobile Tyre Fitting',
-                  desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Bury. Fast response with premium and budget tyre options available.',
-                  badge: 'FAST RESPONSE',
+                  desc: 'Our mobile tyre fitting service brings the fitting equipment and suitable tyre options directly to your vehicle. We can help with worn tyres, blowouts and damaged tyres without requiring a separate garage visit.',
+                  badge: 'FAST MOBILE RESPONSE',
                   href: '/mobile-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp',
-                  title: 'Home Tyre Fitting',
-                  desc: 'Same day tyre fitting at your home across Bury, without the hassle of visiting a garage.',
-                  badge: 'AT YOUR DOOR',
+                  title: 'Mobile Tyre Replacement',
+                  desc: 'If a tyre is no longer safe to use, we can supply a suitable replacement and fit it at your location. Premium, mid-range and budget options are available for a wide range of vehicles.',
+                  badge: 'CONVENIENT REPLACEMENT',
                   href: '/home-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp',
                   title: 'Mobile Puncture Repair',
-                  desc: 'Professional mobile puncture repair across Bury, carried out on-site where safe and suitable.',
-                  badge: 'CERTIFIED REPAIR',
+                  desc: 'Not every puncture requires a new tyre. Where the location and type of damage meet repair standards, our technician can inspect the tyre and carry out a professional repair.',
+                  badge: 'REPAIR WHERE SUITABLE',
                   href: '/emergency-puncture-repair',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp',
                   title: 'Jump Start',
-                  desc: 'Flat battery as well as a flat tyre? Our mobile jump start service gets you back on the road in minutes, available 24/7 across Bury.',
-                  badge: '24/7 SERVICE',
+                  desc: 'A flat battery can leave you stuck just as easily as tyre damage. Our mobile technicians can provide jump-start assistance alongside our roadside tyre services across Bury.',
+                  badge: 'AVAILABLE DAY OR NIGHT',
                   href: '/jump-start',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp',
                   title: 'TPMS Reset',
-                  desc: 'Tyre pressure monitoring system reset and sensor checks across Bury after every fitting or repair.',
-                  badge: 'ALL VEHICLES',
+                  desc: 'After tyre work, we can inspect the tyre pressure monitoring system and reset it where required so the system can continue monitoring tyre pressures correctly.',
+                  badge: 'TYRE SYSTEM CHECK',
                   href: '/tpms-reset',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp',
                   title: 'Locking Nut Removal',
-                  desc: 'Specialist, damage-free locking wheel nut removal across Bury using professional tools.',
-                  badge: 'DAMAGE FREE',
+                  desc: 'Missing or damaged locking wheel nut key? Our technicians use specialist equipment to help remove locking wheel nuts while reducing the risk of damage to the wheel.',
+                  badge: 'SPECIALIST REMOVAL',
                   href: '/locking-nut-removal',
                 },
               ].map((card) => (
@@ -277,9 +277,9 @@ export default function BuryPage() {
             </div>
             <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Help With a Tyre in Bury?</h3>
                 <p className="text-slate-400 text-base">
-                  Speak directly to a technician for an instant quote and arrival time.
+                  Tell us your location, vehicle and tyre size. A technician can confirm suitable tyre options, pricing and expected arrival time.
                 </p>
               </div>
               <a
@@ -325,29 +325,26 @@ export default function BuryPage() {
                 className="text-2xl sm:text-4xl lg:text-5xl text-[#0f172a] mb-5 sm:mb-8 leading-tight font-bold"
                 style={{ fontFamily: 'var(--font-work-sans)' }}
               >
-                Expert Mobile Tyre Fitting Service Across Bury
+                Mobile Tyre Fitting Built Around Bury Drivers
               </h2>
               <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg">
-                One Stop Tyres provides 24/7 mobile tyre fitting in Bury, helping drivers get back on the road quickly when they experience a puncture, tyre blowout or damaged tyre.
-                Our mobile tyre experts come directly to your home, workplace or roadside location anywhere in Bury and surrounding areas.
-                We supply and fit premium and budget tyres, carry out mobile puncture repairs where safe and suitable, and provide emergency tyre replacement services throughout Bury.
-                If you&apos;re searching for mobile tyre fitting near me in Bury, our fast response team is available day and night.
+                Bury combines busy town-centre roads, residential neighbourhoods and routes connecting drivers towards Manchester, Bolton and Rochdale. A tyre problem on any of these journeys can leave you with few practical options if the vehicle is unsafe to drive. One Stop Mobile Tyres 24/7 provides a mobile alternative. Instead of taking the damaged vehicle to a tyre centre, one of our technicians comes to you with professional fitting equipment and suitable tyre options. We cover Bury and surrounding areas including <strong>Tottington, Unsworth, Fairfield, Elton, Radcliffe, Whitefield and Prestwich</strong>, as well as drivers using major routes around the borough such as the <strong>A56, A58 and M66</strong>. Whether you discover a worn tyre before work, damage a tyre during a journey or need an <strong>emergency tyre replacement</strong> late at night, our service is available around the clock.
               </p>
               <ul className="space-y-4 sm:space-y-5">
                 <FeatureItem
                   icon="bolt"
-                  title="24/7 Mobile Tyre Fitting"
-                  desc="Tyres fitted at your home, workplace or roadside location."
+                  title="Same Day Tyre Fitting"
+                  desc="Need the tyre dealt with today? Our same day tyre fitting service can arrange a mobile technician where availability and the required tyre size allow."
                 />
                 <FeatureItem
                   icon="engineering"
-                  title="Emergency Tyre Replacement"
-                  desc="Fast replacement of damaged or unsafe tyres across Greater Manchester."
+                  title="Emergency Mobile Tyre Fitting"
+                  desc="If a damaged tyre means you cannot continue your journey safely, our emergency mobile tyre fitting service provides on-site assistance 24 hours a day."
                 />
                 <FeatureItem
                   icon="sell"
-                  title="Mobile Puncture Repair"
-                  desc="Professional puncture repairs where safe and suitable."
+                  title="Mobile Tyre Replacement Service"
+                  desc="From one damaged tyre to several worn tyres, our mobile tyre replacement service brings the fitting process to your location and gives you tyre options suitable for your vehicle and budget."
                 />
               </ul>
             </div>
@@ -355,7 +352,17 @@ export default function BuryPage() {
         </section>
 
         {/* ── 5. WHY BURY DRIVERS CHOOSE US ──────────────── */}
-        <WhyChooseUs city="Bury" image="/images/mobile-tyre-fitting-manchester.webp" />
+        <WhyChooseUs
+          city="Bury"
+          image="/images/mobile-tyre-fitting-manchester.webp"
+          heading="Why Bury Drivers Use One Stop Mobile Tyres 24/7"
+          responseTitle="Mobile Service Where Your Vehicle Is"
+          responseDesc="A damaged tyre does not always leave you in a convenient place. Our technicians travel to suitable locations across Bury, helping remove the need to arrange recovery simply to have a tyre fitted."
+          callOutTitle="Tyre Options to Match Your Vehicle and Budget"
+          callOutDesc="We supply a range of premium, mid-range and budget tyres. Before dispatch, we can discuss the tyre size, vehicle requirements and available options so you know what is being fitted."
+          certifiedTitle="Professional Mobile Tyre Fitters"
+          certifiedDesc="Our professional mobile tyre fitters use dedicated mobile fitting equipment and work across a wide range of cars and tyre sizes. The aim is simple: safe, professional fitting without an unnecessary garage visit."
+        />
 
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />
@@ -372,20 +379,60 @@ export default function BuryPage() {
           city="Bury"
           faqs={[
             {
-              q: 'How quickly can you reach me in Bury?',
-              a: 'Our mobile units are positioned across the Bury borough, meaning we can typically reach Bury Town Centre, Ramsbottom, Radcliffe, Whitefield, and surrounding areas within 20-30 minutes.',
+              q: 'Do you provide 24 hour mobile tyre fitting in Bury?',
+              a: 'Yes. Our 24 hour mobile tyre fitting service operates across Bury day and night. If tyre damage leaves your vehicle unsafe to drive, call with your location and tyre details so we can check availability and dispatch the appropriate technician.',
             },
             {
-              q: 'Do you cover the M66 motorway near Bury?',
-              a: 'Yes. We provide full emergency motorway tyre coverage on the M66 from Junction 1 through to Junction 4, as well as the A56 and all major routes through the Bury borough.',
+              q: 'Can I get same day mobile tyre fitting in Bury?',
+              a: 'Yes. Same day mobile tyre fitting is available across Bury for many common tyre sizes. Availability depends on your required tyre, location and current call-out demand.',
             },
             {
-              q: 'What tyre brands do you stock for Bury customers?',
-              a: 'We carry all major premium brands including Michelin, Continental, Bridgestone, Pirelli, Dunlop, and Goodyear, plus mid-range and budget options to suit every requirement.',
+              q: 'What is included in your mobile tyre service?',
+              a: 'Our mobile tyre service can include tyre inspection, removal of the damaged or worn tyre, professional fitting of the replacement tyre and relevant checks before the vehicle is returned to use.',
             },
             {
-              q: 'Can you fit tyres at my workplace in Radcliffe or Whitefield?',
-              a: 'Absolutely. We regularly visit business parks and workplaces across the Bury area. We fit your tyres while you work, saving you time and the hassle of visiting a garage.',
+              q: 'Do you provide mobile car tyre fitting for different vehicle types?',
+              a: 'Yes. We provide mobile car tyre fitting for a wide range of everyday vehicles. Give us your registration or tyre size when booking so we can identify suitable tyre options before travelling to you.',
+            },
+            {
+              q: 'Can you replace a tyre if it cannot be repaired?',
+              a: 'Yes. If inspection shows the tyre is unsafe or unsuitable for repair, we can provide mobile tyre replacement using a suitable tyre for the vehicle. We carry premium, mid-range and budget options depending on availability.',
+            },
+            {
+              q: 'What is an emergency tyre replacement?',
+              a: 'An emergency tyre replacement is useful when tyre damage prevents you from continuing safely. Our technician comes to your location with the equipment and suitable replacement tyre needed to get the vehicle mobile again.',
+            },
+            {
+              q: 'Do you offer an emergency tyre service in Bury?',
+              a: 'Yes. Our emergency tyre service is available for tyre problems that leave you stuck or unable to continue your journey safely. We cover Bury and surrounding areas throughout the day and night.',
+            },
+            {
+              q: 'Is your mobile tyre fitting service available 24/7?',
+              a: 'Yes. We provide 24/7 mobile tyre fitting across Bury, including evenings, nights, weekends and bank holidays, subject to technician and tyre availability.',
+            },
+            {
+              q: 'Can you help with a flat tyre at the roadside?',
+              a: 'Yes. Our flat tyre assistance covers suitable roadside locations across Bury. Tell us exactly where the vehicle is and what happened so we can determine the safest and most suitable response.',
+            },
+            {
+              q: 'Do you provide roadside tyre call-outs around Bury?',
+              a: 'Yes. Our roadside tyre call-outs cover Bury and major routes around the borough. If you are stopped on or close to a busy road, move to a safe position where possible before contacting us.',
+            },
+            {
+              q: 'How do I arrange fast mobile tyre fitting in Bury?',
+              a: 'Call or WhatsApp us with your vehicle registration, tyre size and exact location. Providing this information helps us identify the right tyre and arrange fast mobile tyre fitting without unnecessary delays.',
+            },
+            {
+              q: 'Why choose professional tyre fitting instead of changing the tyre myself?',
+              a: 'Professional tyre fitting uses dedicated equipment to remove, mount and fit tyres correctly. Our technicians can also inspect the tyre and wheel during the job and make sure the replacement is suitable for the vehicle.',
+            },
+            {
+              q: 'Are you reliable mobile tyre service providers across Bury?',
+              a: 'Our reliable mobile tyre service is designed around clear communication, mobile convenience and professional fitting. We confirm the tyre options and expected costs before the technician attends.',
+            },
+            {
+              q: 'Do you have trusted mobile tyre fitters serving Bury?',
+              a: "Our trusted mobile tyre fitters serve Bury as part of One Stop Mobile Tyres 24/7's wider Greater Manchester coverage, providing scheduled and emergency tyre assistance throughout the area.",
             },
           ]}
         />
@@ -393,15 +440,15 @@ export default function BuryPage() {
         {/* ── 8. FINAL CTA ──────────────────────────────────── */}
         <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Bury Right Now?</h2>
-            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Bury line and get a technician dispatched in minutes.</p>
+            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need Mobile Tyre Fitting in Bury Today?</h2>
+            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Whether you have spotted tyre damage before a journey or are already stuck with a flat tyre, call One Stop Mobile Tyres 24/7 with your location and tyre details. We&apos;ll check the required tyre, confirm available options and arrange a mobile technician to come to you.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
               <a
                 className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl"
                 href="tel:07759708646"
               >
                 <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>
-                07759 708 646
+                Call: 07759 708 646
               </a>
               <a
                 className="flex items-center justify-center gap-2 sm:gap-3 bg-[#1c1b1b] hover:bg-slate-800 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl"

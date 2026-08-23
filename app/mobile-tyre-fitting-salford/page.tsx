@@ -9,17 +9,17 @@ import JsonLd from '@/components/JsonLd'
 import { serviceSchema } from '@/lib/schema'
 
 const _serviceSchema = serviceSchema({
-  slug: 'mobile-tyre-fitting-farnworth',
-  name: 'Mobile Tyre Fitting in Farnworth',
+  slug: 'mobile-tyre-fitting-salford',
+  name: 'Mobile Tyre Fitting in Salford',
   serviceType: 'Mobile Tyre Fitting',
-  areaServed: { '@type': 'City', name: 'Farnworth' },
+  areaServed: { '@type': 'City', name: 'Salford' },
 })
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting in Farnworth | One Stop Mobile Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Salford | One Stop Mobile Tyres 24/7',
   description:
-    'Professional mobile tyre fitting across Farnworth, with same day fitting and 24/7 emergency tyre assistance at your location.',
-  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-farnworth' },
+    'Mobile tyre fitting in Salford — quick response, reliable same day fitting, every journey.',
+  alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-salford' },
 }
 
 function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc: string }) {
@@ -36,7 +36,7 @@ function FeatureItem({ icon, title, desc }: { icon: string; title: string; desc:
   )
 }
 
-export default function FarnworthPage() {
+export default function SalfordPage() {
   return (
     <div className="bg-[#fcf9f8] text-[#1c1b1b] font-body-md">
       <JsonLd data={_serviceSchema} />
@@ -60,19 +60,19 @@ export default function FarnworthPage() {
           />
           <div className="relative z-10 max-w-2xl py-20">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}>
-              Mobile Tyre Fitting Farnworth – Fast 24/7 Help at Your Location
+              24/7 Mobile Tyre Fitting Salford
             </h1>
             <p className="text-white/80 text-base leading-relaxed mb-6">
-              Tyre problem in Farnworth? One Stop Mobile Tyres 24/7 sends a fully equipped technician to your vehicle for fast mobile tyre fitting, whether you are caught out during a local journey, heading towards Bolton or stopped near one of Farnworth&apos;s main routes.
+              Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance Across Salford. We Come To Your Home, Workplace Or Roadside Location Within 20–30 Minutes.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
               {[
-                '20–30 Minute Response Across Farnworth',
-                'Same Day Mobile Tyre Fitting Available',
-                '24/7 Emergency Tyre Assistance',
-                'Premium, Mid-Range & Budget Tyres',
+                '20–30 Minute Emergency Response',
+                'Mobile Tyre Fitting At Home, Work Or Roadside',
+                'Emergency Tyre Replacement & Puncture Repair',
+                'Covering Salford & Surrounding Areas 24/7',
                 'Card, Cash & Contactless Payments Accepted',
-                'Fully Insured Professional Mobile Tyre Fitters',
+                'Fully Insured Professional Tyre Technicians',
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2.5 text-white/90">
                   <span className="material-symbols-outlined text-green-400 shrink-0" style={{ fontSize: '20px', fontVariationSettings: "'FILL' 1" }}>check_circle</span>
@@ -93,7 +93,7 @@ export default function FarnworthPage() {
                 ))}
               </div>
               <span className="font-bold text-sm">5.0</span>
-              <span className="text-white/60 text-xs font-medium">Rated By Drivers Across Farnworth &amp; Greater Manchester</span>
+              <span className="text-white/60 text-xs font-medium">Rated By Drivers Across Salford &amp; Greater Manchester</span>
             </a>
             <div className="flex flex-col sm:flex-row gap-3">
               <a href="tel:07759708646" className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl shadow-2xl shadow-red-900/40 flex items-center justify-center gap-2.5 hover:bg-red-700 hover:text-white transition-all text-base sm:text-lg" style={{ fontFamily: 'var(--font-work-sans)' }}>
@@ -148,25 +148,25 @@ export default function FarnworthPage() {
             <div className="text-center mb-10 sm:mb-16">
               <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">What We Do</span>
               <h2 className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}>
-                Mobile Tyre Services Across Farnworth
+                24/7 Mobile Tyre Fitting &amp; Emergency Tyre Repair In Salford
               </h2>
               <p className="text-slate-600 max-w-2xl mx-auto text-base">
-                From Market Street and the town centre to the A666 and roads towards Kearsley, tyre trouble can interrupt any journey. Our mobile tyre service brings professional fitting equipment and suitable tyre options directly to your vehicle, so an unsafe tyre does not need to be driven to a garage.
+                Mobile tyre fitting, emergency tyre replacement and puncture repair across Salford. We come to your home, workplace or roadside location 24/7 with fast response times and professional service.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {[
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp', title: 'Mobile Tyre Fitting', desc: 'Our mobile tyre fitting service makes replacing a worn or damaged tyre simpler. A technician travels to your location with the required equipment, removes the affected tyre and professionally fits the replacement on-site.', badge: 'TYRE HELP BROUGHT TO YOU',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp', title: 'Mobile Tyre Fitting Salford', desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Salford. Fast response with premium and budget tyre options available.', badge: 'FAST RESPONSE',
                   href: '/mobile-tyre-fitting' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp', title: 'Mobile Tyre Replacement', desc: 'Some tyres are too badly worn, split or damaged to remain in use. Our mobile tyre replacement service allows a suitable tyre to be supplied and fitted where your vehicle is safely parked.', badge: "WHEN REPAIR ISN'T AN OPTION",
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp', title: 'Home Tyre Fitting', desc: 'Same day tyre fitting at your home across Salford, without the hassle of visiting a garage.', badge: 'AT YOUR DOOR',
                   href: '/home-tyre-fitting' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp', title: 'Mobile Puncture Repair', desc: 'If your tyre has picked up a nail, screw or other puncture, we first assess whether the damage is safe to repair. Where suitable, the repair can be completed without replacing an otherwise usable tyre.', badge: 'DEALING WITH PUNCTURES PROPERLY',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp', title: 'Mobile Puncture Repair', desc: 'Professional mobile puncture repair across Salford, carried out on-site where safe and suitable.', badge: 'CERTIFIED REPAIR',
                   href: '/emergency-puncture-repair' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp', title: 'Jump Start', desc: 'If your journey has stopped because the battery is flat rather than the tyre, our mobile technicians can also provide jump-start support across Farnworth.', badge: 'BATTERY PROBLEM AS WELL?',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp', title: 'Jump Start', desc: 'Flat battery as well as a flat tyre? Our mobile jump start service gets you back on the road in minutes, available 24/7 across Salford.', badge: '24/7 SERVICE',
                   href: '/jump-start' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp', title: 'TPMS Reset', desc: 'A tyre pressure warning can remain after fitting or repair work. Where required, we can check and reset the TPMS so the vehicle can continue monitoring tyre pressures correctly.', badge: 'CLEARING TYRE PRESSURE WARNINGS',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp', title: 'TPMS Reset', desc: 'Tyre pressure monitoring system reset and sensor checks across Salford after every fitting or repair.', badge: 'ALL VEHICLES',
                   href: '/tpms-reset' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp', title: 'Locking Nut Removal', desc: 'A missing key or damaged locking wheel nut can prevent normal tyre removal. Our technicians carry specialist tools to deal with troublesome locking nuts and access the wheel safely.', badge: 'REMOVING DIFFICULT LOCKING NUTS',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp', title: 'Locking Nut Removal', desc: 'Specialist, damage-free locking wheel nut removal across Salford using professional tools.', badge: 'DAMAGE FREE',
                   href: '/locking-nut-removal' },
               ].map((card) => (
                 <a key={card.title} href={card.href} className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]">
@@ -194,8 +194,8 @@ export default function FarnworthPage() {
             </div>
             <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need a Mobile Tyre Fitter in Farnworth?</h3>
-                <p className="text-slate-400 text-base">Tell us your vehicle registration, tyre size and location. We can check available tyre choices, confirm the cost and provide an estimated arrival time.</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
+                <p className="text-slate-400 text-base">Speak directly to a technician for an instant quote and arrival time.</p>
               </div>
               <a href="tel:07759708646" className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap" style={{ fontFamily: 'var(--font-work-sans)' }}>
                 07759 708 646
@@ -223,74 +223,53 @@ export default function FarnworthPage() {
             <div className="w-full lg:w-1/2">
               <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">The Best Choice</span>
               <h2 className="text-2xl sm:text-4xl lg:text-5xl text-[#0f172a] mb-5 sm:mb-8 leading-tight font-bold" style={{ fontFamily: 'var(--font-work-sans)' }}>
-                Tyre Fitting That Works Around Your Journey
+                Expert Mobile Tyre Fitting Service Across Salford
               </h2>
               <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg">
-                Farnworth is closely connected with Bolton and Manchester, with local traffic moving through the town centre and along routes towards Kearsley, Little Lever and surrounding areas. When a tyre becomes unsafe, continuing the journey just to find a garage is rarely the best option. Our mobile car tyre fitting service allows the work to take place at the vehicle. We carry professional mobile equipment and can source premium, mid-range and budget tyres for many common cars and tyre sizes. Coverage includes Farnworth town centre, areas around Market Street and Peel Street, residential neighbourhoods and suitable locations towards Kearsley, Moses Gate and nearby parts of south Bolton. Whether the problem develops before your journey or brings it to an unexpected stop, we can arrange the appropriate tyre support without adding another unnecessary trip.
+                One Stop Tyres provides 24/7 mobile tyre fitting in Salford, helping drivers get back on the road quickly when they experience a puncture, tyre blowout or damaged tyre.
+                Our mobile tyre experts come directly to your home, workplace or roadside location anywhere in Salford and surrounding areas.
+                We supply and fit premium and budget tyres, carry out mobile puncture repairs where safe and suitable, and provide emergency tyre replacement services throughout Salford.
+                If you&apos;re searching for mobile tyre fitting near me in Salford, our fast response team is available day and night.
               </p>
               <ul className="space-y-4 sm:space-y-5">
-                <FeatureItem icon="bolt" title="Same Day Mobile Tyre Fitting" desc="If you notice a damaged or heavily worn tyre and need it resolved before the day is over, our same day mobile tyre fitting service is available for many common tyre sizes." />
-                <FeatureItem icon="engineering" title="Emergency Mobile Tyre Fitting" desc="A sudden tyre failure can make the vehicle unsafe to continue. Our emergency mobile tyre fitting service operates day and night for urgent problems across Farnworth." />
-                <FeatureItem icon="sell" title="Mobile Tyre Replacement Service" desc="Our mobile tyre replacement service is suitable when the existing tyre cannot safely remain in use. We bring an appropriate replacement to the vehicle and complete the fitting on-site." />
+                <FeatureItem icon="bolt" title="24/7 Mobile Tyre Fitting" desc="Tyres fitted at your home, workplace or roadside location." />
+                <FeatureItem icon="engineering" title="Emergency Tyre Replacement" desc="Fast replacement of damaged or unsafe tyres across Greater Manchester." />
+                <FeatureItem icon="sell" title="Mobile Puncture Repair" desc="Professional puncture repairs where safe and suitable." />
               </ul>
             </div>
           </div>
         </section>
 
         {/* ── 5. WHY CHOOSE US */}
-        <WhyChooseUs
-          city="Farnworth"
-          image="/images/tyre-fitting-in-emergency.webp"
-          heading="Why Farnworth Drivers Choose One Stop Mobile Tyres 24/7"
-          responseTitle="No Need to Risk Driving on the Tyre"
-          responseDesc="A damaged tyre can become worse when driven on. We bring the equipment to your vehicle instead, allowing the problem to be handled at a suitable location without an unnecessary journey to a tyre centre."
-          callOutTitle="Tyres for Different Needs and Budgets"
-          callOutDesc="We can offer premium, mid-range and budget options depending on your vehicle and stock availability. Suitable choices can be discussed before dispatch, helping you decide what works best for you."
-          certifiedTitle="Proper Equipment, Professional Fitting"
-          certifiedDesc="Our professional mobile tyre fitters use specialist mobile machinery rather than relying on temporary solutions. Each job is focused on fitting the tyre correctly and preparing the vehicle to return safely to the road."
-        />
+        <WhyChooseUs city="Salford" image="/images/tyre-fitting-in-emergency.webp" />
 
         {/* ── 6. BRAND CAROUSEL */}
         <BrandCarousel />
 
         {/* ── NEARBY AREAS ───────────────────────────────────── */}
-        <NearbyAreas currentSlug="farnworth" />
+        <NearbyAreas currentSlug="salford" />
 
         {/* ── SERVICE AREAS MAP ──────────────────────────────── */}
         <ServiceAreasMap />
 
         {/* ── 7. FAQ */}
         <CityFaq
-          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-farnworth" city="Farnworth" faqs={[
-          { q: 'How quickly can you reach Farnworth?', a: 'Our normal response target across Greater Manchester is around 20–30 minutes. Your exact ETA depends on traffic, the nearest available technician and whether the required tyre is immediately available.' },
-          { q: 'Do you provide 24/7 mobile tyre fitting in Farnworth?', a: 'Yes. Our 24/7 mobile tyre fitting service operates day and night, including weekends and bank holidays. Contact us with your tyre details and location so we can check availability.' },
-          { q: 'Can I arrange same day tyre fitting in Farnworth?', a: 'Yes. Same day tyre fitting is available for many popular tyre sizes. Providing your registration or complete tyre size helps us confirm stock before sending a technician.' },
-          { q: 'What does your mobile tyre service include?', a: 'Our mobile tyre service can include checking the tyre problem, removing an unusable tyre, supplying a suitable replacement and carrying out professional fitting at your location.' },
-          { q: 'Can you provide emergency tyre replacement?', a: 'Yes. Where a tyre has suffered serious damage or cannot be safely repaired, we can arrange emergency tyre replacement and bring an appropriate replacement to your vehicle.' },
-          { q: 'Do you offer an emergency tyre service after normal garage hours?', a: 'Yes. Our emergency tyre service is available around the clock. This is useful when a tyre failure leaves you unable to continue safely during the evening, overnight or early morning.' },
-          { q: 'Do you provide mobile car tyre fitting for different makes and models?', a: 'Yes. Our mobile car tyre fitting service covers a wide range of common vehicles. Send us your registration or tyre size so we can identify suitable tyre options before dispatch.' },
-          { q: 'Can you attend Farnworth town centre?', a: 'Yes. We cover suitable locations throughout Farnworth town centre, including areas around Market Street, Peel Street and surrounding streets where there is enough safe working space.' },
-          { q: 'Do you cover the A666 near Farnworth and Kearsley?', a: 'Yes. We provide roadside tyre call-outs around Farnworth and routes towards Kearsley, including suitable locations near the A666. Always move the vehicle to the safest available position before requesting assistance.' },
-          { q: 'Can you help around Moses Gate and Kearsley?', a: 'Yes. Our coverage includes Farnworth and neighbouring areas such as Moses Gate and Kearsley, subject to tyre stock and technician availability.' },
-          { q: 'What happens if my punctured tyre cannot be repaired?', a: 'If inspection shows that the damage falls outside a safely repairable area or the tyre is otherwise unsuitable for repair, we can recommend and arrange a mobile tyre replacement.' },
-          { q: 'Can I have a tyre fitted on my drive?', a: 'If the vehicle has enough safe space around it for the technician and equipment, having a tyre fitted on your drive may be possible. Let us know how the vehicle is parked when arranging the call-out.' },
-          { q: 'How can I arrange fast mobile tyre fitting in Farnworth?', a: 'For fast mobile tyre fitting, send your exact location, vehicle registration and tyre size when contacting us. These details help us identify the required tyre before dispatch.' },
-          { q: 'Why should I use professional tyre fitting?', a: 'Professional tyre fitting uses suitable equipment to remove and install tyres correctly. It also allows the technician to inspect the visible condition of the tyre and wheel while completing the work.' },
-          { q: 'Are your technicians professional mobile tyre fitters?', a: 'Yes. Our professional mobile tyre fitters work with a wide variety of tyre sizes and common vehicle types using equipment designed specifically for mobile fitting.' },
-          { q: 'Do you provide a reliable mobile tyre service across Farnworth?', a: "Yes. Our reliable mobile tyre service focuses on clear information before dispatch, appropriate tyre choices and professional fitting at the vehicle's location." },
-          { q: 'Are trusted mobile tyre fitters available overnight?', a: 'Our trusted mobile tyre fitters provide emergency coverage throughout the night, subject to technician and tyre availability. Call with your location and tyre details so we can check the quickest option.' },
-          { q: 'Can you help if I am stranded with a flat tyre?', a: 'Yes. If your vehicle cannot continue safely, send us your exact position and tyre details. We can arrange appropriate flat tyre assistance, whether the situation requires repair or replacement.' },
+          canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-salford" city="Salford" faqs={[
+          { q: 'How fast can you reach Salford city centre?', a: 'Typically, our nearest technician can be with you in Salford city centre within 20–30 minutes, depending on traffic and your exact location.' },
+          { q: 'Do you cover the M602 and M60 around Salford?', a: 'Yes. We provide 24/7 roadside tyre assistance around Salford, including the M602 and nearby sections of the M60, wherever it is safe to work.' },
+          { q: 'Do you cover Swinton, Pendlebury and Worsley as well?', a: 'Yes, we cover Salford and surrounding areas including Swinton, Pendlebury, Worsley and Eccles, with 24/7 availability.' },
+          { q: 'Can you fit tyres at MediaCity or Salford Quays?', a: 'Absolutely. We attend homes, workplaces and suitable roadside locations across Salford, including MediaCity and Salford Quays, wherever it is safe to park and complete the work.' },
         ]} />
 
         {/* ── 8. FINAL CTA */}
         <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need Mobile Tyre Fitting in Farnworth Today?</h2>
-            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">A worn, punctured or damaged tyre does not have to mean driving around Farnworth looking for an open garage. Call or WhatsApp One Stop Mobile Tyres 24/7 with your location, vehicle registration and tyre size. We will check suitable options and arrange a mobile technician to come to you.</p>
+            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Salford Right Now?</h2>
+            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Salford line and get a technician dispatched in minutes.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
               <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl" href="tel:07759708646">
                 <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>
-                Call: 07759 708 646
+                07759 708 646
               </a>
               <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#1c1b1b] hover:bg-slate-800 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl" href="https://wa.me/447759708646">
                 <span className="material-symbols-outlined text-[#25D366] text-xl sm:text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>chat</span>

@@ -3,9 +3,9 @@ import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/sche
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'Cheap Mobile Tyre Fitting | Budget Tyres Fitted',
+  title: 'Cheap Mobile Tyre Fitting | Quality Tyres at Fair Prices',
   description:
-    'Cheap mobile tyre fitting at your location — budget to premium, same-day slots.',
+    'Affordable mobile tyre fitting across Greater Manchester with budget, mid-range and premium tyres quoted before dispatch.',
   path: '/cheap-mobile-tyre-fitting',
 })
 
@@ -19,7 +19,7 @@ const _serviceSchema = serviceSchema({
   name: 'Cheap Mobile Tyre Fitting',
   serviceType: 'Mobile Tyre Fitting',
   description:
-    'Affordable mobile tyre fitting with budget, mid-range and premium tyres. Professional tyre replacement and puncture repair at your home, workplace or roadside location.',
+    'Affordable mobile tyre fitting across Greater Manchester with budget, mid-range and premium tyre options supplied and professionally fitted at your location.',
 })
 
 const faqs = [
@@ -54,46 +54,46 @@ const _faqSchema = faqSchema(faqs)
 const whyChooseUs = [
   {
     icon: '💷',
-    title: 'Competitive Prices',
-    desc: 'We offer excellent value on budget, mid-range and premium tyres with transparent pricing and no hidden costs.',
+    title: 'Competitive Tyre Prices',
+    desc: 'We offer budget, mid-range and premium tyres at different price points, allowing you to choose an option that suits your vehicle and spending limit.',
   },
   {
     icon: '🚐',
-    title: 'We Come To You',
-    desc: 'No need to drive on a damaged tyre or wait at a tyre garage. Our mobile technicians fit your tyres wherever you are.',
+    title: 'Clear Quotes Upfront',
+    desc: 'Your quote is confirmed before dispatch based on the tyre required, location and service needed, helping you understand the cost before the technician travels.',
   },
   {
     icon: '⚡',
-    title: 'Fast Same Day Service',
-    desc: 'Need tyres fitted today? We offer same day and emergency appointments whenever possible.',
+    title: 'Same Day Availability',
+    desc: 'Need tyres fitted today? Same day mobile tyre fitting is available for many common tyre sizes, subject to stock and technician availability.',
   },
   {
     icon: '⭐',
-    title: 'Quality You Can Trust',
-    desc: 'Every tyre is professionally fitted by experienced technicians using modern equipment and backed by outstanding customer service.',
+    title: 'Professional Fitting Included',
+    desc: 'Even when choosing a budget tyre, fitting is carried out by professional technicians using appropriate mobile tyre equipment.',
   },
 ]
 
 const steps = [
   {
     n: '1',
-    title: 'Call Us',
-    desc: 'Tell us your tyre size, vehicle details and location, or let our team help identify the correct tyre for your vehicle.',
+    title: 'Send Your Vehicle Details',
+    desc: 'Call or WhatsApp with your registration, tyre size if known, number of tyres required and location.',
   },
   {
     n: '2',
-    title: 'Dispatch',
-    desc: 'We find the nearest mobile tyre technician and prepare the required tyres for your appointment.',
+    title: 'Compare Suitable Tyre Options',
+    desc: 'We check available budget, mid-range and premium tyres and explain the prices so you can choose the most suitable option.',
   },
   {
     n: '3',
-    title: 'Arrival',
-    desc: 'Our technician arrives fully equipped to remove the damaged tyre and professionally fit the replacement.',
+    title: 'Technician Comes to You',
+    desc: 'Once you approve the quote, the technician arrives with the selected tyres and professional fitting equipment.',
   },
   {
     n: '4',
-    title: 'Back On The Road',
-    desc: 'After completing safety checks and ensuring the tyre is correctly fitted, you\'re ready to drive away with confidence.',
+    title: 'Tyres Fitted & Checked',
+    desc: 'Your old tyre is removed, the replacement is professionally fitted and the required pressure and fitting checks are completed before the job is finished.',
   },
 ]
 
@@ -124,36 +124,31 @@ export default function CheapMobileTyreFittingPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
               </span>
-              Affordable Mobile Tyre Service — Wherever You Are
+              Affordable Tyres, Professional Fitting
             </div>
 
             <h1
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white font-black mb-5 leading-[1.1]"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              Cheap Mobile Tyre Fitting, Quality Tyres at Affordable Prices
+              Cheap Mobile Tyre Fitting – Quality Tyres at Fair Prices
             </h1>
 
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-4">
-              Looking for cheap mobile tyre fitting without compromising on quality or service? We
-              provide affordable mobile tyre replacement and puncture repair at your home, workplace,
-              or roadside location, saving you the hassle of visiting a garage. With competitive
-              prices and fast response times, getting new tyres has never been easier.
+              Need new tyres without paying more than necessary? <strong>One Stop Mobile Tyres 24/7</strong> provides <strong>cheap mobile tyre fitting</strong> across Greater Manchester, with budget, mid-range and premium tyre options supplied and professionally fitted at your location.
             </p>
             <p className="text-slate-400 text-base leading-relaxed mb-8">
-              Whether you need budget tyres, same day mobile tyre fitting, emergency tyre
-              replacement, or a mobile puncture repair, our experienced technicians bring everything
-              required to fit your tyres on-site. We stock a wide range of premium, mid-range, and
-              budget tyres to suit every vehicle and every budget.
+              Tell us your vehicle registration or tyre size and we&apos;ll check suitable options across different price ranges. You receive a clear quote before dispatch, helping you choose the right tyre for your vehicle and budget without unexpected charges.
             </p>
 
             <ul className="space-y-2 mb-8">
               {[
-                'Cheap Mobile Tyre Fitting with No Hidden Fees',
-                'Budget, Mid-Range & Premium Tyres Available',
-                'Same Day Mobile Tyre Replacement',
-                'Home, Workplace & Roadside Fitting',
-                'Professional Mobile Technicians & Fast Response',
+                'Affordable Mobile Tyre Fitting',
+                'Budget, Mid-Range & Premium Tyres',
+                'Same Day Availability Where Possible',
+                'Clear Prices Before Dispatch',
+                'Cars, SUVs & Vans Covered',
+                'Professional Mobile Tyre Fitters',
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-white/90 text-sm sm:text-base font-medium">
                   <span className="text-green-400 text-lg">✓</span>
@@ -169,7 +164,7 @@ export default function CheapMobileTyreFittingPage() {
                 style={{ fontFamily: 'var(--font-work-sans)' }}
               >
                 <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
-                Call Now
+                Call: 07759 708 646
               </a>
               <a
                 href="https://wa.me/447759708646"
@@ -210,18 +205,13 @@ export default function CheapMobileTyreFittingPage() {
               className="text-2xl sm:text-4xl font-bold text-[#0f172a] mb-5 leading-tight"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
-              Affordable Mobile Tyre Fitting That Comes To You
+              Affordable Mobile Tyre Fitting Without Cutting Corners
             </h2>
             <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Buying new tyres shouldn&apos;t mean spending hours waiting at a tyre garage or paying
-              expensive recovery charges after a puncture. Our mobile tyre fitting service delivers
-              professional tyre replacement directly to your location at competitive prices.
+              Choosing a lower-priced tyre should not mean compromising on professional fitting. Our <strong>affordable mobile tyre fitting</strong> service combines competitively priced tyre options with proper fitting equipment and experienced technicians.
             </p>
             <p className="text-slate-600 text-base leading-relaxed mb-8">
-              From emergency tyre call-outs to scheduled home tyre fitting appointments, we make
-              replacing your tyres simple, convenient and affordable. Our team can supply and fit
-              tyres for cars, SUVs, vans and light commercial vehicles while you relax at home or
-              continue working.
+              We can supply tyres across different price ranges for cars, SUVs, vans and light commercial vehicles. Whether you want the lowest suitable budget option or prefer to compare it with mid-range and premium alternatives, we&apos;ll explain the available choices before you book.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -255,7 +245,7 @@ export default function CheapMobileTyreFittingPage() {
               className="text-2xl sm:text-[32px] font-bold"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
             >
-              How It Works
+              How Affordable Mobile Tyre Fitting Works
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 relative">
@@ -304,7 +294,7 @@ export default function CheapMobileTyreFittingPage() {
           </div>
           <div className="w-full lg:w-1/2">
             <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
-              Ready To Help
+              Ready to Help
             </span>
             <h2
               className="text-2xl sm:text-4xl font-bold text-[#0f172a] mb-5 leading-tight"
@@ -313,10 +303,7 @@ export default function CheapMobileTyreFittingPage() {
               Affordable Tyre Fitting Without the Garage Wait
             </h2>
             <p className="text-slate-600 text-base leading-relaxed mb-6">
-              Our mobile tyre fitting service brings professional technicians and competitively priced
-              tyres directly to you. No queuing, no wasted journeys, and no hidden costs. Whether you
-              need budget-friendly tyres or a premium brand, we supply and fit them at your
-              convenience.
+              Our <strong>budget mobile tyre fitting</strong> service combines competitive tyre prices with the convenience of professional fitting at your location. You can compare different tyre options without travelling between garages looking for a better price. Whether you need a single replacement tyre or several new tyres, we&apos;ll help you choose an option that matches your vehicle, driving needs and budget.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
@@ -325,7 +312,7 @@ export default function CheapMobileTyreFittingPage() {
                 style={{ fontFamily: 'var(--font-work-sans)' }}
               >
                 <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
-                07759 708 646
+                Call: 07759 708 646
               </a>
               <a
                 href="https://wa.me/447759708646"
@@ -352,7 +339,7 @@ export default function CheapMobileTyreFittingPage() {
             <div>
               <span className="text-xs font-bold text-[#b70011] uppercase tracking-widest mb-1 block">Switching from run-flats?</span>
               <p className="font-bold text-[#0f172a]">Run-Flat vs Normal Tyres: What You Need to Know</p>
-              <p className="text-sm text-slate-500">The real difference, whether you can mix them, and what it costs to switch to cheaper tyres.</p>
+              <p className="text-sm text-slate-500">Understand the differences, whether switching is suitable for your vehicle and what to consider before choosing a lower-cost tyre option.</p>
             </div>
             <span className="material-symbols-outlined text-slate-400 group-hover:text-[#b70011] group-hover:translate-x-1 transition-all shrink-0">arrow_forward</span>
           </a>
@@ -369,11 +356,10 @@ export default function CheapMobileTyreFittingPage() {
             className="text-2xl sm:text-[32px] font-bold text-[#0f172a] mb-4"
             style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
           >
-            Budget, Mid-Range &amp; Premium Tyres — Every Job Quoted Upfront
+            Budget, Mid-Range &amp; Premium Tyres – Quoted Upfront
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-base mb-8">
-            Tell us your tyre size and location and we&apos;ll confirm your exact price by phone
-            or WhatsApp before we dispatch — no hidden fees, no surprises on arrival.
+            The cheapest tyre is not always the best choice for every vehicle, which is why we give you options. Send us your tyre size or vehicle registration and location. We&apos;ll check available <strong>budget tyres, mid-range tyres and premium tyres</strong>, explain the prices and confirm your quote before dispatch.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a

@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Horwich | One Stop Mobile Tyres 24/7',
   description:
-    'Choose mobile tyre fitting in Horwich for fast, reliable emergency tyre replacement today.',
+    'Professional mobile tyre fitting across Horwich, with same day fitting and 24/7 emergency tyre support delivered directly to your location.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-horwich' },
 }
 
@@ -60,19 +60,19 @@ export default function HorwichPage() {
           />
           <div className="relative z-10 max-w-2xl py-20">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}>
-              24/7 Mobile Tyre Fitting Horwich
+              Mobile Tyre Fitting Horwich – Fast Tyre Support 24/7
             </h1>
             <p className="text-white/80 text-base leading-relaxed mb-6">
-              Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance Across Horwich. We Come To Your Home, Workplace Or Roadside Location Within 20–30 Minutes.
+              Tyre trouble in Horwich can stop anything from a short local journey to a trip towards the M61. One Stop Mobile Tyres 24/7 provides fast mobile tyre fitting across Horwich, bringing professional equipment and suitable tyre options directly to your location.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
               {[
-                '20–30 Minute Emergency Response',
-                'Mobile Tyre Fitting At Home, Work Or Roadside',
-                'Emergency Tyre Replacement & Puncture Repair',
-                'Covering Horwich & Surrounding Areas 24/7',
+                '20–30 Minute Response Across Horwich',
+                'Same Day Mobile Tyre Fitting Available',
+                'Emergency Mobile Tyre Fitting 24/7',
+                'Premium, Mid-Range & Budget Tyres',
                 'Card, Cash & Contactless Payments Accepted',
-                'Fully Insured Professional Tyre Technicians',
+                'Fully Insured Professional Mobile Tyre Fitters',
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2.5 text-white/90">
                   <span className="material-symbols-outlined text-green-400 shrink-0" style={{ fontSize: '20px', fontVariationSettings: "'FILL' 1" }}>check_circle</span>
@@ -148,25 +148,25 @@ export default function HorwichPage() {
             <div className="text-center mb-10 sm:mb-16">
               <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">What We Do</span>
               <h2 className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}>
-                24/7 Mobile Tyre Fitting &amp; Emergency Tyre Repair In Horwich
+                Mobile Tyre Services Across Horwich
               </h2>
               <p className="text-slate-600 max-w-2xl mx-auto text-base">
-                Mobile tyre fitting, emergency tyre replacement and puncture repair across Horwich. We come to your home, workplace or roadside location 24/7 with fast response times and professional service.
+                From Chorley New Road and Horwich town centre to Middlebrook and routes towards the M61, tyre problems can happen without warning. Our mobile tyre service brings professional fitting equipment and suitable tyre options to your vehicle, helping you deal with the problem without driving on an unsafe tyre.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {[
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp', title: 'Mobile Tyre Fitting Horwich', desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Horwich. Fast response with premium and budget tyre options available.', badge: 'FAST RESPONSE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp', title: 'Mobile Tyre Fitting', desc: 'Our mobile tyre fitting service is designed around convenience and safety. A technician arrives with specialist equipment, removes the worn or damaged tyre and professionally fits a suitable replacement where the vehicle is safely positioned.', badge: 'MOBILE FITTING WHERE YOU NEED IT',
                   href: '/mobile-tyre-fitting' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp', title: 'Home Tyre Fitting', desc: 'Same day tyre fitting at your home across Horwich, without the hassle of visiting a garage.', badge: 'AT YOUR DOOR',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp', title: 'Mobile Tyre Replacement', desc: 'If impact damage, a split sidewall or excessive wear means the tyre cannot remain in use, our mobile tyre replacement service brings an appropriate replacement directly to you.', badge: 'A NEW TYRE WITHOUT AN EXTRA JOURNEY',
                   href: '/home-tyre-fitting' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp', title: 'Mobile Puncture Repair', desc: 'Professional mobile puncture repair across Horwich, carried out on-site where safe and suitable.', badge: 'CERTIFIED REPAIR',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp', title: 'Mobile Puncture Repair', desc: 'Not every puncture means replacing the entire tyre. Our technician checks the location and extent of the damage first and carries out a professional repair where it meets the required safety conditions.', badge: 'REPAIR WHEN THE TYRE ALLOWS IT',
                   href: '/emergency-puncture-repair' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp', title: 'Jump Start', desc: 'Flat battery as well as a flat tyre? Our mobile jump start service gets you back on the road in minutes, available 24/7 across Horwich.', badge: '24/7 SERVICE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp', title: 'Jump Start', desc: 'If a battery problem rather than a tyre has stopped your journey, our mobile technicians can also provide jump-start assistance across Horwich and nearby areas.', badge: 'SUPPORT FOR A FLAT BATTERY',
                   href: '/jump-start' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp', title: 'TPMS Reset', desc: 'Tyre pressure monitoring system reset and sensor checks across Horwich after every fitting or repair.', badge: 'ALL VEHICLES',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp', title: 'TPMS Reset', desc: 'After tyre fitting or repair, a pressure warning may sometimes remain active. We can check and reset the TPMS where needed so your monitoring system can continue working correctly.', badge: 'KEEPING YOUR PRESSURE SYSTEM ACCURATE',
                   href: '/tpms-reset' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp', title: 'Locking Nut Removal', desc: 'Specialist, damage-free locking wheel nut removal across Horwich using professional tools.', badge: 'DAMAGE FREE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp', title: 'Locking Nut Removal', desc: 'Lost your locking wheel nut key or dealing with a damaged nut? Our technicians use specialist equipment to remove difficult locking wheel nuts and allow the required tyre work to continue.', badge: "ACCESS WHEN A LOCKING NUT WON'T MOVE",
                   href: '/locking-nut-removal' },
               ].map((card) => (
                 <a key={card.title} href={card.href} className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]">
@@ -194,8 +194,8 @@ export default function HorwichPage() {
             </div>
             <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
-                <p className="text-slate-400 text-base">Speak directly to a technician for an instant quote and arrival time.</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need a Tyre Technician in Horwich?</h3>
+                <p className="text-slate-400 text-base">Call or WhatsApp with your vehicle registration, tyre size and exact location. We can check available tyres, explain your options and provide an estimated arrival time.</p>
               </div>
               <a href="tel:07759708646" className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap" style={{ fontFamily: 'var(--font-work-sans)' }}>
                 07759 708 646
@@ -223,25 +223,32 @@ export default function HorwichPage() {
             <div className="w-full lg:w-1/2">
               <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">The Best Choice</span>
               <h2 className="text-2xl sm:text-4xl lg:text-5xl text-[#0f172a] mb-5 sm:mb-8 leading-tight font-bold" style={{ fontFamily: 'var(--font-work-sans)' }}>
-                Expert Mobile Tyre Fitting Service Across Horwich
+                Mobile Tyre Fitting Around Horwich&apos;s Main Travel Routes
               </h2>
               <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg">
-                One Stop Tyres provides 24/7 mobile tyre fitting in Horwich, helping drivers get back on the road quickly when they experience a puncture, tyre blowout or damaged tyre.
-                Our mobile tyre experts come directly to your home, workplace or roadside location anywhere in Horwich and surrounding areas.
-                We supply and fit premium and budget tyres, carry out mobile puncture repairs where safe and suitable, and provide emergency tyre replacement services throughout Horwich.
-                If you&apos;re searching for mobile tyre fitting near me in Horwich, our fast response team is available day and night.
+                Horwich has a different driving pattern from central Bolton. Local journeys move between the town centre, Middlebrook, Horwich Parkway, Blackrod and the surrounding routes leading towards the M61. That makes mobile tyre support particularly useful when a damaged tyre leaves the vehicle unsafe to continue. Our mobile car tyre fitting service allows the technician to travel to the vehicle rather than asking you to reach a tyre centre first. Mobile fitting equipment is carried on the van, along with access to premium, mid-range and budget tyre options for many common cars. We cover Horwich town centre, areas around Chorley New Road, Lee Lane, Middlebrook, Horwich Parkway and surrounding residential streets, as well as nearby Blackrod, Rivington and Montserrat. Whether a tyre problem appears before a commute, after shopping or during a longer journey through the area, we can arrange the right type of support based on the condition of the tyre.
               </p>
               <ul className="space-y-4 sm:space-y-5">
-                <FeatureItem icon="bolt" title="24/7 Mobile Tyre Fitting" desc="Tyres fitted at your home, workplace or roadside location." />
-                <FeatureItem icon="engineering" title="Emergency Tyre Replacement" desc="Fast replacement of damaged or unsafe tyres across Greater Manchester." />
-                <FeatureItem icon="sell" title="Mobile Puncture Repair" desc="Professional puncture repairs where safe and suitable." />
+                <FeatureItem icon="bolt" title="Same Day Mobile Tyre Fitting" desc="If you discover a worn or damaged tyre and want it sorted without delaying your plans, our same day mobile tyre fitting service is available for many popular tyre sizes." />
+                <FeatureItem icon="engineering" title="Emergency Mobile Tyre Fitting" desc="A blowout or sudden loss of pressure can make continued driving unsafe. Our emergency mobile tyre fitting service operates around the clock for urgent tyre problems across Horwich." />
+                <FeatureItem icon="sell" title="Mobile Tyre Replacement Service" desc="When the tyre is beyond safe repair, our mobile tyre replacement service supplies an appropriate replacement and professionally fits it at a suitable location." />
               </ul>
             </div>
           </div>
         </section>
 
         {/* ── 5. WHY CHOOSE US */}
-        <WhyChooseUs city="Horwich" image="/images/tyre-fitting-in-emergency.webp" />
+        <WhyChooseUs
+          city="Horwich"
+          image="/images/tyre-fitting-in-emergency.webp"
+          heading="Why Horwich Drivers Choose One Stop Mobile Tyres 24/7"
+          responseTitle="Useful for Both Local and Longer Journeys"
+          responseDesc="Horwich drivers may be travelling locally, heading towards Bolton or joining the motorway network. Our mobile service gives you one point of contact when tyre trouble interrupts any of those journeys."
+          callOutTitle="Tyre Choices Before the Technician Arrives"
+          callOutDesc="We can discuss premium, mid-range and budget options based on your vehicle and tyre size. This helps you understand the available choices before the technician is dispatched."
+          certifiedTitle="Professional Mobile Equipment"
+          certifiedDesc="Our professional mobile tyre fitters arrive equipped to remove and install tyres on-site. The aim is proper fitting using suitable equipment rather than relying on a temporary solution just to move the vehicle."
+        />
 
         {/* ── 6. BRAND CAROUSEL */}
         <BrandCarousel />
@@ -255,21 +262,37 @@ export default function HorwichPage() {
         {/* ── 7. FAQ */}
         <CityFaq
           canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-horwich" city="Horwich" faqs={[
-          { q: 'How fast can you reach Horwich town centre?', a: 'Typically, our nearest technician can be with you in Horwich town centre within 20-30 minutes, depending on traffic on Lee Lane and Chorley New Road.' },
-          { q: 'Do you cover the M61 near Horwich (Junction 6)?', a: 'Yes. Our vehicles carry high-intensity safety lighting to carry out safe roadside tyre changes near the M61 Junction 6 Horwich interchange, close to the Middlebrook retail park.' },
-          { q: 'Do you cover Blackrod, Rivington and Montserrat as well?', a: 'Yes, we cover the whole of Horwich and the surrounding areas including Blackrod, Rivington and Montserrat, with 24/7 availability.' },
-          { q: 'Can you fit tyres near Middlebrook or Horwich town centre?', a: 'Absolutely. We regularly attend Horwich, including car parks near Middlebrook Retail and Leisure Park and Lee Lane, fitting tyres wherever it is safe to park.' },
+          { q: 'How quickly can you provide mobile tyre fitting in Horwich?', a: 'Our normal response target across Greater Manchester is around 20–30 minutes. The exact arrival time depends on traffic, your position, tyre availability and the nearest available technician.' },
+          { q: 'Do you offer 24/7 mobile tyre fitting in Horwich?', a: 'Yes. Our 24/7 mobile tyre fitting service operates throughout the day and night, including weekends and bank holidays, subject to technician and tyre availability.' },
+          { q: 'Can I arrange same day tyre fitting in Horwich?', a: 'Yes. Same day tyre fitting is available for many common tyre sizes. Providing your vehicle registration or full tyre size allows us to check suitable stock before dispatch.' },
+          { q: 'What does your mobile tyre service include?', a: "Our mobile tyre service can include checking the tyre problem, removing the damaged or worn tyre, supplying a suitable replacement and carrying out professional fitting at the vehicle's location." },
+          { q: 'Can you provide mobile tyre replacement in Horwich?', a: 'Yes. If the existing tyre is unsafe, excessively worn or too badly damaged to repair, we can arrange mobile tyre replacement and bring an appropriate tyre directly to you.' },
+          { q: 'What is a mobile tyre replacement service?', a: 'Our mobile tyre replacement service means the tyre and fitting equipment come to the vehicle. The unusable tyre is removed and the replacement is fitted without requiring a separate visit to a tyre centre.' },
+          { q: 'Do you provide an emergency tyre service?', a: 'Yes. Our emergency tyre service operates around the clock for tyre problems that leave a vehicle unsafe or unable to continue normally.' },
+          { q: 'Can you carry out mobile car tyre fitting for different vehicles?', a: 'Yes. Our mobile car tyre fitting service covers many common makes and models. Give us your registration or tyre size so we can check the appropriate specification.' },
+          { q: 'Can you help with a flat tyre around Middlebrook?', a: 'Yes. We provide flat tyre assistance around Horwich, including suitable locations near Middlebrook. We can assess whether the tyre is potentially repairable or whether replacement is required.' },
+          { q: 'Do you cover Horwich Parkway?', a: 'Yes. Our technicians cover Horwich and areas around Horwich Parkway. Share your exact position and vehicle details so we can arrange the most suitable technician.' },
+          { q: 'Can you help near M61 Junction 6?', a: 'Yes. We cover Horwich and the road network around M61 Junction 6. If the tyre problem occurs on a motorway itself, follow motorway safety guidance and move to a safe location where possible before arranging tyre assistance.' },
+          { q: 'Do you cover Chorley New Road and Lee Lane?', a: 'Yes. We provide mobile tyre assistance across Horwich, including suitable locations around Chorley New Road, Lee Lane and surrounding streets.' },
+          { q: 'Do you cover Blackrod and Rivington?', a: 'Yes. Our Horwich coverage extends into Blackrod, Rivington and nearby areas, subject to technician availability and the tyre required.' },
+          { q: 'Can I have a tyre fitted on my drive?', a: 'If the vehicle is parked with enough safe working room for the technician and equipment, having a tyre fitted on your drive may be possible. Tell us about the parking position when arranging your fitting.' },
+          { q: 'How can I arrange fast mobile tyre fitting in Horwich?', a: 'For fast mobile tyre fitting, send us your exact location, registration and tyre size. Having these details ready helps us identify an appropriate tyre before the technician sets off.' },
+          { q: 'Why is professional tyre fitting important?', a: 'Professional tyre fitting uses suitable equipment to remove and install the tyre correctly. It also gives the technician an opportunity to check the visible condition of the tyre and wheel during the work.' },
+          { q: 'Are your technicians professional mobile tyre fitters?', a: 'Yes. Our professional mobile tyre fitters work with many common tyre sizes and vehicle types using equipment designed for mobile fitting.' },
+          { q: 'Do you provide a reliable mobile tyre service in Horwich?', a: 'Our reliable mobile tyre service is built around clear communication, suitable tyre choices and professional fitting at your location.' },
+          { q: 'Are trusted mobile tyre fitters available overnight?', a: 'Yes. Our trusted mobile tyre fitters provide emergency support across Horwich overnight as well as during the day, subject to availability.' },
+          { q: 'What should I do if I need an emergency tyre replacement near the M61?', a: 'Move the vehicle to the safest available location and contact us with your exact position, registration and tyre size. We can then check stock and arrange the appropriate emergency tyre replacement response.' },
         ]} />
 
         {/* ── 8. FINAL CTA */}
         <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Horwich Right Now?</h2>
-            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Horwich line and get a technician dispatched in minutes.</p>
+            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need Mobile Tyre Fitting in Horwich Today?</h2>
+            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Whether a tyre problem has interrupted a local journey through Horwich or stopped you before joining the M61, you do not need to drive further on an unsafe tyre. Call or WhatsApp One Stop Mobile Tyres 24/7 with your location, vehicle registration and tyre size. We will check suitable options and arrange a technician to come to you.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
               <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl" href="tel:07759708646">
                 <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>
-                07759 708 646
+                Call: 07759 708 646
               </a>
               <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#1c1b1b] hover:bg-slate-800 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl" href="https://wa.me/447759708646">
                 <span className="material-symbols-outlined text-[#25D366] text-xl sm:text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>chat</span>

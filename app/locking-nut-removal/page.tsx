@@ -3,9 +3,9 @@ import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/sche
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'Locking Wheel Nut Removal | Damage-Free, 24/7',
+  title: 'Locking Wheel Nut Removal | Specialist Mobile Service',
   description:
-    'Damage-free locking nut removal at your location, 24/7 service.',
+    'Specialist mobile locking wheel nut removal across Greater Manchester for lost keys, rounded heads and seized fittings.',
   path: '/locking-nut-removal',
 })
 
@@ -19,83 +19,95 @@ const _serviceSchema = serviceSchema({
   name: 'Locking Nut Removal',
   serviceType: 'Locking Wheel Nut Removal',
   description:
-    'Specialist, damage-free locking wheel nut removal available 24/7, wherever you are. Lost your key or dealing with damaged nuts? We come to you and sort it without harming your alloys.',
+    'Professional locking wheel nut removal across Greater Manchester using specialist extraction equipment for lost keys, damaged nuts, rounded heads and seized fittings.',
 })
 
 const faqs = [
   {
-    q: 'Will it damage my alloy wheels?',
-    a: 'Absolutely not. We use non-destructive specialist tools specifically engineered to grip the locking nut without touching or scratching the surrounding alloy wheel surface.',
+    q: 'Can you remove a locking wheel nut without the original key?',
+    a: 'Yes, in many cases. Our locking wheel nut removal service uses specialist extraction equipment when the original locking nut key is lost, damaged or no longer usable.',
   },
   {
-    q: 'Do you need the original locking nut key?',
-    a: 'No — that is the whole point of our service. We can remove almost all types of locking wheel nuts even if the original key is missing, damaged, or unknown.',
+    q: 'Can you remove a rounded locking wheel nut?',
+    a: 'Yes. We can assess rounded locking nut removal and use specialist equipment where standard sockets or locking keys can no longer grip the nut properly.',
   },
   {
-    q: 'Can you remove rounded or overtightened nuts?',
-    a: 'Yes. Our tools are effective against overtightened, rusted, or rounded-off nuts that standard wrenches and sockets simply cannot grip.',
+    q: 'Can you remove an overtightened or seized locking nut?',
+    a: 'Often, yes. Seized locking wheel nut removal may require a different extraction method depending on how tight or damaged the nut is and the condition of the wheel.',
   },
   {
-    q: 'How long does it take to arrive?',
-    a: 'We aim to reach you as quickly as possible. Response times vary by location and current demand.',
+    q: 'Will removing the locking nut damage my alloy wheel?',
+    a: 'The aim is always to remove the locking nut while minimising the risk of damage to the surrounding wheel. The exact method depends on the type and condition of the nut, so the technician assesses it before starting.',
   },
   {
-    q: 'Do you replace the locking nut after removal?',
-    a: 'Yes. Once the locking nut is removed we can fit a standard replacement wheel nut so your wheel is properly secured.',
+    q: 'Do you offer mobile locking wheel nut removal?',
+    a: 'Yes. Our mobile locking wheel nut removal service allows a technician to come to your location with the specialist equipment needed for the job.',
   },
   {
-    q: 'Can you remove locking nuts from all vehicle makes and models?',
-    a: 'Yes. Our technicians have experience removing locking nuts from all makes and models including cars, SUVs and light commercial vehicles.',
+    q: 'Can you help if my locking wheel nut key is damaged?',
+    a: 'Yes. A worn, cracked or damaged locking wheel nut key may no longer grip the nut correctly. We can assess the situation and use an alternative specialist removal method where appropriate.',
   },
   {
-    q: 'What if I need a tyre change after the nut is removed?',
-    a: 'No problem. Our mobile technicians carry a range of tyres and can fit a replacement tyre on the spot.',
+    q: 'Can you replace the wheel nut after removal?',
+    a: 'Where a suitable replacement is available, we can fit a replacement wheel nut after the locking nut has been removed.',
+  },
+  {
+    q: 'Can you remove locking wheel nuts from cars and vans?',
+    a: 'We can assist with many cars, SUVs and light commercial vehicles. Send us your registration and, if possible, a photo of the locking nut so we can assess the likely requirements.',
+  },
+  {
+    q: 'What if I need a tyre changed after the locking nut is removed?',
+    a: 'If tyre replacement is also required, tell us when booking. Our mobile tyre service may be able to complete the additional tyre work once the locking nut has been removed.',
+  },
+  {
+    q: 'How quickly can you reach me?',
+    a: 'Response time depends on your location, traffic and technician availability. We aim to arrange assistance as quickly as possible across Greater Manchester.',
   },
 ]
 
 const whyChooseUs = [
   {
     icon: '🔩',
-    title: 'Specialist Tools',
-    desc: 'Non-destructive removal tools engineered to grip locking nuts without touching the alloy wheel surface.',
+    title: 'Specialist Extraction Tools',
+    desc: 'We use purpose-built equipment for locking nut removal, including difficult cases where a normal locking key or socket can no longer grip the nut.',
   },
   {
     icon: '✅',
-    title: 'No Alloy Damage',
-    desc: 'Our method is specifically designed to leave your alloy wheels in pristine condition every single time.',
+    title: 'Care Around Alloy Wheels',
+    desc: 'Every job is assessed before removal begins. Our technicians work carefully around the wheel surface and choose the most suitable method for the nut and vehicle.',
   },
   {
     icon: '⚡',
-    title: 'Fast Response',
-    desc: 'We dispatch a specialist immediately so you are not left waiting unnecessarily.',
+    title: 'Help for Rounded or Seized Nuts',
+    desc: 'We can assist with rounded locking nuts, overtightened nuts and seized locking wheel nuts that standard tools may not be able to remove.',
   },
   {
     icon: '💷',
-    title: 'No Hidden Charges',
-    desc: 'Clear, upfront pricing quoted before we start. You always know exactly what you are paying.',
+    title: 'Clear Upfront Pricing',
+    desc: 'Tell us your vehicle details and the problem with the locking nut. We will explain the expected work and pricing before the technician starts.',
   },
 ]
 
 const steps = [
   {
     n: '1',
-    title: 'Call Us',
-    desc: 'Contact our team with your vehicle details, location and the issue with your locking nut.',
+    title: 'Tell Us the Problem',
+    desc: 'Call or WhatsApp with your vehicle registration, location and what has happened to the locking wheel nut or key.',
   },
   {
     n: '2',
-    title: 'Share Location',
-    desc: 'Share your exact location so we can dispatch the nearest available specialist with the right equipment.',
+    title: 'Share Your Location',
+    desc: 'Send your exact address or WhatsApp location pin so we can arrange the most suitable available technician.',
   },
   {
     n: '3',
-    title: 'Tech Dispatched',
-    desc: 'Our locking nut removal specialist arrives at your vehicle ready to work safely and efficiently.',
+    title: 'Technician Assesses the Nut',
+    desc: 'The technician checks the locking nut, wheel and available access before selecting the appropriate specialist removal method.',
   },
   {
     n: '4',
-    title: 'Nut Removed',
-    desc: 'We extract the locking nut using specialist tools, fit a replacement nut and carry out any additional tyre work required.',
+    title: 'Locking Nut Removed',
+    desc: 'The nut is carefully extracted using specialist equipment. Where required and available, a suitable replacement wheel nut can then be fitted before any further tyre work is carried out.',
   },
 ]
 
@@ -129,34 +141,31 @@ export default function LockingNutRemovalPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
               </span>
-              24/7 Rapid Assistance
+              Specialist Locking Nut Removal
             </div>
 
             <h1
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white font-black mb-5 leading-[1.1]"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              Locking Wheel Nut Removal — Specialist, Damage-Free Service
+              Locking Wheel Nut Removal – Specialist Mobile Service
             </h1>
 
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-4">
-              Lost your locking nut key or damaged beyond use? Our specialist mobile technicians
-              provide damage-free locking wheel nut removal wherever you are, available
-              24/7. No need for recovery trucks or waiting at a garage.
+              Lost your locking wheel nut key, damaged the key or found that the locking nut will not move? <strong>One Stop Mobile Tyres 24/7</strong> provides professional <strong>locking wheel nut removal</strong> across Greater Manchester, using specialist extraction equipment at your location.
             </p>
             <p className="text-slate-400 text-base leading-relaxed mb-8">
-              Using professional grade extraction tools, we remove locking wheel nuts without
-              causing any damage to your alloys. Whether the key is lost, worn or broken, we have
-              the equipment and expertise to resolve the problem quickly at your location.
+              We can assist with lost keys, worn locking nuts, rounded heads and seized fittings. Our technicians assess the wheel and nut first, then use the most appropriate removal method to gain access while taking care around the alloy wheel.
             </p>
 
             <ul className="space-y-2 mb-8">
               {[
-                '24/7 Availability, Wherever You Are',
-                'Specialist Non-Destructive Removal Method',
-                'No Alloy Wheel Damage Guaranteed',
-                'Lost Key or Damaged Key — No Problem',
-                'No Hidden Charges',
+                'Mobile Locking Wheel Nut Removal',
+                'Lost or Damaged Locking Nut Key Assistance',
+                'Rounded & Seized Locking Nut Removal',
+                'Specialist Extraction Equipment',
+                '24/7 Greater Manchester Coverage',
+                'Clear Pricing Before Work Begins',
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-white/90 text-sm sm:text-base font-medium">
                   <span className="text-green-400 text-lg">✓</span>
@@ -172,7 +181,7 @@ export default function LockingNutRemovalPage() {
                 style={{ fontFamily: 'var(--font-work-sans)' }}
               >
                 <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
-                Call Now
+                Call: 07759 708 646
               </a>
               <a
                 href="https://wa.me/447759708646"
@@ -213,18 +222,13 @@ export default function LockingNutRemovalPage() {
               className="text-2xl sm:text-4xl font-bold text-[#0f172a] mb-5 leading-tight"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
-              Damage-Free Locking Wheel Nut Removal At Your Location
+              Professional Locking Wheel Nut Removal at Your Location
             </h2>
             <p className="text-slate-600 text-base leading-relaxed mb-4">
-              A lost or damaged locking wheel nut key can leave you completely stuck. Without the
-              correct key, standard tools cannot remove the nut, making it impossible to change a
-              tyre or carry out brake work. Our specialist mobile technicians carry the equipment
-              needed to extract locking nuts safely without causing damage to your alloys.
+              A damaged or missing locking wheel nut key can stop a tyre change, brake repair or wheel removal from going ahead. Our <strong>mobile locking wheel nut removal</strong> service brings specialist equipment directly to your vehicle, avoiding the need to arrange recovery simply because the locking nut cannot be removed.
             </p>
             <p className="text-slate-600 text-base leading-relaxed mb-8">
-              We come directly to your home, workplace or roadside location, saving you the cost
-              and inconvenience of a recovery truck. Once the nut is removed, we can fit a
-              standard replacement and carry out any additional tyre work required on the spot.
+              The technician checks the locking nut, wheel design and condition before selecting the appropriate extraction method. Where possible, the aim is to remove the nut carefully while minimising the risk of damage to the surrounding wheel.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -258,7 +262,7 @@ export default function LockingNutRemovalPage() {
               className="text-2xl sm:text-[32px] font-bold"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
             >
-              How It Works
+              How Locking Wheel Nut Removal Works
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 relative">
@@ -313,13 +317,10 @@ export default function LockingNutRemovalPage() {
               className="text-2xl sm:text-4xl font-bold text-[#0f172a] mb-5 leading-tight"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
-              Stuck Because of a Locking Nut? We&apos;ll Come To You
+              Lost or Damaged Your Locking Wheel Nut Key?
             </h2>
             <p className="text-slate-600 text-base leading-relaxed mb-6">
-              Whether you have lost the locking nut key, the key has worn down over time, or the
-              nut has been rounded, our specialist technicians have dealt with every scenario. We
-              work across all vehicle makes and models and guarantee a non-destructive removal
-              every time. Call us now and we will dispatch a technician to your location.
+              A missing or damaged locking key can become a serious problem when you need to remove the wheel urgently. It may prevent a tyre replacement, puncture repair, brake job or other work from being completed. <strong>One Stop Mobile Tyres 24/7</strong> provides <strong>emergency locking nut removal</strong> across Greater Manchester for lost keys, damaged locking nuts, rounded heads and seized fittings. Send us your vehicle registration, location and, if possible, a clear photo of the locking wheel nut. This can help us understand the problem before the technician travels.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
@@ -328,7 +329,7 @@ export default function LockingNutRemovalPage() {
                 style={{ fontFamily: 'var(--font-work-sans)' }}
               >
                 <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
-                07759 708 646
+                Call: 07759 708 646
               </a>
               <a
                 href="https://wa.me/447759708646"
@@ -384,11 +385,10 @@ export default function LockingNutRemovalPage() {
           className="text-2xl sm:text-3xl font-bold mb-3"
           style={{ fontFamily: 'var(--font-work-sans)' }}
         >
-          Stuck Because of a Locking Nut?
+          Need a Locking Wheel Nut Removed?
         </h2>
         <p className="text-slate-400 text-base mb-8 max-w-lg mx-auto">
-          Don&apos;t waste time trying to force it off. Call us now and our specialist technician
-          will come to you and remove it safely without damaging your alloys.
+          If a lost key, rounded nut or seized locking wheel nut is stopping your tyre or wheel work, avoid forcing it with unsuitable tools. Call or WhatsApp <strong>One Stop Mobile Tyres 24/7</strong> with your location, vehicle registration and details of the problem. We will arrange a <strong>specialist mobile locking nut removal service</strong> at your location. <strong>One Stop Mobile Tyres 24/7</strong> — Alliance Mill, Willow St, Oldham OL1 3QH, United Kingdom — 07759 708 646
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
@@ -397,7 +397,7 @@ export default function LockingNutRemovalPage() {
             style={{ fontFamily: 'var(--font-work-sans)' }}
           >
             <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
-            07759 708 646
+            Call: 07759 708 646
           </a>
           <a
             href="https://wa.me/447759708646"

@@ -19,7 +19,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = buildMetadata({
   title: 'Mobile Tyre Fitting in Bolton | One Stop Mobile Tyres 24/7',
   description:
-    'Professional mobile tyre fitting in Bolton — same day fitting, quick call-out service.',
+    'Professional mobile tyre fitting across Bolton, with same day and 24/7 emergency tyre support delivered directly to your vehicle.',
   path: '/mobile-tyre-fitting-bolton',
 })
 
@@ -65,22 +65,22 @@ export default function BoltonPage() {
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              24/7 Mobile Tyre Fitting Bolton
+              Mobile Tyre Fitting Bolton – 24/7 Tyre Help Across the Borough
             </h1>
 
             <p className="text-white/80 text-base leading-relaxed mb-6">
-              Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance Across Bolton. We Come To Your Home, Workplace Or Roadside Location Within 20–30 Minutes.
+              Tyre trouble can stop a journey anywhere in Bolton, from a busy route into town to a residential street or a journey towards the M61. One Stop Mobile Tyres 24/7 brings professional mobile tyre fitting directly to your vehicle, with same day and emergency support available around the clock.
             </p>
 
             {/* Trust bullets */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
               {[
-                '20–30 Minute Emergency Response',
-                'Mobile Tyre Fitting At Home, Work Or Roadside',
-                'Emergency Tyre Replacement & Puncture Repair',
-                'Covering Bolton & Surrounding Areas 24/7',
+                '20–30 Minute Response Across Bolton',
+                'Same Day Mobile Tyre Fitting Available',
+                'Emergency Mobile Tyre Fitting 24/7',
+                'Premium, Mid-Range & Budget Tyres',
                 'Card, Cash & Contactless Payments Accepted',
-                'Fully Insured Professional Tyre Technicians',
+                'Professional Mobile Tyre Fitters',
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2.5 text-white/90">
                   <span
@@ -188,10 +188,10 @@ export default function BoltonPage() {
                 className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight"
                 style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
               >
-                24/7 Mobile Tyre Fitting &amp; Emergency Tyre Repair In Bolton
+                Mobile Tyre Services for Bolton Drivers
               </h2>
               <p className="text-slate-600 max-w-2xl mx-auto text-base">
-                Mobile tyre fitting, emergency tyre replacement and puncture repair across Bolton. We come to your home, workplace or roadside location 24/7 with fast response times and professional service.
+                Bolton&apos;s busy roads, from the A666 to the M61, can make tyre trouble especially disruptive. Our mobile tyre service brings professional fitting equipment and suitable tyre options directly to your location, so there&apos;s no need to drive an unsafe vehicle to a garage.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -199,43 +199,43 @@ export default function BoltonPage() {
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp',
                   title: 'Mobile Tyre Fitting',
-                  desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Bolton. Fast response with premium and budget tyre options available.',
-                  badge: 'FAST RESPONSE',
+                  desc: 'Our mobile tyre fitting service brings the tyre fitting process to you. We attend cars across Bolton with the equipment needed to remove worn or damaged tyres and professionally fit suitable replacements on-site.',
+                  badge: 'FITTING WITHOUT THE GARAGE QUEUE',
                   href: '/mobile-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp',
-                  title: 'Home Tyre Fitting',
-                  desc: 'Same day tyre fitting at your home across Bolton, without the hassle of visiting a garage.',
-                  badge: 'AT YOUR DOOR',
+                  title: 'Mobile Tyre Replacement',
+                  desc: 'If a tyre has suffered a blowout, sidewall damage or excessive wear, replacement may be the safest option. Our mobile tyre replacement service supplies and fits an appropriate tyre at your location.',
+                  badge: 'REPLACEMENT WHEN DAMAGE IS TOO SERIOUS',
                   href: '/home-tyre-fitting',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp',
                   title: 'Mobile Puncture Repair',
-                  desc: 'Professional mobile puncture repair across Bolton, carried out on-site where safe and suitable.',
-                  badge: 'CERTIFIED REPAIR',
+                  desc: 'Where a puncture falls within a repairable area and the tyre remains structurally safe, our technicians can carry out a professional puncture repair rather than replacing the entire tyre unnecessarily.',
+                  badge: 'REPAIR BEFORE REPLACEMENT',
                   href: '/emergency-puncture-repair',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp',
                   title: 'Jump Start',
-                  desc: 'Flat battery as well as a flat tyre? Our mobile jump start service gets you back on the road in minutes, available 24/7 across Bolton.',
-                  badge: '24/7 SERVICE',
+                  desc: 'Battery problems can leave you stranded just as quickly as tyre damage. Our mobile technicians also provide jump-start assistance throughout Bolton when your vehicle needs help getting started.',
+                  badge: 'HELP WHEN YOUR CAR WILL NOT START',
                   href: '/jump-start',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp',
                   title: 'TPMS Reset',
-                  desc: 'Tyre pressure monitoring system reset and sensor checks across Bolton after every fitting or repair.',
-                  badge: 'ALL VEHICLES',
+                  desc: 'If a tyre pressure warning remains active after tyre work, we can inspect and reset the TPMS where required, helping the system continue monitoring pressure correctly.',
+                  badge: 'KEEP YOUR TYRE WARNING SYSTEM WORKING',
                   href: '/tpms-reset',
                 },
                 {
                   img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp',
                   title: 'Locking Nut Removal',
-                  desc: 'Specialist, damage-free locking wheel nut removal across Bolton using professional tools.',
-                  badge: 'DAMAGE FREE',
+                  desc: 'A damaged locking nut or missing key can prevent tyre work from going ahead. We use specialist equipment to remove difficult locking wheel nuts while taking care around the wheel.',
+                  badge: 'WHEN THE LOCKING KEY IS LOST OR DAMAGED',
                   href: '/locking-nut-removal',
                 },
               ].map((card) => (
@@ -277,9 +277,9 @@ export default function BoltonPage() {
             </div>
             <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Tyre Help in Bolton?</h3>
                 <p className="text-slate-400 text-base">
-                  Speak directly to a technician for an instant quote and arrival time.
+                  Call or WhatsApp with your vehicle registration, tyre size and exact location. We can check suitable tyre options, explain the price and give you an expected arrival time.
                 </p>
               </div>
               <a
@@ -325,29 +325,26 @@ export default function BoltonPage() {
                 className="text-2xl sm:text-4xl lg:text-5xl text-[#0f172a] mb-5 sm:mb-8 leading-tight font-bold"
                 style={{ fontFamily: 'var(--font-work-sans)' }}
               >
-                Expert Mobile Tyre Fitting Service Across Bolton
+                Mobile Tyre Fitting for Bolton&apos;s Busy Roads and Neighbourhoods
               </h2>
               <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg">
-                One Stop Tyres provides 24/7 mobile tyre fitting in Bolton, helping drivers get back on the road quickly when they experience a puncture, tyre blowout or damaged tyre.
-                Our mobile tyre experts come directly to your home, workplace or roadside location anywhere in Bolton and surrounding areas.
-                We supply and fit premium and budget tyres, carry out mobile puncture repairs where safe and suitable, and provide emergency tyre replacement services throughout Bolton.
-                If you&apos;re searching for mobile tyre fitting near me in Bolton, our fast response team is available day and night.
+                Bolton combines a busy town centre with large residential areas and major routes connecting drivers towards Manchester, Chorley, Bury and Wigan. That means a tyre problem can happen during almost any type of journey. Our mobile car tyre fitting service is designed for that variety. Instead of asking you to move the vehicle on a damaged tyre, our technician travels to a suitable location and completes the fitting with mobile equipment. We cover Bolton town centre as well as surrounding areas such as Farnworth, Horwich, Westhoughton and nearby neighbourhoods. We also regularly support drivers travelling around the M61, A666 and other main routes through the borough. Premium, mid-range and budget tyres are available for many common vehicle sizes. Send us your vehicle registration or tyre markings when booking so we can check suitable options before dispatch.
               </p>
               <ul className="space-y-4 sm:space-y-5">
                 <FeatureItem
                   icon="bolt"
-                  title="24/7 Mobile Tyre Fitting"
-                  desc="Tyres fitted at your home, workplace or roadside location."
+                  title="Same Day Mobile Tyre Fitting"
+                  desc="Need the problem resolved today? Our same day mobile tyre fitting service is available for many common tyre sizes, helping you avoid delaying an important journey or waiting for another garage appointment."
                 />
                 <FeatureItem
                   icon="engineering"
-                  title="Emergency Tyre Replacement"
-                  desc="Fast replacement of damaged or unsafe tyres across Greater Manchester."
+                  title="Emergency Mobile Tyre Fitting"
+                  desc="A sudden blowout or serious tyre failure can leave your vehicle unsafe to continue. Our emergency mobile tyre fitting service operates around the clock for drivers who need urgent assistance across Bolton."
                 />
                 <FeatureItem
                   icon="sell"
-                  title="Mobile Puncture Repair"
-                  desc="Professional puncture repairs where safe and suitable."
+                  title="Mobile Tyre Replacement Service"
+                  desc="When a damaged or worn tyre needs changing, our mobile tyre replacement service allows the replacement to be supplied and professionally fitted at a suitable location without a separate garage visit."
                 />
               </ul>
             </div>
@@ -355,7 +352,17 @@ export default function BoltonPage() {
         </section>
 
         {/* ── 5. WHY BOLTON DRIVERS CHOOSE US ──────────────── */}
-        <WhyChooseUs city="Bolton" image="/images/tyres-fitting-anywhere.webp" />
+        <WhyChooseUs
+          city="Bolton"
+          image="/images/tyres-fitting-anywhere.webp"
+          heading="Why Bolton Drivers Choose One Stop Mobile Tyres 24/7"
+          responseTitle="We Come to the Vehicle"
+          responseDesc="Driving on a badly damaged tyre can make the problem worse and may be unsafe. Our mobile setup allows the technician to bring the tyre, tools and fitting equipment to your location instead."
+          callOutTitle="Options for Different Budgets"
+          callOutDesc="Not every driver wants the same tyre. We can discuss premium, mid-range and budget options before dispatch, helping you choose a tyre that suits your vehicle, driving needs and budget."
+          certifiedTitle="Professional Fitting On-Site"
+          certifiedDesc="Our professional mobile tyre fitters use specialist mobile equipment to carry out tyre replacement correctly. We work with a wide range of common cars and tyre sizes across Bolton."
+        />
 
         {/* ── 6. BRAND CAROUSEL ─────────────────────────────── */}
         <BrandCarousel />
@@ -372,20 +379,80 @@ export default function BoltonPage() {
           city="Bolton"
           faqs={[
             {
-              q: 'How quickly can you reach me in Bolton?',
-              a: 'Our mobile units are strategically positioned across Bolton, meaning we can typically reach Bolton Town Centre, Farnworth, Horwich, and surrounding areas within 20-30 minutes.',
+              q: 'How quickly can you provide mobile tyre fitting in Bolton?',
+              a: 'Our usual response target across Greater Manchester is around 20–30 minutes. The exact arrival time depends on traffic, your location, technician availability and the tyre required.',
             },
             {
-              q: 'Do you cover the M61 and A666 in Bolton?',
-              a: 'Yes. We provide full motorway and A-road emergency tyre fitting across the M61, A666, A58, and all major routes through the Bolton borough.',
+              q: 'Do you provide 24/7 mobile tyre fitting in Bolton?',
+              a: 'Yes. Our 24/7 mobile tyre fitting service operates day and night across Bolton, including evenings, weekends and bank holidays, subject to technician and tyre availability.',
             },
             {
-              q: 'What tyre brands do you carry for Bolton customers?',
-              a: 'Our vans carry premium brands such as Michelin, Continental and Bridgestone alongside quality mid-range and budget tyres, so we can match the right option to your Bolton fitting on the day.',
+              q: 'Can I book same day tyre fitting in Bolton?',
+              a: 'Yes. Same day tyre fitting is available for many common tyre sizes. Contact us with your vehicle registration or tyre size and we can check stock before arranging the fitting.',
             },
             {
-              q: 'Can you fit tyres at my workplace in Farnworth or Horwich?',
-              a: 'Yes. We regularly attend business parks and workplaces across Farnworth, Horwich and Westhoughton, fitting your tyres while you carry on with your day.',
+              q: 'What is included in your mobile tyre service?',
+              a: 'Our mobile tyre service can include assessing the tyre problem, removing the worn or damaged tyre, supplying a suitable replacement and completing the professional fitting at your location.',
+            },
+            {
+              q: 'Can you provide mobile tyre replacement in Bolton?',
+              a: 'Yes. If your existing tyre is badly damaged, excessively worn or unsuitable for repair, we can provide mobile tyre replacement using an appropriate tyre for your vehicle.',
+            },
+            {
+              q: 'What is a mobile tyre replacement service?',
+              a: 'A mobile tyre replacement service means the technician brings the required tyre and fitting equipment to you, removes the unusable tyre and fits the replacement without you visiting a tyre centre.',
+            },
+            {
+              q: 'Do you offer an emergency tyre service in Bolton?',
+              a: 'Yes. Our emergency tyre service is available when tyre damage leaves you unable to continue your journey safely. Give us your exact location and tyre details so we can arrange the right response.',
+            },
+            {
+              q: 'Can you carry out mobile car tyre fitting for different vehicles?',
+              a: 'Yes. Our mobile car tyre fitting service covers many common cars and tyre sizes. Providing your registration allows us to check the correct specification before dispatch.',
+            },
+            {
+              q: 'Can you help with a flat tyre?',
+              a: 'Yes. We provide flat tyre assistance across Bolton. Depending on the cause and condition of the tyre, the technician can determine whether repair or replacement is the appropriate solution.',
+            },
+            {
+              q: 'Do you cover the M61 around Bolton?',
+              a: 'Yes. We provide tyre assistance around the M61 and surrounding Bolton routes. If you are on a motorway, follow motorway safety guidance and move to a safe location wherever possible before contacting us.',
+            },
+            {
+              q: 'Do you cover the A666?',
+              a: 'Yes. Our technicians cover suitable locations around the A666 and other main roads running through Bolton. Give us your exact position so we can identify the nearest available technician.',
+            },
+            {
+              q: 'Do you cover Farnworth, Horwich and Westhoughton?',
+              a: 'Yes. Our Bolton coverage includes Farnworth, Horwich and Westhoughton, as well as Bolton town centre and surrounding neighbourhoods.',
+            },
+            {
+              q: 'Can I have a tyre fitted on my drive?',
+              a: 'Where there is enough safe working space around the vehicle, having a tyre fitted on your drive may be possible. Tell us about the parking position when booking so we can confirm suitability.',
+            },
+            {
+              q: 'How do I arrange fast mobile tyre fitting in Bolton?',
+              a: 'For fast mobile tyre fitting, send us your exact location, vehicle registration and tyre size. Having these details ready helps us identify an appropriate tyre and organise dispatch more efficiently.',
+            },
+            {
+              q: 'Why use professional tyre fitting?',
+              a: 'Professional tyre fitting uses suitable equipment and procedures to remove and install tyres correctly. The technician can also check the visible condition of the tyre and wheel while completing the job.',
+            },
+            {
+              q: 'Are your technicians professional mobile tyre fitters?',
+              a: 'Yes. Our professional mobile tyre fitters use dedicated equipment and provide mobile fitting for a wide range of common cars and tyre sizes across Greater Manchester.',
+            },
+            {
+              q: 'Do you provide a reliable mobile tyre service in Bolton?',
+              a: 'Our reliable mobile tyre service focuses on clear communication, suitable tyre choices and professional fitting where your vehicle is located.',
+            },
+            {
+              q: 'Do trusted mobile tyre fitters cover Bolton at night?',
+              a: 'Yes. Our trusted mobile tyre fitters provide both scheduled and emergency support across Bolton day and night, subject to technician and tyre availability.',
+            },
+            {
+              q: 'What happens if I need an emergency tyre replacement late at night?',
+              a: 'Call or WhatsApp with your location, tyre size and vehicle details. We can check the required tyre and arrange an available technician for emergency tyre replacement where possible.',
             },
           ]}
         />
@@ -393,15 +460,15 @@ export default function BoltonPage() {
         {/* ── 8. FINAL CTA ──────────────────────────────────── */}
         <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Bolton Right Now?</h2>
-            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Bolton line and get a technician dispatched in minutes.</p>
+            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need Mobile Tyre Fitting in Bolton Today?</h2>
+            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Whether you have found a damaged tyre before setting off or a tyre problem has already stopped your journey, One Stop Mobile Tyres 24/7 can bring the fitting service to you. Send us your vehicle details, tyre size and location. We will check suitable tyre options and arrange a technician to attend you in Bolton.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
               <a
                 className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl"
                 href="tel:07759708646"
               >
                 <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>
-                07759 708 646
+                Call: 07759 708 646
               </a>
               <a
                 className="flex items-center justify-center gap-2 sm:gap-3 bg-[#1c1b1b] hover:bg-slate-800 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl"

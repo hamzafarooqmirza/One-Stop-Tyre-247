@@ -16,9 +16,9 @@ const _serviceSchema = serviceSchema({
 })
 
 export const metadata = {
-  title: 'Mobile Tyre Fitting Westhoughton | One Stop Mobile Tyres 24/7',
+  title: 'Mobile Tyre Fitting in Westhoughton | One Stop Mobile Tyres 24/7',
   description:
-    'Mobile tyre fitting in Westhoughton — emergency replacement, same day, trusted fitters.',
+    'Professional mobile tyre fitting across Westhoughton, with same day fitting and 24/7 emergency tyre support delivered directly to your location.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-westhoughton' },
 }
 
@@ -60,19 +60,19 @@ export default function WesthoughtonPage() {
           />
           <div className="relative z-10 max-w-2xl py-20">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}>
-              24/7 Mobile Tyre Fitting Westhoughton
+              Mobile Tyre Fitting Westhoughton – 24/7 Tyre Help Where You Are
             </h1>
             <p className="text-white/80 text-base leading-relaxed mb-6">
-              Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance Across Westhoughton. We Come To Your Home, Workplace Or Roadside Location Within 20–30 Minutes.
+              A damaged tyre in Westhoughton can interrupt anything from a short local trip to a journey towards Bolton or Wigan. One Stop Mobile Tyres 24/7 brings professional mobile tyre fitting directly to your vehicle, with same day and emergency support available day and night.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
               {[
-                '20–30 Minute Emergency Response',
-                'Mobile Tyre Fitting At Home, Work Or Roadside',
-                'Emergency Tyre Replacement & Puncture Repair',
-                'Covering Westhoughton & Surrounding Areas 24/7',
+                '20–30 Minute Response Across Westhoughton',
+                'Same Day Mobile Tyre Fitting Available',
+                'Emergency Mobile Tyre Fitting 24/7',
+                'Premium, Mid-Range & Budget Tyres',
                 'Card, Cash & Contactless Payments Accepted',
-                'Fully Insured Professional Tyre Technicians',
+                'Professional Mobile Tyre Fitters',
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2.5 text-white/90">
                   <span className="material-symbols-outlined text-green-400 shrink-0" style={{ fontSize: '20px', fontVariationSettings: "'FILL' 1" }}>check_circle</span>
@@ -148,25 +148,25 @@ export default function WesthoughtonPage() {
             <div className="text-center mb-10 sm:mb-16">
               <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">What We Do</span>
               <h2 className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}>
-                24/7 Mobile Tyre Fitting &amp; Emergency Tyre Repair In Westhoughton
+                Mobile Tyre Services Across Westhoughton
               </h2>
               <p className="text-slate-600 max-w-2xl mx-auto text-base">
-                Mobile tyre fitting, emergency tyre replacement and puncture repair across Westhoughton. We come to your home, workplace or roadside location 24/7 with fast response times and professional service.
+                From Market Street and Wigan Road to the A58 and nearby residential areas, tyre trouble can stop a journey without warning. Our mobile tyre service brings fitting equipment and suitable tyre options directly to your vehicle, so you do not need to drive further on an unsafe tyre.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {[
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp', title: 'Mobile Tyre Fitting Westhoughton', desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Westhoughton. Fast response with premium and budget tyre options available.', badge: 'FAST RESPONSE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp', title: 'Mobile Tyre Fitting', desc: 'Our mobile tyre fitting service is designed for worn, damaged or unusable tyres that need professional attention where the vehicle is parked. A technician arrives with specialist equipment and fits a suitable replacement on-site.', badge: 'FITTING BROUGHT TO YOUR VEHICLE',
                   href: '/mobile-tyre-fitting' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp', title: 'Home Tyre Fitting', desc: 'Same day tyre fitting at your home across Westhoughton, without the hassle of visiting a garage.', badge: 'AT YOUR DOOR',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp', title: 'Mobile Tyre Replacement', desc: 'If a tyre has suffered a blowout, sidewall damage or heavy wear, our mobile tyre replacement service allows a suitable tyre to be supplied and fitted without a separate trip to a garage.', badge: 'WHEN A TYRE NEEDS REPLACING',
                   href: '/home-tyre-fitting' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp', title: 'Mobile Puncture Repair', desc: 'Professional mobile puncture repair across Westhoughton, carried out on-site where safe and suitable.', badge: 'CERTIFIED REPAIR',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp', title: 'Mobile Puncture Repair', desc: 'A puncture does not always mean replacing the tyre. Our technician first checks the position and extent of the damage and repairs the tyre where it meets the required safety standards.', badge: 'REPAIR WHERE THE DAMAGE ALLOWS',
                   href: '/emergency-puncture-repair' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp', title: 'Jump Start', desc: 'Flat battery as well as a flat tyre? Our mobile jump start service gets you back on the road in minutes, available 24/7 across Westhoughton.', badge: '24/7 SERVICE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp', title: 'Jump Start', desc: 'If battery trouble is what has stopped your journey, our mobile technicians can also provide jump-start assistance across Westhoughton and nearby areas.', badge: 'SUPPORT FOR A FLAT BATTERY',
                   href: '/jump-start' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp', title: 'TPMS Reset', desc: 'Tyre pressure monitoring system reset and sensor checks across Westhoughton after every fitting or repair.', badge: 'ALL VEHICLES',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp', title: 'TPMS Reset', desc: 'If your tyre pressure warning remains active after fitting or repair work, we can inspect and reset the TPMS where required.', badge: 'CHECKING TYRE PRESSURE WARNINGS',
                   href: '/tpms-reset' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp', title: 'Locking Nut Removal', desc: 'Specialist, damage-free locking wheel nut removal across Westhoughton using professional tools.', badge: 'DAMAGE FREE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp', title: 'Locking Nut Removal', desc: 'A missing key or damaged locking wheel nut can prevent normal tyre work. Our technicians use specialist removal tools to gain access to the wheel while taking care around the fitting.', badge: "HELP WITH LOCKING WHEEL NUTS",
                   href: '/locking-nut-removal' },
               ].map((card) => (
                 <a key={card.title} href={card.href} className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]">
@@ -194,8 +194,8 @@ export default function WesthoughtonPage() {
             </div>
             <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
-                <p className="text-slate-400 text-base">Speak directly to a technician for an instant quote and arrival time.</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Tyre Help in Westhoughton?</h3>
+                <p className="text-slate-400 text-base">Call or WhatsApp with your registration, tyre size and exact location. We can check suitable tyre options, confirm pricing and provide an expected arrival time.</p>
               </div>
               <a href="tel:07759708646" className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap" style={{ fontFamily: 'var(--font-work-sans)' }}>
                 07759 708 646
@@ -223,25 +223,32 @@ export default function WesthoughtonPage() {
             <div className="w-full lg:w-1/2">
               <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">The Best Choice</span>
               <h2 className="text-2xl sm:text-4xl lg:text-5xl text-[#0f172a] mb-5 sm:mb-8 leading-tight font-bold" style={{ fontFamily: 'var(--font-work-sans)' }}>
-                Expert Mobile Tyre Fitting Service Across Westhoughton
+                Mobile Tyre Fitting Between Bolton and Wigan
               </h2>
               <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg">
-                One Stop Tyres provides 24/7 mobile tyre fitting in Westhoughton, helping drivers get back on the road quickly when they experience a puncture, tyre blowout or damaged tyre.
-                Our mobile tyre experts come directly to your home, workplace or roadside location anywhere in Westhoughton and surrounding areas.
-                We supply and fit premium and budget tyres, carry out mobile puncture repairs where safe and suitable, and provide emergency tyre replacement services throughout Westhoughton.
-                If you&apos;re searching for mobile tyre fitting near me in Westhoughton, our fast response team is available day and night.
+                Westhoughton sits on an important local route between Bolton and Wigan, with regular traffic moving through the town centre and along Wigan Road, Park Road and surrounding streets. A tyre problem here can affect both local journeys and longer trips across the borough. Our mobile car tyre fitting service is designed to remove the need to drive the vehicle further when a tyre is unsafe. The technician comes to a suitable location with professional equipment and access to premium, mid-range and budget tyre options for many common cars. We cover Westhoughton town centre as well as Chequerbent, Wingates, Daisy Hill and nearby residential areas, plus suitable locations around the A58 and other main routes through the town. Whether you discover a worn tyre before setting off or suffer sudden damage during a journey, we can arrange the right type of assistance based on the condition of the tyre.
               </p>
               <ul className="space-y-4 sm:space-y-5">
-                <FeatureItem icon="bolt" title="24/7 Mobile Tyre Fitting" desc="Tyres fitted at your home, workplace or roadside location." />
-                <FeatureItem icon="engineering" title="Emergency Tyre Replacement" desc="Fast replacement of damaged or unsafe tyres across Greater Manchester." />
-                <FeatureItem icon="sell" title="Mobile Puncture Repair" desc="Professional puncture repairs where safe and suitable." />
+                <FeatureItem icon="bolt" title="Same Day Mobile Tyre Fitting" desc="If you need the problem sorted before the day is over, our same day mobile tyre fitting service is available for many common tyre sizes." />
+                <FeatureItem icon="engineering" title="Emergency Mobile Tyre Fitting" desc="A sudden blowout or serious loss of pressure can make the vehicle unsafe to continue. Our emergency mobile tyre fitting service operates 24 hours a day across Westhoughton." />
+                <FeatureItem icon="sell" title="Mobile Tyre Replacement Service" desc="When repair is not suitable, our mobile tyre replacement service brings the required replacement and fitting equipment directly to the vehicle." />
               </ul>
             </div>
           </div>
         </section>
 
         {/* ── 5. WHY CHOOSE US */}
-        <WhyChooseUs city="Westhoughton" image="/images/tyre-fitting-in-emergency.webp" />
+        <WhyChooseUs
+          city="Westhoughton"
+          image="/images/tyre-fitting-in-emergency.webp"
+          heading="Why Westhoughton Drivers Choose One Stop Mobile Tyres 24/7"
+          responseTitle="Useful Across Local and Commuter Routes"
+          responseDesc="Westhoughton drivers regularly travel towards Bolton, Wigan and surrounding areas. Our mobile service gives you one practical option when a tyre problem interrupts any of those journeys."
+          callOutTitle="Tyre Options for Different Budgets"
+          callOutDesc="We can discuss premium, mid-range and budget tyres before dispatch. This helps you choose an option that suits both your vehicle and your budget."
+          certifiedTitle="Professional Fitting at the Vehicle"
+          certifiedDesc="Our professional mobile tyre fitters use dedicated mobile equipment to remove and install tyres correctly at a suitable location, rather than relying on a temporary fix simply to move the car."
+        />
 
         {/* ── 6. BRAND CAROUSEL */}
         <BrandCarousel />
@@ -255,21 +262,37 @@ export default function WesthoughtonPage() {
         {/* ── 7. FAQ */}
         <CityFaq
           canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-westhoughton" city="Westhoughton" faqs={[
-          { q: 'How fast can you reach Westhoughton town centre?', a: 'Typically, our nearest technician can be with you in Westhoughton town centre within 20-30 minutes, depending on traffic on Market Street and Wigan Road.' },
-          { q: 'Do you cover the M61 near Westhoughton?', a: 'Yes. Our vehicles carry high-intensity safety lighting to carry out safe roadside tyre changes near the M61 junctions around Westhoughton and Hindley.' },
-          { q: 'Do you cover Chequerbent, Wingates and Daisy Hill as well?', a: 'Yes, we cover the whole of Westhoughton and the surrounding areas including Chequerbent, Wingates and Daisy Hill, with 24/7 availability.' },
-          { q: 'Can you fit tyres near Westhoughton Market or the town centre?', a: 'Absolutely. We regularly attend Westhoughton town centre, including car parks near the market and Market Street shops, fitting tyres wherever it is safe to park.' },
+          { q: 'How quickly can you provide mobile tyre fitting in Westhoughton?', a: 'Our normal response target across Greater Manchester is around 20–30 minutes. The exact ETA depends on traffic, tyre availability and the location of the nearest technician.' },
+          { q: 'Do you provide 24/7 mobile tyre fitting in Westhoughton?', a: 'Yes. Our 24/7 mobile tyre fitting service operates day and night, including weekends and bank holidays, subject to technician and tyre availability.' },
+          { q: 'Can I arrange same day tyre fitting in Westhoughton?', a: 'Yes. Same day tyre fitting is available for many common tyre sizes. Send us your registration or full tyre size so we can check stock before dispatch.' },
+          { q: 'What does your mobile tyre service include?', a: 'Our mobile tyre service can include assessing the tyre, removing a worn or damaged tyre, supplying a suitable replacement and completing professional fitting at your location.' },
+          { q: 'Can you provide mobile tyre replacement in Westhoughton?', a: 'Yes. If the tyre is unsafe, excessively worn or beyond repair, we can arrange mobile tyre replacement and bring a suitable tyre directly to the vehicle.' },
+          { q: 'What is included in a mobile tyre replacement service?', a: 'A mobile tyre replacement service means we bring the replacement tyre and fitting equipment to your vehicle, remove the unusable tyre and fit the new one on-site.' },
+          { q: 'Do you offer an emergency tyre service at night?', a: 'Yes. Our emergency tyre service operates throughout the night for tyre problems that leave the vehicle unsafe to continue.' },
+          { q: 'Do you provide mobile car tyre fitting for different vehicles?', a: 'Yes. Our mobile car tyre fitting service covers many common makes and models. Your registration or tyre size helps us identify the correct specification before sending the technician.' },
+          { q: 'Can you help with a flat tyre in Westhoughton?', a: "Yes. We provide flat tyre assistance throughout Westhoughton. Depending on the tyre's condition, the technician can determine whether repair or replacement is the safer solution." },
+          { q: 'Do you cover Westhoughton town centre and Market Street?', a: 'Yes. We attend suitable locations around Westhoughton town centre, Market Street and surrounding streets where there is enough safe working space.' },
+          { q: 'Do you cover Wigan Road and the A58?', a: 'Yes. Our technicians provide tyre assistance across Westhoughton and suitable locations around Wigan Road, Park Road and the A58.' },
+          { q: 'Do you cover Chequerbent, Wingates and Daisy Hill?', a: 'Yes. Our Westhoughton coverage includes Chequerbent, Wingates and Daisy Hill, subject to technician and tyre availability.' },
+          { q: 'Do you provide roadside tyre call-outs around Westhoughton?', a: 'Yes. Our roadside tyre call-outs cover suitable roads across the area. Tell us your exact position so we can assess the best and safest way to attend.' },
+          { q: 'Can I have a tyre fitted on my drive?', a: 'Where there is enough safe working space around the vehicle, having a tyre fitted on your drive may be possible. Tell us how the vehicle is parked when booking.' },
+          { q: 'How do I arrange fast mobile tyre fitting?', a: 'For fast mobile tyre fitting, send us your exact location, vehicle registration and tyre size. These details help us identify the required tyre and arrange dispatch more efficiently.' },
+          { q: 'Why should I use professional tyre fitting?', a: 'Professional tyre fitting uses suitable equipment to remove and install tyres correctly and allows the technician to inspect the visible tyre and wheel condition during the work.' },
+          { q: 'Are your technicians professional mobile tyre fitters?', a: 'Yes. Our professional mobile tyre fitters work with many common vehicles and tyre sizes using equipment designed specifically for mobile fitting.' },
+          { q: 'Do you provide a reliable mobile tyre service across Westhoughton?', a: 'Our reliable mobile tyre service focuses on clear communication, suitable tyre choices and professional fitting at your location.' },
+          { q: 'Are trusted mobile tyre fitters available overnight?', a: 'Yes. Our trusted mobile tyre fitters provide emergency assistance across Westhoughton overnight as well as during the day, subject to availability.' },
+          { q: 'Can you arrange emergency tyre replacement if I am already stranded?', a: 'Yes. Send us your exact location, registration and tyre size. We can check stock and arrange the most appropriate emergency tyre replacement response.' },
         ]} />
 
         {/* ── 8. FINAL CTA */}
         <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Westhoughton Right Now?</h2>
-            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Westhoughton line and get a technician dispatched in minutes.</p>
+            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need Mobile Tyre Fitting in Westhoughton Today?</h2>
+            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Whether your tyre has become unsafe before a local journey or failed while travelling between Bolton and Wigan, you do not need to keep driving on it. Call or WhatsApp One Stop Mobile Tyres 24/7 with your vehicle details, tyre size and location. We will check suitable options and arrange a technician to come to you in Westhoughton.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
               <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl" href="tel:07759708646">
                 <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>
-                07759 708 646
+                Call: 07759 708 646
               </a>
               <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#1c1b1b] hover:bg-slate-800 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl" href="https://wa.me/447759708646">
                 <span className="material-symbols-outlined text-[#25D366] text-xl sm:text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>chat</span>

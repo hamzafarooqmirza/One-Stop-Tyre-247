@@ -3,9 +3,9 @@ import { breadcrumbSchema, serviceSchema, faqSchema, SITE_URL } from '@/lib/sche
 import { buildMetadata } from '@/lib/seo'
 
 export const metadata = buildMetadata({
-  title: 'Home Tyre Fitting | Tyres Fitted At Your Door',
+  title: 'Home Tyre Fitting | Professional Service at Your Door',
   description:
-    'Home tyre fitting at your door — fitted on your driveway, 24/7, no hassle.',
+    'Professional home tyre fitting across Greater Manchester, with premium, mid-range and budget tyres fitted and balanced at your door.',
   path: '/home-tyre-fitting',
 })
 
@@ -19,83 +19,83 @@ const _serviceSchema = serviceSchema({
   name: 'Home Tyre Fitting',
   serviceType: 'Home Tyre Fitting',
   description:
-    'Professional, fast and reliable tyre fitting at your front door, available 24/7 wherever you are. No tow truck, no waiting rooms — we bring the garage to you.',
+    'Professional home tyre fitting across Greater Manchester, bringing suitable tyres and specialist fitting and balancing equipment directly to your driveway or another safe space outside your home.',
 })
 
 const faqs = [
   {
-    q: 'Do I need to be present during the fitting?',
-    a: "It's ideal for you to be home so we can confirm details and use your locking wheel nut key if needed. However, we can arrange contactless service if you can leave the key securely accessible.",
+    q: 'Can you fit new tyres on my driveway?',
+    a: 'Yes. If your driveway provides enough safe working space for the technician and equipment, we can complete professional tyre fitting at home without you needing to visit a garage.',
   },
   {
-    q: 'Can you work on my driveway?',
-    a: 'Yes — as long as there is enough space for our van to park safely near your car and room to work around the wheels, your driveway is the perfect location.',
+    q: 'Do I need to be at home while my tyres are fitted?',
+    a: 'We recommend being available when the technician arrives, particularly if access to the vehicle or locking wheel nut key is required. Other arrangements may be possible when agreed beforehand.',
   },
   {
-    q: 'What areas do you cover?',
-    a: 'We provide 24/7 coverage across our service area. Our network of mobile technicians means we are never far from you.',
+    q: 'Do you supply the tyres as well as fit them?',
+    a: 'Yes. Our home tyre fitting service includes supplying suitable replacement tyres. Premium, mid-range and budget options are available for many common tyre sizes.',
   },
   {
-    q: 'How quickly can you arrive?',
-    a: 'We aim to reach you as quickly as possible. Response times vary by your location and current demand.',
+    q: 'Is wheel balancing included with home tyre fitting?',
+    a: 'Yes. Our mobile vans carry balancing equipment, allowing the replacement wheel and tyre to be professionally balanced as part of the fitting service.',
   },
   {
-    q: 'Do you supply the tyres?',
-    a: 'Yes. We stock a wide range of premium, mid-range and budget tyres for all makes and models. Call us and we will confirm availability and pricing upfront before dispatch.',
+    q: 'Can you replace more than one tyre at my home?',
+    a: 'Yes. We can arrange a single tyre change at home, replace a pair or fit several new tyres depending on your requirements and tyre availability.',
   },
   {
-    q: 'Is wheel balancing included?',
-    a: 'Yes. Our mobile vans carry wheel balancing equipment so we carry out a full professional balance as part of every tyre fitting, giving you a garage-quality result at your door.',
+    q: 'What vehicles can you fit tyres for at home?',
+    a: 'Our home tyre fitters work with many cars, SUVs and light commercial vehicles. Send us your vehicle registration so we can check the appropriate tyre specification.',
   },
   {
-    q: 'Can you fit tyres on any vehicle?',
-    a: 'Yes. Our certified technicians are experienced with all vehicle makes and models including cars, SUVs and light commercial vehicles.',
+    q: 'How quickly can you arrange home tyre fitting?',
+    a: 'Our normal Greater Manchester response target is 20–30 minutes for urgent call-outs, while planned home fitting appointments can be arranged according to tyre stock, technician availability and your preferred time.',
   },
 ]
 
 const whyChooseUs = [
   {
     icon: '🏠',
-    title: 'Doorstep Service',
-    desc: 'Full tyre fitting completed on your driveway or outside your home — zero hassle and no need to leave.',
+    title: 'Doorstep Tyre Fitting',
+    desc: 'Have your tyres professionally replaced on your driveway or outside your home where there is enough safe working space around the vehicle.',
   },
   {
     icon: '⚡',
-    title: 'Fast Response',
-    desc: 'We dispatch quickly across our coverage area so you are not left waiting with an unsafe tyre any longer than necessary.',
+    title: 'Convenient Appointments',
+    desc: 'Arrange your home tyre fitting service around your day instead of spending time travelling to and waiting at a tyre garage.',
   },
   {
     icon: '🔧',
-    title: 'Expert Technicians',
-    desc: 'Certified professionals experienced with all vehicle makes and tyre types, delivering a garage-quality result on-site.',
+    title: 'Professional Home Tyre Fitters',
+    desc: 'Our technicians use specialist mobile equipment and proper fitting procedures to remove old tyres and professionally install their replacements.',
   },
   {
     icon: '🚐',
-    title: 'Fully Equipped',
-    desc: 'Our vans carry wheel fitting and balancing machinery for a professional finish at your front door.',
+    title: 'Fully Equipped Mobile Vans',
+    desc: 'Our vans carry tyre-fitting and wheel-balancing equipment, allowing the technician to complete professional tyre work at your home.',
   },
 ]
 
 const steps = [
   {
     n: '1',
-    title: 'Call Us',
-    desc: 'Contact our team with your vehicle details, tyre size and home address and we will confirm availability.',
+    title: 'Tell Us About Your Vehicle',
+    desc: 'Call or WhatsApp with your vehicle registration, tyre size if known, number of tyres required and your home address.',
   },
   {
     n: '2',
-    title: 'Confirm Tyres',
-    desc: 'We confirm the correct tyre size and stock availability before dispatch — no surprises on arrival.',
+    title: 'Choose Your Tyres',
+    desc: 'We check the correct specification and available premium, mid-range or budget options, then confirm the price before dispatch.',
   },
   {
     n: '3',
-    title: 'Tech Arrives',
-    desc: 'Our technician arrives at your door fully equipped with tyres, fitting machine and balancing equipment.',
+    title: 'We Come to Your Home',
+    desc: 'Your technician arrives with the selected tyres and professional fitting and balancing equipment.',
   },
   {
     n: '4',
-    title: 'Job Done',
-    desc: 'Tyres fitted and balanced to manufacturer specification — you never had to leave the house.',
+    title: 'Tyres Fitted & Balanced',
+    desc: 'The old tyres are removed and your replacements are fitted and balanced. Final tyre-pressure checks are completed before the job is finished.',
   },
 ]
 
@@ -129,35 +129,31 @@ export default function HomeTyreFittingPage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
               </span>
-              Available 24/7, Wherever You Are
+              Tyre Fitting at Your Door
             </div>
 
             <h1
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white font-black mb-5 leading-[1.1]"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              Home Tyre Fitting — The Garage Comes To Your Door
+              Home Tyre Fitting – Professional Service at Your Door
             </h1>
 
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-4">
-              Need new tyres but don&apos;t want the hassle of visiting a garage? Our mobile home
-              tyre fitting service brings a fully equipped technician directly to your driveway
-              or street, available 24/7 wherever you are. No tow trucks, no waiting
-              rooms, no wasted time.
+              Need new tyres without taking your car to a garage? <strong>One Stop Mobile Tyres 24/7</strong> provides professional <strong>home tyre fitting</strong> across Greater Manchester, bringing suitable tyres and specialist fitting equipment directly to your driveway or another safe space outside your home.
             </p>
             <p className="text-slate-400 text-base leading-relaxed mb-8">
-              We stock a wide range of premium, mid-range and budget tyres for all makes and
-              models. Call us and we will confirm availability and pricing upfront before
-              dispatch so there are no surprises on arrival.
+              Choose from premium, mid-range and budget tyres for cars, SUVs and light commercial vehicles. Tell us your vehicle registration or tyre size and we can check suitable options, confirm pricing and arrange your fitting before the technician is dispatched.
             </p>
 
             <ul className="space-y-2 mb-8">
               {[
-                'Professional Tyre Fitting At Your Front Door',
-                'Wheel Balancing Included As Standard',
-                'Wide Range Of Tyres For All Makes & Models',
-                'Available 24/7, Wherever You Are',
-                'No Hidden Charges — Upfront Pricing',
+                'Professional Tyre Fitting at Home',
+                'Wheel Balancing Included',
+                'Premium, Mid-Range & Budget Tyres',
+                'Cars, SUVs & Light Commercial Vehicles',
+                '24/7 Home Tyre Fitting Availability',
+                'Clear Pricing Before Dispatch',
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-white/90 text-sm sm:text-base font-medium">
                   <span className="text-green-400 text-lg">✓</span>
@@ -208,25 +204,19 @@ export default function HomeTyreFittingPage() {
 
           <div className="w-full lg:w-1/2">
             <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">
-              Mobile Tyre Fitting Specialists
+              Home Tyre Fitting Specialists
             </span>
             <h2
               className="text-2xl sm:text-4xl font-bold text-[#0f172a] mb-5 leading-tight"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
-              Professional Home Tyre Fitting Without The Garage Trip
+              Get Your Tyres Fitted Without Visiting a Garage
             </h2>
             <p className="text-slate-600 text-base leading-relaxed mb-4">
-              Experience the ultimate convenience with our door-to-door tyre fitting service.
-              Whether you&apos;ve woken up to a flat on your driveway or you simply don&apos;t
-              have time to visit a garage, our fully equipped mobile units come to you with
-              everything needed for a professional fitting — tyre machine, balancing equipment
-              and a wide range of tyres.
+              Our <strong>tyre fitting at home</strong> service gives you a simple way to replace worn or damaged tyres without arranging a trip to a tyre centre. A fully equipped technician comes to your home with the required tyres, fitting machinery and wheel-balancing equipment.
             </p>
             <p className="text-slate-600 text-base leading-relaxed mb-8">
-              Our certified technicians work on all vehicle makes and models and carry premium,
-              mid-range and budget tyre options so you get the right tyre at the right price,
-              fitted to manufacturer specification, without leaving your home.
+              Whether you need one tyre replaced or several new tyres fitted, our <strong>home tyre fitters</strong> can complete the work on your driveway or another suitable area outside your property. We supply premium, mid-range and budget options for many common vehicle types and tyre sizes.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -260,7 +250,7 @@ export default function HomeTyreFittingPage() {
               className="text-2xl sm:text-[32px] font-bold"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}
             >
-              How It Works
+              How Home Tyre Fitting Works
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 relative">
@@ -315,15 +305,10 @@ export default function HomeTyreFittingPage() {
               className="text-2xl sm:text-4xl font-bold text-[#0f172a] mb-5 leading-tight"
               style={{ fontFamily: 'var(--font-work-sans)' }}
             >
-              Need a Tyre Fitted at Home? We&apos;ll Come To You
+              Need New Tyres Fitted at Home?
             </h2>
             <p className="text-slate-600 text-base leading-relaxed mb-6">
-              Whether it is a morning flat before work, a routine tyre change you have been
-              putting off, or an emergency call-out at midnight, our mobile tyre fitting team
-              is available 24/7, wherever you are. Skip the tow truck and the garage
-              waiting room — stay comfortable at home while our technician takes care of
-              everything on your driveway. Call us now and we will confirm availability and
-              get someone to you fast.
+              Finding time for a garage appointment is not always easy. With our <strong>tyre change at home</strong> service, the fitting comes to you instead. You can arrange replacement for worn tyres, a planned tyre change or a tyre problem discovered while your vehicle is parked at home. <strong>One Stop Mobile Tyres 24/7</strong> provides home fitting across Greater Manchester, with 24/7 availability subject to tyre stock and technician availability. Send us your registration or tyre size and postcode, and we&apos;ll check suitable tyre options before arranging your appointment.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
@@ -332,7 +317,7 @@ export default function HomeTyreFittingPage() {
                 style={{ fontFamily: 'var(--font-work-sans)' }}
               >
                 <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
-                07759 708 646
+                Call: 07759 708 646
               </a>
               <a
                 href="https://wa.me/447759708646"
@@ -388,11 +373,10 @@ export default function HomeTyreFittingPage() {
           className="text-2xl sm:text-3xl font-bold mb-3"
           style={{ fontFamily: 'var(--font-work-sans)' }}
         >
-          Need a Tyre Fitted at Home?
+          Book Your Home Tyre Fitting
         </h2>
         <p className="text-slate-400 text-base mb-8 max-w-lg mx-auto">
-          Call now and we&apos;ll have a technician at your door fast. No tow trucks, no garage
-          trips — professional tyre fitting delivered straight to your driveway.
+          Get your tyres replaced without arranging a separate garage visit. Call or WhatsApp <strong>One Stop Mobile Tyres 24/7</strong> with your vehicle registration, tyre size and postcode, and we&apos;ll check suitable tyre options and arrange a technician to come to your home. <strong>One Stop Mobile Tyres 24/7</strong> — Alliance Mill, Willow St, Oldham OL1 3QH, United Kingdom
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
@@ -401,7 +385,7 @@ export default function HomeTyreFittingPage() {
             style={{ fontFamily: 'var(--font-work-sans)' }}
           >
             <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
-            07759 708 646
+            Call: 07759 708 646
           </a>
           <a
             href="https://wa.me/447759708646"

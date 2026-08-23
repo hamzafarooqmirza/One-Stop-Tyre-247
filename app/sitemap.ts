@@ -16,10 +16,10 @@ const SERVICE_PAGES = [
 ]
 
 const CITY_PAGES = [
-  'manchester', 'bolton', 'bury', 'oldham', 'rochdale', 'stockport', 'tameside', 'trafford', 'wigan',
+  'manchester', 'bolton', 'bury', 'oldham', 'rochdale', 'salford', 'stockport', 'tameside', 'trafford', 'wigan',
 ]
 
-// Town/district pages beyond the 9 boroughs — same location tier, still live and indexed.
+// Town/district pages beyond the 10 boroughs — same location tier, still live and indexed.
 const TOWN_PAGES = [
   'ashton-under-lyne', 'hyde', 'glossop', 'marple', 'wythenshawe', 'altrincham', 'sale',
   'urmston', 'stretford', 'eccles', 'prestwich', 'middleton', 'farnworth', 'radcliffe',

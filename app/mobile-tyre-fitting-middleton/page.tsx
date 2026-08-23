@@ -18,7 +18,7 @@ const _serviceSchema = serviceSchema({
 export const metadata = {
   title: 'Mobile Tyre Fitting in Middleton | One Stop Mobile Tyres 24/7',
   description:
-    'Professional mobile tyre fitting in Middleton — same day, trusted roadside support.',
+    'Professional mobile tyre fitting across Middleton, with same day fitting and 24/7 emergency tyre support delivered directly to your location.',
   alternates: { canonical: 'https://onestoptyres247.co.uk/mobile-tyre-fitting-middleton' },
 }
 
@@ -60,19 +60,19 @@ export default function MiddletonPage() {
           />
           <div className="relative z-10 max-w-2xl py-20">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}>
-              24/7 Mobile Tyre Fitting Middleton
+              Mobile Tyre Fitting Middleton – 24/7 Tyre Support Across the Area
             </h1>
             <p className="text-white/80 text-base leading-relaxed mb-6">
-              Emergency Tyre Replacement, Mobile Puncture Repair &amp; Roadside Tyre Assistance Across Middleton. We Come To Your Home, Workplace Or Roadside Location Within 20–30 Minutes.
+              A damaged tyre in Middleton can disrupt a local journey, a commute into Manchester or a trip towards the M60 and M62. One Stop Mobile Tyres 24/7 provides professional mobile tyre fitting across Middleton, bringing suitable tyres and specialist fitting equipment directly to your vehicle.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
               {[
-                '20–30 Minute Emergency Response',
-                'Mobile Tyre Fitting At Home, Work Or Roadside',
-                'Emergency Tyre Replacement & Puncture Repair',
-                'Covering Middleton & Surrounding Areas 24/7',
+                '20–30 Minute Response Across Middleton',
+                'Same Day Mobile Tyre Fitting Available',
+                'Emergency Mobile Tyre Fitting 24/7',
+                'Premium, Mid-Range & Budget Tyres',
                 'Card, Cash & Contactless Payments Accepted',
-                'Fully Insured Professional Tyre Technicians',
+                'Professional Mobile Tyre Fitters',
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2.5 text-white/90">
                   <span className="material-symbols-outlined text-green-400 shrink-0" style={{ fontSize: '20px', fontVariationSettings: "'FILL' 1" }}>check_circle</span>
@@ -148,25 +148,25 @@ export default function MiddletonPage() {
             <div className="text-center mb-10 sm:mb-16">
               <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-2 block">What We Do</span>
               <h2 className="text-2xl sm:text-[32px] font-bold text-slate-900 mb-3 leading-tight" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.01em' }}>
-                24/7 Mobile Tyre Fitting &amp; Emergency Tyre Repair In Middleton
+                Mobile Tyre Services Across Middleton
               </h2>
               <p className="text-slate-600 max-w-2xl mx-auto text-base">
-                Mobile tyre fitting, emergency tyre replacement and puncture repair across Middleton. We come to your home, workplace or roadside location 24/7 with fast response times and professional service.
+                From Manchester New Road and Middleton Way to Manchester Old Road and routes towards the M60, tyre trouble can happen at any point in your journey. Our mobile tyre service brings professional equipment and suitable tyre options directly to your vehicle, helping you avoid driving further on an unsafe tyre.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {[
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp', title: 'Mobile Tyre Fitting Middleton', desc: 'Mobile tyre fitting at your home, workplace or roadside location anywhere in Middleton. Fast response with premium and budget tyre options available.', badge: 'FAST RESPONSE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Fitting%20one%20Stop-airanko-gsjvsGamoet8drKwCMHYr6LH5Ni6ZI.webp', title: 'Mobile Tyre Fitting', desc: 'Our mobile tyre fitting service gives Middleton drivers a practical alternative to visiting a tyre centre. A technician travels to the vehicle, removes the worn or damaged tyre and fits an appropriate replacement using specialist mobile equipment.', badge: 'TYRE FITTING BROUGHT TO YOUR LOCATION',
                   href: '/mobile-tyre-fitting' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp', title: 'Home Tyre Fitting', desc: 'Same day tyre fitting at your home across Middleton, without the hassle of visiting a garage.', badge: 'AT YOUR DOOR',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Tyre%20Fitting%20One%20Stop-airanko-kPAsyn08SjxXwLwCVhxre5zM9jWBTs.webp', title: 'Mobile Tyre Replacement', desc: 'If a tyre has suffered severe damage, a blowout or excessive wear, our mobile tyre replacement service allows the replacement tyre to be supplied and fitted where your vehicle is safely parked.', badge: "REPLACEMENT FOR DAMAGED OR WORN TYRES",
                   href: '/home-tyre-fitting' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp', title: 'Mobile Puncture Repair', desc: 'Professional mobile puncture repair across Middleton, carried out on-site where safe and suitable.', badge: 'CERTIFIED REPAIR',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Puncture%20Repair%20One%20Stop-airanko-sfmhLvDbSYmhoMprTVOHCcIWEgJvHf.webp', title: 'Mobile Puncture Repair', desc: 'Some punctures can be professionally repaired rather than requiring a new tyre. Our technician first checks the location and extent of the damage and carries out a repair only where it meets the required safety conditions.', badge: "REPAIR WHEN THE DAMAGE IS SUITABLE",
                   href: '/emergency-puncture-repair' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp', title: 'Jump Start', desc: 'Flat battery as well as a flat tyre? Our mobile jump start service gets you back on the road in minutes, available 24/7 across Middleton.', badge: '24/7 SERVICE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/One%20Stop%20Jumpstart%20image-airanko-cXmOrXcdtaIBMNQOMCIOiPj1C290RG.webp', title: 'Jump Start', desc: 'If battery trouble has stopped the vehicle instead, our mobile technicians can also provide jump-start support across Middleton and surrounding areas.', badge: 'HELP WHEN YOUR BATTERY IS FLAT',
                   href: '/jump-start' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp', title: 'TPMS Reset', desc: 'Tyre pressure monitoring system reset and sensor checks across Middleton after every fitting or repair.', badge: 'ALL VEHICLES',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tyre%20pressure%20monitor-airanko-sjz7PL2Pv4N9jlPWtz5Wa1q8XO0FgP.webp', title: 'TPMS Reset', desc: 'If the tyre pressure warning remains active after fitting or repair work, we can inspect and reset the TPMS where required so the monitoring system can continue operating correctly.', badge: 'CHECKING TYRE PRESSURE SYSTEMS',
                   href: '/tpms-reset' },
-                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp', title: 'Locking Nut Removal', desc: 'Specialist, damage-free locking wheel nut removal across Middleton using professional tools.', badge: 'DAMAGE FREE',
+                { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Locking%20nut%20removal-airanko%20%281%29-ONBmqaZHMozU0jjrxbPe5J7C4zRQkS.webp', title: 'Locking Nut Removal', desc: 'A damaged locking nut or missing key can stop tyre work from going ahead. Our technicians use specialist removal tools to access the wheel and continue the required work safely.', badge: "SPECIALIST LOCKING NUT REMOVAL",
                   href: '/locking-nut-removal' },
               ].map((card) => (
                 <a key={card.title} href={card.href} className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all overflow-hidden border-b-4 border-[#b70011]">
@@ -194,8 +194,8 @@ export default function MiddletonPage() {
             </div>
             <div className="mt-10 sm:mt-12 bg-[#0f172a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-5 shadow-2xl text-center sm:text-left">
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Immediate Assistance?</h3>
-                <p className="text-slate-400 text-base">Speak directly to a technician for an instant quote and arrival time.</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Need Tyre Help in Middleton?</h3>
+                <p className="text-slate-400 text-base">Call or WhatsApp with your vehicle registration, tyre size and exact location. We can check suitable tyre options, confirm the price and provide an estimated arrival time.</p>
               </div>
               <a href="tel:07759708646" className="bg-[#FF4444] text-[#121212] font-black px-8 py-4 rounded-xl text-xl sm:text-2xl hover:scale-105 transition-transform shadow-lg shadow-red-900/20 whitespace-nowrap" style={{ fontFamily: 'var(--font-work-sans)' }}>
                 07759 708 646
@@ -223,25 +223,32 @@ export default function MiddletonPage() {
             <div className="w-full lg:w-1/2">
               <span className="text-[#b70011] font-bold uppercase tracking-widest text-sm mb-3 block">The Best Choice</span>
               <h2 className="text-2xl sm:text-4xl lg:text-5xl text-[#0f172a] mb-5 sm:mb-8 leading-tight font-bold" style={{ fontFamily: 'var(--font-work-sans)' }}>
-                Expert Mobile Tyre Fitting Service Across Middleton
+                Mobile Tyre Fitting for Middleton&apos;s Manchester Connections
               </h2>
               <p className="text-slate-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg">
-                One Stop Tyres provides 24/7 mobile tyre fitting in Middleton, helping drivers get back on the road quickly when they experience a puncture, tyre blowout or damaged tyre.
-                Our mobile tyre experts come directly to your home, workplace or roadside location anywhere in Middleton and surrounding areas.
-                We supply and fit premium and budget tyres, carry out mobile puncture repairs where safe and suitable, and provide emergency tyre replacement services throughout Middleton.
-                If you&apos;re searching for mobile tyre fitting near me in Middleton, our fast response team is available day and night.
+                Middleton sits close to Manchester while also connecting drivers towards Oldham, Rochdale, Bury and the wider motorway network. The A664 Manchester New Road provides a direct route towards Manchester, while Middleton Way and Manchester Old Road carry regular local and through traffic across the town. Our mobile car tyre fitting service is designed for drivers who cannot safely continue on a damaged tyre. Instead of asking you to reach a tyre centre first, a technician comes to the vehicle with professional mobile fitting equipment and suitable replacement options. We cover Middleton town centre and nearby areas including Alkrington, Langley, Rhodes and Boarshaw, together with suitable locations around Manchester New Road, Middleton Way and connecting roads. Premium, mid-range and budget tyre choices are available for many common cars. Providing your registration or tyre size before dispatch helps us identify the correct specification and available options.
               </p>
               <ul className="space-y-4 sm:space-y-5">
-                <FeatureItem icon="bolt" title="24/7 Mobile Tyre Fitting" desc="Tyres fitted at your home, workplace or roadside location." />
-                <FeatureItem icon="engineering" title="Emergency Tyre Replacement" desc="Fast replacement of damaged or unsafe tyres across Greater Manchester." />
-                <FeatureItem icon="sell" title="Mobile Puncture Repair" desc="Professional puncture repairs where safe and suitable." />
+                <FeatureItem icon="bolt" title="Same Day Mobile Tyre Fitting" desc="If you discover excessive wear or damage and want the tyre dealt with today, our same day mobile tyre fitting service is available for many popular tyre sizes." />
+                <FeatureItem icon="engineering" title="Emergency Mobile Tyre Fitting" desc="A sudden blowout, serious cut or rapid loss of pressure can make further driving unsafe. Our emergency mobile tyre fitting service operates throughout the day and night across Middleton." />
+                <FeatureItem icon="sell" title="Mobile Tyre Replacement Service" desc="When repair is not suitable, our mobile tyre replacement service brings the required replacement and fitting equipment directly to your vehicle." />
               </ul>
             </div>
           </div>
         </section>
 
         {/* ── 5. WHY CHOOSE US */}
-        <WhyChooseUs city="Middleton" image="/images/tyre-fitting-in-emergency.webp" />
+        <WhyChooseUs
+          city="Middleton"
+          image="/images/tyre-fitting-in-emergency.webp"
+          heading="Why Middleton Drivers Choose One Stop Mobile Tyres 24/7"
+          responseTitle="Useful for Local and Manchester-Bound Journeys"
+          responseDesc="Middleton drivers regularly travel between the town, Manchester and neighbouring boroughs. Our mobile service gives you a practical option when tyre trouble interrupts any of those journeys."
+          callOutTitle="Tyre Choices Before We Set Off"
+          callOutDesc="We can discuss premium, mid-range and budget options based on the vehicle and tyre size before dispatch. This helps you understand the available choices rather than making a rushed decision after the technician arrives."
+          certifiedTitle="Professional Mobile Fitting Equipment"
+          certifiedDesc="Our professional mobile tyre fitters use equipment designed specifically for mobile tyre work, allowing damaged or worn tyres to be replaced properly at a suitable location."
+        />
 
         {/* ── 6. BRAND CAROUSEL */}
         <BrandCarousel />
@@ -255,21 +262,39 @@ export default function MiddletonPage() {
         {/* ── 7. FAQ */}
         <CityFaq
           canonical="https://onestoptyres247.co.uk/mobile-tyre-fitting-middleton" city="Middleton" faqs={[
-          { q: 'How fast can you reach Middleton town centre?', a: 'Typically, our nearest technician can be with you in Middleton town centre within 20-30 minutes, depending on traffic on Manchester Old Road and Long Street.' },
-          { q: 'Do you cover the M60 near Middleton (Junctions 19-20)?', a: 'Yes. Our vehicles carry high-intensity safety lighting to carry out safe roadside tyre changes near the M60 Junctions 19 and 20 around Middleton.' },
-          { q: 'Do you cover Alkrington, Hopwood and Rhodes as well?', a: 'Yes, we cover the whole of Middleton and the surrounding areas including Alkrington, Hopwood and Rhodes, with 24/7 availability.' },
-          { q: 'Can you fit tyres near Middleton Gardens or the town centre?', a: 'Absolutely. We regularly attend Middleton town centre, including car parks near Middleton Gardens and the Arndale shopping centre, fitting tyres wherever it is safe to park.' },
+          { q: 'How quickly can you provide mobile tyre fitting in Middleton?', a: 'Our normal response target across Greater Manchester is around 20–30 minutes. The exact arrival time depends on traffic, the required tyre and the location of the nearest available technician.' },
+          { q: 'Do you provide 24/7 mobile tyre fitting in Middleton?', a: 'Yes. Our 24/7 mobile tyre fitting service operates day and night, including weekends and bank holidays, subject to tyre and technician availability.' },
+          { q: 'Can I arrange same day tyre fitting in Middleton?', a: 'Yes. Same day tyre fitting is available for many common tyre sizes. Send us your vehicle registration or complete tyre size so we can check suitable stock before dispatch.' },
+          { q: 'What does your mobile tyre service include?', a: 'Our mobile tyre service can include assessing the tyre problem, removing a damaged or worn tyre, supplying a suitable replacement and carrying out professional fitting at your location.' },
+          { q: 'Can you provide mobile tyre replacement in Middleton?', a: 'Yes. If the tyre is badly damaged, excessively worn or unsuitable for repair, we can arrange mobile tyre replacement and fit an appropriate replacement at your vehicle.' },
+          { q: 'What is included in a mobile tyre replacement service?', a: 'A mobile tyre replacement service means the replacement tyre and fitting equipment are brought to your vehicle. The unusable tyre is removed and the new tyre is professionally fitted on-site.' },
+          { q: 'Do you offer an emergency tyre service in Middleton?', a: 'Yes. Our emergency tyre service operates around the clock for tyre failures that leave your vehicle unsafe or unable to continue normally.' },
+          { q: 'Do you provide mobile car tyre fitting for different vehicles?', a: 'Yes. Our mobile car tyre fitting service covers many common makes and models. Providing the vehicle registration helps us identify the appropriate tyre specification before dispatch.' },
+          { q: 'Can you help with a flat tyre?', a: 'Yes. We provide flat tyre assistance throughout Middleton. The technician can determine whether the tyre may be repaired or whether replacement is the safer option.' },
+          { q: 'Do you cover Manchester New Road?', a: 'Yes. We attend suitable locations around Manchester New Road and the A664, as well as surrounding roads across Middleton.' },
+          { q: 'Do you cover Middleton Way and Manchester Old Road?', a: 'Yes. Our mobile tyre coverage includes suitable locations around Middleton Way and Manchester Old Road, subject to safe access and technician availability.' },
+          { q: 'Can you help near the M60?', a: 'Yes. Middleton sits close to the M60, and we provide tyre support around roads connecting to the motorway. If the tyre problem happens on the motorway itself, follow motorway safety guidance and move to a safe location wherever possible before arranging assistance.' },
+          { q: 'Do you cover Alkrington and Langley?', a: 'Yes. Our Middleton coverage includes Alkrington, Langley and surrounding neighbourhoods, subject to tyre stock and technician availability.' },
+          { q: 'Do you cover Rhodes and Boarshaw?', a: 'Yes. We also provide mobile tyre support around Rhodes, Boarshaw and nearby areas across Middleton.' },
+          { q: 'Do you provide roadside tyre call-outs around Middleton?', a: 'Yes. Our roadside tyre call-outs cover suitable locations throughout Middleton. Give us your exact position so we can determine the safest way to attend.' },
+          { q: 'Can I have a tyre fitted on my drive?', a: 'If there is enough safe working room around the vehicle, having a tyre fitted on your drive may be possible. Tell us how the vehicle is parked when arranging the call-out.' },
+          { q: 'How can I arrange fast mobile tyre fitting in Middleton?', a: 'For fast mobile tyre fitting, send us your exact location, vehicle registration and tyre size. Having these details ready helps us identify the required tyre and arrange dispatch efficiently.' },
+          { q: 'Why is professional tyre fitting important?', a: 'Professional tyre fitting uses suitable equipment to remove and install tyres correctly and allows the technician to check visible tyre and wheel condition while carrying out the work.' },
+          { q: 'Are your technicians professional mobile tyre fitters?', a: 'Yes. Our professional mobile tyre fitters work with many common vehicle types and tyre sizes using equipment designed specifically for mobile tyre fitting.' },
+          { q: 'Do you provide a reliable mobile tyre service in Middleton?', a: 'Our reliable mobile tyre service focuses on clear communication, suitable tyre choices and professional fitting where the vehicle is safely positioned.' },
+          { q: 'Are trusted mobile tyre fitters available overnight?', a: 'Yes. Our trusted mobile tyre fitters provide emergency support across Middleton overnight as well as during the day, subject to availability.' },
+          { q: 'Can you arrange emergency tyre replacement if I am already stranded?', a: 'Yes. Send us your exact location, vehicle registration and tyre size. We can check suitable stock and arrange the most appropriate emergency tyre replacement response.' },
         ]} />
 
         {/* ── 8. FINAL CTA */}
         <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#f0edec] relative">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need a Tyre Fitted in Middleton Right Now?</h2>
-            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Don&apos;t wait by the roadside. Call our dedicated Middleton line and get a technician dispatched in minutes.</p>
+            <h2 className="font-h2 text-xl sm:text-2xl lg:text-h2 mb-4 sm:mb-5 leading-tight">Need Mobile Tyre Fitting in Middleton Today?</h2>
+            <p className="font-body-lg text-base lg:text-lg text-[#5c403c] leading-relaxed mb-6 sm:mb-8">Whether a tyre problem has interrupted a local journey or stopped you while travelling towards Manchester, Oldham or the motorway network, avoid driving further if the tyre is unsafe. Call or WhatsApp One Stop Mobile Tyres 24/7 with your location, registration and tyre size. We will check suitable options and arrange a technician to come to you in Middleton.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-4 sm:mt-6">
               <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#dc2626] hover:bg-[#b70011] text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl" href="tel:07759708646">
                 <span className="material-symbols-outlined text-xl sm:text-2xl">phone_in_talk</span>
-                07759 708 646
+                Call: 07759 708 646
               </a>
               <a className="flex items-center justify-center gap-2 sm:gap-3 bg-[#1c1b1b] hover:bg-slate-800 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-lg font-call-to-action text-base transition-all shadow-xl" href="https://wa.me/447759708646">
                 <span className="material-symbols-outlined text-[#25D366] text-xl sm:text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>chat</span>

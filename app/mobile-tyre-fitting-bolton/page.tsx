@@ -65,7 +65,7 @@ export default function BoltonPage() {
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              Mobile Tyre Fitting Bolton – 24/7 Tyre Help Across the Borough
+              Mobile Tyre Fitting Bolton – 24/7 Tyre Help
             </h1>
 
             <p className="text-white/80 text-base leading-relaxed mb-6">

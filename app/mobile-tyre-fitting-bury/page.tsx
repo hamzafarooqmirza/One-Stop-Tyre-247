@@ -65,7 +65,7 @@ export default function BuryPage() {
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance"
               style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}
             >
-              Mobile Tyre Fitting in Bury – We Come to You 24/7
+              24/7 Emergency Mobile Tyre Fitting and Replacement in Bury
             </h1>
 
             <p className="text-white/80 text-base leading-relaxed mb-6">

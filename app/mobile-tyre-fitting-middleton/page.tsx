@@ -60,7 +60,7 @@ export default function MiddletonPage() {
           />
           <div className="relative z-10 max-w-2xl py-20">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}>
-              Mobile Tyre Fitting Middleton – 24/7 Tyre Support Across the Area
+              Mobile Tyre Fitting Middleton – 24/7 Tyre Support
             </h1>
             <p className="text-white/80 text-base leading-relaxed mb-6">
               A damaged tyre in Middleton can disrupt a local journey, a commute into Manchester or a trip towards the M60 and M62. One Stop Mobile Tyres 24/7 provides professional mobile tyre fitting across Middleton, bringing suitable tyres and specialist fitting equipment directly to your vehicle.

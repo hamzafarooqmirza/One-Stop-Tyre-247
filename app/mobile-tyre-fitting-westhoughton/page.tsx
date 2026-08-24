@@ -60,7 +60,7 @@ export default function WesthoughtonPage() {
           />
           <div className="relative z-10 max-w-2xl py-20">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white mb-4 leading-[1.1] font-black text-balance" style={{ fontFamily: 'var(--font-work-sans)', letterSpacing: '-0.02em' }}>
-              Mobile Tyre Fitting Westhoughton – 24/7 Tyre Help Where You Are
+              Mobile Tyre Fitting Westhoughton – 24/7 Tyre Help
             </h1>
             <p className="text-white/80 text-base leading-relaxed mb-6">
               A damaged tyre in Westhoughton can interrupt anything from a short local trip to a journey towards Bolton or Wigan. One Stop Mobile Tyres 24/7 brings professional mobile tyre fitting directly to your vehicle, with same day and emergency support available day and night.
